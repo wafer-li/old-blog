@@ -1,6 +1,6 @@
 ---
 title: Python 3 Collection
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -26,7 +26,10 @@ del shoplist[0]
 > `del` 类似 C++ 中的 `delete`，用于释放一个对象。
 这里使用 `del` 来将列表元素移除
 
-<!-- more -->## 2. 元组(tupple)
+
+<!-- more -->
+
+## 2. 元组(tupple)
 
 元组和列表相似，唯一的区别是**元组不可改变**
 
@@ -143,7 +146,10 @@ True
 {'brazil', 'india'}
 ```
 
-<!-- more -->## 6. 引用
+
+<!-- more -->
+
+## 6. 引用
 
 这个概念和 Java 中的引用相同。
 

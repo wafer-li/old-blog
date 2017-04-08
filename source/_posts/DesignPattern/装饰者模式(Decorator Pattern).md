@@ -1,6 +1,6 @@
 ---
 title: 装饰者模式(Decorator Pattern)
-date: 2017-04-08
+date: 2017-03-20
 categories: DesignPattern
 tags: DesignPattern
 ---
@@ -11,7 +11,10 @@ tags: DesignPattern
 
 若要扩展功能，装饰者提供了比继承更有弹性的解决方案
 
-<!-- more -->## 2. 新的设计原则
+
+<!-- more -->
+
+## 2. 新的设计原则
 
 **类应当对扩展开放，对修改关闭**
 

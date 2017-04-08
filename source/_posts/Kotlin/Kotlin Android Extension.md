@@ -1,6 +1,6 @@
 ---
 title: Kotlin Android Extension
-date: 2017-04-08
+date: 2017-03-17
 categories: Android
 tags: Android
 ---
@@ -9,7 +9,10 @@ tags: Android
 
 Kotlin 对于 Android 开发，还提供了一些扩展特性，有助于提高 Android 开发的效率。
 
-<!-- more -->## 1. findViewById
+
+<!-- more -->
+
+## 1. findViewById
 
 任何一个 Android 开发者都会对这个方法非常熟悉，我们通过它来获取视图中组件的对象实例，随后进行操作。
 
@@ -75,7 +78,10 @@ kotlinx.android.synthetic.main.activity_main.view.*
 activity.hello.setText("Hi!")
 ```
 
-<!-- more -->## 4. Android Flavors
+
+<!-- more -->
+
+## 4. Android Flavors
 
 有些时候，我们的 APP 会被分成付费版和免费版；
 这个特性通常是通过在 `build.gradle` 划定 Android Flavors 来实现的。

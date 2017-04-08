@@ -1,6 +1,6 @@
 ---
 title: Kotlin 内部类
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -18,7 +18,10 @@ class Outer {
 val demo = Outer.Nested().foo() // == 2
 ```
 
-<!-- more -->## 2. `inner` 关键字
+
+<!-- more -->
+
+## 2. `inner` 关键字
 
 需要使用 `inner` 关键字来指明一个内部类**允许访问外部类属性。**
 

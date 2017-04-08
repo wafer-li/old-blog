@@ -1,13 +1,16 @@
 ---
 title: RecyclerView
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
 
 ## 1. 一般的使用
 
-<!-- more -->### 1.1 添加编译依赖
+
+<!-- more -->
+
+### 1.1 添加编译依赖
 
 ```
 compile 'com.android.support:recyclerview-v7:+'
@@ -49,7 +52,10 @@ compile 'com.android.support:recyclerview-v7:+'
 
     > 注意，在 `support-library 23.2.0` 之后，`LayoutManager` 提供了**自动调整**功能，所以对 `item` 的根布局应采用 `wrap_content` 的 `layout_hight`
 
-<!-- more -->### 1.3 设置 **LayoutManager** 和 **Adapter**
+
+<!-- more -->
+
+### 1.3 设置 **LayoutManager** 和 **Adapter**
 
 ```java
 @Override
@@ -148,7 +154,10 @@ public int getItemViewType(int position) {
 
 然后使用 `onCreateViewHolder()` 中的 `int ViewType` 属性来判别构建的 View 类型。
 
-<!-- more -->## 3. 设置 OnItemClickListener
+
+<!-- more -->
+
+## 3. 设置 OnItemClickListener
 
 > 官方并没有为 RecyclerView 实现一个 OnItemClickListener，所以只能由开发者自行实现
 
@@ -219,7 +228,7 @@ public void onCreateView(...) {
     mAdapter.setOnClickListener (new OnItemClickListener() {
         @Override
         public void onItemClick(View v, int position) {
-            //Update UI or execute some operation
+            //Update: 2016-10-14
         }
     })
 }

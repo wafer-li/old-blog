@@ -1,13 +1,16 @@
 ---
 title: Kotlin 基础
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
 
 ## 1. 基本语法
 
-<!-- more -->### 1.1 变量定义
+
+<!-- more -->
+
+### 1.1 变量定义
 
 1.  使用 `val` 定义**常量**（只读）
 
@@ -56,7 +59,10 @@ interface Foo<out T : Any> : Bar {
 }
 ```
 
-<!-- more -->### 2.3 Lambda 表达式
+
+<!-- more -->
+
+### 2.3 Lambda 表达式
 
 在使用 lambda 表达式时，lambda 表达式应与花括号有空格分隔。
 
@@ -72,7 +78,10 @@ list.filter { it > 10 }.map { element -> element * 2 }
 
 类似于 Java 中的返回值为 `void`
 
-<!-- more -->## 3. 包和导入
+
+<!-- more -->
+
+## 3. 包和导入
 
 Kotlin 中的包和导入与 Java 区别不大。
 

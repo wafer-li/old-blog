@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 14.04 LTS Installation Checklist
-date: 2017-04-08
+date: 2016-10-14
 categories: Linux
 tags: Linux
 ---
@@ -12,7 +12,10 @@ This is the installation checklist of the lastest Ubuntu LTS version: Ubuntu 14.
 The reason of choosing Ubuntu is that the Ubuntu has the least problems with my hardware.
 Actually, it's only the Wireless Issue exist.
 
-<!-- more -->## 1. Before Install
+
+<!-- more -->
+
+## 1. Before Install
 
 1. Backup all the **proxy** settings and the other software settings which cannot be synchronized.
 
@@ -31,7 +34,7 @@ Actually, it's only the Wireless Issue exist.
 
     > The Ubuntu Software Center will automatically upgrade the softwares.
     Or, you can use
-    `sudo apt-get update
+    `sudo apt-get update: 2016-10-14
     sudo apt-get upgrade`
     to upgrade the softwares.
 
@@ -88,7 +91,10 @@ Actually, it's only the Wireless Issue exist.
     > The spf13 vim has problem of neocomplete plugin, but it's still the best _vimrc.
     Maybe the k-vim will be better.
 
-<!-- more -->## 4. Entertainment
+
+<!-- more -->
+
+## 4. Entertainment
 
 The entertainment is almost the Kancolle game.
 
@@ -117,7 +123,7 @@ The entertainment is almost the Kancolle game.
 1. Using the **oracle's Java** is recommended.
 
     > use
-    `sudo update-altiretive --install "/usr/bin/java" "java" "/path/of/oracle/java" 1` to use as default.
+    `sudo update: 2016-10-14
     This step should fix the Android SDK Manager not responding in Android Studio
 
 2. Enviroment Variable:
@@ -138,7 +144,10 @@ The entertainment is almost the Kancolle game.
     It wired, by far I have no idea how to solve it.~~
     ~~But the bulit-in manager works fine, so it's not so important at this moment.~~
 
-<!-- more -->## 6. Desktop Entry
+
+<!-- more -->
+
+## 6. Desktop Entry
 
 The desktop entry of per user store in
 `~/.local/share/applications`

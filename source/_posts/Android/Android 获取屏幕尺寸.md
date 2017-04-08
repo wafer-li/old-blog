@@ -1,6 +1,6 @@
 ---
 title: Android 获取屏幕尺寸
-date: 2017-04-08
+date: 2016-11-08
 categories: Android
 tags: Android
 ---

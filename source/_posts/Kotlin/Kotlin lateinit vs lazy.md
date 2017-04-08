@@ -1,6 +1,6 @@
 ---
 title: Kotlin lateinit vs lazy
-date: 2017-04-08
+date: 2016-10-29
 categories: Kotlin
 tags: Kotlin
 ---

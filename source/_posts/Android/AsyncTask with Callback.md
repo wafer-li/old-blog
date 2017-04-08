@@ -1,6 +1,6 @@
 ---
 title: AsyncTask with Callback
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -13,7 +13,10 @@ public interface TaskListener {
 }
 ```
 
-<!-- more -->## 2. 添加 Listener 作为 Task 的类成员
+
+<!-- more -->
+
+## 2. 添加 Listener 作为 Task 的类成员
 ```java
 class Task extends AsyncTask<Void,Void,Object> {
 

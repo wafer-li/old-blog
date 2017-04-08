@@ -1,6 +1,6 @@
 ---
 title: TextInputLayout 使用
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -13,7 +13,10 @@ tags: Android
 
 <center>![](http://blog.incredibleandros.com/images/textInputlayout.gif)</center>
 
-<!-- more -->## 2. 基本使用
+
+<!-- more -->
+
+## 2. 基本使用
 
 ### 2.1 添加依赖框架
 
@@ -46,7 +49,10 @@ TextInputLayout 是 Android design 库的控件，所以需要添加 Android 的
 </android.support.design.widget.TextInputLayout>
 ```
 
-<!-- more -->### 2.3 相应效果的设置
+
+<!-- more -->
+
+### 2.3 相应效果的设置
 
 `TextInputLayout` 区别于 `EditText` 的一点在于，一些提示效果，如 Hint 和 Error Message 需要在 **Java** 代码中进行设置。
 

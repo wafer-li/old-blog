@@ -1,6 +1,6 @@
 ---
 title: Retrofit 离线缓存
-date: 2017-04-08
+date: 2016-10-26
 categories: Retrofit
 tags: Retrofit
 ---
@@ -15,7 +15,10 @@ Retrofit2 自从默认使用 OkHttp 库之后，自带了缓存功能；
 
 这对于用户体验来说显然是不好的，所以这篇文章就介绍一下如何配置 Retrofit 和 OkHttp 来进行**离线缓存**
 
-<!-- more -->## 设置缓存路径
+
+<!-- more -->
+
+## 设置缓存路径
 
 为了使用 OkHttp 的缓存，我们就必须设置相应的缓存路径。
 

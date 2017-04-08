@@ -1,6 +1,6 @@
 ---
 title: README
-date: 2017-04-08
+date: 2016-11-13
 categories: DesignPattern
 tags: DesignPattern
 ---
@@ -15,7 +15,10 @@ tags: DesignPattern
 2. 设计模式会让你保持高层级的观感
 3. 设计模式可以让开发团队和开发人员快速成长
 
-<!-- more -->## 有没有现成的设计模式轮子
+
+<!-- more -->
+
+## 有没有现成的设计模式轮子
 
 没有，学习设计模式以组织类来解决对应的问题是程序员责无旁贷的事情。
 

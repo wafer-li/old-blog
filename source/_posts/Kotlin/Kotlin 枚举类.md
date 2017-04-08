@@ -1,6 +1,6 @@
 ---
 title: Kotlin 枚举类
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -14,7 +14,10 @@ tags: Kotlin
 > 当然，在 Kotlin 中，可以使用 sealed clasdd 来方便的实现需要 switch 的情景。
 
 
-<!-- more -->## 2. 声明
+
+<!-- more -->
+
+## 2. 声明
 
 ```kotlin
 enum class Direction {

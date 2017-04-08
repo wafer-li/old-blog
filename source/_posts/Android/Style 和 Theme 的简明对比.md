@@ -1,6 +1,6 @@
 ---
 title: Style 和 Theme 的简明对比
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -11,7 +11,10 @@ tags: Android
 
 而一个 `Theme` 对整个 `application` 或 `activity` 或者一个 `ViewGroup`(`View` 组件和它的子项) 有效。
 
-<!-- more -->## 2. Style 是组件多种属性的集合
+
+<!-- more -->
+
+## 2. Style 是组件多种属性的集合
 
 实际上，一个组件的 style 就是其多种属性的集合。
 

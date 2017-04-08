@@ -1,6 +1,6 @@
 ---
 title: Java 集合框架 Collection
-date: 2017-04-08
+date: 2017-04-03
 categories: Java
 tags: Java
 ---
@@ -13,7 +13,10 @@ tags: Java
 
 同时，它还提供了关于 `Collection` 的批量操作方法。
 
-<!-- more -->## 2. 基本操作
+
+<!-- more -->
+
+## 2. 基本操作
 
 基本的元素操作包括 `add()` 和 `remove()`，同时也包括 `size()` 和 `isEmpty()` 等一系列的集合基本操作。
 

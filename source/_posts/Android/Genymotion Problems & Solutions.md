@@ -1,6 +1,6 @@
 ---
 title: Genymotion Problems & Solutions
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -11,7 +11,10 @@ tags: Android
 虽然这个工具很出名，但是由于它使用 VirtualBox 来实现一个 x86 的虚拟机，
 它在 Windows 上就显得有些烦人（和反人类）
 
-<!-- more -->## 1. Unable connect to virtual_device
+
+<!-- more -->
+
+## 1. Unable connect to virtual_device
 
 当这个错误发生的时候，Genymotion 会让你在 VirtualBox 里面启动你的安卓虚拟机。请遵循这个执行，然后你就会获取到一个出错信息
 

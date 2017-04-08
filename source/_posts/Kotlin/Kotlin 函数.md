@@ -1,6 +1,6 @@
 ---
 title: Kotlin 函数
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -14,7 +14,10 @@ fun double(x: Int): Int {
 }
 ```
 
-<!-- more -->## 2. 调用
+
+<!-- more -->
+
+## 2. 调用
 
 函数的调用和其他语言一样
 
@@ -40,7 +43,10 @@ Sample().foo() // create instance of class Sample and calls foo
 - 函数只有一个参数
 - 使用 `infix` 进行标识
 
-##<!-- more -->## 2.2.2 例子
+##
+<!-- more -->
+
+## 2.2.2 例子
 
 ```kotlin
 // Define extension to Int
@@ -192,7 +198,10 @@ fun printHello(name: String?) {
 }
 ```
 
-<!-- more -->### 4.1 单一表达式函数
+
+<!-- more -->
+
+### 4.1 单一表达式函数
 
 当一个函数只具有一条表达式时，花括号可以被省略。
 
@@ -249,7 +258,10 @@ fun dfs(graph: Graph) {
 }
 ```
 
-<!-- more -->## 6. 尾调用
+
+<!-- more -->
+
+## 6. 尾调用
 
 对于一些算法实现来说，使用递归实现会令算法过程更加明晰。
 

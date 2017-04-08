@@ -1,6 +1,6 @@
 ---
 title: Material Design 主体环境
-date: 2017-04-08
+date: 2016-10-14
 categories: MaterialDesign
 tags: MaterialDesign
 ---
@@ -21,7 +21,10 @@ tags: MaterialDesign
 - 阴影由重叠实体之间的高低差产生
     > 即阴影实际上就是高低差的代表
 
-<!-- more -->## 2. 3D 世界
+
+<!-- more -->
+
+## 2. 3D 世界
 
 Material Design 是一个 3D 世界。
 这意味着所有的实体都具有 3 个维度的坐标；

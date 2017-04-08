@@ -1,6 +1,6 @@
 ---
 title: Kotlin 类属性和域
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -63,7 +63,10 @@ class Foo {
 除此之外，Kotlin 的变量在使用前必须被初始化，否则编译器将报错。
 
 
-<!-- more -->## 2. Getter 和 Setter
+
+<!-- more -->
+
+## 2. Getter 和 Setter
 
 定义一个类属性的完整语法如下：
 
@@ -171,7 +174,10 @@ const val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
 @Deprecated(SUBSYSTEM_DEPRECATED) fun foo() { ... }
 ```
 
-<!-- more -->## 4. 延迟初始化
+
+<!-- more -->
+
+## 4. 延迟初始化
 
 一般来说，类中的属性必须被初始化，但是也有时需要通过注入或者 `@SetUp` 在 JUnit 中进行初始化。
 

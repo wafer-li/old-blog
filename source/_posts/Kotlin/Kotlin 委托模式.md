@@ -1,6 +1,6 @@
 ---
 title: Kotlin 委托模式
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -12,7 +12,10 @@ tags: Kotlin
 > 委托模式是一项基本技巧，许多其他的模式，如状态模式、策略模式、访问者模式本质上是在更特殊的场合采用了委托模式。
 > 委托模式使得我们可以用聚合来替代继承。
 
-<!-- more -->## 2. Java 例子
+
+<!-- more -->
+
+## 2. Java 例子
 
 ```kotlin
 interface I {

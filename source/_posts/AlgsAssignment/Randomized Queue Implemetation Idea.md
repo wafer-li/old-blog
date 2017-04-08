@@ -1,6 +1,6 @@
 ---
 title: Randomized Queue Implemetation Idea
-date: 2017-04-08
+date: 2016-10-14
 categories: AlgsAssignment
 tags: AlgsAssignment
 ---
@@ -10,7 +10,10 @@ tags: AlgsAssignment
 - [x] Maintain a item size
 - [ ] Calculate from pointer
 
-<!-- more -->## How to resize?
+
+<!-- more -->
+
+## How to resize?
 
 1. Create a new array
 2. Iterate the item in the origin array

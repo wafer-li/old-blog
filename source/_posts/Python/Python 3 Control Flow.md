@@ -1,6 +1,6 @@
 ---
 title: Python 3 Control Flow
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -14,7 +14,10 @@ Python 的流程控制语句有些特殊
 1. 首先，关于流程控制**不使用括号**，只有函数和表达式才使用小括号
 2. 使用冒号指示语句块的开头
 
-<!-- more -->## 1. if 语句
+
+<!-- more -->
+
+## 1. if 语句
 
 下面是一个 `if` 语句的例子
 

@@ -1,6 +1,6 @@
 ---
 title: Kotlin Android Getting Started
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -9,7 +9,10 @@ tags: Android
 
 由于 Android Studio 基于 IntelliJ IDEA 开发，所以很容易在 Android Studio 上使用 Kotlin 开发 Android。
 
-<!-- more -->## 1. 创建工程
+
+<!-- more -->
+
+## 1. 创建工程
 
 这步和普通的 Android 创建工程没有什么区别。
 
@@ -39,7 +42,10 @@ IDEA 内建了代码转换功能，只需要通过 Find Action(`cmd + shift + a`
 
 ![](https://kotlinlang.org/assets/images/tutorials/kotlin-android/sync-project-with-gradle.png)
 
-<!-- more -->## 4. 剩下的工作
+
+<!-- more -->
+
+## 4. 剩下的工作
 
 由于 Kotlin 最终还是会被编译成字节码，所以剩下的 UI 开发和 APK 构建与使用 Java 语言时并没有任何区别。
 

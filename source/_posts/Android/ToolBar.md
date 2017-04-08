@@ -1,6 +1,6 @@
 ---
 title: ToolBar
-date: 2017-04-08
+date: 2016-11-07
 categories: Android
 tags: Android
 ---
@@ -8,7 +8,10 @@ tags: Android
 
 ## 1.  使用
 
-<!-- more -->###  1. 1 定义风格
+
+<!-- more -->
+
+###  1. 1 定义风格
 
 在使用 Toolbar 之前，我们首先要对其风格进行一些调整。
 
@@ -57,7 +60,10 @@ tags: Android
 注意采用 `support v7` 包的 `toolbar` 否则只有 **API 21** 以后的版本才能使用，即不兼容 4.0
 
 
-<!-- more -->### 1.3 自定义颜色等其他属性
+
+<!-- more -->
+
+### 1.3 自定义颜色等其他属性
 
 在上述的两个 style 文件中设定你想要的 Toolbar 的各种属性。添加属性时，在 `<style>` 下添加一个 `<item>` 即可。
 
@@ -172,7 +178,10 @@ toolbar.setNavigationIcon(R.drawable.ab_android);
 
 	> 需要注意的是，`setOnMenuItemClickListener()` 需要在 `setActionBar()` 或 `setSupportActionBar()` 之后才能生效
 
-<!-- more -->## 2. 动态加载
+
+<!-- more -->
+
+## 2. 动态加载
 
 这里所指的是 在使用 `Fragment` 时，由于不同 `Fragment` 可能需要不同的 `ActionBar` 标题或者其他组件，由此产生的动态加载问题。
 

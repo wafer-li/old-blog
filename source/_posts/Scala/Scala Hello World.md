@@ -1,6 +1,6 @@
 ---
 title: Scala Hello World
-date: 2017-04-08
+date: 2017-04-03
 categories: Scala
 tags: Scala
 ---
@@ -11,7 +11,10 @@ Scala 既可以使用交互式命令行来编程，也可以将其写成一个�
 
 其中，关于构建独立程序的写法一共有两种。
 
-<!-- more -->## 2. `main()` 方法
+
+<!-- more -->
+
+## 2. `main()` 方法
 
 使用 `main()` 方法是通常各种语言的程序入口，Scala 也不例外：
 

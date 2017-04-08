@@ -1,6 +1,6 @@
 ---
 title: Retrofit2 使用简明手册
-date: 2017-04-08
+date: 2016-11-26
 categories: Retrofit
 tags: Retrofit
 ---
@@ -12,7 +12,10 @@ Retrofit 是 Square 公司出品的 Android 开源网络框架，使用注解和
 
 Retrofit2 通过与 Square 公司的另一开源库 OkHttp3 合并，由 OkHttp 进行 HTTP 操作，重定向响应，以及缓存支持。
 
-<!-- more -->## 1. 初始化设置
+
+<!-- more -->
+
+## 1. 初始化设置
 
 ### 1.1 添加依赖
 
@@ -40,7 +43,10 @@ compile 'com.squareup.retrofit2:retrofit:2.1.0'
 
 ## 2. 基本使用
 
-<!-- more -->### 2.1 创建 ApiService interface
+
+<!-- more -->
+
+### 2.1 创建 ApiService interface
 
 创建一个 `interface`，用于储存需要进行的网络操作 API
 
@@ -141,7 +147,7 @@ Body 的类型会通过转换器(converter)反序列化成对应的类，如果�
 ```java
 @FormUrlEncoded
 @POST("user/edit")
-Call<User> updateUser(@Field("first_name") String first, @Field("last_name") String last);
+Call<User> update: 2016-11-26
 ```
 
 > `application/x-www-form-urlencoded` 和 `application/json` 的异同
@@ -162,10 +168,13 @@ Call<User> updateUser(@Field("first_name") String first, @Field("last_name") Str
 ```java
 @Multipart
 @PUT("user/photo")
-Call<User> updateUser(@Part("photo") RequestBody photo, @Part("description") RequestBody description);
+Call<User> update: 2016-11-26
 ```
 
-<!-- more -->## 7. 指定 Header
+
+<!-- more -->
+
+## 7. 指定 Header
 
 通过 **@Header** 注解来指定 HTTP Header
 

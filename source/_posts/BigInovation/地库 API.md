@@ -1,13 +1,16 @@
 ---
 title: 地库 API
-date: 2017-04-08
+date: 2016-10-14
 categories: BigInovation
 tags: BigInovation
 ---
 
 ## Global rules
 
-<!-- more -->### Request
+
+<!-- more -->
+
+### Request
 
 1. Requests are MOSTLY without body, just `METHOD /example`
 2. Some request may need sending a JSON. The JSON MUST be put in HTTP body
@@ -60,7 +63,7 @@ Response:
 }
 ```
 
-### Update map info
+### Update: 2016-10-14
 
 Request:
 
@@ -93,7 +96,10 @@ Request:
 
 Response: (empty JSON object)
 
-<!-- more -->### Get map GeoJSON
+
+<!-- more -->
+
+### Get map GeoJSON
 
 Request:
 

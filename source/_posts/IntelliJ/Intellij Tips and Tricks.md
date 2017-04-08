@@ -1,6 +1,6 @@
 ---
 title: Intellij Tips and Tricks
-date: 2017-04-08
+date: 2016-12-13
 categories: IntelliJ
 tags: IntelliJ
 ---
@@ -64,7 +64,10 @@ tags: IntelliJ
 
     > 在右上角的感叹号图标右键点击，可以设置 **只在 Error 之间跳转**
 
-<!-- more -->## 2. 新建
+
+<!-- more -->
+
+## 2. 新建
 
 1. 在 Project Window 使用 `command + N` 来新建文件或者 package 或者目录
 
@@ -138,7 +141,10 @@ tags: IntelliJ
 3. 选择 **正则表达式** 可以在对应的 Hover 框内对正则表达式进行检验
 
 
-<!-- more -->## 5. 补全
+
+<!-- more -->
+
+## 5. 补全
 
 1. 使用 `ctrl + shift + Space` 进行 **智能补全**
 
@@ -187,7 +193,10 @@ tags: IntelliJ
 
 3. 使用 Analyze Data Flow 可以分析特定变量的流动，有助于读懂他人代码
 
-<!-- more -->## 8. 版本控制
+
+<!-- more -->
+
+## 8. 版本控制
 
 1. 选择两个 commit 然后使用 `ctrl + D` 来进行 Diff
 

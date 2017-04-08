@@ -1,6 +1,6 @@
 ---
 title: My Linux Experiences
-date: 2017-04-08
+date: 2016-10-14
 categories: Linux
 tags: Linux
 ---

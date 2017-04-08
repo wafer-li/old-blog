@@ -1,6 +1,6 @@
 ---
 title: Kotlin 范围
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -11,7 +11,10 @@ tags: Kotlin
 
 Kotlin 对此支持 Range 语法，它就是简单的使用 `..` 来表示范围，并且支持使用 `in` 和 `!in` 来进行判定；以及 `for` 进行遍历。
 
-<!-- more -->## 2. 判定
+
+<!-- more -->
+
+## 2. 判定
 
 ```kotlin
 if (i in 1..10) { // equivalent of 1 <= i && i <= 10
@@ -80,7 +83,10 @@ IntProgression.fromClosedRange(start, end, increment)
 
 除了上面介绍的有用的方法外，还有一些比较有用的方法。
 
-<!-- more -->### 5.1 `reversed()`
+
+<!-- more -->
+
+### 5.1 `reversed()`
 
 很简单，用于反转整个流程。
 

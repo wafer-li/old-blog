@@ -1,6 +1,6 @@
 ---
 title: OSX Mono Halal Installation
-date: 2017-04-08
+date: 2016-12-17
 categories: Mono
 tags: Mono
 ---

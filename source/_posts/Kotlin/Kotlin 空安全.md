@@ -1,6 +1,6 @@
 ---
 title: Kotlin 空安全
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -11,7 +11,10 @@ Kotlin 对于 Java 的一个很大的改进在于，Kotlin 的类型系统目标
 
 所以 Kotlin 提供了一个健壮的 Null 检查系统。
 
-<!-- more -->## 2. 产生 NPE 的原因
+
+<!-- more -->
+
+## 2. 产生 NPE 的原因
 
 可能产生 NPE 的原因如下：
 
@@ -51,7 +54,10 @@ val l = b.length // error: variable 'b' can be null
 但是我们依旧需要访问 `b` 啊！
 
 
-<!-- more -->## 4. 访问可能为空变量的方法
+
+<!-- more -->
+
+## 4. 访问可能为空变量的方法
 
 下面就介绍几种方法来进行 `b` 的安全访问。
 
@@ -109,7 +115,10 @@ for (item in listWithNulls) {
 > `let` 操作接受一个 lambda 表达式，并返回 lambda 表达式的值。[源代码](https://github.com/JetBrains/kotlin/blob/1.0.3/libraries/stdlib/src/kotlin/util/Standard.kt#L55)
 
 
-<!-- more -->### 4.3 Elvis 表达式
+
+<!-- more -->
+
+### 4.3 Elvis 表达式
 
 如果对于一个引用 `r`，我们需要：
 当 `r` 不为空时，使用它；否则我们就使用一个其他的值(`x`)
@@ -143,7 +152,10 @@ val l = b!!.length
 
 也就是说，如果你需要 NPE，就使用这个操作符。
 
-<!-- more -->## 5. 安全的造型
+
+<!-- more -->
+
+## 5. 安全的造型
 
 一般的造型 `as` 在对象不相符的时候，会产生一个 `ClassCastException`。
 

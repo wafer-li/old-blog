@@ -1,6 +1,6 @@
 ---
 title: Java 接口和内部类
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -9,7 +9,10 @@ tags: Java
 
 这是 Java 中的专有名词，指代的是 **interface** 关键字
 
-<!-- more -->### 1.1 接口
+
+<!-- more -->
+
+### 1.1 接口
 
 ```java
 public interface Comparable {...}
@@ -74,7 +77,10 @@ public interface Comparable {...}
     - 即使浅拷贝能满足要求，也要进行上述两条操作
     - 需要声明 `CloneNotSupportedException` 异常
 
-<!-- more -->## 2. 内部类
+
+<!-- more -->
+
+## 2. 内部类
 
 ```java
 class TalkingClock
@@ -99,7 +105,10 @@ class TalkingClock
 - 通过 `OuterClass.this` 访问外围类
 - 在外围类的作用域之外，使用 `OuterClass.InnerClass` 引用内部类
 
-<!-- more -->### 2.3 局部内部类
+
+<!-- more -->
+
+### 2.3 局部内部类
 
 - 简称局部类，在一个方法内进行定义
 
@@ -135,7 +144,10 @@ new InterfaceType()
 	}
 ```
 
-<!-- more -->### 2.5 静态内部类
+
+<!-- more -->
+
+### 2.5 静态内部类
 
 - 用于将一个类隐藏在另一个类之中，通常用于防止名称的冲突
 - 只有内部类可以声明为 `static`

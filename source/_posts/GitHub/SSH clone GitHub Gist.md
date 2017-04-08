@@ -1,6 +1,6 @@
 ---
 title: SSH clone GitHub Gist
-date: 2017-04-08
+date: 2016-10-14
 categories: GitHub
 tags: GitHub
 ---

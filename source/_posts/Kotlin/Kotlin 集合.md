@@ -1,6 +1,6 @@
 ---
 title: Kotlin 集合
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -11,7 +11,10 @@ tags: Kotlin
 
 理解和区分可变集合和不可变集合是很重要的，Kotlin 致力于尽量将事务显式化，所以 Kotlin 对这两种集合进行了区分。
 
-<!-- more -->## 2. 与 Java 的区别
+
+<!-- more -->
+
+## 2. 与 Java 的区别
 
 与 Java 相比的很大的不同点在于，Kotlin 的 `List` 是 `List<out T> `，而不是 `List<T>`，也就是说 Kotlin 的 `List` 是只读的，而对应的 `MutableList<T>` 才是可写的。
 
@@ -51,7 +54,10 @@ val items = listOf(1, 2, 3)
 
 相反，可变类型的集合没有这个特性。
 
-<!-- more -->## 4. 返回一个只读列表的快照
+
+<!-- more -->
+
+## 4. 返回一个只读列表的快照
 
 有时候，虽然类中的列表在不断变动，但是你只想给调用者呈现一个**某时刻的只读列表**，可以使用如下方法
 

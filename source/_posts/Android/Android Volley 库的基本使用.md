@@ -1,6 +1,6 @@
 ---
 title: Android Volley 库的基本使用
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -14,7 +14,10 @@ Volley 适用于高频，小流量的网络访问，例如传输 Json 信息，�
 对于上传和下载文件的需求，Volley 不适用。
 这主要是由于 Volley 对请求队列采用的是**在内存中的缓存**，决定了 Volley 不适应大文件（二进制流）的传输。
 
-<!-- more -->## 2. Volley 的基本使用
+
+<!-- more -->
+
+## 2. Volley 的基本使用
 
 ### 2.1 添加编译依赖
 

@@ -1,6 +1,6 @@
 ---
 title: Python 3 Function
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -21,7 +21,10 @@ def sayHello():
 sayHello() # 调用函数
 ```
 
-<!-- more -->## 2. 函数参数
+
+<!-- more -->
+
+## 2. 函数参数
 
 在函数定义的圆括号中可以指定形参。
 **注意，不需要声明形参类型**
@@ -146,7 +149,10 @@ TypeError: foo() takes exactly 2 positional arguments (4 given)
 Python 的函数**默认为没有返回值**
 一个没有返回值的函数的 `return` 语句等价于 `return None`
 
-<!-- more -->## 9. DocStrings
+
+<!-- more -->
+
+## 9. DocStrings
 
 这一特性很类似 Java 的 javadoc。与 Java 不同的是，Python 的 DocStrings 在**函数的第一个逻辑行处定义**
 
@@ -239,7 +245,10 @@ def module_level_function(param1, param2=None, *args, **kwargs):
 
 ## 10. 注解(Annotations)
 
-<!-- more -->### 10.1 参数注解
+
+<!-- more -->
+
+### 10.1 参数注解
 
 Python 的参数注解定义在**形参声明的位置，与形参以括号间隔，置于参数默认值之前**
 

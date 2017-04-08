@@ -1,6 +1,6 @@
 ---
 title: Python 3 Advanced Skill
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -18,7 +18,10 @@ errnum, errstr = get_error_details()
 
 > 上面运用到了**元组解包**技术，通过使用逗号分隔变量，就可以分别取出对应位置的元组元素。
 
-<!-- more -->## 2. 特殊方法
+
+<!-- more -->
+
+## 2. 特殊方法
 
 Python 的类中有许多内置的特殊方法，例如 `__init__()` 和 `__del__()`
 

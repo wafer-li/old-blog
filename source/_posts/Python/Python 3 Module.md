@@ -1,6 +1,6 @@
 ---
 title: Python 3 Module
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -9,7 +9,10 @@ tags: Python
 
 模块有点类似 C++ 中的 Namespace，但并不完全相同
 
-<!-- more -->## 1. 导入模块
+
+<!-- more -->
+
+## 1. 导入模块
 
 通过使用 `import` 语句来导入一个模块进行使用
 

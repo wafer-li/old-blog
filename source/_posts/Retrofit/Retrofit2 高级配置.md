@@ -1,6 +1,6 @@
 ---
 title: Retrofit2 高级配置
-date: 2017-04-08
+date: 2016-11-07
 categories: Retrofit
 tags: Retrofit
 ---
@@ -10,7 +10,10 @@ tags: Retrofit
 有时候，retrofit 提供的基础功能不够我们使用，比如我们需要打网络日志、强制缓存，设置公有头等。
 此时，我们就需要对 OkHttp 的 client 进行定制，随后让 retrofit 使用我们定制的 client，从而实现我们的需求。
 
-<!-- more -->## 1. 初始化操作
+
+<!-- more -->
+
+## 1. 初始化操作
 
 为了定制我们自己的 Okhttp client，需要先获取 `Okhttp.Builder` 对象，通过对 builder 的不断处理，从而构建出我们所需要的 client。
 
@@ -78,7 +81,10 @@ Interceptor cacheInterceptor = new Interceptor() {
 builder.cache(cache).addInterceptor(cacheInterceptor);
 ```
 
-<!-- more -->## 3. 头信息
+
+<!-- more -->
+
+## 3. 头信息
 
 有时候我们需要自己定义头信息；
 包括最基本的 `Accept` 和 `Content-Type` 信息；
@@ -118,7 +124,10 @@ builder.addInterceptor(interceptor);
 
 **注意，日志拦截器必须在第一位！**
 
-<!-- more -->### 4.1 添加依赖
+
+<!-- more -->
+
+### 4.1 添加依赖
 
 ```groovy
 compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
@@ -133,7 +142,10 @@ logging.setLevel(Level.BASIC);
 builder.addIntercetor(logging);
 ```
 
-<!-- more -->## 5. 构建 client
+
+<!-- more -->
+
+## 5. 构建 client
 
 当配置完毕后，就可以用我们的 Builder 生成 client 了。
 

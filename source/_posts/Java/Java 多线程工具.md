@@ -1,6 +1,6 @@
 ---
 title: Java 多线程工具
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -14,7 +14,10 @@ tags: Java
 并发工具优先于 `wait()` 和 `notify()`
 —— *Effective Java Second Edition*
 
-<!-- more -->### 1.1 阻塞队列
+
+<!-- more -->
+
+### 1.1 阻塞队列
 
 对于许多线程问题，可以通过使用一个或者多个队列来将其形式化。可以通过 `Producesor` 将任务加入队列，然后由 `Comsumor` 来将任务取出然后进行处理的方式来实现。
 
@@ -42,7 +45,10 @@ Java 准备了多种实现形式的阻塞队列，包括链表、双端链表、
 
 同时，Java 1.7 还提供了 `TransferQueue` 接口，这个接口允许生产者线程等待，直到消费者线程准备就绪。
 
-##<!-- more -->## 1.1.2 例子
+##
+<!-- more -->
+
+## 1.1.2 例子
 
 下面是一个使用阻塞队列来管理多线程关系的例子：
 即，**生产者线程将元素加入到队列中，消费者线程将元素取出进行处理**
@@ -327,7 +333,10 @@ class Counter extends RecursiveTask<Integer> {
 }
 ```
 
-<!-- more -->## 4. 同步器(Synchronizer)
+
+<!-- more -->
+
+## 4. 同步器(Synchronizer)
 
 同步器是并发工具的一种，一些使线程能够等待另一个线程的对象，允许它们协调动作。
 

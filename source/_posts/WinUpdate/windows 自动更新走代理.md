@@ -1,8 +1,8 @@
 ---
 title: windows 自动更新走代理
-date: 2017-04-08
-categories: WinUpdate
-tags: WinUpdate
+date: 2016-11-26
+categories: WinUpdate: 2016-11-26
+tags: WinUpdate: 2016-11-26
 ---
 
 本部校园网 v4 收费，windows 更新又是刚需，那么如何让 windows 自动更新走代理呢？

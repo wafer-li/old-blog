@@ -1,6 +1,6 @@
 ---
 title: C# Method
-date: 2017-04-08
+date: 2016-11-30
 categories: CSharp
 tags: CSharp
 ---

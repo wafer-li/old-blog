@@ -1,6 +1,6 @@
 ---
 title: Android Volley 构建自定义请求
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -14,7 +14,10 @@ Volley 提供了基本的 `StringRequest`，`JsonObjectRequest` 和 `JsonArrayRe
 
 此时就需要构建自定义的 Volley 请求。
 
-<!-- more -->## 2. 基本步骤
+
+<!-- more -->
+
+## 2. 基本步骤
 
 ### 2.1 继承 `Request<T>` 类
 
@@ -175,7 +178,10 @@ public class GsonRequest<T> extends Request<T> {
 }
 ```
 
-##<!-- more -->## 3.1.2 重载 `getBody()` 方法
+##
+<!-- more -->
+
+## 3.1.2 重载 `getBody()` 方法
 
 如果基本的 `getParams()` 方法不能满足需要，那么我们可以直接重载 `getBody()` 方法来实现对 HTTP body 的高度定制。
 

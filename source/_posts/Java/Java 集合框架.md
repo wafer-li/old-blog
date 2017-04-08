@@ -1,6 +1,6 @@
 ---
 title: Java 集合框架
-date: 2017-04-08
+date: 2017-04-03
 categories: Java
 tags: Java
 ---
@@ -13,7 +13,10 @@ Java 也不例外，而且提供了一个庞大的数据结构库，有时对于
 
 这里就来简单说明一下 Java 的 Collection 和基本的 Collection 数据结构
 
-<!-- more -->## 2. 接口关系图
+
+<!-- more -->
+
+## 2. 接口关系图
 
 和现代的数据结构类库一样，Java 采用了 Collection 接口和实现相分离的策略。
 
@@ -98,7 +101,10 @@ hide empty field
 
     > 一个它的键按照 **升序排列** 的 `Map`
 
-<!-- more -->## 4. Abstract 类
+
+<!-- more -->
+
+## 4. Abstract 类
 
 集合框架中，除了接口和具体实现，还提供了一系列的 `Abstract*`  类；
 

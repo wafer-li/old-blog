@@ -1,6 +1,6 @@
 ---
 title: Java 基础
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -35,7 +35,10 @@ tags: Java
 
 6. Java允许数组长度为0 **（注意这里和null并不同）**
 
-<!-- more -->## 2. 作用域
+
+<!-- more -->
+
+## 2. 作用域
 
 1. Java不允许在嵌套的代码块内声明同名变量
 

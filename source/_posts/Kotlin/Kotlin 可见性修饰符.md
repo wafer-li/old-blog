@@ -1,6 +1,6 @@
 ---
 title: Kotlin 可见性修饰符
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -14,7 +14,10 @@ Kotlin 的可见性修饰符和 Java 及 C++ 有比较大的区别。
 
 **默认的可见性修饰符为 `public`**。
 
-<!-- more -->## 2. 包级别
+
+<!-- more -->
+
+## 2. 包级别
 
 函数，变量，类都可以在 "top-level" 级别声明，即**直接在包内声明**。
 
@@ -87,7 +90,10 @@ class Unrelated(o: Outer) {
 }
 ```
 
-<!-- more -->## 4. 构造器
+
+<!-- more -->
+
+## 4. 构造器
 
 同样的，构造器也可以指定可见性，但是如果可见性被指定了，那么 `constructor` 关键字就必须存在。
 

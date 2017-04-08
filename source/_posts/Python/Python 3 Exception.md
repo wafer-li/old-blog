@@ -1,6 +1,6 @@
 ---
 title: Python 3 Exception
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -9,7 +9,10 @@ tags: Python
 
 Python 的异常处理和 Java 相似，函数拼写错误等也会触发异常。
 
-<!-- more -->## 1. 处理异常
+
+<!-- more -->
+
+## 1. 处理异常
 
 通过 `try...except` 语句来处理异常
 
@@ -55,7 +58,10 @@ else:
     print('No exception was raised.')
 ```
 
-<!-- more -->## 3. Try...Finally 语句
+
+<!-- more -->
+
+## 3. Try...Finally 语句
 
 这点与 Java 相似，Python 使用 `finally` 语句来对流进行一些收尾操作
 

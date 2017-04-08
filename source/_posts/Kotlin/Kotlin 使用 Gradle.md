@@ -1,6 +1,6 @@
 ---
 title: Kotlin 使用 Gradle
-date: 2017-04-08
+date: 2017-03-20
 categories: Kotlin
 tags: Kotlin
 ---
@@ -13,7 +13,10 @@ tags: Kotlin
 
 下面就来总结几个常用的配置方法
 
-<!-- more -->## 2. 去除 `src` 中的 `java` 目录
+
+<!-- more -->
+
+## 2. 去除 `src` 中的 `java` 目录
 
 虽然说 Kotlin 经常和 Java 混着写，但是，有时候我们想写一个纯 Kotlin 程序的时候，却发现 `src` 目录中一直存在着一个 `java` 目录；
 

@@ -1,6 +1,6 @@
 ---
 title: Kotlin 内联函数
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -13,7 +13,10 @@ tags: Kotlin
 
 > 内联函数指的是将整个函数直接替换为函数实际代码的技术，它可以减少函数调用时由于跳转产生的开销浪费。
 
-<!-- more -->## 2. Kotlin 内联语法
+
+<!-- more -->
+
+## 2. Kotlin 内联语法
 
 例如 `lock()` 函数，它可以很方便的在调用点进行内联化操作：
 
@@ -94,7 +97,10 @@ inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) {
 内联的 lambda 只能在内联函数内部调用，或者作为一个 `inline` 参数传给内联函数；
 但是非内联的 labmda 可以储存在变量中，或者传递它。
 
-<!-- more -->## 4. 非局部返回
+
+<!-- more -->
+
+## 4. 非局部返回
 
 普通的 `return` 默认返回的函数是**最近的 `fun` 所定义的函数**，这叫做局部返回(local return)
 

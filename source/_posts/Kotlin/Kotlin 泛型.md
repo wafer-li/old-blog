@@ -1,6 +1,6 @@
 ---
 title: Kotlin 泛型
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -27,7 +27,10 @@ val box: Box<Int> = Box<Int>(1)
 val box = Box(1) // 1 has type Int, so the compiler figures out that we are talking about Box<Int>
 ```
 
-<!-- more -->## 2. Java 中的泛型可变性
+
+<!-- more -->
+
+## 2. Java 中的泛型可变性
 
 
 在 Java 中，泛型是不可变的。
@@ -239,7 +242,10 @@ fun fill(dest: Array<in String>, value: String) {
 > 事实上， `<out T>` 相当于 Java 的 `<? extends T>`；`<in T>` 相当于 Java 的 `<? super T>`
 
 
-<!-- more -->## 5. 星号
+
+<!-- more -->
+
+## 5. 星号
 
 除了上述的泛型类型限制外，Kotlin 还提供了一个星号类型(`*`)。
 这和 Java 的通配符(`?`)很相似，当你不知道具体的泛型类型，而又想使用它时，那么就可以使用星号类型。
@@ -278,7 +284,10 @@ fun <T> T.basicToString() : String {  // extension function
 val l = singletonList<Int>(1)
 ```
 
-<!-- more -->## 7. 泛型约束
+
+<!-- more -->
+
+## 7. 泛型约束
 
 与 Java 一样，Kotlin 也拥有泛型约束，这用在当泛型参数 `T` 未知时，用于对 `T` 的类型做出限制，即 `TUpper`
 

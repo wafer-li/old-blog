@@ -1,6 +1,6 @@
 ---
 title: Python 3 Class
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -9,7 +9,10 @@ tags: Python
 
 Python 是高度面向对象的语言，事实上，任何的变量类型都是**类**
 
-<!-- more -->## 1. 创建类
+
+<!-- more -->
+
+## 1. 创建类
 
 类由 `class` 关键词定义，后面加冒号表示类的作用域
 

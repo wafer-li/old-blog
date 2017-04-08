@@ -1,6 +1,6 @@
 ---
 title: Splash Screen
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -26,7 +26,10 @@ new Handler().postDelayed(new Runnable() {
 }
 ```
 
-<!-- more -->## 2. 在 Fragment 中使用
+
+<!-- more -->
+
+## 2. 在 Fragment 中使用
 
 当在 Fragment 中时，与 Activity 并无显著区别，**记住要在视图被加载之后使用**
 所以一般在 `onCreateView()` 之后调用 delay。

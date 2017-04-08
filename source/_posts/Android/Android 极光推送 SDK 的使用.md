@@ -1,6 +1,6 @@
 ---
 title: Android 极光推送 SDK 的使用
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---

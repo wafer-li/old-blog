@@ -1,6 +1,6 @@
 ---
 title: 8 Puzzle
-date: 2017-04-08
+date: 2016-10-14
 categories: Algorithm
 tags: Algorithm
 ---
@@ -20,7 +20,10 @@ Return the result of sequence. Like this below:
  initial        1 left          2 up          5 left          goal
 ```
 
-<!-- more -->## 2. Best-first search
+
+<!-- more -->
+
+## 2. Best-first search
 
 The best-first search is that from initial broad to the goal, we do our each step at the best, or small cost move.
 

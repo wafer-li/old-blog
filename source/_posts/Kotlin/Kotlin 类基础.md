@@ -1,6 +1,6 @@
 ---
 title: Kotlin 类基础
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -20,7 +20,10 @@ class Invoice {
 class Empty
 ```
 
-<!-- more -->## 2. 创建
+
+<!-- more -->
+
+## 2. 创建
 
 Kotlin 类使用 `constructor` 来指定构建方法。
 
@@ -235,7 +238,10 @@ class C() : A(), B {
 }
 ```
 
-<!-- more -->## 5. 抽象类
+
+<!-- more -->
+
+## 5. 抽象类
 
 一个声明了 `abstract` 的类是一个抽象类。
 

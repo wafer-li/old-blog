@@ -1,6 +1,6 @@
 ---
 title: Android 官方 Navigation Drawer
-date: 2017-04-08
+date: 2016-11-08
 categories: Android
 tags: Android
 ---
@@ -11,7 +11,10 @@ Navigation drawer 作为 Android Material Design 中主流的一种导航方式�
 
 下面就来看看如何进行 Navigation Drawer 的构建。
 
-<!-- more -->## 添加依赖
+
+<!-- more -->
+
+## 添加依赖
 
 官方的 Navigation Drawer 需要用到 `DrawerLayout` 和 `NavigationView`，它们都在 support design 包下。
 
@@ -60,7 +63,10 @@ compile 'com.android.support:design:24.2.1'
 
 header 的布局注意满足 [Material Design](https://material.google.com/patterns/navigation-drawer.html) 即可；布局样式和摆放不限。
 
-<!-- more -->## 定义 `menu/drawer_item.xml`
+
+<!-- more -->
+
+## 定义 `menu/drawer_item.xml`
 
 是时候给我们的 Nav Drawer 加上一点内容了，通过在 `menu/drawer_item.xml` 中定义相应的组件即可。
 
@@ -172,7 +178,10 @@ class MainActivity : BaseActivity() {
 
 并且继承 `Theme.AppCompact.Light.DarkActionBar`
 
-<!-- more -->### v21 增加关于状态栏的属性
+
+<!-- more -->
+
+### v21 增加关于状态栏的属性
 
 在 `value-21/style.xml` 中，增加另外的两项：
 
@@ -197,7 +206,10 @@ OK，到这里就大功告成了！
 
 ![](https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-10-24-05/RS/w1408.png)
 
-<!-- more -->### 补充：动态改变 status bar 颜色
+
+<!-- more -->
+
+### 补充：动态改变 status bar 颜色
 
 如果你想动态改变状态栏颜色的话，也有相应的 Java 接口。
 

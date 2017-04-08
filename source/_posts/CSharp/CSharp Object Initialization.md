@@ -1,6 +1,6 @@
 ---
 title: C# Object Initialization
-date: 2017-04-08
+date: 2016-12-17
 categories: CSharp
 tags: CSharp
 ---

@@ -1,6 +1,6 @@
 ---
 title: PHP
-date: 2017-04-08
+date: 2016-11-26
 categories: PHP
 tags: PHP
 ---
@@ -55,7 +55,10 @@ tags: PHP
     ?>
     ```
 
-<!-- more -->## 2. Variable
+
+<!-- more -->
+
+## 2. Variable
 
 1. The `$variable` begins with the `$` char.
 

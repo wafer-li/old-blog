@@ -1,6 +1,6 @@
 ---
 title: Java 泛型通配符和类型限定
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -21,7 +21,10 @@ Pair<? extends Employee>
 
 表示 **任何** 是 `Empolyee` 的子类；
 
-<!-- more -->## 2. 与类型参数 `T` 的不同
+
+<!-- more -->
+
+## 2. 与类型参数 `T` 的不同
 
 类型参数 `T` 和 通配符 `?` 似乎都是用于实现泛型灵活性的工具；
 

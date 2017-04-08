@@ -1,6 +1,6 @@
 ---
 title: Kotlin 对象
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -15,7 +15,10 @@ Kotlin 提供了一个 Object 属性用来实现在 Java 中很常见的三个�
 
 它们分别被称为 **对象表达式**，**对象声明**，**companion object**
 
-<!-- more -->## 2. 对象表达式
+
+<!-- more -->
+
+## 2. 对象表达式
 
 Kotlin 使用 对象表达式 来实现 Java 中常用的匿名类对象功能。
 

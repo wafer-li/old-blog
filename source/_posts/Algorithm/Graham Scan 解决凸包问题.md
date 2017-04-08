@@ -1,6 +1,6 @@
 ---
 title: Graham Scan 解决凸包问题
-date: 2017-04-08
+date: 2017-02-05
 categories: Algorithm
 tags: Algorithm
 ---
@@ -18,7 +18,10 @@ tags: Algorithm
 
 3. 按顺序考虑其余点，如果出现**顺时针的拐角则将该点忽略**
 
-<!-- more -->## 2. 要点
+
+<!-- more -->
+
+## 2. 要点
 
 ### 2.1 寻找原点
 
@@ -92,7 +95,10 @@ $$
 
 所以，三角形有向面积的正负就表明了三角形三个点的顺时针和逆时针的特性。
 
-<!-- more -->## 4. Corner Case
+
+<!-- more -->
+
+## 4. Corner Case
 
 主要出现的 Corner Case 有：
 

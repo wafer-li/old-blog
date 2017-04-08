@@ -1,6 +1,6 @@
 ---
 title: Java 多线程同步
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -24,7 +24,10 @@ tags: Java
 
 注意，线程同步不仅要求**互斥性**，也要求**可见性**，即只有一个线程能对同步代码块进行操作，同时，**该代码块对所有线程应是可见的**
 
-<!-- more -->## 1. 使用 ReentrantLock 实现同步
+
+<!-- more -->
+
+## 1. 使用 ReentrantLock 实现同步
 
 ### 1.1 锁的初级使用
 
@@ -65,7 +68,10 @@ public class Bank {
 使用 `ReentrantLock(boolean fair)` 可以指定构造一个**公平锁**。
 它倾向于让阻塞队列中等待时间最长的线程获取到锁，但是额外的检测成本可能会造成性能损失。
 
-<!-- more -->### 1.3 条件对象
+
+<!-- more -->
+
+### 1.3 条件对象
 
 条件对象 `Condition` 用于确保临界区中的代码符合执行条件。
 
@@ -228,7 +234,10 @@ class Bank {
 2. 试图获得锁时，不能设定超时
 3. 每个锁仅有单一的条件，可能是不够的
 
-<!-- more -->### 2.5 总结
+
+<!-- more -->
+
+### 2.5 总结
 
 那么，究竟是使用 `synchronized` 关键字还是 `Lock/Condition` 机制呢？
 
@@ -430,7 +439,10 @@ synchronized(lock) {
 
 注意，只有**变量**是线程安全的，其指向的数组、对象等仍然需要同步操作。
 
-<!-- more -->## 7. 死锁
+
+<!-- more -->
+
+## 7. 死锁
 
 Java 并不能在语言层次上避免或打破死锁的发生，这是程序设计的工作。
 
@@ -441,7 +453,7 @@ Java 并不能在语言层次上避免或打破死锁的发生，这是程序设
 例如，如果要让每个线程都拥有自己的 `SimpleDateFormat` 变量，那么只需要
 
 ```java
-public static final ThreadLocal<SimpleDateFormat> dateFormat =
+public static final ThreadLocal<SimpleDateFormat> date: 2017-03-16
     new ThreadLocal<SimpleDateFormat>() {
         protected SimpleDateFormat initalValue() {
             return new SimpleDateFormat("yyyy-MM-dd");
@@ -452,7 +464,7 @@ public static final ThreadLocal<SimpleDateFormat> dateFormat =
 如果要访问具体线程的格式化方法，可以调用
 
 ```java
-String dateStamp = dateFormat.get().format(new Date());
+String date: 2017-03-16
 ```
 
 在一个**给定线程**中**首次调用** `get()` 方法时，会调用 `initialValue()` 方法。
@@ -501,7 +513,10 @@ if (myLock.tryLock(100, TimeUnit.MILLSECONDS));
 
 同时，`await()` 方法也可以设定超时。
 
-<!-- more -->## 10. 读/写锁
+
+<!-- more -->
+
+## 10. 读/写锁
 
 如果很多线程从一个数据结构读取数据而很少修改其中数据的话，那么我们使用另一种锁 `ReentrantReadWriteLock` 来提高性能
 

@@ -1,11 +1,11 @@
 ---
 title: windows 自动更新走代理
-date: 2017-04-08
+date: 2016-10-14
 categories: Proxy
 tags: Proxy
 ---
 
-Tags: WinUpdate Proxy
+Tags: WinUpdate: 2016-10-14
 
 ---
 

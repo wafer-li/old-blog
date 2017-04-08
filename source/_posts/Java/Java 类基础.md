@@ -1,6 +1,6 @@
 ---
 title: Java 类基础
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -23,7 +23,10 @@ Java 称 `String` 为类，`a` 为引用，而当使用 `new` 请求，分配了
 
 类对象必须使用new来构建，单纯的声明类仅仅只是声明了类的引用，并没有分配空间
 
-<!-- more -->## 2. 自定义类
+
+<!-- more -->
+
+## 2. 自定义类
 
 1. 一个源文件只能拥有一个 `public` 类，且必须与文件名一致
 
@@ -50,13 +53,13 @@ Java 称 `String` 为类，`a` 为引用，而当使用 `new` 请求，分配了
     class Employee
     {
 	    private final String name;
-    	private final Date hiredate;
+    	private final Date hiredate: 2017-03-16
     }
 
     /**
     * 此时，name引用和对象都不能被修改【String类是不可变的类】
-    * hiredate所“指向的”对象不能改变，但是，仍然可以通过hiredate来调用对象方法改变对象的实例域
-    * 这里的hiredate类似于一个“指针常量”，即“指针所指向的位置不可改变，但是该内存块上所储存的数据却是可以改变的”
+    * hiredate: 2017-03-16
+    * 这里的hiredate: 2017-03-16
     */
     ```
 
@@ -152,7 +155,10 @@ Java 称 `String` 为类，`a` 为引用，而当使用 `new` 请求，分配了
     }
     ```
 
-<!-- more -->## 4. 包（`package`）
+
+<!-- more -->
+
+## 4. 包（`package`）
 
 ※类似于C++的名称空间
 

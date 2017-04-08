@@ -1,6 +1,6 @@
 ---
 title: Java 泛型基础
-date: 2017-04-08
+date: 2017-03-16
 categories: Java
 tags: Java
 ---
@@ -20,7 +20,10 @@ ArrayList<String> files = new ArrayList<String>();
 ArrayList<String> files = new ArrayList<>();
 ```
 
-<!-- more -->## 2. 泛型类
+
+<!-- more -->
+
+## 2. 泛型类
 
 1. 单个参数
 

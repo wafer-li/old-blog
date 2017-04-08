@@ -1,6 +1,6 @@
 ---
 title: Java to Kotlin
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -9,7 +9,10 @@ tags: Kotlin
 
 下面总结一些代码段，用于帮助从 Java 迁移到 Kotlin
 
-<!-- more -->## 2. Lazy Initialization
+
+<!-- more -->
+
+## 2. Lazy Initialization
 
 ```java
 // Java

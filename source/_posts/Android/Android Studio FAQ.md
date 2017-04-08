@@ -1,6 +1,6 @@
 ---
 title: Android Studio FAQ
-date: 2017-04-08
+date: 2016-10-14
 categories: Android
 tags: Android
 ---
@@ -45,7 +45,10 @@ tags: Android
 /captures
 ```
 
-<!-- more -->## 2. 当出现 cannot resolve symbols 时
+
+<!-- more -->
+
+## 2. 当出现 cannot resolve symbols 时
 
 首先，你需要检查依赖是否已经被正确加载了，如果依赖项没有问题
 那么请依照以下流程来尝试进行修复

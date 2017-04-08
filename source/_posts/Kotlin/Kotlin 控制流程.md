@@ -1,6 +1,6 @@
 ---
 title: Kotlin 控制流程
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -36,7 +36,10 @@ b }
 
 需要注意的是，**如果 `if` 作为一个表达式（需要其返回值），那么 `else` 语句就必须存在**。
 
-<!-- more -->## 2. When
+
+<!-- more -->
+
+## 2. When
 
 Kotlin 用 `when` 表达式替代了 Java 和 C++ 中的 `switch` 语句的功能。
 
@@ -129,7 +132,10 @@ for ((index, value) in array.withIndex())
     print("$index, $value")
 ```
 
-<!-- more -->## 4. While 和 do-while
+
+<!-- more -->
+
+## 4. While 和 do-while
 
 这两者和 Java 没有区别。
 
@@ -153,7 +159,10 @@ loop@ for (i in 1..100) {
 
 带标签的 `break` 用于跳出指定的循环结构，而带标签的 `continue` 则用于开始下一次指定的循环。
 
-<!-- more -->## 6. 带标签的 return
+
+<!-- more -->
+
+## 6. 带标签的 return
 
 不仅如此，Kotlin 还支持带标签的 `return`，这主要是因为 Kotlin 允许**函数的嵌套。**
 

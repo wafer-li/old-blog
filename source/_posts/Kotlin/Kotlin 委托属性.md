@@ -1,6 +1,6 @@
 ---
 title: Kotlin 委托属性
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -15,7 +15,10 @@ tags: Kotlin
 
 对于这些使用场景，Kotlin 支持使用**委托属性**
 
-<!-- more -->## 2. 声明
+
+<!-- more -->
+
+## 2. 声明
 
 ```kotlin
 class Example {
@@ -92,7 +95,10 @@ NEW has been assigned to ‘p’ in Example@33a17727.
 
 Kotlin 的标准库提供了一些工厂方法，用来实现篇头所说的几种场景。
 
-<!-- more -->### 4.1 lazy 变量
+
+<!-- more -->
+
+### 4.1 lazy 变量
 
 Kotlin 提供了一个 `lazy()` 方法用于 lazy 变量的生成。
 

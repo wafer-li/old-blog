@@ -1,6 +1,6 @@
 ---
 title: Kotlin 类型检查和造型
-date: 2017-04-08
+date: 2016-11-26
 categories: Kotlin
 tags: Kotlin
 ---
@@ -22,7 +22,10 @@ else {
 }
 ```
 
-<!-- more -->## 2. 智能造型(Smart Cast)
+
+<!-- more -->
+
+## 2. 智能造型(Smart Cast)
 
 智能造型指的是，当一个对象满足一个 `is` 表达式时，它就会被自动转换成这个类型。
 
@@ -94,7 +97,10 @@ val x: String = y as String
 val x: String? = y as String?
 ```
 
-<!-- more -->## 4. 安全的造型
+
+<!-- more -->
+
+## 4. 安全的造型
 
 为了避免在造型中抛出异常，我们可以使用一个安全的造型操作符 `as?`。
 

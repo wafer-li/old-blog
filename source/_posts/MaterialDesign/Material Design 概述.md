@@ -1,6 +1,6 @@
 ---
 title: Material Design 概述
-date: 2017-04-08
+date: 2016-10-14
 categories: MaterialDesign
 tags: MaterialDesign
 ---
@@ -11,7 +11,10 @@ Material Design 是 Google 官方在 2014 I/O 上发布的设计语言。
 
 事实上随着更多的 Android 设备进入到 5.0 以上系列，Material Design 的应用也愈加广泛。
 
-<!-- more -->## 2. 设计原则
+
+<!-- more -->
+
+## 2. 设计原则
 
 ### 2.1 Material is the metaphor
 

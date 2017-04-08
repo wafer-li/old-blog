@@ -1,6 +1,6 @@
 ---
 title: Python 3 Basic
-date: 2017-04-08
+date: 2016-12-12
 categories: Python
 tags: Python
 ---
@@ -12,7 +12,10 @@ tags: Python
 
 > Linux/Unix 中，如果不清楚 Python 的位置，可以使用 `#!/usr/bin/env python`，`env` 会自动寻找 Python 的解释器路径进行执行。
 
-<!-- more -->## 2. 字面意义的常量
+
+<!-- more -->
+
+## 2. 字面意义的常量
 
 如同 5, 1.23, 9.25e-3 这样的**数**，以及 "This is a string" 等**字符串**被称作字面意义上的**常量**
 
@@ -28,7 +31,10 @@ tags: Python
 Python 2 中区分 `long` 类型
 布尔型(`bool`) 属于整型(`integer`)的一种
 
-<!-- more -->### 2.2 字符串
+
+<!-- more -->
+
+### 2.2 字符串
 
 1. 字符串是字符的**序列**，其编码默认为 **Unicode**。
 
@@ -101,7 +107,10 @@ Python 2 中区分 `long` 类型
 
 ## 3. 变量
 
-<!-- more -->### 3.1 命名
+
+<!-- more -->
+
+### 3.1 命名
 
 同其他语言的变量命名无多大差别。
 

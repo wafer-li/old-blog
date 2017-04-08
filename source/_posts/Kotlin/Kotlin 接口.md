@@ -1,6 +1,6 @@
 ---
 title: Kotlin 接口
-date: 2017-04-08
+date: 2017-03-17
 categories: Kotlin
 tags: Kotlin
 ---
@@ -18,7 +18,10 @@ interface MyInterface {
 }
 ```
 
-<!-- more -->## 2. 实现接口
+
+<!-- more -->
+
+## 2. 实现接口
 
 和类继承一样，使用同样的语法进行接口的实现
 

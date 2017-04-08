@@ -1,6 +1,6 @@
 ---
 title: 策略模式(Strategy Pattern)
-date: 2017-04-08
+date: 2016-11-25
 categories: DesignPattern
 tags: DesignPattern
 ---
@@ -11,7 +11,10 @@ tags: DesignPattern
 
 此模式让算法的变化独立于使用算法的用户。
 
-<!-- more -->## 2. OO 基础
+
+<!-- more -->
+
+## 2. OO 基础
 
 - 抽象
 - 封装
@@ -34,7 +37,10 @@ tags: DesignPattern
 
   > `has-a` 比 `is-a` 更好，能够得到更多的应用弹性。
 
-<!-- more -->## 4.  具体实现
+
+<!-- more -->
+
+## 4.  具体实现
 
 **关键：使用委托，并使用 setter 实现行为的动态变化。**
 

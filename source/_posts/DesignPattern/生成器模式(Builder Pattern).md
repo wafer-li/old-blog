@@ -1,6 +1,6 @@
 ---
 title: 生成器模式(Builder Pattern)
-date: 2017-04-08
+date: 2017-03-12
 categories: DesignPattern
 tags: DesignPattern
 ---
@@ -17,7 +17,10 @@ tags: DesignPattern
 
 而工厂模式不需要指导者。
 
-<!-- more -->## 2. 结构类图
+
+<!-- more -->
+
+## 2. 结构类图
 
 ![](https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg)
 
@@ -234,7 +237,10 @@ public static void main(String[] args) {
 }
 ```
 
-<!-- more -->## 5. 模式扩展
+
+<!-- more -->
+
+## 5. 模式扩展
 
 当只有一个具体建造者时，可以直接省略生成器接口；
 
