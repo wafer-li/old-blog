@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2017-04-09 01:00:15
+comments: false
 ---
 
 ## 代码
