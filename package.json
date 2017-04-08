@@ -16,6 +16,7 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-inject": "^1.0.0",
     "hexo-math": "^3.0.2",
+    "hexo-reference": "^1.0.3",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-kramed": "^0.1.2",
     "hexo-renderer-stylus": "^0.3.1",
