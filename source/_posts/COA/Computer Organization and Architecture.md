@@ -103,37 +103,59 @@ Solutions for I/O devices:
 
 > There are three index of the rate, CPI, MIPS and MFLOPS
 
-> - CPI: The time cycle with one instruction needed (Cycle Per Instruction)
+- CPI: The time cycle with one instruction needed (Cycle Per Instruction)
 - MIPS: The number(million) of the instructions within in one second being executed.
 - MFLOPS: Like the MIPS, it is the floating point calculate instruction.
 
-$$CPI = {{\sum_{i = 1}^n(CPI_i \times I_i)} \over I_c}$$
-<div style="margin:0 auto;width:18em;">$I_c$ is the number of the instruction</div>
+$$
+CPI = {\frac{\sum_{i = 1}^n(CPI_i \times I_i)}{I_c}}
+$$
+
+$I_c$ is the number of the instruction
 
 The processing time $T$ is:
+
 $$T = I_c \times CPI \times \gamma$$
-<div style="margin:0 auto;width:20em;">$\gamma$ is the constant cycle, which means $1/f$</div>
+
+$\gamma$ is the constant cycle, which means $1/f$
+
 
 So, the MIPS is:
 
-$$MIPS = {I_c \over {T \times 10^6}} = {f \over {CPI \times 10^6}}$$
+$$
+\begin{align}
+MIPS &= {\frac{I_c}{T \times 10^6}} \\
+&= {\frac{f}{CPI \times 10^6}}
+\end{align}
+$$
 
-$$MFLOPS = {{Number \ of\ execute\ floating-point\ operations\ in\ a\ program} \over {Execution\ time \times 10^6 }}$$
+$$
+MFLOPS = {\frac{Number \ of\ execute\ floating-point\ operations\ in\ a\ program}{Execution\ time \times 10^6 }}
+$$
 
 ## 3) Amdahl's Law
 
 > The speed up rate between the single core machine and the multiple cores machine.
 
-$$Speedup = {{time\ to\ execute\ program\ on\ a\ single\ processor} \over {time\ to\ execute\ program\ on N\ parallel\ processors}} = {{T{(1 - f)} + Tf} \over {T{(1-f)} + {{Tf} \over N}} } = {1 \over {(1-f) + {f\over N}}}$$
+$$
+\begin{align}
+Speedup & = {\frac{time\ to\ execute\ program\ on\ a\ single\ processor}{time\ to\ execute\ program\ on N\ parallel\ processors}} \\
+& = {\frac{T{(1 - f)} + Tf}{T{(1-f)} + {\frac{Tf}{N}}} } \\
+& = {\frac{1}{(1-f) + {\frac{f}{N}}}}
+\end{align}
+$$
 
 $f$ refer to the code infinitely parallelizable with **no scheduling overhead**.
+
 $(1-f) of code inherently serial$
+
 $T$ is the total execution time for program on single processor
+
 $N$ is number of processors that fully exploite parallel portions of code
 
-> Conclusion:
+Conclusion:
 
-> - $f$ small, parallel processor has little effect
+- $f$ small, parallel processor has little effect
 - $N \sim \infty$, the speedup bound by $1/(1-f)$
 
 ## 4) Supplement
