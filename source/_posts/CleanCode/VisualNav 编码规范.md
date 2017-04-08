@@ -15,14 +15,14 @@ VisualNav 项目的代码文件主要包含 Java、XML 以及 Gradle 三种。�
 
  3. 每行仅书写一条语句，多条语句不能写在同一行中；
 
- 3. 限制代码行的长度，每行不应该超过 100 字符。如果一条语句的长度超过 100 字符，需要适当地进行断行，具体断行的方法会在不同文件类型的规范中进行规定；
-
- 4. 注释详细。推荐使用英文注释，也可以使用中文进行注释。对注释的具体要求会在不同文件类型的规范中进行规定；
-
- 5. 每个代码文件的末尾必须有且只有一个空行。
-
-
 <!-- more -->
+
+ 4. 限制代码行的长度，每行不应该超过 100 字符。如果一条语句的长度超过 100 字符，需要适当地进行断行，具体断行的方法会在不同文件类型的规范中进行规定；
+
+ 5. 注释详细。推荐使用英文注释，也可以使用中文进行注释。对注释的具体要求会在不同文件类型的规范中进行规定；
+
+ 6. 每个代码文件的末尾必须有且只有一个空行。
+
 
 ## 2. Java 编码规范
 
@@ -46,6 +46,7 @@ VisualNav 项目的代码文件主要包含 Java、XML 以及 Gradle 三种。�
  */
 public class UserInfoRequest extends Request {
     ...
+}
 ```
 
 #### 2.2.2 方法注释
@@ -64,6 +65,7 @@ public class UserInfoRequest extends Request {
  */
 public User parseJson(JSONObject userObject) throws JSONException {
     ...
+}
 ```
 
 一般情况下，类中属性的 get 和 set 方法不需要 Javadoc 注释。如果 get 和 set 方法会带来特殊的效果，或者对应的属性不容易理解，就需要提供注释。例如：
@@ -117,9 +119,6 @@ mRequest.setShouldCache(false); // disable caching
 super.execure();
 ```
 
-##
-<!-- more -->
-
 ## 2.2.4 关于调试用注释
 
 master 分支或合并到 master 分支的代码不允许出现调试用的注释
@@ -133,14 +132,11 @@ public void doSomeThing() {
 //    do3();    // 此即为调试用注释，master 分支上的代码不允许出现这种注释
 }
 ```
-有关 Git 的规范，请看下面的 [Git 规范](#git-standards) 部分
+有关 Git 的规范，请看下面的 Git 规范 部分
 
 ### 2.3 缩进与排版
 
 除了第 1 节中提出的一些通用规范，还应该遵守以下缩进和排版的规范。
-
-
-<!-- more -->
 
 #### 2.3.1 换行
 
@@ -158,7 +154,7 @@ public void doSomeThing() {
 
  1. 长度过长的方法定义和调用，可以在参数处进行断行，并保持参数对齐。
 
-    ```
+    ```java
     public UserInfoRequest(Context context, String name,
                            RequestSuccessListener<User> successListener,
                            RequestErrorListener errorListener)
@@ -166,7 +162,7 @@ public void doSomeThing() {
 
  2. 在运算符处断开较长的表达式。
 
-    ```
+    ```java
     num1 = num2 * (num3 + num4 - num5) / num6
             + (num7 - num8) * num9 / num10;
     if ((condition1 || condition2)
@@ -178,7 +174,7 @@ public void doSomeThing() {
 
 大括号的使用规则：在任何情况下，左大括号（`{`）都要与语句在同一行，右大括号（`}`）独占一行。
 
-```
+```java
 // 正确                    错误
 if (a == 1) {             if (a == 1)
     ...                   {
@@ -187,9 +183,6 @@ if (a == 1) {             if (a == 1)
 ```
 
 编写方法时，按功能、步骤对代码进行分块，以一个空行分开不同的代码块。每个代码块都需要给出解释其作用的注释，具体格式参考 2.2.3 节。
-
-##
-<!-- more -->
 
 ## 2.3.2 空格与括号
 
@@ -223,11 +216,11 @@ if (a == 1) {             if (a == 1)
 
     左大括号（`{`）之前需要一个空格，例如：
 
-    ```
+    ```java
     // 正确                    错误
     if (a == 1) {             if (a == 1){
         ...
-    }
+    }                         }
     ```
 
  2. 关键字与括号之间要添加 1 个空格，方法名、类名和括号之间不需要空格。
@@ -315,6 +308,7 @@ if (a == 1) {             if (a == 1)
     // 数据域
     private UserBean userBean = UserBean.getInstance();
     ```
+
 3. 类的成员变量和方法之间要有空行
 
     ```java
@@ -387,18 +381,16 @@ if (a == 1) {             if (a == 1)
     }
     ```
 
-###2.4 命名规范
+### 2.4 命名规范
 
 
-<!-- more -->
-
-####2.4.1 通用规范
+#### 2.4.1 通用规范
 
 1. 将缩写词作为普通单词处理。
      例如在类名中：
 
     ```java
-    class XmlParser  // 而不是 XMLParser
+    class XmlParser {...} // 而不是 XMLParser
     ```
 
 2. 不允许出现 `a, an, the` 等冠词
@@ -411,35 +403,36 @@ if (a == 1) {             if (a == 1)
 
 3. 除**常量外**，其余命名不允许出现下划线字符(`_`)
 
-####2.4.2 包名
+#### 2.4.2 包名
 
 包名必须为全小写字母。如果出现多个单词构成的包名，不进行分隔。例如：
 
-```
+```java
 com.example.packagename
 ```
 
-####2.4.3 类名
+#### 2.4.3 类名
 
 类名必须是名词或名词短语，每个单词首字母均大写。例如：
 
-```
-class ImageDownloader
+```java
+class ImageDownloader {...}
 ```
 
-####2.4.4 接口名
+#### 2.4.4 接口名
 
 与类名规则相同。不需要加 `I` 前缀。
 
-```
-interface OnButtonClickListener  // 而不是IOnButtonClickListener
+```java
+// 而不是IOnButtonClickListener
+interface OnButtonClickListener {...}
 ```
 
-####2.4.5 方法名
+#### 2.4.5 方法名
 
 方法名是一个动词或动词短语，第一个单词的首字母小写，其余单词首字母均大写。例如：
 
-```
+```java
 public int getId()
 private void start();
 ```
@@ -448,27 +441,27 @@ private void start();
 
 常量名所有字母均大写，单词之间以下划线（`_`）分隔。例如：
 
-```
+```java
 public static final String DATABASE_NAME = "...";
 ```
 
 类中的成员变量需要加前缀 `m`，每个单词首字母大写。例如：
 
-```
+```java
 private String mLastName;
 public int mAge;
 ```
 
 ~~~类的**静态**成员变量需要添加前缀 `s`，其余每个单词首字母大写。例如：~~~
 
-```
+```java
 // 抛弃的旧规范
 private static int sCountOfInstances;
 ```
 
 局部变量第一个单词首字母小写，其余每个单词首字母大写。例如：
 
-```
+```java
 public void method() {
     int tempVariable;
     ...
@@ -481,7 +474,7 @@ public void method() {
 
  1. 异常处理的首要原则是**不能忽略异常**。例如以下代码是不可取的：
 
-    ```
+    ```java
     try {
         JSONTokener jsonTokener = new JSONTokener(jsonString);
     } catch (JSONException ex) { }
@@ -493,7 +486,7 @@ public void method() {
 
     必须根据异常的种类分别进行捕获和处理，不能直接捕获 `Exception`。以下代码是不可取的：
 
-    ```
+    ```java
     try {
         ...  // 这里会抛出多种异常
     } catch (Exception ex) {
@@ -503,7 +496,7 @@ public void method() {
 
     正确的做法是：
 
-    ```
+    ```java
     try {
         ...
     } catch (OneKindOfException ex1) {
@@ -525,7 +518,7 @@ public void method() {
 
 Annotation 必须出现在其他任何修饰符之前，每个 Annotation 独占一行。例如：
 
-```
+```java
 @Override
 protected void onCreated(Bundle savedInstanceState) {
     ...
@@ -540,7 +533,7 @@ TODO 注释用于标记和管理待办事项。在当前无法完成某项工作
 
 一般的做法是在注释开头标记 `TODO`。例如：
 
-```
+```java
 // TODO: add a click listener for button
 ```
 
@@ -563,7 +556,7 @@ XML 文件的编码规范以 Android Studio 默认格式为准，主要包括以
  7. 编辑完成 XML 文件后，请使用 Android Studio 的 Code 菜单中的 **Reformat Code** 功能对格式进行自动调整。
 
 
-## 4. Git 规范 {#git-standards}
+## 4. Git 规范
 
 这里主要遵循的是 Git Flow 的简化版，主要包括以下几点要求：
 
@@ -579,14 +572,14 @@ XML 文件的编码规范以 Android Studio 默认格式为准，主要包括以
 
 - 以动词开头的祈使句，首字母大写
 
-    ```
+    ```bash
     git commit -m "Add GSON module"
     ```
 - 信息过多，应进行折行，而不能在一行内写完
 
     > 此时应使用 `git commit` 在弹出的编辑器中填写多行信息
 
-    ```
+    ```bash
     git commit
 
     """
@@ -600,7 +593,7 @@ XML 文件的编码规范以 Android Studio 默认格式为准，主要包括以
 
     > 尽量说明操作内容和所涉及到的部分
 
-    ```
+    ```bash
     "Fix bug" // 错误
     "Fix not render bug of the register page"   // 正确
     ```
@@ -609,15 +602,13 @@ XML 文件的编码规范以 Android Studio 默认格式为准，主要包括以
 
     > 相应的，在对应的 issue 就要对问题进行详细的描述
 
-    ```
+    ```bash
     // 都是正确的
     "Fix #1"
     "Fix the bug of #2"
     "Fix the render bug of #3"
     ```
 
-
-<!-- more -->
 
 ### 4.2 拉取
 
@@ -636,8 +627,6 @@ XML 文件的编码规范以 Android Studio 默认格式为准，主要包括以
 - master 分支应是**随时可以运行**的，不允许出现不可运行的错误（编译错误，打开即 Crash 等）
 - 各分支的内容应基于**最新的** master 分支程序**架构**进行编写，可以随时无冲突的 merge 到 master
 
-
-<!-- more -->
 
 ### 4.4 合并
 
@@ -673,14 +662,12 @@ XML 文件的编码规范以 Android Studio 默认格式为准，主要包括以
 
 1. 冲突**必须立即解决**，不允许忽视冲突 force push
 2. 由其他分支相互合并引起的冲突，由相应开发者进行协商处理
-3. 关于向 master 合并的冲突，请查看[重构](#refactor)部分
+3. 关于向 master 合并的冲突，请查看部分
 
     > 由于所有分支必须基于最新 master 程序架构编写，会出现此种冲突的场景仅存在于重构和 HotFix
 
 
-<!-- more -->
-
-### 4.6 重构 {#refactor}
+### 4.6 重构
 
 1. 重构前
 

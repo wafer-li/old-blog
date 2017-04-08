@@ -6,9 +6,6 @@ tags: CleanCode
 ---
 ## 1. Naming
 
-
-<!-- more -->
-
 ### 1.1 Common
 
 1. Do not allow `a, an, the` appear in the name
@@ -16,6 +13,8 @@ tags: CleanCode
 
 2. Name should be divide into words
 > `reSetStatus` are **not** correct, it should be `resetStatus`
+
+<!-- more -->
 
 3. Not allow single character prefix of variable name
 > The `aName`, `kFlag`, `cBook` are all **NOT** correct
@@ -97,9 +96,6 @@ static final Logger logger = Logger.getLogger(MyClass.getName());
 static final String[] nonEmptyArray = {"these", "can", "change"};
 ```
 
-##
-<!-- more -->
-
 ## 1.2.6 Camel case: defined
 
 With the defined name, should still obey the camelCase
@@ -115,9 +111,6 @@ Prose form|	Correct|	Incorrect
 
 
 ## 2. Formatting
-
-
-<!-- more -->
 
 ### 2.1 Braces
 
