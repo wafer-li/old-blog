@@ -69,7 +69,7 @@ Hexo 插件列表中，也存在一个 PlantUML 的插件，`hexo-tag-plantuml`�
 
 所以就只能自造轮子：自己实现了一个 `filter` 插件，用来将 code fence 转换成 PlantUML 图。
 
-插件源码在[这里](git@github.com:wafer-li/hexo-filter-plantuml.git)
+插件源码在[这里](https://github.com/wafer-li/hexo-filter-plantuml)
 
 ## 5. TODO List
 
