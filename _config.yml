@@ -71,6 +71,12 @@ pagination_dir: page
 # Comment
 disqus_shortname: wafer-li
 
+# Feed
+feed:
+    type: atom
+    path: atom.xml
+    limit: 30
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
