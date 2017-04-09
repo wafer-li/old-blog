@@ -47,11 +47,8 @@ tags: ["Hexo", "Blog"]
 
 不过这个插件在某些时候也存在问题；
 
-就表现上来看，只有在两个 $ 时，才能正确解析 `_`；
+在[这里](http://xudongyang.coding.me/math-in-hexo/)有一个 workaround
 
-而在一个 $ 时不行。
-
-所以在使用的时候要稍微注意一点排版，尽量不要让有下标的两个公式在同一行内。
 
 ## 4. PlantUML
 
