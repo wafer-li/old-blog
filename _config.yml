@@ -77,6 +77,12 @@ feed:
     path: atom.xml
     limit: 30
 
+# Search
+search:
+  path: search.xml
+  field: post
+
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
