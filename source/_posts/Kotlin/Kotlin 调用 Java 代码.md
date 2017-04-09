@@ -9,7 +9,7 @@ tags: Kotlin
 
 Kotlin 完美支持 Java，你可以无缝地在 Kotlin 中引入 Java 库，调用 Java 类等。
 
-```
+```kotlin
 import java.util.*
 
 fun demo(source: List<Int>) {
@@ -66,7 +66,7 @@ foo.`is`(bar)
 
 对于 Platform Type，我们可以使用一个 nullable 的 Kotlin 类型来承接它，也可以使用 non-nullable 对象。
 
-```
+```kotlin
 val nullable: String? = item // allowed, always works
 val notNull: String = item // allowed, may fail at runtime
 ```
@@ -90,7 +90,7 @@ Kotlin 也会自动在函数调用前插入断言语句。
 - `Array<(out) T>!`  表示关于 `T` 或者其子类型的 Java 数组，有可能为空，也可能不为空。
 
 
-<!-- more -->
+
 
 ## 7. Nullability 注解
 
@@ -161,7 +161,7 @@ Java type | Kotlin type
 `String[]` |`kotlin.Array<(out) String>!`
 
 
-<!-- more -->
+
 
 ## 9. Java 泛型
 
@@ -251,7 +251,7 @@ if (i in array.indices) { // same as (i >= 0 && i < array.size)
 ```
 
 
-<!-- more -->
+
 
 ## 11. Java 不定参数
 

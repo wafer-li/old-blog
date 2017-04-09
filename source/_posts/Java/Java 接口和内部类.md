@@ -10,13 +10,13 @@ tags: Java
 这是 Java 中的专有名词，指代的是 **interface** 关键字
 
 
-<!-- more -->
-
 ### 1.1 接口
 
 ```java
 public interface Comparable {...}
 ```
+
+<!-- more -->
 
 - 接口不是类，而是对类的一组需求描述
 - 接口中的所有方法自动为public
@@ -78,7 +78,7 @@ public interface Comparable {...}
     - 需要声明 `CloneNotSupportedException` 异常
 
 
-<!-- more -->
+
 
 ## 2. 内部类
 
@@ -106,7 +106,7 @@ class TalkingClock
 - 在外围类的作用域之外，使用 `OuterClass.InnerClass` 引用内部类
 
 
-<!-- more -->
+
 
 ### 2.3 局部内部类
 
@@ -145,7 +145,7 @@ new InterfaceType()
 ```
 
 
-<!-- more -->
+
 
 ### 2.5 静态内部类
 

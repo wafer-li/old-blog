@@ -87,7 +87,7 @@ New -> Value Resource -> Choose Locale -> Select Region；
 这样，我们就能够在 Translation Editor 中编辑简体中文了。
 
 
-<!-- more -->
+
 
 ## 5. 获取当前使用的语言
 

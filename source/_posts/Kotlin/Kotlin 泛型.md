@@ -243,7 +243,7 @@ fun fill(dest: Array<in String>, value: String) {
 
 
 
-<!-- more -->
+
 
 ## 5. 星号
 
@@ -285,7 +285,7 @@ val l = singletonList<Int>(1)
 ```
 
 
-<!-- more -->
+
 
 ## 7. 泛型约束
 

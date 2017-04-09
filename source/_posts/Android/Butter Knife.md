@@ -8,15 +8,17 @@ tags: Android
 ## 1. 安装与配置
 
 
-<!-- more -->
+
 
 ### 1.1 添加 Gradle 依赖
 
 在 `app/build.gradle` 中加入如下语句
 
-```
+```groovy
 compile 'com.jakewharton:butterknife:7.0.1'
 ```
+
+<!-- more -->
 
 ### 1.2 压制 Lint Warnning
 
@@ -24,7 +26,7 @@ compile 'com.jakewharton:butterknife:7.0.1'
 
 在 `app/build.gradle` 中添加如下代码
 
-```
+```groovy
 lintOptions {
   disable 'InvalidPackage'
 }
@@ -36,7 +38,7 @@ lintOptions {
 
 在 `proguard.cfg` 文件中配置
 
-```
+```proguard
 -keep class butterknife.** { *; }
 -dontwarn butterknife.internal.**
 -keep class **$$ViewBinder { *; }
@@ -55,7 +57,7 @@ lintOptions {
 Butter Knife 最大的好处就是使用注解式开发，从而减少大量重复冗余的代码。
 
 
-<!-- more -->
+
 
 ### 2.1 绑定视图
 
@@ -308,7 +310,7 @@ void onNothingSelected() {
 ```
 
 
-<!-- more -->
+
 
 ### 2.6 简化的 findViewById()
 

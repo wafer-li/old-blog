@@ -55,7 +55,7 @@ val l = b.length // error: variable 'b' can be null
 
 
 
-<!-- more -->
+
 
 ## 4. 访问可能为空变量的方法
 
@@ -116,7 +116,7 @@ for (item in listWithNulls) {
 
 
 
-<!-- more -->
+
 
 ### 4.3 Elvis 表达式
 
@@ -153,7 +153,7 @@ val l = b!!.length
 也就是说，如果你需要 NPE，就使用这个操作符。
 
 
-<!-- more -->
+
 
 ## 5. 安全的造型
 

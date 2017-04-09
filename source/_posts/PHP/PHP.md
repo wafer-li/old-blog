@@ -15,8 +15,9 @@ tags: PHP
     ```
 
 2. Comments
-> `//` and `#` for a single line.
-`/*  */ ` for block.
+
+    > `//` and `#` for a single line.
+    >    `/*  */ ` for block.
 
     ```php
     <?php

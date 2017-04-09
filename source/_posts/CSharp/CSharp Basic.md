@@ -73,7 +73,7 @@ bool b1 = true, b2 = false, b3 = true;
 当然也可以用全名来声明一个基本变量，不过基本没人这么干。
 
 
-<!-- more -->
+
 
 ### 2.2 默认值
 
@@ -99,7 +99,7 @@ bool b = bool.Parse("True");
 ```
 
 
-<!-- more -->
+
 
 ### 2.4 Big Number
 
@@ -193,7 +193,7 @@ s1 + s2;			// 转换为 int
 ```
 
 
-<!-- more -->
+
 
 ### 4.1 checked 和 unchecked
 

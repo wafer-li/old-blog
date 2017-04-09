@@ -61,7 +61,7 @@ tags: HTML
     属于最常用功能，通过 `rel="stylesheet"` 和 `herf` 来指定需要链接的外部 CSS 表
 
 
-<!-- more -->
+
 
 ## 5. `<script>` 标签
 

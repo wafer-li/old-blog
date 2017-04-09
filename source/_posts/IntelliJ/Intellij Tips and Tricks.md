@@ -20,6 +20,7 @@ tags: IntelliJ
 
     > 使用 `<class>.<symbol>` 可以跳转到特定类的方法或者变量
 
+<!-- more -->
 
 4. `double shift` Search Everywhere
 
@@ -65,7 +66,7 @@ tags: IntelliJ
     > 在右上角的感叹号图标右键点击，可以设置 **只在 Error 之间跳转**
 
 
-<!-- more -->
+
 
 ## 2. 新建
 
@@ -142,7 +143,7 @@ tags: IntelliJ
 
 
 
-<!-- more -->
+
 
 ## 5. 补全
 
@@ -194,7 +195,7 @@ tags: IntelliJ
 3. 使用 Analyze Data Flow 可以分析特定变量的流动，有助于读懂他人代码
 
 
-<!-- more -->
+
 
 ## 8. 版本控制
 

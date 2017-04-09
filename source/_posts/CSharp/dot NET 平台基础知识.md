@@ -137,7 +137,7 @@ delegate int BinaryOp(int x, int y);
 这样，就可以使用委托来实现回调，而不需要像 Java 一样使用臃肿的接口来进行回调动作。
 
 
-<!-- more -->
+
 
 ### 7.2 结构(struct)
 
@@ -149,7 +149,7 @@ C# 的结构和 C99 之后的结构很像，用法也趋近；可以包含字段
 
 同样，.NET 具有一个內建的核心数据类型，用于兼容不同平台的类型结构。下表给出了一个 CTS 数据类型和 C# 、C++ 的相应对比。
 
-| CTS            | C#      | C++                          |
+| CTS            | C| C++                          |
 | -------------- | ------- | :--------------------------- |
 | System.Byte    | byte    | unsigned char                |
 | System.SByte   | sbyte   | signed cahr                  |
@@ -176,7 +176,7 @@ CLR 类似于 JVM，利用 `mscoree.dll` 库来进行 .NET 程序加载工作。
 ![](http://www.ituring.com.cn/download/01YY7g3jBdEN)
 
 
-<!-- more -->
+
 
 ## 10. 名称空间(namespace)
 

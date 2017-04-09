@@ -96,7 +96,7 @@ NEW has been assigned to ‘p’ in Example@33a17727.
 Kotlin 的标准库提供了一些工厂方法，用来实现篇头所说的几种场景。
 
 
-<!-- more -->
+
 
 ### 4.1 lazy 变量
 

@@ -84,7 +84,7 @@ IntProgression.fromClosedRange(start, end, increment)
 除了上面介绍的有用的方法外，还有一些比较有用的方法。
 
 
-<!-- more -->
+
 
 ### 5.1 `reversed()`
 

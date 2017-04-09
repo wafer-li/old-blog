@@ -38,7 +38,7 @@ tags: DesignPattern
   > `has-a` 比 `is-a` 更好，能够得到更多的应用弹性。
 
 
-<!-- more -->
+
 
 ## 4.  具体实现
 

@@ -149,7 +149,7 @@ public abstract String getDescription();   // 抽象方法
     > 如果在子类中重新定义equals，则先调用超类的equals
 
 
-<!-- more -->
+
 
 ### 10.2 `hashCode()` 方法
 

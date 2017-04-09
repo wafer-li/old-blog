@@ -9,6 +9,8 @@ tags: Android
 
 > 如果你想要尽量的减少冲突，就**不要直接使用** Android Studio 默认生成的 `.gitignore` 文件，而是要在 `.gitignore` 中添加一些项目，或者直接导入其内置的许多模板。
 
+<!-- more -->
+
 这里有一些应该加入的项目:
 
 1. `/.idea` 文件夹
@@ -46,7 +48,6 @@ tags: Android
 ```
 
 
-<!-- more -->
 
 ## 2. 当出现 cannot resolve symbols 时
 

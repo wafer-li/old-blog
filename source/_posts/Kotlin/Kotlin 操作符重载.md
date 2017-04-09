@@ -75,7 +75,7 @@ Expression | Translated to
 ## 2.2 二元操作符
 
 
-<!-- more -->
+
 
 ### 2.2.1 数学运算与范围
 
@@ -100,7 +100,7 @@ Expression | Translated to
 对于这些方法，执行的步骤一样，但是只不过把调用关系颠倒了过来。
 
 
-<!-- more -->
+
 
 ### 2.2.3 方括号操作符
 
@@ -127,7 +127,7 @@ Symbol | Translated to
 圆括号操作符会根据参数调用相应的 `invoke()` 方法
 
 
-<!-- more -->
+
 
 ### 2.2.5 复合赋值操作
 
@@ -189,7 +189,7 @@ Expression | Translated to
 相等性检查被转换成如此复杂的表达式是为了筛选 `null` 值，而且保证 `null == null` 返回 `true`
 
 
-<!-- more -->
+
 
 ### 2.7 比较运算符
 

@@ -74,7 +74,7 @@ It is very easy, **just follow these instructions**:
 5. Done!
 
 
-<!-- more -->
+
 
 ## 3. Install Poi
 

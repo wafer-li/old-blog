@@ -238,7 +238,7 @@ public static void main(String[] args) {
 ```
 
 
-<!-- more -->
+
 
 ## 5. 模式扩展
 

@@ -19,6 +19,8 @@ public class Address {
 }
 ```
 
+<!-- more -->
+
 > 注意，变量默认为 `public` 属性。
 
 由于变量默认为 `public`，所以直接使用类成员运算符(`.`)，即可调用其属性和方法。
@@ -64,7 +66,7 @@ class Foo {
 
 
 
-<!-- more -->
+
 
 ## 2. Getter 和 Setter
 
@@ -175,7 +177,7 @@ const val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
 ```
 
 
-<!-- more -->
+
 
 ## 4. 延迟初始化
 

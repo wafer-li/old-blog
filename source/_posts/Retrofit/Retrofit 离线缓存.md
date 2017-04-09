@@ -2,7 +2,7 @@
 title: Retrofit 离线缓存
 date: 2016-10-26
 categories: Retrofit
-tags: Retrofit
+tags: [Retrofit, Android]
 ---
 
 ## 概述

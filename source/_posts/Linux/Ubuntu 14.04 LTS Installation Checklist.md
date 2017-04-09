@@ -5,7 +5,7 @@ categories: Linux
 tags: Linux
 ---
 
-## 0. Intro
+## 1. Intro
 
 This is the installation checklist of the lastest Ubuntu LTS version: Ubuntu 14.04 LTS
 
@@ -15,7 +15,7 @@ Actually, it's only the Wireless Issue exist.
 
 <!-- more -->
 
-## 1. Before Install
+## 2. Before Install
 
 1. Backup all the **proxy** settings and the other software settings which cannot be synchronized.
 
@@ -23,7 +23,7 @@ Actually, it's only the Wireless Issue exist.
 
     > The `/boot`, `/`, `/swap` and the `/home`
 
-## 2. System Configuration
+## 3. System Configuration
 
 1. Change software source to mainland China
 
@@ -63,7 +63,7 @@ Actually, it's only the Wireless Issue exist.
 
     > Check this [post](http://www.dedoimedo.com/computers/ubuntu-trusty-realtek.html) for details.
 
-## 3. The necessary softwares
+## 4. The necessary softwares
 
 1. Install shadowsocks
 
@@ -92,9 +92,9 @@ Actually, it's only the Wireless Issue exist.
     Maybe the k-vim will be better.
 
 
-<!-- more -->
 
-## 4. Entertainment
+
+## 5. Entertainment
 
 The entertainment is almost the Kancolle game.
 
@@ -118,7 +118,7 @@ The entertainment is almost the Kancolle game.
     The origin registry is extremely slow.
     Recommand to change it to the `http://registry.cnpm.org`
 
-## 5. Java & Jetbrains' IDEs
+## 6. Java & Jetbrains' IDEs
 
 1. Using the **oracle's Java** is recommended.
 
@@ -145,9 +145,9 @@ The entertainment is almost the Kancolle game.
     ~~But the bulit-in manager works fine, so it's not so important at this moment.~~
 
 
-<!-- more -->
 
-## 6. Desktop Entry
+
+## 7. Desktop Entry
 
 The desktop entry of per user store in
 `~/.local/share/applications`
@@ -164,7 +164,7 @@ Terminal=false
 Categories= # The categories
 ```
 
-## 7. Fonts
+## 8. Fonts
 
 By far, the font settings seems acceptable.
 

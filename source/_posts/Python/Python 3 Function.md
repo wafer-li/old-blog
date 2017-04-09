@@ -150,7 +150,7 @@ Python 的函数**默认为没有返回值**
 一个没有返回值的函数的 `return` 语句等价于 `return None`
 
 
-<!-- more -->
+
 
 ## 9. DocStrings
 
@@ -246,7 +246,7 @@ def module_level_function(param1, param2=None, *args, **kwargs):
 ## 10. 注解(Annotations)
 
 
-<!-- more -->
+
 
 ### 10.1 参数注解
 

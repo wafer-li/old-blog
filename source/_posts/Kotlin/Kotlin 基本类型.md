@@ -43,7 +43,7 @@ Kotlin 中的数字类型有 `Double`、`Float`、`Long`、`Int`、`Short`、`By
     - 使用 `f` 或者 `F` 后缀来表示 `Float`: `123.5f`
 
 
-<!-- more -->
+
 
 ### 1.3 表示法
 
@@ -110,7 +110,7 @@ Kotlin 支持全套 Java 的普通数字运算符。
 
 
 
-<!-- more -->
+
 
 ## 2. 字符类型
 
@@ -174,7 +174,7 @@ val x: IntArray = intArrayOf(1, 2, 3)
 但是也支持使用方括号进行访问的操作 `[]`
 
 
-<!-- more -->
+
 
 ### 4.3 多维数组
 

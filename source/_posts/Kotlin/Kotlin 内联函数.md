@@ -98,7 +98,7 @@ inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) {
 但是非内联的 labmda 可以储存在变量中，或者传递它。
 
 
-<!-- more -->
+
 
 ## 4. 非局部返回
 

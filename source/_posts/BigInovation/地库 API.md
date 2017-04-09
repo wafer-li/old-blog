@@ -8,12 +8,15 @@ tags: BigInovation
 ## Global rules
 
 
-<!-- more -->
+
 
 ### Request
 
 1. Requests are MOSTLY without body, just `METHOD /example`
 2. Some request may need sending a JSON. The JSON MUST be put in HTTP body
+
+<!-- more -->
+
 
 ### Response
 
@@ -97,7 +100,7 @@ Request:
 Response: (empty JSON object)
 
 
-<!-- more -->
+
 
 ### Get map GeoJSON
 

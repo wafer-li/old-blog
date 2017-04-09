@@ -11,6 +11,8 @@ tags: MaterialDesign
 
 <center><img src="https://material-design.storage.googleapis.com/publish/material_v_9/0B7WCemMG6e0VVFpiZ041SmhwY2c/what_is_material_environment.png" width="500"/></center>
 
+<!-- more -->
+
 所有的实体对象都具有 x, y, z 三个坐标。
 
 一个对象只能拥有一个 z 轴位置。（即不允许两个实体重叠）
@@ -22,7 +24,6 @@ tags: MaterialDesign
     > 即阴影实际上就是高低差的代表
 
 
-<!-- more -->
 
 ## 2. 3D 世界
 

@@ -98,7 +98,7 @@ val x: String? = y as String?
 ```
 
 
-<!-- more -->
+
 
 ## 4. 安全的造型
 

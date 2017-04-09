@@ -41,7 +41,7 @@ data class User(val name: String, val age: Int)
 > 如果需要在 JVM 上使得类具有一个无参数的构造器，那么所有的 primary constructor 参数都必须有默认值
 
 
-<!-- more -->
+
 
 ## 4. 复制
 

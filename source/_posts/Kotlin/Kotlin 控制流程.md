@@ -24,6 +24,8 @@ max = b
 val max = if (a > b) a else b
 ```
 
+<!-- more -->
+
 同时，`if` 表达式也支持**语句块**，语句块中的**最后一个**变量或常量的值就是语句块的返回值。
 
 ```kotlin
@@ -37,7 +39,7 @@ b }
 需要注意的是，**如果 `if` 作为一个表达式（需要其返回值），那么 `else` 语句就必须存在**。
 
 
-<!-- more -->
+
 
 ## 2. When
 
@@ -133,7 +135,7 @@ for ((index, value) in array.withIndex())
 ```
 
 
-<!-- more -->
+
 
 ## 4. While 和 do-while
 
@@ -160,7 +162,7 @@ loop@ for (i in 1..100) {
 带标签的 `break` 用于跳出指定的循环结构，而带标签的 `continue` 则用于开始下一次指定的循环。
 
 
-<!-- more -->
+
 
 ## 6. 带标签的 return
 

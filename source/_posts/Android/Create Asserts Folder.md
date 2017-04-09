@@ -25,7 +25,7 @@ Android 如何创建 Asserts 文件夹，用来存储一些需要内置在 app �
 ![](http://code2care.org/2015/create-assets-folder-in-android-studio/images//Click%20on%20New%20folder%20assets%20folder.png)
 
 
-<!-- more -->
+
 
 ## 按照对话框提示进行即可
 

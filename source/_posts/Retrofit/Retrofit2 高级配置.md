@@ -2,10 +2,10 @@
 title: Retrofit2 高级配置
 date: 2016-11-07
 categories: Retrofit
-tags: Retrofit
+tags: [Retrofit, Android]
 ---
 
-## 0. 介绍
+## 1. 介绍
 
 有时候，retrofit 提供的基础功能不够我们使用，比如我们需要打网络日志、强制缓存，设置公有头等。
 此时，我们就需要对 OkHttp 的 client 进行定制，随后让 retrofit 使用我们定制的 client，从而实现我们的需求。
@@ -13,7 +13,7 @@ tags: Retrofit
 
 <!-- more -->
 
-## 1. 初始化操作
+## 2. 初始化操作
 
 为了定制我们自己的 Okhttp client，需要先获取 `Okhttp.Builder` 对象，通过对 builder 的不断处理，从而构建出我们所需要的 client。
 
@@ -21,7 +21,7 @@ tags: Retrofit
 OkHttpClient.Builder builder = new OkHttpClient.Builder();
 ```
 
-## 2. 设置缓存
+## 3. 设置缓存
 
 Retrofit 在很长的一段时间内，都没有内置的缓存处理框架，但是在 Retrofit2 强制使用 OkHttp 之后，这个问题就不再存在了。
 我一开始入门 retrofit 的时候也是花了很长时间在找如何建立缓存处理机制，实际上这是没有必要的。
@@ -43,7 +43,7 @@ builder.cache(cache);
 
 
 
-### 2.1 构建自己的缓存处理策略
+### 3.1 构建自己的缓存处理策略
 
 通过拦截器设置 `Cache-Control` 头，可以构建自己的缓存处理策略。
 
@@ -82,9 +82,9 @@ builder.cache(cache).addInterceptor(cacheInterceptor);
 ```
 
 
-<!-- more -->
 
-## 3. 头信息
+
+## 4. 头信息
 
 有时候我们需要自己定义头信息；
 包括最基本的 `Accept` 和 `Content-Type` 信息；
@@ -113,7 +113,7 @@ Interceptor interceptor = new Interceptor() {
 builder.addInterceptor(interceptor);
 ```
 
-## 4. 日志
+## 5. 日志
 
 众所周知，网络如果没有日志打印是无法调 bug 的。
 那么如何在使用 retrofit 时打印网络日志呢？
@@ -125,15 +125,15 @@ builder.addInterceptor(interceptor);
 **注意，日志拦截器必须在第一位！**
 
 
-<!-- more -->
 
-### 4.1 添加依赖
+
+### 5.1 添加依赖
 
 ```groovy
 compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
 ```
 
-### 4.2 配置拦截器
+### 5.2 配置拦截器
 
 ```java
 HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
@@ -143,9 +143,9 @@ builder.addIntercetor(logging);
 ```
 
 
-<!-- more -->
 
-## 5. 构建 client
+
+## 6. 构建 client
 
 当配置完毕后，就可以用我们的 Builder 生成 client 了。
 
@@ -153,7 +153,7 @@ builder.addIntercetor(logging);
 client = builder.build();
 ```
 
-## 6. 将 client 加入 retrofit builder
+## 7. 将 client 加入 retrofit builder
 
 最后，要让我们的 retrofit 使用 client 才能达到效果。
 

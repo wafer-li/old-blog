@@ -13,6 +13,7 @@ tags: MaterialDesign
 <img src="http://ooo.0o0.ooo/2016/10/25/580f8d694233c.png" width= 300/>
 </center>
 
+<!-- more -->
 
 在真实世界中，物体堆放和叠加在一起，但是不能穿过彼此，并且会投射出阴影。
 Material Design 的实体与之类似，也需要投射阴影。
@@ -29,7 +30,7 @@ Material Design 实体具有以下三个高度属性：
 
 
 
-<!-- more -->
+
 
 ## 高度（Android）
 
@@ -75,7 +76,7 @@ Material Design 实体具有以下三个高度属性：
 一旦触摸事件完毕，或者被取消，那么组件就必须恢复到其默认高度。
 
 
-<!-- more -->
+
 
 ### 避免高度冲突
 
@@ -171,7 +172,7 @@ Material Design 实体具有以下三个高度属性：
 下面列出一些组件的参考高度，它们应当作为高度的典范来使用。
 
 
-<!-- more -->
+
 
 #### App Bar
 
@@ -299,7 +300,7 @@ Material Design 实体具有以下三个高度属性：
 ![ezgif-3827406795](http://ooo.0o0.ooo/2016/10/27/5811b33c38ca6.gif)
 
 
-<!-- more -->
+
 
 ### 交互
 

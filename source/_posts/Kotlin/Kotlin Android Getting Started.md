@@ -1,8 +1,8 @@
 ---
 title: Kotlin Android Getting Started
 date: 2016-10-14
-categories: Android
-tags: Android
+categories: Kotlin
+tags: [Kotlin, Android]
 ---
 
 ## 0. 概述
@@ -43,7 +43,7 @@ IDEA 内建了代码转换功能，只需要通过 Find Action(`cmd + shift + a`
 ![](https://kotlinlang.org/assets/images/tutorials/kotlin-android/sync-project-with-gradle.png)
 
 
-<!-- more -->
+
 
 ## 4. 剩下的工作
 

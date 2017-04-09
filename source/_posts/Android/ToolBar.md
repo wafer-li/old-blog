@@ -9,9 +9,7 @@ tags: Android
 ## 1.  使用
 
 
-<!-- more -->
-
-###  1. 1 定义风格
+1. 1 定义风格
 
 在使用 Toolbar 之前，我们首先要对其风格进行一些调整。
 
@@ -19,6 +17,7 @@ tags: Android
 
 	> 5.0(API 21) 之后，Google 发表了 Material Design，由于和之前的风格有很大的不同， Google 采用了两个文件—— `res/values/style.xml` 和 `res/values-v21/style.xml`
 
+<!-- more -->
 
 ```xml
 <resources>
@@ -61,7 +60,7 @@ tags: Android
 
 
 
-<!-- more -->
+
 
 ### 1.3 自定义颜色等其他属性
 
@@ -179,7 +178,7 @@ toolbar.setNavigationIcon(R.drawable.ab_android);
 	> 需要注意的是，`setOnMenuItemClickListener()` 需要在 `setActionBar()` 或 `setSupportActionBar()` 之后才能生效
 
 
-<!-- more -->
+
 
 ## 2. 动态加载
 

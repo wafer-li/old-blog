@@ -5,7 +5,7 @@ categories: Android
 tags: Android
 ---
 
-## 概述
+## 1. 概述
 
 Navigation drawer 作为 Android Material Design 中主流的一种导航方式，当然受到 Google 的重视，所以，作为 MD 设计推出的实现部分，Android 更新了 support library 增加了关于 Navigation Drawer 的支持。
 
@@ -14,7 +14,7 @@ Navigation drawer 作为 Android Material Design 中主流的一种导航方式�
 
 <!-- more -->
 
-## 添加依赖
+## 2. 添加依赖
 
 官方的 Navigation Drawer 需要用到 `DrawerLayout` 和 `NavigationView`，它们都在 support design 包下。
 
@@ -24,7 +24,7 @@ compile 'com.android.support:design:24.2.1'
 
 > 这里不使用最新的 `25.0.0` 的原因在于，最新版在 UI Editor 渲染时存在 bug。Google 不愧是世界上最伟大的半成品公司。
 
-## 设计 `layout/activity_main.xml`
+## 3. 设计 `layout/activity_main.xml`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -55,7 +55,7 @@ compile 'com.android.support:design:24.2.1'
 
 还有，注意要设置 `NavigationView` 的 `layout_gravity="start"`，否则不会生效。
 
-## 构建 `layout/drawer_header.xml`
+## 4. 构建 `layout/drawer_header.xml`
 
 一般来说，Nav Drawer 都需要有一个 header 来存放用户头像等等有关用户账户的概览信息。
 
@@ -64,9 +64,9 @@ compile 'com.android.support:design:24.2.1'
 header 的布局注意满足 [Material Design](https://material.google.com/patterns/navigation-drawer.html) 即可；布局样式和摆放不限。
 
 
-<!-- more -->
 
-## 定义 `menu/drawer_item.xml`
+
+## 5. 定义 `menu/drawer_item.xml`
 
 是时候给我们的 Nav Drawer 加上一点内容了，通过在 `menu/drawer_item.xml` 中定义相应的组件即可。
 
@@ -111,7 +111,7 @@ header 的布局注意满足 [Material Design](https://material.google.com/patte
 
 最后我们再将这个 `menu` 赋到 `NavgationView`的 `app:menu="@menu/drawer_item"`上
 
-## 显示汉堡包图标
+## 6. 显示汉堡包图标
 
 Drawer 到这里就完全搭建好了，但是，没有汉堡包图标，用户就不知道我们的应有有个 Nav Drawer。所以，我们就需要给 `toolbar` 加上一个汉堡包图标来凸显 Nav Drawer 的存在。
 
@@ -157,7 +157,7 @@ class MainActivity : BaseActivity() {
 
 最后设置 `actionBarDrawerToggle.syncState()` 即可。
 
-## 使状态栏透明
+## 7. 使状态栏透明
 
 我们已经成功的构建出了一个 Navigation Drawer，但是，其显示出来的效果是这样的
 
@@ -167,7 +167,7 @@ class MainActivity : BaseActivity() {
 
 所以，我们还要做一些额外的步骤来让我们的 Nav Drawer 更符合规范。
 
-### 去除 Actionbar
+### 7.1 去除 Actionbar
 
 这个步骤通常已经在初步搭建构架的时候就完成了。也就是说为 `style.xml` 增加如下两项：
 
@@ -179,9 +179,9 @@ class MainActivity : BaseActivity() {
 并且继承 `Theme.AppCompact.Light.DarkActionBar`
 
 
-<!-- more -->
 
-### v21 增加关于状态栏的属性
+
+### 7.2 v21 增加关于状态栏的属性
 
 在 `value-21/style.xml` 中，增加另外的两项：
 
@@ -192,7 +192,7 @@ class MainActivity : BaseActivity() {
 <item name="android:statusBarColor">@android:color/transparent</item>
 ```
 
-### 设置 DrawerLayout 使用 `fitsSystemWindow`
+### 7.3 设置 DrawerLayout 使用 `fitsSystemWindow`
 
 ```xml
 <android.support.v4.widget.DrawerLayout
@@ -207,9 +207,9 @@ OK，到这里就大功告成了！
 ![](https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-10-24-05/RS/w1408.png)
 
 
-<!-- more -->
 
-### 补充：动态改变 status bar 颜色
+
+### 7.4 补充：动态改变 status bar 颜色
 
 如果你想动态改变状态栏颜色的话，也有相应的 Java 接口。
 
@@ -219,7 +219,7 @@ drawerLayout.setStatusBarBackgroundColor(ContextCompat.getColor(this, R.color.wi
 drawerLayout.setScrimColor(ContextCompat.getColor(this, R.color.wierd_transparent_orange));
 ```
 
-## 总结
+## 8. 总结
 
 这样构造出来的 Nav Drawer 和 MaterialDrawer 不同的一个地方在于，Nav Drawer 是在设计层面上进行修改，而 MaterialDrawer 是在代码层面上进行修改，侵入性不强，不过也较为麻烦。
 

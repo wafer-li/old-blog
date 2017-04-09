@@ -67,7 +67,7 @@ tags: DesignPattern
 观察者也不需要关心主题的内容，它只需要接受主题的通知就可以了。
 
 
-<!-- more -->
+
 
 ## 4. 气象站例子的 UML 图解
 
@@ -113,7 +113,7 @@ public void notifyObservers() {
 事实上，根据 OO 设计的原则，应该 **Tell, Don't Ask** ，所以使用**推的方法会更好。**
 
 
-<!-- more -->
+
 
 ## 6. Java 内置的观察者模式
 

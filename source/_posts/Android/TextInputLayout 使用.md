@@ -50,7 +50,7 @@ TextInputLayout 是 Android design 库的控件，所以需要添加 Android 的
 ```
 
 
-<!-- more -->
+
 
 ### 2.3 相应效果的设置
 

@@ -132,7 +132,7 @@ val <T> List<T>.lastIndex: Int
 因此，**扩展属性不能被初始化**，它们只能用显式的 getter 和 setter 来进行初始化。
 
 
-<!-- more -->
+
 
 ## 7. 友元对象的扩展
 
@@ -220,7 +220,7 @@ fun main(args: Array<String>) {
 在类的外部它是不可见的。
 
 
-<!-- more -->
+
 
 ## 10. 扩展成员的继承
 

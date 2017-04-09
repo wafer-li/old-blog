@@ -60,7 +60,7 @@ interface Foo<out T : Any> : Bar {
 ```
 
 
-<!-- more -->
+
 
 ### 2.3 Lambda 表达式
 
@@ -79,7 +79,7 @@ list.filter { it > 10 }.map { element -> element * 2 }
 类似于 Java 中的返回值为 `void`
 
 
-<!-- more -->
+
 
 ## 3. 包和导入
 

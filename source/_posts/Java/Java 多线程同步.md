@@ -5,12 +5,14 @@ categories: Java
 tags: Java
 ---
 
-## 0. 概述
+## 1. 概述
 
 由于每句代码只能在一个线程中执行，当多个线程试图访问同一个对象域时，就会出现**竞争**，导致对象的数据最终出现错误。
 特别是当线程中的操作**不是原子操作**的时候，当线程切换的时候。
 
 为了消除竞争的危害，对于多个线程**有可能**同时操作同一个对象的情况，我们就要实现**线程同步**
+
+<!-- more -->
 
 实现线程同步的方法主要有三种：
 
@@ -25,11 +27,11 @@ tags: Java
 注意，线程同步不仅要求**互斥性**，也要求**可见性**，即只有一个线程能对同步代码块进行操作，同时，**该代码块对所有线程应是可见的**
 
 
-<!-- more -->
 
-## 1. 使用 ReentrantLock 实现同步
 
-### 1.1 锁的初级使用
+## 2. 使用 ReentrantLock 实现同步
+
+### 2.1 锁的初级使用
 
 `ReentrantLock` 是一个锁对象，在有可能出现竞争的方法中使用锁，就可以**保护**一段代码块**同一时间只能由一个线程进行读写操作**
 
@@ -63,19 +65,19 @@ public class Bank {
 当由于**异常而跳出临界区**时，应进行相应的清理操作，保证对象的完整性。
 因为在 `finally` 中，锁会被释放。
 
-### 1.2 公平锁
+### 2.2 公平锁
 
 使用 `ReentrantLock(boolean fair)` 可以指定构造一个**公平锁**。
 它倾向于让阻塞队列中等待时间最长的线程获取到锁，但是额外的检测成本可能会造成性能损失。
 
 
-<!-- more -->
 
-### 1.3 条件对象
+
+### 2.3 条件对象
 
 条件对象 `Condition` 用于确保临界区中的代码符合执行条件。
 
-#### 1.3.1 使用条件对象的原因
+#### 2.3.1 使用条件对象的原因
 
 1. 不能使用一般的 `if` 语句进行检查
 
@@ -95,7 +97,7 @@ public class Bank {
     例如，当前线程操作的账户对象不满足转出余额，那么就需要**等待另一线程向当前账户注资**。
     此时，由于当前线程**占有锁**，其他线程无法操作这一账户。
 
-#### 1.3.2 使用条件对象
+#### 2.3.2 使用条件对象
 
 1. 通过锁对象的 `newCondition()` 来获得一个条件对象。
 2. 当条件不满足时， 调用**条件对象的** `await()` 方法
@@ -151,9 +153,9 @@ class Bank {
 }
 ```
 
-## 2. `synchronized` 关键字
+## 3. `synchronized` 关键字
 
-### 2.1 内部锁
+### 3.1 内部锁
 
 这里比 8.5.1 更 “高级” 和傻瓜性了；
 其实从 jdk 1.0 开始，任何 Java 对象都拥有一个**内部锁**；
@@ -181,7 +183,7 @@ public void method() {
 }
 ```
 
-### 2.2 唯一的条件对象
+### 3.2 唯一的条件对象
 
 对象的内部锁拥有唯一一个条件对象；
 通过 `wait()` 方法将线程添加到条件的等待队列；
@@ -194,7 +196,7 @@ wait(); == intrinsicCondition.await();
 notify()All == intrinsicCondition.singnalAll();
 ```
 
-### 2.3 例子
+### 3.3 例子
 
 使用 `synchronized` 重写的 `Bank` 类
 
@@ -222,7 +224,7 @@ class Bank {
 }
 ```
 
-### 2.4 局限性
+### 3.4 局限性
 
 可以看到，使用 `synchronized` 关键字大大减少了代码量，使代码更为整洁；
 但是对应的，也存在一些缺点：
@@ -235,9 +237,9 @@ class Bank {
 3. 每个锁仅有单一的条件，可能是不够的
 
 
-<!-- more -->
 
-### 2.5 总结
+
+### 3.5 总结
 
 那么，究竟是使用 `synchronized` 关键字还是 `Lock/Condition` 机制呢？
 
@@ -253,7 +255,7 @@ class Bank {
 
     > 比如说即时中断，特定的等待超时等。
 
-## 3. 同步阻塞
+## 4. 同步阻塞
 
 同步阻塞允许客户使用
 
@@ -266,7 +268,7 @@ synchronized(lock) {
 
 这也叫做**客户端锁定**，这个方法是很脆弱的，通常不推荐使用
 
-## 4. 监视器
+## 5. 监视器
 
 监视器是 *Per Brinch Hansen* 提出的面向对象的线程安全实现方式。
 
@@ -281,7 +283,7 @@ synchronized(lock) {
 
 > 但是这也导致了 *Per Brinch Hansen* 本人的批评
 
-## 5. Volatile 域
+## 6. Volatile 域
 
 `volatile` 可以被看做是一种 **程度较轻的 `synchronized`**;
 它只具有 `synchronized` 提供的**可见性**，而不具备**原子性**
@@ -291,7 +293,7 @@ synchronized(lock) {
 但是如果该变量仅用于读取，那么 `volatile` 能提供优于 `synchronized` 的性能。
 
 
-### 5.1 正确使用 `volatile` 变量的条件
+### 6.1 正确使用 `volatile` 变量的条件
 
 1. 对该变量的写操作**不依赖于**当前值
 
@@ -301,12 +303,12 @@ synchronized(lock) {
 
 大多数的编程情形都会和这两个条件的其中之一冲突，使得 `volatile` 不能如 `synchronized` 一样普遍实现线程安全
 
-### 5.2 性能考虑
+### 6.2 性能考虑
 
 一般情况下， `volatile` 的性能要比使用 `synchronized` 要高；
 所以在符合使用 `volatile` 的情形下应该尽量使用。
 
-### 5.3 正确使用的情形
+### 6.3 正确使用的情形
 
 1. 状态标志
 
@@ -432,7 +434,7 @@ synchronized(lock) {
     }
     ```
 
-## 6. `final` 变量
+## 7. `final` 变量
 
 如果一个域被声明为 `final`，那么对于该**变量**将不会出现线程安全问题。
 其他线程将在 `final` 变量被赋值成功后才能见到此变量。
@@ -440,31 +442,31 @@ synchronized(lock) {
 注意，只有**变量**是线程安全的，其指向的数组、对象等仍然需要同步操作。
 
 
-<!-- more -->
 
-## 7. 死锁
+
+## 8. 死锁
 
 Java 并不能在语言层次上避免或打破死锁的发生，这是程序设计的工作。
 
-## 8. 线程局部变量
+## 9. 线程局部变量
 
 如果要避免线程间共享变量，那么可以使用 ThreadLocal 辅助类为各个线程提供各自的实例。
 
 例如，如果要让每个线程都拥有自己的 `SimpleDateFormat` 变量，那么只需要
 
 ```java
-public static final ThreadLocal<SimpleDateFormat> date: 2017-03-16
+public static final ThreadLocal<SimpleDateFormat> dateFormat =
     new ThreadLocal<SimpleDateFormat>() {
         protected SimpleDateFormat initalValue() {
             return new SimpleDateFormat("yyyy-MM-dd");
         }
-    }
+    };
 ```
 
 如果要访问具体线程的格式化方法，可以调用
 
 ```java
-String date: 2017-03-16
+String dateStamp = dateFormat.get().format(new Date());
 ```
 
 在一个**给定线程**中**首次调用** `get()` 方法时，会调用 `initialValue()` 方法。
@@ -480,7 +482,7 @@ int random = ThreadLocalRandom.current().nextInt(upperBound);
 
 另外还有个 `set()` 和 `remove()` 方法，分别用于为当前线程设置新值和删除当前线程的值。
 
-## 9. 锁测试与超时
+## 10. 锁测试与超时
 
 如果要使用这一特性，就要使用 `Lock/Condition` 架构。
 
@@ -514,9 +516,9 @@ if (myLock.tryLock(100, TimeUnit.MILLSECONDS));
 同时，`await()` 方法也可以设定超时。
 
 
-<!-- more -->
 
-## 10. 读/写锁
+
+## 11. 读/写锁
 
 如果很多线程从一个数据结构读取数据而很少修改其中数据的话，那么我们使用另一种锁 `ReentrantReadWriteLock` 来提高性能
 
@@ -525,7 +527,7 @@ if (myLock.tryLock(100, TimeUnit.MILLSECONDS));
 > 这里有点像 `volatile` 的高级应用；
 不同的点在于，`volatile` 用于一个变量，而 `ReentrantReadWriteLock` 用于一个**数据结构**
 
-### 10.1 使用步骤
+### 11.1 使用步骤
 
 1. 构建 `ReentrantReadWriteLock` 对象
 

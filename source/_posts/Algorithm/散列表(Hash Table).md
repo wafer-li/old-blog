@@ -36,7 +36,7 @@ tags: Algorithm
 
 
 
-<!-- more -->
+
 
 ### 2.2 散列计算方法
 
@@ -87,7 +87,7 @@ private int hash(Key x) {
 通过忽略整形中的符号位来达到取绝对值的作用。
 
 
-<!-- more -->
+
 
 ### 2.4 浮点数
 
@@ -290,9 +290,6 @@ public class LinearProbingHashST<Key, Value> {
 
 > 关于删除操作：
 我们不能直接将键的位置设置为 `null`，这会导致剩下的键无法被找到，所以我们需要**将被删除键的右侧的键重新插入**
-
-##
-<!-- more -->
 
 ## 3.2.2 性能
 

@@ -2,7 +2,7 @@
 title: Material Drawer Tint Icon
 date: 2016-11-08
 categories: MaterailDrawer
-tags: MaterailDrawer
+tags: [MaterailDrawer, Android]
 ---
 
 Material Drawer 是 GitHub 上有名的 Android Navigation Drawer 的实现库，目前有 6000 左右个星，充分说明它的流行和稳定性。
@@ -14,6 +14,8 @@ Material Drawer 是 GitHub 上有名的 Android Navigation Drawer 的实现库�
 作者对此表示不想修复，于是提供了一个 workaround 进行图片的染色。
 
 以下的 Kotlin 就是对一个默认的用户图标进行染色，然后返回染色后的 `Drawable` 的代码
+
+<!-- more -->
 
 ```kotlin
 fun getTintDefaultProfileIcon(activity: Activity): LayerDrawable {

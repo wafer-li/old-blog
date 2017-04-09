@@ -2,11 +2,11 @@
 title: Retrofit2 使用简明手册
 date: 2016-11-26
 categories: Retrofit
-tags: Retrofit
+tags: [Retrofit, Android]
 ---
 
 
-## 0. 介绍
+## 1. 介绍
 
 Retrofit 是 Square 公司出品的 Android 开源网络框架，使用注解和代理实现各项 HTTP 操作和 body 解析处理等。
 
@@ -15,9 +15,9 @@ Retrofit2 通过与 Square 公司的另一开源库 OkHttp3 合并，由 OkHttp 
 
 <!-- more -->
 
-## 1. 初始化设置
+## 2. 初始化设置
 
-### 1.1 添加依赖
+### 2.1 添加依赖
 
 ```
 compile 'com.squareup.retrofit2:retrofit:2.1.0'
@@ -25,7 +25,7 @@ compile 'com.squareup.retrofit2:retrofit:2.1.0'
 
 注意现在已经是 **Retrofit2** 的年代了。
 
-### 1.2 配置 Proguard
+### 2.2 配置 Proguard
 
 ```
 # Platform calls Class.forName on types which do not exist on Android to determine platform.
@@ -41,12 +41,12 @@ compile 'com.squareup.retrofit2:retrofit:2.1.0'
 ```
 
 
-## 2. 基本使用
+## 3. 基本使用
 
 
-<!-- more -->
 
-### 2.1 创建 ApiService interface
+
+### 3.1 创建 ApiService interface
 
 创建一个 `interface`，用于储存需要进行的网络操作 API
 
@@ -62,7 +62,7 @@ public interface GitHubService {
 
 方法顶上的注解表明了该请求的 **HTTP method**，括号中的内容是请求**所涉及到的 URL 部分**。URL 的**基础部分**由 Retrofit 类构建时指定。
 
-### 2.2 构建 Retrofit 类，获取 ApiService 实例
+### 3.2 构建 Retrofit 类，获取 ApiService 实例
 
 ```java
 Retrofit retrofit = new Retrofit.Builder()
@@ -72,7 +72,7 @@ Retrofit retrofit = new Retrofit.Builder()
 GitHubService service = retrofit.create(GitHubService.class);
 ```
 
-### 2.3 通过 ApiService 实例发起请求
+### 3.3 通过 ApiService 实例发起请求
 
 1. 发起同步请求
 
@@ -88,15 +88,15 @@ GitHubService service = retrofit.create(GitHubService.class);
     repos.enqueue(new CallBack());
     ```
 
-### 2.4 取消请求
+### 3.4 取消请求
 
 ```java
 repos.cancel();
 ```
 
-## 3. 可变 URL 和 GET 请求参数
+## 4. 可变 URL 和 GET 请求参数
 
-### 3.1 可变 URL
+### 4.1 可变 URL
 
 ```java
 @GET("group/{id}/users")
@@ -105,7 +105,7 @@ Call<List<User>> groupList(@Path("id") int groupId);
 
 上面的 `id` 在程序运行时可能会动态变化，对于这种参数， retrofit2 采用 `{}` 将其包住进行区分，并在方法形参中使用 **@Path** 注解来指定动态参数。
 
-### 3.2 Query 参数
+### 4.2 Query 参数
 
 ```java
 @GET("group/{id}/users")
@@ -127,7 +127,7 @@ Call<List<User>> groupList(@Path("id") int groupId, @Query("sort") String sort);
 Call<List<User>> groupList(@Path("id") int groupId, @QueryMap Map<String, String> options);
 ```
 
-## 4. 通过 Body 请求
+## 5. 通过 Body 请求
 
 ```java
 @POST("users/new")
@@ -138,7 +138,7 @@ POST 等方法均是通过 HTTP Body 来传输内容的， retrofit 中通过使
 
 Body 的类型会通过转换器(converter)反序列化成对应的类，如果没有指定转换器，则只能使用 Okhttp 的 **RequestBody** 作为转换的对象。
 
-## 5. Form URL encode 数据
+## 6. Form URL encode 数据
 
 使用 **@FormUrlEncoded** 注解来发送 `application/x-www-form-urlencoded` 类型的数据。
 
@@ -161,7 +161,7 @@ Call<User> update: 2016-11-26
 > Name=John+Smith&Age=23
 > ```
 
-## 6. 上传文件
+## 7. 上传文件
 
 使用 **@Multipart** 注解来表示要上传文件
 
@@ -172,7 +172,7 @@ Call<User> update: 2016-11-26
 ```
 
 
-<!-- more -->
+
 
 ## 7. 指定 Header
 

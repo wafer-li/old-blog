@@ -55,7 +55,7 @@ val a: Int? = try { parseInt(input) } catch (e: NumberFormatException) { null }
 `finally` 块中的语句不会被作为返回值返回。
 
 
-<!-- more -->
+
 
 ## 5. 已检查异常
 

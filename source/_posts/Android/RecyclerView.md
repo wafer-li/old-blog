@@ -8,13 +8,12 @@ tags: Android
 ## 1. 一般的使用
 
 
-<!-- more -->
-
 ### 1.1 添加编译依赖
 
 ```
 compile 'com.android.support:recyclerview-v7:+'
 ```
+<!-- more -->
 
 ### 1.2 界面的基本设置
 
@@ -53,7 +52,7 @@ compile 'com.android.support:recyclerview-v7:+'
     > 注意，在 `support-library 23.2.0` 之后，`LayoutManager` 提供了**自动调整**功能，所以对 `item` 的根布局应采用 `wrap_content` 的 `layout_hight`
 
 
-<!-- more -->
+
 
 ### 1.3 设置 **LayoutManager** 和 **Adapter**
 
@@ -155,7 +154,7 @@ public int getItemViewType(int position) {
 然后使用 `onCreateViewHolder()` 中的 `int ViewType` 属性来判别构建的 View 类型。
 
 
-<!-- more -->
+
 
 ## 3. 设置 OnItemClickListener
 

@@ -11,6 +11,7 @@ tags: Mono
 
 所以，在这里使用 Homebrew Cask 可以让 mono-mdk 得到及时，清真的安装和更新。
 
+<!-- more -->
 
 ```sh
 brew cask install mono-mdk

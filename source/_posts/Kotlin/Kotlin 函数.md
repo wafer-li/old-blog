@@ -43,9 +43,6 @@ Sample().foo() // create instance of class Sample and calls foo
 - 函数只有一个参数
 - 使用 `infix` 进行标识
 
-##
-<!-- more -->
-
 ## 2.2.2 例子
 
 ```kotlin
@@ -199,7 +196,7 @@ fun printHello(name: String?) {
 ```
 
 
-<!-- more -->
+
 
 ### 4.1 单一表达式函数
 
@@ -259,7 +256,7 @@ fun dfs(graph: Graph) {
 ```
 
 
-<!-- more -->
+
 
 ## 6. 尾调用
 
