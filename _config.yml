@@ -84,6 +84,8 @@ search:
   format: html
   limit: 10000
 
+# Since
+since: 2016
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
