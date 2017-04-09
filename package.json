@@ -10,6 +10,7 @@
     "hexo-deployer-git": "^0.2.0",
     "hexo-filter-plantuml": "^1.0.1",
     "hexo-generator-archive": "^0.1.4",
+    "hexo-generator-atom-markdown-writer-meta": "^0.1.1",
     "hexo-generator-category": "^0.1.3",
     "hexo-generator-feed": "^1.2.0",
     "hexo-generator-index": "^0.2.0",
