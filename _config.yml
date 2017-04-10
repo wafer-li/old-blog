@@ -48,14 +48,6 @@ default_category: uncategorized
 category_map:
 tag_map:
 
-# Archives 默认值为2，如果这里都修改为1，相应页面就只会列出标题，而非全文
-## 2: Enable pagination
-## 1: Disable pagination
-## 0: Fully Disable
-archive: 2
-category: 1
-tag: 1
-
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
