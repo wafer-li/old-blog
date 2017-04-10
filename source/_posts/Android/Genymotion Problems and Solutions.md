@@ -1,5 +1,5 @@
 ---
-title: Genymotion Problems & Solutions
+title: Genymotion Problems and Solutions
 date: 2016-10-14
 categories: Android
 tags: Android
@@ -24,8 +24,10 @@ tags: Android
 
 如果你收到了一个关于 Virtual Host 的出错信息，那它将会像这样子：
 
-    Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter' (VERR_INTNET_FLT_IF_NOT_FOUND).
-    Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND).
+```bash
+Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter' (VERR_INTNET_FLT_IF_NOT_FOUND).
+Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND).
+```
 
 解决办法：
 
