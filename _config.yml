@@ -52,7 +52,10 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+    买买买: Buying
 tag_map:
+    买买买: Buying
+    键盘: Keyboard
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
