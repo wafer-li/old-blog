@@ -5,7 +5,7 @@ categories: Android
 tags: Android
 ---
 
-## 0. 简介
+## 1. 简介
 
 Android Studio 使用 gradle 自动化编译工具用于替代老旧的 Ant Build。目前已经成为 Android App 构建的主流工具。
 
@@ -16,11 +16,11 @@ Gradle 工具通过读取 `build.gradle` 文件的配置来对工程进行构建
 
 <!-- more -->
 
-## 1. 顶层文件（Top-Level）
+## 2. 顶层文件（Top-Level）
 
 顶层的 `build.gradle` 存储在工程根目录，定义一些用于所有模块的属性和设置。其中包括
 
-```
+```groovy
 /**
 * buildscript{} 是用于 gradle 自身的配置，在构建工程时，gradle 会首先读取构建必要的依赖用于构建工程。
 * 不要将 APP 用的依赖项加到这里来！
@@ -61,10 +61,10 @@ allprojects {
 
 ```
 
-## 2. 模块级别文件
+## 3. 模块级别文件
 
 在各个模块的根目录中，也有对应的 `build.gradle` 文件，它是用来配置各个模块各自的编译构建项的，也是我们最常修改的文件。
 
-```
+```groovy
 apply plugin: 'com.android.application'
 ```

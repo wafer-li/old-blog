@@ -5,6 +5,7 @@ categories: Linux
 tags: Linux
 ---
 
+
 ## Linux Mint Installation Notes
 
 ### 1. Using the USB boot
@@ -28,13 +29,13 @@ the package manager.(such as `apt-get`)
 (for me ,because I still can not leave the big game which is only can be run in Windows)
 If you want to have the bennifits from each of these OS
 
-#### 1) Single Hard Disk
+#### 3.1 Single Hard Disk
 
 > That's nothing to say about, if only have **one** hard disk,
 you must be care of the order of the installation,
 because the first installed boot loader will be covered by the secound.
 
-#### 2) Dual or Multiple Hard Disks
+#### 3.2 Dual or Multiple Hard Disks
 
 > **you need to be awared of the boot loader's position,
 because if you install them into the same disk, the latter will cover the former**

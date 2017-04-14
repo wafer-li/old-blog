@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 声明
 
 ```kotlin

@@ -5,14 +5,15 @@ categories: Python
 tags: Python
 ---
 
-## 0. 概述
+
+## 1. 概述
 
 Python 是高度面向对象的语言，事实上，任何的变量类型都是**类**
 
 
 <!-- more -->
 
-## 1. 创建类
+## 2. 创建类
 
 类由 `class` 关键词定义，后面加冒号表示类的作用域
 
@@ -21,11 +22,11 @@ class Person:
     pass
 ```
 
-## 2. self 参数
+## 3. self 参数
 
 Python 的 `self` 参数类似于 Java 的 `this`，但是这个参数在 Python 中的作用则更为重要，具体可以看下面的内容
 
-## 3. 类域
+## 4. 类域
 
 Python 类的域与 Java 不同
 
@@ -38,7 +39,7 @@ Python 类的域与 Java 不同
 
     > 但是以双下划线 `__` 开头的成员会被 Python 的名称管理体系作为**私有变量**，这是 Python 的名称管理体系做出的，而不是类的特性
 
-## 4. 类方法
+## 5. 类方法
 
 Python 的类方法和 Java 稍有不同
 
@@ -65,7 +66,7 @@ Python 的类方法和 Java 稍有不同
         print('We have {0:d} robot'.format(Robot.population))
     ```
 
-## 5. 构造函数和析构函数
+## 6. 构造函数和析构函数
 
 Python 拥有构造函数和析构函数。工作原理和 C++ 的构造函数和析构函数相同。
 
@@ -81,7 +82,7 @@ class Person:
         print("I am dying.")
 ```
 
-## 6. 继承
+## 7. 继承
 
 Python 的继承通过在类名称后面添加括号实现。
 括号中为父类的名字

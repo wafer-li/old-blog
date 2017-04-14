@@ -5,6 +5,8 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
+
 ## 1. 委托模式
 
 > 委托模式是软件设计模式中的一项基本技巧。

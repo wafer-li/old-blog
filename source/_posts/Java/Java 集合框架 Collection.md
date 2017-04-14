@@ -5,6 +5,8 @@ categories: Java
 tags: Java
 ---
 
+
+
 ## 1. 概述
 
 `Collection` 接口是 Java 集合框架最基本的接口；

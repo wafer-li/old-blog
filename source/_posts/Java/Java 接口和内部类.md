@@ -5,6 +5,7 @@ categories: Java
 tags: Java
 ---
 
+
 ## 1. 接口
 
 这是 Java 中的专有名词，指代的是 **interface** 关键字

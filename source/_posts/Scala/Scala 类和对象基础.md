@@ -5,6 +5,8 @@ categories: Scala
 tags: Scala
 ---
 
+
+
 ## 1. 简介
 
 Scala 除了是一门函数式语言外，还同时具有面向对象的特征；
@@ -49,7 +51,7 @@ class ChecksumAccumulator {
 new ChecksumAccumulator
 ```
 
-## 3. 字段和方法
+## 4. 字段和方法
 
 类中，字段使用 `val` 和 `var` 定义，方法使用 `def` 定义。
 
@@ -86,7 +88,7 @@ def add(b: Int) {
 
 如果需要函数或者方法来推断返回值类型，则需要加上等于号
 
-## 4. Getter 和 Setter
+## 5. Getter 和 Setter
 
 很遗憾，Scala 的类成员是字段形式的，所以，不能像 Kotlin 那样采用语法糖式的 getter 和 setter 的写法；
 
@@ -120,13 +122,13 @@ val p = new Person("hehe")
 p.name = "nihao"
 ```
 
-## 5. 可见性简述
+## 6. 可见性简述
 
 Scala 中，默认的可见性是 `public`；
 
 其余的可见性修饰符和 Java 一致。
 
-## 6. 伴生对象
+## 7. 伴生对象
 
 Scala 没有静态成员，但是具有伴生对象(companion object)，是对象(object) 的一种。
 
@@ -154,7 +156,7 @@ object ChecksumAccumulator {
 
 没有伴生类的对象称为 **孤立对象**，实际上就是一个简单的单例。
 
-## 7. 类的解析过程
+## 8. 类的解析过程
 
 Scala 采用代换模型对表达式进行解析，那么它是如何解析类的定义和声明调用的呢？
 

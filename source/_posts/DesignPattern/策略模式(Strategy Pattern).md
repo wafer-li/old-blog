@@ -5,6 +5,7 @@ categories: DesignPattern
 tags: DesignPattern
 ---
 
+
 ## 1. 概述
 
 策略模式：定义算法族，分别封装起来，使它们可以相互替换。

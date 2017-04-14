@@ -5,7 +5,8 @@ categories: Retrofit
 tags: [Retrofit, Android]
 ---
 
-## 概述
+
+## 1. 概述
 
 Retrofit2 自从默认使用 OkHttp 库之后，自带了缓存功能；
 
@@ -18,7 +19,7 @@ Retrofit2 自从默认使用 OkHttp 库之后，自带了缓存功能；
 
 <!-- more -->
 
-## 设置缓存路径
+## 2. 设置缓存路径
 
 为了使用 OkHttp 的缓存，我们就必须设置相应的缓存路径。
 
@@ -29,13 +30,13 @@ Cache cache = new Cache(cacheDir);
 client = builder.cache(cacheDir).build();
 ```
 
-## 配置拦截器
+## 3. 配置拦截器
 
 OkHttp 可以通过拦截器来实现对请求(`Request`)和响应(`Response`)的魔改。
 
 我们实现离线缓存的方式，就是采用这个拦截器对响应进行魔改。
 
-### 通过 `CacheControl` 配置缓存
+### 3.1 通过 `CacheControl` 配置缓存
 
 首先，我们要对我们的缓存策略进行配置，最好的当然就是使用 OkHttp 自带的 `CacheControl` 进行配置。
 
@@ -46,7 +47,7 @@ cacheBuilder.maxStale(365,TimeUnit.DAYS);//这个是控制缓存的过时时间
 CacheControl cacheControl = cacheBuilder.build();
 ```
 
-### 建立拦截器
+### 3.2 建立拦截器
 
 和自定义 `Response` 缓存不同，对于离线缓存，我们对 `Request` 进行处理；
 

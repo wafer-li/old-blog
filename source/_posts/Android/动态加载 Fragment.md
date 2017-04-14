@@ -37,7 +37,7 @@ FragmentTransaction transcation = fragmentManager.beginTransaction();
 
 ```
 
-### 1.3 将 `Fragment` 加入到容器里面 
+### 1.3 将 `Fragment` 加入到容器里面
 我们有两种添加 `Fragment` 的方法， `add()` 和 `replace()`
 注意添加的时候带上 `tag` 参数，以方便后面的弹出和返回。
 
@@ -283,7 +283,7 @@ protected void onCreate (Bundle savedInstanceState) {
 }
 ```
 
-## 3.2.2 使用 `replace()` 方法
+#### 3.2.2 使用 `replace()` 方法
 
 > `FragmentStatePageAdapter` 采用这种模式
 
@@ -292,7 +292,7 @@ protected void onCreate (Bundle savedInstanceState) {
 - 但是由于此方法在切换时**每次都会重新构建 Fragment 实例**，如果需要从网络加载资源的话，会造成很多的网络流量损失和性能浪费。
 
 
-## 3.2.3 比较和使用场景
+#### 3.2.3 比较和使用场景
 - 如果管理 `Fragment` 的开销比网络流量的开销要大，使用 `replace()` 方法较好。
 
     > 例如每次仅仅加载 几个k 或 几十b 的数据，就没有必要为了这点微不足道的流量节省从而进行复杂的 `Fragment` 管理，一是加大开发难度，二是容易出现错误。

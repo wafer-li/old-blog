@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 概述
 
 下面总结一些代码段，用于帮助从 Java 迁移到 Kotlin

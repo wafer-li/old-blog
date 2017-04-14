@@ -164,7 +164,7 @@ public int getItemViewType(int position) {
 需要注意的是，官方并没有为 Item 实现一个点击的 feedback 动画（至少在 5.1.1(API 22)中），所以我们需要添加一个 `<ripple>` 的 `drawable ` 然后将其设置为背景来实现一个点击回馈的效果。
 
 
-### 2.1 定义一个 Listener 接口
+### 3.1 定义一个 Listener 接口
 
 通常作为 Adapter 的一个内部类
 
@@ -180,7 +180,7 @@ public interface OnItemClickListener {
 }
 ```
 
-### 2.2 为 Adapter 添加接口成员
+### 3.2 为 Adapter 添加接口成员
 
 ```java
 class MyAdapter ... {
@@ -192,7 +192,7 @@ class MyAdapter ... {
 }
 ```
 
-### 2.3 设置点击响应并将其回调
+### 3.3 设置点击响应并将其回调
 
 这里在 `onBindViewHolder()` 中设置 `ViewHolder` 中 `View` 的 `onClick()` 事件，并将这个事件回调到上面的接口成员中。
 
@@ -217,7 +217,7 @@ public void onBindViewHolder (final MyViewHolder holder, final int position) {
 }
 ```
 
-### 2.4 在 Acitivity 或者 Fragment 中响应回调
+### 3.4 在 Acitivity 或者 Fragment 中响应回调
 
 注意，这个方法是在 Fragment 中进行的。
 

@@ -5,6 +5,7 @@ categories: DesignPattern
 tags: DesignPattern
 ---
 
+
 ## 1. 概述
 
 生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。
@@ -251,7 +252,7 @@ public static void main(String[] args) {
 例如，客户自己冲泡咖啡。
 
 
-## 5. 与抽象工厂的不同
+## 6. 与抽象工厂的不同
 
 抽象工厂模式生产的是一个产品族，而生成器模式所生产的 **一个** 复杂产品；
 
@@ -259,9 +260,9 @@ public static void main(String[] args) {
 
 而生成器是将零部件 **组装** 成为一辆汽车。
 
-## 6. 优缺点
+## 7. 优缺点
 
-### 6.1 优点
+### 7.1 优点
 
 1. 良好的封装性，客户端不必知道产品的内部细节
 
@@ -270,7 +271,7 @@ public static void main(String[] args) {
 3. 可以使用其他的对象进行构造辅助，而普通的产品构造方式不容易获取到
 
 
-### 6.2 缺点
+### 7.2 缺点
 
 1. 产生多余的 `Builder`  对象
 

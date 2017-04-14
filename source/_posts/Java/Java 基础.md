@@ -5,6 +5,7 @@ categories: Java
 tags: Java
 ---
 
+
 ## 1. 变量和数据类型
 
 1. boolean【Java】 = bool【C ++】

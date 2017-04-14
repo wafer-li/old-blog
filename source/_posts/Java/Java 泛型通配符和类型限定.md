@@ -5,6 +5,7 @@ categories: Java
 tags: Java
 ---
 
+
 ## 1. 概述
 
 对于泛型系统而言，最重要的就是能够领过的使用；

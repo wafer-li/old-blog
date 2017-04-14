@@ -5,6 +5,23 @@ categories: Android
 tags: Android
 ---
 
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
+
+&emsp;[1. 概述](#1-概述)   
+&emsp;[2. 添加依赖](#2-添加依赖)   
+&emsp;[3. 设计 `layout/activity_main.xml`](#3-设计-layoutactivity_mainxml)   
+&emsp;[4. 构建 `layout/drawer_header.xml`](#4-构建-layoutdrawer_headerxml)   
+&emsp;[5. 定义 `menu/drawer_item.xml`](#5-定义-menudrawer_itemxml)   
+&emsp;[6. 显示汉堡包图标](#6-显示汉堡包图标)   
+&emsp;[7. 使状态栏透明](#7-使状态栏透明)   
+&emsp;&emsp;[7.1 去除 Actionbar](#71-去除-actionbar)   
+&emsp;&emsp;[7.2 v21 增加关于状态栏的属性](#72-v21-增加关于状态栏的属性)   
+&emsp;&emsp;[7.3 设置 DrawerLayout 使用 `fitsSystemWindow`](#73-设置-drawerlayout-使用-fitssystemwindow)   
+&emsp;&emsp;[7.4 补充：动态改变 status bar 颜色](#74-补充：动态改变-status-bar-颜色)   
+&emsp;[8. 总结](#8-总结)   
+
+<!-- /MDTOC -->
+
 ## 1. 概述
 
 Navigation drawer 作为 Android Material Design 中主流的一种导航方式，当然受到 Google 的重视，所以，作为 MD 设计推出的实现部分，Android 更新了 support library 增加了关于 Navigation Drawer 的支持。

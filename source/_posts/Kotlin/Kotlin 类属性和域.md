@@ -5,6 +5,8 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
+
 ## 1. 声明和调用
 
 声明类中的属性和值很简单，类似 Java，使用 `var` 声明变量，使用 `val` 声明常量。

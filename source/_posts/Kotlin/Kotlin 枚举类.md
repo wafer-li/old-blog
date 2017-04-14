@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 概述
 
 事实上，Kotlin 的枚举和 Java 一样，只是提供了一个类型限定范围。

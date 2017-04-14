@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 介绍
 
 Kotlin 支持类似 C# 的对类进行扩展，而**不需要**对该类进行继承操作。

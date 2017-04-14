@@ -12,7 +12,7 @@ C# 提供了两种 **常量级别** 数据，相当于 Kotlin 中的 `const` 和
 使用 `const` 和 `readonly` 来进行修饰
 
 
-
+<!-- more -->
 
 ## 2. Const
 

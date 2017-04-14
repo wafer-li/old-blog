@@ -5,6 +5,7 @@ categories: CSharp
 tags: CSharp
 ---
 
+
 ## 1. 概述
 
 为了简化对象初始化的流程，C# 提供了 **对象初始化语法**。

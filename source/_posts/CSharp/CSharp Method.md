@@ -4,6 +4,7 @@ date: 2016-11-30
 categories: CSharp
 tags: CSharp
 ---
+
 ## 1. 定义
 
 C# 中的方法定义和 Java 没有区别。

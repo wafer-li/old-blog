@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 声明
 
 函数使用 `fun` 关键字进行声明。
@@ -43,7 +44,7 @@ Sample().foo() // create instance of class Sample and calls foo
 - 函数只有一个参数
 - 使用 `infix` 进行标识
 
-## 2.2.2 例子
+#### 2.2.2 例子
 
 ```kotlin
 // Define extension to Int

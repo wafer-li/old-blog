@@ -5,7 +5,8 @@ categories: Kancolle
 tags: Kancolle
 ---
 
-## 0. Intro
+
+## 1. Intro
 
 This is the instruction of how to bulid a kancolle playing enviroment in Mac OS X.
 
@@ -16,13 +17,13 @@ Necessary tools: Automator
 
 <!-- more -->
 
-## 1. Install ShimakazeGo
+## 2. Install ShimakazeGo
 
 ShimakazeGo is a proxy for playing Kancolle. Because DMM has banned the IP addresses of foreigners, you need to use a proxy to connect to the game site.
 
 Here is the [ShimakazeGo official site](http://unlockacgweb.galstars.net/). There is a instruction how to install it on Mac OS X
 
-## 2. Pack ShimakazeGo as a OS X APP
+## 3. Pack ShimakazeGo as a OS X APP
 
 **This section is pretty important**.
 
@@ -61,7 +62,7 @@ $MONO_LIB $dir/ShimakazeGo.exe > /dev/null &
 
 And done. Start the app and you will see the ShimakazeGo window.
 
-## 2.5 Supplement: Change App Icon
+## 4. Supplement: Change App Icon
 
 The app that we generate will come with a default Automator icon like a robot.
 Some people may dislike it and want to changge to another icon.
@@ -76,7 +77,7 @@ It is very easy, **just follow these instructions**:
 
 
 
-## 3. Install Poi
+## 5. Install Poi
 
 Poi is a Scalable KanColle browser and tool.
 Due to using the web techology, it is **totally cross-platform**

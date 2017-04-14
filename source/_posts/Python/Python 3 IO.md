@@ -6,6 +6,7 @@ tags: Python
 ---
 
 
+
 ## 1. 使用 `input()` 进行输入
 
 Python3 使用 `input()` 函数获取用户输入。

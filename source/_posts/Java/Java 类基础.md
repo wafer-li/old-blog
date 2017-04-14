@@ -5,6 +5,7 @@ categories: Java
 tags: Java
 ---
 
+
 ## 1. 概述
 
 △Java语言就是基于类的语言，许多术语与C++稍有区别

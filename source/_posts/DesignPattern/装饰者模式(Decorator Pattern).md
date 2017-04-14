@@ -5,6 +5,7 @@ categories: DesignPattern
 tags: DesignPattern
 ---
 
+
 ## 1. 概述
 
 装饰者模式 **动态的** 将责任附加到对象上。

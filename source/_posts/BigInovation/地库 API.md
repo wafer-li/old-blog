@@ -8,8 +8,6 @@ tags: BigInovation
 ## Global rules
 
 
-
-
 ### Request
 
 1. Requests are MOSTLY without body, just `METHOD /example`

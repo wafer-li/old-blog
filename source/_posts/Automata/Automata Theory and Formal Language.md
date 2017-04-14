@@ -8,8 +8,6 @@ tags: Automata
 ## 1. Automata
 
 
-<!-- more -->
-
 ### 1.5 The Central Concept of Automata Theory
 
 #### 1.5.1 Alphabet
@@ -17,7 +15,6 @@ tags: Automata
 > - Alphabet is the **finite**, **non-empty** **Set** of the symbol
 - Using the $\sum$ symbol stand for the Alphabet
 
-##
 <!-- more -->
 
 ## 1.5.2 String
@@ -40,8 +37,5 @@ If remove the $\epsilon$ in the normal Alphabet, the rest is called $\sum^+$
 $\sum^+ = \sum^0\bigcup\sum^1\bigcup\sum^2\bigcup\dots$
 
 > $\sum^*=\sum^+\bigcup\{\epsilon\}$
-
-##
-<!-- more -->
 
 ## 1.5.3 Language

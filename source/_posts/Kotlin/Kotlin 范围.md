@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 概述
 
 虽然 Kotlin 支持了简单易用的 `foreach` 语法，但是，有些时候也有必要获取下标，并显式的限定其范围，或者你需要判定一个值是否在一个范围内。

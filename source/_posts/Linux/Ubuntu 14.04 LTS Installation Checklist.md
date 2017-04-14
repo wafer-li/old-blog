@@ -5,6 +5,8 @@ categories: Linux
 tags: Linux
 ---
 
+
+
 ## 1. Intro
 
 This is the installation checklist of the lastest Ubuntu LTS version: Ubuntu 14.04 LTS

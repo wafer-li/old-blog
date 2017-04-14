@@ -5,6 +5,8 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
+
 ## 1. 概述
 
 和许多其他语言不同的是， Kotlin 将集合分成了**可变**和**不可变**两大类。

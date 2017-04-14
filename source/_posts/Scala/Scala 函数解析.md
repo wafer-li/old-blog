@@ -5,6 +5,7 @@ categories: Scala
 tags: Scala
 ---
 
+
 ## 1. 代换模型
 
 Scala 使用代换模型对函数和表达式进行解析工作；

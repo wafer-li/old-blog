@@ -5,14 +5,24 @@ categories: Python
 tags: Python
 ---
 
-## 0. 概述
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
+
+&emsp;[1. 概述](#1-概述)   
+&emsp;[2. 处理异常](#2-处理异常)   
+&emsp;[3. 引发异常](#3-引发异常)   
+&emsp;[4. Try...Finally 语句](#4-tryfinally-语句)   
+&emsp;[5. with 语句](#5-with-语句)   
+
+<!-- /MDTOC -->
+
+## 1. 概述
 
 Python 的异常处理和 Java 相似，函数拼写错误等也会触发异常。
 
 
 <!-- more -->
 
-## 1. 处理异常
+## 2. 处理异常
 
 通过 `try...except` 语句来处理异常
 
@@ -30,7 +40,7 @@ else:
 
 > `try` 还可以带一个 `else` 语句，作用与 `while` 的语句类似
 
-## 2. 引发异常
+## 3. 引发异常
 
 通过 `raise` 语句来引发异常
 
@@ -61,7 +71,7 @@ else:
 
 
 
-## 3. Try...Finally 语句
+## 4. Try...Finally 语句
 
 这点与 Java 相似，Python 使用 `finally` 语句来对流进行一些收尾操作
 
@@ -88,7 +98,7 @@ finally:
     print('(Cleanig up: closed the file)')
 ```
 
-## 4. with 语句
+## 5. with 语句
 
 这个语句类似 Java 中的**带资源的 `try` 块**
 通过使用 `with` 来打开一个带资源的操作，则其会自动在最后将资源关闭

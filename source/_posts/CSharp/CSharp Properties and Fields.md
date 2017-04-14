@@ -5,6 +5,7 @@ categories: CSharp
 tags: CSharp
 ---
 
+
 ## 1. 概述
 
 C# 相对于 Java 的一个较大的改进就是提供了类的 **属性访问** 语法。

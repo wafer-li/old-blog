@@ -5,7 +5,17 @@ categories: Python
 tags: Python
 ---
 
-## 0. 概述
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
+
+&emsp;[1. 概述](#1-概述)   
+&emsp;[2. if 语句](#2-if-语句)   
+&emsp;[3. while 语句](#3-while-语句)   
+&emsp;[4. for 语句](#4-for-语句)   
+&emsp;[5. 其他流程控制](#5-其他流程控制)   
+
+<!-- /MDTOC -->
+
+## 1. 概述
 
 控制流程包括 `if` `for` 和 `while`
 
@@ -17,7 +27,7 @@ Python 的流程控制语句有些特殊
 
 <!-- more -->
 
-## 1. if 语句
+## 2. if 语句
 
 下面是一个 `if` 语句的例子
 
@@ -44,14 +54,14 @@ print('Done')
 3. **Python 中没有 `switch` 语句，使用相应的 `if..eles` 结构来替代**
 4. **注意不要漏掉冒号**
 
-## 2. while 语句
+## 3. while 语句
 
 while 语句与其他语言无太大差别，讲几个注意事项
 1. **注意不要漏掉 `while` 语句末尾的冒号**
 2. `Ture` 和 `False` 代表布尔类型
 3. `while` 可以有 `else` 语句，但一般不使用
 
-## 3. for 语句
+## 4. for 语句
 
 `for` 语句和其他语言有较大区别，以下是 Python 和 Java 语言的对比
 
@@ -98,6 +108,6 @@ for(word : wordList) {
     如果缓冲区中有字符，那么指定 `flush` 为 `True` 来清除缓冲区
     `print(word, end='', flush=True)`
 
-## 4. 其他流程控制
+## 5. 其他流程控制
 
 `break` 和 `continue` 都和其他语言无异

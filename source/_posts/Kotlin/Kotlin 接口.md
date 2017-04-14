@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 基本形式
 
 Kotlin 的接口和 Java 8 中很相似。

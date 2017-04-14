@@ -14,19 +14,19 @@ C# 的访问修饰符比 Java 多了两个 `internal` 和 `protected internal`
 
 <!-- more -->
 
-## 1. Internal
+## 2. Internal
 
 C# 新增的 `internal` 访问修饰符，指的是，该类型的可见范围为 **当前程序集**(即 `.dll` 和 `.exe` 中)
 
 > 注意和 Java 的 package 级别的可见性区分，`internal` 指示的是整个程序集的可见性。
 
-## 2. Protected Internal
+## 3. Protected Internal
 
 `protected internal` 实际上是 `protected` 和 `internal` 的一个 `union`。
 
 它指示的是，该类型在当前程序集可见 **或者** 在其他程序集中的派生类可见
 
-## 3. 修饰限制
+## 4. 修饰限制
 
 Top-level 的类型只能使用 `public` 和 `internal` 来修饰，如普通的类。
 

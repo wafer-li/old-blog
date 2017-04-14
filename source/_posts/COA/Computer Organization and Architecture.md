@@ -41,7 +41,7 @@ tags: COA
     - Performance balance
     - Improvements in chip organization and architecture
 
-## 1) The Microprocessor Speed
+#### 1.1 The Microprocessor Speed
 
 By adding these things to improve the performance:
 
@@ -49,7 +49,7 @@ By adding these things to improve the performance:
 - Data flow analysis
 - Speculative execution
 
-## 2) The balance (Balance is the key)
+#### 1.2 The balance (Balance is the key)
 
 > With the microprocessor speed increasing rapily refer to the Mooore's Law, the Memory accessing sppeding is on the contrary, cannot catch the speed of the microporcessor increase.
 
@@ -75,7 +75,7 @@ Solutions for I/O devices:
 - More elaborate bus structures
 - Multiple-processor configurations
 
-## 3) Imporve the chip O&amp;A
+#### 1.3 Imporve the chip O&amp;A
 
 - Increase hardware speed of processor
     - Power
@@ -94,12 +94,12 @@ Solutions for I/O devices:
 
 ### 2. Performance Assessment
 
-#### 1) Clock Speed
+#### 2.1 Clock Speed
 
 **The clock speed is not every thing**
 
 
-#### 2) Instruction Execution Rate
+#### 2.2 Instruction Execution Rate
 
 > There are three index of the rate, CPI, MIPS and MFLOPS
 
@@ -133,7 +133,7 @@ $$
 MFLOPS = {\frac{Number \ of\ execute\ floating-point\ operations\ in\ a\ program}{Execution\ time \times 10^6 }}
 $$
 
-## 3) Amdahl's Law
+#### 2.3 Amdahl's Law
 
 > The speed up rate between the single core machine and the multiple cores machine.
 
@@ -158,7 +158,7 @@ Conclusion:
 - $f$ small, parallel processor has little effect
 - $N \sim \infty$, the speedup bound by $1/(1-f)$
 
-## 4) Supplement
+#### 2.4 Supplement
 Some important terminology:
 - Bit is the binary digit rather 0 or 1.
 - A byte is defined as 8 bits

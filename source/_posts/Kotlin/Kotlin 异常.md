@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 概述
 
 和 Java 一样，Kotlin 的异常都继承于 `Throwable` 类。

@@ -5,20 +5,20 @@ categories: Kotlin
 tags: [Kotlin, Android]
 ---
 
-## 0. 概述
+## 1. 概述
 
 由于 Android Studio 基于 IntelliJ IDEA 开发，所以很容易在 Android Studio 上使用 Kotlin 开发 Android。
 
 
 <!-- more -->
 
-## 1. 创建工程
+## 2. 创建工程
 
 这步和普通的 Android 创建工程没有什么区别。
 
 创建完毕后，你一般会拥有一个由 AS 创建的 Java Activity 类。
 
-## 2. 将 Java 代码转换成 Kotlin 代码
+## 3. 将 Java 代码转换成 Kotlin 代码
 
 IDEA 内建了代码转换功能，只需要通过 Find Action(`cmd + shift + a`) 即可找到 **Convert Java File to Kotlin File**
 
@@ -26,7 +26,7 @@ IDEA 内建了代码转换功能，只需要通过 Find Action(`cmd + shift + a`
 
 经过转换之后，我们就能拥有一个使用 Kotlin 来编写的 Activity 类了。
 
-## 3. 在工程中配置 Kotlin
+## 4. 在工程中配置 Kotlin
 
 由于 Kotlin 是一个外部库，所以我们需要对工程进行一些配置。
 
@@ -45,7 +45,7 @@ IDEA 内建了代码转换功能，只需要通过 Find Action(`cmd + shift + a`
 
 
 
-## 4. 剩下的工作
+## 5. 剩下的工作
 
 由于 Kotlin 最终还是会被编译成字节码，所以剩下的 UI 开发和 APK 构建与使用 Java 语言时并没有任何区别。
 

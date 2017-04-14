@@ -5,6 +5,23 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
+
+&emsp;[1. 概述](#1-概述)   
+&emsp;[2. 公约](#2-公约)   
+&emsp;&emsp;[2.1 一元操作符](#21-一元操作符)   
+&emsp;&emsp;[2.2 二元操作符](#22-二元操作符)   
+&emsp;&emsp;&emsp;[2.2.1 数学运算与范围](#221-数学运算与范围)   
+&emsp;&emsp;&emsp;[2.2.2 `in` 操作符](#222-in-操作符)   
+&emsp;&emsp;&emsp;[2.2.3 方括号操作符](#223-方括号操作符)   
+&emsp;&emsp;&emsp;[2.2.4 圆括号操作符](#224-圆括号操作符)   
+&emsp;&emsp;&emsp;[2.2.5 复合赋值操作](#225-复合赋值操作)   
+&emsp;&emsp;&emsp;[2.2.6 相等性检查](#226-相等性检查)   
+&emsp;&emsp;&emsp;[2.2.7 比较运算符](#227-比较运算符)   
+&emsp;[3. 中缀函数](#3-中缀函数)   
+
+<!-- /MDTOC -->
+
 ## 1. 概述
 
 Kotlin 中的操作符都是由函数实现的，包括成员函数、扩展函数和中缀函数。
@@ -72,12 +89,11 @@ Expression | Translated to
 1. 将 `a.inc()` 的结果赋予 `a`
 2. 返回 `a`
 
-## 2.2 二元操作符
+### 2.2 二元操作符
 
 
 
-
-### 2.2.1 数学运算与范围
+#### 2.2.1 数学运算与范围
 
 Expression | Translated to
 --- | ---
@@ -90,7 +106,7 @@ Expression | Translated to
 
 这些操作符在执行时会自动翻译成相应的函数执行。
 
-### 2.2.2 `in` 操作符
+#### 2.2.2 `in` 操作符
 
 Expression | Translated to
 --- | ---
@@ -102,7 +118,7 @@ Expression | Translated to
 
 
 
-### 2.2.3 方括号操作符
+#### 2.2.3 方括号操作符
 
 Symbol | Translated to
 --- | ---
@@ -115,7 +131,7 @@ Symbol | Translated to
 
 方括号操作符的对应方法为 `get()`，根据参数个数来调用不同的 `get()` 方法，如果有赋值操作则调用 `set()` 方法。
 
-### 2.2.4 圆括号操作符
+#### 2.2.4 圆括号操作符
 
 Symbol | Translated to
 --- | ---
@@ -129,7 +145,7 @@ Symbol | Translated to
 
 
 
-### 2.2.5 复合赋值操作
+#### 2.2.5 复合赋值操作
 
 Expression | Translated to
 --- | ---
@@ -175,7 +191,7 @@ if ((a = b) != c) {
 
 > [这个链接](http://stackoverflow.com/questions/36879236/how-to-convert-java-assignment-expression-to-kotlin)中还有更多方法
 
-### 2.2.6 相等性检查
+#### 2.2.6 相等性检查
 
 Expression | Translated to
 --- | ---
@@ -191,7 +207,7 @@ Expression | Translated to
 
 
 
-### 2.7 比较运算符
+#### 2.2.7 比较运算符
 
 Symbol | Translated to
 --- | ---

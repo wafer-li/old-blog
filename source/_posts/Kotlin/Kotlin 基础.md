@@ -5,10 +5,10 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 基本语法
 
 
-<!-- more -->
 
 ### 1.1 变量定义
 
@@ -22,6 +22,8 @@ tags: Kotlin
      ```
 
     > 注意，kotlin 取消了分号
+
+<!-- more -->
 
 2.  使用 `var` 定义变量
 

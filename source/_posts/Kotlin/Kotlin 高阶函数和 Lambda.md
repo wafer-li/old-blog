@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 高阶函数
 
 Kotlin 允许函数接受一个**函数引用**作为参数，这样的函数被称作**高阶函数**。

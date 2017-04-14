@@ -5,6 +5,7 @@ categories: Scala
 tags: Scala
 ---
 
+
 ## 1. 函数类型
 
 函数类型是函数式语言的特征之一；

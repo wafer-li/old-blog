@@ -5,6 +5,8 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
+
 ## 1. 介绍
 
 我们经常要使用容器类结构，所以 Kotlin 提供了一种新特性，专门用于生成容器类，称为数据类(data class)

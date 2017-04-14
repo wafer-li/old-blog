@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 概述
 
 Kotlin 对于 Java 的一个很大的改进在于，Kotlin 的类型系统目标在于要**消除 `NullPointerException`**或者 NPE。

@@ -4,6 +4,7 @@ date: 2016-11-18
 categories: CleanCode
 tags: CleanCode
 ---
+
 ## 1. Naming
 
 ### 1.1 Common
@@ -96,7 +97,7 @@ static final Logger logger = Logger.getLogger(MyClass.getName());
 static final String[] nonEmptyArray = {"these", "can", "change"};
 ```
 
-## 1.2.6 Camel case: defined
+#### 1.2.6 Camel case: defined
 
 With the defined name, should still obey the camelCase
 

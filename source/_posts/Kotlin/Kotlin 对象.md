@@ -5,6 +5,8 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
+
 ## 1. 概述
 
 Kotlin 提供了一个 Object 属性用来实现在 Java 中很常见的三个功能：

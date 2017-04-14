@@ -5,7 +5,7 @@ categories: Android
 tags: Android
 ---
 
-## 0. 简介
+## 1. 简介
 
 这里是一些 Genymotion 安卓模拟器的问题解答集
 虽然这个工具很出名，但是由于它使用 VirtualBox 来实现一个 x86 的虚拟机，
@@ -14,13 +14,13 @@ tags: Android
 
 <!-- more -->
 
-## 1. Unable connect to virtual_device
+## 2. Unable connect to virtual_device
 
 当这个错误发生的时候，Genymotion 会让你在 VirtualBox 里面启动你的安卓虚拟机。请遵循这个执行，然后你就会获取到一个出错信息
 
 这里有一些已知的情况：
 
-### 1.1 Virtual Host Error
+### 2.1 Virtual Host Error
 
 如果你收到了一个关于 Virtual Host 的出错信息，那它将会像这样子：
 
@@ -49,7 +49,7 @@ Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND).
 > When this error occurs, genymotion will ask you to start the virtual device on VirtualBox, plase follow the instruction, and then you will get a ERROR message.
 
 
-## 2. 虚拟机链接不上网络
+## 3. 虚拟机链接不上网络
 
 这个有时会让人挺困惑——“为什么我的虚拟机连不上网络呢？”
 

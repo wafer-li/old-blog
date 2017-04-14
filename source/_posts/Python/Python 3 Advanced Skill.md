@@ -5,6 +5,8 @@ categories: Python
 tags: Python
 ---
 
+
+
 ## 1. 函数返回多个值
 
 函数可以通过返回一个**元组**来达到返回多个值的目的。

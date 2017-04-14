@@ -5,6 +5,7 @@ categories: Kotlin
 tags: Kotlin
 ---
 
+
 ## 1. 声明和实例化
 
 和 Java 一样，Kotlin 使用类型参数来声明一个泛型类

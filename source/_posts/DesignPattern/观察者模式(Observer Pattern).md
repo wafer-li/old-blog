@@ -5,6 +5,7 @@ categories: DesignPattern
 tags: DesignPattern
 ---
 
+
 ## 1. 概述
 
 观察者模式，是在对象间定义一个**一对多**的关系。

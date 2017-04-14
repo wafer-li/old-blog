@@ -5,7 +5,10 @@ categories: MaterialDesign
 tags: MaterialDesign
 ---
 
-## 概述
+
+
+
+## 1. 概述
 
 在 Materail Design 中，物体的行为和真实世界中很相似。
 
@@ -32,9 +35,9 @@ Material Design 实体具有以下三个高度属性：
 
 
 
-## 高度（Android）
+## 2. 高度（Android）
 
-### 说明
+### 2.1 说明
 
 高度的表示单位也是 dp，与 x 和 y 坐标一样。
 
@@ -46,12 +49,9 @@ Material Design 实体具有以下三个高度属性：
 
 同时，一个子对象的高度，指的是其 **相对于父对象的距离**。
 
-### 默认高度
+### 2.2 默认高度
 
 默认高度是不会变化的，当一个组件的高度变化时，它应该尽快的恢复默认高度。
-
-
-#### 组件的默认高度
 
 各个 Android 组件的默认高度可以到[官网](https://material.google.com/material-design/elevation-shadows.html#elevation-shadows-elevation-android)查看。
 
@@ -61,7 +61,7 @@ Material Design 实体具有以下三个高度属性：
 
 比如说电视和 PC 就比手机具有更深的层次。
 
-### 感应高度和动态的高度偏移
+### 2.3 感应高度和动态的高度偏移
 
 一些组件可能拥有感应高度，也就是说它会根据用户的输入（比如说触摸事件）来改变自己的高度。
 
@@ -77,8 +77,7 @@ Material Design 实体具有以下三个高度属性：
 
 
 
-
-### 避免高度冲突
+### 2.4 避免高度冲突
 
 拥有感应高度的组件可能会导致其他组件随着其高度变化而变化，这是因为 **组件不可以相互穿透**。
 
@@ -90,7 +89,7 @@ Material Design 实体具有以下三个高度属性：
 
 比如说将 FAB 置于卡片列表的一端来避免 FAB 与卡片出现的冲突。
 
-### 组件高度比较
+### 2.5 组件高度比较
 
 <center>
 <img src="http://ooo.0o0.ooo/2016/10/25/580f97a8896b0.png"/>
@@ -108,7 +107,7 @@ Material Design 实体具有以下三个高度属性：
 </center>
 另一个 Navigation Drawer 的例子
 
-## 阴影
+## 3. 阴影
 
 阴影给物体的高度和其运动的方向给予了一个重要的视觉线索。
 
@@ -167,42 +166,42 @@ Material Design 实体具有以下三个高度属性：
 可取，阴影不改变，表明物体的高度没有增加，而只是体积增大了。
 </div>
 
-### 组件参考高度
+### 3.1 组件参考高度
 
 下面列出一些组件的参考高度，它们应当作为高度的典范来使用。
 
 
 
 
-#### App Bar
+#### 3.1.1 App Bar
 
 **4dp**
 
 ![whatismaterial_3d_elevation_component06](http://ooo.0o0.ooo/2016/10/27/581197337063a.png)
 
 
-#### Raised Button
+#### 3.1.2 Raised Button
 
 默认高度： **2dp**
 按下高度： **8dp**
 
 ![whatismaterial_3d_elevation_component02](http://ooo.0o0.ooo/2016/10/27/581197947852f.png)
 
-#### Floating Action Button(FAB)
+#### 3.1.3 Floating Action Button(FAB)
 
 默认高度： **6dp**
 按下高度： **12dp**
 
 ![whatismaterial_3d_elevation_component08](http://ooo.0o0.ooo/2016/10/27/581198129617a.png)
 
-#### Card
+#### 3.1.4 Card
 
 按下高度： **2dp**
 抬起高度： **8dp**
 
 ![whatismaterial_3d_elevation_component03](http://ooo.0o0.ooo/2016/10/27/58119867c7e68.png)
 
-#### Menus and sub menus
+#### 3.1.5 Menus and sub menus
 
 菜单： **8dp**
 
@@ -210,58 +209,58 @@ Material Design 实体具有以下三个高度属性：
 
 ![whatismaterial_3d_elevation_component09](http://ooo.0o0.ooo/2016/10/27/581198f529dfc.png)
 
-#### Dialogs
+#### 3.1.6 Dialogs
 
 **24dp**
 
 ![whatismaterial_3d_elevation_component12](http://ooo.0o0.ooo/2016/10/27/5811992fdb62f.png)
 
-#### Nav Drawer and Right Drawer
+#### 3.1.7 Nav Drawer and Right Drawer
 
 **16dp**
 
 ![whatismaterial_3d_elevation_component10](http://ooo.0o0.ooo/2016/10/27/5811998438b5d.png)
 
-#### Modal Button Sheet
+#### 3.1.8 Modal Button Sheet
 
 **16dp**
 
 ![whatismaterial_3d_elevation_component11](http://ooo.0o0.ooo/2016/10/27/581199c05092c.png)
 
-#### Refresh indecator
+#### 3.1.9 Refresh indecator
 
 **3dp**
 
 ![whatismaterial_3d_elevation_component05](http://ooo.0o0.ooo/2016/10/27/58119a02a62c2.png)
 
-#### Quick entry/Search bar
+#### 3.1.10 Quick entry/Search bar
 
 默认高度： **2dp**
 滚动高度： **3dp**
 
 ![whatismaterial_3d_elevation_component04](http://ooo.0o0.ooo/2016/10/27/58119a4d3e9cd.png)
 
-#### Snackbar
+#### 3.1.11 Snackbar
 
 **6dp**
 
 ![whatismaterial_3d_elevation_component07](http://ooo.0o0.ooo/2016/10/27/58119a7fe42f7.png)
 
 
-#### Switch
+#### 3.1.12 Switch
 
 **1dp**
 
 ![whatismaterial_3d_elevation_component01](http://ooo.0o0.ooo/2016/10/27/58119aa685bdd.png)
 
 
-## 对象间关系
+## 4. 对象间关系
 
 对象和对象集合间的关系和组织结构就决定了，当某个对象移动时，其他的对象是否随其移动。
 
 对象可以独立的移动，也可以被其他上层对象的移动而随其移动
 
-### 对象的层次结构
+### 4.1 对象的层次结构
 
 所有的对象都在一个 **父子关系** 的组织结构中。
 
@@ -282,7 +281,7 @@ Material Design 实体具有以下三个高度属性：
 
 
 
-### 例外
+### 4.2 例外
 
 父对象是根对象的对象，例如一些主要的 UI 组件，它们的移动是独立于其他对象的。
 
@@ -302,7 +301,7 @@ Material Design 实体具有以下三个高度属性：
 
 
 
-### 交互
+### 4.3 交互
 
 对象和其他对象的交互动作由它所在的结构位置决定。
 
@@ -311,6 +310,6 @@ Material Design 实体具有以下三个高度属性：
 - 子对象具有一个能与父对象区分的最小 z 轴高度。其他的对象不能插入到这个父对象和子对象之间
 - 滚动的卡片是兄弟对象，所以它们会一起移动。而控制它们移动的就是它们的父对象。
 
-### 高度
+### 4.4 高度
 
 对象的高度取决于它的内容的结构还有它是否能独立于其他对象移动。

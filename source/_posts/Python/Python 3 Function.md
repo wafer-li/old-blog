@@ -5,6 +5,7 @@ categories: Python
 tags: Python
 ---
 
+
 ## 1. 函数的定义
 
 函数通过 `def` 关键字来定义。

@@ -178,7 +178,7 @@ public class GsonRequest<T> extends Request<T> {
 }
 ```
 
-## 3.1.2 重载 `getBody()` 方法
+#### 3.1.2 重载 `getBody()` 方法
 
 如果基本的 `getParams()` 方法不能满足需要，那么我们可以直接重载 `getBody()` 方法来实现对 HTTP body 的高度定制。
 
