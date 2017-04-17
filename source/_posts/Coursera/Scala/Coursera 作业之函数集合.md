@@ -2,9 +2,11 @@
 title: Coursera 作业之函数集合
 date: '2017-04-17 02:41'
 tags:
-  - Scala
   - Coursera
-categories: 'Coursera Scala'
+  - Scala
+categories:
+  - Coursera
+  - Scala
 ---
 
 ## 1. 背景知识
@@ -18,6 +20,8 @@ categories: 'Coursera Scala'
 但是，在数学上，还有很多的集合是无限集合，比如说 **负数集**；
 
 我们有没有一种办法去表示这个集合呢？
+
+<!-- more -->
 
 当然有的，对于上面的负数集来说，我们如何知道一个数字是不是负数集中的元素呢？
 

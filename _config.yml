@@ -54,11 +54,15 @@ default_category: uncategorized
 category_map:
     买买买: Buying
     杂谈: Talk
+    工程: Projects
+    大创: Big Innovation
 tag_map:
     买买买: Buying
     键盘: Keyboard
     杂谈: Talk
     打字: Typing
+    工程: Projects
+    大创: Big Innovation
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
