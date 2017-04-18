@@ -3,6 +3,7 @@ title: Scala 泛型和变形
 date: 2017-04-08
 categories: Scala
 tags: Scala
+mathjax: true
 ---
 
 ## 1. 概述

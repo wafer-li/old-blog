@@ -7,6 +7,7 @@ categories:
 tags:
     - 复习
     - 计组
+mathjax: true
 ---
 
 ## Introduction

@@ -13,7 +13,7 @@ tags: Mono
 
 <!-- more -->
 
-```sh
+```bash
 brew cask install mono-mdk
 ```
 
@@ -21,7 +21,7 @@ brew cask install mono-mdk
 
 有一点需要注意的地方就是，Visual Studio For Mac Preview 使用的是比较新的 mono，此时我们需要 tap `caskroom/versions` 仓库来获取 mono-mdk 的 preview 版本。
 
-```sh
+```bash
 brew tap caskroom/versions
 brew cask install mono-mdk-preview
 ```

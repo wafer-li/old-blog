@@ -7,6 +7,7 @@ tags:
 categories:
   - Coursera
   - Scala
+mathjax: true
 ---
 
 

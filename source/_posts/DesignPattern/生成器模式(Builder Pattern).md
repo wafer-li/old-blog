@@ -3,6 +3,7 @@ title: 生成器模式(Builder Pattern)
 date: 2017-03-12
 categories: DesignPattern
 tags: DesignPattern
+mathjax: true
 ---
 
 
@@ -166,10 +167,10 @@ $$
 当类的属性为 $n$ 时，有
 
 $$
-\begin{align}
+\begin{aligned}
 W &= C_n^0 + C_n^1 + C_n^2 + \cdots + C_n^{n-1} + C_n^n \\
 &= 2^n
-\end{align}
+\end{aligned}
 $$
 
 所以，类的属性和理想状态下的构造器数量为 **指数关系**

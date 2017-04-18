@@ -3,24 +3,25 @@ title: C# Basic
 date: 2016-11-30
 categories: CSharp
 tags: CSharp
+mathjax: true
 ---
 
 <!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
 
-&emsp;[1. Hello, World!](#1-hello-world)   
-&emsp;[2. 基本类型](#2-基本类型)   
-&emsp;&emsp;[2.1 声明和初始化](#21-声明和初始化)   
-&emsp;&emsp;[2.2 默认值](#22-默认值)   
-&emsp;&emsp;[2.3 基本类型的对象成员](#23-基本类型的对象成员)   
-&emsp;&emsp;[2.4 Big Number](#24-big-number)   
-&emsp;[3. 字符串](#3-字符串)   
-&emsp;&emsp;[3.1 逐字字符串](#31-逐字字符串)   
-&emsp;&emsp;[3.2 相等性判别](#32-相等性判别)   
-&emsp;&emsp;[3.3 字符串格式化](#33-字符串格式化)   
-&emsp;[4. 类型转换](#4-类型转换)   
-&emsp;&emsp;[4.1 checked 和 unchecked](#41-checked-和-unchecked)   
-&emsp;[5. 隐式类型 var](#5-隐式类型-var)   
-&emsp;&emsp;[真正用途](#真正用途)   
+&emsp;[1. Hello, World!](#1-hello-world)
+&emsp;[2. 基本类型](#2-基本类型)
+&emsp;&emsp;[2.1 声明和初始化](#21-声明和初始化)
+&emsp;&emsp;[2.2 默认值](#22-默认值)
+&emsp;&emsp;[2.3 基本类型的对象成员](#23-基本类型的对象成员)
+&emsp;&emsp;[2.4 Big Number](#24-big-number)
+&emsp;[3. 字符串](#3-字符串)
+&emsp;&emsp;[3.1 逐字字符串](#31-逐字字符串)
+&emsp;&emsp;[3.2 相等性判别](#32-相等性判别)
+&emsp;&emsp;[3.3 字符串格式化](#33-字符串格式化)
+&emsp;[4. 类型转换](#4-类型转换)
+&emsp;&emsp;[4.1 checked 和 unchecked](#41-checked-和-unchecked)
+&emsp;[5. 隐式类型 var](#5-隐式类型-var)
+&emsp;&emsp;[真正用途](#真正用途)
 
 <!-- /MDTOC -->
 

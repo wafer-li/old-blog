@@ -3,6 +3,7 @@ title: Scala 函数式特征
 date: 2017-04-01
 categories: Scala
 tags: Scala
+mathjax: true
 ---
 
 

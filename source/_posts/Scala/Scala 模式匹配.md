@@ -5,6 +5,7 @@ tags:
   - Scala
 categories:
   - Scala
+mathjax: true
 ---
 
 模式匹配，是 Scala 相比 Java 在类型上的一个很好地改进；
@@ -23,7 +24,7 @@ categories:
 比如算数表达式，由文法可知，它是具有树状依赖关系的：
 
 $$
-\begin{align}
+\begin{aligned}
 E & \rightarrow \\
 & E+E \ | \\
 & E-E \ | \\
@@ -31,7 +32,7 @@ E & \rightarrow \\
 & E/E \ | \\
 & (E) \ | \\
 &  i
-\end{align}
+\end{aligned}
 $$
 
 所以，我们可以使用如下的类来表示一个算术表达式：

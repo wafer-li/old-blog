@@ -7,6 +7,7 @@ categories:
 tags:
     - 复习
     - 自动机
+mathjax: true
 ---
 
 ## 1. Automata
