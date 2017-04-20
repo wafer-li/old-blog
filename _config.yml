@@ -97,6 +97,29 @@ search:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# Minifier
+
+## HTML
+html_minifier:
+  enable: true
+  ignore_error: false
+  exclude:
+
+## CSS
+css_minifier:
+  enable: true
+  exclude: 
+    - '*.min.css'
+
+## JS
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
