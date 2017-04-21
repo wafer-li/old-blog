@@ -25,7 +25,7 @@ categories:
 
 而在函数式语言中，我们有对应的高阶函数来解决这个问题。
 
-## 1.1 `filter(p: (T) => Boolean)`
+### 1.1 `filter(p: (T) => Boolean)`
 
 顾名思义， **过滤器**，用来 **选取符合条件的元素**， 并将其作为返回值；
 
@@ -39,7 +39,7 @@ val list = List(1, 2, 3, 4)
 list.filter((x) => x > 2) // List(3, 4)
 ```
 
-## 1.2 `filterNot(p: (T) => Boolean)`
+### 1.2 `filterNot(p: (T) => Boolean)`
 
 同理，这个函数是上面的反面，也就是用来 **过滤掉** 符合条件的元素；
 
@@ -53,7 +53,7 @@ val list = List(1,2,2,3)
 list.filterNot((x) => x == 2) // List(1, 3)
 ```
 
-## 1.3 `partition(p: (T) => Boolean)`
+### 1.3 `partition(p: (T) => Boolean)`
 
 这个函数是上面两个函数的集合体，返回的是一个 `Turple`，包含的元素为：
 
@@ -70,7 +70,7 @@ val list = List(1, 2, 3, 4, 5, 6, 7)
 list.partition((x) => x < 4)
 ```
 
-## 1.4 `takeWhile(p: (T) => Boolean)`
+### 1.4 `takeWhile(p: (T) => Boolean)`
 
 这个函数会一直选取元素， **直到 `p` 的返回值为 `false`**，然后将元素作为新的集合返回。
 
@@ -85,7 +85,7 @@ val list = List(1, 1, 1, 1, 2, 1)
 list.takeWhile((x) => x == 1) // List(1, 1, 1, 1)
 ```
 
-## 1.5 `dropWhile(p: (T) => Boolean)`
+### 1.5 `dropWhile(p: (T) => Boolean)`
 
 和上面的方法相反，这个方法会一直 **丢弃** 元素，直到 `p` 的返回值为 `false`；
 
@@ -97,7 +97,7 @@ val list = List(1, 3, 6, 9, 4, 2, 1)
 list.dropWhile((x) x != 4) // List(4, 2, 1)
 ```
 
-## 1.6 `span(p: (T) => Boolean)`
+### 1.6 `span(p: (T) => Boolean)`
 
 这个函数是上两个函数的结合，它返回的是如下的一个 `Turple`：
 
@@ -105,7 +105,7 @@ list.dropWhile((x) x != 4) // List(4, 2, 1)
 (list.takeWhile, list.dropWhile)
 ```
 
-## 1.7 `partition`、`span` 和它们的基本方法的区别
+### 1.7 `partition`、`span` 和它们的基本方法的区别
 
 既然 `partition` 和 `span` 都可以用基本的 `filter`、`filterNot` 和 `takeWhile`、`dropWhile` 来解决，那为什么还要专门实现一次这两个方法呢？
 
@@ -184,7 +184,7 @@ listOfLists.flatMap((x) => x.map(_ * 2)) // List(2, 4, 6, 8)
 
 下面介绍的就是一系列规约函数。
 
-## 3.1 `reduceLeft(op: (B, T) => B)`
+### 3.1 `reduceLeft(op: (B, T) => B)`
 
 顾名思义，从左到右进行规约操作；
 
@@ -224,7 +224,7 @@ digraph G {
 
 也就是说，`reduceLeft` 要求， **`op` 的左边参数的类型，必须和其返回值的类型相同。**
 
-## 3.2 `foldLeft(z: B)(op: (B, T) => B)`
+### 3.2 `foldLeft(z: B)(op: (B, T) => B)`
 
 `foldLeft` 则是对 `reduceLeft` 的进一步泛化；
 
@@ -262,7 +262,7 @@ digraph G {
 
 可以先提供初始值，然后在 `op` 操作确定之后，再进行规约运算。
 
-## 3.3 `reduceRight(op: (T, B) => B)`
+### 3.3 `reduceRight(op: (T, B) => B)`
 
 我们既然能从左边规约，当然也可以从右边规约；
 
@@ -296,7 +296,7 @@ digraph G {
 
 同理，`reduceRight` 要求，它的右操作数的类型必须和它的返回值类型相同。
 
-## 3.4 `foldRight(z: B)(op: (T, B) => B)`
+### 3.4 `foldRight(z: B)(op: (T, B) => B)`
 
 同样的，我们也具有一个  `foldRight` 函数，在集合为空时，返回初始值 `z`；
 
@@ -325,7 +325,7 @@ digraph G {
 @enduml
 ```
 
-## 3.5 `left` 和 `right` 的区别
+### 3.5 `left` 和 `right` 的区别
 
 那么 `left` 和 `right` 有什么区别呢？
 
