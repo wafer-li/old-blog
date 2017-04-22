@@ -332,6 +332,24 @@ scala.NotImplementedError: an implementation is missing
 
 如果不存在这样的函数，那么就返回 `None`
 
+### 3.8 `groupBy[A](f: (A) => K): Map[K, Seq[A]]`
+
+`groupBy` 通过函数 `f`，将 `List` 分成不同的部分；
+
+每一个部分由一个键值 `K` 来进行映射，最终返回结果为一个 `Map` 对象。
+
+例子：
+
+```scala
+val fruit = List("apple", "peer", "orange", "pineapple")
+
+fruit groupBy (_.head)
+
+//> Map(p -> List("peer", "pineapple"),
+//      a -> List("apple"),
+//      o -> List("orange"))
+```
+
 ## 4. 规约
 
 在一个集合中，我们通常还会进行规约操作；
