@@ -17,7 +17,7 @@ categories:
 
 <!-- more -->
 
-## 1.子集操作
+## 1. 子集操作
 
 在一个集合中选取一些特定的元素作为子集；
 
@@ -114,6 +114,28 @@ list.dropWhile((x) x != 4) // List(4, 2, 1)
 但是如果使用 `filter`、`filterNot` 和 `takeWhile`、`dropWhile` 来实现的话，就需要扫描两次集合了。
 
 所以，如果同时需要两者的数据的话，那么使用 `span` 和 `partition` 显然是更经济的。
+
+### 1.8 `withFilter`
+
+Scala 除了 `filter` 之外，还提供了一个 `withFilter` 函数；
+
+那么，这两者有什么区别呢？
+
+根据文档：
+
+> Note: the difference between `c filter p` and `c withFilter p` is that the former creates a new collection, whereas the latter only restricts the domain of subsequent map, flatMap, foreach, and withFilter operations.
+
+也就是说，`filter` 会返回一个 **新的 `List`**；
+
+但是 `withFilter` 不会返回新的 `List`；
+
+它只会提供一个过滤器的作用，让符合条件的元素通过，以方便接下来的 `map` 等其他高阶函数的使用；
+
+而就效率而言，`withFilter` 比 `filter` 要快。
+
+如果你需要返回一个新的集合，就使用 `filter`；
+
+如果你只是需要一个元素过滤器，而接下来，还需要进行其他操作，那么就使用 `withFilter`
 
 ## 2. 元素检查
 
