@@ -70,15 +70,11 @@ for (s) yield e
 
 1. `s` 是 `generator` 和 `filter` 组成的，以分号间隔的语句序列。
 
-
 2. `genrator` 的形式为： `p <- c`。
 
-    > 其中 `p` 是一个模式(pattern)
-    > `c`  则是一个集合
-
+    > 其中 `p` 是一个模式(pattern)，`c`  则是一个集合
 
 3. `filter` 的形式为 `if condition`，其中 `condition` 是个布尔表达式
-
 
 4. 允许多个 `generator`，但是在下面的 `generator` 必须比在上面的要变化的快。
 
