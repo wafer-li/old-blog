@@ -70,7 +70,7 @@ data?.let {
 
 可以看到，`let` 实际上就相当于集合中的 `map`，作用就是进行元素的变换功能；
 
-![](http://ww2.sinaimg.cn/large/006tNbRwgy1fevs5lulszj30ho08k74u.jpg)
+![](https://ww2.sinaimg.cn/large/006tNbRwgy1fevs5lulszj30ho08k74u.jpg)
 
 注意，不能在 `let` 中调用 `it` 的修改方法；
 
@@ -111,7 +111,7 @@ with(w) {
 
 如上面的设置 `Window` 的宽度和高度，以及背景颜色等。
 
-![](http://ww4.sinaimg.cn/large/006tNbRwgy1fevsj7j8fij30e60agjrw.jpg)
+![](https://ww4.sinaimg.cn/large/006tNbRwgy1fevsj7j8fij30e60agjrw.jpg)
 
 可以看到，`with` 的调用 **会改变传入的对象**
 
@@ -119,7 +119,7 @@ with(w) {
 
 不过由于 `let` 函数是将对象当做 **参数** 传入，所以如果要获得和 `with` 一样的效果，就必须在前面加 `it`：
 
-![](http://ww3.sinaimg.cn/large/006tNbRwly1fevslr0wr7j30iu0aijrz.jpg)
+![](https://ww3.sinaimg.cn/large/006tNbRwly1fevslr0wr7j30iu0aijrz.jpg)
 
 所以，`let` 并不适合这里所说的这个用途，利用 `let` 进行元素变换即可。
 
@@ -149,7 +149,7 @@ println(s) //=> HOGE
 
 作为 `let` 和 `with` 的合体方法，那么最主要的用途当然还是进行某个对象的配置。
 
-![](http://ww1.sinaimg.cn/large/006tNbRwgy1fevw96ztszj30go0843yz.jpg)
+![](https://ww1.sinaimg.cn/large/006tNbRwgy1fevw96ztszj30go0843yz.jpg)
 
 需要注意的是，`run` 也会对对象进行改变。
 
@@ -179,7 +179,7 @@ println(s) //=> hoge
 
 实际上就是 `with` 最后返回 `this` 的简略版本。
 
-![](http://ww1.sinaimg.cn/large/006tNbRwgy1fevwr9abcuj30va062q3m.jpg)
+![](https://ww1.sinaimg.cn/large/006tNbRwgy1fevwr9abcuj30va062q3m.jpg)
 
 ## 5. `also`
 
