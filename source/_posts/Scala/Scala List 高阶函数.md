@@ -115,9 +115,43 @@ list.dropWhile((x) x != 4) // List(4, 2, 1)
 
 所以，如果同时需要两者的数据的话，那么使用 `span` 和 `partition` 显然是更经济的。
 
-## 2. 变换
+## 2. 元素检查
 
-### 2.1 `map(f: (T) => U)`
+有时候，我们会希望检查集合内部的元素状态；
+
+比如说， **是否所有的元素都满足某个特定条件**；
+
+或者， **是否有元素满足特定条件**。
+
+在 Scala 中，我们有高阶函数来进行这个操作。
+
+### 2.1 `forAll(p: (T) => Boolean): Boolean`
+
+顾名思义，检查 **是否所有的元素都满足特定条件**
+
+例如：
+
+```scala
+val list = List(1, 2, 3, 4)
+
+list.forAll(c => c > 0) // true
+```
+
+### 2.2 `exists(p: (T) => Boolean): Boolean`
+
+同理，检查 **是否存在满足条件的元素**
+
+例如：
+
+```scala
+val list = List(1, 2, 3, 4)
+
+list.exists(c => c < 0) // false
+```
+
+## 3. 变换
+
+### 3.1 `map(f: (T) => U)`
 
 `map` 函数，可以说是这里面用的最多的高阶函数了；
 
@@ -143,7 +177,7 @@ val list = List(1, 2, 3, 4)
 list.map((x) => x.toString())   // List("1", "2", "3", "4")
 ```
 
-### 2.2 `flatten`
+### 3.2 `flatten`
 
 这个函数可以将嵌套的 `List` 展平，就像它的名字一样。
 
@@ -155,7 +189,7 @@ val listOfLists = List(List(1, 2), List(3, 4))
 listOfLists.flatten = List(1, 2, 3, 4, 5, 6)
 ```
 
-### 2.3 `flatMap`
+### 3.3 `flatMap`
 
 它是 `map` 和 `flatten` 的集合体，相当于先进行 `map` 然后 `flatten`。
 
@@ -174,7 +208,41 @@ listOfLists.flatMap((x) => x.map(_ * 2)) // List(2, 4, 6, 8)
 > `flatMap` 的作用过于强大，使用时需要小心谨慎
 > 在 Twitter 的 *Effective Scala* 中，推荐使用 *for-comprehention* 来代替 `flatMap` 的使用
 
-## 3. 规约
+### 3.4 `zip[T](xs: List[U]): List[(T, U)]`
+
+压缩，它的左右两个操作数分别是 **两个 `List`**；
+
+然后返回一个分别包含两个 `List` 元素的二元组的 `List`。
+
+例如：
+
+```scala
+val list1 = List(1, 2, 3, 4)
+val list2 = List("a", "b", "c", "d")
+
+// List((1, "a"), (2, "b"), (3, "c"), (4, "d"))
+list1 zip list2
+```
+
+### 3.5 `unzip`
+
+有压缩就有解压；
+
+这个函数的作用就是将上面压缩后的结果解压出来；
+
+具体来说就是接受一个二元组的 `List`， 返回一个 `List` 的二元组。
+
+例如：
+
+```scala
+val list1 = List(1, 2, 3, 4)
+val list2 = List("a", "b", "c", "d")
+
+// (List(1, 2, 3, 4), List("a", "b", "c", "d"))
+(list1 zip list2) unzip
+```
+
+## 4. 规约
 
 在一个集合中，我们通常还会进行规约操作；
 
@@ -184,7 +252,7 @@ listOfLists.flatMap((x) => x.map(_ * 2)) // List(2, 4, 6, 8)
 
 下面介绍的就是一系列规约函数。
 
-### 3.1 `reduceLeft(op: (B, T) => B)`
+### 4.1 `reduceLeft(op: (B, T) => B)`
 
 顾名思义，从左到右进行规约操作；
 
@@ -224,7 +292,7 @@ digraph G {
 
 也就是说，`reduceLeft` 要求， **`op` 的左边参数的类型，必须和其返回值的类型相同。**
 
-### 3.2 `foldLeft(z: B)(op: (B, T) => B)`
+### 4.2 `foldLeft(z: B)(op: (B, T) => B)`
 
 `foldLeft` 则是对 `reduceLeft` 的进一步泛化；
 
@@ -262,7 +330,7 @@ digraph G {
 
 可以先提供初始值，然后在 `op` 操作确定之后，再进行规约运算。
 
-### 3.3 `reduceRight(op: (T, B) => B)`
+### 4.3 `reduceRight(op: (T, B) => B)`
 
 我们既然能从左边规约，当然也可以从右边规约；
 
@@ -296,7 +364,7 @@ digraph G {
 
 同理，`reduceRight` 要求，它的右操作数的类型必须和它的返回值类型相同。
 
-### 3.4 `foldRight(z: B)(op: (T, B) => B)`
+### 4.4 `foldRight(z: B)(op: (T, B) => B)`
 
 同样的，我们也具有一个  `foldRight` 函数，在集合为空时，返回初始值 `z`；
 
@@ -325,7 +393,7 @@ digraph G {
 @enduml
 ```
 
-### 3.5 `left` 和 `right` 的区别
+### 4.5 `left` 和 `right` 的区别
 
 那么 `left` 和 `right` 有什么区别呢？
 
@@ -337,7 +405,15 @@ digraph G {
 
 那么这两个函数的执行结果就不一样。
 
-## 4. 其他高阶函数
+### 4.6 其他规约函数
+
+Scala 还提供了一些其他的针对数字类型的规约函数；
+
+例如：`sum`， `product`，`max` 和 `min`；
+
+不过，`sum` 和 `product` 只能用于数字类型，否则会报错。
+
+## 5. 其他高阶函数
 
 Scala 集合中还拥有其他的高阶函数，诸如：`count`、`find`、`sortWith` 等；
 
