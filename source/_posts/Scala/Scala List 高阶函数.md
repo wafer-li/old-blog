@@ -264,6 +264,74 @@ val list2 = List("a", "b", "c", "d")
 (list1 zip list2) unzip
 ```
 
+### 3.6 `collect`
+
+根据文档，`collect` 接受一个 `PartialFunction`，然后对集合中的每个元素都 apply 这个函数，返回一个新的集合。
+
+听起来，这个方法和 `map` 很像，不过其区别就是在于 `collect` 接受的是一个 `PartialFnction` ；
+
+这具体是什么意思呢？
+
+我们来举个例子：
+
+```scala
+val convertFn: PartialFunction[Any, Int] = {
+  case i: Int => i;
+  case s: String => s.toInt;
+  case Some(s: String) => s.toInt
+}
+
+List(0, 1, "2", "3", Some(4), Some("5")).
+  collect(convertFn)
+
+// List[Int] = List(0, 1, 2, 3, 5)
+```
+
+注意到， `collect` 的 lambda 中，并没有对所有的 `case` 都进行处理；
+
+上面的 `List` 除了含有 `String` 、 `Int` 和 `Some[String]` 之外，还含有 `Some[Int]`；
+
+这就是所谓的 `PartialFunction` ，它并没有对所有的情形都进行处理，也没有提供一个默认的选项。
+
+如果上面的 `collect` 替换为 `map`，则第四个 `Some(4)` 就会导致 `MatchError`；
+
+而 `collect` 则避开了这个错误。
+
+理论上，`collect` 进行了 `map` 和 `filter` 的两重功能。
+
+虽然，`collect` 不会造成 `MatchError`；
+
+但是 `collect` 不是使用 `try...catch` 实现的。
+
+`collect` 是通过检查函数中提供的 `case` 检查；
+
+如果 `case` 不匹配，则跳过该元素，不调用函数；
+
+如果 `case` 中存在 `???`，那么同样也会抛出异常：
+
+```scala
+List(1, "").collect(
+  {
+    case i: Int => i;
+    case _ => ???
+  }
+)
+
+scala.NotImplementedError: an implementation is missing
+  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+  at $anonfun$1.applyOrElse(<console>:8)
+  at scala.collection.immutable.List.collect(List.scala:303)
+  ... 33 elided
+```
+
+### 3.7 `collectFirst`
+
+这是 `collect` 的简化版本；
+
+它只会将函数应用在 **第一个满足** 其 `case` 的元素中，并返回一个包含该元素的 `Option` 对象。
+
+如果不存在这样的函数，那么就返回 `None`
+
 ## 4. 规约
 
 在一个集合中，我们通常还会进行规约操作；
