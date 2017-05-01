@@ -189,3 +189,15 @@ Observable.just(getFilePath())
           //执行在主线程
           .subscribe(mSubscriber)
 ```
+
+## 3. 参考资料
+
+[给 Android 开发者的 RxJava 详解](https://gank.io/post/560e15be2dca930e00da1083)
+
+[关于RxJava最友好的文章](http://www.jianshu.com/p/6fd8640046f1)
+
+[关于RxJava最友好的文章（进阶）](http://www.jianshu.com/p/e61e1307e538)
+
+[关于RxJava最友好的文章——背压（Backpressure）](http://www.jianshu.com/p/2c4799fa91a4)
+
+[关于 RxJava 最友好的文章—— RxJava 2.0 全新来袭](http://www.jianshu.com/p/220955eefc1f)
