@@ -451,3 +451,11 @@ private static final class CallDisposable implements Disposable {
 所以，只要在 `onSubscribe()` 中获取到 `Disposable` 对象；
 
 通过调用 `dispose()` 就能取消请求。
+
+## 7. 其他
+
+`adapter-rxjava2` 除了支持 `Observable` 以外，还支持了 `Flowable`、`Single` 和 `Maybe` 等对象；
+
+由于原理都是类似的，在这里就不详细展开了。
+
+> 不过，请务必注意 `Flowable` 和 `Observable` 的区别。
