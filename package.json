@@ -7,8 +7,8 @@
   },
   "dependencies": {
     "hexo": "^3.3.5",
-    "hexo-all-minifier": "^0.1.1",
-    "hexo-deployer-git": "^0.2.0",
+    "hexo-all-minifier": "^0.3.1",
+    "hexo-deployer-git": "^0.3.1",
     "hexo-filter-plantuml": "^1.0.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-atom-markdown-writer-meta": "^0.1.1",
@@ -17,14 +17,14 @@
     "hexo-generator-feed": "^1.2.0",
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-searchdb": "^1.0.7",
-    "hexo-generator-seo-friendly-sitemap": "0.0.20",
+    "hexo-generator-seo-friendly-sitemap": "0.0.21",
     "hexo-generator-tag": "^0.2.0",
     "hexo-inject": "^1.0.0",
     "hexo-reference": "^1.0.3",
-    "hexo-renderer-ejs": "^0.2.0",
+    "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-kramed": "^0.1.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "hexo-wordcount": "^2.0.1"
+    "hexo-wordcount": "^3.0.2"
   }
 }
