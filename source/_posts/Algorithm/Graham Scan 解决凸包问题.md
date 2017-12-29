@@ -3,6 +3,7 @@ title: Graham Scan 解决凸包问题
 date: 2017-02-05
 categories: Algorithm
 tags: Algorithm
+mathjax: true
 ---
 
 输入一个点集，输出一个构成**能容纳所有点的最小多边形的顶点集合**
