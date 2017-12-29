@@ -3,7 +3,7 @@ title: 散列表(Hash Table)
 date: 2017-03-09
 categories: Algorithm
 tags: Algorithm
-mathjax: true---
+---
 
 ## 1. 概述
 

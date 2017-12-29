@@ -3,7 +3,7 @@ title: 快速选择算法解 Top K 问题
 date: 2017-02-06
 categories: Algorithm
 tags: Algorithm
-mathjax: true---
+---
 
 
 
