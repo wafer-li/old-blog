@@ -2,14 +2,14 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://wafer.li/tags/Proxy/</loc>
+        <loc>https://wafer.li/tags/LocalNetwork/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/LocalNetwork/</loc>
+        <loc>https://wafer.li/tags/Proxy/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -44,14 +44,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/HTML/</loc>
+        <loc>https://wafer.li/tags/GitHub/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/GitHub/</loc>
+        <loc>https://wafer.li/tags/HTML/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -107,6 +107,13 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/tags/Mono/</loc>
+        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://wafer.li/tags/Plan/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -149,13 +156,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Mono/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/Typing/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -170,13 +170,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Tools/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/Galgame/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -185,6 +178,13 @@
 
     <url>
         <loc>https://wafer.li/tags/%E6%9C%88%E3%81%AB%E5%AF%84%E3%82%8A%E3%81%9D%E3%81%86%E4%B9%99%E5%A5%B3%E3%81%AE%E4%BD%9C%E6%B3%95/</loc>
+        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Tools/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -275,14 +275,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/DesignPattern/</loc>
+        <loc>https://wafer.li/tags/Decoration/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Decoration/</loc>
+        <loc>https://wafer.li/tags/DesignPattern/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -345,55 +345,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Android/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Kotlin/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Kancolle/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Linux/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Scala/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/PHP/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Retrofit/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2017-12-29T17:26:52.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -403,6 +354,55 @@
     <url>
         <loc>https://wafer.li/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</loc>
         <lastmod>2017-12-29T17:26:52.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Android/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Kancolle/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Kotlin/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Linux/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/PHP/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Scala/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Retrofit/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

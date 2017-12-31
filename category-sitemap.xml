@@ -21,14 +21,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/HTML/</loc>
+        <loc>https://wafer.li/categories/GitHub/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/GitHub/</loc>
+        <loc>https://wafer.li/categories/HTML/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -70,6 +70,13 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/categories/Mono/</loc>
+        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://wafer.li/categories/Plan/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -92,13 +99,6 @@
 
     <url>
         <loc>https://wafer.li/categories/Talk/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Mono/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -133,14 +133,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Projects/</loc>
+        <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
+        <loc>https://wafer.li/categories/Projects/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -196,14 +196,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/DesignPattern/</loc>
+        <loc>https://wafer.li/categories/Decoration/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Decoration/</loc>
+        <loc>https://wafer.li/categories/DesignPattern/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -273,55 +273,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Android/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Kotlin/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Kancolle/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Linux/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Scala/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/PHP/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Android/Retrofit/</loc>
-        <lastmod>2017-12-29T17:26:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2017-12-29T17:26:52.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -331,6 +282,55 @@
     <url>
         <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E6%A6%82%E7%8E%87%E8%AE%BA/</loc>
         <lastmod>2017-12-29T17:26:52.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Android/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Kancolle/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Kotlin/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Linux/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/PHP/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Scala/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Android/Retrofit/</loc>
+        <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
