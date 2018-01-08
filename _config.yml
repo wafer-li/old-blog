@@ -92,10 +92,17 @@ search:
   format: html
   limit: 10000
 
+# Symbols Count
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
 
 # Minifier
 
