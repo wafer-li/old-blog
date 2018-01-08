@@ -12,5 +12,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://wafer.li/sitemap.xml
-Sitemap: http://wafer.li/baidusitemap.xml
+Sitemap: https://wafer.li/sitemap.xml
