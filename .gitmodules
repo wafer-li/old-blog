@@ -1,3 +1,6 @@
 [submodule "next"]
     path = themes/next
     url = git@github.com:wafer-li/hexo-theme-next.git
+[submodule "themes/next-reloaded"]
+	path = themes/next-reloaded
+	url = git@github.com:wafer-li/hexo-theme-next-reloaded.git
