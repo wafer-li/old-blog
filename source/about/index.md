@@ -12,6 +12,8 @@ Java、Kotlin 和 Scala；
 
 ## Kancolle
 
-塔威提督，目前等级 116；
+塔威提督，目前等级 119；
 
 **舰娘就是生活**
+
+![Kanmusu](/images/kanmusu.png)
