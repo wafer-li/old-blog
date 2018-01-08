@@ -126,14 +126,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
+        <loc>https://wafer.li/categories/Projects/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Projects/</loc>
+        <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -189,14 +189,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Decoration/</loc>
+        <loc>https://wafer.li/categories/DesignPattern/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/DesignPattern/</loc>
+        <loc>https://wafer.li/categories/Decoration/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
