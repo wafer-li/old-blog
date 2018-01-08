@@ -189,14 +189,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/DesignPattern/</loc>
+        <loc>https://wafer.li/categories/Decoration/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Decoration/</loc>
+        <loc>https://wafer.li/categories/DesignPattern/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -210,14 +210,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E9%AB%98%E6%95%B0/</loc>
+        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
+        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E9%AB%98%E6%95%B0/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -294,14 +294,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Kotlin/</loc>
+        <loc>https://wafer.li/categories/Linux/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Linux/</loc>
+        <loc>https://wafer.li/categories/Kotlin/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
