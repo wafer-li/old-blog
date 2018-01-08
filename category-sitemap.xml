@@ -7,13 +7,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Buying/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/CleanCode/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -331,6 +324,13 @@
     <url>
         <loc>https://wafer.li/categories/Android/Retrofit/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Buying/</loc>
+        <lastmod>2018-01-08T05:35:19.214Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
