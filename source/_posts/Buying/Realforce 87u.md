@@ -4,7 +4,7 @@ date: '2017-04-11 13:28'
 tags:
   - 买买买
   - 键盘
-  - Realforce 
+  - Realforce
 categories:
   - 买买买
 ---
@@ -12,6 +12,8 @@ categories:
 最近终于下定决心来买这个键盘了。
 
 主要说说使用感受吧
+
+2018/1/8 更新部分内容
 
 <!-- more -->
 
@@ -36,6 +38,10 @@ Realforce 87u 有个特色功能，就是把没有什么卵用的 Scroll Lock �
 这是我在 87 键盘上从来没有见到过的。
 
 不过在 Mac 上，这个 NumLock 就失效了；
+
+> 2018/1/8 补充：
+> **可惜的是，自从升级到 High Sierra 之后下面的方法就不管用了**
+> **不过吧，反正我也不怎么用这个小键盘，先就这样吧。**
 
 需要使用 Karabiner 进行键位修改。
 
@@ -92,3 +98,9 @@ Realforce 87u 有个特色功能，就是把没有什么卵用的 Scroll Lock �
 最后来一张玉照：
 
 ![](https://ww3.sinaimg.cn/large/006tNbRwly1feinxuuro5j31kw23ve83.jpg)
+
+## 6. 补充
+
+上传一张 Switch 的说明书，说不定以后会用到。
+
+![](https://ws3.sinaimg.cn/large/006tNc79ly1fn953gfiazj31kw2t5h2v.jpg)
