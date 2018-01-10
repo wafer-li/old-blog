@@ -1,6 +1,6 @@
 # Blog Source
 
-Please visit https://wafer-li.github.io/
+Please visit https://wafer.li
 
 ## Usage
 
