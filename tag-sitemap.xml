@@ -30,6 +30,13 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/tags/HTML/</loc>
+        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://wafer.li/tags/Hexo/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -38,13 +45,6 @@
 
     <url>
         <loc>https://wafer.li/tags/Blog/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/HTML/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -352,14 +352,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Linux/</loc>
+        <loc>https://wafer.li/tags/Kotlin/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Kotlin/</loc>
+        <loc>https://wafer.li/tags/Linux/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

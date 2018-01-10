@@ -21,14 +21,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Hexo/</loc>
+        <loc>https://wafer.li/categories/HTML/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/HTML/</loc>
+        <loc>https://wafer.li/categories/Hexo/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -294,14 +294,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Linux/</loc>
+        <loc>https://wafer.li/categories/Kotlin/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Kotlin/</loc>
+        <loc>https://wafer.li/categories/Linux/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
