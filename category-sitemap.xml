@@ -126,14 +126,14 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Projects/</loc>
+        <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
+        <loc>https://wafer.li/categories/Projects/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -210,13 +210,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E9%AB%98%E6%95%B0/</loc>
-        <lastmod>2017-12-29T16:44:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -224,7 +217,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%BB%84/</loc>
+        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E9%AB%98%E6%95%B0/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -232,6 +225,13 @@
 
     <url>
         <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%BD%91/</loc>
+        <lastmod>2017-12-29T16:44:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%BB%84/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -287,7 +287,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Kancolle/</loc>
+        <loc>https://wafer.li/categories/Kotlin/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -301,7 +301,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Kotlin/</loc>
+        <loc>https://wafer.li/categories/Kancolle/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -331,6 +331,13 @@
     <url>
         <loc>https://wafer.li/categories/Buying/</loc>
         <lastmod>2018-01-08T05:35:19.214Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Solidity/</loc>
+        <lastmod>2018-01-09T18:01:44.646Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

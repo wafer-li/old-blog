@@ -275,13 +275,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/%E9%AB%98%E6%95%B0/</loc>
-        <lastmod>2017-12-29T16:44:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -289,7 +282,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/%E8%AE%A1%E7%BB%84/</loc>
+        <loc>https://wafer.li/tags/%E9%AB%98%E6%95%B0/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -297,6 +290,13 @@
 
     <url>
         <loc>https://wafer.li/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+        <lastmod>2017-12-29T16:44:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E8%AE%A1%E7%BB%84/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -345,7 +345,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Kancolle/</loc>
+        <loc>https://wafer.li/tags/Kotlin/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -359,7 +359,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/Kotlin/</loc>
+        <loc>https://wafer.li/tags/Kancolle/</loc>
         <lastmod>2017-12-29T17:29:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -403,6 +403,20 @@
     <url>
         <loc>https://wafer.li/tags/Realforce/</loc>
         <lastmod>2018-01-08T05:35:19.214Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Solidity/</loc>
+        <lastmod>2018-01-09T18:01:44.646Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Ethereum/</loc>
+        <lastmod>2018-01-09T18:01:44.646Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
