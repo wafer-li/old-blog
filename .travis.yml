@@ -1,20 +1,21 @@
+dist: trusty
+sudo: required
+
+addons:
+  apt:
+    packages:
+      - nasm
+
 language: node_js
 node_js: node
 branches:
     only:
-        - source
-
-dist: trusty
-sudo: required
+    - source
 
 git:
     submodules: false
 
 before_install:
-    # Install NASM
-    - sudo apt-get -qq update
-    - sudo apt-get install -y nasm
-
     # Git Config
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     - git config --global user.name "wafer-li"
@@ -22,6 +23,10 @@ before_install:
     - git submodule update --recursive --remote --init
 
 install: npm install
+
+cache:
+  directories:
+    - "node_modules"
 
 before_script:
     - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
