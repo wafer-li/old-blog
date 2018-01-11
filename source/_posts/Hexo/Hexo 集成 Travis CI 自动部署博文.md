@@ -181,7 +181,7 @@ addons:
 通过下面的命令可以进行覆写操作：
 
 ```bash
-curl <raw-path-file-url> >| <problem_file>
+curl {raw-path-file-url} >| {problem_file}
 ```
 
 其中 `>|` 符号可以使后面的文件清空，类似于文件操作的 `w` 选项。
