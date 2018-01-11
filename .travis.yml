@@ -10,6 +10,7 @@ git:
 
 before_install:
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - sed -i "s/\"hexo-generator-atom-markdown-writer-meta": "^0.1.1\",//" package.json
     - git config --global user.name "wafer-li"
     - git config --global user.email "omyshokami@gmail.com"
     - git submodule update --recursive --remote --init
