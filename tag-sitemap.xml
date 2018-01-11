@@ -23,6 +23,13 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/tags/Blog/</loc>
+        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://wafer.li/tags/GitHub/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,20 +38,6 @@
 
     <url>
         <loc>https://wafer.li/tags/HTML/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Hexo/</loc>
-        <lastmod>2017-12-29T16:30:53.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Blog/</loc>
         <lastmod>2017-12-29T16:30:53.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -275,13 +268,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/%E9%AB%98%E6%95%B0/</loc>
-        <lastmod>2017-12-29T16:44:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -290,6 +276,13 @@
 
     <url>
         <loc>https://wafer.li/tags/%E8%AE%A1%E7%BB%84/</loc>
+        <lastmod>2017-12-29T16:44:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E9%AB%98%E6%95%B0/</loc>
         <lastmod>2017-12-29T16:44:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -417,6 +410,20 @@
     <url>
         <loc>https://wafer.li/tags/Ethereum/</loc>
         <lastmod>2018-01-10T05:39:41.368Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Hexo/</loc>
+        <lastmod>2018-01-11T14:36:08.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Trivas-CI/</loc>
+        <lastmod>2018-01-11T14:36:08.042Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
