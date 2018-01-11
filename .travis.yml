@@ -6,6 +6,10 @@ addons:
     packages:
       - nasm
 
+env:
+    - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js
+    - ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/
+
 language: node_js
 node_js: node
 
@@ -16,6 +20,11 @@ branches:
 git:
     submodules: false
 
+cache:
+  directories:
+    - "node_modules"
+
+
 before_install:
     # Git Config
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
@@ -25,13 +34,12 @@ before_install:
 
 install: npm install
 
-cache:
-  directories:
-    - "node_modules"
-
 before_script:
     - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
     - sed -i "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
+
+    # Patch atom writer generator
+    - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
 
     ## Theme Dependencies
     - cd themes/next-reloaded
