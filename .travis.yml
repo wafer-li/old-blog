@@ -21,8 +21,9 @@ before_install:
 install: npm install
 
 before_script:
-    - sed -i ''  "s/git@github.com:\(.*\)\/\(.*\)/https:\/\/${GH_TOKEN}\/\1\/\2/" source/_data/next.yml
-    - sed -i ''  "s/git@git.coding.net:\(.*\)\/\(.*\)/https:\/\/${CODING_TOKEN}\/\1\/\2/" source/_data/next.yml
+    - sed -i ''  "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" .gitmodules
+    - sed -i ''  "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
+    - sed -i ''  "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
 
 script:
     - hexo clean
