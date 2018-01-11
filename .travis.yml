@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+    - 9.3.0
+branches:
+    only:
+        - source
+
+before_install:
+    - git config --global user.name "wafer-li"
+    - git config --global user.email "omyshokami@gmail.com"
+    - git submodule update --recursive --remote --init
+    - cd themes/next-reloaded
+    # canvas-nest
+    - git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+    # fancybox3
+    - git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
+    # reading_progress
+    - git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress
+    - cd ...
+
+install: npm install
+
+before_script:
+    - sed -i ''  "s/git@github.com:\(.*\)\/\(.*\)/https:\/\/${GH_TOKEN}\/\1\/\2/" source/_data/next.yml
+    - sed -i ''  "s/git@git.coding.net:\(.*\)\/\(.*\)/https:\/\/${CODING_TOKEN}\/\1\/\2/" source/_data/next.yml
+
+script:
+    - hexo clean
+    - hexo g -d --config source/_data/next.yml
