@@ -14,15 +14,15 @@ language: node_js
 node_js: node
 
 branches:
-    only:
-        - source
+    - source
 
 git:
     submodules: false
 
 cache:
-  directories:
-    - "node_modules"
+    apt: true
+    directories:
+        - node_modules
 
 
 before_install:
@@ -31,6 +31,7 @@ before_install:
     - git config --global user.name "wafer-li"
     - git config --global user.email "omyshokami@gmail.com"
     - git submodule update --recursive --remote --init
+    - git 
 
 install: npm install
 
