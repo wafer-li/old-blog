@@ -5,6 +5,9 @@ branches:
     only:
         - source
 
+git:
+    submodule: false
+
 before_install:
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     - git config --global user.name "wafer-li"
