@@ -6,7 +6,7 @@ branches:
         - source
 
 before_install:
-    - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" .gitmodules
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     - git config --global user.name "wafer-li"
     - git config --global user.email "omyshokami@gmail.com"
     - git submodule update --recursive --remote --init
