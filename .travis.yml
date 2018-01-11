@@ -8,9 +8,10 @@ addons:
 
 language: node_js
 node_js: node
+
 branches:
-    only:
-    - source
+  only:
+  - source
 
 git:
     submodules: false
