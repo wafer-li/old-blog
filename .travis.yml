@@ -33,6 +33,9 @@ before_install:
     - git submodule update --recursive --remote --init
     - git clone --branch=master --single-branch https://github.com/wafer-li/wafer-li.github.io.git .deploy_git
 
+    # Recover file edit time
+    - git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
+
 install: npm install
 
 before_script:
