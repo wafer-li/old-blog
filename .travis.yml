@@ -6,7 +6,7 @@ branches:
         - source
 
 git:
-    submodule: false
+    submodules: false
 
 before_install:
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
