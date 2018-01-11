@@ -120,12 +120,6 @@ js_minifier:
   exclude: 
     - '*.min.js'
 
-## JS Concator
-js_concator:
-  enable: true
-  bundle_path: '/js/bundle.js'
-  front: false
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
