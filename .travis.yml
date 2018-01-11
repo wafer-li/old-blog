@@ -6,7 +6,7 @@ branches:
         - source
 
 before_install:
-    - sed -i ''  "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" .gitmodules
+    - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" .gitmodules
     - git config --global user.name "wafer-li"
     - git config --global user.email "omyshokami@gmail.com"
     - git submodule update --recursive --remote --init
@@ -22,8 +22,8 @@ before_install:
 install: npm install
 
 before_script:
-    - sed -i ''  "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
-    - sed -i ''  "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
+    - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
+    - sed -i "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
 
 script:
     - hexo clean
