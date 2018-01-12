@@ -6,7 +6,7 @@ import os
 if __name__ != '__main__':
     raise ImportError("%s should not be used as a module." % __name__)
 
-magic_cmd: str = 'git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ct {}" {} | sort'
+magic_cmd = 'git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ct {}" {} | sort'
 
 work_dir = os.getcwd()
 
