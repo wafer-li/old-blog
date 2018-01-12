@@ -4,7 +4,6 @@ sudo: required
 addons:
   apt:
     packages:
-        - python3
         - nasm
 
 env:
@@ -12,6 +11,9 @@ env:
 
 language: node_js
 node_js: node
+
+python:
+    - 3.6
 
 branches:
     - source
