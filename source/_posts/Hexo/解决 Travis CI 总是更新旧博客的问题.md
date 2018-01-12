@@ -36,7 +36,7 @@ categories:
 
 ```yml
 before_install:
-    - git clone --branch=master {your_blog_repo_git_url}
+    - git clone --branch=master {your_blog_repo_git_url} .deploy_git
 ```
 
 ## 2. 高级症状——旧博客总是被更新
@@ -112,8 +112,7 @@ before_install:
     # Git Config
     - git config --global user.name "your_user_name"
     - git config --global user.email "your_email"
-
-    # Restore last modified time
+# Restore last modified time
     - chmod +x git_reset_mtime.py
     - python3 ./git_reset_mtime.py
 ```
