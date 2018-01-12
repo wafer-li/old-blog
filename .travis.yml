@@ -4,6 +4,7 @@ sudo: required
 addons:
   apt:
     packages:
+        - python3
         - nasm
 
 env:
