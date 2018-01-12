@@ -4,8 +4,6 @@ import subprocess
 import os
 import shlex
 
-import datetime
-
 if __name__ != '__main__':
     raise ImportError("%s should not be used as a module." % __name__)
 
