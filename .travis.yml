@@ -4,7 +4,7 @@ sudo: required
 addons:
     ssh_known_hosts:
         - github.com
-        - coding.net
+        - git.coding.net
     apt:
         packages:
             - nasm
