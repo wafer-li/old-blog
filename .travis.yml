@@ -53,9 +53,6 @@ before_install:
 install: npm install
 
 before_script:
-    #- sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
-    #- sed -i "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
-
     # Patch atom writer generator
     - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
 
