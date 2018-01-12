@@ -2,9 +2,12 @@ dist: trusty
 sudo: required
 
 addons:
-  apt:
-    packages:
-        - nasm
+    ssh_known_hosts:
+        - github.com
+        - coding.net
+    apt:
+        packages:
+            - nasm
 
 env:
     - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/ TZ=Asia/Tokyo
@@ -44,8 +47,8 @@ before_install:
 install: npm install
 
 before_script:
-    - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
-    - sed -i "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
+    #- sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
+    #- sed -i "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
 
     # Patch atom writer generator
     - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
@@ -63,4 +66,13 @@ before_script:
 
 script:
     - hexo clean
-    - hexo g -d --config source/_data/next.yml
+    - hexo g --config source/_data/next.yml
+
+before_deploy:
+    - openssl aes-256-cbc -K $encrypted_693585a97b8c_key -iv $encrypted_693585a97b8c_iv -in blog_deploy_key.enc -out blog_deploy_key -d
+    - eval "$(ssh-agent -s)"
+    - chmod 600 ./blog_deploy_key
+    - ssh-add ./blog_deploy_key
+
+deploy:
+    - hexo d --config source/_data/next.yml
