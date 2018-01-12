@@ -33,9 +33,110 @@ categories:
 
 由于 Travis CI 比较流行，注册和关联 repo 这种操作就不介绍了。
 
-### 2.1 获取 Access Token
+### 2.1 获取相关权限
 
-在做任何配置之前，我们首先要获取一个 Access Token，否则 Travis CI 即使生成了 HTML 也无法 push 到 master 分支进行部署。
+在配置和使用 Travis CI 之前，我们首先要做的就是为 Travis CI 获取其所需要的权限。
+
+当然，获取所需要的权限有很多种方法，这里推荐两种，分别为 Access Token和 Deploy Key
+
+这两种各有好处，Deploy Key 的好处在于安全性比较高，Access Token 的好处是较为灵活。
+
+下面每种都写了推荐使用的 repo，你可以根据你的 repo 的实际情况来选择。
+
+#### 2.1.1 使用 Depoly Key 进行部署
+
+> **本方法适用于大多数的公有博客仓库**
+> **同时，仓库内不具备私有的子模块**
+> **建议首选**
+
+Deploy Key 是一个 SSH Key，区别于个人 SSH Key 的是，它仅对配置了它的仓库有效；
+
+也就是说，如果应用使用了 Deploy Key，那么应用的权限就仅限于 repo 之中，准确的来说，是仅限于 repo 的 **文件读写权限**。
+
+这就给 Deploy Key 带来了很高的安全度，即使 Key 泄漏了，威胁到的也只是设置了它的仓库，而不会威胁帐号本身。
+
+使用了 SSH Key 也就意味着我们是使用 SSH 和 GitHub 进行连接，那么对 SSH 的配置是必不可少的；
+
+
+##### 2.1.1.1 密钥生成
+
+首先我们要生成一对公钥和私钥，这个在很多地方都有操作介绍了，这里就不多讲。
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "email" -f key_file -N ''
+```
+
+接着，到 repo 的 Settings 里面创建一个 Deploy Key，把公钥的内容粘贴进去。
+
+> 如果是 coding.net 的话，是配置在 `部署公钥` 之中。
+
+然后我们把公钥删掉，避免你误把它加入了 git 中。
+
+```bash
+rm -f key_file.pub
+```
+
+##### 2.1.1.2 使用 Travis 命令行程序进行加密
+
+密钥显然是不能给别人看的，因此，我们就要把密钥通过 `travis` 程序加密。
+
+首先，我们要安装 `travis`
+
+```bash
+gem install travis
+```
+
+> 如果你的 `ruby` 版本太旧，可能还需要先升级一下。
+> **最好在你的 repo 目录下执行 `travis` 命令**
+> 方便 `travis` 自动识别仓库。
+
+然后，我们通过 `travis` 来登录：
+
+```bash
+travis login
+```
+
+这是为了让 `travis` 自动将加密好的东西上传到 Settings 的环境变量中，这样就不用我们配置 `.travis.yml` 文件了。
+
+接着，我们对文件进行加密：
+
+```bash
+travis encrypt key_file
+```
+
+
+随后，我们把生成的 `.enc` 文件加入 git 中，并把私钥删掉。
+
+```bash
+rm -f key_file
+git add key_file.enc
+```
+
+##### 2.1.1.3 配置 Known Hosts 和 SSH
+
+接下来，我们就进行 SSH 的相关配置；
+
+**首先需要配置的是 Known Hosts，否则 CI 就会卡在问你是否要继续那里。**
+
+然后，我们使用 `openssl` 把之前加密的文件解压成私钥，最后把私钥配置上就行了。
+
+```yml
+addons:
+    ssh_known_hosts:
+        - github.com
+        - git.coding.net
+
+before_install:
+    # SSH Setup
+    - openssl aes-256-cbc -K $encrypted_693585a97b8c_key -iv $encrypted_693585a97b8c_iv -in blog_deploy_key.enc -out blog_deploy_key -d
+    - eval "$(ssh-agent -s)"
+    - chmod 600 ./blog_deploy_key
+    - ssh-add ./blog_deploy_key
+```
+
+#### 2.1.2 获取 Access Token
+
+> **本方法适用于具有私有 Submodule 的仓库的情况**
 
 GitHub 获取 Access Token 的步骤如下：
 
@@ -208,6 +309,34 @@ before_script:
 ```
 
 这里需要注意一下当前工作路径的问题，记得切换回原目录。
+
+### 3.5 时区问题
+
+Travis CI 好像默认使用的是美国的时区，这样就会让你的 master commit 历史变得很乱。
+
+所以，我们有必要让 Travis CI 和你的本机时区进行统一
+
+这个配置比较简单，通过设置 `TZ` 环境变量即可。
+
+```yml
+env:
+    global:
+        - TZ=Asia/Tokyo
+```
+
+> 别吐槽我为什么用日本时区，玩游戏需要。
+
+这里需要多说一点的是，如果只有 `env`，如：
+
+```yml
+env:
+    - ENV1=xxxx
+    - ENV2=yyyy
+```
+
+此时，Travis CI 就会进行 **两次** 构建，分别采用 `ENV1` 和 `ENV2`
+
+而对于 `global` 的环境变量，就会采取所有的环境变量，只构建一次。
 
 ## 4. 总结
 
