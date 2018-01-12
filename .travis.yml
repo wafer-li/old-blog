@@ -35,9 +35,8 @@ before_install:
     - git config --global user.email "omyshokami@gmail.com"
 
     # Restore last modified time
-    #- chmod +x git_reset_mtime.py
-    #- python3 ./git_reset_mtime.py
-    - git ls-files -z | xargs -0 -n1 -I{} -- | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
+    - chmod +x git_reset_mtime.py
+    - python3 ./git_reset_mtime.py
 
     # Submodules
     - git submodule update --recursive --remote --init
