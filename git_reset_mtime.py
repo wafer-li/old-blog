@@ -23,9 +23,4 @@ result = subprocess.check_output('sort', stdin=xargs_result.stdout)
 timestamp_file_list = [tuple(it.split(' ', 1)) for it in result.decode('utf-8').split('\n')][:-1]
 
 for timestamp, file_path in timestamp_file_list:
-    print('--------- Mtime From Git -------------')
-    print(timestamp, file_path)
     os.utime(os.path.join(work_dir, file_path), (int(timestamp), int(timestamp)))
-    print()
-    print('-------- Mtime Get From File ------------')
-    print(datetime.datetime.fromtimestamp(os.path.getmtime(os.path.join(work_dir, file_path))), ' ', file_path)
