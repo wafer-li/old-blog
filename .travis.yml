@@ -9,9 +9,7 @@ addons:
 env:
     - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/ TZ=Asia/Tokyo
 
-language: 
-    - node_js
-    - python
+language: node_js
 node_js: node
 
 python:
