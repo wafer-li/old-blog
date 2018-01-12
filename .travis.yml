@@ -12,9 +12,6 @@ env:
 language: node_js
 node_js: node
 
-python:
-    - 3.6
-
 branches:
     - source
 
