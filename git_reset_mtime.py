@@ -4,6 +4,8 @@ import subprocess
 import os
 import shlex
 
+import datetime
+
 if __name__ != '__main__':
     raise ImportError("%s should not be used as a module." % __name__)
 
@@ -22,3 +24,4 @@ timestamp_file_list = [tuple(it.split(' ', 1)) for it in result.decode('utf-8').
 
 for timestamp, file_path in timestamp_file_list:
     os.utime(os.path.join(work_dir, file_path), (int(timestamp), int(timestamp)))
+    print(datetime.datetime.fromtimestamp(os.path.getmtime(os.path.join(work_dir, file_path))), ' ', file_path)
