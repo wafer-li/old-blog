@@ -128,13 +128,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/MaterailDrawer/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/Volley/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -164,6 +157,13 @@
 
     <url>
         <loc>https://wafer.li/tags/TSPI/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/MaterailDrawer/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

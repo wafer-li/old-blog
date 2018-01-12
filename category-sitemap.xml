@@ -91,13 +91,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Android/Materail-Drawer/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/Android/Volley/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -106,6 +99,13 @@
 
     <url>
         <loc>https://wafer.li/categories/Coursera/Algorithm/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Android/Materail-Drawer/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
