@@ -4,11 +4,10 @@ sudo: required
 addons:
   apt:
     packages:
-        - git-restore-mtime
         - nasm
 
 env:
-    - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/
+    - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/ GIT_RESTROE_MTIME_URL=https://raw.githubusercontent.com/MestreLion/git-tools/master/git-restore-mtime
 
 language: node_js
 node_js: node
@@ -32,7 +31,9 @@ before_install:
     - git config --global user.email "omyshokami@gmail.com"
 
     # Restore last modified time
-    - git-restore-mtime
+    - curl $GIT_RESTROE_MTIME_URL >> git-restore-mtime
+    - chmod +x git-restore-mtime
+    - ./git-restore-mtime
 
     # Submodules
     - git submodule update --recursive --remote --init
