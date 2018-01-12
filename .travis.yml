@@ -32,7 +32,7 @@ before_install:
 
     # Restore last modified time
     - chmod +x git_reset_mtime.py
-    - ./git_reset_mtime.py
+    - python3 ./git_reset_mtime.py
 
     # Submodules
     - git submodule update --recursive --remote --init
