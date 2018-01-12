@@ -47,8 +47,11 @@ before_install:
 
 **就连你没有更新过的旧博客也一样！**
 
-这到底是什么原因呢？
+如图所示，图片中的更新时间全部都一样，按常理来说这是不可能的。
 
+![](https://ws2.sinaimg.cn/large/006tNc79ly1fnedchdb50j30jn0dg0ta.jpg)
+
+这到底是什么原因呢？
 
 ### 2.1 症状原因
 
@@ -148,12 +151,18 @@ dist: trusty
 sudo: required
 
 addons:
-  apt:
-    packages:
-        - nasm
+    ssh_known_hosts:
+        - github.com
+        - git.coding.net
+    apt:
+        packages:
+            - nasm
 
 env:
-    - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/ TZ=Asia/Tokyo
+    global:
+        - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js
+        - ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/
+        - TZ=Asia/Tokyo
 
 language: node_js
 node_js: node
@@ -187,12 +196,15 @@ before_install:
     # Deploy history
     - git clone --branch=master --single-branch https://github.com/wafer-li/wafer-li.github.io.git .deploy_git
 
+    # SSH Setup
+    - openssl aes-256-cbc -K $encrypted_XXXXXXXXXX_key -iv $encrypted_XXXXXXXXXX_iv -in blog_deploy_key.enc -out blog_deploy_key -d
+    - eval "$(ssh-agent -s)"
+    - chmod 600 ./blog_deploy_key
+    - ssh-add ./blog_deploy_key
+
 install: npm install
 
 before_script:
-    - sed -i "s/git@github.com:/https:\/\/wafer-li:${GH_TOKEN}@github.com\//" source/_data/next.yml
-    - sed -i "s/git@git.coding.net:/https:\/\/wafer-li:${CODING_TOKEN}@git.coding.net\//" source/_data/next.yml
-
     # Patch atom writer generator
     - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
 
@@ -210,7 +222,9 @@ before_script:
 script:
     - hexo clean
     - hexo g -d --config source/_data/next.yml
+
 ```
+
 
 ## 4. 参考资料
 
