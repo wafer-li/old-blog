@@ -33,7 +33,7 @@ before_install:
     # Restore last modified time
     - curl $GIT_RESTROE_MTIME_URL >> git-restore-mtime
     - chmod +x git-restore-mtime
-    - ./git-restore-mtime
+    - ./git-restore-mtime -f
 
     # Submodules
     - git submodule update --recursive --remote --init
