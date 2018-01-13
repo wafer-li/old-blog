@@ -275,6 +275,12 @@ social_icons:
   icons_only: false
   transition: false
 
+# Follow me on GitHub banner in right-top corner.
+# Usage: `permalink || title`
+# Value before `||` delimeter is the target permalink.
+# Value after `||` delimeter is the title and aria-label name.
+#github_banner: https://github.com/yourname || Follow me on GitHub
+
 # Blog rolls
 links_icon: link
 links_title: Links
@@ -480,7 +486,12 @@ font:
 mathjax:
   enable: true
   per_page: true
-  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
+  #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+  # For automatic detect latest varsion link to MathJax.js and get from CloudFlare.
+  #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
@@ -491,9 +502,6 @@ han: false
 
 # Baidu Analytics ID
 #baidu_analytics:
-
-# Duoshuo ShortName
-#duoshuo_shortname:
 
 # Disqus
 disqus:
@@ -536,7 +544,6 @@ valine:
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
-# You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
   enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
@@ -544,8 +551,8 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: wafer-li # MUST HAVE, Your Github ID
-  github_repo: wafer-li.github.io # MUST HAVE, The repo you use to store Gitment comments
+  github_user: wafer-li # MUST HAVE, Your Github Username
+  github_repo: wafer-li.github.io # MUST HAVE, The name of the repo you use to store Gitment comments
   client_id: 5e25585a2761683987c6 # MUST HAVE, Github client id for the Gitment
   client_secret: f59df88a87dda3c761db588985ffe7fe8b89ff0e # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
@@ -565,9 +572,6 @@ gitment:
 #jiathis:
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
-
-# Share
-#duoshuo_share: true
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
@@ -618,15 +622,6 @@ bing_site_verification: 056FCB31D0B2FCC39366F814CFA29CC0
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
 # application_insights:
-
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
 
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------
@@ -967,4 +962,4 @@ js: js
 images: images
 
 # Theme version
-version: 6.0.0
+version: 6.0.1
