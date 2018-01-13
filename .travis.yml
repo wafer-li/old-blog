@@ -41,7 +41,7 @@ before_install:
     # Restore last modified time
     #- chmod +x git_reset_mtime.py
     #- python3 ./git_reset_mtime.py
-    - git ls-files -z | while read -d '' path; do date=$(git log -1 --format="%ct" "$path"); echo "$path: $date"; touch -d "@$date" "$path"; done
+    - "git ls-files -z | while read -d '' path; do date=$(git log -1 --format=\"%ct\" \"$path\"); echo \"$path: $date\"; touch -d \"@$date\" \"$path\"; done"
 
     # Submodules
     - git submodule update --recursive --remote --init
