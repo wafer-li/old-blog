@@ -86,14 +86,14 @@ tags: Android
 - `navigationBarColor` : 此为导航栏底色，仅在 **API 21 以上** 才有效, 必须设置在 `res/values-v21/style.xml` 中
 - `windowBackground` : 主视窗底色。
 
-![Style](http://www.jcodecraeer.com/uploads/20141118/14162849281137.png)
+![Style](https://www.jcodecraeer.com/uploads/20141118/14162849281137.png)
 
 
 ### 1.4 设置控件
 
  一般来说 ，`Toolbar` 有以下控件
 
-![Component](http://www.jcodecraeer.com/uploads/20141118/1416285884351.png)
+![Component](https://www.jcodecraeer.com/uploads/20141118/1416285884351.png)
 
 有关的代码如下，文件为 `Activity` 的对应 `.java` 文件 `MainAcitivity.java`
 

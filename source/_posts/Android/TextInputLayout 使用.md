@@ -11,7 +11,7 @@ tags: Android
 
 以下是 `TextInputLaout` 的显示效果
 
-<center>![](http://blog.incredibleandros.com/images/textInputlayout.gif)</center>
+<center>![](https://blog.incredibleandros.com/images/textInputlayout.gif)</center>
 
 
 <!-- more -->

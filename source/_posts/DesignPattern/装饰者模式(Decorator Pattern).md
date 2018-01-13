@@ -34,11 +34,11 @@ tags: DesignPattern
 
 使用不同的 **装饰者对象** 来对 **主体对象** 进行装饰；
 
-![](http://i48.tinypic.com/2jabxva.jpg)
+![](https://i48.tinypic.com/2jabxva.jpg)
 
 通过 **委托** 来进行组合工作。
 
-![](http://i50.tinypic.com/2zrg968.jpg)
+![](https://i50.tinypic.com/2zrg968.jpg)
 
 这里有一个很重要的地方就是，为什么能实现上面图示的 **包装** 和 **方法委托**
 
@@ -62,7 +62,7 @@ tags: DesignPattern
 
 ## 5. UML 图解
 
-![](http://ww2.sinaimg.cn/large/65e4f1e6jw1faice8oa2nj20bq0aqwfr.jpg)
+![](https://ww2.sinaimg.cn/large/65e4f1e6jw1faice8oa2nj20bq0aqwfr.jpg)
 
 可以看到，装饰者和主体对象有一个 **共同的超类**
 

@@ -210,7 +210,7 @@ Java 使用**中断**来执行**终止线程**的作用；
 
 ## 3. 线程的生命周期
 
-![Thread Life Cycle](http://ww2.sinaimg.cn/large/8c1fca6bjw1f0lm5o2cp2j20fx0csdgk.jpg)
+![Thread Life Cycle](https://ww2.sinaimg.cn/large/8c1fca6bjw1f0lm5o2cp2j20fx0csdgk.jpg)
 
 1. 新建
 

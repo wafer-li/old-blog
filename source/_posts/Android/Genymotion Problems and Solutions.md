@@ -44,7 +44,7 @@ Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND).
 5. 勾选 "VirtualBox NDIS6 Bridged Networking driver"
 6. 禁用并重新启用这个适配器
 
-![Solution for Virtual Host Error](http://i.stack.imgur.com/Tkkws.png)
+![Solution for Virtual Host Error](https://i.stack.imgur.com/Tkkws.png)
 
 > When this error occurs, genymotion will ask you to start the virtual device on VirtualBox, plase follow the instruction, and then you will get a ERROR message.
 

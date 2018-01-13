@@ -47,17 +47,17 @@ tags: DesignPattern
 
 ### 4.1 使用接口封装行为
 
-![](http://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg)
+![](https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg)
 
 
 
 ### 4.2 对象包含接口
 
-![](http://ww4.sinaimg.cn/large/65e4f1e6gw1f9pszct1akj20tz0efab4.jpg)
+![](https://ww4.sinaimg.cn/large/65e4f1e6gw1f9pszct1akj20tz0efab4.jpg)
 
 ### 4.3 使用 Setter 实现运行时更改行为
 
-![](http://ww3.sinaimg.cn/large/65e4f1e6jw1f9ptf31737j20tu0fcq43.jpg)
+![](https://ww3.sinaimg.cn/large/65e4f1e6jw1f9ptf31737j20tu0fcq43.jpg)
 
 ```java
 ModelDuck modelDuck = new ModelDuck();

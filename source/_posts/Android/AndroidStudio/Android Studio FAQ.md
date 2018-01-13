@@ -74,7 +74,7 @@ tags:
 
 > 如果你的 Android Studio 不能识别出 Gradle 或者整个 Anroid 框架的时候，例如，导航条没有 `app` module，在 Build 菜单只有一点点东西的时候。
 
-![Poisonous](http://ww2.sinaimg.cn/large/8c1fca6bjw1eyyb1dvnnmj20zk0qotb3.jpg)
+![Poisonous](https://ww2.sinaimg.cn/large/8c1fca6bjw1eyyb1dvnnmj20zk0qotb3.jpg)
 
 <span style="font-size:1.5em;font-weight:bold">
 备份你的代码库到远端，然后重新克隆它。

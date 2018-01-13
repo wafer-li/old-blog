@@ -9,7 +9,7 @@ tags: Java
 ## 1. 异常分类
 
 ※具体的结构层次如图
-![](http://img.my.csdn.net/uploads/201310/29/1383051170_4167.jpeg)
+![](https://img.my.csdn.net/uploads/201310/29/1383051170_4167.jpeg)
 
 <!-- more -->
 

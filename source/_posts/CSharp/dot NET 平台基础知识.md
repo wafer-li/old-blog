@@ -47,7 +47,7 @@ CLS 全称为 Common Language Specification。它定义了一个让所有的 .NE
 
 下面的图显示了 .NET 构件与基础类库的关系。
 
-![关系](http://img.blog.csdn.net/20160611195251305)
+![关系](https://img.blog.csdn.net/20160611195251305)
 
 ## 3. C# 的特点
 
@@ -174,7 +174,7 @@ CLR 类似于 JVM，利用 `mscoree.dll` 库来进行 .NET 程序加载工作。
 
 下图是 `mscoree.dll` 的工作流。
 
-![](http://www.ituring.com.cn/download/01YY7g3jBdEN)
+![](https://www.ituring.com.cn/download/01YY7g3jBdEN)
 
 
 

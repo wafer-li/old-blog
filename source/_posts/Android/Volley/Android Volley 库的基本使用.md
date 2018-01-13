@@ -92,7 +92,7 @@ queue.add(stringRequest);
 
 下图是具体的工作流程图解
 
-![Volley Request](http://i2.piimg.com/3b76b51675570a97.png)
+![Volley Request](https://i2.piimg.com/3b76b51675570a97.png)
 
 ### 2.4 取消请求
 
