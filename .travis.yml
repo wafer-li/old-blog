@@ -19,7 +19,8 @@ language: node_js
 node_js: node
 
 branches:
-    - source
+    except:
+        - master
 
 git:
     depth: false
