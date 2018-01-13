@@ -7,16 +7,16 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Hexo/Hexo%20%E9%9B%86%E6%88%90%20Travis%20CI%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E6%96%87/</loc>
-        <lastmod>2018-01-12T19:05:33.000Z</lastmod>
+        <loc>https://wafer.li/Hexo/%E8%A7%A3%E5%86%B3%20Travis%20CI%20%E6%80%BB%E6%98%AF%E6%9B%B4%E6%96%B0%E6%97%A7%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+        <lastmod>2018-01-13T04:02:33.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://wafer.li/Hexo/%E8%A7%A3%E5%86%B3%20Travis%20CI%20%E6%80%BB%E6%98%AF%E6%9B%B4%E6%96%B0%E6%97%A7%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
-        <lastmod>2018-01-12T18:24:44.000Z</lastmod>
+        <loc>https://wafer.li/Hexo/Hexo%20%E9%9B%86%E6%88%90%20Travis%20CI%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E6%96%87/</loc>
+        <lastmod>2018-01-12T19:05:33.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -367,7 +367,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/COA/Computer%20Organization%20and%20Architecture/</loc>
+        <loc>https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -375,7 +375,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/</loc>
+        <loc>https://wafer.li/Reviews/COA/Computer%20Organization%20and%20Architecture/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -527,6 +527,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Projects/BigInovation/%E5%9C%B0%E5%BA%93%20API/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Projects/BigInovation/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -536,14 +544,6 @@
 
     <url>
         <loc>https://wafer.li/Projects/BigInovation/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%E2%80%94%E2%80%94%E5%9C%B0%E4%B8%8B%E5%81%9C%E8%BD%A6%E5%9C%BA%E5%AF%BC%E8%88%AA/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Projects/BigInovation/%E5%9C%B0%E5%BA%93%20API/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
