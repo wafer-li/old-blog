@@ -367,7 +367,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/</loc>
+        <loc>https://wafer.li/Reviews/COA/Computer%20Organization%20and%20Architecture/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -375,7 +375,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/COA/Computer%20Organization%20and%20Architecture/</loc>
+        <loc>https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -527,14 +527,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Projects/BigInovation/%E5%9C%B0%E5%BA%93%20API/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Projects/BigInovation/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -544,6 +536,14 @@
 
     <url>
         <loc>https://wafer.li/Projects/BigInovation/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%E2%80%94%E2%80%94%E5%9C%B0%E4%B8%8B%E5%81%9C%E8%BD%A6%E5%9C%BA%E5%AF%BC%E8%88%AA/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Projects/BigInovation/%E5%9C%B0%E5%BA%93%20API/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
