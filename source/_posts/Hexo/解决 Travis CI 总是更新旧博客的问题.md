@@ -168,7 +168,8 @@ language: node_js
 node_js: node
 
 branches:
-    - source
+    only:
+        - source
 
 git:
     depth: false
@@ -187,8 +188,7 @@ before_install:
     - git config --global user.email "omyshokami@gmail.com"
 
     # Restore last modified time
-    - chmod +x git_reset_mtime.py
-    - python3 ./git_reset_mtime.py
+    - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
 
     # Submodules
     - git submodule update --recursive --remote --init
@@ -197,7 +197,7 @@ before_install:
     - git clone --branch=master --single-branch https://github.com/wafer-li/wafer-li.github.io.git .deploy_git
 
     # SSH Setup
-    - openssl aes-256-cbc -K $encrypted_XXXXXXXXXX_key -iv $encrypted_XXXXXXXXXX_iv -in blog_deploy_key.enc -out blog_deploy_key -d
+    - openssl aes-256-cbc -K $encrypted_XXXXXXXXX_key -iv $encrypted_XXXXXXXXX_iv -in blog_deploy_key.enc -out blog_deploy_key -d
     - eval "$(ssh-agent -s)"
     - chmod 600 ./blog_deploy_key
     - ssh-add ./blog_deploy_key
@@ -222,9 +222,7 @@ before_script:
 script:
     - hexo clean
     - hexo g -d --config source/_data/next.yml
-
 ```
-
 
 ## 4. 参考资料
 
