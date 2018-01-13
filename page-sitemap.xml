@@ -7,29 +7,29 @@
     </url>
     
     <url>
-        <loc>https://wafer.li/about/</loc>
-        <lastmod>2018-01-10T16:59:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://wafer.li//404.html</loc>
-        <lastmod>2017-04-12T14:57:27.000Z</lastmod>
+        <loc>https://wafer.li/tags/</loc>
+        <lastmod>2018-01-13T03:57:27.289Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://wafer.li/categories/</loc>
-        <lastmod>2017-04-09T06:03:50.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.279Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://wafer.li/tags/</loc>
-        <lastmod>2017-04-09T06:03:50.000Z</lastmod>
+        <loc>https://wafer.li/about/</loc>
+        <lastmod>2018-01-13T03:57:27.278Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://wafer.li//404.html</loc>
+        <lastmod>2018-01-13T03:57:27.208Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

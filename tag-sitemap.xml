@@ -2,428 +2,428 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://wafer.li/tags/GitHub/</loc>
-        <lastmod>2017-04-09T04:39:49.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Blog/</loc>
-        <lastmod>2017-04-09T05:57:11.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/CleanCode/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/HTML/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Homework/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Situation-and-Policy/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/IntelliJ/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Kancolle/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Linux/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/PHP/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Plan/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Python/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Typing/</loc>
-        <lastmod>2017-04-15T14:32:18.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Typing-training/</loc>
-        <lastmod>2017-04-15T14:32:18.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Proxy/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/LocalNetwork/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/tags/MaterailDrawer/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/MDZZ/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E6%AF%9B%E6%A6%82/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/SPI/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/TSPI/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/ofo/</loc>
-        <lastmod>2017-04-18T13:34:15.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Decoration/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Mono/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Tools/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Coursera/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E9%AB%98%E6%95%B0/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E8%AE%A1%E7%BB%84/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Projects/</loc>
-        <lastmod>2017-04-20T08:44:36.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Big-Innovation/</loc>
-        <lastmod>2017-04-20T08:44:36.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Kotlin/</loc>
-        <lastmod>2017-04-22T16:41:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Scala/</loc>
-        <lastmod>2017-04-22T18:21:13.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.226Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Retrofit/</loc>
-        <lastmod>2017-05-01T23:25:44.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Rxjava2/</loc>
-        <lastmod>2017-05-01T23:30:49.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Rxjava/</loc>
-        <lastmod>2017-05-01T23:30:49.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Talk/</loc>
-        <lastmod>2017-06-03T18:30:11.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Galgame/</loc>
-        <lastmod>2017-06-03T18:30:11.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E6%9C%88%E3%81%AB%E5%AF%84%E3%82%8A%E3%81%9D%E3%81%86%E4%B9%99%E5%A5%B3%E3%81%AE%E4%BD%9C%E6%B3%95/</loc>
-        <lastmod>2017-06-03T18:30:11.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</loc>
-        <lastmod>2017-12-29T17:30:00.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.228Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Buying/</loc>
-        <lastmod>2018-01-08T05:35:57.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.231Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Keyboard/</loc>
-        <lastmod>2018-01-08T05:35:57.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.231Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Realforce/</loc>
-        <lastmod>2018-01-08T05:35:57.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.231Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/CleanCode/</loc>
+        <lastmod>2018-01-13T03:57:27.235Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Decoration/</loc>
+        <lastmod>2018-01-13T03:57:27.236Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Coursera/</loc>
+        <lastmod>2018-01-13T03:57:27.236Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/GitHub/</loc>
+        <lastmod>2018-01-13T03:57:27.239Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/HTML/</loc>
+        <lastmod>2018-01-13T03:57:27.241Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Blog/</loc>
+        <lastmod>2018-01-13T03:57:27.241Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Homework/</loc>
+        <lastmod>2018-01-13T03:57:27.243Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Situation-and-Policy/</loc>
+        <lastmod>2018-01-13T03:57:27.243Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/IntelliJ/</loc>
+        <lastmod>2018-01-13T03:57:27.243Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Kancolle/</loc>
+        <lastmod>2018-01-13T03:57:27.249Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Kotlin/</loc>
+        <lastmod>2018-01-13T03:57:27.256Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Linux/</loc>
+        <lastmod>2018-01-13T03:57:27.256Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Mono/</loc>
+        <lastmod>2018-01-13T03:57:27.258Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/PHP/</loc>
+        <lastmod>2018-01-13T03:57:27.258Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Plan/</loc>
+        <lastmod>2018-01-13T03:57:27.259Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Big-Innovation/</loc>
+        <lastmod>2018-01-13T03:57:27.260Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Projects/</loc>
+        <lastmod>2018-01-13T03:57:27.261Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/MDZZ/</loc>
+        <lastmod>2018-01-13T03:57:27.261Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Python/</loc>
+        <lastmod>2018-01-13T03:57:27.264Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E9%AB%98%E6%95%B0/</loc>
+        <lastmod>2018-01-13T03:57:27.264Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E8%AE%A1%E7%BB%84/</loc>
+        <lastmod>2018-01-13T03:57:27.266Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+        <lastmod>2018-01-13T03:57:27.267Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E6%AF%9B%E6%A6%82/</loc>
+        <lastmod>2018-01-13T03:57:27.268Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+        <lastmod>2018-01-13T03:57:27.268Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</loc>
+        <lastmod>2018-01-13T03:57:27.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/SPI/</loc>
+        <lastmod>2018-01-13T03:57:27.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/TSPI/</loc>
+        <lastmod>2018-01-13T03:57:27.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Rxjava2/</loc>
+        <lastmod>2018-01-13T03:57:27.272Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Rxjava/</loc>
+        <lastmod>2018-01-13T03:57:27.272Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Scala/</loc>
+        <lastmod>2018-01-13T03:57:27.275Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Solidity/</loc>
-        <lastmod>2018-01-10T05:41:08.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.276Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Ethereum/</loc>
-        <lastmod>2018-01-10T05:41:08.000Z</lastmod>
+        <lastmod>2018-01-13T03:57:27.276Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/ofo/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Talk/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Typing/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Typing-training/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Galgame/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E6%9C%88%E3%81%AB%E5%AF%84%E3%82%8A%E3%81%9D%E3%81%86%E4%B9%99%E5%A5%B3%E3%81%AE%E4%BD%9C%E6%B3%95/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Tools/</loc>
+        <lastmod>2018-01-13T03:57:27.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Proxy/</loc>
+        <lastmod>2018-01-13T03:57:27.278Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/LocalNetwork/</loc>
+        <lastmod>2018-01-13T03:57:27.278Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Hexo/</loc>
-        <lastmod>2018-01-13T04:02:33.000Z</lastmod>
+        <lastmod>2018-01-13T04:01:46.544Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Trivas-CI/</loc>
-        <lastmod>2018-01-13T04:02:33.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Algorithm/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <lastmod>2018-01-13T04:01:46.544Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Android/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <lastmod>2018-01-13T07:06:40.245Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/CSharp/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/DHT/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/DesignPattern/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Japanese/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/Java/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/tags/MaterialDesign/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <lastmod>2018-01-13T07:06:40.245Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Android-Studio/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <lastmod>2018-01-13T07:06:40.245Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/Volley/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <lastmod>2018-01-13T07:06:40.245Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://wafer.li/tags/%E5%A4%8D%E4%B9%A0/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <loc>https://wafer.li/tags/DesignPattern/</loc>
+        <lastmod>2018-01-13T07:06:40.246Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/DHT/</loc>
+        <lastmod>2018-01-13T07:06:40.248Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Algorithm/</loc>
+        <lastmod>2018-01-13T07:06:40.252Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Japanese/</loc>
+        <lastmod>2018-01-13T07:06:40.256Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/MaterialDesign/</loc>
+        <lastmod>2018-01-13T07:06:40.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/Java/</loc>
+        <lastmod>2018-01-13T07:06:40.258Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://wafer.li/tags/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <lastmod>2018-01-13T07:06:40.258Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E5%A4%8D%E4%B9%A0/</loc>
+        <lastmod>2018-01-13T11:17:05.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</loc>
+        <lastmod>2018-01-13T11:17:05.735Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
