@@ -42,13 +42,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Japanese/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/Kancolle/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -84,21 +77,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Android/Android-Studio/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/Android/Materail-Drawer/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Android/Volley/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -133,35 +112,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/CSharp/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/DHT/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/Decoration/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Java/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/MaterialDesign/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -197,13 +148,6 @@
 
     <url>
         <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E9%AB%98%E6%95%B0/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -266,13 +210,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/Android/</loc>
-        <lastmod>2017-05-01T23:25:44.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/Android/Retrofit/</loc>
         <lastmod>2017-05-01T23:25:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -287,29 +224,8 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/categories/DesignPattern/</loc>
-        <lastmod>2017-05-26T17:55:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://wafer.li/categories/Talk/</loc>
         <lastmod>2017-06-03T18:30:11.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/Algorithm/</loc>
-        <lastmod>2017-12-29T17:30:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/</loc>
-        <lastmod>2017-12-29T17:30:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -338,6 +254,90 @@
     <url>
         <loc>https://wafer.li/categories/Hexo/</loc>
         <lastmod>2018-01-13T04:02:33.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Algorithm/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Android/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/CSharp/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/DHT/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/DesignPattern/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Japanese/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Java/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/MaterialDesign/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Android/Android-Studio/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/Android/Volley/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
