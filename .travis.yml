@@ -59,6 +59,9 @@ before_script:
     # Patch atom writer generator
     - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
 
+    # Load custom files
+    - cat custom/css/custom.styl >| themes/next-reloaded/source/css/_custom/custom.styl
+
     ## Theme Dependencies
     - cd themes/next-reloaded
     # canvas-nest
