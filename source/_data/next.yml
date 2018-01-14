@@ -97,6 +97,22 @@ search:
 ## Themes: https://hexo.io/themes/
 theme: next-reloaded
 
+# Render
+markdown_it_plus:
+    highlight: true
+    html: true
+    xhtmlOut: true
+    breaks: true
+    langPrefix:
+    linkify: true
+    typographer:
+    quotes: “”‘’
+    pre_class: highlight
+    plugins:
+        - plugin:
+            name: markdown-it-task-lists
+            enable: true
+
 # Minifier
 
 ## HTML
@@ -241,8 +257,8 @@ menu_settings:
 
 # Schemes
 #scheme: Muse
-#scheme: Mist
-scheme: Pisces
+scheme: Mist
+#scheme: Pisces
 #scheme: Gemini
 
 
@@ -484,7 +500,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: true
+  enable: false
   per_page: true
   # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
@@ -492,6 +508,13 @@ mathjax:
   #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
   # For automatic detect latest varsion link to MathJax.js and get from CloudFlare.
   #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+katex:
+  enable: true
+  per_page: true
+  cdn:
+    css: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.css
+    js: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.js
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
