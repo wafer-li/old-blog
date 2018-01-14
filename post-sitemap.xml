@@ -463,6 +463,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
+        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -496,14 +504,6 @@
 
     <url>
         <loc>https://wafer.li/Tools/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
