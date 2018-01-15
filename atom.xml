@@ -417,15 +417,15 @@
   </entry>
   
   <entry>
-    <title>Scala 类和对象基础</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
-    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
+    <title>Scala 简介</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%AE%80%E4%BB%8B/"/>
+    <id>https://wafer.li//Scala/Scala 简介/</id>
     <published>2017-04-02T15:00:00.000Z</published>
     <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
     
     </summary>
     
@@ -477,15 +477,15 @@
   </entry>
   
   <entry>
-    <title>Scala 简介</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%AE%80%E4%BB%8B/"/>
-    <id>https://wafer.li//Scala/Scala 简介/</id>
+    <title>Scala 类和对象基础</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
+    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
     <published>2017-04-02T15:00:00.000Z</published>
     <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
     
     </summary>
     
@@ -517,15 +517,15 @@
   </entry>
   
   <entry>
-    <title>设计阶段</title>
-    <link href="https://wafer.li//Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/"/>
-    <id>https://wafer.li//Reviews/TSPi/设计阶段/</id>
+    <title>实现阶段</title>
+    <link href="https://wafer.li//Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/"/>
+    <id>https://wafer.li//Reviews/TSPi/实现阶段/</id>
     <published>2017-03-26T15:00:00.000Z</published>
     <updated>2017-04-17T08:26:54.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-hld作业&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-hld作业&quot;&gt;&lt;/a&gt; 1. HLD(作业)&lt;/h2&gt;&lt;p&gt;设计阶段要完成高层设计，出 SDS，软件设计规格说明（体系结构文档）&lt;/p&gt;&lt;p&gt;包含：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;软件层次架构设计&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;功能模块设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;要根据需求分析书来&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;数据库设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;就是数据库设计，包括 E-R 图和数据库表设计&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口和界面设计&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+      &lt;h2 id=&quot;1-实现标准&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-实现标准&quot;&gt;&lt;/a&gt; 1. 实现标准&lt;/h2&gt;&lt;p&gt;扩展了设计标准&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;Standards Review&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;审查了世界标准&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Naming, interfae and message standards&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Coding Standards&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;blockquote&gt;&lt;p&gt;编码规范&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Size Standards&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
@@ -543,15 +543,15 @@
   </entry>
   
   <entry>
-    <title>实现阶段</title>
-    <link href="https://wafer.li//Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/"/>
-    <id>https://wafer.li//Reviews/TSPi/实现阶段/</id>
+    <title>设计阶段</title>
+    <link href="https://wafer.li//Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/"/>
+    <id>https://wafer.li//Reviews/TSPi/设计阶段/</id>
     <published>2017-03-26T15:00:00.000Z</published>
     <updated>2017-04-17T08:26:54.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-实现标准&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-实现标准&quot;&gt;&lt;/a&gt; 1. 实现标准&lt;/h2&gt;&lt;p&gt;扩展了设计标准&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;Standards Review&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;审查了世界标准&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Naming, interfae and message standards&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Coding Standards&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;blockquote&gt;&lt;p&gt;编码规范&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Size Standards&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+      &lt;h2 id=&quot;1-hld作业&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-hld作业&quot;&gt;&lt;/a&gt; 1. HLD(作业)&lt;/h2&gt;&lt;p&gt;设计阶段要完成高层设计，出 SDS，软件设计规格说明（体系结构文档）&lt;/p&gt;&lt;p&gt;包含：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;软件层次架构设计&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;功能模块设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;要根据需求分析书来&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;数据库设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;就是数据库设计，包括 E-R 图和数据库表设计&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口和界面设计&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
@@ -649,15 +649,15 @@
   </entry>
   
   <entry>
-    <title>Kotlin 对象</title>
-    <link href="https://wafer.li//Kotlin/Kotlin%20%E5%AF%B9%E8%B1%A1/"/>
-    <id>https://wafer.li//Kotlin/Kotlin 对象/</id>
+    <title>Kotlin 控制流程</title>
+    <link href="https://wafer.li//Kotlin/Kotlin%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B/"/>
+    <id>https://wafer.li//Kotlin/Kotlin 控制流程/</id>
     <published>2017-03-16T15:00:00.000Z</published>
     <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Kotlin 提供了一个 Object 属性用来实现在 Java 中很常见的三个功能：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;匿名类对象&lt;/li&gt;&lt;li&gt;单例模式(Singleton)&lt;/li&gt;&lt;li&gt;静态类成员&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;它们分别被称为 &lt;strong&gt;对象表达式&lt;/strong&gt;，&lt;strong&gt;对象声明&lt;/strong&gt;，&lt;strong&gt;companion object&lt;/strong&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;1-if&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-if&quot;&gt;&lt;/a&gt; 1. If&lt;/h2&gt;&lt;p&gt;Kotlin 中 &lt;code&gt;if&lt;/code&gt; 语句是一个表达式，&lt;strong&gt;有返回值&lt;/strong&gt;，功能和 C++ 和 Java 中的&lt;strong&gt;条件表达式&lt;/strong&gt;相同。&lt;/p&gt;&lt;p&gt;所以，Kotlin 中不支持条件表达式，因为 &lt;code&gt;if&lt;/code&gt; 语句已经具备了这个功能。&lt;/p&gt;&lt;figure class=&quot;highlight kotlin&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Traditional usage&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; max = a &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a &amp;lt; b)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;max = b&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// With else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; max: &lt;span class=&quot;built_in&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a &amp;gt; b)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;max = a&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;max = b&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// As expression&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;val&lt;/span&gt; max = &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a &amp;gt; b) a &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; b&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
