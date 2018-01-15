@@ -124,7 +124,7 @@ html_minifier:
 ## CSS
 css_minifier:
   enable: true
-  exclude: 
+  exclude:
     - '*.min.css'
 
 ## JS
@@ -133,7 +133,7 @@ js_minifier:
   mangle: true
   output:
   compress:
-  exclude: 
+  exclude:
     - '*.min.js'
 
 # Deployment
@@ -257,8 +257,8 @@ menu_settings:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -498,23 +498,34 @@ font:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
-# MathJax Support
-mathjax:
+# Math Equations Render Support
+math:
   enable: false
-  per_page: true
-  # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
-  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
-  #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
-  # For automatic detect latest varsion link to MathJax.js and get from CloudFlare.
-  #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
-katex:
-  enable: true
-  per_page: true
-  cdn:
-    css: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.css
-    js: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.js
+  # Default(flase) will load mathjax/katex srcipt EVERY PAGE
+  # If you set to true, you need to add 'mathjax: true' in Front Matter of post
+  # in order to render math equations in post
+  per_page: false
+
+  engine: mathjax
+  #engine: katex
+
+  # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
+  mathjax:
+    # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
+    cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
+    #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+    # For automatic detect latest varsion link to MathJax.js and get from CloudFlare.
+    #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
+  # needed to full Katex support.
+  katex:
+    # Use Katex 0.7.1 as default
+    cdn: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.css
+    # If you want to try the latest version of Katex, use one below instead
+    #cdn: //cdn.jsdelivr.net/katex/latest/katex.min.css
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
@@ -531,6 +542,7 @@ disqus:
   enable: false
   shortname: wafer-li
   count: true
+  lazyload: true
 
 # Hypercomments
 #hypercomments_id:
@@ -574,8 +586,8 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user:  # MUST HAVE, Your Github Username
-  github_repo:  # MUST HAVE, The name of the repo you use to store Gitment comments
+  github_user: # MUST HAVE, Your Github Username
+  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
   client_id: # MUST HAVE, Github client id for the Gitment
   client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
@@ -817,7 +829,7 @@ reading_progress:
 
 # Use velocity to animate everything.
 motion:
-  enable: false
+  enable: true
   async: false
   transition:
     # Transition variants:
@@ -834,8 +846,10 @@ motion:
     # Only for Pisces | Gemini.
     sidebar: slideUpIn
 
-# Fancybox
-# Dependencies: https://github.com/theme-next/theme-next-fancybox
+# Fancybox. There is support for old version 2 and new version 3.
+# Please, choose only any one variant, do not need to install both.
+# For install 2.x: https://github.com/theme-next/theme-next-fancybox
+# For install 3.x: https://github.com/theme-next/theme-next-fancybox3
 fancybox: true
 
 # Added switch option for separated repo in 6.0.0.
