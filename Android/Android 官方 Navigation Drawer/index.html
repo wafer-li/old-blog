@@ -1,4 +1,1021 @@
-<!DOCTYPE html><html class="theme-next pisces use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="google-site-verification" content="1T1SucGBBd6pO7wbCxXkQrO8CNSSTIfFc8Ow_0GvoJg"><meta name="msvalidate.01" content="056FCB31D0B2FCC39366F814CFA29CC0"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=6.0.1" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.1"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.1"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.1"><link rel="mask-icon" href="/images/logo.svg?v=6.0.1" color="#222"><meta name="keywords" content="Hexo, NexT, Wafer, Blog"><link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml"><meta name="description" content="链接没找到不如我们一起看萌萌的蜥蜴吧返回主页"><meta name="keywords" content="Hexo, NexT, Wafer, Blog"><meta property="og:type" content="website"><meta property="og:title" content="404"><meta property="og:url" content="https://wafer.li/404.html"><meta property="og:site_name" content="Wafer&#39;s Note"><meta property="og:description" content="链接没找到不如我们一起看萌萌的蜥蜴吧返回主页"><meta property="og:locale" content="zh-Hans"><meta property="og:image" content="https://wafer.li/images/404.jpg"><meta property="og:updated_time" content="2017-04-12T14:57:27.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="404"><meta name="twitter:description" content="链接没找到不如我们一起看萌萌的蜥蜴吧返回主页"><meta name="twitter:image" content="https://wafer.li/images/404.jpg"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Pisces",version:"6.0.1",sidebar:{position:"right",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!1},fancybox:!0,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="https://wafer.li/404.html"><title>Android 官方 Navigation Drawer | Wafer's Note</title><noscript><style type="text/css">.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-right page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Wafer's Note</span> <span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description">Kancolle is life!</h1></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档<span class="badge">190</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签<span class="badge">61</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类<span class="badge">48</span></a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><a href="https://github.com/wafer-li" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222;color:#fff;position:absolute;top:0;border:0;right:0" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><div class="reading-progress-bar"></div><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://wafer.li/Android/Android 官方 Navigation Drawer/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Wafer Li"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Wafer's Note"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">Android 官方 Navigation Drawer</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-08T00:00:00+09:00">2016-11-08</time> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i> </span><span class="post-meta-item-text">更新于&#58;</span> <time title="更新于" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time> </span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span> </a></span></span><span class="post-comments-count"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-comment-o"></i> </span><a href="/Android/Android 官方 Navigation Drawer/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="/Android/Android 官方 Navigation Drawer/" itemprop="commentCount"></span></a></span><div class="post-wordcount"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i> </span><span class="post-meta-item-text">字数统计&#58;</span> <span title="字数统计">6k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i> </span><span class="post-meta-item-text">阅读时长 &asymp;</span> <span title="阅读时长">0:05</span></div></div></header><div class="post-body" itemprop="articleBody"><p> <a href="#1-%E6%A6%82%E8%BF%B0">1. 概述</a><br> <a href="#2-%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96">2. 添加依赖</a><br> <a href="#3-%E8%AE%BE%E8%AE%A1-layoutactivity_mainxml">3. 设计 <code>layout/activity_main.xml</code></a><br> <a href="#4-%E6%9E%84%E5%BB%BA-layoutdrawer_headerxml">4. 构建 <code>layout/drawer_header.xml</code></a><br> <a href="#5-%E5%AE%9A%E4%B9%89-menudrawer_itemxml">5. 定义 <code>menu/drawer_item.xml</code></a><br> <a href="#6-%E6%98%BE%E7%A4%BA%E6%B1%89%E5%A0%A1%E5%8C%85%E5%9B%BE%E6%A0%87">6. 显示汉堡包图标</a><br> <a href="#7-%E4%BD%BF%E7%8A%B6%E6%80%81%E6%A0%8F%E9%80%8F%E6%98%8E">7. 使状态栏透明</a><br>  <a href="#71-%E5%8E%BB%E9%99%A4-actionbar">7.1 去除 Actionbar</a><br>  <a href="#72-v21-%E5%A2%9E%E5%8A%A0%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%A0%8F%E7%9A%84%E5%B1%9E%E6%80%A7">7.2 v21 增加关于状态栏的属性</a><br>  <a href="#73-%E8%AE%BE%E7%BD%AE-drawerlayout-%E4%BD%BF%E7%94%A8-fitssystemwindow">7.3 设置 DrawerLayout 使用 <code>fitsSystemWindow</code></a><br>  <a href="#74-%E8%A1%A5%E5%85%85%EF%BC%9A%E5%8A%A8%E6%80%81%E6%94%B9%E5%8F%98-status-bar-%E9%A2%9C%E8%89%B2">7.4 补充：动态改变 status bar 颜色</a><br> <a href="#8-%E6%80%BB%E7%BB%93">8. 总结</a></p><h2 id="1-概述"><a class="markdownIt-Anchor" href="#1-概述"></a> 1. 概述</h2><p>Navigation drawer 作为 Android Material Design 中主流的一种导航方式，当然受到 Google 的重视，所以，作为 MD 设计推出的实现部分，Android 更新了 support library 增加了关于 Navigation Drawer 的支持。</p><p>下面就来看看如何进行 Navigation Drawer 的构建。</p><a id="more"></a><h2 id="2-添加依赖"><a class="markdownIt-Anchor" href="#2-添加依赖"></a> 2. 添加依赖</h2><p>官方的 Navigation Drawer 需要用到 <code>DrawerLayout</code> 和 <code>NavigationView</code>，它们都在 support design 包下。</p><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compile <span class="string">'com.android.support:design:24.2.1'</span></div></pre></td></tr></table></figure><blockquote><p>这里不使用最新的 <code>25.0.0</code> 的原因在于，最新版在 UI Editor 渲染时存在 bug。Google 不愧是世界上最伟大的半成品公司。</p></blockquote><h2 id="3-设计-layoutactivity_mainxml"><a class="markdownIt-Anchor" href="#3-设计-layoutactivity_mainxml"></a> 3. 设计 <code>layout/activity_main.xml</code></h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span><span class="meta">?&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">android.support.v4.widget.DrawerLayout</span></span></div><div class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/drawer_layout"</span></span></div><div class="line"><span class="tag">    <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line"><span class="tag">    <span class="attr">xmlns:app</span>=<span class="string">"http://schemas.android.com/apk/res-auto"</span></span></div><div class="line"><span class="tag">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></span></div><div class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">    <span class="attr">android:fitsSystemWindows</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">    <span class="attr">tools:context</span>=<span class="string">"com.wafer.toy.github_client.ui.activity.MainActivity"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="comment">&lt;!-- Your main content --&gt;</span></div><div class="line"></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">android.support.design.widget.NavigationView</span></span></div><div class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">"@+id/navigation_drawer"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_gravity</span>=<span class="string">"start"</span></span></div><div class="line"><span class="tag">        <span class="attr">app:headerLayout</span>=<span class="string">"@layout/drawer_header"</span></span></div><div class="line"><span class="tag">        <span class="attr">app:menu</span>=<span class="string">"@menu/drawer_item"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">android.support.v4.widget.DrawerLayout</span>&gt;</span></div></pre></td></tr></table></figure><p>需要注意的是，<code>DrawerLayout</code> 是布局的<strong>根目录</strong>，同时要设置 <code>fitsSystemWindows=&quot;true&quot;</code>，否则，将会覆盖掉顶部状态栏。</p><p>还有，注意要设置 <code>NavigationView</code> 的 <code>layout_gravity=&quot;start&quot;</code>，否则不会生效。</p><h2 id="4-构建-layoutdrawer_headerxml"><a class="markdownIt-Anchor" href="#4-构建-layoutdrawer_headerxml"></a> 4. 构建 <code>layout/drawer_header.xml</code></h2><p>一般来说，Nav Drawer 都需要有一个 header 来存放用户头像等等有关用户账户的概览信息。</p><p>所以我们还要定义一个 header 的布局，然后像上面一样，将其赋予 <code>app:headerLayout</code></p><p>header 的布局注意满足 <a href="https://material.google.com/patterns/navigation-drawer.html" target="_blank" rel="noopener">Material Design</a> 即可；布局样式和摆放不限。</p><h2 id="5-定义-menudrawer_itemxml"><a class="markdownIt-Anchor" href="#5-定义-menudrawer_itemxml"></a> 5. 定义 <code>menu/drawer_item.xml</code></h2><p>是时候给我们的 Nav Drawer 加上一点内容了，通过在 <code>menu/drawer_item.xml</code> 中定义相应的组件即可。</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">menu</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">group</span> <span class="attr">android:checkableBehavior</span>=<span class="string">"single"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/nav_home"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_home"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_home"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/nav_about"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_about"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_about"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/nav_settings"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_settings"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_settings"</span> /&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/navigation_subheader"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_sub_header"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">menu</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:id</span>=<span class="string">"@+id/navigation_sub_item_1"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_about"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:title</span>=<span class="string">"@string/nav_sub_item_1"</span> /&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:id</span>=<span class="string">"@+id/navigation_sub_item_2"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_home"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:title</span>=<span class="string">"@string/nav_sub_item_2"</span> /&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">menu</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">group</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">menu</span>&gt;</span></div></pre></td></tr></table></figure><p>注意，项目的分界通过内嵌的 <code>&lt;menu&gt;</code> 来实现。</p><p>需要注意的是，官方的 nav drawer 中的 item 没有 ripple，只有长按才能显示。</p><p>最后我们再将这个 <code>menu</code> 赋到 <code>NavgationView</code>的 <code>app:menu=&quot;@menu/drawer_item&quot;</code>上</p><h2 id="6-显示汉堡包图标"><a class="markdownIt-Anchor" href="#6-显示汉堡包图标"></a> 6. 显示汉堡包图标</h2><p>Drawer 到这里就完全搭建好了，但是，没有汉堡包图标，用户就不知道我们的应有有个 Nav Drawer。所以，我们就需要给 <code>toolbar</code> 加上一个汉堡包图标来凸显 Nav Drawer 的存在。</p><p>在这里，我们需要进入到 <code>java</code> 文件中进行修改了，由于我用的是 Kotlin，这里使用 Kotlin 来做演示。</p><p>下面就是增加显示汉堡包的方法：</p><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> : <span class="type">BaseActivity</span></span>() &#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">val</span> actionBarDrawerToggle: ActionBarDrawerToggle <span class="keyword">by</span> lazy &#123; createActionBarDrawerToggle() &#125;</div><div class="line"></div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">initView</span><span class="params">()</span></span> &#123;</div><div class="line">        initToolbar()</div><div class="line">        initActionBarDrawerToggle()</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">initActionBarDrawerToggle</span><span class="params">()</span></span> &#123;</div><div class="line">        drawer_layout.addDrawerListener(actionBarDrawerToggle)</div><div class="line">        actionBarDrawerToggle.syncState()</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">initToolbar</span><span class="params">()</span></span> &#123;</div><div class="line">        setSupportActionBar(toolbar)</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">createActionBarDrawerToggle</span><span class="params">()</span></span>: ActionBarDrawerToggle &#123;</div><div class="line">        <span class="keyword">return</span> ActionBarDrawerToggle(</div><div class="line">                <span class="keyword">this</span>, drawer_layout, toolbar, R.string.open_drawer, R.string.close_drawer)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">getLayoutRes</span><span class="params">()</span></span>: <span class="built_in">Int</span> &#123;</div><div class="line">        <span class="keyword">return</span> R.layout.activity_main</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>首先，使用 <code>DrawerLayout</code> 对象和 <code>toolbar</code> 对象来构建一个 <code>ActionBarDrawerToggle</code> 对象；</p><p>然后让 <code>ActionBarDrawerToggle</code> 成为 <code>drawer_layout</code> 的一个接口；</p><p>最后设置 <code>actionBarDrawerToggle.syncState()</code> 即可。</p><h2 id="7-使状态栏透明"><a class="markdownIt-Anchor" href="#7-使状态栏透明"></a> 7. 使状态栏透明</h2><p>我们已经成功的构建出了一个 Navigation Drawer，但是，其显示出来的效果是这样的</p><p><img src="https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-09-57-54/RS/w1408.png" alt=""></p><p>而官方的 MD 规范上，状态栏的效果是半透明的。</p><p>所以，我们还要做一些额外的步骤来让我们的 Nav Drawer 更符合规范。</p><h3 id="71-去除-actionbar"><a class="markdownIt-Anchor" href="#71-去除-actionbar"></a> 7.1 去除 Actionbar</h3><p>这个步骤通常已经在初步搭建构架的时候就完成了。也就是说为 <code>style.xml</code> 增加如下两项：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowActionBar"</span>&gt;</span>false<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowNoTitle"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div></pre></td></tr></table></figure><p>并且继承 <code>Theme.AppCompact.Light.DarkActionBar</code></p><h3 id="72-v21-增加关于状态栏的属性"><a class="markdownIt-Anchor" href="#72-v21-增加关于状态栏的属性"></a> 7.2 v21 增加关于状态栏的属性</h3><p>在 <code>value-21/style.xml</code> 中，增加另外的两项：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowActionBar"</span>&gt;</span>false<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowNoTitle"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowDrawsSystemBarBackgrounds"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:statusBarColor"</span>&gt;</span>@android:color/transparent<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div></pre></td></tr></table></figure><h3 id="73-设置-drawerlayout-使用-fitssystemwindow"><a class="markdownIt-Anchor" href="#73-设置-drawerlayout-使用-fitssystemwindow"></a> 7.3 设置 DrawerLayout 使用 <code>fitsSystemWindow</code></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">android.support.v4.widget.DrawerLayout</span></span></div><div class="line"><span class="tag">    <span class="attr">...</span></span></div><div class="line"><span class="tag">    <span class="attr">android:fitsSystemWindows</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">    <span class="attr">app:insetForeground</span>=<span class="string">"@color/inset_color"</span></span></div><div class="line"><span class="tag">    &gt;</span></div></pre></td></tr></table></figure><p>OK，到这里就大功告成了！</p><p><img src="https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-10-24-05/RS/w1408.png" alt=""></p><h3 id="74-补充动态改变-status-bar-颜色"><a class="markdownIt-Anchor" href="#74-补充动态改变-status-bar-颜色"></a> 7.4 补充：动态改变 status bar 颜色</h3><p>如果你想动态改变状态栏颜色的话，也有相应的 Java 接口。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">drawerLayout.setStatusBarBackgroundColor(ContextCompat.getColor(<span class="keyword">this</span>, R.color.wierd_green));</div><div class="line"></div><div class="line">drawerLayout.setScrimColor(ContextCompat.getColor(<span class="keyword">this</span>, R.color.wierd_transparent_orange));</div></pre></td></tr></table></figure><h2 id="8-总结"><a class="markdownIt-Anchor" href="#8-总结"></a> 8. 总结</h2><p>这样构造出来的 Nav Drawer 和 MaterialDrawer 不同的一个地方在于，Nav Drawer 是在设计层面上进行修改，而 MaterialDrawer 是在代码层面上进行修改，侵入性不强，不过也较为麻烦。</p><p>总的来说，如果要快速搭建，则选择 MaterialDrawer；<br>但是要选择使用清真的写法，那么 Nav Drawer 则会更好。</p></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong> Wafer Li</li><li class="post-copyright-link"><strong>本文链接：</strong> <a href="https://wafer.li/Android/Android 官方 Navigation Drawer/" title="Android 官方 Navigation Drawer">https://wafer.li/Android/Android 官方 Navigation Drawer/</a></li><li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Android/" rel="tag"># Android</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/Android/MaterailDrawer/Material Drawer Tutorial/" rel="next" title="Material Drawer Tutorial"><i class="fa fa-chevron-left"></i> Material Drawer Tutorial</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"><a href="/DesignPattern/README/" rel="prev" title="README">README <i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"></div></div></div><div class="comments" id="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Wafer Li"><p class="site-author-name" itemprop="name">Wafer Li</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">190</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/index.html"><span class="site-state-item-count">48</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/index.html"><span class="site-state-item-count">61</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/wafer-li" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a> </span><span class="links-of-author-item"><a href="mailto:omyshokami@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a></span></div><div class="cc-license motion-element" itemprop="license"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-概述"><span class="nav-text">1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-添加依赖"><span class="nav-text">2. 添加依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-设计-layoutactivity_mainxml"><span class="nav-text">3. 设计 layout/activity_main.xml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-构建-layoutdrawer_headerxml"><span class="nav-text">4. 构建 layout/drawer_header.xml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-定义-menudrawer_itemxml"><span class="nav-text">5. 定义 menu/drawer_item.xml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-显示汉堡包图标"><span class="nav-text">6. 显示汉堡包图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-使状态栏透明"><span class="nav-text">7. 使状态栏透明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#71-去除-actionbar"><span class="nav-text">7.1 去除 Actionbar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#72-v21-增加关于状态栏的属性"><span class="nav-text">7.2 v21 增加关于状态栏的属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#73-设置-drawerlayout-使用-fitssystemwindow"><span class="nav-text">7.3 设置 DrawerLayout 使用 fitsSystemWindow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#74-补充动态改变-status-bar-颜色"><span class="nav-text">7.4 补充：动态改变 status bar 颜色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-总结"><span class="nav-text">8. 总结</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span> <span class="with-love"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">Wafer Li</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-area-chart"></i> </span><span class="post-meta-item-text">站点总字数&#58;</span> <span title="站点总字数">498k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span class="post-meta-item-text">站点总阅读时间&#58;</span> <span title="站点总阅读时间">7:33</span></div><div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div><span class="post-meta-divider">|</span><div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.1</div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script><script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script><script type="text/javascript" src="/js/src/utils.js?v=6.0.1"></script><script type="text/javascript" src="/js/src/motion.js?v=6.0.1"></script><script type="text/javascript" src="/js/src/affix.js?v=6.0.1"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.1"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.1"></script><script type="text/javascript" src="/js/src/post-details.js?v=6.0.1"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.1"></script><script id="dsq-count-scr" src="https://wafer-li.disqus.com/count.js" async></script><script type="text/javascript">var disqus_config=function(){this.page.url="https://wafer.li/Android/Android 官方 Navigation Drawer/",this.page.identifier="/Android/Android 官方 Navigation Drawer/",this.page.title="Android 官方 Navigation Drawer"};function loadComments(){var t=document,i=t.createElement("script");i.src="https://wafer-li.disqus.com/embed.js",i.setAttribute("data-timestamp",""+ +new Date),(t.head||t.body).appendChild(i)}$(function(){var t=$("#comments").offset().top-$(window).height();t<=0?loadComments():$(window).on("scroll.disqus_scroll",function(){document.documentElement.scrollTop>=t&&($(window).off(".disqus_scroll"),loadComments())})})</script><script type="text/javascript">// Popup Window;
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="1T1SucGBBd6pO7wbCxXkQrO8CNSSTIfFc8Ow_0GvoJg" />
+
+
+
+  <meta name="msvalidate.01" content="056FCB31D0B2FCC39366F814CFA29CC0" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.1" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT, Wafer, Blog" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="链接没找到 不如我们一起看萌萌的蜥蜴吧       返回主页">
+<meta name="keywords" content="Hexo, NexT, Wafer, Blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="https://wafer.li/404.html">
+<meta property="og:site_name" content="Wafer&#39;s Note">
+<meta property="og:description" content="链接没找到 不如我们一起看萌萌的蜥蜴吧       返回主页">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://wafer.li/images/404.jpg">
+<meta property="og:updated_time" content="2017-04-12T14:57:27.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="404">
+<meta name="twitter:description" content="链接没找到 不如我们一起看萌萌的蜥蜴吧       返回主页">
+<meta name="twitter:image" content="https://wafer.li/images/404.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.0.1',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://wafer.li/404.html"/>
+
+
+
+
+
+  <title>Android 官方 Navigation Drawer | Wafer's Note</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wafer's Note</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Kancolle is life!</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">190</span>
+              </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">61</span>
+              </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">48</span>
+              </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    
+  
+  
+  
+    <a href="https://github.com/wafer-li" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wafer.li/Android/Android 官方 Navigation Drawer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wafer Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wafer's Note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Android 官方 Navigation Drawer</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-08T00:00:00+09:00">2016-11-08</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Android/Android 官方 Navigation Drawer/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/Android/Android 官方 Navigation Drawer/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">0:05</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
+<p> <a href="#1-%E6%A6%82%E8%BF%B0">1. 概述</a><br>
+ <a href="#2-%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96">2. 添加依赖</a><br>
+ <a href="#3-%E8%AE%BE%E8%AE%A1-layoutactivity_mainxml">3. 设计 <code>layout/activity_main.xml</code></a><br>
+ <a href="#4-%E6%9E%84%E5%BB%BA-layoutdrawer_headerxml">4. 构建 <code>layout/drawer_header.xml</code></a><br>
+ <a href="#5-%E5%AE%9A%E4%B9%89-menudrawer_itemxml">5. 定义 <code>menu/drawer_item.xml</code></a><br>
+ <a href="#6-%E6%98%BE%E7%A4%BA%E6%B1%89%E5%A0%A1%E5%8C%85%E5%9B%BE%E6%A0%87">6. 显示汉堡包图标</a><br>
+ <a href="#7-%E4%BD%BF%E7%8A%B6%E6%80%81%E6%A0%8F%E9%80%8F%E6%98%8E">7. 使状态栏透明</a><br>
+  <a href="#71-%E5%8E%BB%E9%99%A4-actionbar">7.1 去除 Actionbar</a><br>
+  <a href="#72-v21-%E5%A2%9E%E5%8A%A0%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%A0%8F%E7%9A%84%E5%B1%9E%E6%80%A7">7.2 v21 增加关于状态栏的属性</a><br>
+  <a href="#73-%E8%AE%BE%E7%BD%AE-drawerlayout-%E4%BD%BF%E7%94%A8-fitssystemwindow">7.3 设置 DrawerLayout 使用 <code>fitsSystemWindow</code></a><br>
+  <a href="#74-%E8%A1%A5%E5%85%85%EF%BC%9A%E5%8A%A8%E6%80%81%E6%94%B9%E5%8F%98-status-bar-%E9%A2%9C%E8%89%B2">7.4 补充：动态改变 status bar 颜色</a><br>
+ <a href="#8-%E6%80%BB%E7%BB%93">8. 总结</a></p>
+<!-- /MDTOC -->
+<h2 id="1-概述"><a class="markdownIt-Anchor" href="#1-概述"></a> 1. 概述</h2>
+<p>Navigation drawer 作为 Android Material Design 中主流的一种导航方式，当然受到 Google 的重视，所以，作为 MD 设计推出的实现部分，Android 更新了 support library 增加了关于 Navigation Drawer 的支持。</p>
+<p>下面就来看看如何进行 Navigation Drawer 的构建。</p>
+<a id="more"></a>
+<h2 id="2-添加依赖"><a class="markdownIt-Anchor" href="#2-添加依赖"></a> 2. 添加依赖</h2>
+<p>官方的 Navigation Drawer 需要用到 <code>DrawerLayout</code> 和 <code>NavigationView</code>，它们都在 support design 包下。</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compile <span class="string">'com.android.support:design:24.2.1'</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>这里不使用最新的 <code>25.0.0</code> 的原因在于，最新版在 UI Editor 渲染时存在 bug。Google 不愧是世界上最伟大的半成品公司。</p>
+</blockquote>
+<h2 id="3-设计-layoutactivity_mainxml"><a class="markdownIt-Anchor" href="#3-设计-layoutactivity_mainxml"></a> 3. 设计 <code>layout/activity_main.xml</code></h2>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span><span class="meta">?&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">android.support.v4.widget.DrawerLayout</span></span></div><div class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/drawer_layout"</span></span></div><div class="line"><span class="tag">    <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line"><span class="tag">    <span class="attr">xmlns:app</span>=<span class="string">"http://schemas.android.com/apk/res-auto"</span></span></div><div class="line"><span class="tag">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></span></div><div class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">    <span class="attr">android:fitsSystemWindows</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">    <span class="attr">tools:context</span>=<span class="string">"com.wafer.toy.github_client.ui.activity.MainActivity"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="comment">&lt;!-- Your main content --&gt;</span></div><div class="line"></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">android.support.design.widget.NavigationView</span></span></div><div class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">"@+id/navigation_drawer"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_gravity</span>=<span class="string">"start"</span></span></div><div class="line"><span class="tag">        <span class="attr">app:headerLayout</span>=<span class="string">"@layout/drawer_header"</span></span></div><div class="line"><span class="tag">        <span class="attr">app:menu</span>=<span class="string">"@menu/drawer_item"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">android.support.v4.widget.DrawerLayout</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>需要注意的是，<code>DrawerLayout</code> 是布局的<strong>根目录</strong>，同时要设置 <code>fitsSystemWindows=&quot;true&quot;</code>，否则，将会覆盖掉顶部状态栏。</p>
+<p>还有，注意要设置 <code>NavigationView</code> 的 <code>layout_gravity=&quot;start&quot;</code>，否则不会生效。</p>
+<h2 id="4-构建-layoutdrawer_headerxml"><a class="markdownIt-Anchor" href="#4-构建-layoutdrawer_headerxml"></a> 4. 构建 <code>layout/drawer_header.xml</code></h2>
+<p>一般来说，Nav Drawer 都需要有一个 header 来存放用户头像等等有关用户账户的概览信息。</p>
+<p>所以我们还要定义一个 header 的布局，然后像上面一样，将其赋予 <code>app:headerLayout</code></p>
+<p>header 的布局注意满足 <a href="https://material.google.com/patterns/navigation-drawer.html" target="_blank" rel="noopener">Material Design</a> 即可；布局样式和摆放不限。</p>
+<h2 id="5-定义-menudrawer_itemxml"><a class="markdownIt-Anchor" href="#5-定义-menudrawer_itemxml"></a> 5. 定义 <code>menu/drawer_item.xml</code></h2>
+<p>是时候给我们的 Nav Drawer 加上一点内容了，通过在 <code>menu/drawer_item.xml</code> 中定义相应的组件即可。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">menu</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">group</span> <span class="attr">android:checkableBehavior</span>=<span class="string">"single"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/nav_home"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_home"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_home"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/nav_about"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_about"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_about"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/nav_settings"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_settings"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_settings"</span> /&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@+id/navigation_subheader"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:title</span>=<span class="string">"@string/nav_sub_header"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">menu</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:id</span>=<span class="string">"@+id/navigation_sub_item_1"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_about"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:title</span>=<span class="string">"@string/nav_sub_item_1"</span> /&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">item</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:id</span>=<span class="string">"@+id/navigation_sub_item_2"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:icon</span>=<span class="string">"@drawable/ic_drawer_home"</span></span></div><div class="line"><span class="tag">                    <span class="attr">android:title</span>=<span class="string">"@string/nav_sub_item_2"</span> /&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">menu</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">group</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">menu</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>注意，项目的分界通过内嵌的 <code>&lt;menu&gt;</code> 来实现。</p>
+<p>需要注意的是，官方的 nav drawer 中的 item 没有 ripple，只有长按才能显示。</p>
+<p>最后我们再将这个 <code>menu</code> 赋到 <code>NavgationView</code>的 <code>app:menu=&quot;@menu/drawer_item&quot;</code>上</p>
+<h2 id="6-显示汉堡包图标"><a class="markdownIt-Anchor" href="#6-显示汉堡包图标"></a> 6. 显示汉堡包图标</h2>
+<p>Drawer 到这里就完全搭建好了，但是，没有汉堡包图标，用户就不知道我们的应有有个 Nav Drawer。所以，我们就需要给 <code>toolbar</code> 加上一个汉堡包图标来凸显 Nav Drawer 的存在。</p>
+<p>在这里，我们需要进入到 <code>java</code> 文件中进行修改了，由于我用的是 Kotlin，这里使用 Kotlin 来做演示。</p>
+<p>下面就是增加显示汉堡包的方法：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> : <span class="type">BaseActivity</span></span>() &#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">val</span> actionBarDrawerToggle: ActionBarDrawerToggle <span class="keyword">by</span> lazy &#123; createActionBarDrawerToggle() &#125;</div><div class="line"></div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">initView</span><span class="params">()</span></span> &#123;</div><div class="line">        initToolbar()</div><div class="line">        initActionBarDrawerToggle()</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">initActionBarDrawerToggle</span><span class="params">()</span></span> &#123;</div><div class="line">        drawer_layout.addDrawerListener(actionBarDrawerToggle)</div><div class="line">        actionBarDrawerToggle.syncState()</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">initToolbar</span><span class="params">()</span></span> &#123;</div><div class="line">        setSupportActionBar(toolbar)</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">createActionBarDrawerToggle</span><span class="params">()</span></span>: ActionBarDrawerToggle &#123;</div><div class="line">        <span class="keyword">return</span> ActionBarDrawerToggle(</div><div class="line">                <span class="keyword">this</span>, drawer_layout, toolbar, R.string.open_drawer, R.string.close_drawer)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">getLayoutRes</span><span class="params">()</span></span>: <span class="built_in">Int</span> &#123;</div><div class="line">        <span class="keyword">return</span> R.layout.activity_main</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>首先，使用 <code>DrawerLayout</code> 对象和 <code>toolbar</code> 对象来构建一个 <code>ActionBarDrawerToggle</code> 对象；</p>
+<p>然后让 <code>ActionBarDrawerToggle</code> 成为 <code>drawer_layout</code> 的一个接口；</p>
+<p>最后设置 <code>actionBarDrawerToggle.syncState()</code> 即可。</p>
+<h2 id="7-使状态栏透明"><a class="markdownIt-Anchor" href="#7-使状态栏透明"></a> 7. 使状态栏透明</h2>
+<p>我们已经成功的构建出了一个 Navigation Drawer，但是，其显示出来的效果是这样的</p>
+<p><img src="https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-09-57-54/RS/w1408.png" alt=""></p>
+<p>而官方的 MD 规范上，状态栏的效果是半透明的。</p>
+<p>所以，我们还要做一些额外的步骤来让我们的 Nav Drawer 更符合规范。</p>
+<h3 id="71-去除-actionbar"><a class="markdownIt-Anchor" href="#71-去除-actionbar"></a> 7.1 去除 Actionbar</h3>
+<p>这个步骤通常已经在初步搭建构架的时候就完成了。也就是说为 <code>style.xml</code> 增加如下两项：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowActionBar"</span>&gt;</span>false<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowNoTitle"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>并且继承 <code>Theme.AppCompact.Light.DarkActionBar</code></p>
+<h3 id="72-v21-增加关于状态栏的属性"><a class="markdownIt-Anchor" href="#72-v21-增加关于状态栏的属性"></a> 7.2 v21 增加关于状态栏的属性</h3>
+<p>在 <code>value-21/style.xml</code> 中，增加另外的两项：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowActionBar"</span>&gt;</span>false<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"windowNoTitle"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:windowDrawsSystemBarBackgrounds"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:statusBarColor"</span>&gt;</span>@android:color/transparent<span class="tag">&lt;/<span class="name">item</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="73-设置-drawerlayout-使用-fitssystemwindow"><a class="markdownIt-Anchor" href="#73-设置-drawerlayout-使用-fitssystemwindow"></a> 7.3 设置 DrawerLayout 使用 <code>fitsSystemWindow</code></h3>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">android.support.v4.widget.DrawerLayout</span></span></div><div class="line"><span class="tag">    <span class="attr">...</span></span></div><div class="line"><span class="tag">    <span class="attr">android:fitsSystemWindows</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">    <span class="attr">app:insetForeground</span>=<span class="string">"@color/inset_color"</span></span></div><div class="line"><span class="tag">    &gt;</span></div></pre></td></tr></table></figure>
+<p>OK，到这里就大功告成了！</p>
+<p><img src="https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-10-24-05/RS/w1408.png" alt=""></p>
+<h3 id="74-补充动态改变-status-bar-颜色"><a class="markdownIt-Anchor" href="#74-补充动态改变-status-bar-颜色"></a> 7.4 补充：动态改变 status bar 颜色</h3>
+<p>如果你想动态改变状态栏颜色的话，也有相应的 Java 接口。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">drawerLayout.setStatusBarBackgroundColor(ContextCompat.getColor(<span class="keyword">this</span>, R.color.wierd_green));</div><div class="line"></div><div class="line">drawerLayout.setScrimColor(ContextCompat.getColor(<span class="keyword">this</span>, R.color.wierd_transparent_orange));</div></pre></td></tr></table></figure>
+<h2 id="8-总结"><a class="markdownIt-Anchor" href="#8-总结"></a> 8. 总结</h2>
+<p>这样构造出来的 Nav Drawer 和 MaterialDrawer 不同的一个地方在于，Nav Drawer 是在设计层面上进行修改，而 MaterialDrawer 是在代码层面上进行修改，侵入性不强，不过也较为麻烦。</p>
+<p>总的来说，如果要快速搭建，则选择 MaterialDrawer；<br>
+但是要选择使用清真的写法，那么 Nav Drawer 则会更好。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Wafer Li
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wafer.li/Android/Android 官方 Navigation Drawer/" title="Android 官方 Navigation Drawer">https://wafer.li/Android/Android 官方 Navigation Drawer/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag"># Android</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Android/Retrofit/Retrofit2 高级配置/" rel="next" title="Retrofit2 高级配置">
+                <i class="fa fa-chevron-left"></i> Retrofit2 高级配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Android/Android 获取屏幕尺寸/" rel="prev" title="Android 获取屏幕尺寸">
+                Android 获取屏幕尺寸 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Wafer Li" />
+            
+              <p class="site-author-name" itemprop="name">Wafer Li</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">190</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">48</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">61</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/wafer-li" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:omyshokami@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-概述"><span class="nav-text"> 1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-添加依赖"><span class="nav-text"> 2. 添加依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-设计-layoutactivity_mainxml"><span class="nav-text"> 3. 设计 layout/activity_main.xml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-构建-layoutdrawer_headerxml"><span class="nav-text"> 4. 构建 layout/drawer_header.xml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-定义-menudrawer_itemxml"><span class="nav-text"> 5. 定义 menu/drawer_item.xml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-显示汉堡包图标"><span class="nav-text"> 6. 显示汉堡包图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-使状态栏透明"><span class="nav-text"> 7. 使状态栏透明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#71-去除-actionbar"><span class="nav-text"> 7.1 去除 Actionbar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#72-v21-增加关于状态栏的属性"><span class="nav-text"> 7.2 v21 增加关于状态栏的属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#73-设置-drawerlayout-使用-fitssystemwindow"><span class="nav-text"> 7.3 设置 DrawerLayout 使用 fitsSystemWindow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#74-补充动态改变-status-bar-颜色"><span class="nav-text"> 7.4 补充：动态改变 status bar 颜色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-总结"><span class="nav-text"> 8. 总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wafer Li</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数&#58;</span>
+    
+    <span title="站点总字数">516k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总阅读时间&#58;</span>
+    
+    <span title="站点总阅读时间">7:49</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.1"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://wafer-li.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'https://wafer.li/Android/Android 官方 Navigation Drawer/';
+        this.page.identifier = '/Android/Android 官方 Navigation Drawer/';
+        this.page.title = 'Android 官方 Navigation Drawer';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://wafer-li.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        $(function () {
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          if (offsetTop <= 0) {
+            // load directly when there's no a scrollbar
+            loadComments();
+          } else {
+            $(window).on('scroll.disqus_scroll', function () {
+              var scrollTop = document.documentElement.scrollTop;
+              if (scrollTop >= offsetTop) {
+                $(window).off('.disqus_scroll');
+                loadComments();
+              }
+            });
+          }
+        });
+      
+    </script>
+  
+
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
     var isfetched = false;
     var isXml = true;
     // Search DB path;
@@ -311,4 +1328,27 @@
       if (shouldDismissSearchPopup) {
         onPopupClose();
       }
-    });</script></body></html>
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
