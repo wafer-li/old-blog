@@ -93,6 +93,29 @@ deploy:
       coding: git@git.coding.net:wafer-li/wafer-li.coding.me.git
   branch: master
 
+# Sitemap
+sitemap:
+    path: sitemap.xml
+    tag: false
+    category: false
+
+# Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 30
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
+# Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
  # Renderer
 markdown_it_plus:
     highlight: true
@@ -123,7 +146,7 @@ html_minifier:
 css_minifier:
   enable: true
   silent: false
-  exclude: 
+  exclude:
     - '*.min.css'
 
 ## JS
@@ -131,7 +154,7 @@ js_minifier:
   enable: true
   mangle: true
   silent: false
-  exclude: 
+  exclude:
     - '*.min.js'
 
 # Image
@@ -305,7 +328,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
