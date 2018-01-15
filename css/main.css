@@ -1947,7 +1947,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9a7598;
+  background: #03abb6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2896,7 +2896,7 @@ pre .javascript .function {
     text-align: justify;
   }
 }
-ul.contains-task-list li.task-list-item {
+.contains-task-list .task-list-item {
   list-style: none;
 }
 .posts-expand .post-body {
