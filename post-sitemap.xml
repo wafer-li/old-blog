@@ -983,6 +983,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Kotlin/Java%20to%20Kotlin/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20Android%20Extension/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1008,14 +1016,6 @@
 
     <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Kotlin/Java%20to%20Kotlin/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
