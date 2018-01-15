@@ -60,7 +60,7 @@ before_script:
     - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
 
     # Load custom files
-    - cat custom/css/custom.styl >> themes/next-reloaded/source/css/_custom/custom.styl
+    #- cat custom/css/custom.styl >> themes/next-reloaded/source/css/_custom/custom.styl
     - cat themes/next-reloaded/source/css/_custom/custom.styl
 
     ## Theme Dependencies
