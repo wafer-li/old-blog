@@ -144,7 +144,7 @@ html_minifier:
 
 ## CSS
 css_minifier:
-  enable: true
+  enable: false
   silent: false
   exclude:
     - '*.min.css'
