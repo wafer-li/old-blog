@@ -663,54 +663,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/COA/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Reviews/MaoTheory/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Projects/MdzzProject/Network%20API/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Projects/MdzzProject/Storage%20API/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Projects/BigInovation/%E5%9C%B0%E5%BA%93%20API/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -744,6 +696,54 @@
 
     <url>
         <loc>https://wafer.li/Projects/BigInovation/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Projects/MdzzProject/Network%20API/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Projects/MdzzProject/Storage%20API/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Reviews/COA/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Reviews/MaoTheory/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1255,6 +1255,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Plan/%E6%8F%92%E7%BA%BF%E6%9D%BF%E9%87%8D%E6%9E%84%E8%AE%A1%E5%88%92/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Python/Python%203%20Advanced%20Skill/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1344,14 +1352,6 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Plan/%E6%8F%92%E7%BA%BF%E6%9D%BF%E9%87%8D%E6%9E%84%E8%AE%A1%E5%88%92/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

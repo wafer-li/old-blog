@@ -397,6 +397,46 @@
   </entry>
   
   <entry>
+    <title>Scala Hello World</title>
+    <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
+    <id>https://wafer.li//Scala/Scala Hello World/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-08T13:58:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala 类和对象基础</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
+    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 集合框架</title>
     <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
     <id>https://wafer.li//Java/Java 集合框架/</id>
@@ -437,26 +477,6 @@
   </entry>
   
   <entry>
-    <title>Scala 类和对象基础</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
-    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Scala 简介</title>
     <link href="https://wafer.li//Scala/Scala%20%E7%AE%80%E4%BB%8B/"/>
     <id>https://wafer.li//Scala/Scala 简介/</id>
@@ -466,26 +486,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala Hello World</title>
-    <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
-    <id>https://wafer.li//Scala/Scala Hello World/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-08T13:58:25.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
     
     </summary>
     
@@ -609,26 +609,6 @@
   </entry>
   
   <entry>
-    <title>Kotlin 使用 Gradle</title>
-    <link href="https://wafer.li//Kotlin/Kotlin%20%E4%BD%BF%E7%94%A8%20Gradle/"/>
-    <id>https://wafer.li//Kotlin/Kotlin 使用 Gradle/</id>
-    <published>2017-03-19T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;一般来说，IntilliJ 会自动的给我们配置 Kotlin 的 Gradle 设置；&lt;/p&gt;&lt;p&gt;但是，有时候我们也想自己进行一些自定义的 Gradle 配置；&lt;/p&gt;&lt;p&gt;下面就来总结几个常用的配置方法&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
-    
-    
-      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
-    
-  </entry>
-  
-  <entry>
     <title>装饰者模式(Decorator Pattern)</title>
     <link href="https://wafer.li//DesignPattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/"/>
     <id>https://wafer.li//DesignPattern/装饰者模式(Decorator Pattern)/</id>
@@ -649,22 +629,40 @@
   </entry>
   
   <entry>
-    <title>Kotlin Android Extension</title>
-    <link href="https://wafer.li//Kotlin/Kotlin%20Android%20Extension/"/>
-    <id>https://wafer.li//Kotlin/Kotlin Android Extension/</id>
-    <published>2017-03-16T15:00:00.000Z</published>
+    <title>Kotlin 使用 Gradle</title>
+    <link href="https://wafer.li//Kotlin/Kotlin%20%E4%BD%BF%E7%94%A8%20Gradle/"/>
+    <id>https://wafer.li//Kotlin/Kotlin 使用 Gradle/</id>
+    <published>2017-03-19T15:00:00.000Z</published>
     <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Kotlin 对于 Android 开发，还提供了一些扩展特性，有助于提高 Android 开发的效率。&lt;/p&gt;
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;一般来说，IntilliJ 会自动的给我们配置 Kotlin 的 Gradle 设置；&lt;/p&gt;&lt;p&gt;但是，有时候我们也想自己进行一些自定义的 Gradle 配置；&lt;/p&gt;&lt;p&gt;下面就来总结几个常用的配置方法&lt;/p&gt;
     
     </summary>
     
       <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kotlin 对象</title>
+    <link href="https://wafer.li//Kotlin/Kotlin%20%E5%AF%B9%E8%B1%A1/"/>
+    <id>https://wafer.li//Kotlin/Kotlin 对象/</id>
+    <published>2017-03-16T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Kotlin 提供了一个 Object 属性用来实现在 Java 中很常见的三个功能：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;匿名类对象&lt;/li&gt;&lt;li&gt;单例模式(Singleton)&lt;/li&gt;&lt;li&gt;静态类成员&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;它们分别被称为 &lt;strong&gt;对象表达式&lt;/strong&gt;，&lt;strong&gt;对象声明&lt;/strong&gt;，&lt;strong&gt;companion object&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
+    
     
       <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
     
