@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
-  <updated>2018-01-13T04:02:33.000Z</updated>
+  <updated>2018-01-16T15:53:20.000Z</updated>
   <id>https://wafer.li/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决脚注中数学公式不能渲染的问题</title>
+    <link href="https://wafer.li//%E8%A7%A3%E5%86%B3%E8%84%9A%E6%B3%A8%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E4%B8%8D%E8%83%BD%E6%B8%B2%E6%9F%93%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://wafer.li//解决脚注中数学公式不能渲染的问题/</id>
+    <published>2018-01-16T08:39:00.000Z</published>
+    <updated>2018-01-16T15:53:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
+    
+      <category term="Katex" scheme="https://wafer.li/tags/Katex/"/>
+    
+  </entry>
   
   <entry>
     <title>解决 Travis CI 总是更新旧博客的问题</title>
@@ -397,46 +419,6 @@
   </entry>
   
   <entry>
-    <title>Scala Hello World</title>
-    <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
-    <id>https://wafer.li//Scala/Scala Hello World/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-08T13:58:25.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala 类和对象基础</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
-    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java 集合框架</title>
     <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
     <id>https://wafer.li//Java/Java 集合框架/</id>
@@ -473,6 +455,46 @@
     
     
       <category term="Java" scheme="https://wafer.li/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala Hello World</title>
+    <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
+    <id>https://wafer.li//Scala/Scala Hello World/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-08T13:58:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala 类和对象基础</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
+    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
     
   </entry>
   
@@ -517,15 +539,15 @@
   </entry>
   
   <entry>
-    <title>设计阶段</title>
-    <link href="https://wafer.li//Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/"/>
-    <id>https://wafer.li//Reviews/TSPi/设计阶段/</id>
+    <title>实现阶段</title>
+    <link href="https://wafer.li//Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/"/>
+    <id>https://wafer.li//Reviews/TSPi/实现阶段/</id>
     <published>2017-03-26T15:00:00.000Z</published>
     <updated>2017-04-17T08:26:54.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-hld作业&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-hld作业&quot;&gt;&lt;/a&gt; 1. HLD(作业)&lt;/h2&gt;&lt;p&gt;设计阶段要完成高层设计，出 SDS，软件设计规格说明（体系结构文档）&lt;/p&gt;&lt;p&gt;包含：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;软件层次架构设计&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;功能模块设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;要根据需求分析书来&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;数据库设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;就是数据库设计，包括 E-R 图和数据库表设计&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口和界面设计&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+      &lt;h2 id=&quot;1-实现标准&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-实现标准&quot;&gt;&lt;/a&gt; 1. 实现标准&lt;/h2&gt;&lt;p&gt;扩展了设计标准&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;Standards Review&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;审查了世界标准&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Naming, interfae and message standards&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Coding Standards&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;blockquote&gt;&lt;p&gt;编码规范&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Size Standards&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
@@ -543,15 +565,15 @@
   </entry>
   
   <entry>
-    <title>实现阶段</title>
-    <link href="https://wafer.li//Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/"/>
-    <id>https://wafer.li//Reviews/TSPi/实现阶段/</id>
+    <title>设计阶段</title>
+    <link href="https://wafer.li//Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/"/>
+    <id>https://wafer.li//Reviews/TSPi/设计阶段/</id>
     <published>2017-03-26T15:00:00.000Z</published>
     <updated>2017-04-17T08:26:54.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-实现标准&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-实现标准&quot;&gt;&lt;/a&gt; 1. 实现标准&lt;/h2&gt;&lt;p&gt;扩展了设计标准&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;Standards Review&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;审查了世界标准&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Naming, interfae and message standards&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Coding Standards&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;blockquote&gt;&lt;p&gt;编码规范&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Size Standards&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+      &lt;h2 id=&quot;1-hld作业&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-hld作业&quot;&gt;&lt;/a&gt; 1. HLD(作业)&lt;/h2&gt;&lt;p&gt;设计阶段要完成高层设计，出 SDS，软件设计规格说明（体系结构文档）&lt;/p&gt;&lt;p&gt;包含：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;软件层次架构设计&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;功能模块设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;要根据需求分析书来&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;数据库设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;就是数据库设计，包括 E-R 图和数据库表设计&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口和界面设计&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
@@ -638,26 +660,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;一般来说，IntilliJ 会自动的给我们配置 Kotlin 的 Gradle 设置；&lt;/p&gt;&lt;p&gt;但是，有时候我们也想自己进行一些自定义的 Gradle 配置；&lt;/p&gt;&lt;p&gt;下面就来总结几个常用的配置方法&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
-    
-    
-      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kotlin 对象</title>
-    <link href="https://wafer.li//Kotlin/Kotlin%20%E5%AF%B9%E8%B1%A1/"/>
-    <id>https://wafer.li//Kotlin/Kotlin 对象/</id>
-    <published>2017-03-16T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Kotlin 提供了一个 Object 属性用来实现在 Java 中很常见的三个功能：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;匿名类对象&lt;/li&gt;&lt;li&gt;单例模式(Singleton)&lt;/li&gt;&lt;li&gt;静态类成员&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;它们分别被称为 &lt;strong&gt;对象表达式&lt;/strong&gt;，&lt;strong&gt;对象声明&lt;/strong&gt;，&lt;strong&gt;companion object&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     
