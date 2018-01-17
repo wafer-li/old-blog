@@ -131,6 +131,9 @@ markdown_it_plus:
         - plugin:
             name: markdown-it-task-lists
             enable: true
+        - plugin:
+            name: markdown-it-criticmarkup
+            enable: true
 
 # Minifier
 all_minifier: true

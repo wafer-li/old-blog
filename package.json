@@ -23,6 +23,7 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.3.1",
     "hexo-symbols-count-time": "^0.2.0",
+    "markdown-it-criticmarkup": "0.0.1",
     "markdown-it-task-lists": "^2.1.0"
   }
 }
