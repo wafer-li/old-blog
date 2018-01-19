@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/</loc>
+        <lastmod>2018-01-19T18:01:36.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/%E8%A7%A3%E5%86%B3%E8%84%9A%E6%B3%A8%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E4%B8%8D%E8%83%BD%E6%B8%B2%E6%9F%93%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
         <lastmod>2018-01-16T15:53:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -279,14 +287,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Hexo/%E8%A7%A3%E5%86%B3%20Travis%20CI%20%E6%80%BB%E6%98%AF%E6%9B%B4%E6%96%B0%E6%97%A7%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
         <lastmod>2018-01-13T04:02:33.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -527,7 +527,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Scala/Scala%20%E6%B3%9B%E5%9E%8B%E5%92%8C%E5%8F%98%E5%BD%A2/</loc>
+        <loc>https://wafer.li/Tools/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -535,7 +535,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Tools/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
+        <loc>https://wafer.li/Scala/Scala%20%E6%B3%9B%E5%9E%8B%E5%92%8C%E5%8F%98%E5%BD%A2/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1095,6 +1095,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E6%8E%A5%E5%8F%A3/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1311,14 +1319,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Python/Python%203%20Function/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Python/Python%203%20IO/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1359,7 +1359,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B/</loc>
+        <loc>https://wafer.li/Python/Python%203%20Function/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
