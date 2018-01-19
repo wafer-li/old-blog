@@ -2,78 +2,77 @@ dist: trusty
 sudo: required
 
 addons:
-    ssh_known_hosts:
-        - github.com
-        - git.coding.net
-    apt:
-        packages:
-            - nasm
+  ssh_known_hosts:
+    - github.com
+    - git.coding.net
+  apt:
+    packages:
+      - nasm
 
 env:
-    global:
-        - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js 
-        - ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/ 
-        - TZ=Asia/Tokyo
+  global:
+    - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js
+    - ATOM_WRITER_DIR=node_modules/hexo-generator-atom-markdown-writer-meta/
+    - TZ=Asia/Tokyo
 
 language: node_js
 node_js: node
 
 branches:
-    only:
-        - source
+  only:
+    - source
 
 git:
-    depth: false
-    submodules: false
+  depth: false
+  submodules: false
 
 cache:
-    apt: true
-    directories:
-        - node_modules
+  apt: true
+  directories:
+    - node_modules
 
 
 before_install:
-    # Git Config
-    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-    - git config --global user.name "wafer-li"
-    - git config --global user.email "omyshokami@gmail.com"
+  # Git Config
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git config --global user.name "wafer-li"
+  - git config --global user.email "omyshokami@gmail.com"
 
-    # Restore last modified time
-    - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
+  # Restore last modified time
+  - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
 
-    # Submodules
-    - git submodule update --recursive --remote --init
+  # Submodules
+  - git submodule update --recursive --remote --init
 
-    # Deploy history
-    - git clone --branch=master --single-branch https://github.com/wafer-li/wafer-li.github.io.git .deploy_git
+  # Deploy history
+  - git clone --branch=master --single-branch https://github.com/wafer-li/wafer-li.github.io.git .deploy_git
 
-    # SSH Setup
-    - openssl aes-256-cbc -K $encrypted_693585a97b8c_key -iv $encrypted_693585a97b8c_iv -in blog_deploy_key.enc -out blog_deploy_key -d
-    - eval "$(ssh-agent -s)"
-    - chmod 600 ./blog_deploy_key
-    - ssh-add ./blog_deploy_key
+  # SSH Setup
+  - openssl aes-256-cbc -K $encrypted_693585a97b8c_key -iv $encrypted_693585a97b8c_iv -in blog_deploy_key.enc -out blog_deploy_key -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 ./blog_deploy_key
+  - ssh-add ./blog_deploy_key
 
 install: npm install
 
 before_script:
-    # Patch atom writer generator
-    - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
+  # Patch atom writer generator
+  - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_DIR}/lib/generator.js
 
-    # Load custom files
-    - cat custom/css/custom.styl >| themes/next-reloaded/source/css/_custom/custom.styl
-    - cat themes/next-reloaded/source/css/_custom/custom.styl
+  # Load custom files
+  - cat custom/css/custom.styl >| themes/next-reloaded/source/css/_custom/custom.styl
 
-    ## Theme Dependencies
-    - cd themes/next-reloaded
-    # canvas-nest
-    - git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
-    # fancybox3
-    - git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
-    # reading_progress
-    - git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress
+  ## Theme Dependencies
+  - cd themes/next-reloaded
+  # canvas-nest
+  - git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+  # fancybox3
+  - git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox
+  # reading_progress
+  - git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress
 
-    - cd ../..
+  - cd ../..
 
 script:
-    - hexo clean
-    - hexo g -d --config source/_data/next.yml
+  - hexo clean
+  - hexo g -d
