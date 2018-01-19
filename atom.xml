@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
-  <updated>2018-01-17T02:50:22.670Z</updated>
+  <updated>2018-01-16T15:53:20.000Z</updated>
   <id>https://wafer.li/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wafer.li//%E8%A7%A3%E5%86%B3%E8%84%9A%E6%B3%A8%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E4%B8%8D%E8%83%BD%E6%B8%B2%E6%9F%93%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>https://wafer.li//解决脚注中数学公式不能渲染的问题/</id>
     <published>2018-01-16T08:39:00.000Z</published>
-    <updated>2018-01-17T02:50:22.670Z</updated>
+    <updated>2018-01-16T15:53:20.000Z</updated>
     
     <summary type="html">
     
@@ -43,7 +43,7 @@
     <link href="https://wafer.li//Hexo/%E8%A7%A3%E5%86%B3%20Travis%20CI%20%E6%80%BB%E6%98%AF%E6%9B%B4%E6%96%B0%E6%97%A7%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>https://wafer.li//Hexo/解决 Travis CI 总是更新旧博客的问题/</id>
     <published>2018-01-12T07:45:00.000Z</published>
-    <updated>2018-01-17T02:50:22.627Z</updated>
+    <updated>2018-01-13T04:02:33.000Z</updated>
     
     <summary type="html">
     
@@ -65,7 +65,7 @@
     <link href="https://wafer.li//Hexo/Hexo%20%E9%9B%86%E6%88%90%20Travis%20CI%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E6%96%87/"/>
     <id>https://wafer.li//Hexo/Hexo 集成 Travis CI 自动部署博文/</id>
     <published>2018-01-11T12:37:00.000Z</published>
-    <updated>2018-01-17T02:50:22.627Z</updated>
+    <updated>2018-01-12T19:05:33.000Z</updated>
     
     <summary type="html">
     
@@ -87,7 +87,7 @@
     <link href="https://wafer.li//Solidity/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E6%A6%82%E8%BF%B0/"/>
     <id>https://wafer.li//Solidity/基础知识和概述/</id>
     <published>2018-01-09T06:09:00.000Z</published>
-    <updated>2018-01-17T02:50:22.668Z</updated>
+    <updated>2018-01-10T05:41:08.000Z</updated>
     
     <summary type="html">
     
@@ -109,7 +109,7 @@
     <link href="https://wafer.li//Talk/%E8%BF%91%E6%9C%88%E5%B0%91%E5%A5%B3%E7%9A%84%E7%A4%BC%E4%BB%AA%202.1%20%E6%84%9F%E6%83%B3/"/>
     <id>https://wafer.li//Talk/近月少女的礼仪 2.1 感想/</id>
     <published>2017-06-03T17:22:00.000Z</published>
-    <updated>2018-01-17T02:50:22.668Z</updated>
+    <updated>2017-06-03T18:30:11.000Z</updated>
     
     <summary type="html">
     
@@ -133,7 +133,7 @@
     <link href="https://wafer.li//DesignPattern/%E5%86%8D%E8%B0%88%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
     <id>https://wafer.li//DesignPattern/再谈单例模式/</id>
     <published>2017-05-25T02:58:00.000Z</published>
-    <updated>2018-01-17T02:50:22.620Z</updated>
+    <updated>2017-05-26T17:55:32.000Z</updated>
     
     <summary type="html">
     
@@ -153,7 +153,7 @@
     <link href="https://wafer.li//Android/Retrofit/Retrofit2%20+%20Rxjava2/"/>
     <id>https://wafer.li//Android/Retrofit/Retrofit2 + Rxjava2/</id>
     <published>2017-05-01T20:49:00.000Z</published>
-    <updated>2018-01-17T02:50:22.609Z</updated>
+    <updated>2017-05-01T23:25:44.000Z</updated>
     
     <summary type="html">
     
@@ -179,7 +179,7 @@
     <link href="https://wafer.li//Rxjava/Rxjava2%20%E5%9D%91%E7%82%B9%E8%AF%A6%E8%A7%A3/"/>
     <id>https://wafer.li//Rxjava/Rxjava2 坑点详解/</id>
     <published>2017-05-01T19:03:00.000Z</published>
-    <updated>2018-01-17T02:50:22.663Z</updated>
+    <updated>2017-05-01T23:30:49.000Z</updated>
     
     <summary type="html">
     
@@ -201,7 +201,7 @@
     <link href="https://wafer.li//Kotlin/Kotlin%20Scoping%20%E5%87%BD%E6%95%B0/"/>
     <id>https://wafer.li//Kotlin/Kotlin Scoping 函数/</id>
     <published>2017-04-22T12:02:00.000Z</published>
-    <updated>2018-01-17T02:50:22.638Z</updated>
+    <updated>2017-04-22T16:41:32.000Z</updated>
     
     <summary type="html">
     
@@ -221,7 +221,7 @@
     <link href="https://wafer.li//Scala/Scala%20for-comprehension/"/>
     <id>https://wafer.li//Scala/Scala for-comprehension/</id>
     <published>2017-04-22T05:21:00.000Z</published>
-    <updated>2018-01-17T02:50:22.665Z</updated>
+    <updated>2017-04-22T08:08:51.000Z</updated>
     
     <summary type="html">
     
@@ -241,7 +241,7 @@
     <link href="https://wafer.li//Scala/Scala%20List%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
     <id>https://wafer.li//Scala/Scala List 高阶函数/</id>
     <published>2017-04-20T18:20:00.000Z</published>
-    <updated>2018-01-17T02:50:22.664Z</updated>
+    <updated>2017-04-22T18:21:13.000Z</updated>
     
     <summary type="html">
     
@@ -261,7 +261,7 @@
     <link href="https://wafer.li//Talk/ofo%20%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
     <id>https://wafer.li//Talk/ofo 使用体验/</id>
     <published>2017-04-18T13:10:00.000Z</published>
-    <updated>2018-01-17T02:50:22.668Z</updated>
+    <updated>2017-04-18T13:34:15.000Z</updated>
     
     <summary type="html">
     
@@ -283,7 +283,7 @@
     <link href="https://wafer.li//Coursera/Scala/Coursera%20%E4%BD%9C%E4%B8%9A%E4%B9%8B%E5%87%BD%E6%95%B0%E9%9B%86%E5%90%88/"/>
     <id>https://wafer.li//Coursera/Scala/Coursera 作业之函数集合/</id>
     <published>2017-04-16T17:41:00.000Z</published>
-    <updated>2018-01-17T02:50:22.618Z</updated>
+    <updated>2017-04-18T16:32:07.000Z</updated>
     
     <summary type="html">
     
@@ -307,7 +307,7 @@
     <link href="https://wafer.li//Scala/Scala%20%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
     <id>https://wafer.li//Scala/Scala 模式匹配/</id>
     <published>2017-04-15T18:07:00.000Z</published>
-    <updated>2018-01-17T02:50:22.665Z</updated>
+    <updated>2017-04-18T16:32:07.000Z</updated>
     
     <summary type="html">
     
@@ -327,7 +327,7 @@
     <link href="https://wafer.li//Talk/%E6%89%93%E5%AD%97%E8%AE%AD%E7%BB%83%E7%BD%91%E7%AB%99/"/>
     <id>https://wafer.li//Talk/打字训练网站/</id>
     <published>2017-04-15T04:37:00.000Z</published>
-    <updated>2018-01-17T02:50:22.668Z</updated>
+    <updated>2017-04-15T14:32:18.000Z</updated>
     
     <summary type="html">
     
@@ -357,7 +357,7 @@
     <link href="https://wafer.li//Buying/Realforce%2087u/"/>
     <id>https://wafer.li//Buying/Realforce 87u/</id>
     <published>2017-04-11T04:28:00.000Z</published>
-    <updated>2018-01-17T02:50:22.613Z</updated>
+    <updated>2018-01-08T05:35:57.000Z</updated>
     
     <summary type="html">
     
@@ -381,7 +381,7 @@
     <link href="https://wafer.li//Hexo/Hexo%20Experience/"/>
     <id>https://wafer.li//Hexo/Hexo Experience/</id>
     <published>2017-04-08T16:56:00.000Z</published>
-    <updated>2018-01-17T02:50:22.626Z</updated>
+    <updated>2017-04-09T05:57:11.000Z</updated>
     
     <summary type="html">
     
@@ -403,7 +403,7 @@
     <link href="https://wafer.li//Scala/Scala%20%E6%B3%9B%E5%9E%8B%E5%92%8C%E5%8F%98%E5%BD%A2/"/>
     <id>https://wafer.li//Scala/Scala 泛型和变形/</id>
     <published>2017-04-07T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.666Z</updated>
+    <updated>2017-04-18T16:32:07.000Z</updated>
     
     <summary type="html">
     
@@ -419,31 +419,11 @@
   </entry>
   
   <entry>
-    <title>Scala Hello World</title>
-    <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
-    <id>https://wafer.li//Scala/Scala Hello World/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.664Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java 集合框架</title>
     <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
     <id>https://wafer.li//Java/Java 集合框架/</id>
     <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.636Z</updated>
+    <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
@@ -459,51 +439,11 @@
   </entry>
   
   <entry>
-    <title>Scala 简介</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%AE%80%E4%BB%8B/"/>
-    <id>https://wafer.li//Scala/Scala 简介/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.666Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala 类和对象基础</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
-    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.667Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java 集合框架 Collection</title>
     <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection/"/>
     <id>https://wafer.li//Java/Java 集合框架 Collection/</id>
     <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.636Z</updated>
+    <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
@@ -519,11 +459,71 @@
   </entry>
   
   <entry>
+    <title>Scala Hello World</title>
+    <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
+    <id>https://wafer.li//Scala/Scala Hello World/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-08T13:58:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala 类和对象基础</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
+    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala 简介</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%AE%80%E4%BB%8B/"/>
+    <id>https://wafer.li//Scala/Scala 简介/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Scala 函数式特征</title>
     <link href="https://wafer.li//Scala/Scala%20%E5%87%BD%E6%95%B0%E5%BC%8F%E7%89%B9%E5%BE%81/"/>
     <id>https://wafer.li//Scala/Scala 函数式特征/</id>
     <published>2017-03-31T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.665Z</updated>
+    <updated>2017-04-18T16:32:07.000Z</updated>
     
     <summary type="html">
     
@@ -539,37 +539,11 @@
   </entry>
   
   <entry>
-    <title>设计阶段</title>
-    <link href="https://wafer.li//Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/"/>
-    <id>https://wafer.li//Reviews/TSPi/设计阶段/</id>
-    <published>2017-03-26T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.663Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-hld作业&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-hld作业&quot;&gt;&lt;/a&gt; 1. HLD(作业)&lt;/h2&gt;&lt;p&gt;设计阶段要完成高层设计，出 SDS，软件设计规格说明（体系结构文档）&lt;/p&gt;&lt;p&gt;包含：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;软件层次架构设计&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;功能模块设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;要根据需求分析书来&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;数据库设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;就是数据库设计，包括 E-R 图和数据库表设计&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口和界面设计&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="复习" scheme="https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/"/>
-    
-      <category term="SPI" scheme="https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/SPI/"/>
-    
-    
-      <category term="复习" scheme="https://wafer.li/tags/%E5%A4%8D%E4%B9%A0/"/>
-    
-      <category term="SPI" scheme="https://wafer.li/tags/SPI/"/>
-    
-      <category term="TSPI" scheme="https://wafer.li/tags/TSPI/"/>
-    
-  </entry>
-  
-  <entry>
     <title>实现阶段</title>
     <link href="https://wafer.li//Reviews/TSPi/%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5/"/>
     <id>https://wafer.li//Reviews/TSPi/实现阶段/</id>
     <published>2017-03-26T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.663Z</updated>
+    <updated>2017-04-17T08:26:54.000Z</updated>
     
     <summary type="html">
     
@@ -591,11 +565,37 @@
   </entry>
   
   <entry>
+    <title>设计阶段</title>
+    <link href="https://wafer.li//Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/"/>
+    <id>https://wafer.li//Reviews/TSPi/设计阶段/</id>
+    <published>2017-03-26T15:00:00.000Z</published>
+    <updated>2017-04-17T08:26:54.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-hld作业&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-hld作业&quot;&gt;&lt;/a&gt; 1. HLD(作业)&lt;/h2&gt;&lt;p&gt;设计阶段要完成高层设计，出 SDS，软件设计规格说明（体系结构文档）&lt;/p&gt;&lt;p&gt;包含：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;软件层次架构设计&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;功能模块设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;要根据需求分析书来&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;数据库设计&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;就是数据库设计，包括 E-R 图和数据库表设计&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口和界面设计&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="复习" scheme="https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/"/>
+    
+      <category term="SPI" scheme="https://wafer.li/categories/%E5%A4%8D%E4%B9%A0/SPI/"/>
+    
+    
+      <category term="复习" scheme="https://wafer.li/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+      <category term="SPI" scheme="https://wafer.li/tags/SPI/"/>
+    
+      <category term="TSPI" scheme="https://wafer.li/tags/TSPI/"/>
+    
+  </entry>
+  
+  <entry>
     <title>命令模式</title>
     <link href="https://wafer.li//DesignPattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/"/>
     <id>https://wafer.li//DesignPattern/命令模式/</id>
     <published>2017-03-24T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.621Z</updated>
+    <updated>2017-04-09T04:39:49.000Z</updated>
     
     <summary type="html">
     
@@ -615,7 +615,7 @@
     <link href="https://wafer.li//Scala/Scala%20%E5%87%BD%E6%95%B0%E8%A7%A3%E6%9E%90/"/>
     <id>https://wafer.li//Scala/Scala 函数解析/</id>
     <published>2017-03-21T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.665Z</updated>
+    <updated>2017-04-14T11:56:41.000Z</updated>
     
     <summary type="html">
     
@@ -631,31 +631,11 @@
   </entry>
   
   <entry>
-    <title>Kotlin 使用 Gradle</title>
-    <link href="https://wafer.li//Kotlin/Kotlin%20%E4%BD%BF%E7%94%A8%20Gradle/"/>
-    <id>https://wafer.li//Kotlin/Kotlin 使用 Gradle/</id>
-    <published>2017-03-19T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.639Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;一般来说，IntilliJ 会自动的给我们配置 Kotlin 的 Gradle 设置；&lt;/p&gt;&lt;p&gt;但是，有时候我们也想自己进行一些自定义的 Gradle 配置；&lt;/p&gt;&lt;p&gt;下面就来总结几个常用的配置方法&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
-    
-    
-      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
-    
-  </entry>
-  
-  <entry>
     <title>装饰者模式(Decorator Pattern)</title>
     <link href="https://wafer.li//DesignPattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/"/>
     <id>https://wafer.li//DesignPattern/装饰者模式(Decorator Pattern)/</id>
     <published>2017-03-19T15:00:00.000Z</published>
-    <updated>2018-01-17T02:50:22.622Z</updated>
+    <updated>2018-01-13T07:14:47.000Z</updated>
     
     <summary type="html">
     
@@ -667,6 +647,26 @@
     
     
       <category term="DesignPattern" scheme="https://wafer.li/tags/DesignPattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kotlin 使用 Gradle</title>
+    <link href="https://wafer.li//Kotlin/Kotlin%20%E4%BD%BF%E7%94%A8%20Gradle/"/>
+    <id>https://wafer.li//Kotlin/Kotlin 使用 Gradle/</id>
+    <published>2017-03-19T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;一般来说，IntilliJ 会自动的给我们配置 Kotlin 的 Gradle 设置；&lt;/p&gt;&lt;p&gt;但是，有时候我们也想自己进行一些自定义的 Gradle 配置；&lt;/p&gt;&lt;p&gt;下面就来总结几个常用的配置方法&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
+    
+    
+      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
     
   </entry>
   
