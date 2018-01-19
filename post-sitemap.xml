@@ -1095,14 +1095,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E6%8E%A5%E5%8F%A3/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1360,6 +1352,14 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
