@@ -157,7 +157,7 @@ js_minifier:
   exclude:
     - '*.min.js'
 
-# Image
+## Image
 image_minifier:
   enable: true
   interlaced: false
@@ -166,3 +166,11 @@ image_minifier:
   pngquant: false
   progressive: false
   silent: false
+
+# Symbol Count Time
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
