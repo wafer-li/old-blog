@@ -5,6 +5,16 @@ import shlex
 from subprocess import call
 
 from typing import List
+from typing import Dict
+
+dependencies_calls: Dict[str, str] = {
+    'canvas-nest': 'git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest',
+    'fancybox': 'git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox',
+    'reading_progress': 'git clone https://github.com/theme-next/theme-next-reading-progress ' +
+                        'source/lib/reading_progress',
+    'pangu': 'git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu',
+    'bookmark': 'git clone -b dist https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark'
+}
 
 if __name__ == '__main__':
     theme_root = os.path.abspath('themes/next-reloaded')
@@ -15,15 +25,15 @@ if __name__ == '__main__':
         if '.git' in dir_names:
             git_dirs.append(dir_path)
 
-    if len(git_dirs) == 0:
+    base_git_dirs = [os.path.basename(os.path.normpath(it)) for it in git_dirs]
+    install_git_dirs = set(dependencies_calls.keys()) - set(base_git_dirs)
+
+    for it in install_git_dirs:
         os.chdir(theme_root)
-        call(shlex.split('git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest'))
-        call(shlex.split('git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox'))
-        call(shlex.split('git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress'))
-        call(shlex.split('git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu'))
-    else:
-        for git_dir in git_dirs:
-            os.chdir(git_dir)
-            print(os.path.basename(git_dir))
-            call(['git', 'pull'])
-            print()
+        call(shlex.split(dependencies_calls[it]))
+
+    for git_dir in git_dirs:
+        os.chdir(git_dir)
+        print(os.path.basename(git_dir))
+        call(['git', 'pull'])
+        print()
