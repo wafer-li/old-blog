@@ -196,7 +196,7 @@ filter_optimize:
     exclude:
   js:
     # bundle loaded js file into the one
-    bundle: false
+    bundle: true
     exclude:
 
 # ---------------------------------------------------------------
