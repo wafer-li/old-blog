@@ -439,26 +439,6 @@
   </entry>
   
   <entry>
-    <title>Java 集合框架 Collection</title>
-    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection/"/>
-    <id>https://wafer.li//Java/Java 集合框架 Collection/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Collection&lt;/code&gt; 接口是 Java 集合框架最基本的接口；&lt;/p&gt;&lt;p&gt;它提供了基本的元素操作方法和遍历使用的迭代器；&lt;/p&gt;&lt;p&gt;同时，它还提供了关于 &lt;code&gt;Collection&lt;/code&gt; 的批量操作方法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Scala Hello World</title>
     <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
     <id>https://wafer.li//Scala/Scala Hello World/</id>
@@ -515,6 +495,26 @@
     
     
       <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 集合框架 Collection</title>
+    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection/"/>
+    <id>https://wafer.li//Java/Java 集合框架 Collection/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Collection&lt;/code&gt; 接口是 Java 集合框架最基本的接口；&lt;/p&gt;&lt;p&gt;它提供了基本的元素操作方法和遍历使用的迭代器；&lt;/p&gt;&lt;p&gt;同时，它还提供了关于 &lt;code&gt;Collection&lt;/code&gt; 的批量操作方法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
     
   </entry>
   
