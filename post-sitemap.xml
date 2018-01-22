@@ -47,7 +47,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/Probability/2.%20%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</loc>
+        <loc>https://wafer.li/Reviews/Probability/%E6%A6%82%E7%8E%87%E7%9A%84%E5%8E%86%E5%8F%B2/</loc>
         <lastmod>2018-01-15T15:50:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -55,7 +55,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/Probability/%E6%A6%82%E7%8E%87%E7%9A%84%E5%8E%86%E5%8F%B2/</loc>
+        <loc>https://wafer.li/Reviews/Probability/2.%20%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</loc>
         <lastmod>2018-01-15T15:50:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1271,6 +1271,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Plan/%E6%8F%92%E7%BA%BF%E6%9D%BF%E9%87%8D%E6%9E%84%E8%AE%A1%E5%88%92/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Python/Python%203%20Advanced%20Skill/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1360,14 +1368,6 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Plan/%E6%8F%92%E7%BA%BF%E6%9D%BF%E9%87%8D%E6%9E%84%E8%AE%A1%E5%88%92/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
