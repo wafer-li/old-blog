@@ -170,7 +170,7 @@ image_minifier:
 
 ## JS Concator
 js_concator:
-  enable: true
+  enable: false
   bundle_path: '/js/bundle.js'
   front: true
   silent: true
