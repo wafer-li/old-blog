@@ -163,14 +163,14 @@ image_minifier:
   enable: true
   interlaced: true
   multipass: true
-  optimizationLevel: 2
+  optimizationLevel: 7
   pngquant: true
   progressive: true
   silent: true
 
 ## JS Concator
 js_concator:
-  enable: false
+  enable: true
   bundle_path: '/js/bundle.js'
   front: true
   silent: true
@@ -196,7 +196,7 @@ filter_optimize:
     exclude:
   js:
     # bundle loaded js file into the one
-    bundle: true
+    bundle: false
     exclude:
 
 # ---------------------------------------------------------------
