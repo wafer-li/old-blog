@@ -142,39 +142,62 @@ all_minifier: true
 html_minifier:
   enable: true
   ignore_error: false
-  silent: false
+  silent: true
   exclude:
 
 ## CSS
 css_minifier:
   enable: true
-  silent: false
+  silent: true
   exclude:
-    - '*.min.css'
 
 ## JS
 js_minifier:
   enable: true
   mangle: true
-  silent: false
+  silent: true
   exclude:
 
-# Image
+## Image
 image_minifier:
   enable: true
-  interlaced: false
-  multipass: false
+  interlaced: true
+  multipass: true
   optimizationLevel: 2
-  pngquant: false
-  progressive: false
-  silent: false
+  pngquant: true
+  progressive: true
+  silent: true
 
-# JS Concator
+## JS Concator
 js_concator:
   enable: true
   bundle_path: '/js/bundle.js'
   front: true
-  silent: false
+  silent: true
+
+
+# Optimization
+filter_optimize:
+  enable: true
+  # remove static resource query string
+  #   - like `?v=1.0.0`
+  remove_query_string: true
+  css:
+    enable: true
+    # use a script block to load css elements dynamically
+    delivery: true
+    # make specific css content inline into the html page
+    #   - only support the full path
+    #   - default is ['css/main.css']
+    inline:
+      - css/main.css
+      - lib/fancybox/source/jquery.fancybox.css
+      - lib/font-awesome/css/font-awesome.min.css
+    exclude:
+  js:
+    # bundle loaded js file into the one
+    bundle: true
+    exclude:
 
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
