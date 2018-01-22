@@ -158,7 +158,6 @@ js_minifier:
   mangle: true
   silent: false
   exclude:
-    - '*.min.js'
 
 # Image
 image_minifier:
@@ -168,6 +167,13 @@ image_minifier:
   optimizationLevel: 2
   pngquant: false
   progressive: false
+  silent: false
+
+# JS Concator
+js_concator:
+  enable: true
+  bundle_path: '/js/bundle.js'
+  front: true
   silent: false
 
 # ---------------------------------------------------------------
