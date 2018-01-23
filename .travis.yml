@@ -80,7 +80,7 @@ before_script:
   # pangu
   - git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu
   # bookmark
-  - git clone -b dist https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark
+  - git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark
 
   - cd ../..
 
