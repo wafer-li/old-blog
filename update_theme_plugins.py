@@ -8,11 +8,8 @@ from typing import List
 from typing import Dict
 
 dependencies_calls: Dict[str, str] = {
-    'canvas-nest': 'git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest',
-    'fancybox': 'git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox',
     'reading_progress': 'git clone https://github.com/theme-next/theme-next-reading-progress ' +
                         'source/lib/reading_progress',
-    'pangu': 'git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu',
     'bookmark': 'git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark'
 }
 
