@@ -167,7 +167,7 @@ image_minifier:
 
 ## JS Concator
 js_concator:
-  enable: true
+  enable: false
   bundle_path: '/js/bundle.js'
   front: true
   silent: true
@@ -189,7 +189,7 @@ filter_optimize:
     excludes:
   js:
     # bundle loaded js file into the one
-    bundle: false
+    bundle: true
     excludes:
 
 # Symbol Count Time
@@ -198,4 +198,3 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
-
