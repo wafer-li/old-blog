@@ -4,10 +4,7 @@ import os
 import shlex
 from subprocess import call
 
-from typing import List
-from typing import Dict
-
-dependencies_calls: Dict[str, str] = {
+dependencies_calls = {
     'reading_progress': 'git clone https://github.com/theme-next/theme-next-reading-progress ' +
                         'source/lib/reading_progress',
     'bookmark': 'git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark'
@@ -16,7 +13,7 @@ dependencies_calls: Dict[str, str] = {
 if __name__ == '__main__':
     theme_root = os.path.abspath('themes/next-reloaded')
     theme_lib_root = os.path.abspath('themes/next-reloaded/source/lib')
-    git_dirs: List[str] = []
+    git_dirs = []
 
     for dir_path, dir_names, files in os.walk(theme_lib_root):
         if '.git' in dir_names:
