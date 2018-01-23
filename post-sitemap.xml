@@ -143,14 +143,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Android/Genymotion%20Problems%20and%20Solutions/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Android/TextInputLayout%20%E4%BD%BF%E7%94%A8/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -264,6 +256,14 @@
 
     <url>
         <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Android/Genymotion%20Problems%20and%20Solutions/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
