@@ -189,15 +189,12 @@ filter_optimize:
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']
-    inline:
-      - css/main.css
-      - lib/fancybox/source/jquery.fancybox.css
-      - lib/font-awesome/css/font-awesome.min.css
-    exclude:
+    inlines:
+    excludes:
   js:
     # bundle loaded js file into the one
-    bundle: true
-    exclude:
+    bundle: false
+    excludes:
 
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
@@ -1000,8 +997,8 @@ vendors:
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
-  fancybox:
-  fancybox_css:
+  fancybox: https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js
+  fancybox_css: https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
   # See: https://github.com/ftlabs/fastclick
@@ -1025,7 +1022,7 @@ vendors:
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
-  fontawesome:
+  fontaweaome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com
@@ -1042,7 +1039,7 @@ vendors:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest:
+  canvas_nest: https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/1.0.1/canvas-nest.min.js
 
   # three
   three:
@@ -1069,7 +1066,7 @@ vendors:
 
   # Internal version: 3.3.0
   # https://github.com/vinta/pangu.js
-  pangu:
+  pangu: https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js
 
   # needMoreShare2
   # https://github.com/revir/need-more-share2

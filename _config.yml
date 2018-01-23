@@ -185,15 +185,12 @@ filter_optimize:
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']
-    inline:
-      - css/main.css
-      - lib/fancybox/source/jquery.fancybox.css
-      - lib/font-awesome/css/font-awesome.min.css
-    exclude:
+    inlines:
+    excludes:
   js:
     # bundle loaded js file into the one
-    bundle: true
-    exclude:
+    bundle: false
+    excludes:
 
 # Symbol Count Time
 symbols_count_time:
