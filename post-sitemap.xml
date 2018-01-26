@@ -239,6 +239,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Japanese/%E8%A1%A5%E5%8A%A9%E5%8A%A8%E8%AF%8D/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Java/Java%20%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -263,7 +271,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Japanese/%E8%A1%A5%E5%8A%A9%E5%8A%A8%E8%AF%8D/</loc>
+        <loc>https://wafer.li/Android/AndroidStudio/Android%20Studio%20FAQ/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -272,14 +280,6 @@
 
     <url>
         <loc>https://wafer.li/Android/AndroidStudio/Android%20Studio%20%E5%8D%A1%20buliding%20gradle%20info/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Android/AndroidStudio/Android%20Studio%20FAQ/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -991,7 +991,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Java%20to%20Kotlin/</loc>
+        <loc>https://wafer.li/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -999,7 +999,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</loc>
+        <loc>https://wafer.li/Kotlin/Java%20to%20Kotlin/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
