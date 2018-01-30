@@ -134,6 +134,9 @@ markdown_it_plus:
         - plugin:
             name: markdown-it-criticmarkup
             enable: true
+        - plugin:
+            name: markdown-it-fontawesome
+            enable: true
 
 # Minifier
 all_minifier: true
