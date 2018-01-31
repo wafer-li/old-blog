@@ -116,7 +116,7 @@ search:
   format: html
   limit: 10000
 
- # Renderer
+# Renderer
 markdown_it_plus:
     highlight: true
     html: true
@@ -137,6 +137,7 @@ markdown_it_plus:
         - plugin:
             name: markdown-it-fontawesome
             enable: true
+
 
 # Minifier
 all_minifier: true
@@ -185,8 +186,12 @@ filter_optimize:
   # remove static resource query string
   #   - like `?v=1.0.0`
   remove_query_string: true
+  # remove the surrounding comments in each of the bundled files
+  remove_comments: true
   css:
     enable: true
+    # bundle loaded css file into the one
+    bundle: true
     # use a script block to load css elements dynamically
     delivery: true
     # make specific css content inline into the html page
@@ -198,6 +203,10 @@ filter_optimize:
     # bundle loaded js file into the one
     bundle: true
     excludes:
+  # set the priority of this plugin,
+  # lower means it will be executed first, default is 10
+  priority: 12
+
 
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
