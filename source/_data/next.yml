@@ -705,7 +705,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
     enable: false
     options:
@@ -714,7 +714,7 @@ needmoreshare2:
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
@@ -1089,7 +1089,8 @@ vendors:
 
   # needMoreShare2
   # https://github.com/revir/need-more-share2
-  needMoreShare2:
+  needmoreshare2_js: https://cdn.jsdelivr.net/gh/wafer-li/theme-next-needmoreshare2@1.0.1/needsharebutton.min.js
+  needmoreshare2_css: https://cdn.jsdelivr.net/gh/wafer-li/theme-next-needmoreshare2@1.0.1/needsharebutton.min.css
 
 
 # Assets
