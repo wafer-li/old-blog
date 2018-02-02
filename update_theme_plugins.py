@@ -11,9 +11,7 @@ from subprocess import call
 
 DEPENDENCIES = {
     'reading_progress': 'git clone https://github.com/theme-next/theme-next-reading-progress ' +
-                        'source/lib/reading_progress',
-    'bookmark': 'git clone https://github.com/theme-next/theme-next-bookmark.git ' +
-                'source/lib/bookmark'
+                        'source/lib/reading_progress'
 }
 
 if __name__ == '__main__':

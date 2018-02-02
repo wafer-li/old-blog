@@ -212,8 +212,10 @@ filter_optimize:
 # Theme Core Configuration Settings
 # ---------------------------------------------------------------
 
-# Set to true, if you want to fully override the default configuration.
-# Useful if you don't want to inherit the theme _config.yml configurations.
+# If false, merge configs from `_data/next.yml` into default configuration (rewrite).
+# If true, will fully override default configuration by options from `_data/next.yml` (override). Only for NexT settings.
+# And if true, all config from default NexT `_config.yml` must be copied into `next.yml`. Use if you know what you are doing.
+# Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
 override: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
@@ -227,13 +229,17 @@ cache:
 # outside theme directory in root `source/_data`, set
 # `styles: source/_data/styles.styl`
 custom_file_path:
+  # Default paths: layout/_custom/*
   #head: source/_data/head.swig
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
 
-  styles: custom/css/custom.styl
-  #mixins: source/_data/mixins.styl
+  # Default path: source/css/_variables/custom.styl
   #variables: source/_data/variables.styl
+  # Default path: source/css/_mixins/custom.styl
+  #mixins: source/_data/mixins.styl
+  # Default path: source/css/_custom/custom.styl
+  styles: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -285,7 +291,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  #custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -367,6 +373,10 @@ social_icons:
   enable: true
   icons_only: false
   transition: false
+  # Dependencies: exturl: true in Tags Settings section below.
+  # To encrypt links above use https://www.base64encode.org
+  # Example encoded link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`
+  exturl: false
 
 # Follow me on GitHub banner in right-top corner.
 # Usage: `permalink || title`
@@ -454,7 +464,9 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: true
+  updated_at: false
+  # Only show 'updated' if different from 'created'.
+  updated_diff: true
   categories: true
 
 # Post wordcount display settings
@@ -481,8 +493,7 @@ symbols_count_time:
 # Declare license on posts
 post_copyright:
   enable: true
-  license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
 
 
 # ---------------------------------------------------------------
@@ -510,6 +521,13 @@ custom_logo:
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
 
+# Enable "cheers" for archive page.
+cheers_enabled: true
+
+# Manual define the max content width
+# !!Only available for Gemini Scheme currently
+# Leave it empty for the default 75% (suggest not less than 1000px)
+#max_content_width: 1000px
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -592,7 +610,7 @@ math:
     #cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
     #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
-    # For automatic detect latest version link to MathJax.js and get from Bootcdn.
+    # For automatic detect latest version link to MathJax.js and get from Bootcss.
     #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
@@ -600,12 +618,10 @@ math:
   katex:
     # Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China
     cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css
-    # The best CDN, but not work in China
+    # CDNJS, provided by cloudflare, maybe the best CDN, but not works in China
     #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
-    # Works great in China, but not so well in other region
+    # Bootcss, works great in China, but not so well in other region
     #cdn: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.css
-    # If you want to try the latest version of Katex, use one below instead
-    #cdn: //cdn.jsdelivr.net/katex/latest/katex.min.css
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
@@ -863,6 +879,8 @@ local_search:
   trigger: auto
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
+  # unescape html strings to the readable one
+  unescape: false
 
 # Bookmark Support
 # Dependencies: https://github.com/theme-next/theme-next-bookmark
@@ -1092,6 +1110,11 @@ vendors:
   needmoreshare2_js: https://cdn.jsdelivr.net/gh/wafer-li/theme-next-needmoreshare2@1.0.1/needsharebutton.min.js
   needmoreshare2_css: https://cdn.jsdelivr.net/gh/wafer-li/theme-next-needmoreshare2@1.0.1/needsharebutton.min.css
 
+  # bookmark
+  # Internal version: 1.0.0
+  # https://github.com/theme-next/theme-next-bookmark
+  bookmark: https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1.0.0/bookmark.min.js
+
 
 # Assets
 css: css
@@ -1099,4 +1122,4 @@ js: js
 images: images
 
 # Theme version
-version: 6.0.1
+version: 6.0.3
