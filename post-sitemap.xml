@@ -183,14 +183,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/dot%20NET%20%E5%B9%B3%E5%8F%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/DHT/Consistent%20Hash/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -207,7 +199,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/DesignPattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/</loc>
+        <loc>https://wafer.li/CSharp/dot%20NET%20%E5%B9%B3%E5%8F%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -216,6 +208,14 @@
 
     <url>
         <loc>https://wafer.li/DesignPattern/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F(Observer%20Pattern)/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/DesignPattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1343,6 +1343,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Python/Python%203%20Module/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Scala/Scala%20%E5%87%BD%E6%95%B0%E8%A7%A3%E6%9E%90/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1360,14 +1368,6 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Python/Python%203%20Module/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1503,7 +1503,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
+        <loc>https://wafer.li/DesignPattern/README/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1511,7 +1511,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/DesignPattern/README/</loc>
+        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
