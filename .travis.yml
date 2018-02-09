@@ -64,9 +64,6 @@ before_script:
   # Replace the local search script
   - curl ${LOCAL_SEARCH_SCRIPT_URL} >| ${THEME_LOCAL_SEARCH_PATH}
 
-  ## Theme Dependencies
-  - python3 update_theme_plugins.py
-
 script:
   - hexo clean
   - hexo g -d
