@@ -229,28 +229,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Scala Hello World]]></title>
-    <url>%2F%2FScala%2FScala%20Hello%20World%2F</url>
-    <content type="text"><![CDATA[1. 简介Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；其中，关于构建独立程序的写法一共有两种。 2. main() 方法使用 main() 方法是通常各种语言的程序入口，Scala 也不例外：123def main(args: Array[String]) &#123; println("Hello, World!")&#125; 3. 使用 Application 特质123object Hello extends Application &#123; println("Hello, World!")&#125;]]></content>
-      <categories>
-        <category>Scala</category>
-      </categories>
-      <tags>
-        <tag>Scala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Scala 简介]]></title>
-    <url>%2F%2FScala%2FScala%20%E7%AE%80%E4%BB%8B%2F</url>
-    <content type="text"><![CDATA[1. 概述Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。其主要特点就是它是一门函数式语言。语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。 2. 什么是函数式语言函数式语言的两大理念：函数也是值，可以作为参数，也可以保存在变量中，与其他类型同级函数只应该接受参数输入，并输出返回值，不应该具有其他副作用 3. 没有分号这里需要说的一个问题是，虽然 Scala 没有分号；但是当你写长表达式的时候可能会有问题：12someLongExpression+ someOtherExpression上面的语句会被隐式加上分号：12someLongExpression;+ someOtherExpression这样显然是不符合我们的实际意图的，解决办法有两个：使用括号12(someLongExpression + someOtherLongExpression)将操作符放在行尾12someLongExpression +someOtherExpression分号推断的规则为，除非以下情况，否则行尾将会被认为是一个分号：行尾由一个不能合法作为行尾的字符结束，如句点(.) 和中缀操作符 (+、-)下一行开始于不能作为语句开始的字行结束于括号(()) 和 方括号 ([]) 之中由于括号中不能容纳多个语句，所以，它之中的行不可能是一个逻辑行 4. 面向对象Scala 中所有东西都是 对象；操作符实际上是对象的 方法 5. 变量定义语法上和 Kotlin 无多大差别1var x: Int = 0 6. 函数定义1234def max(x: Int, y: Int): Int = &#123; if (x &gt; y) x else y&#125;有趣的是，Scala 中，函数定义需要一个等号；这意味着，函数实际上是一个 变量，而函数体实际上是一个 返回值的表达式。同时，函数体 没有 return，这主要是因为函数体是一个 表达式，而一个表达式理应返回其计算得到的值。这正好体现了函数式编程的思想，函数是一个值，函数体是一个表达式。 7. 使用函数式风格Scala 程序员在解决问题时，应该优先考虑函数式风格而非指令式风格。简单的判断标准有：尽量使用 val 解决问题使用 var 会让你的 编码层级变低，而函数式编程的一个重要作用就是使你的视野聚焦在高层级中。尽量避免定义返回 Unit 的函数函数式编程一个理念就是函数体是表达式，而返回 Unit (Java 中的 void) 的函数一般来说都具有 副作用 (即函数做了不是生成返回值的工作)]]></content>
-      <categories>
-        <category>Scala</category>
-      </categories>
-      <tags>
-        <tag>Scala</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java 集合框架 Collection]]></title>
     <url>%2F%2FJava%2FJava%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection%2F</url>
     <content type="text"><![CDATA[1. 概述Collection 接口是 Java 集合框架最基本的接口；它提供了基本的元素操作方法和遍历使用的迭代器；同时，它还提供了关于 Collection 的批量操作方法。 2. 基本操作基本的元素操作包括 add() 和 remove()，同时也包括 size() 和 isEmpty() 等一系列的集合基本操作。其中 add() 和 remove() 的返回值是 boolean；这个布尔值用于表示增加和删除是否成功。（是否对集合本身进行了操作） 3. 遍历操作Java 的 Collection 遍历操作有三种：使用迭代器 Iterator使用 for each 循环使用 Stream 的聚合操作(Java 8)实际上，使用 for each 循环和使用迭代器是一样的；for each 可以应用于任何实现了 Iterable 接口的类：123public ineterface Iterable&lt;E&gt; &#123; Iterator&lt;E&gt; iterator();&#125;for each 实际上就是应用它返回的迭代器进行遍历操作。关于 Stream 用单独的一篇文章介绍，这里主要解析迭代器的工作。 4. 迭代器的遍历12345public interface Iterator&lt;E&gt; &#123; E next(); boolean hasNext(); void remove();&#125;其中，next() 方法返回下一个元素，hasNext() 方法用于检测是否到达了集合末尾。当到达了集合末尾时，调用 next() 会抛出 NoSuchElementException，所以，正确的写法是在循环时使用 hasNext() 作为判断条件：123while(iter.hasNext()) &#123; element = iter.next();&#125;其中，Collection 接口已经扩展(extends)了 Iterable 接口，所以自带 iterator() 方法。元素被访问的顺序取决于集合类的具体实现。比较特别的是，Java 中的迭代器和 C++ 中的迭代器不一样；C++ 中的迭代器是基于索引的，可以不执行查找操作就将迭代器进行移动；相反，Java 中的迭代器更类似于 read() 方法，迭代器的查找操作和移动操作紧密相连；Java 中的迭代器更类似于是 位于两个元素之间，调用 next() 将越过一个元素，并返回这个元素的引用。 5. 迭代器的删除比较特别的是，Iterator 接口还提供了一个 remove() 方法；它会删除 上次 调用 next() 的元素；也就是说，如果你想删除某个位置上的元素，你的迭代器就必须 先越过 这个元素。1234Iterator&lt;String&gt; it = c.iterator();iter.next(); //skip over the firstiter.remove(); // delete the first需要注意的是，next() 和 remove() 是具有依赖性的；不能连续调用两次 remove()，否则，将会抛出 IllegalStateException12iter.remove();iter.remove();必须先调用 next() 来越过将要删除的元素。 6. 批量操作Collection 同时提供了一套批量操作方法，用于对另一个集合进行操作，主要的方法有：containsAll()判断另一集合是否为本集合的子集（本集合是否完全包含了另一集合）addAll()将另一集合的所有元素加入到本集合中removeAll()将本集合中含有的 另一集合中的所有元素 从本集合中删除retainAll()将本集合中 不属于 另一集合的所有元素从本集合中删除即，将本集合改造成两个集合的 交集clear()删除本集合中的所有元素 7. 和数组的转换操作Collection 存在一个 toArray() 方法；但是，比较坑爹的是，这个方法仅仅只返回一个 Object[]；1Object[] a = c.toArray();这显然没有什么卵用，因为 Object[] 是 新构建的，它不能强制转换成更为具体的数组。所以，我们需要采用另一个 toArray(T[] a) 方法；12// 写法一String[] stringArray = c.toArray(new String[0]);实际上，我们可以直接向 toArray() 提供一个足够大的数组：12// 写法二String[] stringArray = c.toArray(new String[c.size()]);那么这两种写法有什么区别呢？根据 JDK 文档，当数组参数的空间不够大时，它会自动重新构建一个足够大的数组进行元素转存；当数组空间足够大时，toArray() 就不自己构建数组了，而是直接将元素储存到数组中。这样看来，写法一好像没有什么必要，毕竟都要创建数组，不如直接创建了事，何必要多出一个无用的数组呢？实际上，写法二具有线程安全问题；即使你使用线程安全的 Collection，但是当有元素在 size() 和 toArray() 之间被删除了，那么最终生成的数组就会包含 null。而，写法一就可以直接避免这个问题。线程安全的 Collection 只保证每个方法是线程安全的，当你调用两个以上的方法联合使用时，就不具备线程安全了。Reference: The easiest way to transform collection to array?]]></content>
@@ -259,6 +237,17 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Scala 类和对象基础]]></title>
+    <url>%2F%2FScala%2FScala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80%2F</url>
+    <content type="text"><![CDATA[1. 简介Scala 除了是一门函数式语言外，还同时具有面向对象的特征；在 Scala 中，一样具有类和对象以及多态的支持。 2. 构造器类具有一个默认的 primary 构造器，它的参数直接位于 class 头中；而且，更加神奇的是，class 中可以直接执行另外的函数；也就是说， 整个类 都是 primary 构造器。对于多个构造器，我们采用如下的声明来实现：123class Person(val name:String, val age: Int) &#123; def this(name: String) = this(name, 17)&#125;通过直接定义 this 来定义一个新的构造器 3. 定义和创建和 Java 一样，Scala 中，类使用 class 关键字进行定义：123class ChecksumAccumulator &#123; // class body&#125;不过和 Java 不同的，对象的构建，类没有参数，则不需要括号：1new ChecksumAccumulator 4. 字段和方法类中，字段使用 val 和 var 定义，方法使用 def 定义。注意 def 同样要使用等于号 =123456class ChecksumAccumulator &#123; var sum = 0 def checkSum(): Int = &#123; return ~(sum + 0XFF) + 1 &#125;&#125;其中，如果方法需要有副作用，则将其返回值声明为 Unit123def add(b: Int): Unit = &#123; sum += b&#125;此时，方法会忽略函数体最后的值类型，转而将其转换为 Unit如果需要返回 Unit，我们也可以直接省略等于号，使用 Java 中常用的方法声明形式：123def add(b: Int) &#123; sum += b&#125;如果一个函数或者方法的定义没有等于号，那么默认其返回值类型为 Unit。如果需要函数或者方法来推断返回值类型，则需要加上等于号 5. Getter 和 Setter很遗憾，Scala 的类成员是字段形式的，所以，不能像 Kotlin 那样采用语法糖式的 getter 和 setter 的写法；相比 Java，Scala 在定义字段时，会自动生成字段的 getter 和 setter，他们的命名为：12def x:T // getterdef x_= : (y: T): Unit // setter注意，方法名为 x 和 x_=那么如何提供自定义的 getter 和 setter 呢？我们只能采用后备字段，同时，将我们自定义的 getter 和 setter 满足上面的命名公约：123456class Person(private var _name: String) &#123; def name = _name def name_= (thatName: String): Unit = &#123; _name = thatName &#125;&#125;这样，我们就能够像使用属性一样使用 name 了。123val p = new Person("hehe")p.name = "nihao" 6. 可见性简述Scala 中，默认的可见性是 public；其余的可见性修饰符和 Java 一致。 7. 伴生对象Scala 没有静态成员，但是具有伴生对象(companion object)，是对象(object) 的一种。对象是一个 单例，当对象和类在同一个文件中定义，具有同样的名称时，称对象是类的伴生对象。对象不带参数，不能通过 new 关键字进行构建。方法的调用形式和 Java 的静态方法调用相同。12345678910111213object ChecksumAccumulator &#123; private val cache = Map[String, Int]() def calculate(s: String): Int = if (cache.contains(s)) cache(s) else &#123; val acc = new ChecksumAccumulator for (c &lt;- s) acc.add(c.toByte) val cs = acc.checksum() cache += (s -&gt; cs) cs &#125;没有伴生类的对象称为 孤立对象，实际上就是一个简单的单例。 8. 类的解析过程Scala 采用代换模型对表达式进行解析，那么它是如何解析类的定义和声明调用的呢？对此，有如下的几个步骤：将 new 关键字当成普通方法进行代换，最终为值解析类定义中的方法形参解析构造器形参将 this 关键字替换成 new 的表达式将上述解析到的所有值进行代入，函数解析为字面量继续代换，最终得到结果]]></content>
+      <categories>
+        <category>Scala</category>
+      </categories>
+      <tags>
+        <tag>Scala</tag>
       </tags>
   </entry>
   <entry>
@@ -273,9 +262,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Scala 类和对象基础]]></title>
-    <url>%2F%2FScala%2FScala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80%2F</url>
-    <content type="text"><![CDATA[1. 简介Scala 除了是一门函数式语言外，还同时具有面向对象的特征；在 Scala 中，一样具有类和对象以及多态的支持。 2. 构造器类具有一个默认的 primary 构造器，它的参数直接位于 class 头中；而且，更加神奇的是，class 中可以直接执行另外的函数；也就是说， 整个类 都是 primary 构造器。对于多个构造器，我们采用如下的声明来实现：123class Person(val name:String, val age: Int) &#123; def this(name: String) = this(name, 17)&#125;通过直接定义 this 来定义一个新的构造器 3. 定义和创建和 Java 一样，Scala 中，类使用 class 关键字进行定义：123class ChecksumAccumulator &#123; // class body&#125;不过和 Java 不同的，对象的构建，类没有参数，则不需要括号：1new ChecksumAccumulator 4. 字段和方法类中，字段使用 val 和 var 定义，方法使用 def 定义。注意 def 同样要使用等于号 =123456class ChecksumAccumulator &#123; var sum = 0 def checkSum(): Int = &#123; return ~(sum + 0XFF) + 1 &#125;&#125;其中，如果方法需要有副作用，则将其返回值声明为 Unit123def add(b: Int): Unit = &#123; sum += b&#125;此时，方法会忽略函数体最后的值类型，转而将其转换为 Unit如果需要返回 Unit，我们也可以直接省略等于号，使用 Java 中常用的方法声明形式：123def add(b: Int) &#123; sum += b&#125;如果一个函数或者方法的定义没有等于号，那么默认其返回值类型为 Unit。如果需要函数或者方法来推断返回值类型，则需要加上等于号 5. Getter 和 Setter很遗憾，Scala 的类成员是字段形式的，所以，不能像 Kotlin 那样采用语法糖式的 getter 和 setter 的写法；相比 Java，Scala 在定义字段时，会自动生成字段的 getter 和 setter，他们的命名为：12def x:T // getterdef x_= : (y: T): Unit // setter注意，方法名为 x 和 x_=那么如何提供自定义的 getter 和 setter 呢？我们只能采用后备字段，同时，将我们自定义的 getter 和 setter 满足上面的命名公约：123456class Person(private var _name: String) &#123; def name = _name def name_= (thatName: String): Unit = &#123; _name = thatName &#125;&#125;这样，我们就能够像使用属性一样使用 name 了。123val p = new Person("hehe")p.name = "nihao" 6. 可见性简述Scala 中，默认的可见性是 public；其余的可见性修饰符和 Java 一致。 7. 伴生对象Scala 没有静态成员，但是具有伴生对象(companion object)，是对象(object) 的一种。对象是一个 单例，当对象和类在同一个文件中定义，具有同样的名称时，称对象是类的伴生对象。对象不带参数，不能通过 new 关键字进行构建。方法的调用形式和 Java 的静态方法调用相同。12345678910111213object ChecksumAccumulator &#123; private val cache = Map[String, Int]() def calculate(s: String): Int = if (cache.contains(s)) cache(s) else &#123; val acc = new ChecksumAccumulator for (c &lt;- s) acc.add(c.toByte) val cs = acc.checksum() cache += (s -&gt; cs) cs &#125;没有伴生类的对象称为 孤立对象，实际上就是一个简单的单例。 8. 类的解析过程Scala 采用代换模型对表达式进行解析，那么它是如何解析类的定义和声明调用的呢？对此，有如下的几个步骤：将 new 关键字当成普通方法进行代换，最终为值解析类定义中的方法形参解析构造器形参将 this 关键字替换成 new 的表达式将上述解析到的所有值进行代入，函数解析为字面量继续代换，最终得到结果]]></content>
+    <title><![CDATA[Scala Hello World]]></title>
+    <url>%2F%2FScala%2FScala%20Hello%20World%2F</url>
+    <content type="text"><![CDATA[1. 简介Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；其中，关于构建独立程序的写法一共有两种。 2. main() 方法使用 main() 方法是通常各种语言的程序入口，Scala 也不例外：123def main(args: Array[String]) &#123; println("Hello, World!")&#125; 3. 使用 Application 特质123object Hello extends Application &#123; println("Hello, World!")&#125;]]></content>
+      <categories>
+        <category>Scala</category>
+      </categories>
+      <tags>
+        <tag>Scala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Scala 简介]]></title>
+    <url>%2F%2FScala%2FScala%20%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[1. 概述Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。其主要特点就是它是一门函数式语言。语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。 2. 什么是函数式语言函数式语言的两大理念：函数也是值，可以作为参数，也可以保存在变量中，与其他类型同级函数只应该接受参数输入，并输出返回值，不应该具有其他副作用 3. 没有分号这里需要说的一个问题是，虽然 Scala 没有分号；但是当你写长表达式的时候可能会有问题：12someLongExpression+ someOtherExpression上面的语句会被隐式加上分号：12someLongExpression;+ someOtherExpression这样显然是不符合我们的实际意图的，解决办法有两个：使用括号12(someLongExpression + someOtherLongExpression)将操作符放在行尾12someLongExpression +someOtherExpression分号推断的规则为，除非以下情况，否则行尾将会被认为是一个分号：行尾由一个不能合法作为行尾的字符结束，如句点(.) 和中缀操作符 (+、-)下一行开始于不能作为语句开始的字行结束于括号(()) 和 方括号 ([]) 之中由于括号中不能容纳多个语句，所以，它之中的行不可能是一个逻辑行 4. 面向对象Scala 中所有东西都是 对象；操作符实际上是对象的 方法 5. 变量定义语法上和 Kotlin 无多大差别1var x: Int = 0 6. 函数定义1234def max(x: Int, y: Int): Int = &#123; if (x &gt; y) x else y&#125;有趣的是，Scala 中，函数定义需要一个等号；这意味着，函数实际上是一个 变量，而函数体实际上是一个 返回值的表达式。同时，函数体 没有 return，这主要是因为函数体是一个 表达式，而一个表达式理应返回其计算得到的值。这正好体现了函数式编程的思想，函数是一个值，函数体是一个表达式。 7. 使用函数式风格Scala 程序员在解决问题时，应该优先考虑函数式风格而非指令式风格。简单的判断标准有：尽量使用 val 解决问题使用 var 会让你的 编码层级变低，而函数式编程的一个重要作用就是使你的视野聚焦在高层级中。尽量避免定义返回 Unit 的函数函数式编程一个理念就是函数体是表达式，而返回 Unit (Java 中的 void) 的函数一般来说都具有 副作用 (即函数做了不是生成返回值的工作)]]></content>
       <categories>
         <category>Scala</category>
       </categories>
@@ -1766,17 +1766,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AsyncTask with Callback]]></title>
-    <url>%2F%2FAndroid%2FAsyncTask%20with%20Callback%2F</url>
-    <content type="text"><![CDATA[1. 定义一个用于回调的接口123public interface TaskListener &#123; void onResult(Object result);&#125; 2. 添加 Listener 作为 Task 的类成员12345678class Task extends AsyncTask&lt;Void,Void,Object&gt; &#123; private TaskListener taskListener; public void setListener(TaskListener taskListener) &#123; this.taskListener = taskListener; &#125;&#125; 3.通过接口成员调用其方法为保证线程安全，应该在 Task 的 onPostExecute() 方法中完成该操作123protected Object onPostExecute(Object result) &#123; taskListener.onResult(result);&#125; 4. Activity 实现该接口处理回调数据12345678910public class MainTread extends Activity implement TaskListener&#123; //your stuff Task task = new Task(this); task.execute(); @Override public void onResult(Object result)&#123; //UPDATE YOUR UI HERE &#125;&#125;]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Material Design 主体环境]]></title>
     <url>%2F%2FMaterialDesign%2FMaterial%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83%2F</url>
     <content type="text"><![CDATA[1. 概述Material Design 是一个三维环境，包括了灯光，实体，和投射阴影。所有的实体对象都具有 x, y, z 三个坐标。一个对象只能拥有一个 z 轴位置。（即不允许两个实体重叠）主光源用于制造方向投影，散射光源用于制造柔和阴影。实体厚度： 1dp阴影由重叠实体之间的高低差产生即阴影实际上就是高低差的代表 2. 3D 世界Material Design 是一个 3D 世界。这意味着所有的实体都具有 3 个维度的坐标；z 轴垂直对齐于屏幕，正轴指向屏幕外侧。一个实体厚度为 1dp，并独享一个 z 轴坐标。dp = (像素宽度 * 160) / 像素密度在网页端，z 轴是用来分层而不是用来展示视角，z 轴的坐标通过操作 y 轴来模拟实现。 3. 灯光和阴影在环境中，虚拟光源营造出了场景。主光源用于投射方向投影，而散射光源用于在各个角度投射柔和的光影。在环境中的阴影由以上这两种光源来实现。在 Android 开发中，阴影的产生是因为光源被不同 z 轴坐标上的实体遮挡。在网页开发中，通过调整 y 轴来进行仿真实现。下面是一个标高为 6 dp 的实体的例子。直射光源投射的阴影散射光源的阴影两种光源的混合投影]]></content>
@@ -1785,6 +1774,17 @@
       </categories>
       <tags>
         <tag>MaterialDesign</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[AsyncTask with Callback]]></title>
+    <url>%2F%2FAndroid%2FAsyncTask%20with%20Callback%2F</url>
+    <content type="text"><![CDATA[1. 定义一个用于回调的接口123public interface TaskListener &#123; void onResult(Object result);&#125; 2. 添加 Listener 作为 Task 的类成员12345678class Task extends AsyncTask&lt;Void,Void,Object&gt; &#123; private TaskListener taskListener; public void setListener(TaskListener taskListener) &#123; this.taskListener = taskListener; &#125;&#125; 3.通过接口成员调用其方法为保证线程安全，应该在 Task 的 onPostExecute() 方法中完成该操作123protected Object onPostExecute(Object result) &#123; taskListener.onResult(result);&#125; 4. Activity 实现该接口处理回调数据12345678910public class MainTread extends Activity implement TaskListener&#123; //your stuff Task task = new Task(this); task.execute(); @Override public void onResult(Object result)&#123; //UPDATE YOUR UI HERE &#125;&#125;]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
       </tags>
   </entry>
   <entry>
