@@ -441,66 +441,6 @@
   </entry>
   
   <entry>
-    <title>Java 集合框架 Collection</title>
-    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection/"/>
-    <id>https://wafer.li//Java/Java 集合框架 Collection/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Collection&lt;/code&gt; 接口是 Java 集合框架最基本的接口；&lt;/p&gt;&lt;p&gt;它提供了基本的元素操作方法和遍历使用的迭代器；&lt;/p&gt;&lt;p&gt;同时，它还提供了关于 &lt;code&gt;Collection&lt;/code&gt; 的批量操作方法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala 类和对象基础</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
-    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 集合框架</title>
-    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
-    <id>https://wafer.li//Java/Java 集合框架/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-介绍&quot;&gt;&lt;/a&gt; 1. 介绍&lt;/h2&gt;&lt;p&gt;任何语言都会提供一套基础的数据结构的库；&lt;/p&gt;&lt;p&gt;Java 也不例外，而且提供了一个庞大的数据结构库，有时对于它们之间的选择让人很困惑。&lt;/p&gt;&lt;p&gt;这里就来简单说明一下 Java 的 Collection 和基本的 Collection 数据结构&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Scala Hello World</title>
     <link href="https://wafer.li//Scala/Scala%20Hello%20World/"/>
     <id>https://wafer.li//Scala/Scala Hello World/</id>
@@ -530,6 +470,66 @@
     <summary type="html">
     
       &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 集合框架 Collection</title>
+    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection/"/>
+    <id>https://wafer.li//Java/Java 集合框架 Collection/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Collection&lt;/code&gt; 接口是 Java 集合框架最基本的接口；&lt;/p&gt;&lt;p&gt;它提供了基本的元素操作方法和遍历使用的迭代器；&lt;/p&gt;&lt;p&gt;同时，它还提供了关于 &lt;code&gt;Collection&lt;/code&gt; 的批量操作方法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 集合框架</title>
+    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
+    <id>https://wafer.li//Java/Java 集合框架/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-介绍&quot;&gt;&lt;/a&gt; 1. 介绍&lt;/h2&gt;&lt;p&gt;任何语言都会提供一套基础的数据结构的库；&lt;/p&gt;&lt;p&gt;Java 也不例外，而且提供了一个庞大的数据结构库，有时对于它们之间的选择让人很困惑。&lt;/p&gt;&lt;p&gt;这里就来简单说明一下 Java 的 Collection 和基本的 Collection 数据结构&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala 类和对象基础</title>
+    <link href="https://wafer.li//Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/"/>
+    <id>https://wafer.li//Scala/Scala 类和对象基础/</id>
+    <published>2017-04-02T15:00:00.000Z</published>
+    <updated>2017-04-14T11:56:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 除了是一门函数式语言外，还同时具有面向对象的特征；&lt;/p&gt;&lt;p&gt;在 Scala 中，一样具有类和对象以及多态的支持。&lt;/p&gt;
     
     </summary>
     
