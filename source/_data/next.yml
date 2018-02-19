@@ -606,7 +606,6 @@ font:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
-
 # Math Equations Render Support
 math:
   enable: true
@@ -1130,8 +1129,12 @@ vendors:
   # reading_progress
   # Internal version: 1.0
   # https://github.com/theme-next/theme-next-reading-progress
-  # Example: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.js
+  # Example: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
   reading_progress: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
+
+  # valine comment
+  # Example: https://cdn.jsdelivr.net/npm/valine@1.1.8/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/npm/valine@1.1.8/dist/Valine.min.js
 
 
 # Assets
