@@ -375,6 +375,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Algorithm/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
+        <lastmod>2017-12-29T17:30:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Algorithm/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
         <lastmod>2017-12-29T17:30:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -392,14 +400,6 @@
 
     <url>
         <loc>https://wafer.li/Algorithm/%E7%AC%A6%E5%8F%B7%E8%A1%A8/</loc>
-        <lastmod>2017-12-29T17:30:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Algorithm/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
         <lastmod>2017-12-29T17:30:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1079,14 +1079,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E5%A7%94%E6%89%98%E5%B1%9E%E6%80%A7/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E5%A7%94%E6%89%98%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1184,6 +1176,14 @@
 
     <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E5%92%8C%E9%80%A0%E5%9E%8B/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E5%A7%94%E6%89%98%E5%B1%9E%E6%80%A7/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
