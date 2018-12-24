@@ -17,7 +17,7 @@
     "hexo-generator-feed": "^1.2.0",
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-searchdb": "^1.0.8",
-    "hexo-generator-seo-friendly-sitemap": "^0.0.23-pre",
+    "hexo-generator-seo-friendly-sitemap": "^0.0.22",
     "hexo-generator-tag": "^0.2.0",
     "hexo-related-popular-posts": "^3.0.1",
     "hexo-renderer-ejs": "^0.3.1",
