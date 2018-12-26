@@ -1135,14 +1135,14 @@ vendors:
   # Example:
   # velocity: https://cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.min.js
   # velocity: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
-  velocity:
+  velocity: https://cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
   # Example:
   # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.ui.min.js
   # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-  velocity_ui:
+  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.ui.min.js
 
   # Internal version: 0.7.9
   # See: https://faisalman.github.io/ua-parser-js
