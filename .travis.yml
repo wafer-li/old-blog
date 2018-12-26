@@ -66,4 +66,4 @@ before_script:
 
 script:
   - hexo clean
-  - hexo g -d
+  - hexo g -d --debug

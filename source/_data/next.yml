@@ -361,6 +361,7 @@ menu_settings:
   icons: true
   badges: true
 
+
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -414,7 +415,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 #links:
-  #Title: http://example.com/
+  #Title: http://example.com
 
 # Sidebar Avatar
 avatar:
@@ -432,10 +433,8 @@ avatar:
 # Table Of Contents in the Sidebar
 toc:
   enable: true
-
   # Automatically add list number to toc.
   number: false
-
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
 
@@ -462,13 +461,10 @@ sidebar:
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
-
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: false
-
   # Scroll percent label in b2t button.
-  scrollpercent: true
-
+  scrollpercent: false
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
 
@@ -493,7 +489,7 @@ auto_excerpt:
   length: 150
 
 # Read more button
-# If true, the read more button would be displayed in excerpt section
+# If true, the read more button would be displayed in excerpt section.
 read_more_btn: true
 
 # Post meta display settings
@@ -502,7 +498,7 @@ post_meta:
   created_at: true
   updated_at:
     enabled: true
-    # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
+    # If true, show updated date label only if `updated date` different from `created date` (post edited in another day than was created).
     # And if post will edited in same day as created, edited time will show in popup title under created time label.
     # If false show anyway, but if post edited in same day, show only edited time.
     another_day: true
@@ -541,7 +537,7 @@ reward:
   #comment: Donate comment here
   #wechatpay: /images/wechatpay.jpg
   #alipay: /images/alipay.jpg
-  #bitcoin: /images/bitcoin.png
+  #bitcoin: /images/bitcoin.jpg
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -560,8 +556,8 @@ related_posts:
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
   enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source.
-  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit.
+  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
+  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit.
 
 
 # ---------------------------------------------------------------
@@ -580,8 +576,8 @@ android_chrome_color: "#222"
 # Custom Logo.
 # Do not support Scheme Mist currently.
 # Options:
-#   enabled: [true/false] - Replace with specific image
-#   image: url-of-image   - Images's url
+#   enabled: If true, will enable custom logo
+#   image: Images's url, replace it with specific image
 custom_logo:
   enabled: false
   image:
@@ -690,7 +686,7 @@ pdf:
   enable: false
 
   # Default(true) will load PDFObject/PDF.js script on demand
-  # That is it only render those page who has 'pdf: true' in Front Matter.
+  # That is it only render those page who has `pdf: true` in Front Matter.
   # If you set it to false, it will load PDFObject/PDF.js srcipt EVERY PAGE.
   per_page: true
 
@@ -733,7 +729,6 @@ changyan:
   enable: false
   appid:
   appkey:
-
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
@@ -799,10 +794,9 @@ gitalk:
 # iconStyle: default | box
 # boxForm: horizontal | vertical
 # position: top / middle / bottom + Left / Center / Right
-# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,
-#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
-#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
-#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
+# networks:
+# Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,
+# Slashdot,Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
   enable: true
   postbottom:
@@ -821,14 +815,14 @@ needmoreshare2:
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 
 # Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
+# See: https://www.google.com/webmasters
 google_site_verification: 1T1SucGBBd6pO7wbCxXkQrO8CNSSTIfFc8Ow_0GvoJg
 
 # Google Analytics
 #google_analytics:
 
 # Bing Webmaster tools verification setting
-# See: https://www.bing.com/webmaster/
+# See: https://www.bing.com/webmaster
 bing_site_verification: 056FCB31D0B2FCC39366F814CFA29CC0
 
 # Yandex Webmaster tools verification setting
@@ -844,7 +838,7 @@ bing_site_verification: 056FCB31D0B2FCC39366F814CFA29CC0
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights
-# application_insights:
+#application_insights:
 
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------
@@ -916,13 +910,11 @@ busuanzi_count:
   post_views: true
   post_views_icon: eye
 
-
 # Tencent analytics ID
-# tencent_analytics:
+#tencent_analytics:
 
 # Tencent MTA ID
-# tencent_mta:
-
+#tencent_mta:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: true
@@ -1061,19 +1053,9 @@ lazyload: false
 # Dependencies: https://github.com/theme-next/theme-next-pace
 pace: false
 # Themes list:
-#pace-theme-big-counter
-#pace-theme-bounce
-#pace-theme-barber-shop
-#pace-theme-center-atom
-#pace-theme-center-circle
-#pace-theme-center-radar
-#pace-theme-center-simple
-#pace-theme-corner-indicator
-#pace-theme-fill-left
-#pace-theme-flash
-#pace-theme-loading-bar
-#pace-theme-mac-osx
-#pace-theme-minimal
+# pace-theme-big-counter | pace-theme-bounce | pace-theme-barber-shop | pace-theme-center-atom
+# pace-theme-center-circle | pace-theme-center-radar | pace-theme-center-simple | pace-theme-corner-indicator
+# pace-theme-fill-left | pace-theme-flash | pace-theme-loading-bar | pace-theme-mac-osx | pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-minimal
@@ -1097,9 +1079,8 @@ canvas_lines: false
 # canvas_sphere
 canvas_sphere: false
 
-# Only fit scheme Pisces
-# Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
 # Canvas-ribbon
+# Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
 # size: The width of the ribbon.
 # alpha: The transparency of the ribbon.
 # zIndex: The display level of the ribbon.
@@ -1123,7 +1104,7 @@ vendors:
   # Example:
   # jquery: //cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js
   # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
-  jquery:
+  jquery: //cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox
