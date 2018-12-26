@@ -13,8 +13,6 @@ env:
   global:
     - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js
     - ATOM_WRITER_PATH=node_modules/hexo-generator-atom-markdown-writer-meta/lib/generator.js
-    - LOCAL_SEARCH_SCRIPT_URL=https://gist.githubusercontent.com/wafer-li/b41db8f460065ad541de755e7423aa76/raw/aac108319164bccb3621a2699d2d6e2846a59847/localsearch.min.swig
-    - THEME_LOCAL_SEARCH_PATH=themes/next/layout/_third-party/search/localsearch.swig
     - TZ=Asia/Tokyo
 
 language: node_js
@@ -60,9 +58,6 @@ install: npm install
 before_script:
   # Patch atom writer generator
   - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_PATH}
-
-  # Replace the local search script
-  - curl ${LOCAL_SEARCH_SCRIPT_URL} >| ${THEME_LOCAL_SEARCH_PATH}
 
 script:
   - hexo clean
