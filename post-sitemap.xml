@@ -104,7 +104,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/14.%20%E6%97%A0%E5%90%91%E5%9B%BE/</loc>
+        <loc>https://wafer.li/Algorithm/2-3%20%E6%A0%91/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -112,7 +112,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/2-3%20%E6%A0%91/</loc>
+        <loc>https://wafer.li/Algorithm/14.%20%E6%97%A0%E5%90%91%E5%9B%BE/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -584,7 +584,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/COA/Computer%20Organization%20and%20Architecture/</loc>
+        <loc>https://wafer.li/Reviews/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -592,7 +592,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</loc>
+        <loc>https://wafer.li/Reviews/COA/Computer%20Organization%20and%20Architecture/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -744,14 +744,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/COA/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Reviews/MaoTheory/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -769,6 +761,14 @@
 
     <url>
         <loc>https://wafer.li/Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Reviews/COA/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1144,14 +1144,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Linux/My%20Linux%20Experiences/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1296,6 +1288,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/Android%20%E5%AE%98%E6%96%B9%20Navigation%20Drawer/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1408,7 +1408,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/CSharp%20%E5%A4%8D%E6%9D%82%E7%B1%BB%E5%9E%8B/</loc>
+        <loc>https://wafer.li/DesignPattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2017-04-09T04:39:49.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1416,7 +1416,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/DesignPattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</loc>
+        <loc>https://wafer.li/CSharp/CSharp%20%E5%A4%8D%E6%9D%82%E7%B1%BB%E5%9E%8B/</loc>
         <lastmod>2017-04-09T04:39:49.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
