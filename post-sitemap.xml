@@ -240,7 +240,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Java/Java%20%E5%BC%82%E5%B8%B8/</loc>
+        <loc>https://wafer.li/Japanese/%E8%A1%A5%E5%8A%A9%E5%8A%A8%E8%AF%8D/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -248,7 +248,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Japanese/%E8%A1%A5%E5%8A%A9%E5%8A%A8%E8%AF%8D/</loc>
+        <loc>https://wafer.li/Java/Java%20%E5%BC%82%E5%B8%B8/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -744,6 +744,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Reviews/COA/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Reviews/MaoTheory/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -761,14 +769,6 @@
 
     <url>
         <loc>https://wafer.li/Reviews/TSPi/%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Reviews/COA/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -816,7 +816,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Object%20Initialization/</loc>
+        <loc>https://wafer.li/CSharp/CSharp%20Properties%20and%20Fields/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -824,7 +824,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Properties%20and%20Fields/</loc>
+        <loc>https://wafer.li/CSharp/CSharp%20Object%20Initialization/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1152,22 +1152,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Linux/My%20Linux%20Experiences/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Linux/Ubuntu%2014.04%20LTS%20Installation%20Checklist/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E5%AE%9E%E4%BD%93%E5%B1%9E%E6%80%A7/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1209,6 +1193,22 @@
 
     <url>
         <loc>https://wafer.li/Python/Python%203%20Basic/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Linux/Ubuntu%2014.04%20LTS%20Installation%20Checklist/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Linux/My%20Linux%20Experiences/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1336,7 +1336,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Java/Java%20%E6%B3%9B%E5%9E%8B%E5%9F%BA%E7%A1%80/</loc>
+        <loc>https://wafer.li/Java/Java%20%E6%B3%9B%E5%9E%8B%E9%80%9A%E9%85%8D%E7%AC%A6%E5%92%8C%E7%B1%BB%E5%9E%8B%E9%99%90%E5%AE%9A/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1344,7 +1344,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Java/Java%20%E6%B3%9B%E5%9E%8B%E9%80%9A%E9%85%8D%E7%AC%A6%E5%92%8C%E7%B1%BB%E5%9E%8B%E9%99%90%E5%AE%9A/</loc>
+        <loc>https://wafer.li/Java/Java%20%E6%B3%9B%E5%9E%8B%E5%9F%BA%E7%A1%80/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
