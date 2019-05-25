@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Android/%E4%BD%BF%E7%94%A8-buildsrcversions-%E8%BD%BB%E6%9D%BE%E7%AE%A1%E7%90%86-gradle-%E4%BE%9D%E8%B5%96/</loc>
+        <lastmod>2019-05-25T20:15:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Algorithm/Graham%20Scan%20%E8%A7%A3%E5%86%B3%E5%87%B8%E5%8C%85%E9%97%AE%E9%A2%98/</loc>
         <lastmod>2019-05-25T15:26:35.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1512,6 +1520,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
+        <lastmod>2017-04-08T13:58:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/DesignPattern/README/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1537,14 +1553,6 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20Hello%20World/</loc>
-        <lastmod>2017-04-08T13:58:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
