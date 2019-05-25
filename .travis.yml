@@ -11,8 +11,6 @@ addons:
 
 env:
   global:
-    - ATOM_WRITER_PATCH_URL=https://raw.githubusercontent.com/wafer-li/hexo-generator-atom-markdown-writer-meta/9f8ab23d42a60a9fa7ef8eed161f216a7716d14d/lib/generator.js
-    - ATOM_WRITER_PATH=node_modules/hexo-generator-atom-markdown-writer-meta/lib/generator.js
     - TZ=Asia/Tokyo
 
 language: node_js
@@ -54,10 +52,6 @@ before_install:
   - ssh-add ./blog_deploy_key
 
 install: npm install
-
-before_script:
-  # Patch atom writer generator
-  - curl $ATOM_WRITER_PATCH_URL >| ${ATOM_WRITER_PATH}
 
 script:
   - hexo clean

@@ -49,6 +49,7 @@ mathjax: true
 **使用三角形有向面积进行判定**
 
 $$
+\begin{aligned}
 2 \times Area(a, b, c) =
 \begin{vmatrix}
 a_x & a_y & 1\\
@@ -60,6 +61,7 @@ c_x & c_y & 1\\
 b_x - a_x & b_y - a_y \\
 c_x - a_x & c_y - a_y \\
 \end{vmatrix}
+\end{aligned}
 $$
 
 **如果面积为正，则为逆时针**
