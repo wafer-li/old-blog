@@ -171,6 +171,21 @@ tasks["buildSrcVersions"].doLast { delete("${rootDir.path}/buildSrc/settings.gra
 
 ## 4. 一些潜在的坑
 
+如果你选择使用 `buildSrcVersions` 插件，那么请将 Android 构建相关的版本号单独放置在一个新文件中：
+
+```Kotlin
+// AndroidVersions.kt
+
+object AndroidVersions {
+  const val compileSdkVersion = 28
+  const val targetSdkVersion = 28
+  const val minSdkVersiosn = 20
+  ...
+}
+```
+
+因为每次 `buildSrcVersions` 运行都有可能会替换掉它生成的 `Versions.kt` 和 `Libs.kt`
+
 如果你选择自己编写 `buildSrc` 目录，务必注意以下几件事情：
 
 1. 使用正确的目录结构
