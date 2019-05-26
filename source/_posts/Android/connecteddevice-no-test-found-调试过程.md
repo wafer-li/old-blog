@@ -26,7 +26,7 @@ categories:
 ![ConnectedDevice No test found](../../images/connecteddevice-no-test-found-调试过程/connecteddevice-no-test-found.png)
 
 再点进去一看：
-![ConnectedDevice No Test found detail](../../images/connecteddevice-no-test-found-调试过程/connecteddevice-no-test-found-detail.png)
+![ConnectedDevice No Test found detail](../../images/connecteddevice-no-test-found-调试过程/connecteddevice-no-tests-found-detail.png)
 
 它说我没有按照 JUnit 的方式编写测试用例，但是我的测试用例都是加了 `@Test` 的啊
 
@@ -53,7 +53,8 @@ Android Studio 的 Run App 实际上就是先执行 `assemble[Build-Variant]` �
 
 然而，gradle 单独进行编译并没有这个问题：
 
-![gradle build successful](../../images/connecteddevice-no-test-found-调试过程/gradle-build-successful.png)
+![gradle build successful](/images/connecteddevice-no-test-found-调试过程/gradle-build-successful.png)
+
 
 所以很有可能是 Android Studio 自身的构建出现了问题，但是，目前的构建信息并不足以让我们定位到问题，所以需要获取更多的构建信息。
 
