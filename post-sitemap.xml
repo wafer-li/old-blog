@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://wafer.li/Android/%E4%BD%BF%E7%94%A8-buildsrcversions-%E8%BD%BB%E6%9D%BE%E7%AE%A1%E7%90%86-gradle-%E4%BE%9D%E8%B5%96/</loc>
-        <lastmod>2019-05-25T20:15:06.000Z</lastmod>
+        <lastmod>2019-05-26T04:37:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -136,14 +136,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/14.%20%E6%97%A0%E5%90%91%E5%9B%BE/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Algorithm/2-3%20%E6%A0%91/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -161,6 +153,14 @@
 
     <url>
         <loc>https://wafer.li/Algorithm/%E5%B7%A6%E6%96%9C%E7%BA%A2%E9%BB%91%E6%A0%91/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Algorithm/14.%20%E6%97%A0%E5%90%91%E5%9B%BE/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -840,14 +840,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Method/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/CSharp/CSharp%20Object%20Initialization/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -865,6 +857,14 @@
 
     <url>
         <loc>https://wafer.li/CSharp/CSharp%20Visibility%20Modifiers/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/CSharp/CSharp%20Method/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1144,14 +1144,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E6%95%B0%E6%8D%AE%E7%B1%BB/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1209,6 +1201,14 @@
 
     <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1328,14 +1328,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Python/Python%203%20Control%20Flow/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Python/Python%203%20Exception/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1344,7 +1336,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Python/Python%203%20Function/</loc>
+        <loc>https://wafer.li/Python/Python%203%20IO/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1352,7 +1344,15 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Python/Python%203%20IO/</loc>
+        <loc>https://wafer.li/Python/Python%203%20Control%20Flow/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Python/Python%203%20Function/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
