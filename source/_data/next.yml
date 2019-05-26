@@ -812,7 +812,7 @@ calendar:
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: wafer-li
   count: true
   lazyload: true
