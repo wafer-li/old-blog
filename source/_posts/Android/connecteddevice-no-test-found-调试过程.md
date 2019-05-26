@@ -38,7 +38,7 @@ class ApplicationTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
 
-        assertEquals("com.google.codelabs.mdc.kotlin.shrine", appContext.packageName)
+        assertEquals("aaa.bbb.ccc.ddd", appContext.packageName)
     }
 }
 ```
@@ -82,7 +82,7 @@ Android Studio 的 Run App 实际上就是先执行 `assemble[Build-Variant]` �
 
 ## 4. Didn't find class CoreComponentFactory
 
-首先映入眼帘的是 `Unable to instantiate application`
+打开 Log Cat，首先映入眼帘的是 `Unable to instantiate application`
 
 ![Unable to instantiate application](../../images/connecteddevice-no-test-found-调试过程/unable-to-instantiate-application.png)
 
