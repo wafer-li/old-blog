@@ -19,6 +19,19 @@ categories:
 
 <!-- more -->
 
+## 0. 更新
+
+2019-05-27 更新： Google 回复：Instant Run 在新版本已经不被支持了，他们开发了一个更好的功能叫 Apply Change。
+
+![Google Response Instant Run Deprecated](../../images/connecteddevice-no-test-found-调试过程/google-response-instant-run-deprecated.png)
+
+> Instant Run has been deprecated in Android Studio 3.5 and instead we've implemented a brand new solution called Apply Changes that is more stable and doesn't modify your APK on build.
+> ...
+> We recommend **turning off Instant Run** in the settings for earlier versions of Android Studio
+
+
+所以还在使用 3.4 稳定版的，直接把 Instant Run 关掉吧。
+
 ## 1. ConnectedDevice No tests found
 
 打开测试结果，就得到了下面这张图
