@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://wafer.li/Android/connecteddevice-no-test-found-%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B/</loc>
-        <lastmod>2019-05-27T14:50:58.000Z</lastmod>
+        <lastmod>2019-05-27T15:00:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -336,6 +336,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Android/AndroidStudio/Android%20Studio%20FAQ/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/AndroidStudio/Android%20Studio%20%E5%8D%A1%20buliding%20gradle%20info/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -345,14 +353,6 @@
 
     <url>
         <loc>https://wafer.li/Android/Volley/Android%20Volley%20%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Android/AndroidStudio/Android%20Studio%20FAQ/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -528,7 +528,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
+        <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -536,7 +536,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

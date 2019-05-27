@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[ConnectedDevice: No Test Found 调试过程]]></title>
     <url>%2F%2FAndroid%2Fconnecteddevice-no-test-found-%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。当一切都配置好，点下 build App 的时候，却出现了 There were failing tests.。我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？于是，就开始了艰难的调试过程 0. 更新2019-05-27 更新： Google 回复：Instant Run 在新版本已经不被支持了，他们开发了一个更好的功能叫 Apply Change。Instant Run has been deprecated in Android Studio 3.5 and instead we’ve implemented a brand new solution called Apply Changes that is more stable and doesn’t modify your APK on build.…We recommend turning off Instant Run in the settings for earlier versions of Android Studio所以还在使用 3.4 稳定版的，直接把 Instant Run 关掉吧。 1. ConnectedDevice No tests found打开测试结果，就得到了下面这张图再点进去一看：它说我没有按照 JUnit 的方式编写测试用例，但是我的测试用例都是加了 @Test 的啊12345678910@RunWith(AndroidJUnit4::class)class ApplicationTest &#123; @Test fun useAppContext() &#123; // Context of the app under test. val appContext = InstrumentationRegistry.getInstrumentation().targetContext assertEquals("aaa.bbb.ccc.ddd", appContext.packageName) &#125;&#125;于是就陷入了困境，问题到这里就消失了，到底应该怎样才能定位到问题呢？ 2. 使用 gradle 命令行进行构建尝试Android Studio 的 Run App 实际上就是先执行 assemble[Build-Variant] 然后再将生成的 apk 安装到手机的过程。而这个 assemble 实际上是通过 gradle 执行的，于是可以尝试通过 gradle 命令行进行编译，看看是不是 gradle 导致的问题。然而，gradle 单独进行编译并没有这个问题：所以很有可能是 Android Studio 自身的构建出现了问题，但是，目前的构建信息并不足以让我们定位到问题，所以需要获取更多的构建信息。 3. INSTRUMENT: Process Crashed首先，我们在 Build, Execution, Deployment -&gt; Compiler 开启 gradle --scan然后，点击红框里面的小图标让 Build 信息变成文字：之后，就看到了 build 失败的详细信息了：原来是在测试的时候程序崩溃了，这才导致了测试的失败。经过一番 StackOverflow 之后，这个答案 提醒了我：由于 Instrument Test 实际上是安装了一个 test.apk，所以它的报错信息会在 Log Cat 而不是 Build Output 中。 4. Didn’t find class CoreComponentFactory打开 Log Cat，首先映入眼帘的是 Unable to instantiate application原来在执行测试的时候，没有办法实例化 Application 导致 Instrument Test 无法找到 Context，于是程序就崩溃导致测试失败了。再往上看，可以看到导致无法实例化 Application 的原因：原来是构建 Application 的工厂找不到了，从而造成它无法实例化。 5. 罪魁祸首 Instant RunDidn't find class CoreComponentFactory 这个问题之前也遇到过，是因为 R8 将其混淆了，导致在 release 模式下找不到这个类，但是现在是 debug 模式，并没有启用混淆，但是依然还是找不到这个类。在经过又一阵子的 StackOverflow 之后，我找到了这么一个答案：虽然它被减成了负分，但是也不妨碍我尝试一下它的可用性。于是我将 Instant Run 取消掉，奇迹发生了，程序竟然就编译通过并成功安装在了模拟器上。 6. 总结到这里，整个调试过程就结束了，也给 Google 提了这个 bug。虽然不敢肯定一定是 Instant Run 的问题，但是目前（AS 3.4.1）来看，取消 Instant Run 就可以运行成功。这个问题本身可能有一些特异性，不过倒是从中学到了一个知识：类似的 Instrument Test 的失败最好先去 Log Cat 寻找原因。也希望大家能从这篇博客中能学到一些什么吧。]]></content>
+    <content type="text"><![CDATA[之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。当一切都配置好，点下 build App 的时候，却出现了 There were failing tests.。我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？于是，就开始了艰难的调试过程 0. 更新2019-05-27 更新： Google 回复：Instant Run 在新版本已经不被支持了，他们开发了一个更好的功能叫 Apply Change。Instant Run has been deprecated in Android Studio 3.5 and instead we’ve implemented a brand new solution called Apply Changes that is more stable and doesn’t modify your APK on build.…We recommend turning off Instant Run in the settings for earlier versions of Android Studio尝试了一下 2019-05-23 编译的 Android Studio 3.6 Canary 1 ，问题的确已经被修复了。所以还在使用 3.4 稳定版的，直接把 Instant Run 关掉吧。 1. ConnectedDevice No tests found打开测试结果，就得到了下面这张图再点进去一看：它说我没有按照 JUnit 的方式编写测试用例，但是我的测试用例都是加了 @Test 的啊12345678910@RunWith(AndroidJUnit4::class)class ApplicationTest &#123; @Test fun useAppContext() &#123; // Context of the app under test. val appContext = InstrumentationRegistry.getInstrumentation().targetContext assertEquals("aaa.bbb.ccc.ddd", appContext.packageName) &#125;&#125;于是就陷入了困境，问题到这里就消失了，到底应该怎样才能定位到问题呢？ 2. 使用 gradle 命令行进行构建尝试Android Studio 的 Run App 实际上就是先执行 assemble[Build-Variant] 然后再将生成的 apk 安装到手机的过程。而这个 assemble 实际上是通过 gradle 执行的，于是可以尝试通过 gradle 命令行进行编译，看看是不是 gradle 导致的问题。然而，gradle 单独进行编译并没有这个问题：所以很有可能是 Android Studio 自身的构建出现了问题，但是，目前的构建信息并不足以让我们定位到问题，所以需要获取更多的构建信息。 3. INSTRUMENT: Process Crashed首先，我们在 Build, Execution, Deployment -&gt; Compiler 开启 gradle --scan然后，点击红框里面的小图标让 Build 信息变成文字：之后，就看到了 build 失败的详细信息了：原来是在测试的时候程序崩溃了，这才导致了测试的失败。经过一番 StackOverflow 之后，这个答案 提醒了我：由于 Instrument Test 实际上是安装了一个 test.apk，所以它的报错信息会在 Log Cat 而不是 Build Output 中。 4. Didn’t find class CoreComponentFactory打开 Log Cat，首先映入眼帘的是 Unable to instantiate application原来在执行测试的时候，没有办法实例化 Application 导致 Instrument Test 无法找到 Context，于是程序就崩溃导致测试失败了。再往上看，可以看到导致无法实例化 Application 的原因：原来是构建 Application 的工厂找不到了，从而造成它无法实例化。 5. 罪魁祸首 Instant RunDidn't find class CoreComponentFactory 这个问题之前也遇到过，是因为 R8 将其混淆了，导致在 release 模式下找不到这个类，但是现在是 debug 模式，并没有启用混淆，但是依然还是找不到这个类。在经过又一阵子的 StackOverflow 之后，我找到了这么一个答案：虽然它被减成了负分，但是也不妨碍我尝试一下它的可用性。于是我将 Instant Run 取消掉，奇迹发生了，程序竟然就编译通过并成功安装在了模拟器上。 6. 总结到这里，整个调试过程就结束了，也给 Google 提了这个 bug。虽然不敢肯定一定是 Instant Run 的问题，但是目前（AS 3.4.1）来看，取消 Instant Run 就可以运行成功。这个问题本身可能有一些特异性，不过倒是从中学到了一个知识：类似的 Instrument Test 的失败最好先去 Log Cat 寻找原因。也希望大家能从这篇博客中能学到一些什么吧。]]></content>
       <categories>
         <category>Android</category>
       </categories>
@@ -187,8 +187,8 @@
         <category>杂谈</category>
       </categories>
       <tags>
-        <tag>ofo</tag>
         <tag>杂谈</tag>
+        <tag>ofo</tag>
       </tags>
   </entry>
   <entry>
@@ -580,17 +580,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java 接口和内部类]]></title>
-    <url>%2F%2FJava%2FJava%20%E6%8E%A5%E5%8F%A3%E5%92%8C%E5%86%85%E9%83%A8%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[1. 接口这是 Java 中的专有名词，指代的是 interface 关键字 1.1 接口1public interface Comparable &#123;...&#125;接口不是类，而是对类的一组需求描述接口中的所有方法自动为public实现接口将类声明为实现给定的接口1class Employee implements Comparable &#123;....&#125;对接口中的所有方法进行定义接口实现必须声明为public特性不是类，不能使用new来实例化不能包含实例域和静态方法可以包含常量，接口中的域被自动设为public static final可以声明接口的变量1Comparable x;必须引用实现了接口的类对象1x = new Employee();可以使用instanceof来检查一个对象是否实现了某个特定接口1if(anObject instanceof Comparable)可以扩展（继承）1public interface Powered extends Moveable每个类只能拥有一个超类，但是可以实现多个接口123class Employee extends Persons implements Comparable &#123; ...&#125; 1.2 对象克隆默认克隆（Object.clone()）浅拷贝protected方法实现克隆必须实现 Cloneable 接口使用 public 重新定义 clone() 方法即使浅拷贝能满足要求，也要进行上述两条操作需要声明 CloneNotSupportedException 异常 2. 内部类1234567class TalkingClock&#123; public class TimePrinter implements ActionListenner &#123; ... &#125;&#125; 2.1 概述在类的内部直接定义，类似于C++的嵌套类可以访问作用域内的数据，包括私有的可以隐藏内部类可以便捷实现回调 2.2 普通内部类可以访问外围类对象数据（包括私有的）通过 OuterClass.this 访问外围类在外围类的作用域之外，使用 OuterClass.InnerClass 引用内部类 2.3 局部内部类简称局部类，在一个方法内进行定义1234567public void start()&#123; class TinmePrinter implements ActionListenner &#123; ... &#125;&#125;局部类可以访问局部变量（必须声明为 final）更新封闭作用域内的计数器时，使用 final 的长度为 1 的数组 2.4 匿名内部类12345new SuperType(cosntruction parameters) &#123; ... &#125;// 如果只创建局部类的一个对象的时候才使用SuperType可以是类或者接口如果用于实现接口时，不能有任何构造参数1234new InterfaceType() &#123; ... &#125; 2.5 静态内部类用于将一个类隐藏在另一个类之中，通常用于防止名称的冲突只有内部类可以声明为 static特别的，通过静态方法构造的内部类必须声明为 static]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java 泛型基础]]></title>
     <url>%2F%2FJava%2FJava%20%E6%B3%9B%E5%9E%8B%E5%9F%BA%E7%A1%80%2F</url>
     <content type="text"><![CDATA[1. 概述泛型类似于 C++ 中的模板，使得编写的代码可以被多种不同的对象所使用。在 Java 增加泛型类之前，泛型实际上是以继承方式实现的泛型使用类型参数来指示元素的类型1234ArrayList&lt;String&gt; files = new ArrayList&lt;String&gt;();// Java SE 7 之后可以省略构造函数中的泛型类型ArrayList&lt;String&gt; files = new ArrayList&lt;&gt;(); 2. 泛型类单个参数12// 其中 T 为类型参数public class Pair&lt;T&gt; &#123;&#125;多个参数12// 多个类型参数用逗号隔开public class Piar&lt;T, U&gt; &#123;&#125; 3. 泛型方法泛型方法不仅只存在于泛型类中，也可以在非泛型类中定义泛型方法12345678class ArrarAlg &#123; /** * 这是一个泛型方法， * &lt;T&gt; 表示其为泛型方法 */ public static &lt;T&gt; T getMiddle(T... a) &#123;&#125;&#125;调用泛型方法时，通过在方法名前的尖括号中放入具体的类型来将其实例化1String middle = ArrayAlg.&lt;String&gt;getMiddle("John", "Q.", "Public");其实大多数情况下，编译器都能推断出正确的类型，所以方括号可以省略 4. 类型变量的限定有时候我们需要对类型变量进行一定的约束:比如，当我们需要对变量进行比较操作时，我们需要确保变量都实现了 Comparable 接口。对于类型变量的限定有两种方式限定上界1public static &lt;T extends Comarable&gt; T min(T[] a) ...这里我们限定了 T 必须是实现了 Comarable 接口的变量。如果 Comarable 是一个类，那么 T 必须是它，或者它的子类限定下界1public static &lt;T super Child&gt; T doSomeThings(T[] a) ...这里限定了 T 必须是 Child 的超类，或者它本身。使用 &amp; 分隔限定类型，使用逗号来分隔 类型参数1T extends Comparable &amp; Serializable 5.泛型类的实例化 5.1 类型擦除Java 中的泛型类采用 类型擦除 方式来进行实例化。类型擦除即为，擦除类型参数，并将其替换为限定的类型。例如上面的 T extends Comparable 则在类中的 T 会被替换为 Comparable如果类型没有被限定，则替换为 Object需要注意的是，虚拟机中没有泛型类型变量，任何的泛型类在需要实例化的时候，都会先进行类型擦除，然后替换为实例化的类型。例如， Pair&lt;T&gt; 的原始类型如下1234567891011121314151617public class Pair &#123; private Object first; private Object second; public Pair() &#123; first = null; second = null; &#125; public Object getFirst() &#123; return this.first; &#125; public Object getSecond() &#123; return this.second; &#125;&#125;通过类型擦除的方法，Java 使得泛型类就好像一个普通的类，从而避免了 C++ 模板实例化所造成的代码膨胀。 5.2 翻译泛型表达式当程序调用泛型方法时， Java 采用强制类型转换（Cast）来返回或调用正确的类型例如12Pair&lt;Employee&gt; buddies = ...;Employee buddy = buddies.getFirst();此时，编译器自动插入强制类型转换使得 getFirst() 方法返回 Employee 类型 5.3 泛型方法的实例化和桥方法泛型方法在实例化过程中也使用 类型擦除但是这在继承中会导致方法的冲突。例如：12345678class DateInterval extends Pair&lt;Date&gt; &#123; public void setSecond(Date second) &#123; ... &#125;&#125;// 经过类型擦除之后class DateInterval extends Pair &#123; public void setSecond(Date second) &#123; ... &#125;&#125;当使用基类指针实现多态性的时候12Pair&lt;Date&gt; pair = interval;pair.setSecond(aDate);此时，存在一个从 Pair 继承而来的方法1public void setSecond(Object second)由于形式参数的改变，使得这是一个不同的方法；但是我们对 pair 的多态性描述显然是要调用 setSecond(Date second) 方法；此时，编译器就会自动生成一个桥方法，用来保证多态的正确使用。1234// 桥方法public void setSecond(Objedt second) &#123; setSecond((Date) second);&#125; 6. 约束和局限性 6.1 不能用基本类型实例化类型参数由于泛型使用类型擦除来实现，所有的未限定类型均会被替换成 Object；而 Object 不能储存基本类型此时一般使用对象包装器来实现基本类型的实例化 6.2 运行时的类型查询只适用于原始类型由于使用了类型擦除，所有的类型查询都只对泛型类的原始类型适用，而对泛型版本不适用。instanceof 和 getClass() 返回的都是原始类型 6.3 不能创建参数化类型的数组创建泛型类的数组是不合法的。由于类型擦除的存在，所有的未限定泛型类都会被替换成 Object。例如123Pair&lt;String&gt;[] table = new Pair&lt;String&gt; [10]; // ERROR// After erasePair[] table = new Pair[10];此时，如果有下面的一条语句1234Object[] objects = table; // OK, Pair is a type of Object// But, if edit one of the elementsobjects[0] = "Hello"; // ERROR, because the objects[0] is Pair, not String当需要收集参数化类型对象时，使用 ArrayList 来代替数组实现如果实在需要创建泛型类的数组，那么就必须使用 强制转换。1Pair&lt;String&gt; p = (Pair&lt;String&gt;[]) new Object[10]; 6.4 Varargs 警告当使用可变参数的泛型类作为形参时，由于可变类型是一个数组，此时违反了上面一条规则。但是对于这种情况，规则有所放松，使用这个会得到一个警告，可以用 @SafeVarargs 注解来压制这个警告12@SafeVarargspublic static &lt;T&gt; void addAll(Collection&lt;T&gt; coll, T... ts) 6.5 不能实例化类型变量所谓的类型变量指的是 T不能使用 new T(...) 类似这样的表达式而是通过反射调用 Class.newInstance 来构造新的 T 对象；不过，很遗憾的是，不能通过 T.class.newInstance() 来实现；调用 newInstance() 的 Class 对象必须由 外部传入：12345678public static &lt;T&gt; Pair&lt;T&gt; makePair(Class&lt;T&gt; clazz) &#123; try &#123; return new Pair&lt;&gt;(clazz.newInstance(), clazz.newInstance()); &#125; catch (Exception e) &#123; return null; &#125;&#125; 6.6 不能构造泛型数组指的是不能构造 T[]；1T[] array = new T[2]; // ERROR!如果一定要使用数组，则必须进行强制转换：1T[] array = (T[]) new Object[2];需要注意的是，这种数组不能作为返回值：12345public static &lt;T&gt; T[] minmax(T... a) &#123; Object[] mm = new Object[2]; ... return (T[]) mm;&#125;在调用的时候，会出现 ClassCastException：12// Exception！String[] ss = minmax("Tom", "Dick", "Harry");这是因为类型擦除的问题；对于虚拟机而言，虚拟机知道每个元素的具体类型，所以做元素层次的强制转换是没有问题的：1234public T get(int index) &#123; // T[] items return items[index]; // OK&#125;但是对于数组本身而言，由于类型擦除导致实际上的数组的 声明 是 Object[]，可以接受任何的类型，所以无法将其强制转换为特定类型的数组。也就是说，对于一个 String 数组，可以将其转换为 Object 数组再转换回去；但是由于类型擦除导致 一开始 数组的声明就是 Object[]；所以无法将其转换为特定类型。对于这种情况，就需要使用泛型的 Array.newInstance()；通过 Class.getComponentType() 来获取到元素的真实类型。123public static &lt;T&gt; T[] minmax(T... a) &#123; T[] mm = (T[]) Array.newInstance(a.getClass().getComponentType(), 2);&#125; 6.7 泛型类静态成员类型参数无效在泛型类中，不能在静态域或者方法中引用类型变量。123public class Singleton&lt;T&gt; &#123; private static T singleInstance; // ERROR&#125;这也是因为类型擦除，Singleton&lt;String&gt; 会恢复为 Singleton；而对于一个所有实例都共享的方法或者域，它不能仅仅依赖于某一个类型。 6.8 不能抛出或捕获泛型类对象不能抛出和捕获 泛型类，同时，也不允许泛型类扩展 Throwable。1234// ERRORpublic class Problem&lt;T&gt; extends Exception &#123; /* ... */&#125;同时，catch 块中也不能使用类型变量 T123456try &#123; // do work&#125;catch(T e) &#123; // ERROR&#125;不过可以在 throws 中使用类型变量 T123456@SuppressWarnings("unchecked")public static &lt;T extends Throwable&gt; void throwAs(Throwable e)throws T&#123; throw (T) e&#125;在这种情况下，编译器会认为 T 是一个 未检查异常 6.9 注意擦除后的冲突类型擦除很可能会引发和超类型的冲突；例如有这么一个方法：12345public class Pair&lt;T&gt; &#123; public boolean equals(T value) &#123; return first.equals(value) &amp;&amp; second.equals(value); &#125;&#125;这个方法在类型擦除之后，会变成：1boolean equals(Object value)然而，这个方法和超类继承而来的：12// Object 继承而来的！boolean equals(Object)出现冲突。此时，只能改名解决。同时，还必须注意类和它的子类不能实现两个不同 类型参数 T 的接口：12345class Calendar implements Comparable&lt;Calendar&gt; &#123;...&#125;class GregorianCalendar extends Calendarimplements Comparable&lt;CregorianCalendar&gt;&#123;...&#125;这里，Calendar 类和它的子类 GregorianCalendar 实现了两个不同类型参数的接口；这会导致合成的桥方法出现错误；对于实现了 Comparable&lt;X&gt; 的类，可以获得一个桥方法：123public int comparaTo(Object other) &#123; return compareTo((X) other);&#125;但是，由于 GregorianCalendar 同时实现了两个类型参数不同的同一个泛型接口；所以就会有两个 相同签名 的桥方法，而这是不允许的。 7. 泛型类的继承在使用泛型类时，需要注意的是它的继承规则和直觉不同；例如， Employee 和 Manager 是父类和子类；但是 Pair&lt;Manager&gt; 不是 Pair&lt;Employee&gt; 的子类这里体现出来泛型和数组的一个重要区别；对于一个数组来说，可以将 Manager[] 赋给 Employee[]。不过如果尝试将一个低级别的 Employee 插入到多态的 Employee[] 中，则会抛出 ArrayStoreException]]></content>
@@ -627,6 +616,17 @@
     <title><![CDATA[Java 类继承]]></title>
     <url>%2F%2FJava%2FJava%20%E7%B1%BB%E7%BB%A7%E6%89%BF%2F</url>
     <content type="text"><![CDATA[1. 概述C++Java基类父类、超类派生类子类 2. Java 只允许一重继承※可以有多个继承链，但是不能有多个基类 3. 使用 extends 来表明继承关系1234class Derived extends Base&#123; ....&#125;; 4. 使用 super 来调用超类方法12345class Derived extends Base &#123; public Derived() &#123; super(); &#125;&#125; 5. 构造器可以使用 super 实现对超类构造器的调用如果没有显式调用超类构造器，将自动调用超类构造器的隐式版本;如果没有隐式版本（即超类构造器只定义了显示版本）则报错 6. 多态可以将超类引用指向子类对象，但不能反过来基类指针可以指向派生类对象数组可以进行相反的赋值，所以必须注意元素类型的监督public 方法默认为动态绑定，无需添加 vitual 或者类似的关键字private、static、final方法为静态绑定子类方法覆盖超类方法时，其访问权限不能严格于超类方法※注意不要遗漏public关键字，否则将会被解释成为更严格的访问权限覆盖允许返回类型协变（超类可以协变为子类） 7. final 阻止继承final 类123final class Excutive extends Manager &#123; ...&#125;这种类型被称为final类，不允许定义子类，即无法继承final 方法1public final String getName() &#123;...&#125;这种方法称为final方法，这种方法不允许子类覆盖它，确保其不会在子类中改变语义注意 final 的位置不同值得提到的是， Effective Java 中明确指示，如果不事先设计好一个良好的继承结构模型，那么就 禁止继承 8. 强制类型转换在继承链上不允许进行由上到下的转换（超类不能转换成子类）使用 instanceof 进行转换检查，返回布尔值，表示是否能够成功转换语法：(要转换的对象) instanceof (转换目标)强制转换语法类似 C 语言，执行过程类似 dynamic_cast 操作，不成功则抛出一个异常，而不是生成 null 对象 9. 抽象类12abstract class Person &#123;...&#125; // 抽象类public abstract String getDescription(); // 抽象方法抽象类不一定要有抽象方法，但是包含抽象方法的类必须声明为抽象类抽象类可以包含具体数据和具体方法抽象类不能被实例化（即不能创建对象） 10. 谨慎的使用protectedprotected 的可见性是超类和子类之间 11. Object类 11.1 equals()方法特性自反：x.equals(x) return true对称：y.equals(x) = x.equals(y)传递：if (x.equals(y) &amp;&amp; y.equals(z)) then x.equals(z);一致：The return value of x.equals(y) should be stable;对于非空引用 x, x.equals(null) return false;Object 类 equals：判断两个对象是否具有相同的引用 11.2 equals() 方法的设计理念接受一个Object类参数（为了覆盖Object类的equals方法）检测是否为自身this == otherObject检测传参是否为null比较是否为同一个类如果子类有特有的equals概念，则使用getClass方法if(getClass() != otherObject.getClass()) return false;如果子类没有特有的equals概念，则使用instanceof方法if(!(otherObject instanceof ClassName)) return false;转换为相应的类变量由于接受的是一个Object变量，所以必须进行强制类型转换才能进行具体实例域的相等判定此时已经判别类型相同了，可以进行转换判别实例域如果在子类中重新定义equals，则先调用超类的equals 11.2 hashCode() 方法如果重新定义了 equals() 方法，则必须重新定义 hashCode() 方法equals() 与 hashCode() 的定义必须一致；如果 x.equals(y) return true, 则，x.hashCode() 就必须与 y.hashCode() 返回一样的值 11.3 toString() 方法一般形式：类名 + 方括号括起来的阈值调用 x.toString() 可以用 &quot;&quot;+x 代替应该为每一个自定义类提供 toString() 方法。 12. 泛型数组列表（ArrayList&lt;&gt;）构造1ArrayList&lt;ClassName&gt; staff = new ArrayList&lt;&gt;();优点：可以实现动态更改数组大小使用 add() 方法添加元素，remove() 方法删除元素使用 get() 方法访问元素，set() 方法设置元素【而不是使用[]语法】 13. 对象包装器和自动装箱一般用于将基本类型转换成类对象首字母大写即为相应的包装器包装器的比较应使用 equals()方法，而不是 ==包装器为 final 类，不可以用来修改基本数据类型的数值应使用 holder 类型来修改基本数据类型的值 14. 不定参数1public static double max(double... values)其中的 double... 相同于double[]，其实就是接受了一个 double 数组可以将数组传递给可变参数方法的最后一个参数。 15. 枚举类这里的枚举类是一个类对象，而不是一种类型 16. 继承设计的技巧将公共操作和域放在超类不要使用受保护的域使用继承实现 “is-a” 关系覆盖方法时，不要改变预期的行为这里说的是不要偏离设计，并不是不能改变基类方法的操作能使用多态就使用多态不要过多的使用反射]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java 接口和内部类]]></title>
+    <url>%2F%2FJava%2FJava%20%E6%8E%A5%E5%8F%A3%E5%92%8C%E5%86%85%E9%83%A8%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[1. 接口这是 Java 中的专有名词，指代的是 interface 关键字 1.1 接口1public interface Comparable &#123;...&#125;接口不是类，而是对类的一组需求描述接口中的所有方法自动为public实现接口将类声明为实现给定的接口1class Employee implements Comparable &#123;....&#125;对接口中的所有方法进行定义接口实现必须声明为public特性不是类，不能使用new来实例化不能包含实例域和静态方法可以包含常量，接口中的域被自动设为public static final可以声明接口的变量1Comparable x;必须引用实现了接口的类对象1x = new Employee();可以使用instanceof来检查一个对象是否实现了某个特定接口1if(anObject instanceof Comparable)可以扩展（继承）1public interface Powered extends Moveable每个类只能拥有一个超类，但是可以实现多个接口123class Employee extends Persons implements Comparable &#123; ...&#125; 1.2 对象克隆默认克隆（Object.clone()）浅拷贝protected方法实现克隆必须实现 Cloneable 接口使用 public 重新定义 clone() 方法即使浅拷贝能满足要求，也要进行上述两条操作需要声明 CloneNotSupportedException 异常 2. 内部类1234567class TalkingClock&#123; public class TimePrinter implements ActionListenner &#123; ... &#125;&#125; 2.1 概述在类的内部直接定义，类似于C++的嵌套类可以访问作用域内的数据，包括私有的可以隐藏内部类可以便捷实现回调 2.2 普通内部类可以访问外围类对象数据（包括私有的）通过 OuterClass.this 访问外围类在外围类的作用域之外，使用 OuterClass.InnerClass 引用内部类 2.3 局部内部类简称局部类，在一个方法内进行定义1234567public void start()&#123; class TinmePrinter implements ActionListenner &#123; ... &#125;&#125;局部类可以访问局部变量（必须声明为 final）更新封闭作用域内的计数器时，使用 final 的长度为 1 的数组 2.4 匿名内部类12345new SuperType(cosntruction parameters) &#123; ... &#125;// 如果只创建局部类的一个对象的时候才使用SuperType可以是类或者接口如果用于实现接口时，不能有任何构造参数1234new InterfaceType() &#123; ... &#125; 2.5 静态内部类用于将一个类隐藏在另一个类之中，通常用于防止名称的冲突只有内部类可以声明为 static特别的，通过静态方法构造的内部类必须声明为 static]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1938,17 +1938,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Material Design 主体环境]]></title>
-    <url>%2F%2FMaterialDesign%2FMaterial%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83%2F</url>
-    <content type="text"><![CDATA[1. 概述Material Design 是一个三维环境，包括了灯光，实体，和投射阴影。所有的实体对象都具有 x, y, z 三个坐标。一个对象只能拥有一个 z 轴位置。（即不允许两个实体重叠）主光源用于制造方向投影，散射光源用于制造柔和阴影。实体厚度： 1dp阴影由重叠实体之间的高低差产生即阴影实际上就是高低差的代表 2. 3D 世界Material Design 是一个 3D 世界。这意味着所有的实体都具有 3 个维度的坐标；z 轴垂直对齐于屏幕，正轴指向屏幕外侧。一个实体厚度为 1dp，并独享一个 z 轴坐标。dp = (像素宽度 * 160) / 像素密度在网页端，z 轴是用来分层而不是用来展示视角，z 轴的坐标通过操作 y 轴来模拟实现。 3. 灯光和阴影在环境中，虚拟光源营造出了场景。主光源用于投射方向投影，而散射光源用于在各个角度投射柔和的光影。在环境中的阴影由以上这两种光源来实现。在 Android 开发中，阴影的产生是因为光源被不同 z 轴坐标上的实体遮挡。在网页开发中，通过调整 y 轴来进行仿真实现。下面是一个标高为 6 dp 的实体的例子。直射光源投射的阴影散射光源的阴影两种光源的混合投影]]></content>
-      <categories>
-        <category>MaterialDesign</category>
-      </categories>
-      <tags>
-        <tag>MaterialDesign</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Material Design 概述]]></title>
     <url>%2F%2FMaterialDesign%2FMaterial%20Design%20%E6%A6%82%E8%BF%B0%2F</url>
     <content type="text"><![CDATA[1. 介绍Material Design 是 Google 官方在 2014 I/O 上发布的设计语言。事实上随着更多的 Android 设备进入到 5.0 以上系列，Material Design 的应用也愈加广泛。 2. 设计原则 2.1 Material is the metaphor实体(Material) 是此设计语言的基本组成，与众不同的触感是实体的基础。实体的表面和边缘提供了基于真实效果的体验，熟悉的触感能让用户快速的理解和感知，实体的多样性能更好反映真实世界的设计效果，而又不会脱离客观规律。光效、表面质感、运动感这三点是解释物体运动规律、交互方式、空间关系的关键。真实的光效可以解释物体之间的交合关系、空间关系，以及单个物体的运动。 2.2 鲜明、形象、深思熟虑新的视觉语言，在基本元素的处理上，借鉴了传统的印刷设计——排版、网格、空间、比例、配色、图像使用——这些基础的平面设计规范。在这些设计基础上下功夫，不但可以愉悦用户，而且能够构建出视觉层级、视觉意义以及视觉聚焦。精心选择色彩、图像、选择合乎比例的字体、留白，力求构建出鲜明、形象的用户界面，让用户沉浸其中。Material Design 设计语言强调根据用户行为凸显核心功能，进而为用户提供操作指引。 2.3 有意义的动画效果动画效果(简称动效)可以有效地暗示、指引用户。动效的设计要根据用户行为而定，能够改变整体设计的触感。动效应当在独立的场景呈现。通过动效，让物体的变化以更连续、更平滑的方式呈现给用户，让用户能够充分知晓所发生的变化。动效应该是有意义的、合理的，动效的目的是为了吸引用户的注意力，以及维持整个系统的连续性体验。动效反馈需细腻、清爽。转场动效需高效、明晰。]]></content>
@@ -1968,6 +1957,30 @@
       </categories>
       <tags>
         <tag>Plan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Material Design 主体环境]]></title>
+    <url>%2F%2FMaterialDesign%2FMaterial%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83%2F</url>
+    <content type="text"><![CDATA[1. 概述Material Design 是一个三维环境，包括了灯光，实体，和投射阴影。所有的实体对象都具有 x, y, z 三个坐标。一个对象只能拥有一个 z 轴位置。（即不允许两个实体重叠）主光源用于制造方向投影，散射光源用于制造柔和阴影。实体厚度： 1dp阴影由重叠实体之间的高低差产生即阴影实际上就是高低差的代表 2. 3D 世界Material Design 是一个 3D 世界。这意味着所有的实体都具有 3 个维度的坐标；z 轴垂直对齐于屏幕，正轴指向屏幕外侧。一个实体厚度为 1dp，并独享一个 z 轴坐标。dp = (像素宽度 * 160) / 像素密度在网页端，z 轴是用来分层而不是用来展示视角，z 轴的坐标通过操作 y 轴来模拟实现。 3. 灯光和阴影在环境中，虚拟光源营造出了场景。主光源用于投射方向投影，而散射光源用于在各个角度投射柔和的光影。在环境中的阴影由以上这两种光源来实现。在 Android 开发中，阴影的产生是因为光源被不同 z 轴坐标上的实体遮挡。在网页开发中，通过调整 y 轴来进行仿真实现。下面是一个标高为 6 dp 的实体的例子。直射光源投射的阴影散射光源的阴影两种光源的混合投影]]></content>
+      <categories>
+        <category>MaterialDesign</category>
+      </categories>
+      <tags>
+        <tag>MaterialDesign</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Android Studio FAQ]]></title>
+    <url>%2F%2FAndroid%2FAndroidStudio%2FAndroid%20Studio%20FAQ%2F</url>
+    <content type="text"><![CDATA[1. .gitignore 文件如果你想要尽量的减少冲突，就不要直接使用 Android Studio 默认生成的 .gitignore 文件，而是要在 .gitignore 中添加一些项目，或者直接导入其内置的许多模板。这里有一些应该加入的项目:/.idea 文件夹/.idea 文件夹是 gradle 导入工程时生成的文件夹，它会被 gradle 自动生成。在添加一个新依赖的时候，build 流程会自动添加依赖项的描述到 /.idea 文件夹里，所以很容易会引起冲突。.iml 文件iml 文件会在当你导入 gradle 工程的时候被 gradle 自动生成，和上面一样，gradle 会自动添加一些描述到 .iml 文件里面，其中也包括了依赖项的描述/gradle.properties 文件这个文件经常只保存了 gradle 的代理设置，1.5 版本以后的 Anroid Studio 会在当你进行 Gradle Sync 的时候自动将 Android Studio 的代理设置导入到这个文件里面。如果组员各自使用不同的代理设置，那么就应该忽略它补充1：别忘记执行 git rm -r --cached 来删除 git 版本树中的版本.gitigonre 仅对那些没有追踪的文件起作用，如果已经被 git 系统追踪了，仅将其加入到 .gitignore 是没有作用的。补充2：当你需要忽略一个文件夹的时候，别忘记添加 / 后缀例如：当你需要忽略 .gradle 文件夹的时候，你需要输入 /.gradle/ ，这样，它才能忽略整个文件夹，否则，当你删除这个文件夹，然后被重新生成时， Android Studio 就不会识别出它是已经忽略掉的了。综上所述，这里是我的 .gitignore 例子。12345678*.iml/.idea//gradle.properties.gradle//local.properties.DS_Store/build/captures 2. 当出现 cannot resolve symbols 时首先，你需要检查依赖是否已经被正确加载了，如果依赖项没有问题那么请依照以下流程来尝试进行修复检查使用的 gradle 是否正确在 Settings 中检查 gradle 的选项，一般推荐使用 Anroid Studio 内置的 gradle。删除本地的代码库，重新克隆一份尝试点击 Gradle Sync 按钮进行 Gradle Sync在 Build 菜单选择 Clean the Project在 Build 菜单选择 Rebuild the Project需要注意的是，当你克隆完毕后，使用 Open existing Project 或者 Import from gradle 来打开工程，而不是在 recently projects 中打开。 3. 当不能识别出 Android 框架时如果你的 Android Studio 不能识别出 Gradle 或者整个 Anroid 框架的时候，例如，导航条没有 app module，在 Build 菜单只有一点点东西的时候。备份你的代码库到远端，然后重新克隆它。 当你克隆完毕的时候， rebuild project.]]></content>
+      <categories>
+        <category>Android</category>
+        <category>Android Studio</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>Android Studio</tag>
       </tags>
   </entry>
   <entry>
@@ -2150,19 +2163,6 @@
       <tags>
         <tag>复习</tag>
         <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Android Studio FAQ]]></title>
-    <url>%2F%2FAndroid%2FAndroidStudio%2FAndroid%20Studio%20FAQ%2F</url>
-    <content type="text"><![CDATA[1. .gitignore 文件如果你想要尽量的减少冲突，就不要直接使用 Android Studio 默认生成的 .gitignore 文件，而是要在 .gitignore 中添加一些项目，或者直接导入其内置的许多模板。这里有一些应该加入的项目:/.idea 文件夹/.idea 文件夹是 gradle 导入工程时生成的文件夹，它会被 gradle 自动生成。在添加一个新依赖的时候，build 流程会自动添加依赖项的描述到 /.idea 文件夹里，所以很容易会引起冲突。.iml 文件iml 文件会在当你导入 gradle 工程的时候被 gradle 自动生成，和上面一样，gradle 会自动添加一些描述到 .iml 文件里面，其中也包括了依赖项的描述/gradle.properties 文件这个文件经常只保存了 gradle 的代理设置，1.5 版本以后的 Anroid Studio 会在当你进行 Gradle Sync 的时候自动将 Android Studio 的代理设置导入到这个文件里面。如果组员各自使用不同的代理设置，那么就应该忽略它补充1：别忘记执行 git rm -r --cached 来删除 git 版本树中的版本.gitigonre 仅对那些没有追踪的文件起作用，如果已经被 git 系统追踪了，仅将其加入到 .gitignore 是没有作用的。补充2：当你需要忽略一个文件夹的时候，别忘记添加 / 后缀例如：当你需要忽略 .gradle 文件夹的时候，你需要输入 /.gradle/ ，这样，它才能忽略整个文件夹，否则，当你删除这个文件夹，然后被重新生成时， Android Studio 就不会识别出它是已经忽略掉的了。综上所述，这里是我的 .gitignore 例子。12345678*.iml/.idea//gradle.properties.gradle//local.properties.DS_Store/build/captures 2. 当出现 cannot resolve symbols 时首先，你需要检查依赖是否已经被正确加载了，如果依赖项没有问题那么请依照以下流程来尝试进行修复检查使用的 gradle 是否正确在 Settings 中检查 gradle 的选项，一般推荐使用 Anroid Studio 内置的 gradle。删除本地的代码库，重新克隆一份尝试点击 Gradle Sync 按钮进行 Gradle Sync在 Build 菜单选择 Clean the Project在 Build 菜单选择 Rebuild the Project需要注意的是，当你克隆完毕后，使用 Open existing Project 或者 Import from gradle 来打开工程，而不是在 recently projects 中打开。 3. 当不能识别出 Android 框架时如果你的 Android Studio 不能识别出 Gradle 或者整个 Anroid 框架的时候，例如，导航条没有 app module，在 Build 菜单只有一点点东西的时候。备份你的代码库到远端，然后重新克隆它。 当你克隆完毕的时候， rebuild project.]]></content>
-      <categories>
-        <category>Android</category>
-        <category>Android Studio</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
-        <tag>Android Studio</tag>
       </tags>
   </entry>
   <entry>
