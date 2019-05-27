@@ -29,6 +29,9 @@ categories:
 > ...
 > We recommend **turning off Instant Run** in the settings for earlier versions of Android Studio
 
+尝试了一下 2019-05-23 编译的 Android Studio 3.6 Canary 1 ，问题的确已经被修复了。
+
+![Build Success with AS 3.6.1](../../images/connecteddevice-no-test-found-调试过程/build-success-with-as-3-6-1.png)
 
 所以还在使用 3.4 稳定版的，直接把 Instant Run 关掉吧。
 
