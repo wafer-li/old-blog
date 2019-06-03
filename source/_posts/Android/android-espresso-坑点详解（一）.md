@@ -115,6 +115,42 @@ fun testFragment() {
 
 如果你使用了 Material 的组件，例如 `TextInputLayout`，那么它会报如下错误：
 
-```bash
-
 ```
+Caused by: android.view.InflateException: Binary XML file line
+#9: Error inflating class
+**com.google.android.material.textfield.TextInputLayout**
+```
+
+在查阅相关资料之后，发现了[一个相关的 Issue](https://issuetracker.google.com/issues/119054431)
+
+其中 Google 的人指出：
+
+> You need to tell FragmentScenario **what theme you want** if you want something **other than the default Theme.WithActionBar**, that's correct.
+
+也就是说，如果你使用了 Material 相关的主题，比如说常见的 `Theme.Appcompat` 等，那么就需要向 `FragmentScenario` 明确指出你使用的主题样式。
+
+也就是说，上面的代码需要写成：
+
+```kotlin
+fun testFragment() {
+  launchFragmentScenario<LoginFragment>(
+    themeResId = R.style.Your_App_Theme
+    ) { fragment ->
+    // 使用 fragment
+  }
+}
+```
+
+程序才能正常运行。
+
+## 3. 动画的坑
+
+Android 官方的 Espresso 测试框架不能兼容动画效果，在跑测试，特别是点击、输入等 UI 测试时，需要进入开发者模式把能显示动画的都关掉：
+
+![Turn Off Animation](../../images/android-espresso-坑点详解（一）/turn-off-animation.png)
+
+不然 Espresso 会报 `PerformException`。
+
+## 4. 测试 ImageView 的 Drawable 的坑
+
+对于 `ImageView`，我们需要测试它是否展示出了我们传入的 Drawable，
