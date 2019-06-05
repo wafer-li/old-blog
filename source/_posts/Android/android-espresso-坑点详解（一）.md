@@ -65,7 +65,7 @@ java.lang.AssertionError: Activity never becomes requested state "[RESUMED]"
 
 ### 2.1 编译依赖的坑
 
-和 ActivityScenario 一样，Google 也提供了一个 FragmentScenario 方便在测试中获取 Fragment 实例和对 Fragment 进行操作。
+和 `ActivityScenario` 一样，Google 也提供了一个 `FragmentScenario` 方便在测试中获取 `Fragment` 实例和对 `Fragment` 进行操作。
 
 但是需要引入 `fragment-testing` 库，按照 Google 的文档是下面的这条语句:
 
@@ -143,7 +143,36 @@ fun testFragment() {
 
 程序才能正常运行。
 
-## 3. 动画的坑
+
+## 3. onFragment/onActivity 和 check 的坑
+
+`ActivityScenario` 和 `FragmentScenario` 都提供了一个相应的高阶函数 `onActivity()` 和 `onFragment()`，可以在其中获取到对应的 `Activity` 和 `Fragment` 的实例，并用它做相应的操作。
+
+> 实际上 `onFragment()` 内部也是调用了 `onActivity()`
+
+但是！需要注意的是，这两个 `on` 方法都是运行在主线程的，而 Espresso 的 `check()` 函数是一个耗时操作，如果你在 `onFragment()` 中调用 `check()`，那么就会 **阻塞 UI 线程**。
+
+也就是说，需要将 `onView()` 相关的内容放到 `onFragment/onActivity` 的外面：
+
+```kotlin
+launchFragmentInContainer<LoginFragment>(
+    themeResId = R.style.Theme_Shrine
+).onFragment {
+    tintColorRes = typedValue.resourceId
+}
+
+onView(withContentDescription(R.string.shr_logo_content_description))
+    .check(matches(withDrawable(R.drawable.shr_logo, tintColorRes)))
+    .check(matches(isCompletelyDisplayed()))
+```
+
+等等，放到外面就不会阻塞 UI 线程了吗？难道不会阻塞 `test.apk` 的 UI 线程？
+
+经过反编译 `tesk.apk` 之后发现，实际上 `test.apk` **只包含测试用例相关的内容**，甚至没有一个 `Activity`，而真正的被测试的内容实际上还是在我们原来的 apk 之中，`test.apk` 实际上是通过启动被测试的 apk 的相关内容来实现仪器测试的。
+
+也就是说，如果将 `onView` 相关的代码放到外面，实际上是在 `test.apk` 里面跑的，也就不会对被测试的 apk 进行阻塞。
+
+## 4. 动画的坑
 
 Android 官方的 Espresso 测试框架不能兼容动画效果，在跑测试，特别是点击、输入等 UI 测试时，需要进入开发者模式把能显示动画的都关掉：
 
@@ -151,6 +180,76 @@ fun testFragment() {
 
 不然 Espresso 会报 `PerformException`。
 
-## 4. 测试 ImageView 的 Drawable 的坑
+## 5. 测试 ImageView 的 Drawable 的坑
 
-对于 `ImageView`，我们需要测试它是否展示出了我们传入的 Drawable，
+
+### 5.1 android:tint 的坑
+
+对于 `ImageView`，我们需要测试它是否展示出了我们传入的 Drawable，不过比较可惜的是，Espresso 自身并没有提供 `withDrawable()` 方法，幸运的是，我们可以通过 Kotlin 的扩展函数实现这个功能：
+
+```kotlin
+fun withDrawable(@DrawableRes id: Int, @ColorRes tint: Int? = null, tintMode: PorterDuff.Mode = SRC_IN) = object : TypeSafeMatcher<View>() {
+    override fun describeTo(description: Description) {
+        description.appendText("ImageView with drawable same as drawable with id $id")
+    }
+
+    override fun matchesSafely(view: View): Boolean {
+        val context = view.context
+        val expectedBitmap = context.getDrawable(id)?.toBitmap()
+
+        return view is ImageView && view.drawable.toBitmap().sameAs(expectedBitmap)
+    }
+}
+```
+
+但是，`ImageView` 支持着色 (tint) 功能，真正显示出来的 Drawable 和我们从 `Context` 里面拿到的 Drawable 很可能是不一样的，因此，我们也需要给 `expectedBitmap` 进行着色：
+
+```kotlin
+private fun Int.toColor(context: Context) = ContextCompat.getColor(context, this)
+
+private fun Drawable.tinted(@ColorInt tintColor: Int? = null, tintMode: PorterDuff.Mode = SRC_IN) =
+        apply {
+            setTintList(tintColor?.toColorStateList())
+            setTintMode(tintMode)
+        }
+
+private fun Int.toColorStateList() = ColorStateList.valueOf(this)
+
+fun withDrawable(@DrawableRes id: Int, @ColorRes tint: Int? = null, tintMode: PorterDuff.Mode = SRC_IN) = object : TypeSafeMatcher<View>() {
+    override fun describeTo(description: Description) {
+        description.appendText("ImageView with drawable same as drawable with id $id")
+        tint?.let { description.appendText(", tint color id: $tint, mode: $tintMode") }
+    }
+
+    override fun matchesSafely(view: View): Boolean {
+        val context = view.context
+        val tintColor = tint?.toColor(context)
+        val expectedBitmap = context.getDrawable(id)?.tinted(tintColor, tintMode)?.toBitmap()
+
+        return view is ImageView && view.drawable.toBitmap().sameAs(expectedBitmap)
+    }
+}
+```
+
+### 5.2 VectorDrawable 的坑
+
+从 5.0 之后， Android 支持矢量图，即 `VectorDrawable`，在 `ImageView` 中使用 `app:srcCompat` 进行显示。
+
+但是，虽然在普通的 apk 中可以正常显示矢量图，但是在运行仪器测试时仅仅这样是显示不了的，还需要在代码中使用 `setImageResource()` 才能在测试中显示出矢量图。
+
+目前来看这是 Android 测试框架的一个 Bug，如果不想改代码的话可以不进行这方面的测试，毕竟图能不能显示出来，用眼睛看看就行了。
+
+### 5.3 VectorDrawable 和 tint 的坑
+
+上面说到了 Drawable 需要 tint，如果我们的 `ImageView` 显示的是 `VectorDrawable`，那就要小心了，因为 `VectorDrawable` 可以在它自己的 xml 文件中进行着色：
+
+```xml
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:height="152dp"
+  android:tint="?attr/colorControlNormal"
+  android:viewportHeight="152"
+  android:viewportWidth="149"
+  android:width="149dp">
+```
+
+注意上面的 **`android:tint="?attr/colorControlNormal"`**，这是在 `vector` 中定义的，即使是这样，我们也需要给从 `Context` 中获取到的 Drawable 重新进行一样的着色，否则测试将不会通过。
