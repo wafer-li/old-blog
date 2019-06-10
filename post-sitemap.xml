@@ -296,22 +296,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Japanese/%E5%8A%A8%E8%AF%8D%E7%89%B9%E5%BE%81%E5%92%8C%E5%88%86%E7%B1%BB/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Japanese/%E6%8E%88%E5%8F%97%E5%85%B3%E7%B3%BB/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Japanese/%E8%87%AA%E5%8A%A8%E8%AF%8D%E5%92%8C%E4%BB%96%E5%8A%A8%E8%AF%8D/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -345,6 +329,22 @@
 
     <url>
         <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Japanese/%E6%8E%88%E5%8F%97%E5%85%B3%E7%B3%BB/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Japanese/%E5%8A%A8%E8%AF%8D%E7%89%B9%E5%BE%81%E5%92%8C%E5%88%86%E7%B1%BB/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -952,14 +952,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Japanese/%E6%97%B6%E9%97%B4%E6%95%B0%E8%AF%8D/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Japanese/%E7%89%B9%E6%AE%8A%E5%8F%91%E9%9F%B3/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1224,7 +1216,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</loc>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%9F%BA%E7%A1%80/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1232,7 +1224,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%9F%BA%E7%A1%80/</loc>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1304,7 +1296,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/PHP/PHP/</loc>
+        <loc>https://wafer.li/Plan/%E6%8F%92%E7%BA%BF%E6%9D%BF%E9%87%8D%E6%9E%84%E8%AE%A1%E5%88%92/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1312,7 +1304,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Plan/%E6%8F%92%E7%BA%BF%E6%9D%BF%E9%87%8D%E6%9E%84%E8%AE%A1%E5%88%92/</loc>
+        <loc>https://wafer.li/PHP/PHP/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1409,6 +1401,14 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Japanese/%E6%97%B6%E9%97%B4%E6%95%B0%E8%AF%8D/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
