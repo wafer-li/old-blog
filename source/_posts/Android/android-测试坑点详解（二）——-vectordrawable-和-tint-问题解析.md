@@ -241,7 +241,7 @@ public static boolean stateSetMatches(int[] stateSpec, int[] stateSet) {
 
 ![第一个 mColor 并不是默认值](../../images/android-测试坑点详解（二）——-vectordrawable-和-tint-问题解析/第一个-mcolor-并不是默认值.png)
 
-而由于 `ImageView` 会在拿到 Drawable 之后通过其状态来更新着色，因此就会导致作色的不相同。
+而由于 `ImageView` 会在拿到 Drawable 之后通过其状态来更新着色，因此就会导致着色的不相同。
 
 ## 6. 案件重现
 
