@@ -253,7 +253,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set rss to false to disable feed link.
-# Leave rss as blank to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
+# Leave rss as blank to use site's feed link, and install dependencies hexo-generator-feed by `npm install hexo-generator-feed --save`.
 # Set rss to specific value if you have burned your feed already.
 rss:
 
@@ -305,7 +305,7 @@ creative_commons:
   license: by-nc-sa
   sidebar: false
   post: true
-  language: zh-CN
+  language: deed.zh
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
@@ -556,6 +556,9 @@ codeblock:
     show_result: true
     # Style: only 'flat' is currently available, leave it blank if you prefer default theme
     style:
+
+# Use icon instead of the symblo # to indicate the tag at the bottom of the post
+tag_icon: true
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -826,6 +829,7 @@ disqusjs:
   # leave api empty if you are able to connect to Disqus API
   # otherwise you need a reverse proxy for Disqus API
   # For example:
+  # api: https://disqus.skk.moe/disqus/
   api: https://disqus.skk.moe/disqus/
   apikey: OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV # register new application from https://disqus.com/api/applications/
   shortname: wafer-li # See: https://disqus.com/admin/settings/general/
@@ -1284,11 +1288,11 @@ vendors:
   velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
   velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
 
-  # Internal version: 4.6.2
+  # Internal version: 4.7.0
   # See: https://fontawesome.com
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
   fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
 
   # Internal version: 2.10.4
