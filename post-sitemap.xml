@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Android/android-%E6%B5%8B%E8%AF%95%E5%9D%91%E7%82%B9%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+        <lastmod>2019-06-10T14:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Android/android-%E6%B5%8B%E8%AF%95%E5%9D%91%E7%82%B9%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94-vectordrawable-%E5%92%8C-tint-%E9%97%AE%E9%A2%98%E8%A7%A3%E6%9E%90/</loc>
+        <lastmod>2019-06-10T14:08:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/connecteddevice-no-test-found-%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8B/</loc>
         <lastmod>2019-05-27T15:00:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -528,7 +544,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -536,7 +552,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
+        <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -672,7 +688,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/</loc>
+        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -680,7 +696,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/</loc>
+        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1256,7 +1272,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Linux/My%20Linux%20Experiences/</loc>
+        <loc>https://wafer.li/Linux/Ubuntu%2014.04%20LTS%20Installation%20Checklist/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1264,7 +1280,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Linux/Ubuntu%2014.04%20LTS%20Installation%20Checklist/</loc>
+        <loc>https://wafer.li/Linux/My%20Linux%20Experiences/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
