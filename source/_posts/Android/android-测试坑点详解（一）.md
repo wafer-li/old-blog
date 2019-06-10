@@ -252,4 +252,24 @@ fun withDrawable(@DrawableRes id: Int, @ColorRes tint: Int? = null, tintMode: Po
   android:width="149dp">
 ```
 
-注意上面的 **`android:tint="?attr/colorControlNormal"`**，这是在 `vector` 中定义的，即使是这样，我们也需要给从 `Context` 中获取到的 Drawable 重新进行一样的着色，否则测试将不会通过。
+注意上面的 **`android:tint="?attr/colorControlNormal"`**，这是在 `vector` 中定义的。
+
+如果你给这个 `tint` 设定的是一个 `<selector>`，那么就需要注意了：
+
+如果你的 `<selector>` 的第一个 `<item>` 不是默认颜色，而是 `state_enable:false` 之类的有状态的颜色，那么就需要在测试代码中获取 `R.attr.colorControlNormal` 并对 Drawable 重新进行着色，否则即使你没有对这个 Drawable 进行过任何修改，测试依旧会报错失败。
+
+如果你的 `<selector>` 的第一个 `<item>` 是默认的不带有状态限定的颜色，那么就不需要重新着色。
+
+鉴于默认的 `colorControlNormal` 是 `<selector>` 颜色，我建议在测试 Drawable 的时候都统一进行重新着色。
+
+而如何在运行时取到 `colorControlNormal` 的真正的颜色资源 ID，可以参照以下代码：
+
+```kotlin
+val typedValue = TypedValue()
+it.activity?.theme?.resolveAttribute(R.attr.colorControlNormal, typedValue, true)
+tintColorRes = typedValue.resourceId
+```
+
+最后拿到的 `tintColorRes` 即为颜色资源 ID。
+
+关于其中具体原理，可以参照我的[下一篇文章]("")。
