@@ -272,4 +272,4 @@ tintColorRes = typedValue.resourceId
 
 最后拿到的 `tintColorRes` 即为颜色资源 ID。
 
-关于其中具体原理，可以参照我的[下一篇文章](Android/android-测试坑点详解（二）——-vectordrawable-和-tint-问题解析)。
+关于其中具体原理，可以参照我的[下一篇文章](/Android/android-测试坑点详解（二）——-vectordrawable-和-tint-问题解析/)。
