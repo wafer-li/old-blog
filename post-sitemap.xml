@@ -272,6 +272,22 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/DesignPattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/DesignPattern/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F(Observer%20Pattern)/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Japanese/%E5%8A%A8%E8%AF%8D%E5%8F%98%E5%8C%96%E5%BD%A2%E5%BC%8F/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -305,22 +321,6 @@
 
     <url>
         <loc>https://wafer.li/Japanese/%E8%A1%A5%E5%8A%A9%E5%8A%A8%E8%AF%8D/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/DesignPattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/DesignPattern/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F(Observer%20Pattern)/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -840,6 +840,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Android/RecyclerView/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%20Fragment/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -856,7 +864,23 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Android/RecyclerView/</loc>
+        <loc>https://wafer.li/CSharp/CSharp%20Method/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/CSharp/CSharp%20Object%20Initialization/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/CSharp/CSharp%20Properties%20and%20Fields/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -888,14 +912,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/DesignPattern/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/DesignPattern/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -904,23 +920,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Object%20Initialization/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Method/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Properties%20and%20Fields/</loc>
+        <loc>https://wafer.li/DesignPattern/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1248,6 +1248,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E8%B0%83%E7%94%A8%20Java%20%E4%BB%A3%E7%A0%81/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E9%9B%86%E5%90%88/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1257,14 +1265,6 @@
 
     <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E8%B0%83%E7%94%A8%20Java%20%E4%BB%A3%E7%A0%81/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
