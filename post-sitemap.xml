@@ -136,14 +136,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Reviews/Probability/1.%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
-        <lastmod>2018-01-15T15:50:46.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Reviews/Probability/2.%20%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</loc>
         <lastmod>2018-01-15T15:50:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -153,6 +145,14 @@
 
     <url>
         <loc>https://wafer.li/Reviews/Probability/%E6%A6%82%E7%8E%87%E7%9A%84%E5%8E%86%E5%8F%B2/</loc>
+        <lastmod>2018-01-15T15:50:46.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Reviews/Probability/1.%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
         <lastmod>2018-01-15T15:50:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -288,6 +288,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Japanese/%E5%8A%A8%E8%AF%8D%E5%8F%98%E5%8C%96%E5%BD%A2%E5%BC%8F/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Japanese/%E5%8A%A8%E8%AF%8D%E7%89%B9%E5%BE%81%E5%92%8C%E5%88%86%E7%B1%BB/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -337,14 +345,6 @@
 
     <url>
         <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Japanese/%E5%8A%A8%E8%AF%8D%E5%8F%98%E5%8C%96%E5%BD%A2%E5%BC%8F/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -936,6 +936,22 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/IntelliJ/Intellij%20Tips%20and%20Tricks/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Japanese/%E6%97%B6%E9%97%B4%E6%95%B0%E8%AF%8D/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1393,22 +1409,6 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/IntelliJ/Intellij%20Tips%20and%20Tricks/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
