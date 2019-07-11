@@ -93,7 +93,7 @@ $$
 $$
 \frac{n}{s} \le \frac{\ln2}{s\ln\frac{s}{s-1}}
 $$
-当 $s \rightarrow \infty $ 时，有
+当 $s \to \infty$ 时，有
 $$
 \begin{aligned}
 loadFactor & = \lim_{s \to \infty}\frac{\ln2}{s\ln\frac{s}{s-1}}
