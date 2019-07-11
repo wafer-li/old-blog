@@ -90,7 +90,6 @@ deploy:
   type: git
   repo:
       github: git@github.com:wafer-li/wafer-li.github.io.git
-      coding: git@git.coding.net:wafer-li/wafer-li.coding.me.git
   branch: master
 
 # Sitemap
