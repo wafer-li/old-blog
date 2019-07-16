@@ -1,7 +1,12 @@
 ---
-title: "Android 面经总结"
-author: "Wafer Li"
-date: "2019-07-11 12:21"
+title: Android 面经总结 2019 春招
+author: Wafer Li
+date: 2019-07-11T12:21:00.000Z
+tags:
+  - Android
+  - 面试经验
+categories:
+  - Android
 ---
 
 ## 1. iHandy
@@ -10,7 +15,7 @@ date: "2019-07-11 12:21"
 
 > 考点：Intent Service 和线程的区别
 > 答：Thread 依赖于 Activity 存在，在 Activity finish 的时候 Thread 必须终止，否则会造成内存泄漏
-> Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依旧会继续进行，指导任务完成或者系统强制将其回收
+> Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依旧会继续进行，直到任务完成或者系统强制将其回收
 
 按下 App 强制停止，发生了什么？
 
@@ -92,6 +97,10 @@ GC 过程
 
 1. 对象是否已死(GCRoot可达性)
 2. 四大引用(强 -> 软 -> 弱 -> 虚逐步递减)
+    > 强：最为普通的引用，如果对象不死，就不会被回收
+    > 软：稍弱一些的引用，如果即将 OutOfMemoryError 就会对其进行回收
+    > 弱：常用的防止内存泄漏的引用类型，只要进行垃圾回收就马上被回收
+    > 虚：最弱的引用，无法取到目标对象，用于跟踪对象垃圾回收的状态，通过查看引用队列是否有虚引用判断其是否即将被回收
 3. 是否有必要
     > GCRoot 不可达 -> 第一次标记进入 F-Queue -> F-Queue 第二次标记 -> 回收
 4. 回收方法区(废弃常量、无用静态类)
