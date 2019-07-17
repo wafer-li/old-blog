@@ -9,6 +9,8 @@ categories:
   - Android
 ---
 
+<!-- more -->
+
 ## 1. iHandy
 
 为什么 Android 要设计 Intent Service？直接使用线程不就行了？
@@ -31,7 +33,7 @@ categories:
 
 只遍历一次的算法
 
-![荷兰国旗算法示意图](../images/android-面经总结/荷兰国旗算法示意图.png)
+![荷兰国旗算法示意图](../../images/android-面经总结/荷兰国旗算法示意图.png)
 
 `curr` 从前往后遍历：
 
