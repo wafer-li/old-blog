@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
-  <updated>2019-07-11T11:58:23.000Z</updated>
+  <updated>2019-07-30T10:14:58.000Z</updated>
   <id>https://wafer.li/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android 高德地图轨迹回放</title>
+    <link href="https://wafer.li//android-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E8%BD%A8%E8%BF%B9%E5%9B%9E%E6%94%BE/"/>
+    <id>https://wafer.li//android-高德地图轨迹回放/</id>
+    <published>2019-07-30T01:24:00.000Z</published>
+    <updated>2019-07-30T10:14:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？</p><p>结果显然是我太拿衣服了</p><a id="more"></a><h2 id="0-太长不看"><a class="markdownIt-Anchor" href="#0-太长不看"></a> 0. 太长不看</h2><p>全篇都采用高德 API 实现，基于 <span class="exturl" data-url="aHR0cHM6Ly9iaW50cmF5LmNvbS9iaW50cmF5L2pjZW50ZXIvY29tLmFtYXAuYXBpJTNBM2RtYXAvNi45LjI=" title="https://bintray.com/bintray/jcenter/com.amap.api%3A3dmap/6.9.2"><code>3dmap 6.9.2</code><i class="fa fa-external-link"></i></span> 包</p><p>使用 <code>MovingPointOverlay</code> 实现点的平滑移动</p><p>使用 <code>AMap.setCustomRenderer</code> 获取每帧回调，绘制走过的线路</p><h2 id="1-需求分析"><a class="markdownIt-Anchor" href="#1-需求分析"></a> 1. 需求分析</h2><p>轨迹回放的功能在高德的 <span class="exturl" data-url="aHR0cHM6Ly9sYnMuYW1hcC5jb20vYXBpL2phdmFzY3JpcHQtYXBpL2V4YW1wbGUvbWFya2VyL3JlcGxheWluZy1oaXN0b3JpY2FsLXJ1bm5pbmctZGF0YS8/c3VnX2luZGV4PTE=" title="https://lbs.amap.com/api/javascript-api/example/marker/replaying-historical-running-data/?sug_index=1">JS Demo<i class="fa fa-external-link"></i></span> 上有，具体来说就是点按照既定路线去移动，同时绘制其走过的路线。</p><p>那么我们可以将功能拆解为移动点和绘制线路</p><p>本来我想着这种常见的功能在网上随便搜搜就能找到的，然而显然是我太 Naive 了。</p><p>搜到的唯二相关的内容，其中一个排版很差，而且估计是公司内部代码，没有给出 demo，第二个则是硬怼一个自定义 View，但是地图肯定是要移动放大之类的，自定义 View 也需要做手势控制，实现难度相对较大。</p><p>所以最好还是在高德内部框架上实现这个需求。</p><h2 id="2-api-调研"><a class="markdownIt-Anchor" href="#2-api-调研"></a> 2. API 调研</h2><p>经过一番查找之后，我找到了 <code>SmoothMoveMarker</code> 可以实现点的平滑移动功能，然而：</p><p><img alt="SmoothMoveMarker Deprecated" data-src="../images/android-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E8%BD%A8%E8%BF%B9%E5%9B%9E%E6%94%BE/smoothmovemarker-deprecated.png"></p><p>这里不得不吐槽一下高德的混淆策略，它不仅混淆了代码，同时还把文档混淆了，明明各部分文档都是公开的，将其保留在源代码里面也不会增大多少空间，然而这样全部删掉，导致我不得不切一个网页去看它的 API doc，开发效率急剧下降</p><p>在查看了高德地图的 API doc 之后，发现这个类是被 <code>MovingPointOverlay</code> 替代了，也就是说我们需要采用 <code>MovingPointOverlay</code> 实现点的平滑移动</p><h2 id="3-获取点位置回调"><a class="markdownIt-Anchor" href="#3-获取点位置回调"></a> 3. 获取点位置回调</h2><p>在 <code>MovingPointOverlay</code> 的 <a href>API doc</a> 中，有一个方法叫 <code>setMovingListener</code>，当时的我想当然的认为这个就是点移动时的回调设置方法，因此把画线的逻辑放到了里面去。</p><p>原先我将动画的总时间设置为 10 秒，此时点跑得比较快，乍一看没什么问题；<br>但是当我将动画的时间拉长，点跑得很慢的时候，问题就出现了—— <code>setMovingListener</code> <strong>并不是每帧回调！</strong></p><p>也就是说，只有当 Marker 跑到下一个路径点的时候，才能绘制上经过的路线！</p><p>这显然会导致线路绘制不平滑，达不到需求的要求。</p><p>那怎么办呢？这时候我就进入了一段瞎糊弄的时间，尝试着通过自行实现动画效果来完成需求，然而无论是经纬度计算、屏幕像素计算都存在误差，不太可能在短时间能将需求实现。</p><p>正当我想着『万策尽きた！』，无聊浏览高德地图 API doc 的时候，突然发现 <code>AMap</code> 有个 <code>runOnDrawFrame()</code> 方法，是用来触发高德地图的重绘的；</p><p>既然有这个方法，那就一定有绘制的回调方法！功夫不负有心人，在往下看了几行之后，我终于发现了这个重要的方法 <code>setCustomRenderer()</code>，而且两者意外的离的很近：</p><p><img alt="runOnDrawFrame And setCustomRenderer" data-src="../images/android-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E8%BD%A8%E8%BF%B9%E5%9B%9E%E6%94%BE/runondrawframe-and-setcustomrenderer.png"></p><p>这个方法接受一个 <code>CustomRenderer</code> 参数，那么什么是 <code>CustomRenderer</code> 呢？</p><p><img alt="CustomRenderer" data-src="../images/android-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E8%BD%A8%E8%BF%B9%E5%9B%9E%E6%94%BE/customrenderer.png"></p><p>从这里看，它有一个 <code>onDrawFrame()</code>，正是绘制每一帧的回调接口，那么我们只要将画线逻辑放到里面去就可以了。</p><p>当然，我们也不能抛弃 <code>setMovingListener</code>，因为我们需要它来判断是否已经到达终点。</p><h2 id="4-实现逻辑"><a class="markdownIt-Anchor" href="#4-实现逻辑"></a> 4. 实现逻辑</h2><ol><li>使用 <code>MovingPointOverlay</code> 实现点的平滑移动</li><li>使用 <code>AMap.setCustomRenderer</code> 获取每帧回调，绘制经过的线路</li><li>使用 <code>MovingPointOverlay.setMovingListener</code> 判断是否已经到达终点，如果到达终点，则清除经过线路的点</li></ol><h2 id="5-坑点"><a class="markdownIt-Anchor" href="#5-坑点"></a> 5. 坑点</h2><p>无论是 <code>setCustomRenderer</code> 还是 <code>setMovingListener</code>，它们的回调都是在 OPEN GL 线程回调，而<strong>不是在主线程回调</strong></p><p>因此，如果需要在动画完毕之后更改 UI，就必须使用 <code>runOnUiThread</code>，否则无论你怎么在里面更改 UI，都不会有任何效果</p><h2 id="6-demo"><a class="markdownIt-Anchor" href="#6-demo"></a> 6. Demo</h2><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dhZmVyLWxpL0FNYXBSZXBsYXlEZW1v" title="https://github.com/wafer-li/AMapReplayDemo">https://github.com/wafer-li/AMapReplayDemo<i class="fa fa-external-link"></i></span></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？&lt;/p&gt;&lt;p&gt;结果显然是我太拿衣服了&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    
+      <category term="高德地图" scheme="https://wafer.li/tags/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>HashMap 的 loadFactor 为什么是 0.75</title>
@@ -698,28 +722,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-简介&quot;&gt;&lt;/a&gt; 1. 简介&lt;/h2&gt;&lt;p&gt;Scala 既可以使用交互式命令行来编程，也可以将其写成一个独立的程序；&lt;/p&gt;&lt;p&gt;其中，关于构建独立程序的写法一共有两种。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala 简介</title>
-    <link href="https://wafer.li//Scala/Scala%20%E7%AE%80%E4%BB%8B/"/>
-    <id>https://wafer.li//Scala/Scala 简介/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1-概述"><a class="markdownIt-Anchor" href="#1-概述"></a> 1. 概述</h2><p>Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。<br>其主要特点就是它是一门函数式语言。</p><p>语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。</p><p>同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。</p><a id="more"></a><h2 id="2-什么是函数式语言"><a class="markdownIt-Anchor" href="#2-什么是函数式语言"></a> 2. 什么是函数式语言</h2><p>函数式语言的两大理念：</p><ol><li>函数也是值，可以作为参数，也可以保存在变量中，与其他类型同级</li><li>函数只应该接受参数输入，并输出返回值，不应该具有其他副作用</li></ol><h2 id="3-没有分号"><a class="markdownIt-Anchor" href="#3-没有分号"></a> 3. 没有分号</h2><p>这里需要说的一个问题是，虽然 Scala 没有分号；</p><p>但是当你写长表达式的时候可能会有问题：</p><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">someLongExpression</span><br><span class="line">+ someOtherExpression</span><br></pre></td></tr></table></figure><p>上面的语句会被隐式加上分号：</p><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">someLongExpression;</span><br><span class="line">+ someOtherExpression</span><br></pre></td></tr></table></figure><p>这样显然是不符合我们的实际意图的，解决办法有两个：</p><ol><li><p>使用括号</p><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(someLongExpression</span><br><span class="line">    + someOtherLongExpression)</span><br></pre></td></tr></table></figure></li><li><p>将操作符放在行尾</p><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">someLongExpression +</span><br><span class="line">someOtherExpression</span><br></pre></td></tr></table></figure></li></ol><p>分号推断的规则为，除非以下情况，否则行尾将会被认为是一个分号：</p><ol><li><p>行尾由一个不能合法作为行尾的字符结束，如句点(<code>.</code>) 和中缀操作符 (<code>+</code>、<code>-</code>)</p></li><li><p>下一行开始于不能作为语句开始的字</p></li><li><p>行结束于括号(<code>()</code>) 和 方括号 (<code>[]</code>) 之中</p><blockquote><p>由于括号中不能容纳多个语句，所以，它之中的行不可能是一个逻辑行</p></blockquote></li></ol><h2 id="4-面向对象"><a class="markdownIt-Anchor" href="#4-面向对象"></a> 4. 面向对象</h2><p>Scala 中所有东西都是 <strong>对象</strong>；</p><p>操作符实际上是对象的 <strong>方法</strong></p><h2 id="5-变量定义"><a class="markdownIt-Anchor" href="#5-变量定义"></a> 5. 变量定义</h2><p>语法上和 Kotlin 无多大差别</p><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x: <span class="type">Int</span> = <span class="number">0</span></span><br></pre></td></tr></table></figure><h2 id="6-函数定义"><a class="markdownIt-Anchor" href="#6-函数定义"></a> 6. 函数定义</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">max</span></span>(x: <span class="type">Int</span>, y: <span class="type">Int</span>): <span class="type">Int</span> = &#123;</span><br><span class="line">    <span class="keyword">if</span> (x &gt; y) x</span><br><span class="line">    <span class="keyword">else</span> y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>有趣的是，Scala 中，函数定义需要一个<strong>等号</strong>；</p><p>这意味着，函数实际上是一个 <strong>变量</strong>，而函数体实际上是一个 <strong>返回值的表达式</strong>。</p><p>同时，函数体 <strong>没有 <code>return</code></strong>，这主要是因为函数体是一个 <strong>表达式</strong>，而一个表达式理应返回其计算得到的值。</p><p>这正好体现了函数式编程的思想，函数是一个值，函数体是一个表达式。</p><h2 id="7-使用函数式风格"><a class="markdownIt-Anchor" href="#7-使用函数式风格"></a> 7. 使用函数式风格</h2><p>Scala 程序员在解决问题时，应该优先考虑函数式风格而非指令式风格。</p><p>简单的判断标准有：</p><ol><li><p>尽量使用 <code>val</code> 解决问题</p><blockquote><p>使用 <code>var</code> 会让你的 编码层级变低，而函数式编程的一个重要作用就是使你的视野聚焦在高层级中。</p></blockquote></li><li><p>尽量避免定义返回 <code>Unit</code> 的函数</p><blockquote><p>函数式编程一个理念就是函数体是表达式，而返回 <code>Unit</code> (Java 中的 <code>void</code>) 的函数一般来说都具有 <strong>副作用</strong> (即函数做了不是生成返回值的工作)</p></blockquote></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;Scala 是高层级的，函数式，基于 JVM，完美调用 Java 的编程语言。&lt;br&gt;其主要特点就是它是一门函数式语言。&lt;/p&gt;&lt;p&gt;语法上，Kotlin 借鉴了其大部分的语法，所以体现出和 Kotlin 非常相似的特征。&lt;/p&gt;&lt;p&gt;同时，由于基于 JVM，所以类型系统和 Java 没有多大区别。&lt;/p&gt;
     
     </summary>
     
