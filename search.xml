@@ -1638,9 +1638,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Material Drawer Tutorial]]></title>
-    <url>%2F%2FAndroid%2FMaterailDrawer%2FMaterial%20Drawer%20Tutorial%2F</url>
-    <content type="text"><![CDATA[添加依赖按照官方网站上的依赖添加即可。不过需要注意的是，必须等到 MavenCentral 同步了最新版本才能使用最新版本，否则请退回前一个版本。不然的话就要自己管理 Material Drawer 的依赖了。 建立 Drawer 最简单的版本1new DrawerBuilder().withActivity(this).build(); 带有汉堡包的版本12345Drawer drawer = new DrawerBuilder() .withActivity(this) .withToolbar(toolbar) .withActionbarToggle(true) .build(); 汉堡包会动的版本123456Drawer drawer = new DrawerBuilder() .withActivity(this) .withToolbar(toolbar) .withActionbarToggle(true) .withActionBarDrawerToggleAnimated(true) .build(); 带有 Header 的版本12345Drawer drawer = new DrawerBuilder() .withActivity(this) .withAccountHeader(accountHeader) // ... .build() 调整宽度可以通过 DrawerBuilder 中的 withDrawerWidth*() 来调整宽度。其中 * 可以是 dp 也可以是 px1234567Drawer drawer = new DrawerBuilder() .withActivity(this) .withToolbar(toolbar) .withActionbarToggle(true) .withActionBarDrawerToggleAnimated(true) .withDrawerWidthDp(100) .build(); 建立 AccountHeader上面演示了如何建立带有 Header 的版本，但是，其中的 accountHeader 也是要我们自己建立和配置的。 最简单的版本1234AccontHeader accountHeader = new AccountHeaderBuilder() .withActivity(this) .withHeaderBackground(R.drawable.header) .build() 单个账户时关闭下拉菜单1builder.withSelectionListEnabledForSingleProfile(false)]]></content>
+    <title><![CDATA[Material Drawer Tint Icon]]></title>
+    <url>%2F%2FAndroid%2FMaterailDrawer%2FMaterial%20Drawer%20Tint%20Icon%2F</url>
+    <content type="text"><![CDATA[Material Drawer 是 GitHub 上有名的 Android Navigation Drawer 的实现库，目前有 6000 左右个星，充分说明它的流行和稳定性。这里来说说它的 Account Header 的 Profile Icon 的染色问题。目前，对于透明背景的图片，Profile Item 不会对背景进行染色；这样就可能导致在有背景图的时候，对于这种 Icon 有看不清的问题。作者对此表示不想修复，于是提供了一个 workaround 进行图片的染色。以下的 Kotlin 就是对一个默认的用户图标进行染色，然后返回染色后的 Drawable 的代码1234567891011fun getTintDefaultProfileIcon(activity: Activity): LayerDrawable &#123; val res = activity.resources val background = ShapeDrawable() background.paint.color = res.getColor(R.color.default_icon_bg, activity.theme) val icon = res.getDrawable(R.drawable.default_user_icon, activity.theme) return LayerDrawable(arrayOf(background, icon))&#125;]]></content>
       <categories>
         <category>Android</category>
         <category>Materail Drawer</category>
@@ -1651,9 +1651,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Material Drawer Tint Icon]]></title>
-    <url>%2F%2FAndroid%2FMaterailDrawer%2FMaterial%20Drawer%20Tint%20Icon%2F</url>
-    <content type="text"><![CDATA[Material Drawer 是 GitHub 上有名的 Android Navigation Drawer 的实现库，目前有 6000 左右个星，充分说明它的流行和稳定性。这里来说说它的 Account Header 的 Profile Icon 的染色问题。目前，对于透明背景的图片，Profile Item 不会对背景进行染色；这样就可能导致在有背景图的时候，对于这种 Icon 有看不清的问题。作者对此表示不想修复，于是提供了一个 workaround 进行图片的染色。以下的 Kotlin 就是对一个默认的用户图标进行染色，然后返回染色后的 Drawable 的代码1234567891011fun getTintDefaultProfileIcon(activity: Activity): LayerDrawable &#123; val res = activity.resources val background = ShapeDrawable() background.paint.color = res.getColor(R.color.default_icon_bg, activity.theme) val icon = res.getDrawable(R.drawable.default_user_icon, activity.theme) return LayerDrawable(arrayOf(background, icon))&#125;]]></content>
+    <title><![CDATA[Material Drawer Tutorial]]></title>
+    <url>%2F%2FAndroid%2FMaterailDrawer%2FMaterial%20Drawer%20Tutorial%2F</url>
+    <content type="text"><![CDATA[添加依赖按照官方网站上的依赖添加即可。不过需要注意的是，必须等到 MavenCentral 同步了最新版本才能使用最新版本，否则请退回前一个版本。不然的话就要自己管理 Material Drawer 的依赖了。 建立 Drawer 最简单的版本1new DrawerBuilder().withActivity(this).build(); 带有汉堡包的版本12345Drawer drawer = new DrawerBuilder() .withActivity(this) .withToolbar(toolbar) .withActionbarToggle(true) .build(); 汉堡包会动的版本123456Drawer drawer = new DrawerBuilder() .withActivity(this) .withToolbar(toolbar) .withActionbarToggle(true) .withActionBarDrawerToggleAnimated(true) .build(); 带有 Header 的版本12345Drawer drawer = new DrawerBuilder() .withActivity(this) .withAccountHeader(accountHeader) // ... .build() 调整宽度可以通过 DrawerBuilder 中的 withDrawerWidth*() 来调整宽度。其中 * 可以是 dp 也可以是 px1234567Drawer drawer = new DrawerBuilder() .withActivity(this) .withToolbar(toolbar) .withActionbarToggle(true) .withActionBarDrawerToggleAnimated(true) .withDrawerWidthDp(100) .build(); 建立 AccountHeader上面演示了如何建立带有 Header 的版本，但是，其中的 accountHeader 也是要我们自己建立和配置的。 最简单的版本1234AccontHeader accountHeader = new AccountHeaderBuilder() .withActivity(this) .withHeaderBackground(R.drawable.header) .build() 单个账户时关闭下拉菜单1builder.withSelectionListEnabledForSingleProfile(false)]]></content>
       <categories>
         <category>Android</category>
         <category>Materail Drawer</category>

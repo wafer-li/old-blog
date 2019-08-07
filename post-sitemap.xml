@@ -696,6 +696,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Android/MaterailDrawer/Material%20Drawer%20Tint%20Icon/</loc>
+        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/MaterailDrawer/Material%20Drawer%20Tutorial/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -713,14 +721,6 @@
 
     <url>
         <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/</loc>
-        <lastmod>2017-04-17T08:26:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Android/MaterailDrawer/Material%20Drawer%20Tint%20Icon/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
