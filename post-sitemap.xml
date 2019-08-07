@@ -200,7 +200,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/14.%20%E6%97%A0%E5%90%91%E5%9B%BE/</loc>
+        <loc>https://wafer.li/Algorithm/2-3%20%E6%A0%91/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -208,7 +208,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/2-3%20%E6%A0%91/</loc>
+        <loc>https://wafer.li/Algorithm/14.%20%E6%97%A0%E5%90%91%E5%9B%BE/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -288,14 +288,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CSharp/dot%20NET%20%E5%B9%B3%E5%8F%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/DHT/Consistent%20Hash/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -321,6 +313,14 @@
 
     <url>
         <loc>https://wafer.li/DesignPattern/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F(Observer%20Pattern)/</loc>
+        <lastmod>2018-01-13T07:14:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/CSharp/dot%20NET%20%E5%B9%B3%E5%8F%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
