@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://wafer.li/MediaDev/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-        <lastmod>2019-08-07T18:52:09.000Z</lastmod>
+        <lastmod>2019-08-08T10:37:03.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -880,6 +880,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Android/RecyclerView/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%20Fragment/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -889,22 +897,6 @@
 
     <url>
         <loc>https://wafer.li/CSharp/CSharp%20Const%20and%20Readonly%20Field/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Android/RecyclerView/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CSharp/CSharp%20Visibility%20Modifiers/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -936,6 +928,30 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/CSharp/CSharp%20Visibility%20Modifiers/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/CleanCode/Java%20Coding%20Standards/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/CleanCode/VisualNav%20%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/DesignPattern/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -953,22 +969,6 @@
 
     <url>
         <loc>https://wafer.li/HTML/Head%20%E6%A0%87%E7%AD%BE%E5%86%85%E5%AE%B9/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CleanCode/Java%20Coding%20Standards/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CleanCode/VisualNav%20%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1584,7 +1584,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/DesignPattern/README/</loc>
+        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1592,7 +1592,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
+        <loc>https://wafer.li/DesignPattern/README/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
