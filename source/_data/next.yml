@@ -1181,7 +1181,7 @@ vendors:
   # Internal version: 3.1.0
   # Example:
   # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
-  anime:
+  anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
 
   # Internal version: 4.7.0
   # Example:
