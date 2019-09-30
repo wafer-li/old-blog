@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
-  <updated>2019-09-11T10:25:33.000Z</updated>
+  <updated>2019-09-30T18:36:11.000Z</updated>
   <id>https://wafer.li/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS 如何 B 站直播</title>
+    <link href="https://wafer.li//Live/macos-%E5%A6%82%E4%BD%95-b-%E7%AB%99%E7%9B%B4%E6%92%AD/"/>
+    <id>https://wafer.li//Live/macos-如何-b-站直播/</id>
+    <published>2019-09-30T16:29:00.000Z</published>
+    <updated>2019-09-30T18:36:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；</p><p>不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。</p><a id="more"></a><h2 id="1-前期准备"><a class="markdownIt-Anchor" href="#1-前期准备"></a> 1. 前期准备</h2><ol><li>实名认证（手持身份证）的 B 站账户</li><li>OBS（录屏）</li><li>Soundflower（录制桌面声音）</li><li>弹幕库（弹幕管理）</li></ol><h2 id="2-安装"><a class="markdownIt-Anchor" href="#2-安装"></a> 2. 安装</h2><p>OBS 和 Soundflower 都可以使用 <code>brew</code> 安装</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew cask install obs</span><br><span class="line">brew cask install soundflower</span><br></pre></td></tr></table></figure><p>弹幕库在其<span class="exturl" data-url="aHR0cDovL2JpbGliaWxpLmRhbm1ha3UubGl2ZQ==" title="http://bilibili.danmaku.live">官网<i class="fa fa-external-link"></i></span>安装</p><h2 id="3-配置来源捕获"><a class="markdownIt-Anchor" href="#3-配置来源捕获"></a> 3. 配置来源捕获</h2><p>现在 OBS 安装之后已经有一个配置向导了，跟着配置向导走就可以配置完成。</p><p>随后在来源中建立一个捕获，如图所示：</p><p><img alt="建立捕获" data-src="../../images/%E5%BB%BA%E7%AB%8B%E6%8D%95%E8%8E%B7.png"></p><p>这里建立的是显示捕获，也就是将一个显示屏的图像全部捕获</p><p>在上方的区域会显示当前捕获的内容。</p><p>除了显示捕获之外，还可以创建窗口捕获，同时上方区域可以调整各个来源图像的大小，可以捕获多个来源并将它们统一显示到上方区域。</p><p>上方的显示区域就是你最终直播出去的图像了。</p><h2 id="4-捕捉桌面音频"><a class="markdownIt-Anchor" href="#4-捕捉桌面音频"></a> 4. 捕捉桌面音频</h2><p>通常来说，我们直播的同时也希望让观众能听到我们电脑里面播放的音乐，有时候还需要设置自动点歌功能；</p><p>但是，OBS 在 macOS 下不能捕捉桌面音频，需要一些其他的软件进行这个工作。</p><p>macOS 下的桌面音频捕捉工具有很多，但是大部分不是收费的就是配置比较复杂，经过一番对比之后，决定使用 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21hdHRpbmdhbGxzL1NvdW5kZmxvd2Vy" title="https://github.com/mattingalls/Soundflower">Soundflower<i class="fa fa-external-link"></i></span> 进行音频捕捉。</p><p>安装它之后，会多出两个声音输出设备，如图所示：</p><p><img alt="Soundflower 音频输出设备" data-src="../../images/soundflower-%E9%9F%B3%E9%A2%91%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87.png"></p><p>同时，OBS 中的音频配置选项中的桌面音频也终于可以配置了。</p><p>将 mac 的声音输出设备如上图选择，然后在 OBS 的桌面音频中选择相同的输出，即可将桌面音频进行推流。</p><p>到这里，我们会发现 mac 很意料之中的没有了声音，听众能听到声音，但是我们听不到也不行啊；</p><p>不过，好在 OBS 的音频具有一个 <strong>监听并输出</strong> 的选项，在音频的高级属性中可以设置；</p><p>我们将监听设备设置为能让我们听到声音的输出，如内置的音频输出或者喇叭，然后将对应的音频轨道设置为监听并输出；</p><p>这样，我们和观众就都能听到声音了。</p><h2 id="5-开始推流"><a class="markdownIt-Anchor" href="#5-开始推流"></a> 5. 开始推流</h2><p>在音频和视频准备完毕，本地测试没有问题之后，我们就可以开始直播了。</p><p>首先，打开弹幕库的快速开播，点击开始直播获得 RTMP 地址和密码；</p><p>然后在 OBS 的推流选项中选择『自定义推流』，并填入获取到的 RTMP 地址和密码；</p><p>最后，在 OBS 主界面的右下角点击『开始推流』，你的直播就开始了！</p><h2 id="6-题外话"><a class="markdownIt-Anchor" href="#6-题外话"></a> 6. 题外话</h2><p>为了给我们的直播间能有点流量，我们最好给直播间设置一个封面。</p><p>不过封面这个东西和 B 站的政策有关，这里来介绍一下目前 (2019.10.01) 的 B 站的封面政策。</p><p>B 站的封面分为正方形和长方形两种，其中：</p><ol><li>正方形为『颜值封面』，也就是这个封面必须是『<strong>真人的脸</strong>』，注意不要把不是真人脸的图传到这里面去</li><li>长方形为普通封面，也就是可以上传普通的图片，但是也不是什么图都行，例如大面积留白，全部都是字的封面就不行</li></ol><p>B 站封面是审核制的，通不通过实际上也有一定的运气成分。</p><p>最后祝大家直播愉快(?)</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；&lt;/p&gt;&lt;p&gt;不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Live" scheme="https://wafer.li/categories/Live/"/>
+    
+    
+      <category term="Live" scheme="https://wafer.li/tags/Live/"/>
+    
+      <category term="BiliBili" scheme="https://wafer.li/tags/BiliBili/"/>
+    
+  </entry>
   
   <entry>
     <title>音视频开发基础概念</title>
@@ -738,29 +763,6 @@
     
     
       <category term="Scala" scheme="https://wafer.li/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 集合框架 Collection</title>
-    <link href="https://wafer.li//Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%20Collection/"/>
-    <id>https://wafer.li//Java/Java 集合框架 Collection/</id>
-    <published>2017-04-02T15:00:00.000Z</published>
-    <updated>2017-04-14T11:56:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1-概述"><a class="markdownIt-Anchor" href="#1-概述"></a> 1. 概述</h2><p><code>Collection</code> 接口是 Java 集合框架最基本的接口；</p><p>它提供了基本的元素操作方法和遍历使用的迭代器；</p><p>同时，它还提供了关于 <code>Collection</code> 的批量操作方法。</p><a id="more"></a><h2 id="2-基本操作"><a class="markdownIt-Anchor" href="#2-基本操作"></a> 2. 基本操作</h2><p>基本的元素操作包括 <code>add()</code> 和 <code>remove()</code>，同时也包括 <code>size()</code> 和 <code>isEmpty()</code> 等一系列的集合基本操作。</p><p>其中 <code>add()</code> 和 <code>remove()</code> 的返回值是 <code>boolean</code>；</p><p>这个布尔值用于表示增加和删除是否成功。（是否对集合本身进行了操作）</p><h2 id="3-遍历操作"><a class="markdownIt-Anchor" href="#3-遍历操作"></a> 3. 遍历操作</h2><p>Java 的 Collection 遍历操作有三种：</p><ol><li>使用迭代器 <code>Iterator</code></li><li>使用 <em>for each</em> 循环</li><li>使用 <code>Stream</code> 的聚合操作(Java 8)</li></ol><p>实际上，使用 <em>for each</em> 循环和使用迭代器是一样的；</p><p><em>for each</em> 可以应用于任何实现了 <code>Iterable</code> 接口的类：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> ineterface Iterable&lt;E&gt; &#123;</span><br><span class="line">    <span class="function">Iterator&lt;E&gt; <span class="title">iterator</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><em>for each</em> 实际上就是应用它返回的迭代器进行遍历操作。</p><p>关于 <code>Stream</code> 用单独的一篇文章介绍，这里主要解析迭代器的工作。</p><h2 id="4-迭代器的遍历"><a class="markdownIt-Anchor" href="#4-迭代器的遍历"></a> 4. 迭代器的遍历</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line">    <span class="function">E <span class="title">next</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>其中，<code>next()</code> 方法返回下一个元素，<code>hasNext()</code> 方法用于检测是否到达了集合末尾。</p><p>当到达了集合末尾时，调用 <code>next()</code> 会抛出 <code>NoSuchElementException</code>，所以，正确的写法是在循环时使用 <code>hasNext()</code> 作为判断条件：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(iter.hasNext()) &#123;</span><br><span class="line">    element = iter.next();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>其中，<code>Collection</code> 接口已经扩展(extends)了 <code>Iterable</code> 接口，所以自带 <code>iterator()</code> 方法。</p><p>元素被访问的顺序取决于集合类的具体实现。</p><p>比较特别的是，Java 中的迭代器和 C++ 中的迭代器不一样；</p><p>C++ 中的迭代器是基于索引的，可以不执行查找操作就将迭代器进行移动；</p><p>相反，Java 中的迭代器更类似于 <code>read()</code> 方法，迭代器的查找操作和移动操作紧密相连；</p><p>Java 中的迭代器更类似于是 <strong>位于两个元素之间</strong>，调用 <code>next()</code> 将越过一个元素，并返回这个元素的引用。</p><h2 id="5-迭代器的删除"><a class="markdownIt-Anchor" href="#5-迭代器的删除"></a> 5. 迭代器的删除</h2><p>比较特别的是，<code>Iterator</code> 接口还提供了一个 <code>remove()</code> 方法；</p><p>它会删除 <strong>上次</strong> 调用 <code>next()</code> 的元素；</p><p>也就是说，如果你想删除某个位置上的元素，你的迭代器就必须 <strong>先越过</strong> 这个元素。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Iterator&lt;String&gt; it = c.iterator();</span><br><span class="line"></span><br><span class="line">iter.next();    <span class="comment">//skip over the first</span></span><br><span class="line">iter.remove();  <span class="comment">// delete the first</span></span><br></pre></td></tr></table></figure><p>需要注意的是，<code>next()</code> 和 <code>remove()</code> 是具有依赖性的；</p><p><strong>不能连续调用两次 <code>remove()</code></strong>，否则，将会抛出 <code>IllegalStateException</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iter.remove();</span><br><span class="line">iter.remove();</span><br></pre></td></tr></table></figure><p>必须先调用 <code>next()</code> 来越过将要删除的元素。</p><h2 id="6-批量操作"><a class="markdownIt-Anchor" href="#6-批量操作"></a> 6. 批量操作</h2><p>Collection 同时提供了一套批量操作方法，用于对另一个集合进行操作，主要的方法有：</p><ol><li><p><code>containsAll()</code></p><blockquote><p>判断另一集合是否为本集合的子集<br>（本集合是否完全包含了另一集合）</p></blockquote></li><li><p><code>addAll()</code></p><blockquote><p>将另一集合的所有元素加入到本集合中</p></blockquote></li><li><p><code>removeAll()</code></p><blockquote><p>将本集合中含有的 另一集合中的所有元素 从本集合中删除</p></blockquote></li><li><p><code>retainAll()</code></p><blockquote><p>将本集合中 <strong>不属于</strong> 另一集合的所有元素从本集合中删除<br>即，将本集合改造成两个集合的 <strong>交集</strong></p></blockquote></li><li><p><code>clear()</code></p><blockquote><p>删除本集合中的所有元素</p></blockquote></li></ol><h2 id="7-和数组的转换操作"><a class="markdownIt-Anchor" href="#7-和数组的转换操作"></a> 7. 和数组的转换操作</h2><p><code>Collection</code> 存在一个 <code>toArray()</code> 方法；</p><p>但是，比较坑爹的是，这个方法仅仅只返回一个 <code>Object[]</code>；</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object[] a = c.toArray();</span><br></pre></td></tr></table></figure><p>这显然没有什么卵用，因为 <code>Object[]</code> 是 <strong>新构建的</strong>，它不能强制转换成更为具体的数组。</p><p>所以，我们需要采用另一个 <code>toArray(T[] a)</code> 方法；</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 写法一</span></span><br><span class="line">String[] stringArray = c.toArray(<span class="keyword">new</span> String[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure><p>实际上，我们可以直接向 <code>toArray()</code> 提供一个足够大的数组：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 写法二</span></span><br><span class="line">String[] stringArray = c.toArray(<span class="keyword">new</span> String[c.size()]);</span><br></pre></td></tr></table></figure><p>那么这两种写法有什么区别呢？</p><p>根据 JDK 文档，当数组参数的空间不够大时，它会自动重新构建一个足够大的数组进行元素转存；</p><p>当数组空间足够大时，<code>toArray()</code> 就不自己构建数组了，而是直接将元素储存到数组中。</p><p>这样看来，写法一好像没有什么必要，毕竟都要创建数组，不如直接创建了事，何必要多出一个无用的数组呢？</p><p>实际上，写法二具有线程安全问题；</p><p>即使你使用线程安全的 <code>Collection</code>，但是当有元素在 <code>size()</code> 和 <code>toArray()</code> 之间被删除了，那么最终生成的数组就会包含 <code>null</code>。</p><p>而，写法一就可以直接避免这个问题。</p><blockquote><p>线程安全的 <code>Collection</code> 只保证每个方法是线程安全的，当你调用两个以上的方法联合使用时，就不具备线程安全了。</p></blockquote><p>Reference: <span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zMjkzOTQ2L3RoZS1lYXNpZXN0LXdheS10by10cmFuc2Zvcm0tY29sbGVjdGlvbi10by1hcnJheSNjb21tZW50NjY3MzAxNzhfMzI5Mzk3MA==" title="http://stackoverflow.com/questions/3293946/the-easiest-way-to-transform-collection-to-array#comment66730178_3293970">The easiest way to transform collection to array?<i class="fa fa-external-link"></i></span></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Collection&lt;/code&gt; 接口是 Java 集合框架最基本的接口；&lt;/p&gt;&lt;p&gt;它提供了基本的元素操作方法和遍历使用的迭代器；&lt;/p&gt;&lt;p&gt;同时，它还提供了关于 &lt;code&gt;Collection&lt;/code&gt; 的批量操作方法。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
     
   </entry>
   
