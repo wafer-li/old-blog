@@ -32,6 +32,7 @@
     </summary>
     
     
+    
   </entry>
   
   <entry>
@@ -48,6 +49,7 @@
       &lt;p&gt;这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。&lt;/p&gt;&lt;p&gt;原文：&lt;a href=&quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&lt;/a&gt;&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
@@ -77,6 +79,7 @@
     
     </summary>
     
+    
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
@@ -102,6 +105,7 @@
     </summary>
     
     
+    
   </entry>
   
   <entry>
@@ -118,6 +122,7 @@
       &lt;p&gt;折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
@@ -143,6 +148,7 @@
     
     </summary>
     
+    
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
@@ -166,6 +172,7 @@
       &lt;p&gt;最近在迁移到 AndroidX 之后一直折腾 TDD 的事情，也遇到了大的小的不少坑点；&lt;/p&gt;&lt;p&gt;鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
@@ -193,6 +200,7 @@
     
     </summary>
     
+    
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
@@ -216,6 +224,7 @@
       &lt;p&gt;如果你开发过稍微有点体量的 Android App，都会因为越来越多的 Gradle 依赖而头疼。&lt;/p&gt;&lt;p&gt;一个 App 的编译依赖少则十几项，多则几十项，如果再加上多 module，那么依赖的统一管理就很重要了。&lt;/p&gt;&lt;p&gt;但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
@@ -241,6 +250,7 @@
     
     </summary>
     
+    
       <category term="Algorithm" scheme="https://wafer.li/categories/Algorithm/"/>
     
     
@@ -264,6 +274,7 @@
       &lt;p&gt;GPG 相信很多人都折腾过，Yubikey 也有很多人买过；&lt;/p&gt;&lt;p&gt;但是好像只有老外折腾过 Yubikey + GPG 的；&lt;/p&gt;&lt;p&gt;最近刚折腾完毕，因为自己不慎还把一个老钥匙搞丢了，现在只能随它去了；&lt;/p&gt;&lt;p&gt;这里就写写我折腾过程中遇到的坑，前车之鉴，后事之师。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="GPG" scheme="https://wafer.li/categories/GPG/"/>
     
@@ -289,6 +300,7 @@
     
     </summary>
     
+    
       <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
     
@@ -312,6 +324,7 @@
       &lt;p&gt;本文着重介绍一下如何解决 Travis CI 在进行自动集成的时候，总是会更新旧博客的问题。&lt;/p&gt;&lt;p&gt;之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
@@ -337,6 +350,7 @@
     
     </summary>
     
+    
       <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
     
@@ -361,6 +375,7 @@
     
     </summary>
     
+    
       <category term="Solidity" scheme="https://wafer.li/categories/Solidity/"/>
     
     
@@ -384,6 +399,7 @@
       &lt;p&gt;最近这部 FD 发售之后就忍不住玩了一下；&lt;/p&gt;&lt;p&gt;会结合本篇《近月少女的礼仪 2》(月に寄りそう乙女の作法２)　来谈一谈感想；&lt;/p&gt;&lt;p&gt;内有剧透，慎点&lt;/p&gt;
     
     </summary>
+    
     
       <category term="杂谈" scheme="https://wafer.li/categories/Talk/"/>
     
@@ -411,6 +427,7 @@
     
     </summary>
     
+    
       <category term="DesignPattern" scheme="https://wafer.li/categories/DesignPattern/"/>
     
     
@@ -432,6 +449,7 @@
       &lt;p&gt;Retrofit 和 Rxjava 结合应该算得上是 Rxjava 在 Android 应用得最广泛的一个方面了。&lt;/p&gt;&lt;p&gt;这里就来讲讲关于这两个库具体组合的用法。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
@@ -461,6 +479,7 @@
     
     </summary>
     
+    
       <category term="Rxjava" scheme="https://wafer.li/categories/Rxjava/"/>
     
     
@@ -485,6 +504,7 @@
     
     </summary>
     
+    
       <category term="Kotlin" scheme="https://wafer.li/categories/Kotlin/"/>
     
     
@@ -506,6 +526,7 @@
       &lt;p&gt;Scala 作为函数式语言，提供了很多用于高阶函数来解决一类范式问题；&lt;/p&gt;&lt;p&gt;但是，使用过多的高阶函数就会让代码的可读性变差；&lt;/p&gt;&lt;p&gt;所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
     
@@ -529,6 +550,7 @@
     
     </summary>
     
+    
       <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
     
     
@@ -550,6 +572,7 @@
       &lt;p&gt;最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；&lt;/p&gt;&lt;p&gt;ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；&lt;/p&gt;&lt;p&gt;但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="杂谈" scheme="https://wafer.li/categories/Talk/"/>
     
@@ -574,6 +597,7 @@
       &lt;blockquote&gt;&lt;p&gt;本文源码：&lt;br&gt;&lt;a href=&quot;https://github.com/wafer-li/scala-coursera/tree/master/funsets&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/wafer-li/scala-coursera/tree/master/funsets&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h2 id=&quot;1-背景知识&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-背景知识&quot;&gt;&lt;/a&gt; 1. 背景知识&lt;/h2&gt;&lt;p&gt;该作业是实现一个函数集合的相关内容。&lt;/p&gt;&lt;p&gt;何为函数集合？&lt;/p&gt;&lt;p&gt;一般来说，编程语言中的集合(Collection)都是有限集合；&lt;/p&gt;&lt;p&gt;但是，在数学上，还有很多的集合是无限集合，比如说 &lt;strong&gt;负数集&lt;/strong&gt;；&lt;/p&gt;&lt;p&gt;我们有没有一种办法去表示这个集合呢？&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Coursera" scheme="https://wafer.li/categories/Coursera/"/>
     
@@ -600,6 +624,7 @@
       &lt;p&gt;模式匹配，是 Scala 相比 Java 在类型上的一个很好地改进；&lt;/p&gt;&lt;p&gt;通过引入模式匹配，消除了 Java 中常见的类型检测和强制转换(cast)；&lt;/p&gt;&lt;p&gt;拥有更高的安全性&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
     
@@ -629,6 +654,7 @@
     
     </summary>
     
+    
       <category term="杂谈" scheme="https://wafer.li/categories/Talk/"/>
     
     
@@ -654,6 +680,7 @@
       &lt;p&gt;最近终于下定决心来买这个键盘了。&lt;/p&gt;&lt;p&gt;主要说说使用感受吧&lt;/p&gt;&lt;p&gt;2018/1/8 更新部分内容&lt;/p&gt;
     
     </summary>
+    
     
       <category term="买买买" scheme="https://wafer.li/categories/Buying/"/>
     
@@ -681,6 +708,7 @@
     
     </summary>
     
+    
       <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
     
@@ -705,6 +733,7 @@
     
     </summary>
     
+    
       <category term="Scala" scheme="https://wafer.li/categories/Scala/"/>
     
     
@@ -726,6 +755,7 @@
       &lt;h2 id=&quot;1-概述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-概述&quot;&gt;&lt;/a&gt; 1. 概述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Collection&lt;/code&gt; 接口是 Java 集合框架最基本的接口；&lt;/p&gt;&lt;p&gt;它提供了基本的元素操作方法和遍历使用的迭代器；&lt;/p&gt;&lt;p&gt;同时，它还提供了关于 &lt;code&gt;Collection&lt;/code&gt; 的批量操作方法。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Java" scheme="https://wafer.li/categories/Java/"/>
     
