@@ -1192,14 +1192,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E6%8E%A5%E5%8F%A3/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1209,6 +1201,14 @@
 
     <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1304,7 +1304,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/</loc>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E9%9B%86%E5%90%88/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1312,7 +1312,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E9%9B%86%E5%90%88/</loc>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
