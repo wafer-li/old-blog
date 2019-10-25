@@ -205,6 +205,9 @@ filter_optimize:
   # lower means it will be executed first, default is 10
   priority: 12
 
+# PlantUML
+plantuml:
+  render: "PlantUMLServer"
 
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
@@ -642,8 +645,6 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  # Use custom fonts families or not.
-  # Depended options: `external` and `family`.
   enable: false
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
