@@ -1,214 +1,3 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
-title: Wafer's Note
-subtitle: Shenzhen is great!
-description: "Android & Kotlin beginner\n Ex-experienced Admiral"
-author: Wafer Li
-language: zh-CN
-timezone: Japan
-
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://wafer.li
-root: /
-permalink: /:title/
-permalink_defaults:
-
-# Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
-
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
-
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
-
-# Category & Tag
-default_category: uncategorized
-category_map:
-    买买买: Buying
-    杂谈: Talk
-    工程: Projects
-    大创: Big Innovation
-tag_map:
-    买买买: Buying
-    键盘: Keyboard
-    杂谈: Talk
-    打字: Typing
-    工程: Projects
-    大创: Big Innovation
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo:
-      github: git@github.com:wafer-li/wafer-li.github.io.git
-  branch: master
-
-# Sitemap
-sitemap:
-    path: sitemap.xml
-    tag: false
-    category: false
-
-# Feed
-feed:
-  type: atom
-  path: atom.xml
-  limit: 30
-  hub:
-  content: true
-  content_limit: 140
-  content_limit_delim: ' '
-
-# Search
-search:
-  path: search.xml
-  field: post
-  content: true
-
-# Renderer
-markdown_it_plus:
-    highlight: true
-    html: true
-    xhtmlOut: true
-    breaks: true
-    langPrefix:
-    linkify: true
-    typographer:
-    quotes: “”‘’
-    pre_class: highlight
-    plugins:
-        - plugin:
-            name: markdown-it-task-lists
-            enable: true
-        - plugin:
-            name: markdown-it-criticmarkup
-            enable: true
-        - plugin:
-            name: markdown-it-fontawesome
-            enable: true
-
-
-# Minifier
-all_minifier: true
-
-## HTML
-html_minifier:
-  enable: true
-  ignore_error: false
-  silent: true
-  exclude:
-
-## CSS
-css_minifier:
-  enable: true
-  silent: true
-  exclude:
-
-## JS
-js_minifier:
-  enable: true
-  mangle: true
-  silent: true
-  exclude:
-
-## Image
-image_minifier:
-  enable: true
-  interlaced: true
-  multipass: true
-  optimizationLevel: 7
-  pngquant: true
-  progressive: true
-  silent: true
-
-## JS Concator
-js_concator:
-  enable: false
-  bundle_path: '/js/bundle.js'
-  front: true
-  silent: true
-
-
-# Optimization
-filter_optimize:
-  enable: true
-  # remove static resource query string
-  #   - like `?v=1.0.0`
-  remove_query_string: true
-  # remove the surrounding comments in each of the bundled files
-  remove_comments: true
-  css:
-    enable: true
-    # bundle loaded css file into the one
-    bundle: true
-    # use a script block to load css elements dynamically
-    delivery: true
-    # make specific css content inline into the html page
-    #   - only support the full path
-    #   - default is ['css/main.css']
-    inlines:
-    excludes:
-  js:
-    # bundle loaded js file into the one
-    bundle: true
-    excludes:
-  # set the priority of this plugin,
-  # lower means it will be executed first, default is 10
-  priority: 12
-
-# PlantUML
-plantuml:
-  render: "PlantUMLServer"
-
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
 # See: https://theme-next.org/docs/theme-settings/
@@ -422,6 +211,7 @@ links:
   #Title: http://example.com
 
 # Table of Contents in the Sidebar
+# Front-matter variable (unsupport wrap expand_all).
 toc:
   enable: true
   # Automatically add list number to toc.
@@ -483,9 +273,9 @@ symbols_count_time:
 tag_icon: true
 
 # Reward (Donate)
+# Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward would be displayed in every article by default.
-  # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
   enable: false
   animation: false
   #comment: Donate comment here.
@@ -759,12 +549,12 @@ pangu: true
 
 # Quicklink Support
 # For more information: https://github.com/GoogleChromeLabs/quicklink
+# Front-matter (unsupport home archive).
 quicklink:
   enable: true
 
-  # Quicklink (quicklink.umd.js script) is loaded on demand.
-  # Add `quicklink: true` in Front-matter of the page or post you need.
   # Home page and archive page can be controlled through home and archive options below.
+  # This configuration item is independent of `enable`.
   home: true
   archive: true
 
@@ -1121,24 +911,21 @@ canvas_ribbon:
 
 # Script Vendors. Set a CDN address for the vendor you want to customize.
 # Be aware that you would better use the same version as internal ones to avoid potential problems.
-# Please use the https protocol of CDN files when you enable https on your site.
+# Remember to use the https protocol of CDN files when you enable https on your site.
 vendors:
-  # Internal path prefix. Please do not edit it.
+  # Internal path prefix.
   _internal: lib
 
   # Internal version: 3.1.0
-  # Example:
   # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
   anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
 
   # Internal version: 4.7.0
-  # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
   fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
 
   # MathJax
-  # Example:
   # mathjax: //cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   # mathjax: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
   # mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
@@ -1147,9 +934,8 @@ vendors:
   mhchem:
 
   # KaTeX
-  # Example:
   # katex: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
-  # katex: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
+  # katex: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css
   # copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
   # copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
   katex: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
@@ -1157,12 +943,10 @@ vendors:
   copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
 
   # Internal version: 0.2.8
-  # Example:
   # pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
   pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
 
   # FancyBox
-  # Example:
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
   # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
@@ -1171,68 +955,57 @@ vendors:
   fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
 
   # Medium-zoom
-  # Example:
   # mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
   mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
 
   # Lazyload
-  # Example:
   # lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   # lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
   lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
 
   # Pangu
-  # Example:
   # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   # pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
   pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
 
   # Quicklink
-  # Example:
   # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
   quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
 
   # DisqusJS
-  # Example:
   # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
 
   # Valine
-  # Example:
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-  # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
+  # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js
   valine:
 
   # Gitalk
-  # Example:
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
   gitalk_js:
   gitalk_css:
 
   # Algolia Search
-  # Example:
   # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
   # algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
   algolia_instant_js:
   algolia_instant_css:
 
   # PDF
-  # Example:
   # pdfobject: //cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js
   # pdfobject: //cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js
   pdfobject:
 
   # Mermaid
-  # Example:
   # mermaid: //cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js
-  # mermaid: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js
+  # mermaid: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.0/mermaid.min.js
   mermaid:
 
   # Internal version: 1.2.1
-  # Example:
   # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
   # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
   # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
@@ -1241,7 +1014,6 @@ vendors:
   velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
 
   # Internal version: 1.0.2
-  # Example:
   # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
   # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
   # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
@@ -1250,7 +1022,6 @@ vendors:
   pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
 
   # Internal version: 1.0.0
-  # Example:
   # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
   # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
   # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
@@ -1261,14 +1032,12 @@ vendors:
   canvas_sphere:
 
   # Internal version: 1.0.0
-  # Example:
   # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
   # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
   canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
   canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
 
   # Internal version: 1.0.0
-  # Example:
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   canvas_ribbon:
 
