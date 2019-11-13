@@ -100,8 +100,10 @@ sitemap:
 
 # Feed
 feed:
-  type: atom
-  path: atom.xml
+  type:
+    - atom
+  path:
+    - atom.xml
   limit: 20
   hub:
   content:
