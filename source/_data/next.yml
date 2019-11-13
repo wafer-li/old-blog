@@ -102,11 +102,14 @@ sitemap:
 feed:
   type: atom
   path: atom.xml
-  limit: 30
+  limit: 20
   hub:
-  content: true
+  content:
   content_limit: 140
   content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
 
 # Search
 search:
