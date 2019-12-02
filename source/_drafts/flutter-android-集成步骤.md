@@ -30,7 +30,7 @@ evaluate(new File(
 3. 编辑 `app/build.gradle`
 
 ```gradle
-implementation project(':flutter')
+implementation project(':flutter')
 ```
 
 4. 加入混淆配置
