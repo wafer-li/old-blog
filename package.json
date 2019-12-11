@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "4.0.0"
+    "version": "4.1.0"
   },
   "dependencies": {
     "hexo": "^4.1.0",
     "hexo-all-minifier": "^0.5.2",
     "hexo-deployer-git": "^2.1.0",
-    "hexo-filter-optimize": "^0.3.0",
     "hexo-filter-plantuml": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-atom-markdown-writer-meta-fixed": "^0.1.3",
