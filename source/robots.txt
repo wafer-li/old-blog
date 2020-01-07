@@ -1,10 +1,15 @@
 # hexo robots.txt
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Default Rule
 User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
