@@ -11,7 +11,7 @@
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-plantuml": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-atom-markdown-writer-meta-fixed": "^0.1.3",
+    "hexo-generator-atom-markdown-writer-meta-fixed": "^0.1.4",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-index": "^1.0.0",
@@ -23,7 +23,7 @@
     "hexo-renderer-njks": "^1.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-symbols-count-time": "^0.7.0",
+    "hexo-symbols-count-time": "^0.7.1",
     "markdown-it-criticmarkup": "^0.0.1",
     "markdown-it-fontawesome": "^0.3.0",
     "markdown-it-task-lists": "^2.1.1"
