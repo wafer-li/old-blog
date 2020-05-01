@@ -1,8 +1,13 @@
 ---
-title: "ItemDecoration 实战之 GirdSpacingItemDecoration（一）"
-author: "Wafer Li"
-date: "2020-05-01 13:46"
+title: ItemDecoration 实战之 GirdSpacingItemDecoration（一）
+author: Wafer Li
+date: '2020-05-01 13:46'
 mathjax: true
+tags:
+  - Android
+  - ItemDecoration
+categories:
+  - Android
 ---
 
 在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;
