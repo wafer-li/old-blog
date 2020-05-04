@@ -29,7 +29,7 @@ categories:
 
 这里就引用参考文章的图
 
-![ItemDecoration 原理](../images/itemdecoration-实战之-girdspacingitemdecoration（一）/itemdecoration-原理.png)
+![ItemDecoration 原理](../../images/itemdecoration-实战之-girdspacingitemdecoration（一）/itemdecoration-原理.png)
 
 
 其中，蓝色部分就是我们在 ItemDecoration 中的 `getItemOffsets` 给 `outRect` 设置的边界。
@@ -42,7 +42,7 @@ categories:
 
 然而不行，在 GridLayoutManager 下会呈现出这种效果：
 
-![仅设置一边边距的效果](../images/itemdecoration-实战之-girdspacingitemdecoration（一）/仅设置一边边距的效果.png)
+![仅设置一边边距的效果](../../images/itemdecoration-实战之-girdspacingitemdecoration（一）/仅设置一边边距的效果.png)
 
 可以看到，这里面 1 是正常的，但是 2 和 3 都被拉长了；
 
@@ -76,7 +76,7 @@ $$
 
 如图所示：
 
-![计算实例](../images/itemdecoration-实战之-girdspacingitemdecoration（一）/计算实例.png)
+![计算实例](../../images/itemdecoration-实战之-girdspacingitemdecoration（一）/计算实例.png)
 
 ## 4. 参考文章的算法失误
 
