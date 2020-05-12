@@ -1,7 +1,12 @@
 ---
-title: "ItemDecoration 实战之 GirdSpacingItemDecoration（二）"
-author: "Wafer Li"
-date: "2020-05-12 14:46"
+title: ItemDecoration 实战之 GirdSpacingItemDecoration（二）
+author: Wafer Li
+date: '2020-05-12 14:46'
+tags:
+  - Android
+  - ItemDecoration
+categories:
+  - Android
 ---
 
 [上文](../itemdecoration-实战之-girdspacingitemdecoration（一）)说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 **公式法** 来对所有四个方向的 offset 进行计算，由此可以大大简化 `itemOffset` 的计算，同时也天然的支持 RTL。
