@@ -2,6 +2,7 @@
 title: ItemDecoration 实战之 GirdSpacingItemDecoration（二）
 author: Wafer Li
 date: '2020-05-12 14:46'
+mathjax: true
 tags:
   - Android
   - ItemDecoration
