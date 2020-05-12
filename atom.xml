@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
-  <updated>2020-05-04T12:54:43.000Z</updated>
+  <updated>2020-05-12T06:45:43.000Z</updated>
   <id>https://wafer.li/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://wafer.li/Android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>https://wafer.li/Android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89/</id>
     <published>2020-05-01T04:46:00.000Z</published>
-    <updated>2020-05-04T12:54:43.000Z</updated>
+    <updated>2020-05-12T06:45:43.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;&lt;/p&gt;&lt;p&gt;很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。&lt;/p&gt;&lt;p&gt;当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的&lt;a href=&quot;https://www.jianshu.com/u/3f3c4485b55a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考文章&lt;/a&gt;，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。&lt;/p&gt;&lt;p&gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&lt;/p&gt;
+      &lt;p&gt;在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;&lt;/p&gt;&lt;p&gt;很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。&lt;/p&gt;&lt;p&gt;当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的&lt;a href=&quot;https://www.jianshu.com/p/f41db270d5fe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考文章&lt;/a&gt;，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。&lt;/p&gt;&lt;p&gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&lt;/p&gt;
     
     </summary>
     
