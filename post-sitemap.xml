@@ -392,7 +392,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Java/Java%20%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</loc>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -408,7 +408,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</loc>
+        <loc>https://wafer.li/Java/Java%20%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</loc>
         <lastmod>2018-01-13T07:14:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -992,7 +992,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
+        <loc>https://wafer.li/HTML/Head%20%E6%A0%87%E7%AD%BE%E5%86%85%E5%AE%B9/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1000,7 +1000,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/HTML/Head%20%E6%A0%87%E7%AD%BE%E5%86%85%E5%AE%B9/</loc>
+        <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1033,14 +1033,6 @@
 
     <url>
         <loc>https://wafer.li/Java/Java%20%E5%9F%BA%E7%A1%80/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Java/Java%20%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B7%A5%E5%85%B7/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1288,14 +1280,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%9F%BA%E7%A1%80/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1305,6 +1289,14 @@
 
     <url>
         <loc>https://wafer.li/Kotlin/Kotlin%20%E8%8C%83%E5%9B%B4/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Kotlin/Kotlin%20%E7%B1%BB%E5%9F%BA%E7%A1%80/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1473,6 +1465,14 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/Java/Java%20%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B7%A5%E5%85%B7/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
