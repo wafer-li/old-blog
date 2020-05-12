@@ -4,7 +4,7 @@ author: "Wafer Li"
 date: "2020-05-12 14:46"
 ---
 
-[上文](./itemdecoration-实战之-girdspacingitemdecoration（一）)说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 **公式法** 来对所有四个方向的 offset 进行计算，由此可以大大简化 `itemOffset` 的计算，同时也天然的支持 RTL。
+[上文](../itemdecoration-实战之-girdspacingitemdecoration（一）)说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 **公式法** 来对所有四个方向的 offset 进行计算，由此可以大大简化 `itemOffset` 的计算，同时也天然的支持 RTL。
 
 但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；
 
@@ -83,4 +83,4 @@ date: "2020-05-12 14:46"
 
 我知道大家就喜欢直入主题，代码[在此](https://gist.github.com/wafer-li/8b0e6ebd98f799f21b9f9f90a69575a9)；
 
-虽然和[上篇](itemdecoration-实战之-girdspacingitemdecoration（一）)的代码是同一个地址就是了。
+虽然和[上篇](../itemdecoration-实战之-girdspacingitemdecoration（一）)的代码是同一个地址就是了。
