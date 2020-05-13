@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Tools/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
+        <lastmod>2020-05-13T02:36:29.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
         <lastmod>2020-05-12T10:14:17.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -641,14 +649,6 @@
 
     <url>
         <loc>https://wafer.li/Scala/Scala%20%E6%B3%9B%E5%9E%8B%E5%92%8C%E5%8F%98%E5%BD%A2/</loc>
-        <lastmod>2017-04-18T16:32:07.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Tools/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
