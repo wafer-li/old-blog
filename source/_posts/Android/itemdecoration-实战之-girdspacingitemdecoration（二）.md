@@ -35,7 +35,7 @@ categories:
 
 ## 2. spanIndex 和 spanGroupIndex
 
-在允许了不等于 1 的 `spanSize` 之后，情况出现了变化，在水平方向上的数量不再是一致的，而竖直方向上，更不可能简单的通过 position 和 spanCount 算出现在是第几行；
+在允许了不等于 `1` 的 `spanSize` 之后，情况出现了变化，在水平方向上的数量不再是一致的，而竖直方向上，更不可能简单的通过 `position` 和 `spanCount` 算出现在是第几行；
 
 那么怎么办呢？`SpanSizeLookup` 为此提供了 `spanIndex` 和 `spanGroupIndex`。
 
@@ -50,7 +50,7 @@ categories:
 
 `spanIndex` 则稍微有点特殊，乍一眼看上去，会认为它和 `spanGroupIndex` 一样，是当前的 item 在这一行的位置，然而并不是。
 
-用上图来说，第二个 item 的 spanIndex，实际上是 `2`，而并不是当前 item 在这一行的索引。
+用上图来说，第二个 item 的 `spanIndex`，实际上是 `2`，而并不是当前 item 在这一行的索引。
 
 也就是说，`spanIndex`，是当前的 item 所在的 **span** 的索引，一行有 3 个 span，那么第二个 item 在第 3 个 span，其索引就是 2。
 
