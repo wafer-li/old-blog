@@ -1,8 +1,13 @@
 ---
-title: "LeetCode 笔记之——837. 新 21 点"
-author: "Wafer Li"
-date: "2020-06-04 00:53"
+title: LeetCode 笔记之——837. 新 21 点
+author: Wafer Li
+date: '2020-06-04 00:53'
 mathjax: true
+tags:
+  - LeetCode
+  - LeetCodeNotes
+categories:
+  - LeetCodeNotes
 ---
 
 [题目](https://leetcode-cn.com/problems/new-21-game)
