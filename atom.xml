@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
-  <updated>2020-05-18T04:15:56.000Z</updated>
+  <updated>2020-06-03T17:19:31.000Z</updated>
   <id>https://wafer.li/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode 笔记之——837. 新 21 点</title>
+    <link href="https://wafer.li/LeetCodeNotes/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/"/>
+    <id>https://wafer.li/LeetCodeNotes/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/</id>
+    <published>2020-06-03T15:53:00.000Z</published>
+    <updated>2020-06-03T17:19:31.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/new-21-game&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;&lt;p&gt;爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：&lt;/p&gt;&lt;p&gt;爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 &lt;code&gt;[1, W]&lt;/code&gt; 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。&lt;/p&gt;&lt;p&gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="LeetCodeNotes" scheme="https://wafer.li/categories/LeetCodeNotes/"/>
+    
+    
+      <category term="LeetCode" scheme="https://wafer.li/tags/LeetCode/"/>
+    
+      <category term="LeetCodeNotes" scheme="https://wafer.li/tags/LeetCodeNotes/"/>
+    
+  </entry>
   
   <entry>
     <title>Comparison method violates its general contract! 崩溃分析</title>
@@ -448,31 +471,6 @@
       <category term="Solidity" scheme="https://wafer.li/tags/Solidity/"/>
     
       <category term="Ethereum" scheme="https://wafer.li/tags/Ethereum/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近月少女的礼仪 2.1 感想</title>
-    <link href="https://wafer.li/Talk/%E8%BF%91%E6%9C%88%E5%B0%91%E5%A5%B3%E7%9A%84%E7%A4%BC%E4%BB%AA%202.1%20%E6%84%9F%E6%83%B3/"/>
-    <id>https://wafer.li/Talk/%E8%BF%91%E6%9C%88%E5%B0%91%E5%A5%B3%E7%9A%84%E7%A4%BC%E4%BB%AA%202.1%20%E6%84%9F%E6%83%B3/</id>
-    <published>2017-06-03T17:22:00.000Z</published>
-    <updated>2017-06-03T18:30:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近这部 FD 发售之后就忍不住玩了一下；&lt;/p&gt;&lt;p&gt;会结合本篇《近月少女的礼仪 2》(月に寄りそう乙女の作法２)　来谈一谈感想；&lt;/p&gt;&lt;p&gt;内有剧透，慎点&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="杂谈" scheme="https://wafer.li/categories/Talk/"/>
-    
-    
-      <category term="杂谈" scheme="https://wafer.li/tags/Talk/"/>
-    
-      <category term="Galgame" scheme="https://wafer.li/tags/Galgame/"/>
-    
-      <category term="月に寄りそう乙女の作法" scheme="https://wafer.li/tags/%E6%9C%88%E3%81%AB%E5%AF%84%E3%82%8A%E3%81%9D%E3%81%86%E4%B9%99%E5%A5%B3%E3%81%AE%E4%BD%9C%E6%B3%95/"/>
     
   </entry>
   
