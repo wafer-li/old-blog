@@ -3,7 +3,7 @@
   <title>Wafer&#39;s Note</title>
   <icon>https://wafer.li/icon.png</icon>
   <subtitle>Shenzhen is great!</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://wafer.li/atom.xml" rel="self"/>
   
   <link href="https://wafer.li/"/>
   <updated>2020-06-03T17:19:31.000Z</updated>
@@ -23,19 +23,20 @@
     <published>2020-06-03T15:53:00.000Z</published>
     <updated>2020-06-03T17:19:31.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/new-21-game&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;&lt;p&gt;爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：&lt;/p&gt;&lt;p&gt;爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 &lt;code&gt;[1, W]&lt;/code&gt; 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。&lt;/p&gt;&lt;p&gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="LeetCodeNotes" scheme="https://wafer.li/categories/LeetCodeNotes/"/>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/new-21-game&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：&lt;/p&gt;
+&lt;p&gt;爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 &lt;code&gt;[1, W]&lt;/code&gt; 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。&lt;/p&gt;
+&lt;p&gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&lt;/p&gt;</summary>
     
     
-      <category term="LeetCode" scheme="https://wafer.li/tags/LeetCode/"/>
     
-      <category term="LeetCodeNotes" scheme="https://wafer.li/tags/LeetCodeNotes/"/>
+    <category term="LeetCodeNotes" scheme="https://wafer.li/categories/LeetCodeNotes/"/>
+    
+    
+    <category term="LeetCode" scheme="https://wafer.li/tags/LeetCode/"/>
+    
+    <category term="LeetCodeNotes" scheme="https://wafer.li/tags/LeetCodeNotes/"/>
     
   </entry>
   
@@ -46,23 +47,22 @@
     <published>2020-05-15T07:29:00.000Z</published>
     <updated>2020-05-18T04:15:56.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报 &lt;code&gt;IllegalStateException&lt;/code&gt;，其中的 &lt;code&gt;message&lt;/code&gt; 就是我们的标题。&lt;/p&gt;&lt;p&gt;这个问题还得从 JDK 1.7 开始说起。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  &lt;code&gt;IllegalStateException&lt;/code&gt;，其中的 &lt;code&gt;message&lt;/code&gt; 就是我们的标题。&lt;/p&gt;
+&lt;p&gt;这个问题还得从 JDK 1.7 开始说起。&lt;/p&gt;</summary>
     
     
-      <category term="Java" scheme="https://wafer.li/categories/Java/"/>
+    
+    <category term="Java" scheme="https://wafer.li/categories/Java/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="Algorithm" scheme="https://wafer.li/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://wafer.li/tags/Algorithm/"/>
     
-      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
+    <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
     
-      <category term="Java" scheme="https://wafer.li/tags/Java/"/>
+    <category term="Java" scheme="https://wafer.li/tags/Java/"/>
     
   </entry>
   
@@ -73,19 +73,19 @@
     <published>2020-05-12T05:46:00.000Z</published>
     <updated>2020-05-15T08:28:32.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;../itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89&quot;&gt;上文&lt;/a&gt;说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 &lt;strong&gt;公式法&lt;/strong&gt; 来对所有四个方向的 offset 进行计算，由此可以大大简化 &lt;code&gt;itemOffset&lt;/code&gt; 的计算，同时也天然的支持 RTL。&lt;/p&gt;&lt;p&gt;但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；&lt;/p&gt;&lt;p&gt;上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;../itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89&quot;&gt;上文&lt;/a&gt;说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 &lt;strong&gt;公式法&lt;/strong&gt; 来对所有四个方向的 offset 进行计算，由此可以大大简化 &lt;code&gt;itemOffset&lt;/code&gt; 的计算，同时也天然的支持 RTL。&lt;/p&gt;
+&lt;p&gt;但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；&lt;/p&gt;
+&lt;p&gt;上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="ItemDecoration" scheme="https://wafer.li/tags/ItemDecoration/"/>
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    
+    <category term="ItemDecoration" scheme="https://wafer.li/tags/ItemDecoration/"/>
     
   </entry>
   
@@ -96,19 +96,20 @@
     <published>2020-05-01T04:46:00.000Z</published>
     <updated>2020-05-12T06:45:43.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;&lt;/p&gt;&lt;p&gt;很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。&lt;/p&gt;&lt;p&gt;当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的&lt;a href=&quot;https://www.jianshu.com/p/f41db270d5fe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考文章&lt;/a&gt;，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。&lt;/p&gt;&lt;p&gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    <summary type="html">&lt;p&gt;在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;&lt;/p&gt;
+&lt;p&gt;很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。&lt;/p&gt;
+&lt;p&gt;当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的&lt;a href=&quot;https://www.jianshu.com/p/f41db270d5fe&quot;&gt;参考文章&lt;/a&gt;，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。&lt;/p&gt;
+&lt;p&gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="ItemDecoration" scheme="https://wafer.li/tags/ItemDecoration/"/>
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    
+    <category term="ItemDecoration" scheme="https://wafer.li/tags/ItemDecoration/"/>
     
   </entry>
   
@@ -119,19 +120,18 @@
     <published>2019-09-30T16:29:00.000Z</published>
     <updated>2019-09-30T18:36:11.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；&lt;/p&gt;&lt;p&gt;不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；&lt;/p&gt;
+&lt;p&gt;不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。&lt;/p&gt;</summary>
     
     
-      <category term="Live" scheme="https://wafer.li/categories/Live/"/>
+    
+    <category term="Live" scheme="https://wafer.li/categories/Live/"/>
     
     
-      <category term="Live" scheme="https://wafer.li/tags/Live/"/>
+    <category term="Live" scheme="https://wafer.li/tags/Live/"/>
     
-      <category term="BiliBili" scheme="https://wafer.li/tags/BiliBili/"/>
+    <category term="BiliBili" scheme="https://wafer.li/tags/BiliBili/"/>
     
   </entry>
   
@@ -142,11 +142,9 @@
     <published>2019-08-07T15:33:00.000Z</published>
     <updated>2019-09-11T10:25:33.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;最近准备入门音视频开发，就学习内容做一下笔记吧&lt;/p&gt;
+    <summary type="html">&lt;p&gt;最近准备入门音视频开发，就学习内容做一下笔记吧&lt;/p&gt;</summary>
     
-    </summary>
     
     
     
@@ -159,23 +157,22 @@
     <published>2019-07-31T04:44:00.000Z</published>
     <updated>2019-07-31T06:27:20.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。&lt;/p&gt;&lt;p&gt;原文：&lt;a href=&quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。&lt;/p&gt;
+&lt;p&gt;原文：&lt;a href=&quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&quot;&gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&lt;/a&gt;&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="Gradle" scheme="https://wafer.li/tags/Gradle/"/>
+    <category term="Gradle" scheme="https://wafer.li/tags/Gradle/"/>
     
-      <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
+    <category term="Kotlin" scheme="https://wafer.li/tags/Kotlin/"/>
     
-      <category term="Translate" scheme="https://wafer.li/tags/Translate/"/>
+    <category term="Translate" scheme="https://wafer.li/tags/Translate/"/>
     
   </entry>
   
@@ -186,19 +183,18 @@
     <published>2019-07-30T01:24:00.000Z</published>
     <updated>2019-07-30T10:14:58.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？&lt;/p&gt;&lt;p&gt;结果显然是我太拿衣服了&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？&lt;/p&gt;
+&lt;p&gt;结果显然是我太拿衣服了&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="高德地图" scheme="https://wafer.li/tags/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE/"/>
+    <category term="高德地图" scheme="https://wafer.li/tags/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE/"/>
     
   </entry>
   
@@ -209,11 +205,10 @@
     <published>2019-07-11T07:46:00.000Z</published>
     <updated>2019-07-11T11:58:23.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;之前看各大面经的时候搜索到了这个问题，切实感觉到如果刨根问底的问，自己还真不能抵挡住这种攻势，现在闲暇时间又心血来潮地想起来这个问题，就打算好好弄懂弄透，也希望能在将来面试的时候做好准备。&lt;/p&gt;&lt;p&gt;本文基于&lt;a href=&quot;https://stackoverflow.com/a/31401836&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这个 StackOverflow 回答&lt;/a&gt;进一步推导，并给出详细解答步骤&lt;/p&gt;
+    <summary type="html">&lt;p&gt;之前看各大面经的时候搜索到了这个问题，切实感觉到如果刨根问底的问，自己还真不能抵挡住这种攻势，现在闲暇时间又心血来潮地想起来这个问题，就打算好好弄懂弄透，也希望能在将来面试的时候做好准备。&lt;/p&gt;
+&lt;p&gt;本文基于&lt;a href=&quot;https://stackoverflow.com/a/31401836&quot;&gt;这个 StackOverflow 回答&lt;/a&gt;进一步推导，并给出详细解答步骤&lt;/p&gt;</summary>
     
-    </summary>
     
     
     
@@ -226,19 +221,17 @@
     <published>2019-07-11T03:21:00.000Z</published>
     <updated>2019-12-02T18:36:43.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="面试经验" scheme="https://wafer.li/tags/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/"/>
+    <category term="面试经验" scheme="https://wafer.li/tags/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/"/>
     
   </entry>
   
@@ -249,19 +242,18 @@
     <published>2019-06-10T09:56:00.000Z</published>
     <updated>2019-06-14T05:15:15.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;/Android/android-%E6%B5%8B%E8%AF%95%E5%9D%91%E7%82%B9%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%80%EF%BC%89/&quot;&gt;上篇文章&lt;/a&gt;我们说到如果你的 VectorDrawable 如果采用一个带 &lt;code&gt;&amp;lt;selector&amp;gt;&lt;/code&gt; 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。&lt;/p&gt;&lt;p&gt;本篇文章就来着重说说其中的原理。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;/Android/android-%E6%B5%8B%E8%AF%95%E5%9D%91%E7%82%B9%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%80%EF%BC%89/&quot;&gt;上篇文章&lt;/a&gt;我们说到如果你的 VectorDrawable 如果采用一个带 &lt;code&gt;&amp;lt;selector&amp;gt;&lt;/code&gt; 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。&lt;/p&gt;
+&lt;p&gt;本篇文章就来着重说说其中的原理。&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="Instrument Test" scheme="https://wafer.li/tags/Instrument-Test/"/>
+    <category term="Instrument Test" scheme="https://wafer.li/tags/Instrument-Test/"/>
     
   </entry>
   
@@ -272,21 +264,20 @@
     <published>2019-05-31T07:49:00.000Z</published>
     <updated>2019-06-14T05:15:15.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;最近在迁移到 AndroidX 之后一直折腾 TDD 的事情，也遇到了大的小的不少坑点；&lt;/p&gt;&lt;p&gt;鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;最近在迁移到 AndroidX 之后一直折腾 TDD 的事情，也遇到了大的小的不少坑点；&lt;/p&gt;
+&lt;p&gt;鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="Instrument Test" scheme="https://wafer.li/tags/Instrument-Test/"/>
+    <category term="Instrument Test" scheme="https://wafer.li/tags/Instrument-Test/"/>
     
-      <category term="Espresso" scheme="https://wafer.li/tags/Espresso/"/>
+    <category term="Espresso" scheme="https://wafer.li/tags/Espresso/"/>
     
   </entry>
   
@@ -297,19 +288,20 @@
     <published>2019-05-26T03:39:00.000Z</published>
     <updated>2019-05-27T15:00:18.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。&lt;/p&gt;&lt;p&gt;当一切都配置好，点下 build App 的时候，却出现了 &lt;code&gt;There were failing tests.&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？&lt;/p&gt;&lt;p&gt;于是，就开始了艰难的调试过程&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    <summary type="html">&lt;p&gt;之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。&lt;/p&gt;
+&lt;p&gt;当一切都配置好，点下 build App 的时候，却出现了 &lt;code&gt;There were failing tests.&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？&lt;/p&gt;
+&lt;p&gt;于是，就开始了艰难的调试过程&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="Instrument Test" scheme="https://wafer.li/tags/Instrument-Test/"/>
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    
+    <category term="Instrument Test" scheme="https://wafer.li/tags/Instrument-Test/"/>
     
   </entry>
   
@@ -320,19 +312,19 @@
     <published>2019-05-25T16:04:00.000Z</published>
     <updated>2019-05-26T04:37:41.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;如果你开发过稍微有点体量的 Android App，都会因为越来越多的 Gradle 依赖而头疼。&lt;/p&gt;&lt;p&gt;一个 App 的编译依赖少则十几项，多则几十项，如果再加上多 module，那么依赖的统一管理就很重要了。&lt;/p&gt;&lt;p&gt;但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    <summary type="html">&lt;p&gt;如果你开发过稍微有点体量的 Android App，都会因为越来越多的 Gradle 依赖而头疼。&lt;/p&gt;
+&lt;p&gt;一个 App 的编译依赖少则十几项，多则几十项，如果再加上多 module，那么依赖的统一管理就很重要了。&lt;/p&gt;
+&lt;p&gt;但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://wafer.li/tags/Android/"/>
     
-      <category term="Gradle" scheme="https://wafer.li/tags/Gradle/"/>
+    <category term="Android" scheme="https://wafer.li/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://wafer.li/tags/Android/"/>
+    
+    <category term="Gradle" scheme="https://wafer.li/tags/Gradle/"/>
     
   </entry>
   
@@ -343,19 +335,19 @@
     <published>2018-02-18T18:36:00.000Z</published>
     <updated>2018-02-20T04:42:12.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;之前学算法分析的时候只知道通过数语句来计算算法的复杂度，而对于递归算法没有很好的方法；&lt;/p&gt;&lt;p&gt;由于递归算法通常采用分治思路，每递归一次，子问题在增多，但是子问题的规模在减少，所以如何去计算这种递归类算法的复杂度呢？&lt;br&gt;斯坦福的教授提供了一种使用 &lt;strong&gt;递归树&lt;/strong&gt; 的方法。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="https://wafer.li/categories/Algorithm/"/>
+    <summary type="html">&lt;p&gt;之前学算法分析的时候只知道通过数语句来计算算法的复杂度，而对于递归算法没有很好的方法；&lt;/p&gt;
+&lt;p&gt;由于递归算法通常采用分治思路，每递归一次，子问题在增多，但是子问题的规模在减少，所以如何去计算这种递归类算法的复杂度呢？&lt;br /&gt;
+斯坦福的教授提供了一种使用 &lt;strong&gt;递归树&lt;/strong&gt; 的方法。&lt;/p&gt;</summary>
     
     
-      <category term="Algorithm" scheme="https://wafer.li/tags/Algorithm/"/>
     
-      <category term="Algorithm Analysis" scheme="https://wafer.li/tags/Algorithm-Analysis/"/>
+    <category term="Algorithm" scheme="https://wafer.li/categories/Algorithm/"/>
+    
+    
+    <category term="Algorithm" scheme="https://wafer.li/tags/Algorithm/"/>
+    
+    <category term="Algorithm Analysis" scheme="https://wafer.li/tags/Algorithm-Analysis/"/>
     
   </entry>
   
@@ -366,19 +358,20 @@
     <published>2018-01-21T16:30:00.000Z</published>
     <updated>2018-01-22T13:55:23.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;GPG 相信很多人都折腾过，Yubikey 也有很多人买过；&lt;/p&gt;&lt;p&gt;但是好像只有老外折腾过 Yubikey + GPG 的；&lt;/p&gt;&lt;p&gt;最近刚折腾完毕，因为自己不慎还把一个老钥匙搞丢了，现在只能随它去了；&lt;/p&gt;&lt;p&gt;这里就写写我折腾过程中遇到的坑，前车之鉴，后事之师。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="GPG" scheme="https://wafer.li/categories/GPG/"/>
+    <summary type="html">&lt;p&gt;GPG 相信很多人都折腾过，Yubikey 也有很多人买过；&lt;/p&gt;
+&lt;p&gt;但是好像只有老外折腾过 Yubikey + GPG 的；&lt;/p&gt;
+&lt;p&gt;最近刚折腾完毕，因为自己不慎还把一个老钥匙搞丢了，现在只能随它去了；&lt;/p&gt;
+&lt;p&gt;这里就写写我折腾过程中遇到的坑，前车之鉴，后事之师。&lt;/p&gt;</summary>
     
     
-      <category term="GPG" scheme="https://wafer.li/tags/GPG/"/>
     
-      <category term="Yubikey" scheme="https://wafer.li/tags/Yubikey/"/>
+    <category term="GPG" scheme="https://wafer.li/categories/GPG/"/>
+    
+    
+    <category term="GPG" scheme="https://wafer.li/tags/GPG/"/>
+    
+    <category term="Yubikey" scheme="https://wafer.li/tags/Yubikey/"/>
     
   </entry>
   
@@ -389,19 +382,17 @@
     <published>2018-01-16T08:39:00.000Z</published>
     <updated>2018-02-01T17:56:49.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。&lt;/p&gt;</summary>
     
     
-      <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
+    
+    <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
     
-      <category term="Katex" scheme="https://wafer.li/tags/Katex/"/>
+    <category term="Katex" scheme="https://wafer.li/tags/Katex/"/>
     
   </entry>
   
@@ -412,19 +403,18 @@
     <published>2018-01-12T07:45:00.000Z</published>
     <updated>2018-01-13T04:02:33.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;本文着重介绍一下如何解决 Travis CI 在进行自动集成的时候，总是会更新旧博客的问题。&lt;/p&gt;&lt;p&gt;之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;本文着重介绍一下如何解决 Travis CI 在进行自动集成的时候，总是会更新旧博客的问题。&lt;/p&gt;
+&lt;p&gt;之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。&lt;/p&gt;</summary>
     
     
-      <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
+    
+    <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
     
-      <category term="Trivas CI" scheme="https://wafer.li/tags/Trivas-CI/"/>
+    <category term="Trivas CI" scheme="https://wafer.li/tags/Trivas-CI/"/>
     
   </entry>
   
@@ -435,19 +425,17 @@
     <published>2018-01-11T12:37:00.000Z</published>
     <updated>2018-01-12T19:05:33.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。&lt;/p&gt;</summary>
     
     
-      <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
+    
+    <category term="Hexo" scheme="https://wafer.li/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://wafer.li/tags/Hexo/"/>
     
-      <category term="Trivas CI" scheme="https://wafer.li/tags/Trivas-CI/"/>
+    <category term="Trivas CI" scheme="https://wafer.li/tags/Trivas-CI/"/>
     
   </entry>
   
@@ -458,19 +446,17 @@
     <published>2018-01-09T06:09:00.000Z</published>
     <updated>2019-05-25T15:26:35.000Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。&lt;/p&gt;</summary>
     
     
-      <category term="Solidity" scheme="https://wafer.li/categories/Solidity/"/>
+    
+    <category term="Solidity" scheme="https://wafer.li/categories/Solidity/"/>
     
     
-      <category term="Solidity" scheme="https://wafer.li/tags/Solidity/"/>
+    <category term="Solidity" scheme="https://wafer.li/tags/Solidity/"/>
     
-      <category term="Ethereum" scheme="https://wafer.li/tags/Ethereum/"/>
+    <category term="Ethereum" scheme="https://wafer.li/tags/Ethereum/"/>
     
   </entry>
   
