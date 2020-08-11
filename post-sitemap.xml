@@ -600,7 +600,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/DesignPattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</loc>
+        <loc>https://wafer.li/Decoration/%E6%9C%AC%E9%83%A8%E5%AE%BF%E8%88%8D%E5%90%84%E7%89%A9%E5%93%81%E5%B0%BA%E5%AF%B8/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -608,7 +608,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Decoration/%E6%9C%AC%E9%83%A8%E5%AE%BF%E8%88%8D%E5%90%84%E7%89%A9%E5%93%81%E5%B0%BA%E5%AF%B8/</loc>
+        <loc>https://wafer.li/DesignPattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
