@@ -123,7 +123,8 @@ search:
   path: search.xml
   field: post
   content: true
-
+  format: html
+  
 # Symbols Count Time
 symbols_count_time:
   symbols: true
