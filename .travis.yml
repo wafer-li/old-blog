@@ -51,7 +51,9 @@ before_install:
   - chmod 600 ./blog_deploy_key
   - ssh-add ./blog_deploy_key
 
-install: npm install
+install:
+  - npm install
+  - npm audit fix
 
 script:
   - hexo clean
