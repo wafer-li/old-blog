@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "hexo": "^5.0.2",
-    "hexo-deployer-git": "^2.1.0",
+    "hexo-deployer-git": "hexojs/hexo-deployer-git",
     "hexo-filter-plantuml": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-atom-markdown-writer-meta-fixed": "^0.1.4",
