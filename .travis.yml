@@ -14,7 +14,7 @@ env:
     - TZ=Asia/Tokyo
 
 language: node_js
-node_js: 13
+node_js: node
 
 branches:
   only:
