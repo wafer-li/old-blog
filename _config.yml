@@ -154,47 +154,6 @@ markdown_it_plus:
             name: markdown-it-fontawesome
             enable: true
 
-
-# Minifier
-all_minifier: true
-
-## HTML
-html_minifier:
-  enable: true
-  ignore_error: false
-  silent: true
-  exclude:
-
-## CSS
-css_minifier:
-  enable: true
-  silent: true
-  exclude:
-
-## JS
-js_minifier:
-  enable: true
-  mangle: true
-  silent: true
-  exclude:
-
-## Image
-image_minifier:
-  enable: true
-  interlaced: true
-  multipass: true
-  optimizationLevel: 7
-  pngquant: true
-  progressive: true
-  silent: true
-
-## JS Concator
-js_concator:
-  enable: false
-  bundle_path: '/js/bundle.js'
-  front: true
-  silent: true
-
 # PlantUML
 plantuml:
   render: "PlantUMLServer"
