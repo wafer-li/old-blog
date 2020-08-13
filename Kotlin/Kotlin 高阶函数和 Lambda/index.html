@@ -1,48 +1,583 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.0.2"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png"><link rel="mask-icon" href="/images/logo.svg" color="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css"><script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><script class="hexo-configurations">var NexT=window.NexT||{},CONFIG={hostname:"wafer.li",root:"/",scheme:"Pisces",version:"8.0.0-rc.5",exturl:!1,sidebar:{position:"right",display:"post",padding:18,offset:12},copycode:!0,bookmark:{enable:!0,color:"#222",save:"auto"},fancybox:!0,mediumzoom:!0,lazyload:!0,pangu:!0,comments:{style:"tabs",active:null,storage:!0,lazyload:!0,nav:null},motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"fadeInDown",post_body:"fadeInDown",coll_header:"fadeInLeft",sidebar:"fadeInUp"}},prism:!1,path:"search.xml",localsearch:{enable:!0,trigger:"auto",top_n_per_article:1,unescape:!1,preload:!0}}</script><meta name="description" content="1. 高阶函数 Kotlin 允许函数接受一个函数引用作为参数，这样的函数被称作高阶函数。 这使得回调机制在 Kotlin 中更容易被实现。"><meta property="og:type" content="article"><meta property="og:title" content="Kotlin 高阶函数和 Lambda"><meta property="og:url" content="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/index.html"><meta property="og:site_name" content="Wafer&#39;s Note"><meta property="og:description" content="1. 高阶函数 Kotlin 允许函数接受一个函数引用作为参数，这样的函数被称作高阶函数。 这使得回调机制在 Kotlin 中更容易被实现。"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2016-11-25T15:00:00.000Z"><meta property="article:modified_time" content="2017-04-14T11:56:41.000Z"><meta property="article:author" content="Wafer Li"><meta property="article:tag" content="Kotlin"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/"><script class="page-configurations">CONFIG.page={sidebar:"",isHome:!1,isPost:!0,lang:"zh-CN"}</script><title>Kotlin 高阶函数和 Lambda | Wafer's Note</title><noscript><style>body{margin-top:2rem}.use-motion .collection-header,.use-motion .comments,.use-motion .menu-item,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header,.use-motion .sidebar{visibility:visible}.use-motion .footer,.use-motion .header,.use-motion .site-brand-container .toggle{opacity:initial}.use-motion .custom-logo-image,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line{transform:scaleX(1)}.search-pop-overlay,.sidebar-nav{display:none}.sidebar-panel{display:block}</style></noscript><link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-</head><body itemscope itemtype="http://schema.org/WebPage" class="use-motion"><div class="headband"></div><main class="main"><header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-container"><div class="site-nav-toggle"><div class="toggle" aria-label="切换导航栏"><span class="toggle-line"></span> <span class="toggle-line"></span> <span class="toggle-line"></span></div></div><div class="site-meta"><a href="/" class="brand" rel="start"><i class="logo-line"></i><h1 class="site-title">Wafer's Note</h1><i class="logo-line"></i></a><p class="site-subtitle" itemprop="description">Kancolle is life!</p></div><div class="site-nav-right"><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class="site-nav"><ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a></li><li class="menu-item menu-item-search"><a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索</a></li></ul></nav><div class="search-pop-overlay"><div class="popup search-popup"><div class="search-header"><span class="search-icon"><i class="fa fa-search"></i></span><div class="search-input-container"><input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input"></div><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span></div><div class="search-result-container"><div class="no-result"><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle"><span class="toggle-line"></span> <span class="toggle-line"></span> <span class="toggle-line"></span></div><aside class="sidebar"><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class="sidebar-nav"><li class="sidebar-nav-toc">文章目录</li><li class="sidebar-nav-overview">站点概览</li></ul><section class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="nav-text">1. 高阶函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E5%A3%B0%E6%98%8E"><span class="nav-text">1.1 声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E8%B0%83%E7%94%A8"><span class="nav-text">1.2 调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-it-%E5%8F%82%E6%95%B0"><span class="nav-text">1.3 it 参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-lambda-%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text">2. Lambda 表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-text">2.1 函数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-lambda-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="nav-text">2.2 Lambda 表达式的语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0"><span class="nav-text">2.3 匿名函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-%E9%97%AD%E5%8C%85"><span class="nav-text">2.4 闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E5%B8%A6%E6%8E%A5%E6%94%B6%E8%80%85%E7%9A%84%E5%87%BD%E6%95%B0"><span class="nav-text">2.5 带接收者的函数</span></a></li></ol></li></ol></div></section><section class="site-overview-wrap sidebar-panel"><div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person"><p class="site-author-name" itemprop="name">Wafer Li</p><div class="site-description" itemprop="description">Android & Kotlin beginner Experienced Admiral</div></div><div class="site-state-wrap animated"><nav class="site-state"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">207</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">51</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">76</span> <span class="site-state-item-name">标签</span></a></div></nav></div><div class="links-of-author animated"><span class="links-of-author-item"><a href="https://github.com/wafer-li" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wafer-li" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a> </span><span class="links-of-author-item"><a href="mailto:omyshokami@gmail.com" title="E-Mail → mailto:omyshokami@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a></span></div><div class="cc-license animated" itemprop="license"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a></div></section></div></aside><div class="sidebar-dimmer"></div></header><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span>0%</span></div><div class="reading-progress-bar"></div><a role="button" class="book-mark-link book-mark-link-fixed"></a> <a href="https://github.com/wafer-li" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><noscript><div class="noscript-warning">Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.gif"><meta itemprop="name" content="Wafer Li"><meta itemprop="description" content="Android & Kotlin beginner
- Experienced Admiral"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Wafer's Note"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Kotlin 高阶函数和 Lambda</h1><div class="post-meta"><span class="post-meta-item"><span class="post-meta-item-icon"><i class="far fa-calendar"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2016-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-26T00:00:00+09:00">2016-11-26</time> </span><span class="post-meta-item"><span class="post-meta-item-icon"><i class="far fa-calendar-check"></i> </span><span class="post-meta-item-text">更新于</span> <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time> </span><span class="post-meta-item"><span class="post-meta-item-icon"><i class="far fa-folder"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Kotlin/" itemprop="url" rel="index"><span itemprop="name">Kotlin</span></a> </span></span><span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display:none"><span class="post-meta-item-icon"><i class="far fa-eye"></i> </span><span class="post-meta-item-text">阅读次数：</span> <span id="busuanzi_value_page_pv"></span></span><br><span class="post-meta-item" title="本文字数"><span class="post-meta-item-icon"><i class="far fa-file-word"></i> </span><span class="post-meta-item-text">本文字数：</span> <span>3.4k</span> </span><span class="post-meta-item" title="阅读时长"><span class="post-meta-item-icon"><i class="far fa-clock"></i> </span><span class="post-meta-item-text">阅读时长 &asymp;</span> <span>3 分钟</span></span></div></header><div class="post-body" itemprop="articleBody"><h2 id="1-高阶函数"><a class="markdownIt-Anchor" href="#1-高阶函数"></a> 1. 高阶函数</h2><p>Kotlin 允许函数接受一个<strong>函数引用</strong>作为参数，这样的函数被称作<strong>高阶函数</strong>。</p><p>这使得回调机制在 Kotlin 中更容易被实现。</p><a id="more"></a><h3 id="11-声明"><a class="markdownIt-Anchor" href="#11-声明"></a> 1.1 声明</h3><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">lock</span><span class="token punctuation">(</span>lock<span class="token operator">:</span> Lock<span class="token punctuation">,</span> body<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> T<span class="token punctuation">)</span><span class="token operator">:</span> T <span class="token punctuation">&#123;</span>
-  lock<span class="token punctuation">.</span><span class="token function">lock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-  <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">return</span> <span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-  <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span>
-    lock<span class="token punctuation">.</span><span class="token function">unlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>上面的这个例子中，<code>body</code> 就是一个函数引用，它的类型是 <code>() -&gt; T</code>，表示该函数不接受参数，返回类型是 <code>T</code>。</p><p>可以看到，在这个高阶函数中，可以直接使用 <code>body()</code> 对 <code>body</code> 函数进行调用。</p><h3 id="12-调用"><a class="markdownIt-Anchor" href="#12-调用"></a> 1.2 调用</h3><p>调用高阶函数需要传入另一个函数作为其参数，这是 Kotlin 反射机制中的一部分。</p><p>Kotlin 使用<strong>函数引用</strong>来指明一个函数对象，其形式是 <code>::functionName</code>，例如：</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">toBeSynchronized</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span> sharedResource<span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.0.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
-<span class="token keyword">val</span> result <span class="token operator">=</span> <span class="token function">lock</span><span class="token punctuation">(</span>lock<span class="token punctuation">,</span> <span class="token operator">::</span>toBeSynchronized<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这个例子中 <code>::toBeSynchronized</code> 就是函数 <code>toBeSynchronized()</code> 的函数引用。</p><p>除此之外，高阶函数还可以接受一个 Lambda 表达式作为其函数参数。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> result <span class="token operator">=</span> <span class="token function">lock</span><span class="token punctuation">(</span>lock<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> sharedResource<span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>Lambda 会在接下来的章节介绍，但是为了更好地理解高阶函数，先来几点简单的概述：</p></blockquote><ul><li>Lambda 表达式无论何时都使用 <code>&#123;&#125;</code> 和其他表达式分隔</li><li><code>-&gt;</code> 之前的是 Lambda 表达式的参数</li><li><code>-&gt;</code> 之后的是 Lambda 表达式的主体</li></ul><p>特别的，如果一个高阶函数的函数引用参数在最后一位，那么该参数能在括号外被指定。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token function">lock</span> <span class="token punctuation">(</span>lock<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+
+
+
+
+  
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+  </script>
+
+  <meta name="description" content="1. 高阶函数 Kotlin 允许函数接受一个函数引用作为参数，这样的函数被称作高阶函数。 这使得回调机制在 Kotlin 中更容易被实现。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kotlin 高阶函数和 Lambda">
+<meta property="og:url" content="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/index.html">
+<meta property="og:site_name" content="Wafer's Note">
+<meta property="og:description" content="1. 高阶函数 Kotlin 允许函数接受一个函数引用作为参数，这样的函数被称作高阶函数。 这使得回调机制在 Kotlin 中更容易被实现。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-11-25T15:00:00.000Z">
+<meta property="article:modified_time" content="2017-04-14T11:56:41.000Z">
+<meta property="article:author" content="Wafer Li">
+<meta property="article:tag" content="Kotlin">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Kotlin 高阶函数和 Lambda | Wafer's Note</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Wafer's Note</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Kancolle is life!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="nav-text"> 1. 高阶函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E5%A3%B0%E6%98%8E"><span class="nav-text"> 1.1 声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E8%B0%83%E7%94%A8"><span class="nav-text"> 1.2 调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-it-%E5%8F%82%E6%95%B0"><span class="nav-text"> 1.3 it 参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-lambda-%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text"> 2. Lambda 表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-text"> 2.1 函数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-lambda-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="nav-text"> 2.2 Lambda 表达式的语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0"><span class="nav-text"> 2.3 匿名函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-%E9%97%AD%E5%8C%85"><span class="nav-text"> 2.4 闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E5%B8%A6%E6%8E%A5%E6%94%B6%E8%80%85%E7%9A%84%E5%87%BD%E6%95%B0"><span class="nav-text"> 2.5 带接收者的函数</span></a></li></ol></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Wafer Li</p>
+  <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
+ Experienced Admiral</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">207</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">76</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wafer-li" title="GitHub → https://github.com/wafer-li" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:omyshokami@gmail.com" title="E-Mail → mailto:omyshokami@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/wafer-li" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+    
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wafer Li">
+      <meta itemprop="description" content="Android &amp; Kotlin beginner
+ Experienced Admiral">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wafer's Note">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Kotlin 高阶函数和 Lambda
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-26T00:00:00+09:00">2016-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Kotlin/" itemprop="url" rel="index"><span itemprop="name">Kotlin</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="far fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="1-高阶函数"><a class="markdownIt-Anchor" href="#1-高阶函数"></a> 1. 高阶函数</h2>
+<p>Kotlin 允许函数接受一个<strong>函数引用</strong>作为参数，这样的函数被称作<strong>高阶函数</strong>。</p>
+<p>这使得回调机制在 Kotlin 中更容易被实现。</p>
+<a id="more"></a>
+<h3 id="11-声明"><a class="markdownIt-Anchor" href="#11-声明"></a> 1.1 声明</h3>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token function">lock</span><span class="token punctuation">(</span>lock<span class="token operator">:</span> Lock<span class="token punctuation">,</span> body<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> T<span class="token punctuation">)</span><span class="token operator">:</span> T <span class="token punctuation">{</span>
+  lock<span class="token punctuation">.</span><span class="token function">lock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+    lock<span class="token punctuation">.</span><span class="token function">unlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面的这个例子中，<code>body</code> 就是一个函数引用，它的类型是 <code>() -&gt; T</code>，表示该函数不接受参数，返回类型是 <code>T</code>。</p>
+<p>可以看到，在这个高阶函数中，可以直接使用 <code>body()</code> 对 <code>body</code> 函数进行调用。</p>
+<h3 id="12-调用"><a class="markdownIt-Anchor" href="#12-调用"></a> 1.2 调用</h3>
+<p>调用高阶函数需要传入另一个函数作为其参数，这是 Kotlin 反射机制中的一部分。</p>
+<p>Kotlin 使用<strong>函数引用</strong>来指明一个函数对象，其形式是 <code>::functionName</code>，例如：</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">toBeSynchronized</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span> sharedResource<span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">val</span> result <span class="token operator">=</span> <span class="token function">lock</span><span class="token punctuation">(</span>lock<span class="token punctuation">,</span> <span class="token operator">::</span>toBeSynchronized<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>这个例子中 <code>::toBeSynchronized</code> 就是函数 <code>toBeSynchronized()</code> 的函数引用。</p>
+<p>除此之外，高阶函数还可以接受一个 Lambda 表达式作为其函数参数。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> result <span class="token operator">=</span> <span class="token function">lock</span><span class="token punctuation">(</span>lock<span class="token punctuation">,</span> <span class="token punctuation">{</span> sharedResource<span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>Lambda 会在接下来的章节介绍，但是为了更好地理解高阶函数，先来几点简单的概述：</p>
+</blockquote>
+<ul>
+<li>Lambda 表达式无论何时都使用 <code>{}</code> 和其他表达式分隔</li>
+<li><code>-&gt;</code> 之前的是 Lambda 表达式的参数</li>
+<li><code>-&gt;</code> 之后的是 Lambda 表达式的主体</li>
+</ul>
+<p>特别的，如果一个高阶函数的函数引用参数在最后一位，那么该参数能在括号外被指定。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token function">lock</span> <span class="token punctuation">(</span>lock<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   sharedResource<span class="token punctuation">.</span><span class="token function">operation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>另一个高阶函数的例子是 <code>map()</code> 函数。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token operator">&lt;</span>T<span class="token punctuation">,</span> R<span class="token operator">></span> List<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>transform<span class="token operator">:</span> <span class="token punctuation">(</span>T<span class="token punctuation">)</span> <span class="token operator">-></span> R<span class="token punctuation">)</span><span class="token operator">:</span> List<span class="token operator">&lt;</span>R<span class="token operator">></span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">val</span> result <span class="token operator">=</span> arrayListOf<span class="token operator">&lt;</span>R<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>另一个高阶函数的例子是 <code>map()</code> 函数。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token operator">&lt;</span>T<span class="token punctuation">,</span> R<span class="token operator">&gt;</span> List<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>transform<span class="token operator">:</span> <span class="token punctuation">(</span>T<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> R<span class="token punctuation">)</span><span class="token operator">:</span> List<span class="token operator">&lt;</span>R<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">val</span> result <span class="token operator">=</span> arrayListOf<span class="token operator">&lt;</span>R<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
   <span class="token keyword">for</span> <span class="token punctuation">(</span>item <span class="token keyword">in</span> <span class="token keyword">this</span><span class="token punctuation">)</span>
     result<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token function">transform</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">)</span>
   <span class="token keyword">return</span> result
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>它可以这样被调用：</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> doubled <span class="token operator">=</span> ints<span class="token punctuation">.</span><span class="token function">map</span> <span class="token punctuation">&#123;</span> it <span class="token operator">-></span> it <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>注意到，如果高阶函数只有唯一的一个参数，而且这个参数是一个函数类型的，那么调用它的圆括号也可以被省略。</p><h3 id="13-it-参数"><a class="markdownIt-Anchor" href="#13-it-参数"></a> 1.3 <code>it</code> 参数</h3><p>如果一个 Lambda 表达式只拥有一个参数，那么其参数的声明和箭头符号(<code>-&gt;</code>)都可以省略。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin">ints<span class="token punctuation">.</span><span class="token function">map</span> <span class="token punctuation">&#123;</span> it <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这个唯一的参数被命名为 <code>it</code>，这是一个隐式的默认单参数名称。<br>当 Lambda 表达式像上面那样被调用时，不能使用 <code>it</code> 以外的名称来指代唯一的参数。</p><h2 id="2-lambda-表达式"><a class="markdownIt-Anchor" href="#2-lambda-表达式"></a> 2. Lambda 表达式</h2><p>Lambda 表达式是一种<strong>匿名的函数</strong>，它只有<strong>文字上的函数定义</strong>，而没有实际的名称。</p><p>也就是说 Lambda 表达式是一种没有被声明，却会被立即执行的函数。</p><p>考虑如下的高阶函数</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token function">max</span><span class="token punctuation">(</span>strings<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> a<span class="token punctuation">,</span> b <span class="token operator">-></span> a<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>length <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>其中的 Lambda 表达式和 <code>compare()</code> 方法是等价的。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">compare</span><span class="token punctuation">(</span>a<span class="token operator">:</span> String<span class="token punctuation">,</span> b<span class="token operator">:</span> String<span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token operator">=</span> a<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>length<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>注意到，lambda 是一个表达式，所以它最后一个语句的执行结果就是它的返回值。</p></blockquote><h3 id="21-函数类型"><a class="markdownIt-Anchor" href="#21-函数类型"></a> 2.1 函数类型</h3><p>对于上面的 <code>max()</code> 方法，定义如下：</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">max</span><span class="token punctuation">(</span>collection<span class="token operator">:</span> Collection<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">,</span> less<span class="token operator">:</span> <span class="token punctuation">(</span>T<span class="token punctuation">,</span> T<span class="token punctuation">)</span> <span class="token operator">-></span> Boolean<span class="token punctuation">)</span><span class="token operator">:</span> T<span class="token operator">?</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>它可以这样被调用：</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> doubled <span class="token operator">=</span> ints<span class="token punctuation">.</span><span class="token function">map</span> <span class="token punctuation">{</span> it <span class="token operator">-&gt;</span> it <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>注意到，如果高阶函数只有唯一的一个参数，而且这个参数是一个函数类型的，那么调用它的圆括号也可以被省略。</p>
+<h3 id="13-it-参数"><a class="markdownIt-Anchor" href="#13-it-参数"></a> 1.3 <code>it</code> 参数</h3>
+<p>如果一个 Lambda 表达式只拥有一个参数，那么其参数的声明和箭头符号(<code>-&gt;</code>)都可以省略。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin">ints<span class="token punctuation">.</span><span class="token function">map</span> <span class="token punctuation">{</span> it <span class="token operator">*</span> <span class="token number">2</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这个唯一的参数被命名为 <code>it</code>，这是一个隐式的默认单参数名称。<br>
+当 Lambda 表达式像上面那样被调用时，不能使用 <code>it</code> 以外的名称来指代唯一的参数。</p>
+<h2 id="2-lambda-表达式"><a class="markdownIt-Anchor" href="#2-lambda-表达式"></a> 2. Lambda 表达式</h2>
+<p>Lambda 表达式是一种<strong>匿名的函数</strong>，它只有<strong>文字上的函数定义</strong>，而没有实际的名称。</p>
+<p>也就是说 Lambda 表达式是一种没有被声明，却会被立即执行的函数。</p>
+<p>考虑如下的高阶函数</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token function">max</span><span class="token punctuation">(</span>strings<span class="token punctuation">,</span> <span class="token punctuation">{</span> a<span class="token punctuation">,</span> b <span class="token operator">-&gt;</span> a<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>length <span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>其中的 Lambda 表达式和 <code>compare()</code> 方法是等价的。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">compare</span><span class="token punctuation">(</span>a<span class="token operator">:</span> String<span class="token punctuation">,</span> b<span class="token operator">:</span> String<span class="token punctuation">)</span><span class="token operator">:</span> Boolean <span class="token operator">=</span> a<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>length<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>注意到，lambda 是一个表达式，所以它最后一个语句的执行结果就是它的返回值。</p>
+</blockquote>
+<h3 id="21-函数类型"><a class="markdownIt-Anchor" href="#21-函数类型"></a> 2.1 函数类型</h3>
+<p>对于上面的 <code>max()</code> 方法，定义如下：</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token function">max</span><span class="token punctuation">(</span>collection<span class="token operator">:</span> Collection<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">,</span> less<span class="token operator">:</span> <span class="token punctuation">(</span>T<span class="token punctuation">,</span> T<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Boolean<span class="token punctuation">)</span><span class="token operator">:</span> T<span class="token operator">?</span> <span class="token punctuation">{</span>
   <span class="token keyword">var</span> max<span class="token operator">:</span> T<span class="token operator">?</span> <span class="token operator">=</span> <span class="token keyword">null</span>
   <span class="token keyword">for</span> <span class="token punctuation">(</span>it <span class="token keyword">in</span> collection<span class="token punctuation">)</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>max <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> <span class="token function">less</span><span class="token punctuation">(</span>max<span class="token punctuation">,</span> it<span class="token punctuation">)</span><span class="token punctuation">)</span>
       max <span class="token operator">=</span> it
   <span class="token keyword">return</span> max
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>它是一个高阶函数，其中， <code>less</code> 的类型是一个<strong>函数</strong><code>(T, T) -&gt; Boolean</code>，意味着 <code>less</code> 函数接受两个 <code>T</code> 类型的参数，返回布尔值。</p><p>对于函数类型，除了上面的这种声明方法外，也可以给函数类型中的各个变量赋上名称。这将有助于说明该函数类型的调用方法和作用。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> compare<span class="token operator">:</span> <span class="token punctuation">(</span>x<span class="token operator">:</span> T<span class="token punctuation">,</span> y<span class="token operator">:</span> T<span class="token punctuation">)</span> <span class="token operator">-></span> Int <span class="token operator">=</span> <span class="token operator">..</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="22-lambda-表达式的语法"><a class="markdownIt-Anchor" href="#22-lambda-表达式的语法"></a> 2.2 Lambda 表达式的语法</h3><p>一个 lambda 表达式总是在花括号内；<br>参数的定义在括号之内，<code>-&gt;</code> 之前，而且可以省略类型；<br>函数的主题在 <code>-&gt;</code> 之后。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> sum<span class="token operator">:</span> <span class="token punctuation">(</span>Int<span class="token punctuation">,</span> Int<span class="token punctuation">)</span> <span class="token operator">-></span> Int <span class="token operator">=</span> <span class="token punctuation">&#123;</span> x<span class="token punctuation">,</span> y <span class="token operator">-></span> x <span class="token operator">+</span> y <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>同时，只有一个参数的 lambda 表达式可以直接省略参数声明和 <code>-&gt;</code></p><p>如果高阶函数的函数类型参数在最后一位，那么 lambda 表达式可以在圆括号之外。</p><h3 id="23-匿名函数"><a class="markdownIt-Anchor" href="#23-匿名函数"></a> 2.3 匿名函数</h3><p>lambda 表达式语法中缺少对返回类型的指定，<br>在通常情况下，这是非必须的，因为大多数的返回类型都可以被自动推断出来。</p><p>当然，如果你需要<strong>显式地声明返回类型</strong>，可以使用<strong>匿名函数</strong></p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span><span class="token punctuation">(</span>x<span class="token operator">:</span> Int<span class="token punctuation">,</span> y<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token operator">=</span> x <span class="token operator">+</span> y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>一个匿名函数和常规的函数声明很像，只不过它的名字被省略了。</p><p>匿名函数除了表达式之外，也可以使用语句块作为函数主体。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span><span class="token punctuation">(</span>x<span class="token operator">:</span> Int<span class="token punctuation">,</span> y<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>它是一个高阶函数，其中， <code>less</code> 的类型是一个<strong>函数</strong><code>(T, T) -&gt; Boolean</code>，意味着 <code>less</code> 函数接受两个 <code>T</code> 类型的参数，返回布尔值。</p>
+<p>对于函数类型，除了上面的这种声明方法外，也可以给函数类型中的各个变量赋上名称。这将有助于说明该函数类型的调用方法和作用。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> compare<span class="token operator">:</span> <span class="token punctuation">(</span>x<span class="token operator">:</span> T<span class="token punctuation">,</span> y<span class="token operator">:</span> T<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Int <span class="token operator">=</span> <span class="token operator">..</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="22-lambda-表达式的语法"><a class="markdownIt-Anchor" href="#22-lambda-表达式的语法"></a> 2.2 Lambda 表达式的语法</h3>
+<p>一个 lambda 表达式总是在花括号内；<br>
+参数的定义在括号之内，<code>-&gt;</code> 之前，而且可以省略类型；<br>
+函数的主题在 <code>-&gt;</code> 之后。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> sum<span class="token operator">:</span> <span class="token punctuation">(</span>Int<span class="token punctuation">,</span> Int<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Int <span class="token operator">=</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token operator">-&gt;</span> x <span class="token operator">+</span> y <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>同时，只有一个参数的 lambda 表达式可以直接省略参数声明和 <code>-&gt;</code></p>
+<p>如果高阶函数的函数类型参数在最后一位，那么 lambda 表达式可以在圆括号之外。</p>
+<h3 id="23-匿名函数"><a class="markdownIt-Anchor" href="#23-匿名函数"></a> 2.3 匿名函数</h3>
+<p>lambda 表达式语法中缺少对返回类型的指定，<br>
+在通常情况下，这是非必须的，因为大多数的返回类型都可以被自动推断出来。</p>
+<p>当然，如果你需要<strong>显式地声明返回类型</strong>，可以使用<strong>匿名函数</strong></p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span><span class="token punctuation">(</span>x<span class="token operator">:</span> Int<span class="token punctuation">,</span> y<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token operator">=</span> x <span class="token operator">+</span> y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>一个匿名函数和常规的函数声明很像，只不过它的名字被省略了。</p>
+<p>匿名函数除了表达式之外，也可以使用语句块作为函数主体。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">fun</span><span class="token punctuation">(</span>x<span class="token operator">:</span> Int<span class="token punctuation">,</span> y<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token punctuation">{</span>
   <span class="token keyword">return</span> x <span class="token operator">+</span> y
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>当匿名函数的参数类型能够被推断得出时，其参数类型可以被省略。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin">ints<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">fun</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span> item <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>同样的，匿名函数的返回类型也可以不显式指明，直接由函数主体推断得出。</p><p>需要注意的是，匿名函数的参数<strong>必须在圆括号之中</strong>，只有 Lambda 表达式材才允许在圆括号外传递参数。</p><p>匿名函数和 Lambda 表达式的一个主要区别是：<br>在 Lambda 表达式中的 <code>return</code> 语句会从其外部函数返回（即对应的高阶函数）；<br>而在匿名函数中的 <code>return</code> 将会在匿名函数自身返回。</p><blockquote><p>实际上，<code>return</code> 所对应的是<strong>最近的 <code>fun</code> 函数</strong>（这称为 local return），<br>但是根据<a target="_blank" rel="noopener" href="https://discuss.kotlinlang.org/t/return-from-outer-function/590/2">这个帖子</a>，<strong>非本地返回特性</strong>只支持内联函数，<br>所以从一个非内联的 lambda 使用 <code>return</code>，是不可能的。</p></blockquote><blockquote><p>但是匿名函数可以进行这种操作，当你需要从 lambda 使用 <code>return</code> 时，使用匿名函数来代替它。</p></blockquote><blockquote><p><a target="_blank" rel="noopener" href="https://www.reddit.com/r/Kotlin/comments/3yybyf/returning_from_lambda_functions/">https://www.reddit.com/r/Kotlin/comments/3yybyf/returning_from_lambda_functions/</a></p></blockquote><h3 id="24-闭包"><a class="markdownIt-Anchor" href="#24-闭包"></a> 2.4 闭包</h3><p>闭包指的是内部函数可以访问外部变量，Kotlin 的 lambda 表达式、匿名函数、局部函数和 object expression 都支持这一特性。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token number">0</span>
-ints<span class="token punctuation">.</span><span class="token function">filter</span> <span class="token punctuation">&#123;</span> it <span class="token operator">></span> <span class="token number">0</span> <span class="token punctuation">&#125;</span><span class="token punctuation">.</span><span class="token function">forEach</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>当匿名函数的参数类型能够被推断得出时，其参数类型可以被省略。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin">ints<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">fun</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">=</span> item <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>同样的，匿名函数的返回类型也可以不显式指明，直接由函数主体推断得出。</p>
+<p>需要注意的是，匿名函数的参数<strong>必须在圆括号之中</strong>，只有 Lambda 表达式材才允许在圆括号外传递参数。</p>
+<p>匿名函数和 Lambda 表达式的一个主要区别是：<br>
+在 Lambda 表达式中的 <code>return</code> 语句会从其外部函数返回（即对应的高阶函数）；<br>
+而在匿名函数中的 <code>return</code> 将会在匿名函数自身返回。</p>
+<blockquote>
+<p>实际上，<code>return</code> 所对应的是<strong>最近的 <code>fun</code> 函数</strong>（这称为 local return），<br>
+但是根据<a target="_blank" rel="noopener" href="https://discuss.kotlinlang.org/t/return-from-outer-function/590/2">这个帖子</a>，<strong>非本地返回特性</strong>只支持内联函数，<br>
+所以从一个非内联的 lambda 使用 <code>return</code>，是不可能的。</p>
+</blockquote>
+<blockquote>
+<p>但是匿名函数可以进行这种操作，当你需要从 lambda 使用 <code>return</code> 时，使用匿名函数来代替它。</p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.reddit.com/r/Kotlin/comments/3yybyf/returning_from_lambda_functions/">https://www.reddit.com/r/Kotlin/comments/3yybyf/returning_from_lambda_functions/</a></p>
+</blockquote>
+<h3 id="24-闭包"><a class="markdownIt-Anchor" href="#24-闭包"></a> 2.4 闭包</h3>
+<p>闭包指的是内部函数可以访问外部变量，Kotlin 的 lambda 表达式、匿名函数、局部函数和 object expression 都支持这一特性。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token number">0</span>
+ints<span class="token punctuation">.</span><span class="token function">filter</span> <span class="token punctuation">{</span> it <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">forEach</span> <span class="token punctuation">{</span>
   sum <span class="token operator">+=</span> it
-<span class="token punctuation">&#125;</span>
-<span class="token function">print</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>而且和 Java 不同的是，被闭包捕获的外部变量是可以改变的。</p><h3 id="25-带接收者的函数"><a class="markdownIt-Anchor" href="#25-带接收者的函数"></a> 2.5 带接收者的函数</h3><p>Kotlin 还支持定义一个带<strong>接收者</strong>的函数字面量，这样就可以在 lambda 表达式和匿名函数内部调用接收者的成员。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin">sum <span class="token operator">:</span> Int<span class="token punctuation">.</span><span class="token punctuation">(</span>other<span class="token operator">:</span> Int<span class="token punctuation">)</span> <span class="token operator">-></span> Int<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>与扩展函数的区别：带接收者的函数没有名字，只能通过匿名函数或者 lambda 表达式来使用</p></blockquote><p>这里定义了一个 <code>sum()</code> 函数，它的接收者是一个 <code>Int</code> 对象。</p><p>那么就可以像这样调用：</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token number">1</span><span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>通过匿名函数，我们可以定义一个带接收者函数的变量。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> sum <span class="token operator">=</span> <span class="token keyword">fun</span> Int<span class="token punctuation">.</span><span class="token punctuation">(</span>other<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token keyword">this</span> <span class="token operator">+</span> other<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>当接收者能从上下文被推断出来时，可以使用 lambda 表达式来调用接收者成员。</p><pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">class</span> HTML <span class="token punctuation">&#123;</span>
-    <span class="token keyword">fun</span> <span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token operator">..</span><span class="token punctuation">.</span> <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
+<span class="token punctuation">}</span>
+<span class="token function">print</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>而且和 Java 不同的是，被闭包捕获的外部变量是可以改变的。</p>
+<h3 id="25-带接收者的函数"><a class="markdownIt-Anchor" href="#25-带接收者的函数"></a> 2.5 带接收者的函数</h3>
+<p>Kotlin 还支持定义一个带<strong>接收者</strong>的函数字面量，这样就可以在 lambda 表达式和匿名函数内部调用接收者的成员。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin">sum <span class="token operator">:</span> Int<span class="token punctuation">.</span><span class="token punctuation">(</span>other<span class="token operator">:</span> Int<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Int<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>与扩展函数的区别：带接收者的函数没有名字，只能通过匿名函数或者 lambda 表达式来使用</p>
+</blockquote>
+<p>这里定义了一个 <code>sum()</code> 函数，它的接收者是一个 <code>Int</code> 对象。</p>
+<p>那么就可以像这样调用：</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token number">1</span><span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>通过匿名函数，我们可以定义一个带接收者函数的变量。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">val</span> sum <span class="token operator">=</span> <span class="token keyword">fun</span> Int<span class="token punctuation">.</span><span class="token punctuation">(</span>other<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token keyword">this</span> <span class="token operator">+</span> other<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>当接收者能从上下文被推断出来时，可以使用 lambda 表达式来调用接收者成员。</p>
+<pre class="line-numbers language-kotlin" data-language="kotlin"><code class="language-kotlin"><span class="token keyword">class</span> HTML <span class="token punctuation">{</span>
+    <span class="token keyword">fun</span> <span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">..</span><span class="token punctuation">.</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="token keyword">fun</span> <span class="token function">html</span><span class="token punctuation">(</span><span class="token keyword">init</span><span class="token operator">:</span> HTML<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> Unit<span class="token punctuation">)</span><span class="token operator">:</span> HTML <span class="token punctuation">&#123;</span>
+<span class="token keyword">fun</span> <span class="token function">html</span><span class="token punctuation">(</span><span class="token keyword">init</span><span class="token operator">:</span> HTML<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Unit<span class="token punctuation">)</span><span class="token operator">:</span> HTML <span class="token punctuation">{</span>
   <span class="token keyword">val</span> html <span class="token operator">=</span> <span class="token function">HTML</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// create the receiver object</span>
   html<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment">// pass the receiver object to the lambda</span>
   <span class="token keyword">return</span> html
-<span class="token punctuation">&#125;</span>
+<span class="token punctuation">}</span>
 
 
-html <span class="token punctuation">&#123;</span>       <span class="token comment">// lambda with receiver begins here</span>
+html <span class="token punctuation">{</span>       <span class="token comment">// lambda with receiver begins here</span>
     <span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">// calling a method on the receiver object</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者： </strong>Wafer Li</li><li class="post-copyright-link"><strong>本文链接：</strong> <a href="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/" title="Kotlin 高阶函数和 Lambda">https://wafer.li/Kotlin/Kotlin 高阶函数和 Lambda/</a></li><li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Kotlin/" rel="tag"># Kotlin</a></div><div class="post-widgets"><div class="wp_rating"><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-item"><a href="/PHP/PHP/" rel="prev" title="PHP"><i class="fa fa-chevron-left"></i> PHP</a></div><div class="post-nav-item"><a href="/Kotlin/Kotlin%20%E9%9B%86%E5%90%88/" rel="next" title="Kotlin 集合">Kotlin 集合 <i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript></div></div><script>window.addEventListener('tabs:register', () => {
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Wafer Li
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/" title="Kotlin 高阶函数和 Lambda">https://wafer.li/Kotlin/Kotlin 高阶函数和 Lambda/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/PHP/PHP/" rel="prev" title="PHP">
+                  <i class="fa fa-chevron-left"></i> PHP
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/Kotlin/Kotlin%20%E9%9B%86%E5%90%88/" rel="next" title="Kotlin 集合">
+                  Kotlin 集合 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+      
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
     let { activeClass } = CONFIG.comments;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
@@ -60,13 +595,155 @@ html <span class="token punctuation">&#123;</span>       <span class="token comm
       const commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
-  }</script></div></main><footer class="footer"><div class="footer-inner"><div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2020</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">Wafer Li</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-chart-area"></i> </span><span title="站点总字数">514k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span title="站点阅读时长">7:47</span></div><div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动</div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="post-meta-item" id="busuanzi_container_site_uv" style="display:none"><span class="post-meta-item-icon"><i class="fa fa-user"></i> </span><span class="site-uv" title="总访客量"><span id="busuanzi_value_site_uv"></span> </span></span><span class="post-meta-divider">|</span> <span class="post-meta-item" id="busuanzi_container_site_pv" style="display:none"><span class="post-meta-item-icon"><i class="fa fa-eye"></i> </span><span class="site-pv" title="总访问量"><span id="busuanzi_value_site_pv"></span></span></span></div></div></footer><script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script><script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script>CONFIG.page.isPost&&(wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:23154,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}())</script><script src="/js/local-search.js"></script><script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script><script>window.addEventListener('load', () => {
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  © 2016 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wafer Li</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">514k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">15:34</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+      
+<div class="busuanzi-count">
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+
+
+  
+  
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  
+
+
+
+
+
+
+
+<script src="/bundle.js"></script><script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  ;
+
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : 23154,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  ;
+
+      window.addEventListener('load', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/Kotlin/Kotlin%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%20Lambda/',]
       });
-      });</script><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"><script>NexT.utils.loadComments('#disqus_thread', () => {
+      });
+  ;
+
+NexT.utils.loadComments('#disqus_thread', () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
     window.dsqjs = new DisqusJS({
       api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
@@ -77,4 +754,5 @@ html <span class="token punctuation">&#123;</span>       <span class="token comm
       title     : "Kotlin 高阶函数和 Lambda",
     });
   }, window.DisqusJS);
-});</script></body></html>
+});
+</script></body></html>

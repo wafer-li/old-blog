@@ -24,7 +24,7 @@
     <updated>2020-06-03T17:19:31.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/new-21-game&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;a target=&quot;_blank&quot; rel=&quot;noopener&quot; href=&quot;https://leetcode-cn.com/problems/new-21-game&quot;&gt;题目&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：&lt;/p&gt;
 &lt;p&gt;爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 &lt;code&gt;[1, W]&lt;/code&gt; 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。&lt;/p&gt;
 &lt;p&gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&lt;/p&gt;</summary>
@@ -99,7 +99,7 @@
     
     <summary type="html">&lt;p&gt;在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;&lt;/p&gt;
 &lt;p&gt;很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。&lt;/p&gt;
-&lt;p&gt;当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的&lt;a href=&quot;https://www.jianshu.com/p/f41db270d5fe&quot;&gt;参考文章&lt;/a&gt;，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。&lt;/p&gt;
+&lt;p&gt;当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的&lt;a target=&quot;_blank&quot; rel=&quot;noopener&quot; href=&quot;https://www.jianshu.com/p/f41db270d5fe&quot;&gt;参考文章&lt;/a&gt;，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。&lt;/p&gt;
 &lt;p&gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&lt;/p&gt;</summary>
     
     
@@ -159,7 +159,7 @@
     
     
     <summary type="html">&lt;p&gt;这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。&lt;/p&gt;
-&lt;p&gt;原文：&lt;a href=&quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&quot;&gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&lt;/a&gt;&lt;/p&gt;</summary>
+&lt;p&gt;原文：&lt;a target=&quot;_blank&quot; rel=&quot;noopener&quot; href=&quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&quot;&gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -207,7 +207,7 @@
     
     
     <summary type="html">&lt;p&gt;之前看各大面经的时候搜索到了这个问题，切实感觉到如果刨根问底的问，自己还真不能抵挡住这种攻势，现在闲暇时间又心血来潮地想起来这个问题，就打算好好弄懂弄透，也希望能在将来面试的时候做好准备。&lt;/p&gt;
-&lt;p&gt;本文基于&lt;a href=&quot;https://stackoverflow.com/a/31401836&quot;&gt;这个 StackOverflow 回答&lt;/a&gt;进一步推导，并给出详细解答步骤&lt;/p&gt;</summary>
+&lt;p&gt;本文基于&lt;a target=&quot;_blank&quot; rel=&quot;noopener&quot; href=&quot;https://stackoverflow.com/a/31401836&quot;&gt;这个 StackOverflow 回答&lt;/a&gt;进一步推导，并给出详细解答步骤&lt;/p&gt;</summary>
     
     
     

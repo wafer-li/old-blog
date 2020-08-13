@@ -1,133 +1,654 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.0.2"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png"><link rel="mask-icon" href="/images/logo.svg" color="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css"><script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><script class="hexo-configurations">var NexT=window.NexT||{},CONFIG={hostname:"wafer.li",root:"/",scheme:"Pisces",version:"8.0.0-rc.5",exturl:!1,sidebar:{position:"right",display:"post",padding:18,offset:12},copycode:!0,bookmark:{enable:!0,color:"#222",save:"auto"},fancybox:!0,mediumzoom:!0,lazyload:!0,pangu:!0,comments:{style:"tabs",active:null,storage:!0,lazyload:!0,nav:null},motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"fadeInDown",post_body:"fadeInDown",coll_header:"fadeInLeft",sidebar:"fadeInUp"}},prism:!1,path:"search.xml",localsearch:{enable:!0,trigger:"auto",top_n_per_article:1,unescape:!1,preload:!0}}</script><meta name="description" content="1. 安装与配置  1.1 添加 Gradle 依赖 在 app&#x2F;build.gradle 中加入如下语句 compile &#39;com.jakewharton:butterknife:7.0.1&#39;"><meta property="og:type" content="article"><meta property="og:title" content="Butter Knife"><meta property="og:url" content="https://wafer.li/Android/Butter%20Knife/index.html"><meta property="og:site_name" content="Wafer&#39;s Note"><meta property="og:description" content="1. 安装与配置  1.1 添加 Gradle 依赖 在 app&#x2F;build.gradle 中加入如下语句 compile &#39;com.jakewharton:butterknife:7.0.1&#39;"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2016-10-13T15:00:00.000Z"><meta property="article:modified_time" content="2017-04-14T11:56:41.000Z"><meta property="article:author" content="Wafer Li"><meta property="article:tag" content="Android"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://wafer.li/Android/Butter%20Knife/"><script class="page-configurations">CONFIG.page={sidebar:"",isHome:!1,isPost:!0,lang:"zh-CN"}</script><title>Butter Knife | Wafer's Note</title><noscript><style>body{margin-top:2rem}.use-motion .collection-header,.use-motion .comments,.use-motion .menu-item,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header,.use-motion .sidebar{visibility:visible}.use-motion .footer,.use-motion .header,.use-motion .site-brand-container .toggle{opacity:initial}.use-motion .custom-logo-image,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line{transform:scaleX(1)}.search-pop-overlay,.sidebar-nav{display:none}.sidebar-panel{display:block}</style></noscript><link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-</head><body itemscope itemtype="http://schema.org/WebPage" class="use-motion"><div class="headband"></div><main class="main"><header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-container"><div class="site-nav-toggle"><div class="toggle" aria-label="切换导航栏"><span class="toggle-line"></span> <span class="toggle-line"></span> <span class="toggle-line"></span></div></div><div class="site-meta"><a href="/" class="brand" rel="start"><i class="logo-line"></i><h1 class="site-title">Wafer's Note</h1><i class="logo-line"></i></a><p class="site-subtitle" itemprop="description">Kancolle is life!</p></div><div class="site-nav-right"><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class="site-nav"><ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a></li><li class="menu-item menu-item-search"><a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索</a></li></ul></nav><div class="search-pop-overlay"><div class="popup search-popup"><div class="search-header"><span class="search-icon"><i class="fa fa-search"></i></span><div class="search-input-container"><input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input"></div><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span></div><div class="search-result-container"><div class="no-result"><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle"><span class="toggle-line"></span> <span class="toggle-line"></span> <span class="toggle-line"></span></div><aside class="sidebar"><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class="sidebar-nav"><li class="sidebar-nav-toc">文章目录</li><li class="sidebar-nav-overview">站点概览</li></ul><section class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-text">1. 安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E6%B7%BB%E5%8A%A0-gradle-%E4%BE%9D%E8%B5%96"><span class="nav-text">1.1 添加 Gradle 依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E5%8E%8B%E5%88%B6-lint-warnning"><span class="nav-text">1.2 压制 Lint Warnning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E9%85%8D%E7%BD%AE-proguard"><span class="nav-text">1.3 配置 ProGuard</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BD%BF%E7%94%A8"><span class="nav-text">2. 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E7%BB%91%E5%AE%9A%E8%A7%86%E5%9B%BE"><span class="nav-text">2.1 绑定视图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#211-%E5%9C%A8-activity-%E4%B8%AD%E8%BF%9B%E8%A1%8C%E7%BB%91%E5%AE%9A"><span class="nav-text">2.1.1 在 Activity 中进行绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#212-%E5%9C%A8-fragment-%E4%B8%AD%E8%BF%9B%E8%A1%8C%E7%BB%91%E5%AE%9A"><span class="nav-text">2.1.2 在 Fragment 中进行绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#213-%E5%9C%A8-viewholder-%E4%B8%AD%E5%AE%9E%E7%8E%B0%E7%BB%91%E5%AE%9A"><span class="nav-text">2.1.3 在 ViewHolder 中实现绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#214-%E5%85%B6%E4%BB%96%E6%83%85%E5%BD%A2"><span class="nav-text">2.1.4 其他情形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#215-%E5%85%B6%E4%BB%96%E7%BB%91%E5%AE%9A-api"><span class="nav-text">2.1.5 其他绑定 API</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#216-%E7%BB%91%E5%AE%9A-view-%E5%88%97%E8%A1%A8"><span class="nav-text">2.1.6 绑定 View 列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E7%BB%91%E5%AE%9A%E7%9B%91%E5%90%AC%E5%99%A8"><span class="nav-text">2.2 绑定监听器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E5%8F%96%E6%B6%88%E7%BB%91%E5%AE%9A"><span class="nav-text">2.3 取消绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-%E5%8F%AF%E9%80%89%E7%9A%84%E7%BB%91%E5%AE%9A"><span class="nav-text">2.4 可选的绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E5%AF%B9%E4%BA%8E%E5%A4%9A%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%91%E5%90%AC%E5%99%A8%E7%BB%91%E5%AE%9A"><span class="nav-text">2.5 对于多个方法的监听器绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26-%E7%AE%80%E5%8C%96%E7%9A%84-findviewbyid"><span class="nav-text">2.6 简化的 findViewById()</span></a></li></ol></li></ol></div></section><section class="site-overview-wrap sidebar-panel"><div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person"><p class="site-author-name" itemprop="name">Wafer Li</p><div class="site-description" itemprop="description">Android & Kotlin beginner Experienced Admiral</div></div><div class="site-state-wrap animated"><nav class="site-state"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">207</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">51</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">76</span> <span class="site-state-item-name">标签</span></a></div></nav></div><div class="links-of-author animated"><span class="links-of-author-item"><a href="https://github.com/wafer-li" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wafer-li" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a> </span><span class="links-of-author-item"><a href="mailto:omyshokami@gmail.com" title="E-Mail → mailto:omyshokami@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a></span></div><div class="cc-license animated" itemprop="license"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a></div></section></div></aside><div class="sidebar-dimmer"></div></header><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span>0%</span></div><div class="reading-progress-bar"></div><a role="button" class="book-mark-link book-mark-link-fixed"></a> <a href="https://github.com/wafer-li" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><noscript><div class="noscript-warning">Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://wafer.li/Android/Butter%20Knife/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.gif"><meta itemprop="name" content="Wafer Li"><meta itemprop="description" content="Android & Kotlin beginner
- Experienced Admiral"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Wafer's Note"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Butter Knife</h1><div class="post-meta"><span class="post-meta-item"><span class="post-meta-item-icon"><i class="far fa-calendar"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2016-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-14T00:00:00+09:00">2016-10-14</time> </span><span class="post-meta-item"><span class="post-meta-item-icon"><i class="far fa-calendar-check"></i> </span><span class="post-meta-item-text">更新于</span> <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time> </span><span class="post-meta-item"><span class="post-meta-item-icon"><i class="far fa-folder"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a> </span></span><span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display:none"><span class="post-meta-item-icon"><i class="far fa-eye"></i> </span><span class="post-meta-item-text">阅读次数：</span> <span id="busuanzi_value_page_pv"></span></span><br><span class="post-meta-item" title="本文字数"><span class="post-meta-item-icon"><i class="far fa-file-word"></i> </span><span class="post-meta-item-text">本文字数：</span> <span>5.9k</span> </span><span class="post-meta-item" title="阅读时长"><span class="post-meta-item-icon"><i class="far fa-clock"></i> </span><span class="post-meta-item-text">阅读时长 &asymp;</span> <span>5 分钟</span></span></div></header><div class="post-body" itemprop="articleBody"><h2 id="1-安装与配置"><a class="markdownIt-Anchor" href="#1-安装与配置"></a> 1. 安装与配置</h2><h3 id="11-添加-gradle-依赖"><a class="markdownIt-Anchor" href="#11-添加-gradle-依赖"></a> 1.1 添加 Gradle 依赖</h3><p>在 <code>app/build.gradle</code> 中加入如下语句</p><pre class="line-numbers language-groovy" data-language="groovy"><code class="language-groovy">compile <span class="token string">'com.jakewharton:butterknife:7.0.1'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><a id="more"></a><h3 id="12-压制-lint-warnning"><a class="markdownIt-Anchor" href="#12-压制-lint-warnning"></a> 1.2 压制 Lint Warnning</h3><p>在使用 Butter Knife 时，由于它是动态生成代码，Lint 由于没有检测到代码，所以会提示一些错误的警告，所以需要压制 Lint Warning。</p><p>在 <code>app/build.gradle</code> 中添加如下代码</p><pre class="line-numbers language-groovy" data-language="groovy"><code class="language-groovy">lintOptions <span class="token punctuation">&#123;</span>
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.0.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+  
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+  </script>
+
+  <meta name="description" content="1. 安装与配置  1.1 添加 Gradle 依赖 在 app/build.gradle 中加入如下语句 compile 'com.jakewharton:butterknife:7.0.1'">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Butter Knife">
+<meta property="og:url" content="https://wafer.li/Android/Butter%20Knife/index.html">
+<meta property="og:site_name" content="Wafer's Note">
+<meta property="og:description" content="1. 安装与配置  1.1 添加 Gradle 依赖 在 app/build.gradle 中加入如下语句 compile 'com.jakewharton:butterknife:7.0.1'">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-10-13T15:00:00.000Z">
+<meta property="article:modified_time" content="2017-04-14T11:56:41.000Z">
+<meta property="article:author" content="Wafer Li">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wafer.li/Android/Butter%20Knife/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Butter Knife | Wafer's Note</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Wafer's Note</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Kancolle is life!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-text"> 1. 安装与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E6%B7%BB%E5%8A%A0-gradle-%E4%BE%9D%E8%B5%96"><span class="nav-text"> 1.1 添加 Gradle 依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E5%8E%8B%E5%88%B6-lint-warnning"><span class="nav-text"> 1.2 压制 Lint Warnning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E9%85%8D%E7%BD%AE-proguard"><span class="nav-text"> 1.3 配置 ProGuard</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BD%BF%E7%94%A8"><span class="nav-text"> 2. 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E7%BB%91%E5%AE%9A%E8%A7%86%E5%9B%BE"><span class="nav-text"> 2.1 绑定视图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#211-%E5%9C%A8-activity-%E4%B8%AD%E8%BF%9B%E8%A1%8C%E7%BB%91%E5%AE%9A"><span class="nav-text"> 2.1.1 在 Activity 中进行绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#212-%E5%9C%A8-fragment-%E4%B8%AD%E8%BF%9B%E8%A1%8C%E7%BB%91%E5%AE%9A"><span class="nav-text"> 2.1.2 在 Fragment 中进行绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#213-%E5%9C%A8-viewholder-%E4%B8%AD%E5%AE%9E%E7%8E%B0%E7%BB%91%E5%AE%9A"><span class="nav-text"> 2.1.3 在 ViewHolder 中实现绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#214-%E5%85%B6%E4%BB%96%E6%83%85%E5%BD%A2"><span class="nav-text"> 2.1.4 其他情形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#215-%E5%85%B6%E4%BB%96%E7%BB%91%E5%AE%9A-api"><span class="nav-text"> 2.1.5 其他绑定 API</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#216-%E7%BB%91%E5%AE%9A-view-%E5%88%97%E8%A1%A8"><span class="nav-text"> 2.1.6 绑定 View 列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E7%BB%91%E5%AE%9A%E7%9B%91%E5%90%AC%E5%99%A8"><span class="nav-text"> 2.2 绑定监听器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E5%8F%96%E6%B6%88%E7%BB%91%E5%AE%9A"><span class="nav-text"> 2.3 取消绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-%E5%8F%AF%E9%80%89%E7%9A%84%E7%BB%91%E5%AE%9A"><span class="nav-text"> 2.4 可选的绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E5%AF%B9%E4%BA%8E%E5%A4%9A%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%91%E5%90%AC%E5%99%A8%E7%BB%91%E5%AE%9A"><span class="nav-text"> 2.5 对于多个方法的监听器绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26-%E7%AE%80%E5%8C%96%E7%9A%84-findviewbyid"><span class="nav-text"> 2.6 简化的 findViewById()</span></a></li></ol></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Wafer Li</p>
+  <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
+ Experienced Admiral</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">207</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">76</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wafer-li" title="GitHub → https://github.com/wafer-li" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:omyshokami@gmail.com" title="E-Mail → mailto:omyshokami@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/wafer-li" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+    
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wafer.li/Android/Butter%20Knife/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wafer Li">
+      <meta itemprop="description" content="Android &amp; Kotlin beginner
+ Experienced Admiral">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wafer's Note">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Butter Knife
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-14T00:00:00+09:00">2016-10-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="far fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              <span>11 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="1-安装与配置"><a class="markdownIt-Anchor" href="#1-安装与配置"></a> 1. 安装与配置</h2>
+<h3 id="11-添加-gradle-依赖"><a class="markdownIt-Anchor" href="#11-添加-gradle-依赖"></a> 1.1 添加 Gradle 依赖</h3>
+<p>在 <code>app/build.gradle</code> 中加入如下语句</p>
+<pre class="line-numbers language-groovy" data-language="groovy"><code class="language-groovy">compile <span class="token string">'com.jakewharton:butterknife:7.0.1'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<a id="more"></a>
+<h3 id="12-压制-lint-warnning"><a class="markdownIt-Anchor" href="#12-压制-lint-warnning"></a> 1.2 压制 Lint Warnning</h3>
+<p>在使用 Butter Knife 时，由于它是动态生成代码，Lint 由于没有检测到代码，所以会提示一些错误的警告，所以需要压制 Lint Warning。</p>
+<p>在 <code>app/build.gradle</code> 中添加如下代码</p>
+<pre class="line-numbers language-groovy" data-language="groovy"><code class="language-groovy">lintOptions <span class="token punctuation">{</span>
   disable <span class="token string">'InvalidPackage'</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="13-配置-proguard"><a class="markdownIt-Anchor" href="#13-配置-proguard"></a> 1.3 配置 ProGuard</h3><p>由于 Android 在 Release apk 时，会使用 ProGuard 来进行代码优化和混淆，但是它很可能无法正确区分所需要的代码，从而将 Butter Knife 的代码删除，所以要配置一些 Keep 选项。</p><p>在 <code>proguard.cfg</code> 文件中配置</p><pre class="line-numbers language-proguard" data-language="proguard"><code class="language-proguard">-keep class butterknife.** &#123; *; &#125;
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="13-配置-proguard"><a class="markdownIt-Anchor" href="#13-配置-proguard"></a> 1.3 配置 ProGuard</h3>
+<p>由于 Android 在 Release apk 时，会使用 ProGuard 来进行代码优化和混淆，但是它很可能无法正确区分所需要的代码，从而将 Butter Knife 的代码删除，所以要配置一些 Keep 选项。</p>
+<p>在 <code>proguard.cfg</code> 文件中配置</p>
+<pre class="line-numbers language-proguard" data-language="proguard"><code class="language-proguard">-keep class butterknife.** { *; }
 -dontwarn butterknife.internal.**
--keep class **$$ViewBinder &#123; *; &#125;
+-keep class **$$ViewBinder { *; }
 
--keepclasseswithmembernames class * &#123;
+-keepclasseswithmembernames class * {
     @butterknife.* &lt;fields&gt;;
-&#125;
+}
 
--keepclasseswithmembernames class * &#123;
+-keepclasseswithmembernames class * {
     @butterknife.* &lt;methods&gt;;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-使用"><a class="markdownIt-Anchor" href="#2-使用"></a> 2. 使用</h2><p>Butter Knife 最大的好处就是使用注解式开发，从而减少大量重复冗余的代码。</p><h3 id="21-绑定视图"><a class="markdownIt-Anchor" href="#21-绑定视图"></a> 2.1 绑定视图</h3><p>这里需要注意的是，<strong>重点是要调用 <code>ButterKnife.bind()</code> 方法</strong>，否则是无法起作用的。</p><h4 id="211-在-activity-中进行绑定"><a class="markdownIt-Anchor" href="#211-在-activity-中进行绑定"></a> 2.1.1 在 Activity 中进行绑定</h4><p>使用 <code>@Bind</code> 注释，并传入相应的视图 <code>id</code>，就可以将一个组件和它的视图快速绑定</p><p>例如：</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">ExampleActivity</span> <span class="token keyword">extends</span> <span class="token class-name">Activity</span> <span class="token punctuation">&#123;</span>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-使用"><a class="markdownIt-Anchor" href="#2-使用"></a> 2. 使用</h2>
+<p>Butter Knife 最大的好处就是使用注解式开发，从而减少大量重复冗余的代码。</p>
+<h3 id="21-绑定视图"><a class="markdownIt-Anchor" href="#21-绑定视图"></a> 2.1 绑定视图</h3>
+<p>这里需要注意的是，<strong>重点是要调用 <code>ButterKnife.bind()</code> 方法</strong>，否则是无法起作用的。</p>
+<h4 id="211-在-activity-中进行绑定"><a class="markdownIt-Anchor" href="#211-在-activity-中进行绑定"></a> 2.1.1 在 Activity 中进行绑定</h4>
+<p>使用 <code>@Bind</code> 注释，并传入相应的视图 <code>id</code>，就可以将一个组件和它的视图快速绑定</p>
+<p>例如：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">ExampleActivity</span> <span class="token keyword">extends</span> <span class="token class-name">Activity</span> <span class="token punctuation">{</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token class-name">TextView</span> title<span class="token punctuation">;</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>subtitle<span class="token punctuation">)</span> <span class="token class-name">TextView</span> subtitle<span class="token punctuation">;</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>footer<span class="token punctuation">)</span> <span class="token class-name">TextView</span> footer<span class="token punctuation">;</span>
 
   <span class="token annotation punctuation">@Override</span>
-  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>simple_activity<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// 注意，这个必须在 setContentView之后执行</span>
     <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// TODO Use fields...</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>注意， Butter Knife 的原理是通过生成代码来实现的，上面的使用相当于（生成了）以下代码</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">bind</span><span class="token punctuation">(</span><span class="token class-name">ExampleActivity</span> activity<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意， Butter Knife 的原理是通过生成代码来实现的，上面的使用相当于（生成了）以下代码</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">bind</span><span class="token punctuation">(</span><span class="token class-name">ExampleActivity</span> activity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   activity<span class="token punctuation">.</span>subtitle <span class="token operator">=</span> <span class="token punctuation">(</span>android<span class="token punctuation">.</span>widget<span class="token punctuation">.</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> activity<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token number">2130968578</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   activity<span class="token punctuation">.</span>footer <span class="token operator">=</span> <span class="token punctuation">(</span>android<span class="token punctuation">.</span>widget<span class="token punctuation">.</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> activity<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token number">2130968579</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   activity<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token punctuation">(</span>android<span class="token punctuation">.</span>widget<span class="token punctuation">.</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> activity<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token number">2130968577</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="212-在-fragment-中进行绑定"><a class="markdownIt-Anchor" href="#212-在-fragment-中进行绑定"></a> 2.1.2 在 Fragment 中进行绑定</h4><p>Butter Knife 提供了其 <code>bind()</code> 方法的几个重载，也可以通过接受一个根布局来进行绑定，所以在 Fragment 中应如下使用：</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FancyFragment</span> <span class="token keyword">extends</span> <span class="token class-name">Fragment</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="212-在-fragment-中进行绑定"><a class="markdownIt-Anchor" href="#212-在-fragment-中进行绑定"></a> 2.1.2 在 Fragment 中进行绑定</h4>
+<p>Butter Knife 提供了其 <code>bind()</code> 方法的几个重载，也可以通过接受一个根布局来进行绑定，所以在 Fragment 中应如下使用：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FancyFragment</span> <span class="token keyword">extends</span> <span class="token class-name">Fragment</span> <span class="token punctuation">{</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>button1<span class="token punctuation">)</span> <span class="token class-name">Button</span> button1<span class="token punctuation">;</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>button2<span class="token punctuation">)</span> <span class="token class-name">Button</span> button2<span class="token punctuation">;</span>
 
-  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">onCreateView</span><span class="token punctuation">(</span><span class="token class-name">LayoutInflater</span> inflater<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> container<span class="token punctuation">,</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">onCreateView</span><span class="token punctuation">(</span><span class="token class-name">LayoutInflater</span> inflater<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> container<span class="token punctuation">,</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">View</span> view <span class="token operator">=</span> inflater<span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>fancy_fragment<span class="token punctuation">,</span> container<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// 通过提供一个根布局实现 Fragment 的绑定</span>
     <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> view<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// TODO Use fields...</span>
     <span class="token keyword">return</span> view<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="213-在-viewholder-中实现绑定"><a class="markdownIt-Anchor" href="#213-在-viewholder-中实现绑定"></a> 2.1.3 在 ViewHolder 中实现绑定</h4><p>Android APP 中， ListView 或 RecyclerView 是最为常见的视图组件，对此，Butter Knife 也实现了 ViewHolder 的绑定方法。如下：</p><p>这里使用的是 ListView, 但是由于绑定的实现都在 ViewHolder 内部类中，因而 RecyclerView 的使用同理。</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyAdapter</span> <span class="token keyword">extends</span> <span class="token class-name">BaseAdapter</span> <span class="token punctuation">&#123;</span>
-  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">getView</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">,</span> <span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> parent<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="213-在-viewholder-中实现绑定"><a class="markdownIt-Anchor" href="#213-在-viewholder-中实现绑定"></a> 2.1.3 在 ViewHolder 中实现绑定</h4>
+<p>Android APP 中， ListView 或 RecyclerView 是最为常见的视图组件，对此，Butter Knife 也实现了 ViewHolder 的绑定方法。如下：</p>
+<p>这里使用的是 ListView, 但是由于绑定的实现都在 ViewHolder 内部类中，因而 RecyclerView 的使用同理。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyAdapter</span> <span class="token keyword">extends</span> <span class="token class-name">BaseAdapter</span> <span class="token punctuation">{</span>
+  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">getView</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">,</span> <span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">ViewHolder</span> holder<span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>view <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>view <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       holder <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">ViewHolder</span><span class="token punctuation">)</span> view<span class="token punctuation">.</span><span class="token function">getTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
       view <span class="token operator">=</span> inflater<span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>whatever<span class="token punctuation">,</span> parent<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
       holder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ViewHolder</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
       view<span class="token punctuation">.</span><span class="token function">setTag</span><span class="token punctuation">(</span>holder<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">}</span>
 
     holder<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"John Doe"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// etc...</span>
 
     <span class="token keyword">return</span> view<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">}</span>
 
-  <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ViewHolder</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ViewHolder</span> <span class="token punctuation">{</span>
     <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token class-name">TextView</span> name<span class="token punctuation">;</span>
     <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>job_title<span class="token punctuation">)</span> <span class="token class-name">TextView</span> jobTitle<span class="token punctuation">;</span>
 
-    <span class="token keyword">public</span> <span class="token class-name">ViewHolder</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">public</span> <span class="token class-name">ViewHolder</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> view<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="214-其他情形"><a class="markdownIt-Anchor" href="#214-其他情形"></a> 2.1.4 其他情形</h4><p>实际上，@Bind 注解只是起到了一个引入视图的作用，真正起到作用的是 <code>ButterKnife.bind</code> 方法，这一方法可以被放在任何你想使用 <code>findViewById</code> 的地方</p><h4 id="215-其他绑定-api"><a class="markdownIt-Anchor" href="#215-其他绑定-api"></a> 2.1.5 其他绑定 API</h4><ol><li><p>ButterKnife.bind(this, activity)</p><blockquote><p>这个方法可以在将导入的视图 xml 在任何地方进行绑定，如果采用了类似 <strong>MVC</strong> 的编程模式，那么就可以使用这个方法在 <code>Controller</code> 中进行绑定</p></blockquote></li></ol><h4 id="216-绑定-view-列表"><a class="markdownIt-Anchor" href="#216-绑定-view-列表"></a> 2.1.6 绑定 View 列表</h4><p>你可以一次性将多个 View 绑定到一个 List 或者数组上</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>first_name<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>middle_name<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>last_name <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">EditText</span><span class="token punctuation">></span></span> nameViews<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>可以使用统一的 apply() 方法来对 View 进行统一的操作</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>nameViews<span class="token punctuation">,</span> DISABLE<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>nameViews<span class="token punctuation">,</span> ENABLED<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>上面的代码实际上就相当于对列表中的每一个元素都采用这样的操作。<br>注意，上面的 DISABLE 和 ENABLE 需要定义 Action 和 Setter 的接口方法之后才能有效</p></blockquote><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Action</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">></span></span> DISABLE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Action</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="214-其他情形"><a class="markdownIt-Anchor" href="#214-其他情形"></a> 2.1.4 其他情形</h4>
+<p>实际上，@Bind 注解只是起到了一个引入视图的作用，真正起到作用的是 <code>ButterKnife.bind</code> 方法，这一方法可以被放在任何你想使用 <code>findViewById</code> 的地方</p>
+<h4 id="215-其他绑定-api"><a class="markdownIt-Anchor" href="#215-其他绑定-api"></a> 2.1.5 其他绑定 API</h4>
+<ol>
+<li>
+<p>ButterKnife.bind(this, activity)</p>
+<blockquote>
+<p>这个方法可以在将导入的视图 xml 在任何地方进行绑定，如果采用了类似 <strong>MVC</strong> 的编程模式，那么就可以使用这个方法在 <code>Controller</code> 中进行绑定</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="216-绑定-view-列表"><a class="markdownIt-Anchor" href="#216-绑定-view-列表"></a> 2.1.6 绑定 View 列表</h4>
+<p>你可以一次性将多个 View 绑定到一个 List 或者数组上</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>first_name<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>middle_name<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>last_name <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">EditText</span><span class="token punctuation">&gt;</span></span> nameViews<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>可以使用统一的 apply() 方法来对 View 进行统一的操作</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>nameViews<span class="token punctuation">,</span> DISABLE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>nameViews<span class="token punctuation">,</span> ENABLED<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>上面的代码实际上就相当于对列表中的每一个元素都采用这样的操作。<br>
+注意，上面的 DISABLE 和 ENABLE 需要定义 Action 和 Setter 的接口方法之后才能有效</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Action</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">&gt;</span></span> DISABLE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Action</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     view<span class="token punctuation">.</span><span class="token function">setEnabled</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Setter</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">,</span> <span class="token class-name">Boolean</span><span class="token punctuation">></span></span> ENABLED <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Setter</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">,</span> <span class="token class-name">Boolean</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> value<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Setter</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">,</span> <span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> ENABLED <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token class-name">Setter</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">View</span><span class="token punctuation">,</span> <span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> value<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     view<span class="token punctuation">.</span><span class="token function">setEnabled</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>同时，也可以将 Android 的 Property 应用到 apply() 方法中</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>nameViews<span class="token punctuation">,</span> <span class="token class-name">View</span><span class="token punctuation">.</span>ALPHA<span class="token punctuation">,</span> <span class="token number">0.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="22-绑定监听器"><a class="markdownIt-Anchor" href="#22-绑定监听器"></a> 2.2 绑定监听器</h3><p>Butter Knife 也同时提供了绑定监听器的方法；<br>通过使用 @OnClick 注解，在随后的方法中实现监听处理即可。</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>submit<span class="token punctuation">)</span>
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">submit</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>同时，也可以将 Android 的 Property 应用到 apply() 方法中</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>nameViews<span class="token punctuation">,</span> <span class="token class-name">View</span><span class="token punctuation">.</span>ALPHA<span class="token punctuation">,</span> <span class="token number">0.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="22-绑定监听器"><a class="markdownIt-Anchor" href="#22-绑定监听器"></a> 2.2 绑定监听器</h3>
+<p>Butter Knife 也同时提供了绑定监听器的方法；<br>
+通过使用 @OnClick 注解，在随后的方法中实现监听处理即可。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>submit<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">submit</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// TODO submit data to server...</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>监听器的所有参数都是可选的</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>submit<span class="token punctuation">)</span>
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>监听器的所有参数都是可选的</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>submit<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// TODO submit data to server...</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>定义一个其他的类型，Butter Knife 也能够识别，并进行自动 Cast</p><blockquote><p>为了尽量避免 Cast，所以应该尽量少使用这一种模式</p></blockquote><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>submit<span class="token punctuation">)</span>
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token class-name">Button</span> button<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>定义一个其他的类型，Butter Knife 也能够识别，并进行自动 Cast</p>
+<blockquote>
+<p>为了尽量避免 Cast，所以应该尽量少使用这一种模式</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>submit<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token class-name">Button</span> button<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   button<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"Hello!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>自定义的组件可以通过不传入 id 来实现监听器绑定</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FancyButton</span> <span class="token keyword">extends</span> <span class="token class-name">Button</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>自定义的组件可以通过不传入 id 来实现监听器绑定</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FancyButton</span> <span class="token keyword">extends</span> <span class="token class-name">Button</span> <span class="token punctuation">{</span>
   <span class="token annotation punctuation">@OnClick</span>
-  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment">// TODO do something!</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>还可以绑定多个控件到同一个事件监听器上</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>door1<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>door2<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>door3 <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">pickDoor</span><span class="token punctuation">(</span><span class="token class-name">DoorView</span> door<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>door<span class="token punctuation">.</span><span class="token function">hasPrizeBehind</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>还可以绑定多个控件到同一个事件监听器上</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>door1<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>door2<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>door3 <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">pickDoor</span><span class="token punctuation">(</span><span class="token class-name">DoorView</span> door<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>door<span class="token punctuation">.</span><span class="token function">hasPrizeBehind</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"You win!"</span><span class="token punctuation">,</span> LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
     <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"Try again"</span><span class="token punctuation">,</span> LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="23-取消绑定"><a class="markdownIt-Anchor" href="#23-取消绑定"></a> 2.3 取消绑定</h3><p>这个步骤通常在 Fragment 的使用中出现，由于 Fragment 的生命周期和 Activity 不同，我们可能需要在 <code>onCreateView()</code> 中构建视图，然后在 <code>onDestroyView()</code> 中将视图进行销毁。<br>这时候，我们就需要在 <code>onDestroyView()</code> 中将视图取消绑定</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FancyFragment</span> <span class="token keyword">extends</span> <span class="token class-name">Fragment</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="23-取消绑定"><a class="markdownIt-Anchor" href="#23-取消绑定"></a> 2.3 取消绑定</h3>
+<p>这个步骤通常在 Fragment 的使用中出现，由于 Fragment 的生命周期和 Activity 不同，我们可能需要在 <code>onCreateView()</code> 中构建视图，然后在 <code>onDestroyView()</code> 中将视图进行销毁。<br>
+这时候，我们就需要在 <code>onDestroyView()</code> 中将视图取消绑定</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FancyFragment</span> <span class="token keyword">extends</span> <span class="token class-name">Fragment</span> <span class="token punctuation">{</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>button1<span class="token punctuation">)</span> <span class="token class-name">Button</span> button1<span class="token punctuation">;</span>
   <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>button2<span class="token punctuation">)</span> <span class="token class-name">Button</span> button2<span class="token punctuation">;</span>
 
-  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">onCreateView</span><span class="token punctuation">(</span><span class="token class-name">LayoutInflater</span> inflater<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> container<span class="token punctuation">,</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">onCreateView</span><span class="token punctuation">(</span><span class="token class-name">LayoutInflater</span> inflater<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> container<span class="token punctuation">,</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">View</span> view <span class="token operator">=</span> inflater<span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>fancy_fragment<span class="token punctuation">,</span> container<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> view<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// TODO Use fields...</span>
     <span class="token keyword">return</span> view<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">}</span>
 
-  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDestroyView</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token annotation punctuation">@Override</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDestroyView</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onDestroyView</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">unbind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 在这里取消绑定</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="24-可选的绑定"><a class="markdownIt-Anchor" href="#24-可选的绑定"></a> 2.4 可选的绑定</h3><p>在默认情况下， <code>@Bind</code> 和监听器的绑定都是需要的，如果目标 View 没有找到的话，Butter Knife 将会抛出一个异常。<br>可以通过设置 <code>@Nullable</code> 注解来取消这个绑定</p><blockquote><p>注意，<code>@Nullable</code> 注解来源于 Android 的 <code>support-annotations</code> 库</p></blockquote><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Nullable</span> <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>might_not_be_there<span class="token punctuation">)</span> <span class="token class-name">TextView</span> mightNotBeThere<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="24-可选的绑定"><a class="markdownIt-Anchor" href="#24-可选的绑定"></a> 2.4 可选的绑定</h3>
+<p>在默认情况下， <code>@Bind</code> 和监听器的绑定都是需要的，如果目标 View 没有找到的话，Butter Knife 将会抛出一个异常。<br>
+可以通过设置 <code>@Nullable</code> 注解来取消这个绑定</p>
+<blockquote>
+<p>注意，<code>@Nullable</code> 注解来源于 Android 的 <code>support-annotations</code> 库</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Nullable</span> <span class="token annotation punctuation">@Bind</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>might_not_be_there<span class="token punctuation">)</span> <span class="token class-name">TextView</span> mightNotBeThere<span class="token punctuation">;</span>
 
-<span class="token annotation punctuation">@Nullable</span> <span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>maybe_missing<span class="token punctuation">)</span> <span class="token keyword">void</span> <span class="token function">onMaybeMissingClicked</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token annotation punctuation">@Nullable</span> <span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>maybe_missing<span class="token punctuation">)</span> <span class="token keyword">void</span> <span class="token function">onMaybeMissingClicked</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// TODO ...</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="25-对于多个方法的监听器绑定"><a class="markdownIt-Anchor" href="#25-对于多个方法的监听器绑定"></a> 2.5 对于多个方法的监听器绑定</h3><p>当一个监听器拥有多个回调方法时，使用 <code>callback</code> 参数来指定所需要绑定的回调方法</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnItemSelected</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>list_view<span class="token punctuation">)</span>
-<span class="token keyword">void</span> <span class="token function">onItemSelected</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="25-对于多个方法的监听器绑定"><a class="markdownIt-Anchor" href="#25-对于多个方法的监听器绑定"></a> 2.5 对于多个方法的监听器绑定</h3>
+<p>当一个监听器拥有多个回调方法时，使用 <code>callback</code> 参数来指定所需要绑定的回调方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@OnItemSelected</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>list_view<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">onItemSelected</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// TODO ...</span>
-<span class="token punctuation">&#125;</span>
+<span class="token punctuation">}</span>
 
 <span class="token annotation punctuation">@OnItemSelected</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>maybe_missing<span class="token punctuation">,</span> callback <span class="token operator">=</span> NOTHING_SELECTED<span class="token punctuation">)</span>
-<span class="token keyword">void</span> <span class="token function">onNothingSelected</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">void</span> <span class="token function">onNothingSelected</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// TODO ...</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="26-简化的-findviewbyid"><a class="markdownIt-Anchor" href="#26-简化的-findviewbyid"></a> 2.6 简化的 findViewById()</h3><p>Butter Knife 同时还提供了一个简化版本的 <code>findViewById()</code> —— <code>findById()</code>；<br>用这个方法可以在 <code>View</code>, <code>Acitivity</code>, <code>Dialog</code> 中找到想要的 View；<br>同时，该方法通过泛型来对返回值进行转换，所以可以省去 <code>findViewById()</code> 的强制转换了。</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">View</span> view <span class="token operator">=</span> <span class="token class-name">LayoutInflater</span><span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>thing<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="26-简化的-findviewbyid"><a class="markdownIt-Anchor" href="#26-简化的-findviewbyid"></a> 2.6 简化的 findViewById()</h3>
+<p>Butter Knife 同时还提供了一个简化版本的 <code>findViewById()</code> —— <code>findById()</code>；<br>
+用这个方法可以在 <code>View</code>, <code>Acitivity</code>, <code>Dialog</code> 中找到想要的 View；<br>
+同时，该方法通过泛型来对返回值进行转换，所以可以省去 <code>findViewById()</code> 的强制转换了。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">View</span> view <span class="token operator">=</span> <span class="token class-name">LayoutInflater</span><span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>thing<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token class-name">TextView</span> firstName <span class="token operator">=</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>first_name<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token class-name">TextView</span> lastName <span class="token operator">=</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>last_name<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token class-name">ImageView</span> photo <span class="token operator">=</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>photo<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者： </strong>Wafer Li</li><li class="post-copyright-link"><strong>本文链接：</strong> <a href="https://wafer.li/Android/Butter%20Knife/" title="Butter Knife">https://wafer.li/Android/Butter Knife/</a></li><li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Android/" rel="tag"># Android</a></div><div class="post-widgets"><div class="wp_rating"><div id="wpac-rating"></div></div></div><div class="post-nav"><div class="post-nav-item"><a href="/Android/Genymotion%20Problems%20and%20Solutions/" rel="prev" title="Genymotion Problems and Solutions"><i class="fa fa-chevron-left"></i> Genymotion Problems and Solutions</a></div><div class="post-nav-item"><a href="/Android/AsyncTask%20with%20Callback/" rel="next" title="AsyncTask with Callback">AsyncTask with Callback <i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript></div></div><script>window.addEventListener('tabs:register', () => {
+<span class="token class-name">ImageView</span> photo <span class="token operator">=</span> <span class="token class-name">ButterKnife</span><span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>photo<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Wafer Li
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wafer.li/Android/Butter%20Knife/" title="Butter Knife">https://wafer.li/Android/Butter Knife/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Android/" rel="tag"># Android</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/Android/Genymotion%20Problems%20and%20Solutions/" rel="prev" title="Genymotion Problems and Solutions">
+                  <i class="fa fa-chevron-left"></i> Genymotion Problems and Solutions
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/Android/AsyncTask%20with%20Callback/" rel="next" title="AsyncTask with Callback">
+                  AsyncTask with Callback <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+      
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
     let { activeClass } = CONFIG.comments;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
@@ -145,13 +666,155 @@
       const commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
-  }</script></div></main><footer class="footer"><div class="footer-inner"><div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2020</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">Wafer Li</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-chart-area"></i> </span><span title="站点总字数">514k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span title="站点阅读时长">7:47</span></div><div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动</div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="post-meta-item" id="busuanzi_container_site_uv" style="display:none"><span class="post-meta-item-icon"><i class="fa fa-user"></i> </span><span class="site-uv" title="总访客量"><span id="busuanzi_value_site_uv"></span> </span></span><span class="post-meta-divider">|</span> <span class="post-meta-item" id="busuanzi_container_site_pv" style="display:none"><span class="post-meta-item-icon"><i class="fa fa-eye"></i> </span><span class="site-pv" title="总访问量"><span id="busuanzi_value_site_pv"></span></span></span></div></div></footer><script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script><script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script>CONFIG.page.isPost&&(wpac_init=window.wpac_init||[],wpac_init.push({widget:"Rating",id:23154,el:"wpac-rating",color:"fc6423"}),function(){if(!("WIDGETPACK_LOADED"in window)){WIDGETPACK_LOADED=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//embed.widgetpack.com/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t.nextSibling)}}())</script><script src="/js/local-search.js"></script><script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script><script>window.addEventListener('load', () => {
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  © 2016 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wafer Li</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">514k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">15:34</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+      
+<div class="busuanzi-count">
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+
+
+  
+  
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  
+
+
+
+
+
+
+
+<script src="/bundle.js"></script><script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  ;
+
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : 23154,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  ;
+
+      window.addEventListener('load', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/Android/Butter%20Knife/',]
       });
-      });</script><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"><script>NexT.utils.loadComments('#disqus_thread', () => {
+      });
+  ;
+
+NexT.utils.loadComments('#disqus_thread', () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
     window.dsqjs = new DisqusJS({
       api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
@@ -162,4 +825,5 @@
       title     : "Butter Knife",
     });
   }, window.DisqusJS);
-});</script></body></html>
+});
+</script></body></html>
