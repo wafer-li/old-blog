@@ -168,7 +168,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</loc>
+        <loc>https://wafer.li/Algorithm/%E5%9F%BA%E6%9C%AC%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
         <lastmod>2018-01-29T17:01:11.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -176,7 +176,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Algorithm/%E5%9F%BA%E6%9C%AC%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
+        <loc>https://wafer.li/Algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</loc>
         <lastmod>2018-01-29T17:01:11.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -624,7 +624,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -632,7 +632,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E4%B8%BB%E4%BD%93%E7%8E%AF%E5%A2%83/</loc>
+        <loc>https://wafer.li/Mono/OSX%20Mono%20Halal%20Installation/</loc>
         <lastmod>2017-04-18T16:32:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1000,6 +1000,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/HTML/Head%20%E6%A0%87%E7%AD%BE%E5%86%85%E5%AE%B9/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1008,7 +1016,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
+        <loc>https://wafer.li/IntelliJ/Intellij%20Tips%20and%20Tricks/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1089,22 +1097,6 @@
 
     <url>
         <loc>https://wafer.li/Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/IntelliJ/Intellij%20Tips%20and%20Tricks/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1344,6 +1336,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Linux/My%20Linux%20Experiences/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1360,7 +1360,15 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/PHP/PHP/</loc>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E5%AE%9E%E4%BD%93%E5%B1%9E%E6%80%A7/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E6%A6%82%E8%BF%B0/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1376,15 +1384,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E5%AE%9E%E4%BD%93%E5%B1%9E%E6%80%A7/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E6%A6%82%E8%BF%B0/</loc>
+        <loc>https://wafer.li/PHP/PHP/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
