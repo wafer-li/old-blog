@@ -8,6 +8,7 @@
   "dependencies": {
     "hexo": "^5.0.2",
     "hexo-deployer-git": "^2.1.0",
+    "hexo-filter-mathjax": "^0.5.3",
     "hexo-filter-plantuml": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-atom-markdown-writer-meta-fixed": "^0.1.4",
