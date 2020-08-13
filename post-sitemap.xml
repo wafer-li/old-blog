@@ -936,6 +936,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/CleanCode/Java%20Coding%20Standards/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/CSharp/CSharp%20Const%20and%20Readonly%20Field/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -976,14 +984,6 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/CleanCode/Java%20Coding%20Standards/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://wafer.li/DesignPattern/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1009,14 +1009,6 @@
 
     <url>
         <loc>https://wafer.li/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/IntelliJ/Intellij%20Tips%20and%20Tricks/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1097,6 +1089,14 @@
 
     <url>
         <loc>https://wafer.li/Java/Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wafer.li/IntelliJ/Intellij%20Tips%20and%20Tricks/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1600,6 +1600,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
+        <lastmod>2017-04-08T13:58:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/CSharp/CSharp%20Class%20Basic/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1617,14 +1625,6 @@
 
     <url>
         <loc>https://wafer.li/CSharp/CSharp%20%E5%88%86%E9%83%A8%E7%B1%BB/</loc>
-        <lastmod>2017-04-08T13:58:25.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/CleanCode/Clean%20Code/</loc>
         <lastmod>2017-04-08T13:58:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
