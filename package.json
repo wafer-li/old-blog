@@ -26,6 +26,7 @@
     "hexo-word-counter": "0.0.2",
     "markdown-it-criticmarkup": "^0.0.1",
     "markdown-it-fontawesome": "^0.3.0",
-    "markdown-it-task-lists": "^2.1.1"
+    "markdown-it-task-lists": "^2.1.1",
+    "prism-themes": "^1.4.0"
   }
 }
