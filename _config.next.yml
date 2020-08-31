@@ -32,64 +32,6 @@ custom_file_path:
 
 
 # ---------------------------------------------------------------
-# Site Information Settings
-# See: https://theme-next.js.org/docs/getting-started/
-# ---------------------------------------------------------------
-
-favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
-
-# Show multilingual switcher in footer.
-language_switcher: false
-
-footer:
-  # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2016
-
-  # Icon between year and copyright info.
-  icon:
-    # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
-    # If you want to animate the icon, set it to true.
-    animated: true
-    # Change the color of icon, using Hex Code.
-    color: "#ff0000"
-
-  # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
-
-  # Powered by Hexo & NexT
-  powered: true
-
-  # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
-  beian:
-    enable: false
-    icp:
-    # The digit in the num of gongan beian.
-    gongan_id:
-    # The full num of gongan beian.
-    gongan_num:
-    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
-    gongan_icon_url:
-
-# Creative Commons 4.0 International License.
-# See: https://creativecommons.org/share-your-work/licensing-types-examples
-# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
-# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language: deed.zh
-
-
-# ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
 
@@ -101,6 +43,33 @@ scheme: Pisces
 
 # Dark Mode
 darkmode: true
+
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
+
+# Custom Logo (Warning: Do not support scheme Mist)
+custom_logo: #/uploads/custom-logo.jpg
+
+# Creative Commons 4.0 International License.
+# See: https://creativecommons.org/share-your-work/licensing-types-examples
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
 
 
 # ---------------------------------------------------------------
@@ -222,6 +191,45 @@ chat:
 
 
 # ---------------------------------------------------------------
+# Footer Settings
+# See: https://theme-next.js.org/docs/theme-settings/footer
+# ---------------------------------------------------------------
+
+# Show multilingual switcher in footer.
+language_switcher: false
+
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2016
+
+  # Icon between year and copyright info.
+  icon:
+    # Icon name in Font Awesome. See: https://fontawesome.com/icons
+    name: fa fa-heart
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#ff0000"
+
+  # If not defined, `author` from Hexo `_config.yml` will be used.
+  copyright:
+
+  # Powered by Hexo & NexT
+  powered: true
+
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
+  beian:
+    enable: false
+    icp:
+    # The digit in the num of gongan beian.
+    gongan_id:
+    # The full num of gongan beian.
+    gongan_num:
+    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    gongan_icon_url:
+
+
+# ---------------------------------------------------------------
 # Post Settings
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
@@ -246,7 +254,6 @@ post_meta:
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
   separated_meta: true
-  item_text_post: true
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
@@ -328,7 +335,7 @@ calendar:
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
-# See: https://theme-next.js.org/docs/theme-settings/
+# See: https://theme-next.js.org/docs/theme-settings/miscellaneous
 # ---------------------------------------------------------------
 
 # Set the text alignment in posts / pages.
@@ -342,9 +349,6 @@ mobile_layout_economy: false
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
-
-# Custom Logo (Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.jpg
 
 codeblock:
   # Code Highlight theme
@@ -394,7 +398,6 @@ github_banner:
 
 # ---------------------------------------------------------------
 # Font Settings
-# See: https://theme-next.js.org/docs/theme-settings/#Fonts-Customization
 # ---------------------------------------------------------------
 # Find fonts on Google Fonts (https://fonts.google.com)
 # All fonts set here will have the following styles:
@@ -484,22 +487,22 @@ baidu_push: true
 # Third Party Plugins & Services Settings
 # See: https://theme-next.js.org/docs/third-party-services/
 # More plugins: https://github.com/next-theme/awesome-next
-# You may need to install dependencies or set CDN URLs in `vendors`
+# You may need to install the corresponding dependency packages
 # ---------------------------------------------------------------
 
 # Math Formulas Render Support
+# Warning: Please install / uninstall the relevant renderer according to the documentation.
+# See: https://theme-next.js.org/docs/third-party-services/math-equations
 # Server-side plugin: https://github.com/next-theme/hexo-filter-mathjax
 math:
-  # Default (true) will load mathjax / katex script on demand.
+  # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
-  # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
-  per_page: true
+  # If you set it to true, it will load mathjax / katex srcipt EVERY PAGE.
+  every_page: false
 
-  # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
     enable: false
 
-  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
     enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
@@ -514,9 +517,9 @@ pjax: false
 fancybox: true
 
 # A JavaScript library for zooming images like Medium.
-# Do not enable both `fancybox` and `mediumzoom`.
+# Warning: Do not enable both `fancybox` and `mediumzoom`.
 # For more information: https://github.com/francoischalifour/medium-zoom
-mediumzoom: true
+mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
@@ -579,7 +582,6 @@ disqus:
   enable: false
   shortname:
   count: true
-  #post_meta_order: 0
 
 # DisqusJS
 # Alternative Disqus - Render comment component using Disqus API.
@@ -600,7 +602,6 @@ changyan:
   enable: false
   appid:
   appkey:
-  #post_meta_order: 0
 
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
@@ -619,7 +620,6 @@ valine:
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   enableQQ: false # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: [] # Set required fields: [nick] | [nick, mail]
-  #post_meta_order: 0
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -651,7 +651,7 @@ gitalk:
 rating:
   enable: true
   id:     23154
-  color:  fc6423
+  color:  "fc6423"
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -682,7 +682,7 @@ cnzz_siteid:
 # Show number of visitors of each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
-# Do not enable both `valine.visitor` and `leancloud_visitors`.
+# Warning: Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
   enable: false
   app_id: # <your app id>
@@ -726,10 +726,6 @@ algolia_search:
   enable: false
   hits:
     per_page: 10
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
 
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
@@ -850,7 +846,7 @@ canvas_ribbon:
 #! ==============================================================
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
-#! See: https://theme-next.js.org/docs/advanced-settings
+#! See: https://theme-next.js.org/docs/advanced-settings/vendors
 #! ==============================================================
 
 # It's recommended to use the same version as in `_vendors.yml` to avoid potential problems.
@@ -858,6 +854,7 @@ canvas_ribbon:
 vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg
+  # Warning: If you are using the latest master branch of NexT, please set `internal: local`
   internal: local
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs
