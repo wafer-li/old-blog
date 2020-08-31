@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 一般的使用  1.1 添加编译依赖 compile 'com.android.support:recyclerview-v7:+'">
@@ -180,8 +180,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -311,54 +311,58 @@
           RecyclerView
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-14T00:00:00+09:00">2016-10-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2016-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-14T00:00:00+09:00">2016-10-14</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>6.5k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>12 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>8 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -379,28 +383,32 @@
 <p><code>layout.xml</code> 指的是 <code>Activity</code> 或者 <code>Fragment</code> 的布局</p>
 </blockquote>
  <pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>android.support.v7.widget.RecyclerView</span>
- <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
- <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
- <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@+id/recycler<span class="token punctuation">"</span></span>
- <span class="token attr-name"><span class="token namespace">android:</span>scrollbars</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
-</code><p><code class="language-xml"><span class="token comment">&lt;!-- Must define the scrollbars attr --&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@+id/recycler<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>scrollbars</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Must define the scrollbars attr --&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li>
 <p>新建一个 <code>item_layout.xml</code> 用于 <code>item</code> 的界面</p>
  <pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-</code></pre></li><code class="language-xml">
-</code></ol><code class="language-xml">
-<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LinearLayout</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">“</span><a target="_blank" rel="noopener" href="http://schemas.android.com/apk/res/android">http://schemas.android.com/apk/res/android</a><span class="token punctuation">”</span></span><br>
-<span class="token attr-name"><span class="token namespace">android:</span>orientation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">“</span>vertical<span class="token punctuation">”</span></span><br>
-<span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">“</span>match_parent<span class="token punctuation">”</span></span><br>
-<span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">“</span>wrap_content<span class="token punctuation">”</span></span><span class="token punctuation">&gt;</span></span></p>
-<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TextView</span><br>
-<span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">“</span>match_parent<span class="token punctuation">”</span></span><br>
-<span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">“</span>match_parent<span class="token punctuation">”</span></span><br>
-<span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@+id/quest_item<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></p>
-</code><p><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>LinearLayout</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>&gt; 注意，在 `support-library 23.2.0` 之后，`LayoutManager` 提供了**自动调整**功能，所以对 `item` 的根布局应采用 `wrap_content` 的 `layout_hight`
-</code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LinearLayout</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://schemas.android.com/apk/res/android<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>orientation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap_content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TextView</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@+id/quest_item<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>LinearLayout</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>注意，在 <code>support-library 23.2.0</code> 之后，<code>LayoutManager</code> 提供了<strong>自动调整</strong>功能，所以对 <code>item</code> 的根布局应采用 <code>wrap_content</code> 的 <code>layout_hight</code></p>
+</blockquote>
+</li>
+</ol>
 <h3 id="13-设置-layoutmanager-和-adapter"><a class="markdownIt-Anchor" href="#13-设置-layoutmanager-和-adapter"></a> 1.3 设置 <strong>LayoutManager</strong> 和 <strong>Adapter</strong></h3>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Override</span>
 <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">onCreateView</span><span class="token punctuation">(</span><span class="token class-name">LayoutInflater</span> inflater<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> parent<span class="token punctuation">,</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -428,47 +436,52 @@
 <li>
 <p>Adapter 储存着数据的集合，还有一个作为内部类的 <code>ViewHolder</code></p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyAdapter</span> <span class="token keyword">extends</span> <span class="token class-name">RecyclerView</span><span class="token punctuation">.</span><span class="token class-name">Adapter</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">MyAdapter</span><span class="token punctuation">.</span><span class="token class-name">ViewHolder</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
-<p><span class="token comment">//The DataSet</span><br>
-<span class="token keyword">private</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> mDatas<span class="token punctuation">;</span><br>
-<span class="token comment">//…other stuff</span></p>
-<p><span class="token comment">//The inner ViewHolder</span><br>
-<span class="token keyword">class</span> <span class="token class-name">MyViewHolder</span> <span class="token keyword">extends</span> <span class="token class-name">Recycler</span><span class="token punctuation">.</span><span class="token class-name">ViewHolder</span> <span class="token punctuation">{</span><br>
-<span class="token comment">//The views</span><br>
-<span class="token keyword">public</span> <span class="token class-name">TextView</span> textView<span class="token punctuation">;</span></p>
-<pre><code> &lt;span class="token comment"&gt;//The Ctor is Auto-Generate&lt;/span&gt;
- &lt;span class="token keyword"&gt;public&lt;/span&gt; &lt;span class="token class-name"&gt;MyViewHolder&lt;/span&gt; &lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token class-name"&gt;View&lt;/span&gt; itemView&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token punctuation"&gt;&amp;#123;&lt;/span&gt;
-     &lt;span class="token keyword"&gt;super&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;itemView&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;
-     &lt;span class="token comment"&gt;//Just set the view as the @param is Ok&lt;/span&gt;
- &lt;span class="token punctuation"&gt;&amp;#125;&lt;/span&gt;
-</code></pre>
-</code><p><code class="language-java"><span class="token punctuation">}</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+
+    <span class="token comment">//The DataSet</span>
+    <span class="token keyword">private</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> mDatas<span class="token punctuation">;</span>
+    <span class="token comment">//...other stuff</span>
+
+    <span class="token comment">//The inner ViewHolder</span>
+    <span class="token keyword">class</span> <span class="token class-name">MyViewHolder</span> <span class="token keyword">extends</span> <span class="token class-name">Recycler</span><span class="token punctuation">.</span><span class="token class-name">ViewHolder</span> <span class="token punctuation">{</span>
+        <span class="token comment">//The views</span>
+        <span class="token keyword">public</span> <span class="token class-name">TextView</span> textView<span class="token punctuation">;</span>
+
+        <span class="token comment">//The Ctor is Auto-Generate</span>
+        <span class="token keyword">public</span> <span class="token class-name">MyViewHolder</span> <span class="token punctuation">(</span><span class="token class-name">View</span> itemView<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">super</span><span class="token punctuation">(</span>itemView<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//Just set the view as the @param is Ok</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li>
 <p>重载方法的使用</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Override</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-<p><span class="token keyword">public</span> <span class="token class-name">MyViewHolder</span> <span class="token function">onCreateViewHolder</span><span class="token punctuation">(</span><span class="token class-name">ViewGroup</span> parent<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token class-name">ViewType</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// Build a ViewHolder which is the inner class, and return it</span></p>
-<pre><code>&lt;span class="token comment"&gt;/**
-* Notice: The ViewType is use to build the diffirent ViewHolder
-* to display diffirent ViewHolder
-*/&lt;/span&gt;
-&lt;span class="token keyword"&gt;return&lt;/span&gt; &lt;span class="token keyword"&gt;new&lt;/span&gt; &lt;span class="token class-name"&gt;MyViewHolder&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;mLayoutInflater&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;inflate&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token class-name"&gt;R&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;layout&lt;span class="token punctuation"&gt;.&lt;/span&gt;item_text&lt;span class="token punctuation"&gt;,&lt;/span&gt; parent&lt;span class="token punctuation"&gt;,&lt;/span&gt; &lt;span class="token boolean"&gt;false&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;
-</code></pre>
-<p><span class="token punctuation">}</span></p>
-<p><span class="token annotation punctuation">@Override</span><br>
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onBindViewHolder</span><span class="token punctuation">(</span><span class="token class-name">MyViewHolder</span> holder<span class="token punctuation">,</span> <span class="token keyword">int</span> position<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// Bind the view with the DataSet</span><br>
-<span class="token comment">// Just like the getView() method in ListView</span><br>
-<span class="token comment">// But it’s more easier</span></p>
-<pre><code>holder&lt;span class="token punctuation"&gt;.&lt;/span&gt;mTextView&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setText&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;mData&lt;span class="token punctuation"&gt;[&lt;/span&gt;position&lt;span class="token punctuation"&gt;]&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;
-</code></pre>
-<p><span class="token punctuation">}</span></p>
-</code><p><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getItemCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// Return the amount of item</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
+<span class="token keyword">public</span> <span class="token class-name">MyViewHolder</span> <span class="token function">onCreateViewHolder</span><span class="token punctuation">(</span><span class="token class-name">ViewGroup</span> parent<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token class-name">ViewType</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Build a ViewHolder which is the inner class, and return it</span>
+
+    <span class="token comment">/**
+    * Notice: The ViewType is use to build the diffirent ViewHolder
+    * to display diffirent ViewHolder
+    */</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">MyViewHolder</span><span class="token punctuation">(</span>mLayoutInflater<span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>item_text<span class="token punctuation">,</span> parent<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onBindViewHolder</span><span class="token punctuation">(</span><span class="token class-name">MyViewHolder</span> holder<span class="token punctuation">,</span> <span class="token keyword">int</span> position<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Bind the view with the DataSet</span>
+    <span class="token comment">// Just like the getView() method in ListView</span>
+    <span class="token comment">// But it's more easier</span>
+
+    holder<span class="token punctuation">.</span>mTextView<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span>mData<span class="token punctuation">[</span>position<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getItemCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Return the amount of item</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
 <h2 id="2-多-item-布局实现"><a class="markdownIt-Anchor" href="#2-多-item-布局实现"></a> 2. 多 Item 布局实现</h2>
 <p>使用 <code>getItemViewType(int position)</code> 方法来获取每个 <code>position</code> 的 <code>ViewType</code></p>
 <blockquote>
@@ -543,16 +556,18 @@
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/Android/RecyclerView/" title="RecyclerView">https://wafer.li/Android/RecyclerView/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/Android/RecyclerView/" title="RecyclerView">https://wafer.li/Android/RecyclerView/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -560,8 +575,6 @@
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Android/" rel="tag"># Android</a>
           </div>
@@ -585,8 +598,7 @@
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -642,23 +654,22 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -667,7 +678,6 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -677,13 +687,8 @@
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -692,7 +697,6 @@
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -709,6 +713,16 @@
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

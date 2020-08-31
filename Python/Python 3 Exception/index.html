@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 概述  2. 处理异常  3. 引发异常  4. Try…Finally 语句  5. with 语句   1. 概述 Python 的异常处理和 Java 相似，函数拼写错误等也会触发异常。">
@@ -180,8 +180,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -311,54 +311,58 @@
           Python 3 Exception
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2016-12-12T00:00:00+09:00">2016-12-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2016-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2016-12-12T00:00:00+09:00">2016-12-12</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>4 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>3 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -381,12 +385,13 @@
 <p>通过 <code>try...except</code> 语句来处理异常</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
     text <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'Enter something --&gt; '</span><span class="token punctuation">)</span>
-</code><p><code class="language-python"><span class="token keyword">except</span> EOFError<span class="token punctuation">:</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">‘Why did you do an EOF on me?’</span><span class="token punctuation">)</span><br>
-<span class="token keyword">except</span> KeyboardInterrupt<span class="token punctuation">:</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">‘You cancelled the operation.’</span><span class="token punctuation">)</span><br>
-<span class="token keyword">else</span><span class="token punctuation">:</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">‘You entered {0}’</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+
+<span class="token keyword">except</span> EOFError<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Why did you do an EOF on me?'</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> KeyboardInterrupt<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'You cancelled the operation.'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'You entered {0}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><code>try</code> 还可以带一个 <code>else</code> 语句，作用与 <code>while</code> 的语句类似</p>
 </blockquote>
@@ -400,17 +405,19 @@
         self<span class="token punctuation">.</span>atleast <span class="token operator">=</span> atleast
 <span class="token keyword">try</span><span class="token punctuation">:</span>
     text <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'Enter something--&gt;'</span><span class="token punctuation">)</span>
-<pre><code>&lt;span class="token keyword"&gt;if&lt;/span&gt; &lt;span class="token builtin"&gt;len&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;text&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token operator"&gt;&amp;lt;&lt;/span&gt; &lt;span class="token number"&gt;3&lt;/span&gt;&lt;span class="token punctuation"&gt;:&lt;/span&gt;
-    &lt;span class="token keyword"&gt;raise&lt;/span&gt; ShortInputException&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token builtin"&gt;len&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;text&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;&lt;span class="token number"&gt;3&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;
-&lt;span class="token comment"&gt;#other work can continue as usual here&lt;/span&gt;
-</code></pre>
-<p><span class="token keyword">except</span> EOFError<span class="token punctuation">:</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">‘Why did you do an EOF on me’</span><span class="token punctuation">)</span></p>
-<p><span class="token keyword">except</span> ShortInputException <span class="token keyword">as</span> ex<span class="token punctuation">:</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span>‘ShortInputException The <span class="token builtin">input</span> was <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span> <span class="token builtin">long</span><span class="token punctuation">,</span> excepted <br>
-atleast <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>’<span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>ex<span class="token punctuation">.</span>length<span class="token punctuation">,</span> ex<span class="token punctuation">.</span>atleast<span class="token punctuation">)</span><span class="token punctuation">)</span></p>
-</code><p><code class="language-python"><span class="token keyword">else</span><span class="token punctuation">:</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">‘No exception was raised.’</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">:</span>
+        <span class="token keyword">raise</span> ShortInputException<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+    <span class="token comment">#other work can continue as usual here</span>
+
+<span class="token keyword">except</span> EOFError<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Why did you do an EOF on me'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">except</span> ShortInputException <span class="token keyword">as</span> ex<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>'ShortInputException The <span class="token builtin">input</span> was <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span> <span class="token builtin">long</span><span class="token punctuation">,</span> excepted \
+atleast <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>'<span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>ex<span class="token punctuation">.</span>length<span class="token punctuation">,</span> ex<span class="token punctuation">.</span>atleast<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'No exception was raised.'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="4-tryfinally-语句"><a class="markdownIt-Anchor" href="#4-tryfinally-语句"></a> 4. Try…Finally 语句</h2>
 <p>这点与 Java 相似，Python 使用 <code>finally</code> 语句来对流进行一些收尾操作</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/python</span>
@@ -447,16 +454,18 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/Python/Python%203%20Exception/" title="Python 3 Exception">https://wafer.li/Python/Python 3 Exception/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/Python/Python%203%20Exception/" title="Python 3 Exception">https://wafer.li/Python/Python 3 Exception/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -464,8 +473,6 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Python/" rel="tag"># Python</a>
           </div>
@@ -489,8 +496,7 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -546,23 +552,22 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -571,7 +576,6 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -581,13 +585,8 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -596,7 +595,6 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -613,6 +611,16 @@ atleast <span class="token punctuation">{</span><span class="token number">1</sp
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 概述  2. 添加依赖  3. 设计 layout/activity_main.xml  4. 构建 layout/drawer_header.xml  5. 定义 menu/drawer_item.xml  6. 显示汉堡包图标  7. 使状态栏透明   7.1 去除 Actionbar   7.2 v21 增加关于状态栏的属性   7.3 设置 DrawerLayout 使用 fit">
@@ -183,8 +183,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -314,54 +314,58 @@
           Android 官方 Navigation Drawer
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-11-08 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-08T00:00:00+09:00">2016-11-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2016-11-08 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-08T00:00:00+09:00">2016-11-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>7.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>13 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>9 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -407,15 +411,16 @@
     <span class="token attr-name"><span class="token namespace">tools:</span>context</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.wafer.toy.github_client.ui.activity.MainActivity<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 
     <span class="token comment">&lt;!-- Your main content --&gt;</span>
-<pre><code>&lt;span class="token tag"&gt;&lt;span class="token tag"&gt;&lt;span class="token punctuation"&gt;&amp;lt;&lt;/span&gt;android.support.design.widget.NavigationView&lt;/span&gt;
-    &lt;span class="token attr-name"&gt;&lt;span class="token namespace"&gt;android:&lt;/span&gt;id&lt;/span&gt;&lt;span class="token attr-value"&gt;&lt;span class="token punctuation attr-equals"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;"&lt;/span&gt;@+id/navigation_drawer&lt;span class="token punctuation"&gt;"&lt;/span&gt;&lt;/span&gt;
-    &lt;span class="token attr-name"&gt;&lt;span class="token namespace"&gt;android:&lt;/span&gt;layout_width&lt;/span&gt;&lt;span class="token attr-value"&gt;&lt;span class="token punctuation attr-equals"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;"&lt;/span&gt;wrap_content&lt;span class="token punctuation"&gt;"&lt;/span&gt;&lt;/span&gt;
-    &lt;span class="token attr-name"&gt;&lt;span class="token namespace"&gt;android:&lt;/span&gt;layout_height&lt;/span&gt;&lt;span class="token attr-value"&gt;&lt;span class="token punctuation attr-equals"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;"&lt;/span&gt;match_parent&lt;span class="token punctuation"&gt;"&lt;/span&gt;&lt;/span&gt;
-    &lt;span class="token attr-name"&gt;&lt;span class="token namespace"&gt;android:&lt;/span&gt;layout_gravity&lt;/span&gt;&lt;span class="token attr-value"&gt;&lt;span class="token punctuation attr-equals"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;"&lt;/span&gt;start&lt;span class="token punctuation"&gt;"&lt;/span&gt;&lt;/span&gt;
-    &lt;span class="token attr-name"&gt;&lt;span class="token namespace"&gt;app:&lt;/span&gt;headerLayout&lt;/span&gt;&lt;span class="token attr-value"&gt;&lt;span class="token punctuation attr-equals"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;"&lt;/span&gt;@layout/drawer_header&lt;span class="token punctuation"&gt;"&lt;/span&gt;&lt;/span&gt;
-    &lt;span class="token attr-name"&gt;&lt;span class="token namespace"&gt;app:&lt;/span&gt;menu&lt;/span&gt;&lt;span class="token attr-value"&gt;&lt;span class="token punctuation attr-equals"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;"&lt;/span&gt;@menu/drawer_item&lt;span class="token punctuation"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="token punctuation"&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
-</code></pre>
-</code><p><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>android.support.v4.widget.DrawerLayout</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>android.support.design.widget.NavigationView</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@+id/navigation_drawer<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap_content<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_gravity</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>start<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>headerLayout</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@layout/drawer_header<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>menu</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@menu/drawer_item<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>android.support.v4.widget.DrawerLayout</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>需要注意的是，<code>DrawerLayout</code> 是布局的<strong>根目录</strong>，同时要设置 <code>fitsSystemWindows="true"</code>，否则，将会覆盖掉顶部状态栏。</p>
 <p>还有，注意要设置 <code>NavigationView</code> 的 <code>layout_gravity="start"</code>，否则不会生效。</p>
 <h2 id="4-构建-layoutdrawer_headerxml"><a class="markdownIt-Anchor" href="#4-构建-layoutdrawer_headerxml"></a> 4. 构建 <code>layout/drawer_header.xml</code></h2>
@@ -534,16 +539,18 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/Android/Android%20%E5%AE%98%E6%96%B9%20Navigation%20Drawer/" title="Android 官方 Navigation Drawer">https://wafer.li/Android/Android 官方 Navigation Drawer/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/Android/Android%20%E5%AE%98%E6%96%B9%20Navigation%20Drawer/" title="Android 官方 Navigation Drawer">https://wafer.li/Android/Android 官方 Navigation Drawer/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -551,8 +558,6 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Android/" rel="tag"># Android</a>
           </div>
@@ -576,8 +581,7 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -633,23 +637,22 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -658,7 +661,6 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -668,13 +670,8 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -683,7 +680,6 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -700,6 +696,16 @@ drawerLayout<span class="token punctuation">.</span><span class="token function"
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

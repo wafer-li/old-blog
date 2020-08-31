@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 概述 △Java语言就是基于类的语言，许多术语与C++稍有区别    C++ Java     函数 方法   构造函数 构造器   析构函数 析构器   类中的数据 实例域   静态数据 静态域     例如 String a; C++ 称 String 为类，而 a 为对象，C++ 在此时就分配了内存，构建了对象 Java 称 String 为类，a 为引用，而当使用 new 请求，分">
@@ -180,8 +180,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -311,54 +311,58 @@
           Java 类基础
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2017-03-16 00:00:00" itemprop="dateCreated datePublished" datetime="2017-03-16T00:00:00+09:00">2017-03-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2017-03-16 00:00:00" itemprop="dateCreated datePublished" datetime="2017-03-16T00:00:00+09:00">2017-03-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>5 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>4 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -436,21 +440,20 @@ Java 称 <code>String</code> 为类，<code>a</code> 为引用，而当使用 <c
 <li>
 <p><code>final</code> 修饰符在使用时大多应用于不可修改的类，当应用在可变的类的时候，并不意味着类的内容不可修改</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Employee</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-<p><span class="token punctuation">{</span><br>
-<span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span><br>
-<span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">Date</span> hiredate<span class="token operator">:</span> <span class="token number">2017</span><span class="token operator">-</span><span class="token number">03</span><span class="token operator">-</span><span class="token number">16</span><br>
-<span class="token punctuation">}</span></p>
-<p><span class="token comment">/**</span></p>
-</code><ul><code class="language-java">
-<li>此时，name引用和对象都不能被修改【String类是不可变的类】</li>
-<li>hiredate: 2017-03-16</li>
-</code><li><code class="language-java">这里的hiredate: 2017-03-16<br>
-*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</li>
-</ul>
-<ol start="6">
-<li>通过 <code>static</code> 声明静态域和静态方法</li>
+<span class="token punctuation">{</span>
+ <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">Date</span> hiredate<span class="token operator">:</span> <span class="token number">2017</span><span class="token operator">-</span><span class="token number">03</span><span class="token operator">-</span><span class="token number">16</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+* 此时，name引用和对象都不能被修改【String类是不可变的类】
+* hiredate: 2017-03-16
+* 这里的hiredate: 2017-03-16
+*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>
+<p>通过 <code>static</code> 声明静态域和静态方法</p>
+</li>
 </ol>
 <ul>
 <li>
@@ -480,51 +483,58 @@ Java 称 <code>String</code> 为类，<code>a</code> 为引用，而当使用 <c
 <li>
 <p>对象的构造</p>
 <ol>
-<li>可以直接在构造器内初始化实例域，即使是包含关系</li>
-<li>通过使用this来实现传参和实例域同名，甚至调用另一个构造器 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">Class</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token keyword">double</span> salary<span class="token punctuation">)</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code></li><code class="language-java">
-</code></ol><code class="language-java">
-<p><span class="token punctuation">{</span><br>
-<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span><br>
-<span class="token keyword">this</span><span class="token punctuation">.</span>salary <span class="token operator">=</span> salary<span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span></p>
-</code><p><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">Class</span><span class="token punctuation">(</span><span class="token keyword">double</span> s<span class="token punctuation">)</span><br>
-<span class="token punctuation">{</span><br>
-<span class="token keyword">this</span><span class="token punctuation">(</span><span class="token string">"Class * "</span> <span class="token operator">+</span> nextId<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>
-nextId<span class="token operator">++</span><span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>3. 默认将所有数值初始化为0，布尔值初始化为false，引用初始化为null
+<li>
+<p>可以直接在构造器内初始化实例域，即使是包含关系</p>
+</li>
+<li>
+<p>通过使用this来实现传参和实例域同名，甚至调用另一个构造器</p>
+ <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">Class</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token keyword">double</span> salary<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+ <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>salary <span class="token operator">=</span> salary<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-    &gt; 如果没有提供显式构造器，则系统自动生成隐式（无参）构造器完成上述工作
+<span class="token keyword">public</span> <span class="token class-name">Class</span><span class="token punctuation">(</span><span class="token keyword">double</span> s<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+ <span class="token keyword">this</span><span class="token punctuation">(</span><span class="token string">"Class * "</span> <span class="token operator">+</span> nextId<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ nextId<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>
+<p>默认将所有数值初始化为0，布尔值初始化为false，引用初始化为null</p>
+<blockquote>
+<p>如果没有提供显式构造器，则系统自动生成隐式（无参）构造器完成上述工作</p>
+</blockquote>
+<blockquote>
+<p>如果提供了显式构造器，则系统将不再自动生成无参构造器，上述操作将被视为非法</p>
+</blockquote>
+</li>
+<li>
+<p>初始化块</p>
+<p>※这个不常用，通常使用构造器完成工作<br>
+可以使用一个代码块对实例域进行初始化操作</p>
+ <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Class</span>
+<span class="token punctuation">{</span>
+ <span class="token keyword">private</span> <span class="token keyword">int</span> id<span class="token punctuation">;</span>
+ <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 
-    &gt; 如果提供了显式构造器，则系统将不再自动生成无参构造器，上述操作将被视为非法
+ <span class="token punctuation">{</span>
+  id  <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
 
-4. 初始化块
-
-    ※这个不常用，通常使用构造器完成工作
-    可以使用一个代码块对实例域进行初始化操作
-
-    &lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-java" data-language="java"&gt;&lt;code class="language-java"&gt;&lt;span class="token keyword"&gt;class&lt;/span&gt; &lt;span class="token class-name"&gt;Class&lt;/span&gt;
-</code></pre>
-<p><span class="token punctuation">{</span><br>
-<span class="token keyword">private</span> <span class="token keyword">int</span> id<span class="token punctuation">;</span><br>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span></p>
-<p><span class="token punctuation">{</span><br>
-id  <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span></p>
-<p><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>:hexoPostRenderEscape–&gt;</p>
-<pre><code>    初始化块在所有构造器执行之前执行。
-    通过标记关键字static可以对静态域进行初始化块操作
-
-    &lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-java" data-language="java"&gt;&lt;code class="language-java"&gt;&lt;span class="token keyword"&gt;static&lt;/span&gt;
-</code></pre>
-<p><span class="token punctuation">{</span><br>
-id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span>:hexoPostRenderEscape–&gt;</p>
-<ol start="8">
-<li>类的基本结构</li>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>初始化块在所有构造器执行之前执行。<br>
+通过标记关键字static可以对静态域进行初始化块操作</p>
+ <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">static</span>
+<span class="token punctuation">{</span>
+ id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>类的基本结构</p>
+</li>
 </ol>
 <ul>
 <li>数据域</li>
@@ -552,11 +562,12 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
 <li>
 <p>方法能够<strong>直接访问和修改</strong>相同类作为参数的对象实例的<strong>私有域</strong></p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
- <span class="token keyword">private</span> <span class="token class-name">String</span> text<span class="token punctuation">;</span>
-</code><p><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doStuff</span><span class="token punctuation">(</span><span class="token class-name">Foo</span> f<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> text<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doStuff</span><span class="token punctuation">(</span><span class="token class-name">Foo</span> f<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <h2 id="4-包package"><a class="markdownIt-Anchor" href="#4-包package"></a> 4. 包（<code>package</code>）</h2>
@@ -612,13 +623,12 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
 <li>
 <p>不要在类中使用过多的基本类型，可以通过一个封装类来减少使用</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">private</span> <span class="token class-name">String</span> street<span class="token punctuation">;</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token keyword">private</span> <span class="token class-name">String</span> city<span class="token punctuation">;</span><br>
-<span class="token keyword">private</span> <span class="token class-name">String</span> state<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>&gt; 这个可以通过一个 `Address` 类来解决
-</code></pre>
-<ol start="4">
+<span class="token keyword">private</span> <span class="token class-name">String</span> city<span class="token punctuation">;</span>
+<span class="token keyword">private</span> <span class="token class-name">String</span> state<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>这个可以通过一个 <code>Address</code> 类来解决</p>
+</blockquote>
+</li>
 <li>
 <p>并不是所有的数据都需要访问器和更改器</p>
 </li>
@@ -644,16 +654,18 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/Java/Java%20%E7%B1%BB%E5%9F%BA%E7%A1%80/" title="Java 类基础">https://wafer.li/Java/Java 类基础/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/Java/Java%20%E7%B1%BB%E5%9F%BA%E7%A1%80/" title="Java 类基础">https://wafer.li/Java/Java 类基础/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -661,8 +673,6 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Java/" rel="tag"># Java</a>
           </div>
@@ -686,8 +696,7 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -743,23 +752,22 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -768,7 +776,6 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -778,13 +785,8 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -793,7 +795,6 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -810,6 +811,16 @@ id <span class="token operator">=</span> <span class="token number">1</span><spa
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

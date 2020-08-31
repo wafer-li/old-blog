@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 通用规范 VisualNav 项目的代码文件主要包含 Java、XML 以及 Gradle 三种。对于所有的代码文件，都需要遵守以下几条规范：   所有代码文件都必须使用 UTF-8 进行编码；   使用空格而不是制表符进行缩进，每个缩进的单位为 4 字符（使用 Android Studio 默认配置即可，不要修改缩进配置）；   每行仅书写一条语句，多条语句不能写在同一行中；">
@@ -180,8 +180,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -311,54 +311,58 @@
           VisualNav 编码规范
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-11-18 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-18T00:00:00+09:00">2016-11-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/CleanCode/" itemprop="url" rel="index"><span itemprop="name">CleanCode</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2016-11-18 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-18T00:00:00+09:00">2016-11-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/CleanCode/" itemprop="url" rel="index"><span itemprop="name">CleanCode</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>11k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>20 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>16 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -499,20 +503,20 @@ mRequest<span class="token punctuation">.</span><span class="token function">set
 <li>
 <p>长度过长的方法定义和调用，可以在参数处进行断行，并保持参数对齐。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">UserInfoRequest</span><span class="token punctuation">(</span><span class="token class-name">Context</span> context<span class="token punctuation">,</span> <span class="token class-name">String</span> name<span class="token punctuation">,</span>
-                   <span class="token class-name">RequestSuccessListener</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">User</span><span class="token punctuation">&gt;</span></span> successListener<span class="token punctuation">,</span>
-                   <span class="token class-name">RequestErrorListener</span> errorListener<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                       <span class="token class-name">RequestSuccessListener</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">User</span><span class="token punctuation">&gt;</span></span> successListener<span class="token punctuation">,</span>
+                       <span class="token class-name">RequestErrorListener</span> errorListener<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </li>
 <li>
 <p>在运算符处断开较长的表达式。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java">num1 <span class="token operator">=</span> num2 <span class="token operator">*</span> <span class="token punctuation">(</span>num3 <span class="token operator">+</span> num4 <span class="token operator">-</span> num5<span class="token punctuation">)</span> <span class="token operator">/</span> num6
-    <span class="token operator">+</span> <span class="token punctuation">(</span>num7 <span class="token operator">-</span> num8<span class="token punctuation">)</span> <span class="token operator">*</span> num9 <span class="token operator">/</span> num10<span class="token punctuation">;</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>condition1 <span class="token operator">||</span> condition2<span class="token punctuation">)</span><br>
-<span class="token operator">&amp;&amp;</span>  <span class="token punctuation">(</span>condition3 <span class="token operator">||</span> condition4<span class="token punctuation">)</span><br>
-<span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token punctuation">(</span>condition5 <span class="token operator">||</span> condition6<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
+        <span class="token operator">+</span> <span class="token punctuation">(</span>num7 <span class="token operator">-</span> num8<span class="token punctuation">)</span> <span class="token operator">*</span> num9 <span class="token operator">/</span> num10<span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>condition1 <span class="token operator">||</span> condition2<span class="token punctuation">)</span>
+        <span class="token operator">&amp;&amp;</span>  <span class="token punctuation">(</span>condition3 <span class="token operator">||</span> condition4<span class="token punctuation">)</span>
+        <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token punctuation">(</span>condition5 <span class="token operator">||</span> condition6<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
 <p>大括号的使用规则：在任何情况下，左大括号（<code>{</code>）都要与语句在同一行，右大括号（<code>}</code>）独占一行。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 正确                    错误</span>
 <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>             <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
@@ -526,49 +530,37 @@ mRequest<span class="token punctuation">.</span><span class="token function">set
 <li>
 <p>除一元运算符和 <code>.</code> 之外，运算符与运算数之间需要以空格分隔。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 正确                    错误</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java">a <span class="token operator">=</span> <span class="token number">0</span>                     a<span class="token operator">=</span><span class="token number">0</span><br>
-a <span class="token operator">+</span> b                     a<span class="token operator">+</span>b<br>
-a <span class="token operator">&lt;</span> b                     a<span class="token operator">&lt;</span>b<br>
-a <span class="token operator">&amp;&amp;</span> b                    a<span class="token operator">&amp;&amp;</span>b<br>
-<span class="token operator">!</span>a                        <span class="token operator">!</span> a<br>
-a<span class="token operator"><ins></ins></span>                       a <span class="token operator"></span><br>
-user<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>            user <span class="token punctuation">.</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>`for` 循环头的写法为：
-
-&lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-java" data-language="java"&gt;&lt;code class="language-java"&gt;&lt;span class="token keyword"&gt;for&lt;/span&gt; &lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token keyword"&gt;int&lt;/span&gt; i &lt;span class="token operator"&gt;=&lt;/span&gt; &lt;span class="token number"&gt;0&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt; i &lt;span class="token operator"&gt;&amp;lt;&lt;/span&gt; n&lt;span class="token punctuation"&gt;;&lt;/span&gt; i&lt;span class="token operator"&gt;++&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;:hexoPostRenderEscape--&gt;
-
-括号与操作数之间不需要空格，例如：
-
-&lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-java" data-language="java"&gt;&lt;code class="language-java"&gt;&lt;span class="token comment"&gt;// 正确                    错误&lt;/span&gt;
-</code></pre>
-<p><span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>               <span class="token keyword">if</span> <span class="token punctuation">(</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span>:hexoPostRenderEscape–&gt;</p>
-<pre><code>左大括号（`{`）之前需要一个空格，例如：
-
-&lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-java" data-language="java"&gt;&lt;code class="language-java"&gt;&lt;span class="token comment"&gt;// 正确                    错误&lt;/span&gt;
-</code></pre>
-<p><span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator"><mark></mark></span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>             <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator"></span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><br>
-<span class="token punctuation">}</span>                         <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span>:hexoPostRenderEscape–&gt;</p>
-<ol start="2">
+a <span class="token operator">=</span> <span class="token number">0</span>                     a<span class="token operator">=</span><span class="token number">0</span>
+a <span class="token operator">+</span> b                     a<span class="token operator">+</span>b
+a <span class="token operator">&lt;</span> b                     a<span class="token operator">&lt;</span>b
+a <span class="token operator">&amp;&amp;</span> b                    a<span class="token operator">&amp;&amp;</span>b
+<span class="token operator">!</span>a                        <span class="token operator">!</span> a
+a<span class="token operator">++</span>                       a <span class="token operator">++</span>
+user<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>            user <span class="token punctuation">.</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>for</code> 循环头的写法为：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>括号与操作数之间不需要空格，例如：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 正确                    错误</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>               <span class="token keyword">if</span> <span class="token punctuation">(</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>左大括号（<code>{</code>）之前需要一个空格，例如：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 正确                    错误</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>             <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>                         <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>关键字与括号之间要添加 1 个空格，方法名、类名和括号之间不需要空格。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 正确                    错误</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator"><mark></mark></span> <span class="token number">1</span><span class="token punctuation">)</span>               <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator"></span> <span class="token number">1</span><span class="token punctuation">)</span><br>
-<span class="token keyword">while</span> <span class="token punctuation">(</span>b <span class="token operator"><mark></mark></span> <span class="token boolean">true</span><span class="token punctuation">)</span>         <span class="token keyword">while</span><span class="token punctuation">(</span>b <span class="token operator"></span> <span class="token boolean">true</span><span class="token punctuation">)</span><br>
-<span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>
-user<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">“Name”</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     user<span class="token punctuation">.</span>setName <span class="token punctuation">(</span><span class="token string">“Name”</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="3">
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>               <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token boolean">true</span><span class="token punctuation">)</span>         <span class="token keyword">while</span><span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">"Name"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     user<span class="token punctuation">.</span>setName <span class="token punctuation">(</span><span class="token string">"Name"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>注释符号（<code>//</code>、<code>/*</code> 和 <code>*/</code>）与注释内容之间需要加一个空格。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 注释符号与注释之间有一个空格</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token comment">/* 就像这样 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="4">
+<span class="token comment">/* 就像这样 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>强制类型转换后需要有一个空格。</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java">mTextView <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -576,114 +568,128 @@ user<span class="token punctuation">.</span><span class="token function">setName
 <li>
 <p>必要时需要为一些表达式加上括号（即使并没有出现运算符优先级的问题），以增强代码的可读性。例如：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>a <span class="token operator">&amp;&amp;</span> b<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>c <span class="token operator">&amp;&amp;</span> d<span class="token punctuation">)</span> <span class="token operator">||</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
 <h4 id="233-空行"><a class="markdownIt-Anchor" href="#233-空行"></a> 2.3.3 空行</h4>
 <p>在适当的位置插入空行使得代码更具有可读性：</p>
 <ol>
 <li>
 <p>在<strong>两个方法之间</strong>要空两行</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
- <span class="token comment">// There</span>
- <span class="token comment">// are</span>
- <span class="token comment">// a</span>
- <span class="token comment">// lot</span>
- <span class="token comment">// of</span>
- <span class="token comment">// stuffs</span>
-<p><span class="token comment">/*</span></p>
-<ul>
-<li>I cannot</li>
-<li>simply</li>
-<li>count<br>
-*/<br>
-<span class="token punctuation">}</span></li>
-</ul>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-<p><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doOtherThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// There</span><br>
-<span class="token comment">// are</span><br>
-<span class="token comment">// a</span><br>
-<span class="token comment">// lot</span><br>
-<span class="token comment">// of</span><br>
-<span class="token comment">// stuffs</span></p>
-<pre><code>&lt;span class="token comment"&gt;/*
-* I cannot
-* simply
-* count
-*/&lt;/span&gt;
-</code></pre>
-</code><p><code class="language-java"><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="2">
+    <span class="token comment">// There</span>
+    <span class="token comment">// are</span>
+    <span class="token comment">// a</span>
+    <span class="token comment">// lot</span>
+    <span class="token comment">// of</span>
+    <span class="token comment">// stuffs</span>
+
+    <span class="token comment">/*
+    * I cannot
+    * simply
+    * count
+    */</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doOtherThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// There</span>
+    <span class="token comment">// are</span>
+    <span class="token comment">// a</span>
+    <span class="token comment">// lot</span>
+    <span class="token comment">// of</span>
+    <span class="token comment">// stuffs</span>
+
+    <span class="token comment">/*
+    * I cannot
+    * simply
+    * count
+    */</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>在类的<strong>不同的属性集合之间</strong>要有空行</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 上下文和视图 container</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-<p><span class="token keyword">protected</span> <span class="token class-name">View</span> mRootView<span class="token punctuation">;</span><br>
-<span class="token keyword">protected</span> <span class="token class-name">SetPersonalizedInfoActivity</span> mContext<span class="token punctuation">;</span></p>
-<p><span class="token comment">// 各视图组件</span><br>
-<span class="token keyword">private</span> <span class="token class-name">WheelView</span> firstTypeLpv<span class="token punctuation">;</span><br>
-<span class="token keyword">private</span> <span class="token class-name">WheelView</span> secondTypeLpv<span class="token punctuation">;</span><br>
-<span class="token keyword">private</span> <span class="token class-name">TextView</span> nextQuestionTxt<span class="token punctuation">;</span></p>
-</code><p><code class="language-java"><span class="token comment">// 数据域</span><br>
-<span class="token keyword">private</span> <span class="token class-name">UserBean</span> userBean <span class="token operator">=</span> <span class="token class-name">UserBean</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="3">
+<span class="token keyword">protected</span> <span class="token class-name">View</span> mRootView<span class="token punctuation">;</span>
+<span class="token keyword">protected</span> <span class="token class-name">SetPersonalizedInfoActivity</span> mContext<span class="token punctuation">;</span>
+
+<span class="token comment">// 各视图组件</span>
+<span class="token keyword">private</span> <span class="token class-name">WheelView</span> firstTypeLpv<span class="token punctuation">;</span>
+<span class="token keyword">private</span> <span class="token class-name">WheelView</span> secondTypeLpv<span class="token punctuation">;</span>
+<span class="token keyword">private</span> <span class="token class-name">TextView</span> nextQuestionTxt<span class="token punctuation">;</span>
+
+<span class="token comment">// 数据域</span>
+<span class="token keyword">private</span> <span class="token class-name">UserBean</span> userBean <span class="token operator">=</span> <span class="token class-name">UserBean</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>类的成员变量和方法之间要有空行</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 上下文和视图 container</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-<p><span class="token keyword">protected</span> <span class="token class-name">View</span> mRootView<span class="token punctuation">;</span><br>
-<span class="token keyword">protected</span> <span class="token class-name">SetPersonalizedInfoActivity</span> mContext<span class="token punctuation">;</span></p>
-<p><span class="token comment">// 各视图组件</span><br>
-<span class="token keyword">private</span> <span class="token class-name">WheelView</span> firstTypeLpv<span class="token punctuation">;</span><br>
-<span class="token keyword">private</span> <span class="token class-name">WheelView</span> secondTypeLpv<span class="token punctuation">;</span><br>
-<span class="token keyword">private</span> <span class="token class-name">TextView</span> nextQuestionTxt<span class="token punctuation">;</span></p>
-<p><span class="token comment">// 数据域</span><br>
-<span class="token keyword">private</span> <span class="token class-name">UserBean</span> userBean <span class="token operator">=</span> <span class="token class-name">UserBean</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></p>
-<p><span class="token comment">//方法</span><br>
-<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></p>
-</code><p><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doOtherThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="4">
+<span class="token keyword">protected</span> <span class="token class-name">View</span> mRootView<span class="token punctuation">;</span>
+<span class="token keyword">protected</span> <span class="token class-name">SetPersonalizedInfoActivity</span> mContext<span class="token punctuation">;</span>
+
+<span class="token comment">// 各视图组件</span>
+<span class="token keyword">private</span> <span class="token class-name">WheelView</span> firstTypeLpv<span class="token punctuation">;</span>
+<span class="token keyword">private</span> <span class="token class-name">WheelView</span> secondTypeLpv<span class="token punctuation">;</span>
+<span class="token keyword">private</span> <span class="token class-name">TextView</span> nextQuestionTxt<span class="token punctuation">;</span>
+
+<span class="token comment">// 数据域</span>
+<span class="token keyword">private</span> <span class="token class-name">UserBean</span> userBean <span class="token operator">=</span> <span class="token class-name">UserBean</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//方法</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doOtherThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>如果有内部类或内部接口，内部类与上下文要空<strong>两行</strong></p>
 <blockquote>
 <p>若内部类或接口在所有代码的尾部，则不需要与下文有空行</p>
 </blockquote>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OuterClass</span> <span class="token punctuation">{</span>
- <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<p><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doOtherThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></p>
-<p><span class="token keyword">class</span> <span class="token class-name">InnerClass</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// 这里是内部类的一些东西</span><br>
-<span class="token punctuation">}</span></p>
-</code><p><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">methodBehindInnerClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></p></pre>:hexoPostRenderEscape–&gt;<p></p>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomeThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doOtherThing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+
+    <span class="token keyword">class</span> <span class="token class-name">InnerClass</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 这里是内部类的一些东西</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">methodBehindInnerClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li>
 <p>方法内部<strong>不同功能</strong>的代码块要空行</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onPrevFragment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<p><span class="token comment">// Pop back stack</span><br>
-fragmentManager<span class="token punctuation">.</span><span class="token function">popBackStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></p>
-<p><span class="token keyword">int</span> index<span class="token punctuation">;</span></p>
-<p><span class="token comment">// Find index</span><br>
-<span class="token keyword">for</span> <span class="token punctuation">(</span>index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> index <span class="token operator">&lt;</span> fragmentTitles<span class="token punctuation">.</span>length<span class="token punctuation">;</span> index<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>currentFragmentTag<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>fragmentTitles<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token keyword">break</span><span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span><br>
-<span class="token punctuation">}</span></p>
-<p><span class="token comment">// Set currentFragmentTag</span><br>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-currentFragmentTag <span class="token operator">=</span> fragmentTitles<span class="token punctuation">[</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>
-<span class="token punctuation">}</span></p>
-<p><span class="token comment">// Set title</span><br>
-<span class="token keyword">assert</span> <span class="token function">getSupportActionBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">;</span><br>
-<span class="token function">getSupportActionBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setTitle</span><span class="token punctuation">(</span>currentFragmentTag<span class="token punctuation">)</span><span class="token punctuation">;</span></p>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
+
+    <span class="token comment">// Pop back stack</span>
+    fragmentManager<span class="token punctuation">.</span><span class="token function">popBackStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> index<span class="token punctuation">;</span>
+
+    <span class="token comment">// Find index</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> index <span class="token operator">&lt;</span> fragmentTitles<span class="token punctuation">.</span>length<span class="token punctuation">;</span> index<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>currentFragmentTag<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>fragmentTitles<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Set currentFragmentTag</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        currentFragmentTag <span class="token operator">=</span> fragmentTitles<span class="token punctuation">[</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Set title</span>
+    <span class="token keyword">assert</span> <span class="token function">getSupportActionBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token function">getSupportActionBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setTitle</span><span class="token punctuation">(</span>currentFragmentTag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
 <h3 id="24-命名规范"><a class="markdownIt-Anchor" href="#24-命名规范"></a> 2.4 命名规范</h3>
 <h4 id="241-通用规范"><a class="markdownIt-Anchor" href="#241-通用规范"></a> 2.4.1 通用规范</h4>
 <ol>
@@ -695,11 +701,12 @@ currentFragmentTag <span class="token operator">=</span> fragmentTitles<span cla
 <li>
 <p>不允许出现 <code>a, an, the</code> 等冠词</p>
  <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">getTheResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">// 错误</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token keyword">void</span> <span class="token function">getResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment">// 正确</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="3">
-<li>除<strong>常量外</strong>，其余命名不允许出现下划线字符(<code>_</code>)</li>
+
+<span class="token keyword">void</span> <span class="token function">getResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment">// 正确</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>
+<p>除<strong>常量外</strong>，其余命名不允许出现下划线字符(<code>_</code>)</p>
+</li>
 </ol>
 <h4 id="242-包名"><a class="markdownIt-Anchor" href="#242-包名"></a> 2.4.2 包名</h4>
 <p>包名必须为全小写字母。如果出现多个单词构成的包名，不进行分隔。例如：</p>
@@ -735,33 +742,28 @@ currentFragmentTag <span class="token operator">=</span> fragmentTitles<span cla
 <li>
 <p>异常处理的首要原则是<strong>不能忽略异常</strong>。例如以下代码是不可取的：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
-<span class="token class-name">JSONTokener</span> jsonTokener <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONTokener</span><span class="token punctuation">(</span>jsonString<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">JSONException</span> ex<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>捕获到异常，必须对异常进行处理。
-</code></pre>
-<ol start="2">
+    <span class="token class-name">JSONTokener</span> jsonTokener <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONTokener</span><span class="token punctuation">(</span>jsonString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">JSONException</span> ex<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>捕获到异常，必须对异常进行处理。</p>
+</li>
 <li>
 <p>不能捕获顶级异常（<code>Exception</code>）。</p>
 <p>必须根据异常的种类分别进行捕获和处理，不能直接捕获 <code>Exception</code>。以下代码是不可取的：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>  <span class="token comment">// 这里会抛出多种异常</span>
-</code></pre></li><code class="language-java">
-</code></ol><code class="language-java">
-</code><p><code class="language-java"><span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> ex<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>正确的做法是：
-
-&lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-java" data-language="java"&gt;&lt;code class="language-java"&gt;&lt;span class="token keyword"&gt;try&lt;/span&gt; &lt;span class="token punctuation"&gt;&amp;#123;&lt;/span&gt;
-&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;
-</code></pre>
-<p><span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">OneKindOfException</span> ex1<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// 处理 ex1</span><br>
-<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">AnotherKindOfException</span> ex2<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>
-<span class="token comment">// 处理 ex2</span><br>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>:hexoPostRenderEscape–&gt;</p>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>  <span class="token comment">// 这里会抛出多种异常</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> ex<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>正确的做法是：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">OneKindOfException</span> ex1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 处理 ex1</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">AnotherKindOfException</span> ex2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 处理 ex2</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
 <h4 id="252-import-规范"><a class="markdownIt-Anchor" href="#252-import-规范"></a> 2.5.2 import 规范</h4>
 <p>不要手动输入 <code>import</code> 语句或手动调整 <code>import</code> 之间的顺序，而应通过 Android Studio 提供的自动 import 功能来管理。</p>
 <p>例如，如果需要导入 <code>java.util</code> 包的 <code>ArrayList</code> 类，只需要输入 <code>ArrayList</code>，根据 Android Studio 自动弹出的提示选择正确的类，即可自动添加一条 <code>import java.util.ArrayList;</code> 语句。</p>
@@ -829,37 +831,32 @@ Reformat 代码</p>
 <p>此时应使用 <code>git commit</code> 在弹出的编辑器中填写多行信息</p>
 </blockquote>
   <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit
-</code></pre></li><code class="language-bash">
-</code></ul><code class="language-bash">
-<p><span class="token string">“”</span><span class="token string">"<br>
-Fix the moudule:</span></p>
-</code><ol><code class="language-bash">
-<li>Remove the unnessary method</li>
-</code><li><code class="language-bash">Replace the ListView with RecyclerView<br>
-“<span class="token string">”"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</li>
-</ol>
-<ul>
+
+<span class="token string">""</span><span class="token string">"
+Fix the moudule:
+1. Remove the unnessary method
+2. Replace the ListView with RecyclerView
+"</span><span class="token string">""</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>Commit Message 内容应要尽量意义丰富。</p>
 <blockquote>
 <p>尽量说明操作内容和所涉及到的部分</p>
 </blockquote>
   <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token string">"Fix bug"</span> // 错误
-</code></pre></li><code class="language-bash">
-</code></ul><code class="language-bash">
-</code><p><code class="language-bash"><span class="token string">“Fix not render bug of the register page”</span>   // 正确<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ul>
+<span class="token string">"Fix not render bug of the register page"</span>   // 正确<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>建议采用 “Fix issue” 形式来让 Message 更加简洁</p>
 <blockquote>
 <p>相应的，在对应的 issue 就要对问题进行详细的描述</p>
 </blockquote>
   <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">// 都是正确的
-</code></pre></li><code class="language-bash">
-</code></ul><code class="language-bash">
-</code><p><code class="language-bash"><span class="token string">“Fix #1”</span><br>
-<span class="token string">“Fix the bug of #2”</span><br>
-<span class="token string">“Fix the render bug of #3”</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
+<span class="token string">"Fix #1"</span>
+<span class="token string">"Fix the bug of #2"</span>
+<span class="token string">"Fix the render bug of #3"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 <h3 id="42-拉取"><a class="markdownIt-Anchor" href="#42-拉取"></a> 4.2 拉取</h3>
 <ol>
 <li>
@@ -1001,16 +998,18 @@ Fix the moudule:</span></p>
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/CleanCode/VisualNav%20%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/" title="VisualNav 编码规范">https://wafer.li/CleanCode/VisualNav 编码规范/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/CleanCode/VisualNav%20%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/" title="VisualNav 编码规范">https://wafer.li/CleanCode/VisualNav 编码规范/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -1018,8 +1017,6 @@ Fix the moudule:</span></p>
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/CleanCode/" rel="tag"># CleanCode</a>
           </div>
@@ -1043,8 +1040,7 @@ Fix the moudule:</span></p>
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -1100,23 +1096,22 @@ Fix the moudule:</span></p>
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -1125,7 +1120,6 @@ Fix the moudule:</span></p>
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -1135,13 +1129,8 @@ Fix the moudule:</span></p>
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -1150,7 +1139,6 @@ Fix the moudule:</span></p>
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -1167,6 +1155,16 @@ Fix the moudule:</span></p>
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

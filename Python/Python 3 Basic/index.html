@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 注释  注释以 # 开头 以 #! 开头的称为组织行，表明了执行脚本的解释器   Linux/Unix 中，如果不清楚 Python 的位置，可以使用 #!/usr/bin/env python，env 会自动寻找 Python 的解释器路径进行执行。">
@@ -180,8 +180,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -311,54 +311,58 @@
           Python 3 Basic
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2016-12-12T00:00:00+09:00">2016-12-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2016-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2016-12-12T00:00:00+09:00">2016-12-12</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>5 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>3 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -404,15 +408,14 @@ Python 2 中区分 <code>long</code> 类型<br>
 <li>
 <p>利用<strong>三引号</strong> <code>"""</code> 或者 <code>'''</code> 可以指定一个<strong>多行字符串</strong></p>
  <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token triple-quoted-string string">'''This is a multi-line-string. This is the first line.
-</span></code></pre></li><code class="language-python">
-</code></ol><code class="language-python">
-</code><p><code class="language-python">And this is the second line.<br>
-“What’s your name?” I asked.<br>
-He said “Bond, James Bond.”<br>
-‘’’<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>&gt; 在三引号中，可以自由使用单引号和双引号
-</code></pre>
-<ol start="4">
+And this is the second line.
+"What's your name?" I asked.
+He said "Bond, James Bond."
+'''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>在三引号中，可以自由使用单引号和双引号</p>
+</blockquote>
+</li>
 <li>
 <p>使用<strong>转义</strong>来表示原有字符</p>
 <blockquote>
@@ -425,12 +428,11 @@ He said “Bond, James Bond.”<br>
 <p>另外，在一行的末尾的反斜杠 <code>\</code> 仅仅表示下一行的字符串是上一行的<strong>继续</strong>，<strong>并不增加新的行</strong></p>
 </blockquote>
  <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 以下字符串是等价的</span>
-</code></pre></li><code class="language-python">
-</code></ol><code class="language-python">
-<p>“This <span class="token keyword">is</span> the first line<span class="token punctuation">.</span><br>
-This <span class="token keyword">is</span> also the first line<span class="token punctuation">.</span>”</p>
-</code><p><code class="language-python"><span class="token string">“This is the firstline. This is also the first line.”</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="5">
+"This <span class="token keyword">is</span> the first line<span class="token punctuation">.</span>\
+This <span class="token keyword">is</span> also the first line<span class="token punctuation">.</span>"
+
+<span class="token string">"This is the firstline. This is also the first line."</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>原始字符串</p>
 <blockquote>
@@ -457,18 +459,19 @@ This <span class="token keyword">is</span> also the first line<span class="token
 <p>可以使用 <code>format()</code> 方法来通过使用其他信息构建字符串</p>
 </blockquote>
  <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/python</span>
-</code></pre></li><code class="language-python">
-</code></ol><code class="language-python">
-<p>age <span class="token operator">=</span> <span class="token number">25</span><br>
-name <span class="token operator">=</span> <span class="token string">‘Swaroop’</span><br>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">’{0} is {1} years old’</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">)</span></p>
-</code><p><code class="language-python"><span class="token comment"># 输出为</span><br>
-<span class="token comment"># Swaroop is 25 years old.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<pre><code>&gt; 也可以使用 `format()` 进行格式化输出
+age <span class="token operator">=</span> <span class="token number">25</span>
+name <span class="token operator">=</span> <span class="token string">'Swaroop'</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'{0} is {1} years old'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-&lt;!--hexoPostRenderEscape:&lt;pre class="line-numbers language-python" data-language="python"&gt;&lt;code class="language-python"&gt;&lt;span class="token operator"&gt;&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt; &lt;span class="token string"&gt;'&amp;#123;0:.3&amp;#125;'&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token builtin"&gt;format&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token number"&gt;1&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;&lt;span class="token number"&gt;3&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;
-</code></pre>
-<p><span class="token string">‘0.333’</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span>:hexoPostRenderEscape–&gt;</p>
+<span class="token comment"># 输出为</span>
+<span class="token comment"># Swaroop is 25 years old.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>也可以使用 <code>format()</code> 进行格式化输出</p>
+</blockquote>
+ <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token string">'{0:.3}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token string">'0.333'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+</ol>
 <h2 id="3-变量"><a class="markdownIt-Anchor" href="#3-变量"></a> 3. 变量</h2>
 <h3 id="31-命名"><a class="markdownIt-Anchor" href="#31-命名"></a> 3.1 命名</h3>
 <p>同其他语言的变量命名无多大差别。</p>
@@ -523,12 +526,10 @@ name <span class="token operator">=</span> <span class="token string">‘Swaroop
 </blockquote>
 <p>区别：</p>
  <pre class="line-numbers language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
-</code></pre></li><code class="language-python">
-</code></ol><code class="language-python">
-</code><p><code class="language-python">b <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><br>
-a <span class="token operator">==</span> b <span class="token comment"># True</span><br>
-a <span class="token keyword">is</span> b <span class="token comment"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="3">
+b <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+a <span class="token operator">==</span> b <span class="token comment"># True</span>
+a <span class="token keyword">is</span> b <span class="token comment"># False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>优先级</p>
 <blockquote>
@@ -542,16 +543,18 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/Python/Python%203%20Basic/" title="Python 3 Basic">https://wafer.li/Python/Python 3 Basic/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/Python/Python%203%20Basic/" title="Python 3 Basic">https://wafer.li/Python/Python 3 Basic/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -559,8 +562,6 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Python/" rel="tag"># Python</a>
           </div>
@@ -584,8 +585,7 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -641,23 +641,22 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -666,7 +665,6 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -676,13 +674,8 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -691,7 +684,6 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -708,6 +700,16 @@ a <span class="token keyword">is</span> b <span class="token comment"># False</s
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

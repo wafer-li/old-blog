@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -22,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 
   <meta name="description" content="1. 步骤  1.1 获取 FragmentManager  当位于 Activity 时，调用 getFragmentManager() 方法即可获取到 FragmentManager 实例 当位于 Fragment 时，调用 getActivity().getFragmentManager() 获取 FragmentManager 实例 如果在 Fragment 内层，即 Fragment">
@@ -180,8 +180,8 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="no-result">
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
@@ -311,54 +311,58 @@
           动态加载 Fragment
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-14T00:00:00+09:00">2016-10-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2016-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-14T00:00:00+09:00">2016-10-14</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2017-04-14 20:56:41" itemprop="dateModified" datetime="2017-04-14T20:56:41+09:00">2017-04-14</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="far fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>7.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              <span>13 分钟</span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>7.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 ≈</span>
+      <span>13 分钟</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -478,14 +482,12 @@ fragmentManager<span class="token punctuation">.</span><span class="token functi
 这是由于系统会在活动在被挂起或销毁之前会将其当前状态保留为一个快照（例如用户按下 <code>Home</code> 键），但是这个快照并没有将 <code>FragmentTransaction</code> 作为活动的一部分保留，而是<strong>将其丢失</strong>了，由于<strong>活动当前被销毁或挂起</strong>，所以无法提交一个 <code>FragmentTransaction</code></p>
 </blockquote>
  <pre class="line-numbers language-none"><code class="language-none">// 堆栈跟踪和异常代码
-</code></pre></li><code class="language-none">
-</code></ol><code class="language-none">
-</code><p><code class="language-none">java.lang.IllegalStateException:Can not perform this action after onSaveInstanceState<br>
-at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1341)<br>
-at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1352)<br>
-at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:595)<br>
-at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:574)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="2">
+java.lang.IllegalStateException:Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1341)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1352)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:595)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:574)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>异常抛出的时间点</p>
 <blockquote>
@@ -591,35 +593,31 @@ at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:574)<span 
 <p>将 <strong>内层 Fragment</strong> 的<strong>根布局</strong>设置为 <code>clickable="true"</code> 即可</p>
 </blockquote>
  <pre class="line-numbers language-none"><code class="language-none">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-</code></pre></li><code class="language-none">
-</code></ol><code class="language-none">
-</code><p><code class="language-none">android:layout_width=“fill_parent”<br>
-android:layout_height=“fill_parent”<br>
-android:clickable=“true” /&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="2">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" /&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>
 <p>使用 <code>java</code> 截获点击事件</p>
 <blockquote>
 <p>为<strong>根布局</strong>设置 <code>OnTouchListener</code> 并重载一个空方法，返回 <code>true</code></p>
 </blockquote>
  <pre class="line-numbers language-none"><code class="language-none">@Override
-</code></pre></li><code class="language-none">
-</code></ol><code class="language-none">
-</code></li><code class="language-none">
-</code></ol><code class="language-none">
-<p>public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstance){<br>
-View root;</p>
-<pre><code>&amp;#x2F;*here is an implementation*&amp;#x2F;
+public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstance){
+    View root;
 
-root.setOnTouchListener(new View.OnTouchListener() &amp;#123;
-    public boolean onTouch(View v, MotionEvent event) &amp;#123;
-        return true;
-    &amp;#125;
-&amp;#125;);
-return root;
-</code></pre>
-</code><p><code class="language-none">}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>:hexoPostRenderEscape–&gt;</p>
-<ol start="3">
+    /*here is an implementation*/
+
+    root.setOnTouchListener(new View.OnTouchListener() {
+        public boolean onTouch(View v, MotionEvent event) {
+            return true;
+        }
+    });
+    return root;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+</li>
 <li>
 <p>解决 <code>Fragment already added</code> 错误</p>
 <blockquote>
@@ -715,16 +713,18 @@ return root;
     
     
     
-        
 
-<div>
-<ul class="post-copyright">
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Wafer Li
+      <strong>本文作者： </strong>Wafer Li
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://wafer.li/Android/%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%20Fragment/" title="动态加载 Fragment">https://wafer.li/Android/动态加载 Fragment/</a>
+      <strong>本文链接：</strong>
+      <a href="https://wafer.li/Android/%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%20Fragment/" title="动态加载 Fragment">https://wafer.li/Android/动态加载 Fragment/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -732,8 +732,6 @@ return root;
 </ul>
 </div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Android/" rel="tag"># Android</a>
           </div>
@@ -757,8 +755,7 @@ return root;
                 </a>
             </div>
           </div>
-      </footer>
-    
+    </footer>
   </article>
   
   
@@ -814,23 +811,22 @@ return root;
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wafer Li</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">514k</span>
-    <span class="post-meta-divider">|</span>
+    <span title="站点总字数">479k</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15:34</span>
+    <span title="站点阅读时长">14:31</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-      
 <div class="busuanzi-count">
-  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -839,7 +835,6 @@ return root;
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -849,13 +844,8 @@ return root;
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
     </div>
   </footer>
@@ -864,7 +854,6 @@ return root;
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
@@ -881,6 +870,16 @@ return root;
 
 
 
+
+
+
+
+
+
+
+
+  
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
