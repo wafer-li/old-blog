@@ -20,7 +20,7 @@
     "hexo-optimize": "^2.5.1",
     "hexo-renderer-markdown-it-plus": "^1.0.4",
     "hexo-renderer-njks": "^1.2.0",
-    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-word-counter": "0.0.2",
