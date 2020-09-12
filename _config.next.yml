@@ -650,7 +650,7 @@ gitalk:
 rating:
   enable: true
   id:     23154
-  color:  "fc6423"
+  color:  "#fc6423"
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -825,13 +825,10 @@ motion:
     sidebar: fadeInUp
 
 # Progress bar in the top during page loading.
-# For more information: https://github.com/HubSpot/pace
-pace:
+# For more information: https://github.com/rstacruz/nprogress
+nprogress:
   enable: true
-  # Themes list:
-  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
-  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  spinner: true
 
 # Canvas ribbon
 # For more information: https://github.com/hustcc/ribbon.js
@@ -852,7 +849,7 @@ canvas_ribbon:
 # Remember to use the https protocol of CDN links when you enable https on your site.
 vendors:
   # The CDN provider of NexT internal scripts.
-  # Available values: local | jsdelivr | unpkg
+  # Available values: local | jsdelivr | unpkg | cdnjs
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
   internal: local
   # The default CDN provider of third-party plugins.
@@ -889,7 +886,7 @@ vendors:
 
   # FancyBox
   jquery:
-  fancybox:
+  fancybox_js:
   fancybox_css:
 
   # Medium-zoom
@@ -930,9 +927,9 @@ vendors:
   # Warning: motion won't work with animate.css version 3.2.0 or later
   animate_css:
 
-  # Pace.js
-  pace:
-  pace_css:
+  # NProgress.js
+  nprogress_js:
+  nprogress_css:
 
   # Canvas ribbon
   canvas_ribbon:
