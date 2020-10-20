@@ -768,7 +768,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/</loc>
+        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -776,7 +776,7 @@
     </url>
 
     <url>
-        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/</loc>
+        <loc>https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/</loc>
         <lastmod>2017-04-17T08:26:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1104,6 +1104,14 @@
     </url>
 
     <url>
+        <loc>https://wafer.li/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</loc>
+        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://wafer.li/Kotlin/Java%20to%20Kotlin/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1361,14 +1369,6 @@
 
     <url>
         <loc>https://wafer.li/MaterialDesign/Material%20Design%20%E6%A6%82%E8%BF%B0/</loc>
-        <lastmod>2017-04-14T11:56:41.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wafer.li/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</loc>
         <lastmod>2017-04-14T11:56:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
