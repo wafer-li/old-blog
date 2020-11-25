@@ -15,7 +15,7 @@
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-searchdb": "^1.3.3",
-    "hexo-generator-seo-friendly-sitemap": "^0.0.25",
+    "hexo-generator-seo-friendly-sitemap": "^0.2.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-optimize": "^2.5.1",
     "hexo-renderer-markdown-it-plus": "^1.0.4",
@@ -27,6 +27,6 @@
     "markdown-it-criticmarkup": "^0.0.1",
     "markdown-it-fontawesome": "^0.3.0",
     "markdown-it-task-lists": "^2.1.1",
-    "prism-themes": "^1.4.1"
+    "prism-themes": "^1.5.0"
   }
 }
