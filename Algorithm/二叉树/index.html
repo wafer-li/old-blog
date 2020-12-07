@@ -24,10 +24,9 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
-
-  <meta name="description" content="1. 二叉树的定义 二叉树是一种每个节点最多只能有两个子节点的树  树是一种没有环的连通图  在最顶层的节点叫做根节点 没有子节点的节点叫叶节点，有子节点的节点叫做内部节点">
+<meta name="description" content="1. 二叉树的定义 二叉树是一种每个节点最多只能有两个子节点的树  树是一种没有环的连通图  在最顶层的节点叫做根节点 没有子节点的节点叫叶节点，有子节点的节点叫做内部节点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二叉树">
 <meta property="og:url" content="https://wafer.li/Algorithm/%E4%BA%8C%E5%8F%89%E6%A0%91/index.html">
@@ -60,12 +59,8 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>二叉树 | Wafer's Note</title>
+<title>二叉树 | Wafer's Note</title>
   
-
-
-
 
 
 
@@ -105,7 +100,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -142,31 +137,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -177,8 +152,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -219,14 +193,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text"> 1. 二叉树的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-text"> 2. 二叉树的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-text"> 2.1 满二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-text"> 2.2 完全二叉树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AE%9E%E7%8E%B0"><span class="nav-text"> 3. 实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0"><span class="nav-text"> 3.1 数组实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0"><span class="nav-text"> 3.2 链表实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%81%8D%E5%8E%86%E7%AE%97%E6%B3%95"><span class="nav-text"> 4. 遍历算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1 深度优先遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#411-%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1.1  先序遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#412-%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1.2 中序遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#413-%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1.3 后序遍历</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88"><span class="nav-text"> 4.2 广度优先</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E7%BA%BF%E7%B4%A2%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-text"> 5. 线索二叉树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#50-%E8%B0%83%E6%95%B4%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text"> 5.0 调整数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#51-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E7%BA%BF%E7%B4%A2%E5%8C%96"><span class="nav-text"> 5.1 二叉树的中序线索化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E4%BA%8C%E5%8F%89%E6%A0%91%E5%92%8C%E6%A3%AE%E6%9E%97"><span class="nav-text"> 6. 二叉树和森林</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#61-%E6%A3%AE%E6%9E%97%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text"> 6.1 森林的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#62-%E6%A3%AE%E6%9E%97%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-text"> 6.2 森林的表示法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#621-%E5%AD%A9%E5%AD%90%E5%85%84%E5%BC%9F%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-text"> 6.2.1 孩子兄弟表示法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91"><span class="nav-text"> 7. 哈夫曼树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#71-%E7%89%B9%E7%82%B9"><span class="nav-text"> 7.1 特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#72-%E6%9E%84%E9%80%A0"><span class="nav-text"> 7.2 构造</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#73-%E5%BA%94%E7%94%A8%E5%93%88%E5%BC%97%E6%9B%BC%E7%BC%96%E7%A0%81"><span class="nav-text"> 7.3 应用：哈弗曼编码</span></a></li></ol></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text"> 1. 二叉树的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-text"> 2. 二叉树的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-text"> 2.1 满二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-text"> 2.2 完全二叉树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AE%9E%E7%8E%B0"><span class="nav-text"> 3. 实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0"><span class="nav-text"> 3.1 数组实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0"><span class="nav-text"> 3.2 链表实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%81%8D%E5%8E%86%E7%AE%97%E6%B3%95"><span class="nav-text"> 4. 遍历算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1 深度优先遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#411-%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1.1  先序遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#412-%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1.2 中序遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#413-%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-text"> 4.1.3 后序遍历</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88"><span class="nav-text"> 4.2 广度优先</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E7%BA%BF%E7%B4%A2%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-text"> 5. 线索二叉树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#50-%E8%B0%83%E6%95%B4%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text"> 5.0 调整数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#51-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E7%BA%BF%E7%B4%A2%E5%8C%96"><span class="nav-text"> 5.1 二叉树的中序线索化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E4%BA%8C%E5%8F%89%E6%A0%91%E5%92%8C%E6%A3%AE%E6%9E%97"><span class="nav-text"> 6. 二叉树和森林</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#61-%E6%A3%AE%E6%9E%97%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text"> 6.1 森林的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#62-%E6%A3%AE%E6%9E%97%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-text"> 6.2 森林的表示法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#621-%E5%AD%A9%E5%AD%90%E5%85%84%E5%BC%9F%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-text"> 6.2.1 孩子兄弟表示法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91"><span class="nav-text"> 7. 哈夫曼树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#71-%E7%89%B9%E7%82%B9"><span class="nav-text"> 7.1 特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#72-%E6%9E%84%E9%80%A0"><span class="nav-text"> 7.2 构造</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#73-%E5%BA%94%E7%94%A8%E5%93%88%E5%BC%97%E6%9B%BC%E7%BC%96%E7%A0%81"><span class="nav-text"> 7.3 应用：哈弗曼编码</span></a></li></ol></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
  Experienced Admiral</div>
@@ -268,7 +243,8 @@
 
 
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -292,9 +268,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -663,14 +637,6 @@
 
 
 
-      
-    
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -693,18 +659,14 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   © 2016 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -751,7 +713,7 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
@@ -761,10 +723,6 @@
   
   
 
-
-
-  
-
   
 
 
@@ -772,15 +730,7 @@
 
 
 
-
-
-
-
-
-
-
   
-
 
   
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -789,24 +739,13 @@
 
 
 
-
-
-
   
-
-  
-      
   <script src="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.js"></script>
   
 
 
-  
   <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   
-
-
-
-
 
 
 
@@ -867,18 +806,4 @@
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/Algorithm/%E4%BA%8C%E5%8F%89%E6%A0%91/',]
       });
       });
-  ;
-
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
-      shortname : 'wafer-li',
-      url       : "https://wafer.li/Algorithm/%E4%BA%8C%E5%8F%89%E6%A0%91/",
-      identifier: "/Algorithm/二叉树/",
-      title     : "二叉树",
-    });
-  }, window.DisqusJS);
-});
-</script></body></html>
+  </script></body></html>

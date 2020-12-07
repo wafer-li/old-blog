@@ -24,10 +24,9 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
-
-  <meta name="description" content="题目 爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下： 爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 [1, W] 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。 当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？">
+<meta name="description" content="题目 爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下： 爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 [1, W] 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。 当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 笔记之——837. 新 21 点">
 <meta property="og:url" content="https://wafer.li/LeetCodeNotes/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/index.html">
@@ -54,12 +53,8 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>LeetCode 笔记之——837. 新 21 点 | Wafer's Note</title>
+<title>LeetCode 笔记之——837. 新 21 点 | Wafer's Note</title>
   
-
-
-
 
 
 
@@ -99,7 +94,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -136,31 +131,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -171,8 +146,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -213,14 +187,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%A2%98%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="nav-text"> 1. 题解思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BB%A5-n-21k-17w-10-%E4%B8%BA%E4%BE%8B"><span class="nav-text"> 2. 以 N = 21，K = 17，W = 10 为例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%89%E6%9D%BF%E6%96%A7"><span class="nav-text"> 3. 动态规划三板斧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E5%88%9D%E5%A7%8B%E7%8A%B6%E6%80%81"><span class="nav-text"> 3.1. 初始状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B"><span class="nav-text"> 3.2 状态转移方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-%E7%BB%88%E6%AD%A2%E7%8A%B6%E6%80%81"><span class="nav-text"> 3.3 终止状态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%BC%98%E5%8C%96%E4%B8%8E%E5%9D%91%E7%82%B9"><span class="nav-text"> 4. 优化与坑点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B"><span class="nav-text"> 4.1 更好的状态转移方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-mathrmn-%E5%92%8C-mathrmk-w-%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text"> 4.2 N\mathrm{N}N 和 K+W\mathrm{K + W}K+W 之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-%E5%AF%B9%E4%BA%8E-dpk-1-%E7%9A%84%E7%AE%80%E4%BE%BF%E6%B1%82%E6%B3%95"><span class="nav-text"> 4.3 对于 dp[K -1] 的简便求法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#44-%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="nav-text"> 4.4 特殊情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%BB%A3%E7%A0%81"><span class="nav-text"> 5. 代码</span></a></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%A2%98%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="nav-text"> 1. 题解思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%BB%A5-n-21k-17w-10-%E4%B8%BA%E4%BE%8B"><span class="nav-text"> 2. 以 N = 21，K = 17，W = 10 为例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%89%E6%9D%BF%E6%96%A7"><span class="nav-text"> 3. 动态规划三板斧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E5%88%9D%E5%A7%8B%E7%8A%B6%E6%80%81"><span class="nav-text"> 3.1. 初始状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B"><span class="nav-text"> 3.2 状态转移方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-%E7%BB%88%E6%AD%A2%E7%8A%B6%E6%80%81"><span class="nav-text"> 3.3 终止状态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%BC%98%E5%8C%96%E4%B8%8E%E5%9D%91%E7%82%B9"><span class="nav-text"> 4. 优化与坑点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B"><span class="nav-text"> 4.1 更好的状态转移方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-mathrmn-%E5%92%8C-mathrmk-w-%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text"> 4.2 N\mathrm{N}N 和 K+W\mathrm{K + W}K+W 之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-%E5%AF%B9%E4%BA%8E-dpk-1-%E7%9A%84%E7%AE%80%E4%BE%BF%E6%B1%82%E6%B3%95"><span class="nav-text"> 4.3 对于 dp[K -1] 的简便求法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#44-%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="nav-text"> 4.4 特殊情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%BB%A3%E7%A0%81"><span class="nav-text"> 5. 代码</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
  Experienced Admiral</div>
@@ -262,7 +237,8 @@
 
 
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -286,9 +262,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -579,14 +553,6 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
 
 
 
-      
-    
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -609,18 +575,14 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   © 2016 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -667,7 +629,7 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
@@ -677,10 +639,6 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
   
   
 
-
-
-  
-
   
 
 
@@ -688,15 +646,7 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
 
 
 
-
-
-
-
-
-
-
   
-
 
   
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -705,24 +655,13 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
 
 
 
-
-
-
   
-
-  
-      
   <script src="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.js"></script>
   
 
 
-  
   <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   
-
-
-
-
 
 
 
@@ -783,18 +722,4 @@ f(K - 1) &amp;= \frac{1}{W} \cdot (N^\star - K + 1) \\
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/LeetCodeNotes/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/',]
       });
       });
-  ;
-
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
-      shortname : 'wafer-li',
-      url       : "https://wafer.li/LeetCodeNotes/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/",
-      identifier: "/LeetCodeNotes/leetcode-笔记之——837-新-21-点/",
-      title     : "LeetCode 笔记之——837. 新 21 点",
-    });
-  }, window.DisqusJS);
-});
-</script></body></html>
+  </script></body></html>

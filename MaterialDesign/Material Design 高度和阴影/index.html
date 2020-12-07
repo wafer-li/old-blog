@@ -24,10 +24,9 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
-
-  <meta name="description" content="1. 概述 在 Materail Design 中，物体的行为和真实世界中很相似。">
+<meta name="description" content="1. 概述 在 Materail Design 中，物体的行为和真实世界中很相似。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Material Design 高度和阴影">
 <meta property="og:url" content="https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/index.html">
@@ -77,12 +76,8 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>Material Design 高度和阴影 | Wafer's Note</title>
+<title>Material Design 高度和阴影 | Wafer's Note</title>
   
-
-
-
 
 
 
@@ -122,7 +117,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -159,31 +154,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -194,8 +169,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -236,14 +210,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%A6%82%E8%BF%B0"><span class="nav-text"> 1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%AB%98%E5%BA%A6android"><span class="nav-text"> 2. 高度（Android）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E8%AF%B4%E6%98%8E"><span class="nav-text"> 2.1 说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E9%BB%98%E8%AE%A4%E9%AB%98%E5%BA%A6"><span class="nav-text"> 2.2 默认高度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E6%84%9F%E5%BA%94%E9%AB%98%E5%BA%A6%E5%92%8C%E5%8A%A8%E6%80%81%E7%9A%84%E9%AB%98%E5%BA%A6%E5%81%8F%E7%A7%BB"><span class="nav-text"> 2.3 感应高度和动态的高度偏移</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-%E9%81%BF%E5%85%8D%E9%AB%98%E5%BA%A6%E5%86%B2%E7%AA%81"><span class="nav-text"> 2.4 避免高度冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E7%BB%84%E4%BB%B6%E9%AB%98%E5%BA%A6%E6%AF%94%E8%BE%83"><span class="nav-text"> 2.5 组件高度比较</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%98%B4%E5%BD%B1"><span class="nav-text"> 3. 阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E7%BB%84%E4%BB%B6%E5%8F%82%E8%80%83%E9%AB%98%E5%BA%A6"><span class="nav-text"> 3.1 组件参考高度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#311-app-bar"><span class="nav-text"> 3.1.1 App Bar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#312-raised-button"><span class="nav-text"> 3.1.2 Raised Button</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#313-floating-action-buttonfab"><span class="nav-text"> 3.1.3 Floating Action Button(FAB)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#314-card"><span class="nav-text"> 3.1.4 Card</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#315-menus-and-sub-menus"><span class="nav-text"> 3.1.5 Menus and sub menus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#316-dialogs"><span class="nav-text"> 3.1.6 Dialogs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#317-nav-drawer-and-right-drawer"><span class="nav-text"> 3.1.7 Nav Drawer and Right Drawer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#318-modal-button-sheet"><span class="nav-text"> 3.1.8 Modal Button Sheet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#319-refresh-indecator"><span class="nav-text"> 3.1.9 Refresh indecator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3110-quick-entrysearch-bar"><span class="nav-text"> 3.1.10 Quick entry/Search bar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3111-snackbar"><span class="nav-text"> 3.1.11 Snackbar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3112-switch"><span class="nav-text"> 3.1.12 Switch</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%AF%B9%E8%B1%A1%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="nav-text"> 4. 对象间关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text"> 4.1 对象的层次结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-%E4%BE%8B%E5%A4%96"><span class="nav-text"> 4.2 例外</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-%E4%BA%A4%E4%BA%92"><span class="nav-text"> 4.3 交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#44-%E9%AB%98%E5%BA%A6"><span class="nav-text"> 4.4 高度</span></a></li></ol></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%A6%82%E8%BF%B0"><span class="nav-text"> 1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%AB%98%E5%BA%A6android"><span class="nav-text"> 2. 高度（Android）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E8%AF%B4%E6%98%8E"><span class="nav-text"> 2.1 说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E9%BB%98%E8%AE%A4%E9%AB%98%E5%BA%A6"><span class="nav-text"> 2.2 默认高度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E6%84%9F%E5%BA%94%E9%AB%98%E5%BA%A6%E5%92%8C%E5%8A%A8%E6%80%81%E7%9A%84%E9%AB%98%E5%BA%A6%E5%81%8F%E7%A7%BB"><span class="nav-text"> 2.3 感应高度和动态的高度偏移</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-%E9%81%BF%E5%85%8D%E9%AB%98%E5%BA%A6%E5%86%B2%E7%AA%81"><span class="nav-text"> 2.4 避免高度冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E7%BB%84%E4%BB%B6%E9%AB%98%E5%BA%A6%E6%AF%94%E8%BE%83"><span class="nav-text"> 2.5 组件高度比较</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%98%B4%E5%BD%B1"><span class="nav-text"> 3. 阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E7%BB%84%E4%BB%B6%E5%8F%82%E8%80%83%E9%AB%98%E5%BA%A6"><span class="nav-text"> 3.1 组件参考高度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#311-app-bar"><span class="nav-text"> 3.1.1 App Bar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#312-raised-button"><span class="nav-text"> 3.1.2 Raised Button</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#313-floating-action-buttonfab"><span class="nav-text"> 3.1.3 Floating Action Button(FAB)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#314-card"><span class="nav-text"> 3.1.4 Card</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#315-menus-and-sub-menus"><span class="nav-text"> 3.1.5 Menus and sub menus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#316-dialogs"><span class="nav-text"> 3.1.6 Dialogs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#317-nav-drawer-and-right-drawer"><span class="nav-text"> 3.1.7 Nav Drawer and Right Drawer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#318-modal-button-sheet"><span class="nav-text"> 3.1.8 Modal Button Sheet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#319-refresh-indecator"><span class="nav-text"> 3.1.9 Refresh indecator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3110-quick-entrysearch-bar"><span class="nav-text"> 3.1.10 Quick entry/Search bar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3111-snackbar"><span class="nav-text"> 3.1.11 Snackbar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3112-switch"><span class="nav-text"> 3.1.12 Switch</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%AF%B9%E8%B1%A1%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="nav-text"> 4. 对象间关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text"> 4.1 对象的层次结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-%E4%BE%8B%E5%A4%96"><span class="nav-text"> 4.2 例外</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-%E4%BA%A4%E4%BA%92"><span class="nav-text"> 4.3 交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#44-%E9%AB%98%E5%BA%A6"><span class="nav-text"> 4.4 高度</span></a></li></ol></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
  Experienced Admiral</div>
@@ -285,7 +260,8 @@
 
 
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -309,9 +285,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -638,14 +612,6 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
 
 
 
-      
-    
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -668,18 +634,14 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   © 2016 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -726,7 +688,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
@@ -736,10 +698,6 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
   
   
 
-
-
-  
-
   
 
 
@@ -747,15 +705,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
 
 
 
-
-
-
-
-
-
-
   
-
 
   
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -764,20 +714,10 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
 
 
 
-
-
-
   
 
-  
-
-  
   <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   
-
-
-
-
 
 
 
@@ -838,18 +778,4 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/',]
       });
       });
-  ;
-
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
-      shortname : 'wafer-li',
-      url       : "https://wafer.li/MaterialDesign/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/",
-      identifier: "/MaterialDesign/Material Design 高度和阴影/",
-      title     : "Material Design 高度和阴影",
-    });
-  }, window.DisqusJS);
-});
-</script></body></html>
+  </script></body></html>

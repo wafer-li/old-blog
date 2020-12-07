@@ -24,10 +24,9 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
-
-  <meta name="description" content="填空选择问答  1. 绪论  1.1 语言和形式语言  语言是字集齐组合规则的统一体   1.2 字母表   字母表是一个非空有穷集合，具有非空性、有穷性   字符具有整体性和可辨认性   正闭包：∑+=∑∪∑2∪∑3∪∑4∪⋯\sum^+ = \sum \cup \sum^2 \cup \sum^3 \cup \sum^4 \cup \cdots∑+=∑∪∑2∪∑3∪∑4∪⋯   克林闭包：正">
+<meta name="description" content="填空选择问答  1. 绪论  1.1 语言和形式语言  语言是字集齐组合规则的统一体   1.2 字母表   字母表是一个非空有穷集合，具有非空性、有穷性   字符具有整体性和可辨认性   正闭包：∑+=∑∪∑2∪∑3∪∑4∪⋯\sum^+ = \sum \cup \sum^2 \cup \sum^3 \cup \sum^4 \cup \cdots∑+=∑∪∑2∪∑3∪∑4∪⋯   克林闭包：正">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自动机考试">
 <meta property="og:url" content="https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/index.html">
@@ -56,12 +55,8 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>自动机考试 | Wafer's Note</title>
+<title>自动机考试 | Wafer's Note</title>
   
-
-
-
 
 
 
@@ -101,7 +96,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -138,31 +133,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">76</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">51</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">207</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -173,8 +148,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -215,14 +189,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A1%AB%E7%A9%BA%E9%80%89%E6%8B%A9%E9%97%AE%E7%AD%94"><span class="nav-text"> 填空选择问答</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%BB%AA%E8%AE%BA"><span class="nav-text"> 1. 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-%E8%AF%AD%E8%A8%80%E5%92%8C%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80"><span class="nav-text"> 1.1 语言和形式语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-%E5%AD%97%E6%AF%8D%E8%A1%A8"><span class="nav-text"> 1.2 字母表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-%E5%8F%A5%E5%AD%90"><span class="nav-text"> 1.3 句子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%96%87%E6%B3%95"><span class="nav-text"> 2. 文法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#21-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 2.1 形式定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-%E5%8F%A5%E5%9E%8B"><span class="nav-text"> 2.2 句型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23-%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%E4%BD%93%E7%B3%BB"><span class="nav-text"> 2.3 乔姆斯基体系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24-%E6%8E%A8%E5%AF%BC-%E5%BD%92%E7%BA%A6%E5%92%8C%E6%96%87%E6%B3%95%E6%9E%84%E9%80%A0"><span class="nav-text"> 2.4 推导、归约和文法构造</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%9C%89%E7%A9%B7%E7%8A%B6%E6%80%81%E8%87%AA%E5%8A%A8%E6%9C%BA"><span class="nav-text"> 3. 有穷状态自动机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#31-%E7%89%A9%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="nav-text"> 3.1 物理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 3.2 形式定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#33-dfa"><span class="nav-text"> 3.3 DFA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-nfa"><span class="nav-text"> 3.4 NFA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#35-epsilon-nfa"><span class="nav-text"> 3.5 ϵ−NFA\epsilon-NFAϵ−NFA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#36-%E8%A1%A5%E5%85%85"><span class="nav-text"> 3.6 补充</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text"> 4. 正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#41-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 4.1 形式定义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%AD%A3%E5%88%99%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-text"> 5. 正则语言的性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#51-%E5%B0%81%E9%97%AD%E6%80%A7"><span class="nav-text"> 5.1 封闭性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#52-myhill-nerode-%E5%AE%9A%E7%90%86"><span class="nav-text"> 5.2 Myhill-Nerode 定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E8%A8%80"><span class="nav-text"> 6. 上下文无关语言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#61-%E4%BA%8C%E4%B9%89%E6%80%A7"><span class="nav-text"> 6.1 二义性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%E8%8C%83%E5%BC%8Fcnf"><span class="nav-text"> 6.2 乔姆斯基范式（CNF）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#63-%E6%A0%BC%E9%9B%B7%E5%B7%B4%E8%B5%AB%E8%8C%83%E5%BC%8F"><span class="nav-text"> 6.3 格雷巴赫范式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E4%B8%8B%E6%8E%A8%E8%87%AA%E5%8A%A8%E6%9C%BA"><span class="nav-text"> 7. 下推自动机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#71-%E7%89%A9%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="nav-text"> 7.1 物理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#72-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 7.2 形式定义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E8%A8%80%E6%80%A7%E8%B4%A8"><span class="nav-text"> 8. 上下文无关语言性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#81-%E5%B0%81%E9%97%AD%E6%80%A7"><span class="nav-text"> 8.1 封闭性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%9B%BE%E7%81%B5%E6%9C%BA"><span class="nav-text"> 9. 图灵机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#91-%E7%89%A9%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="nav-text"> 9.1 物理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#92-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 9.2 形式定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#93-%E5%8D%B3%E6%97%B6%E6%8F%8F%E8%BF%B0"><span class="nav-text"> 9.3 即时描述</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%9C%89%E5%85%B3%E8%AF%AD%E8%A8%80"><span class="nav-text"> 10. 上下文有关语言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#101-%E7%BA%BF%E6%80%A7%E6%9C%89%E7%95%8C%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 10.1 线性有界自动机的形式定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E9%A2%98"><span class="nav-text"> 大题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E9%A2%98%E8%80%83%E7%82%B9"><span class="nav-text"> 大题考点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-epsilon-nfa-%E8%BD%AC-nfa"><span class="nav-text"> 1. ϵ\epsilonϵ-NFA 转 NFA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-nfa-%E8%BD%AC-dfa"><span class="nav-text"> 2. NFA 转 DFA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%AD%A3%E5%88%99%E8%AF%AD%E8%A8%80%E8%BD%AC-fa"><span class="nav-text"> 3. 正则语言转 FA</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#31-dfa-%E8%BD%AC%E6%AD%A3%E5%88%99%E6%96%87%E6%B3%95"><span class="nav-text"> 3.1 DFA 转正则文法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-%E6%AD%A3%E5%88%99%E6%96%87%E6%B3%95%E8%BD%AC-fa"><span class="nav-text"> 3.2 正则文法转 FA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#33-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC-fa"><span class="nav-text"> 3.3 正则表达式转 FA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-dfa-%E8%BD%AC%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text"> 3.4 DFA 转正则表达式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%B3%B5%E5%BC%95%E7%90%86%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E8%AF%AD%E8%A8%80%E4%B8%8D%E6%98%AF-rl"><span class="nav-text"> 4. 泵引理证明一个语言不是 RL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-dfa-%E7%9A%84%E6%9E%81%E5%B0%8F%E5%8C%96"><span class="nav-text"> 5. DFA 的极小化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E6%96%87%E6%B3%95%E7%9A%84%E5%8C%96%E7%AE%80"><span class="nav-text"> 6. 上下文无关文法的化简</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#61-%E5%8E%BB%E6%97%A0%E7%94%A8%E7%AC%A6%E5%8F%B7"><span class="nav-text"> 6.1 去无用符号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-%E6%B8%85%E9%99%A4-epsilon-%E4%BA%A7%E7%94%9F%E5%BC%8F"><span class="nav-text"> 6.2 清除 ϵ\epsilonϵ 产生式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#63-%E6%B8%85%E9%99%A4%E5%8D%95%E4%B8%80%E4%BA%A7%E7%94%9F%E5%BC%8F"><span class="nav-text"> 6.3 清除单一产生式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E7%94%A8%E6%B3%B5%E5%BC%95%E7%90%86%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E8%AF%AD%E8%A8%80%E4%B8%8D%E6%98%AF%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E8%A8%80"><span class="nav-text"> 7. 用泵引理证明一个语言不是上下文无关语言</span></a></li></ol></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A1%AB%E7%A9%BA%E9%80%89%E6%8B%A9%E9%97%AE%E7%AD%94"><span class="nav-text"> 填空选择问答</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%BB%AA%E8%AE%BA"><span class="nav-text"> 1. 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-%E8%AF%AD%E8%A8%80%E5%92%8C%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80"><span class="nav-text"> 1.1 语言和形式语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-%E5%AD%97%E6%AF%8D%E8%A1%A8"><span class="nav-text"> 1.2 字母表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-%E5%8F%A5%E5%AD%90"><span class="nav-text"> 1.3 句子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%96%87%E6%B3%95"><span class="nav-text"> 2. 文法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#21-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 2.1 形式定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-%E5%8F%A5%E5%9E%8B"><span class="nav-text"> 2.2 句型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23-%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%E4%BD%93%E7%B3%BB"><span class="nav-text"> 2.3 乔姆斯基体系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24-%E6%8E%A8%E5%AF%BC-%E5%BD%92%E7%BA%A6%E5%92%8C%E6%96%87%E6%B3%95%E6%9E%84%E9%80%A0"><span class="nav-text"> 2.4 推导、归约和文法构造</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%9C%89%E7%A9%B7%E7%8A%B6%E6%80%81%E8%87%AA%E5%8A%A8%E6%9C%BA"><span class="nav-text"> 3. 有穷状态自动机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#31-%E7%89%A9%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="nav-text"> 3.1 物理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 3.2 形式定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#33-dfa"><span class="nav-text"> 3.3 DFA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-nfa"><span class="nav-text"> 3.4 NFA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#35-epsilon-nfa"><span class="nav-text"> 3.5 ϵ−NFA\epsilon-NFAϵ−NFA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#36-%E8%A1%A5%E5%85%85"><span class="nav-text"> 3.6 补充</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text"> 4. 正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#41-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 4.1 形式定义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%AD%A3%E5%88%99%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-text"> 5. 正则语言的性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#51-%E5%B0%81%E9%97%AD%E6%80%A7"><span class="nav-text"> 5.1 封闭性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#52-myhill-nerode-%E5%AE%9A%E7%90%86"><span class="nav-text"> 5.2 Myhill-Nerode 定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E8%A8%80"><span class="nav-text"> 6. 上下文无关语言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#61-%E4%BA%8C%E4%B9%89%E6%80%A7"><span class="nav-text"> 6.1 二义性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%E8%8C%83%E5%BC%8Fcnf"><span class="nav-text"> 6.2 乔姆斯基范式（CNF）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#63-%E6%A0%BC%E9%9B%B7%E5%B7%B4%E8%B5%AB%E8%8C%83%E5%BC%8F"><span class="nav-text"> 6.3 格雷巴赫范式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E4%B8%8B%E6%8E%A8%E8%87%AA%E5%8A%A8%E6%9C%BA"><span class="nav-text"> 7. 下推自动机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#71-%E7%89%A9%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="nav-text"> 7.1 物理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#72-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 7.2 形式定义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E8%A8%80%E6%80%A7%E8%B4%A8"><span class="nav-text"> 8. 上下文无关语言性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#81-%E5%B0%81%E9%97%AD%E6%80%A7"><span class="nav-text"> 8.1 封闭性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%9B%BE%E7%81%B5%E6%9C%BA"><span class="nav-text"> 9. 图灵机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#91-%E7%89%A9%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="nav-text"> 9.1 物理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#92-%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 9.2 形式定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#93-%E5%8D%B3%E6%97%B6%E6%8F%8F%E8%BF%B0"><span class="nav-text"> 9.3 即时描述</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%9C%89%E5%85%B3%E8%AF%AD%E8%A8%80"><span class="nav-text"> 10. 上下文有关语言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#101-%E7%BA%BF%E6%80%A7%E6%9C%89%E7%95%8C%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E5%BD%A2%E5%BC%8F%E5%AE%9A%E4%B9%89"><span class="nav-text"> 10.1 线性有界自动机的形式定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E9%A2%98"><span class="nav-text"> 大题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A7%E9%A2%98%E8%80%83%E7%82%B9"><span class="nav-text"> 大题考点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-epsilon-nfa-%E8%BD%AC-nfa"><span class="nav-text"> 1. ϵ\epsilonϵ-NFA 转 NFA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-nfa-%E8%BD%AC-dfa"><span class="nav-text"> 2. NFA 转 DFA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%AD%A3%E5%88%99%E8%AF%AD%E8%A8%80%E8%BD%AC-fa"><span class="nav-text"> 3. 正则语言转 FA</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#31-dfa-%E8%BD%AC%E6%AD%A3%E5%88%99%E6%96%87%E6%B3%95"><span class="nav-text"> 3.1 DFA 转正则文法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-%E6%AD%A3%E5%88%99%E6%96%87%E6%B3%95%E8%BD%AC-fa"><span class="nav-text"> 3.2 正则文法转 FA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#33-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC-fa"><span class="nav-text"> 3.3 正则表达式转 FA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-dfa-%E8%BD%AC%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text"> 3.4 DFA 转正则表达式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%B3%B5%E5%BC%95%E7%90%86%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E8%AF%AD%E8%A8%80%E4%B8%8D%E6%98%AF-rl"><span class="nav-text"> 4. 泵引理证明一个语言不是 RL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-dfa-%E7%9A%84%E6%9E%81%E5%B0%8F%E5%8C%96"><span class="nav-text"> 5. DFA 的极小化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E6%96%87%E6%B3%95%E7%9A%84%E5%8C%96%E7%AE%80"><span class="nav-text"> 6. 上下文无关文法的化简</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#61-%E5%8E%BB%E6%97%A0%E7%94%A8%E7%AC%A6%E5%8F%B7"><span class="nav-text"> 6.1 去无用符号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-%E6%B8%85%E9%99%A4-epsilon-%E4%BA%A7%E7%94%9F%E5%BC%8F"><span class="nav-text"> 6.2 清除 ϵ\epsilonϵ 产生式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#63-%E6%B8%85%E9%99%A4%E5%8D%95%E4%B8%80%E4%BA%A7%E7%94%9F%E5%BC%8F"><span class="nav-text"> 6.3 清除单一产生式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E7%94%A8%E6%B3%B5%E5%BC%95%E7%90%86%E8%AF%81%E6%98%8E%E4%B8%80%E4%B8%AA%E8%AF%AD%E8%A8%80%E4%B8%8D%E6%98%AF%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E8%AF%AD%E8%A8%80"><span class="nav-text"> 7. 用泵引理证明一个语言不是上下文无关语言</span></a></li></ol></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
  Experienced Admiral</div>
@@ -264,7 +239,8 @@
 
 
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -288,9 +264,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -952,14 +926,6 @@ A &amp;\to a
 
 
 
-      
-    
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -982,18 +948,14 @@ A &amp;\to a
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   © 2016 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -1040,7 +1002,7 @@ A &amp;\to a
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
@@ -1050,10 +1012,6 @@ A &amp;\to a
   
   
 
-
-
-  
-
   
 
 
@@ -1061,15 +1019,7 @@ A &amp;\to a
 
 
 
-
-
-
-
-
-
-
   
-
 
   
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -1078,24 +1028,13 @@ A &amp;\to a
 
 
 
-
-
-
   
-
-  
-      
   <script src="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.js"></script>
   
 
 
-  
   <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   
-
-
-
-
 
 
 
@@ -1156,18 +1095,4 @@ A &amp;\to a
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/',]
       });
       });
-  ;
-
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
-      shortname : 'wafer-li',
-      url       : "https://wafer.li/Reviews/Automata/%E8%87%AA%E5%8A%A8%E6%9C%BA%E8%80%83%E8%AF%95/",
-      identifier: "/Reviews/Automata/自动机考试/",
-      title     : "自动机考试",
-    });
-  }, window.DisqusJS);
-});
-</script></body></html>
+  </script></body></html>
