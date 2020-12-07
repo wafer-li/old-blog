@@ -53,6 +53,7 @@ before_install:
 
 install:
   - npm install
+  - npm install hexo-cli@latest -g --no-cache
 
 script:
   - hexo clean
