@@ -2,15 +2,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -24,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 <meta name="description" content="1. 介绍 Retrofit 是 Square 公司出品的 Android 开源网络框架，使用注解和代理实现各项 HTTP 操作和 body 解析处理等。 Retrofit2 通过与 Square 公司的另一开源库 OkHttp3 合并，由 OkHttp 进行 HTTP 操作，重定向响应，以及缓存支持。">
 <meta property="og:type" content="article">
@@ -55,6 +53,7 @@
 </script>
 <title>Retrofit2 使用简明手册 | Wafer's Note</title>
   
+
 
 
 
@@ -94,7 +93,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -103,7 +102,7 @@
     <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -153,7 +152,7 @@
   <div class="search-input-container">
     <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -169,7 +168,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -189,12 +188,12 @@
 
       <div class="sidebar-panel-container">
         <!--noindex-->
-        <section class="post-toc-wrap sidebar-panel">
+        <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BB%8B%E7%BB%8D"><span class="nav-text"> 1. 介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9D%E5%A7%8B%E5%8C%96%E8%AE%BE%E7%BD%AE"><span class="nav-text"> 2. 初始化设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96"><span class="nav-text"> 2.1 添加依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E9%85%8D%E7%BD%AE-proguard"><span class="nav-text"> 2.2 配置 Proguard</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-text"> 3. 基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-%E5%88%9B%E5%BB%BA-apiservice-interface"><span class="nav-text"> 3.1 创建 ApiService interface</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-%E6%9E%84%E5%BB%BA-retrofit-%E7%B1%BB%E8%8E%B7%E5%8F%96-apiservice-%E5%AE%9E%E4%BE%8B"><span class="nav-text"> 3.2 构建 Retrofit 类，获取 ApiService 实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-%E9%80%9A%E8%BF%87-apiservice-%E5%AE%9E%E4%BE%8B%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%B1%82"><span class="nav-text"> 3.3 通过 ApiService 实例发起请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#34-%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82"><span class="nav-text"> 3.4 取消请求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%8F%AF%E5%8F%98-url-%E5%92%8C-get-%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0"><span class="nav-text"> 4. 可变 URL 和 GET 请求参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-%E5%8F%AF%E5%8F%98-url"><span class="nav-text"> 4.1 可变 URL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-query-%E5%8F%82%E6%95%B0"><span class="nav-text"> 4.2 Query 参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E9%80%9A%E8%BF%87-body-%E8%AF%B7%E6%B1%82"><span class="nav-text"> 5. 通过 Body 请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-form-url-encode-%E6%95%B0%E6%8D%AE"><span class="nav-text"> 6. Form URL encode 数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6"><span class="nav-text"> 7. 上传文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E6%8C%87%E5%AE%9A-header"><span class="nav-text"> 7. 指定 Header</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E6%8C%87%E5%AE%9A%E8%BD%AC%E6%8D%A2%E5%99%A8"><span class="nav-text"> 8. 指定转换器</span></a></li></ol></div>
-        </section>
+        </div>
         <!--/noindex-->
 
-        <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
@@ -237,7 +236,7 @@
 
 
 
-        </section>
+        </div>
       </div>
     </div>
   </aside>
@@ -247,7 +246,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -527,6 +526,11 @@ repos<span class="token punctuation">.</span><span class="token function">enqueu
 
 
 
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -558,7 +562,7 @@ repos<span class="token punctuation">.</span><span class="token function">enqueu
 
 <div class="copyright">
   © 2016 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -613,8 +617,6 @@ repos<span class="token punctuation">.</span><span class="token function">enqueu
   
   
 
-  
-
 
 
 
@@ -628,7 +630,6 @@ repos<span class="token punctuation">.</span><span class="token function">enqueu
 
 
 
-
   
 
   <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
@@ -636,16 +637,11 @@ repos<span class="token punctuation">.</span><span class="token function">enqueu
 
 
 
-<script src="/bundle.js"></script><script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  ;
 
+
+
+
+<script src="/bundle.js"></script><script>
   if (CONFIG.page.isPost) {
     wpac_init = window.wpac_init || [];
     wpac_init.push({
@@ -693,4 +689,18 @@ repos<span class="token punctuation">.</span><span class="token function">enqueu
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/',]
       });
       });
-  </script></body></html>
+  ;
+
+NexT.utils.loadComments('#disqus_thread', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
+      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
+      shortname : 'wafer-li',
+      url       : "https://wafer.li/Android/Retrofit/Retrofit2%20%E4%BD%BF%E7%94%A8%E7%AE%80%E6%98%8E%E6%89%8B%E5%86%8C/",
+      identifier: "/Android/Retrofit/Retrofit2 使用简明手册/",
+      title     : "Retrofit2 使用简明手册",
+    });
+  }, window.DisqusJS);
+});
+</script></body></html>

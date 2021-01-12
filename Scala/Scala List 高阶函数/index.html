@@ -2,15 +2,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -24,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 <meta name="description" content="高阶函数是函数式编程的一个很大的特性； 同时，其中集合类的高阶函数在日常的开发和使用中，占了一个很重要的位置； 但是，这些函数有可能会在刚接触的时候搞不懂它们的具体作用； 那么今天就以 List 来说一说常用的高阶函数具体的作用。">
 <meta property="og:type" content="article">
@@ -59,6 +57,7 @@
 </script>
 <title>Scala List 高阶函数 | Wafer's Note</title>
   
+
 
 
 
@@ -98,7 +97,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -107,7 +106,7 @@
     <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -157,7 +156,7 @@
   <div class="search-input-container">
     <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -173,7 +172,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -193,12 +192,12 @@
 
       <div class="sidebar-panel-container">
         <!--noindex-->
-        <section class="post-toc-wrap sidebar-panel">
+        <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AD%90%E9%9B%86%E6%93%8D%E4%BD%9C"><span class="nav-text"> 1. 子集操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-filterp-t-boolean"><span class="nav-text"> 1.1 filter(p: (T) =&gt; Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-filternotp-t-boolean"><span class="nav-text"> 1.2 filterNot(p: (T) =&gt; Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-partitionp-t-boolean"><span class="nav-text"> 1.3 partition(p: (T) =&gt; Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-takewhilep-t-boolean"><span class="nav-text"> 1.4 takeWhile(p: (T) =&gt; Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-dropwhilep-t-boolean"><span class="nav-text"> 1.5 dropWhile(p: (T) =&gt; Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-spanp-t-boolean"><span class="nav-text"> 1.6 span(p: (T) =&gt; Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-partition-span-%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text"> 1.7 partition、span 和它们的基本方法的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-withfilter"><span class="nav-text"> 1.8 withFilter</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%85%83%E7%B4%A0%E6%A3%80%E6%9F%A5"><span class="nav-text"> 2. 元素检查</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-forallp-t-boolean-boolean"><span class="nav-text"> 2.1 forAll(p: (T) =&gt; Boolean): Boolean</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-existsp-t-boolean-boolean"><span class="nav-text"> 2.2 exists(p: (T) =&gt; Boolean): Boolean</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%8F%98%E6%8D%A2"><span class="nav-text"> 3. 变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#31-mapf-t-u"><span class="nav-text"> 3.1 map(f: (T) =&gt; U)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32-flatten"><span class="nav-text"> 3.2 flatten</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#33-flatmap"><span class="nav-text"> 3.3 flatMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#34-ziptxs-listu-listt-u"><span class="nav-text"> 3.4 zip[T](xs: List[U]): List[(T, U)]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#35-unzip"><span class="nav-text"> 3.5 unzip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#36-collect"><span class="nav-text"> 3.6 collect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#37-collectfirst"><span class="nav-text"> 3.7 collectFirst</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#38-groupbyaf-a-k-mapk-seqa"><span class="nav-text"> 3.8 groupBy[A](f: (A) =&gt; K): Map[K, Seq[A]]</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%A7%84%E7%BA%A6"><span class="nav-text"> 4. 规约</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-reduceleftop-b-t-b"><span class="nav-text"> 4.1 reduceLeft(op: (B, T) =&gt; B)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-foldleftz-bop-b-t-b"><span class="nav-text"> 4.2 foldLeft(z: B)(op: (B, T) =&gt; B)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-reducerightop-t-b-b"><span class="nav-text"> 4.3 reduceRight(op: (T, B) =&gt; B)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#44-foldrightz-bop-t-b-b"><span class="nav-text"> 4.4 foldRight(z: B)(op: (T, B) =&gt; B)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#45-left-%E5%92%8C-right-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text"> 4.5 left 和 right 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#46-%E5%85%B6%E4%BB%96%E8%A7%84%E7%BA%A6%E5%87%BD%E6%95%B0"><span class="nav-text"> 4.6 其他规约函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%85%B6%E4%BB%96%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="nav-text"> 5. 其他高阶函数</span></a></li></ol></div>
-        </section>
+        </div>
         <!--/noindex-->
 
-        <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
@@ -241,7 +240,7 @@
 
 
 
-        </section>
+        </div>
       </div>
     </div>
   </aside>
@@ -251,7 +250,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -646,6 +645,11 @@ fruit groupBy <span class="token punctuation">(</span>_<span class="token punctu
 
 
 
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -677,7 +681,7 @@ fruit groupBy <span class="token punctuation">(</span>_<span class="token punctu
 
 <div class="copyright">
   © 2016 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -732,8 +736,6 @@ fruit groupBy <span class="token punctuation">(</span>_<span class="token punctu
   
   
 
-  
-
 
 
 
@@ -747,7 +749,6 @@ fruit groupBy <span class="token punctuation">(</span>_<span class="token punctu
 
 
 
-
   
 
   <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
@@ -755,16 +756,11 @@ fruit groupBy <span class="token punctuation">(</span>_<span class="token punctu
 
 
 
-<script src="/bundle.js"></script><script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  ;
 
+
+
+
+<script src="/bundle.js"></script><script>
   if (CONFIG.page.isPost) {
     wpac_init = window.wpac_init || [];
     wpac_init.push({
@@ -812,4 +808,18 @@ fruit groupBy <span class="token punctuation">(</span>_<span class="token punctu
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/Scala/Scala%20List%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/',]
       });
       });
-  </script></body></html>
+  ;
+
+NexT.utils.loadComments('#disqus_thread', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
+      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
+      shortname : 'wafer-li',
+      url       : "https://wafer.li/Scala/Scala%20List%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/",
+      identifier: "/Scala/Scala List 高阶函数/",
+      title     : "Scala List 高阶函数",
+    });
+  }, window.DisqusJS);
+});
+</script></body></html>

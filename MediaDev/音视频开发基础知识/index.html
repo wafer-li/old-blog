@@ -2,15 +2,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -24,7 +22,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
+    var CONFIG = {"hostname":"wafer.li","root":"/","images":"/images","scheme":"Pisces","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}};
   </script>
 <meta name="description" content="最近准备入门音视频开发，就学习内容做一下笔记吧">
 <meta property="og:type" content="article">
@@ -59,6 +57,7 @@
 </script>
 <title>音视频开发基础概念 | Wafer's Note</title>
   
+
 
 
 
@@ -98,7 +97,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Wafer's Note" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css');loadCss('//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css');loadCss('//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');loadCss('//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');loadCss('//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css');loadCss('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -107,7 +106,7 @@
     <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -157,7 +156,7 @@
   <div class="search-input-container">
     <input autocomplete="off" autocapitalize="off" maxlength="80" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -173,7 +172,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -193,12 +192,12 @@
 
       <div class="sidebar-panel-container">
         <!--noindex-->
-        <section class="post-toc-wrap sidebar-panel">
+        <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%A3%B0%E9%9F%B3%E7%9A%84%E7%89%A9%E7%90%86%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5"><span class="nav-text"> 1. 声音的物理相关概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E5%A3%B0%E9%9F%B3%E7%9B%B8%E5%85%B3-n-%E8%A6%81%E7%B4%A0%E8%A7%A3%E6%9E%90"><span class="nav-text"> 1.1 声音相关 n 要素解析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#111-%E9%9F%B3%E8%B0%83%E4%B8%8E%E9%A2%91%E7%8E%87"><span class="nav-text"> 1.1.1 音调与频率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#112-%E9%9F%B3%E5%BC%BA-%E5%A3%B0%E5%8E%8B%E5%92%8C%E5%93%8D%E5%BA%A6"><span class="nav-text"> 1.1.2 音强、声压和响度</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1121-%E9%9F%B3%E5%BC%BA%E5%92%8C%E5%A3%B0%E5%8E%8B"><span class="nav-text"> 1.1.2.1 音强和声压</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1122-%E5%A3%B0%E5%8E%8B%E5%92%8C%E5%A3%B0%E5%8E%8B%E7%BA%A7"><span class="nav-text"> 1.1.2.2 声压和声压级</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1123-%E5%93%8D%E5%BA%A6-%E5%A3%B0%E5%8E%8B%E5%80%BC%E5%92%8C%E9%A2%91%E7%8E%87%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text"> 1.1.2.3 响度、声压值和频率的关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1123-%E5%93%8D%E5%BA%A6%E7%9A%84%E5%8D%95%E4%BD%8D"><span class="nav-text"> 1.1.2.3 响度的单位</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#113-%E6%B3%A2%E5%BD%A2-%E5%9F%BA%E6%B3%A2%E5%92%8C%E8%B0%90%E6%B3%A2"><span class="nav-text"> 1.1.3 波形、基波和谐波</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-%E5%A3%B0%E9%80%9F-%E5%8F%8D%E5%B0%84%E4%B8%8E%E9%80%8F%E5%B0%84"><span class="nav-text"> 1.2 声速、反射与透射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E5%9B%9E%E9%9F%B3"><span class="nav-text"> 1.3 回音</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-%E5%85%B1%E9%B8%A3"><span class="nav-text"> 1.4 共鸣</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-%E4%B8%8E%E4%BA%BA%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E5%80%BC"><span class="nav-text"> 1.5 与人相关的一些值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%95%B0%E5%AD%97%E9%9F%B3%E9%A2%91"><span class="nav-text"> 2. 数字音频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-%E9%87%87%E6%A0%B7"><span class="nav-text"> 2.1 采样</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-%E9%87%8F%E5%8C%96"><span class="nav-text"> 2.2 量化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-%E7%BC%96%E7%A0%81"><span class="nav-text"> 2.3 编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-pcm-%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8F%8F%E8%BF%B0%E5%8F%82%E6%95%B0"><span class="nav-text"> 2.4 PCM 数据的描述参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25-%E9%9F%B3%E9%A2%91%E7%BC%96%E7%A0%81"><span class="nav-text"> 2.5 音频编码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%9B%BE%E5%83%8F%E7%9A%84%E7%89%A9%E7%90%86%E6%A6%82%E5%BF%B5"><span class="nav-text"> 3. 图像的物理概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%9B%BE%E5%83%8F%E7%9A%84%E6%95%B0%E5%80%BC%E8%A1%A8%E7%A4%BA"><span class="nav-text"> 4. 图像的数值表示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#41-rgb-%E8%A1%A8%E7%A4%BA"><span class="nav-text"> 4.1 RGB 表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42-yuv-%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="nav-text"> 4.2 YUV 表示法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#43-yuv-%E4%B8%8E-rgb-%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="nav-text"> 4.3 YUV 与 RGB 的转换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%A7%86%E9%A2%91%E7%9A%84%E7%BC%96%E8%A7%A3%E7%A0%81%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5"><span class="nav-text"> 5. 视频的编解码相关概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#51-%E8%A7%86%E9%A2%91%E7%BC%96%E8%A7%A3%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="nav-text"> 5.1 视频编解码技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#52-%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E5%92%8C%E7%BC%96%E8%A7%A3%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="nav-text"> 5.2 视频格式和编解码技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#53-ipb-%E5%B8%A7"><span class="nav-text"> 5.3 IPB 帧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#54-idr-%E5%B8%A7"><span class="nav-text"> 5.4 IDR 帧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#55-pts-%E5%92%8C-dts"><span class="nav-text"> 5.5 PTS 和 DTS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#56-gop"><span class="nav-text"> 5.6 GOP</span></a></li></ol></li></ol></div>
-        </section>
+        </div>
         <!--/noindex-->
 
-        <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Wafer Li</p>
   <div class="site-description" itemprop="description">Android &amp; Kotlin beginner
@@ -241,7 +240,7 @@
 
 
 
-        </section>
+        </div>
       </div>
     </div>
   </aside>
@@ -251,7 +250,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -771,6 +770,11 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 
 
 
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -802,7 +806,7 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 
 <div class="copyright">
   © 2016 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -857,8 +861,6 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
   
   
 
-  
-
 
 
 
@@ -868,7 +870,6 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 
   
   <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
 
 
@@ -883,16 +884,11 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 
 
 
-<script src="/bundle.js"></script><script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  ;
 
+
+
+
+<script src="/bundle.js"></script><script>
   if (CONFIG.page.isPost) {
     wpac_init = window.wpac_init || [];
     wpac_init.push({
@@ -940,4 +936,18 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
         ignores : [uri => uri.includes('#'),uri => uri === 'https://wafer.li/MediaDev/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/',]
       });
       });
-  </script></body></html>
+  ;
+
+NexT.utils.loadComments('#disqus_thread', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
+      apikey    : 'OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV',
+      shortname : 'wafer-li',
+      url       : "https://wafer.li/MediaDev/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/",
+      identifier: "/MediaDev/音视频开发基础知识/",
+      title     : "音视频开发基础概念",
+    });
+  }, window.DisqusJS);
+});
+</script></body></html>
