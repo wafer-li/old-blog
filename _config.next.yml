@@ -455,9 +455,6 @@ font:
 # See: https://theme-next.js.org/docs/theme-settings/seo
 # ---------------------------------------------------------------
 
-# Disable Baidu transformation on mobile devices.
-disable_baidu_transformation: true
-
 # If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
 index_with_subtitle: false
@@ -480,9 +477,6 @@ yandex_site_verification:
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
 baidu_site_verification:
-
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -572,7 +566,7 @@ comments:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: true
+  lazyload: false
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
@@ -592,13 +586,13 @@ disqus:
 # For more information: https://disqusjs.skk.moe
 disqusjs:
   enable: true
-  # API Endpoint of Disqus API (https://disqus.com/api/).
+  # API Endpoint of Disqus API (https://disqus.com/api/docs/).
   # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
   # For example:
   # api: https://disqus.skk.moe/disqus/
-  api:
-  apikey: # Register new application from https://disqus.com/api/applications/
-  shortname: # See: https://disqus.com/admin/settings/general/
+  api: https://disqus.skk.moe/disqus/
+  apikey: OIPZ9KiXnJPTCn5fnWwkhoYfkuNBWgErqIk987ohskw4sKlIRAvXUyJuxjZ5TNJV # Register new application from https://disqus.com/api/applications/
+  shortname: wafer-li # See: https://disqus.com/admin/settings/general/
 
 # Changyan
 # For more information: https://changyan.kuaizhan.com
@@ -664,6 +658,7 @@ add_this_id:
 # ---------------------------------------------------------------
 
 # Google Analytics
+# See: https://analytics.google.com
 google_analytics:
   tracking_id: # <app_id>
   # By default, NexT will load an external gtag.js script on your site.
@@ -671,13 +666,16 @@ google_analytics:
   only_pageview: false
 
 # Baidu Analytics
+# See: https://tongji.baidu.com
 baidu_analytics: # <app_id>
 
 # Growingio Analytics
+# See: https://www.growingio.com
 growingio_analytics: # <project_id>
 
-# CNZZ count
-cnzz_siteid:
+# Cloudflare Web Analytics
+# See: https://www.cloudflare.com/web-analytics/
+cloudflare_analytics:
 
 # Show number of visitors of each article.
 # You can visit https://www.leancloud.cn to get AppID and AppKey.
@@ -702,7 +700,7 @@ firestore:
   projectId: # Required
 
 # Show Views / Visitors of the website / page with busuanzi.
-# Get more information on http://ibruce.info/2015/04/04/busuanzi/
+# For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   enable: true
   total_visitors: true
@@ -739,9 +737,6 @@ local_search:
   # Preload the search data when the page loads.
   preload: true
 
-# Swiftype Search API Key
-swiftype_key:
-
 
 # ---------------------------------------------------------------
 # Chat Services
@@ -749,7 +744,7 @@ swiftype_key:
 # ---------------------------------------------------------------
 
 # Chatra Support
-# See: https://chatra.com
+# For more information: https://chatra.com
 # Dashboard: https://app.chatra.io/settings/general
 chatra:
   enable: false
@@ -758,7 +753,7 @@ chatra:
   #embed: # Unfinished experimental feature for developers. See: https://chatra.com/help/api/#injectto
 
 # Tidio Support
-# See: https://www.tidio.com
+# For more information: https://www.tidio.com
 # Dashboard: https://www.tidio.com/panel/dashboard
 tidio:
   enable: false
@@ -770,11 +765,11 @@ tidio:
 # See: https://theme-next.js.org/docs/tag-plugins/
 # ---------------------------------------------------------------
 
-# Note tag (bs-callout)
+# Note tag (bootstrap callout)
 note:
   # Note tag style values:
-  #  - simple    bs-callout old alert style. Default.
-  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - simple    bootstrap callout old alert style. Default.
+  #  - modern    bootstrap callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
