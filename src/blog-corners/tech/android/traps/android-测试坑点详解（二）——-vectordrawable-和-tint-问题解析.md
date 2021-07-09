@@ -10,7 +10,7 @@ tags:
 category: Android
 ---
 
-[上篇文章](./android-测试坑点详解（一）/)我们说到如果你的 VectorDrawable 如果采用一个带 `<selector>` 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。
+[上篇文章](../android-测试坑点详解（一）/)我们说到如果你的 VectorDrawable 如果采用一个带 `<selector>` 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。
 
 本篇文章就来着重说说其中的原理。
 
