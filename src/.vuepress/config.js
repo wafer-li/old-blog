@@ -92,34 +92,34 @@ module.exports = config({
       },
     },
 
-    pwa: {
-      favicon: "/favicon.ico",
-      cachePic: true,
-      apple: {
-        icon: "/assets/icon/apple-touch-icon.png",
-        statusBarColor: "black",
-      },
-      msTile: {
-        image: "/assets/icon/mstile-150x150.png",
-        color: "#ffffff",
-      },
-      manifest: {
-        icons: [
-          {
-            src: "/assets/icon/android-chrome-384x384.png",
-            sizes: "384x384",
-            purpose: "maskable",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/android-chrome-192x192.png",
-            sizes: "192x192",
-            purpose: "maskable",
-            type: "image/png",
-          },
-        ],
-        shortcuts: [],
-      },
-    },
+    pwa: false, //{
+    //   favicon: "/favicon.ico",
+    //   cachePic: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-touch-icon.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/mstile-150x150.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/android-chrome-384x384.png",
+    //         sizes: "384x384",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/android-chrome-192x192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //     shortcuts: [],
+    //   },
+    // },
   },
 });
