@@ -1,9 +1,0 @@
-# hexo robots.txt
-
-User-agent: *
-Allow: /
-Allow: /archives/
-Allow: /categories/
-Allow: /tags/
-
-Sitemap: https://wafer.li/sitemap.xml
