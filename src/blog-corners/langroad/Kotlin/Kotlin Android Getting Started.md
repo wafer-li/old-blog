@@ -3,7 +3,8 @@ title: Kotlin Android Getting Started
 date: 2016-10-14
 category: Kotlin
 tags:
-    - [Kotlin, Android]
+    - Kotlin
+    - Android
     - 语言之路
 ---
 

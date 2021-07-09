@@ -3,7 +3,8 @@ title: Kotlin Android Extension
 date: 2017-03-17
 category: Kotlin
 tags:
-    - ["Kotlin", "Android"]
+    - "Kotlin"
+    - "Android"
     - 语言之路
 ---
 
