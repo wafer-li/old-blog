@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wafer Li&#39;s Notes</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <link rel="alternate" type="application/atom+xml" href="https://wafer.li/atom.xml" title="Wafer Li&#39;s Notes Atom Feed">
+    <link rel="alternate" type="application/json" href="https://wafer.li/feed.json" title="Wafer Li&#39;s Notes JSON Feed">
+    <link rel="alternate" type="application/rss+xml" href="https://wafer.li/rss.xml" title="Wafer Li&#39;s Notes RSS Feed">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/assets/icon/android-chrome-384x384.png" type="image/png" sizes="384x384">
+    <link rel="icon" href="/assets/icon/android-chrome-192x192.png" type="image/png" sizes="192x192">
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <link rel="apple-touch-icon" href="/assets/icon/apple-touch-icon.png">
+    <meta name="description" content="Wafer Li 的知识库，请随便浏览">
+    <meta property="og:url" content="/timeline/">
+    <meta property="og:site_name" content="Wafer Li's Notes">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh-CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Wafer Li's Notes">
+    <meta property="article:author" content="Wafer Li">
+    <meta name="theme-color" content="#46bd87">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/assets/icon/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <link rel="preload" href="/assets/css/0.styles.10e726cf.css" as="style"><link rel="preload" href="/assets/js/app.ae346255.js" as="script"><link rel="preload" href="/assets/js/layout-Blog.484b8fc6.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Blog~layout-Layout~layout-NotFound.83c5ac64.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Blog~layout-Layout~layout-NotFound~layout-Slide.fddde2a9.js" as="script"><link rel="prefetch" href="/assets/js/230.82696ee6.js"><link rel="prefetch" href="/assets/js/231.7ea740d3.js"><link rel="prefetch" href="/assets/js/232.f7e95da9.js"><link rel="prefetch" href="/assets/js/233.20d0788c.js"><link rel="prefetch" href="/assets/js/234.6029b5f5.js"><link rel="prefetch" href="/assets/js/235.8fb20d92.js"><link rel="prefetch" href="/assets/js/layout-Layout.5ba673da.js"><link rel="prefetch" href="/assets/js/layout-NotFound.9f726c53.js"><link rel="prefetch" href="/assets/js/layout-Slide.f0f38a94.js"><link rel="prefetch" href="/assets/js/mermaid.fd7d99e3.js"><link rel="prefetch" href="/assets/js/page-14无向图.4c64a987.js"><link rel="prefetch" href="/assets/js/page-1基本概念.20e789aa.js"><link rel="prefetch" href="/assets/js/page-2-3树.fcc14e65.js"><link rel="prefetch" href="/assets/js/page-2随机变量及其分布.db5e03b3.js"><link rel="prefetch" href="/assets/js/page-8Puzzle.4ad5dee0.js"><link rel="prefetch" href="/assets/js/page-AndroidGradle介绍.0f963b34.js"><link rel="prefetch" href="/assets/js/page-AndroidStudioFAQ.7c5dcc99.js"><link rel="prefetch" href="/assets/js/page-AndroidStudio卡bulidinggradleinfo.272bdb0c.js"><link rel="prefetch" href="/assets/js/page-AndroidVolley库的基本使用.37713798.js"><link rel="prefetch" href="/assets/js/page-AndroidVolley构建自定义请求.8a3bb2aa.js"><link rel="prefetch" href="/assets/js/page-AndroidX测试坑点详解（一）.663d5fb9.js"><link rel="prefetch" href="/assets/js/page-AndroidX测试坑点详解（二）——VectorDrawable和tint问题解析.5d58a39e.js"><link rel="prefetch" href="/assets/js/page-Android多个icon问题.e2f2cc3a.js"><link rel="prefetch" href="/assets/js/page-Android官方NavigationDrawer.e7267e06.js"><link rel="prefetch" href="/assets/js/page-Android获取屏幕尺寸.803d7d2b.js"><link rel="prefetch" href="/assets/js/page-Android语言和本地化.41c32708.js"><link rel="prefetch" href="/assets/js/page-Android面经总结2019春招.5eb74445.js"><link rel="prefetch" href="/assets/js/page-Android高德地图轨迹回放.63fc3fb3.js"><link rel="prefetch" href="/assets/js/page-AsyncTaskwithCallback.69f2ef7c.js"><link rel="prefetch" href="/assets/js/page-AutomataTheoryandFormalLanguage.f3fd0ccb.js"><link rel="prefetch" href="/assets/js/page-ButterKnife.607e37f3.js"><link rel="prefetch" href="/assets/js/page-CBasic.40e3863a.js"><link rel="prefetch" href="/assets/js/page-CClassBasic.6ae8dedf.js"><link rel="prefetch" href="/assets/js/page-CConstandReadonlyField.0dfbd774.js"><link rel="prefetch" href="/assets/js/page-CControlFlow.0fda3196.js"><link rel="prefetch" href="/assets/js/page-CMethod.cd618ad2.js"><link rel="prefetch" href="/assets/js/page-CObjectInitialization.b97b4940.js"><link rel="prefetch" href="/assets/js/page-CPropertiesandFields.4afc4c04.js"><link rel="prefetch" href="/assets/js/page-CVisibilityModifiers.a4e19c33.js"><link rel="prefetch" href="/assets/js/page-CleanCode.fe9b266e.js"><link rel="prefetch" href="/assets/js/page-Comparisonmethodviolatesitsgeneralcontract!崩溃分析.2078d4d0.js"><link rel="prefetch" href="/assets/js/page-ComputerOrganizationandArchitecture.4b8f64f5.js"><link rel="prefetch" href="/assets/js/page-ConnectedDeviceNoTestFound调试过程.d9421e97.js"><link rel="prefetch" href="/assets/js/page-ConsistentHash.7a878d2b.js"><link rel="prefetch" href="/assets/js/page-Coursera作业之函数集合.a18b476e.js"><link rel="prefetch" href="/assets/js/page-CreateAssertsFolder.b8729ed7.js"><link rel="prefetch" href="/assets/js/page-C分部类.390f9ec6.js"><link rel="prefetch" href="/assets/js/page-C复杂类型.38d41c76.js"><link rel="prefetch" href="/assets/js/page-GPG+Yubikey4折腾手记.fcc621c2.js"><link rel="prefetch" href="/assets/js/page-GenymotionProblemsandSolutions.2b5cb481.js"><link rel="prefetch" href="/assets/js/page-GrahamScan解决凸包问题.16a610fe.js"><link rel="prefetch" href="/assets/js/page-HashMap的loadFactor为什么是075.143cd081.js"><link rel="prefetch" href="/assets/js/page-HeadFirst设计模式.b81883fe.js"><link rel="prefetch" href="/assets/js/page-Head标签内容.ee98ec8e.js"><link rel="prefetch" href="/assets/js/page-HexoExperience.45286538.js"><link rel="prefetch" href="/assets/js/page-Hexo集成TravisCI自动部署博文.076f2606.js"><link rel="prefetch" href="/assets/js/page-IntellijTipsandTricks.49e840cc.js"><link rel="prefetch" href="/assets/js/page-ItemDecoration实战之GirdSpacingItemDecoration（一）.39c943df.js"><link rel="prefetch" href="/assets/js/page-ItemDecoration实战之GirdSpacingItemDecoration（二）.a49cbc26.js"><link rel="prefetch" href="/assets/js/page-JavaCodingStandards.677eb6e6.js"><link rel="prefetch" href="/assets/js/page-JavatoKotlin.d5dd6c71.js"><link rel="prefetch" href="/assets/js/page-Java基础.fe2bd971.js"><link rel="prefetch" href="/assets/js/page-Java多线程同步.36272e5e.js"><link rel="prefetch" href="/assets/js/page-Java多线程基础.19f2bc3c.js"><link rel="prefetch" href="/assets/js/page-Java多线程工具.3d7b1bd9.js"><link rel="prefetch" href="/assets/js/page-Java异常.f9d512de.js"><link rel="prefetch" href="/assets/js/page-Java接口和内部类.ba1b199d.js"><link rel="prefetch" href="/assets/js/page-Java泛型基础.02b778b2.js"><link rel="prefetch" href="/assets/js/page-Java泛型通配符和类型限定.bf24b244.js"><link rel="prefetch" href="/assets/js/page-Java类基础.ea1c4ccf.js"><link rel="prefetch" href="/assets/js/page-Java类继承.8598b115.js"><link rel="prefetch" href="/assets/js/page-Java集合框架.3e5d4ad1.js"><link rel="prefetch" href="/assets/js/page-Java集合框架Collection.4739f872.js"><link rel="prefetch" href="/assets/js/page-KotlinAndroidExtension.76f398fc.js"><link rel="prefetch" href="/assets/js/page-KotlinAndroidGettingStarted.9402d466.js"><link rel="prefetch" href="/assets/js/page-KotlinScoping函数.907e3943.js"><link rel="prefetch" href="/assets/js/page-Kotlinlateinitvslazy.4728ef3f.js"><link rel="prefetch" href="/assets/js/page-Kotlinthis表达式.364ed266.js"><link rel="prefetch" href="/assets/js/page-Kotlin使用Gradle.8ceddbdf.js"><link rel="prefetch" href="/assets/js/page-Kotlin内联函数.4a746f69.js"><link rel="prefetch" href="/assets/js/page-Kotlin内部类.d8f766d7.js"><link rel="prefetch" href="/assets/js/page-Kotlin函数.45ea6003.js"><link rel="prefetch" href="/assets/js/page-Kotlin可见性修饰符.8b6de120.js"><link rel="prefetch" href="/assets/js/page-Kotlin基本类型.dde56961.js"><link rel="prefetch" href="/assets/js/page-Kotlin基础.cfa2248a.js"><link rel="prefetch" href="/assets/js/page-Kotlin委托属性.bd0d424a.js"><link rel="prefetch" href="/assets/js/page-Kotlin委托模式.3d7a03e2.js"><link rel="prefetch" href="/assets/js/page-Kotlin对象.ad57657e.js"><link rel="prefetch" href="/assets/js/page-Kotlin异常.5f965682.js"><link rel="prefetch" href="/assets/js/page-Kotlin扩展类型.37ae5315.js"><link rel="prefetch" href="/assets/js/page-Kotlin接口.0968a13f.js"><link rel="prefetch" href="/assets/js/page-Kotlin控制流程.a69a6281.js"><link rel="prefetch" href="/assets/js/page-Kotlin操作符重载.85613619.js"><link rel="prefetch" href="/assets/js/page-Kotlin数据类.6b2ab5c4.js"><link rel="prefetch" href="/assets/js/page-Kotlin枚举类.427097f9.js"><link rel="prefetch" href="/assets/js/page-Kotlin泛型.5f457b57.js"><link rel="prefetch" href="/assets/js/page-Kotlin相等性.a2b88f80.js"><link rel="prefetch" href="/assets/js/page-Kotlin空安全.f237ef3f.js"><link rel="prefetch" href="/assets/js/page-Kotlin类型检查和造型.8cf1ec27.js"><link rel="prefetch" href="/assets/js/page-Kotlin类基础.956f9caf.js"><link rel="prefetch" href="/assets/js/page-Kotlin类属性和域.4b943dc7.js"><link rel="prefetch" href="/assets/js/page-Kotlin范围.86172e2c.js"><link rel="prefetch" href="/assets/js/page-Kotlin调用Java代码.200599f8.js"><link rel="prefetch" href="/assets/js/page-Kotlin集合.db457bde.js"><link rel="prefetch" href="/assets/js/page-Kotlin高阶函数和Lambda.185f91a0.js"><link rel="prefetch" href="/assets/js/page-LeetCode笔记之——837新21点.8eab11a5.js"><link rel="prefetch" href="/assets/js/page-MaterialDesign主体环境.7e62f474.js"><link rel="prefetch" href="/assets/js/page-MaterialDesign实体属性.63bc9586.js"><link rel="prefetch" href="/assets/js/page-MaterialDesign概述.07605f79.js"><link rel="prefetch" href="/assets/js/page-MaterialDesign高度和阴影.48c8d8d3.js"><link rel="prefetch" href="/assets/js/page-MaterialDrawerTintIcon.f0af187e.js"><link rel="prefetch" href="/assets/js/page-MaterialDrawerTutorial.cef77dca.js"><link rel="prefetch" href="/assets/js/page-MyLinuxExperiences.65fb29f7.js"><link rel="prefetch" href="/assets/js/page-NET平台基础知识.42a08b01.js"><link rel="prefetch" href="/assets/js/page-NetworkAPI.19b2f717.js"><link rel="prefetch" href="/assets/js/page-OSXMonoHalalInstallation.23aabdb0.js"><link rel="prefetch" href="/assets/js/page-OSXUsingShimakazeGo+Poitoplaykancolle.5048793b.js"><link rel="prefetch" href="/assets/js/page-PHP.a888675c.js"><link rel="prefetch" href="/assets/js/page-Python3AdvancedSkill.1a5b1c93.js"><link rel="prefetch" href="/assets/js/page-Python3Basic.1250dc08.js"><link rel="prefetch" href="/assets/js/page-Python3Class.15e81344.js"><link rel="prefetch" href="/assets/js/page-Python3Collection.393d7a54.js"><link rel="prefetch" href="/assets/js/page-Python3ControlFlow.650c7331.js"><link rel="prefetch" href="/assets/js/page-Python3Exception.a2b689e6.js"><link rel="prefetch" href="/assets/js/page-Python3Function.0bf0ead5.js"><link rel="prefetch" href="/assets/js/page-Python3IO.fc58c1c5.js"><link rel="prefetch" href="/assets/js/page-Python3Module.510a0216.js"><link rel="prefetch" href="/assets/js/page-RandomizedQueueImplemetationIdea.6ab6a4f7.js"><link rel="prefetch" href="/assets/js/page-Realforce87u.1346b9a5.js"><link rel="prefetch" href="/assets/js/page-RecyclerView.ab6d191e.js"><link rel="prefetch" href="/assets/js/page-Retrofit2+Rxjava2.874c24fd.js"><link rel="prefetch" href="/assets/js/page-Retrofit2使用简明手册.0dc0f479.js"><link rel="prefetch" href="/assets/js/page-Retrofit2高级配置.60ee737d.js"><link rel="prefetch" href="/assets/js/page-Retrofit离线缓存.8e492055.js"><link rel="prefetch" href="/assets/js/page-Rxjava2坑点详解.fae31c15.js"><link rel="prefetch" href="/assets/js/page-SSHcloneGitHubGist.2c49f865.js"><link rel="prefetch" href="/assets/js/page-ScalaHelloWorld.6d3d2c0c.js"><link rel="prefetch" href="/assets/js/page-ScalaList高阶函数.fcc6571d.js"><link rel="prefetch" href="/assets/js/page-Scalafor-comprehension.c717531b.js"><link rel="prefetch" href="/assets/js/page-Scala函数式特征.545ee0e7.js"><link rel="prefetch" href="/assets/js/page-Scala函数解析.34a24fe0.js"><link rel="prefetch" href="/assets/js/page-Scala模式匹配.dbc3d7f6.js"><link rel="prefetch" href="/assets/js/page-Scala泛型和变形.d303f70e.js"><link rel="prefetch" href="/assets/js/page-Scala简介.97b7d7de.js"><link rel="prefetch" href="/assets/js/page-Scala类和对象基础.a4a515a6.js"><link rel="prefetch" href="/assets/js/page-Solidity基础知识和概述.87a997a4.js"><link rel="prefetch" href="/assets/js/page-SplashScreen.eddf581f.js"><link rel="prefetch" href="/assets/js/page-StorageAPI.bee9b7f1.js"><link rel="prefetch" href="/assets/js/page-Style和Theme的简明对比.8caa632f.js"><link rel="prefetch" href="/assets/js/page-TextInputLayout使用.ecc89674.js"><link rel="prefetch" href="/assets/js/page-ToolBar.b0e90145.js"><link rel="prefetch" href="/assets/js/page-Ubuntu1404LTSInstallationChecklist.32969d4e.js"><link rel="prefetch" href="/assets/js/page-VisualNav编码规范.798d749d.js"><link rel="prefetch" href="/assets/js/page-macOS如何B站直播.58d3c1b0.js"><link rel="prefetch" href="/assets/js/page-ofo使用体验.b6c46ad4.js"><link rel="prefetch" href="/assets/js/page-windows自动更新走代理.5283631a.js"><link rel="prefetch" href="/assets/js/page-《编写可读代码的艺术》笔记.fe757dff.js"><link rel="prefetch" href="/assets/js/page-二叉查找树.c4469542.js"><link rel="prefetch" href="/assets/js/page-二叉树.61e10961.js"><link rel="prefetch" href="/assets/js/page-优先队列和堆排序.0f9fe3d4.js"><link rel="prefetch" href="/assets/js/page-使用buildSrcVersions轻松管理gradle依赖.cf19f27d.js"><link rel="prefetch" href="/assets/js/page-关于我.716b59c7.js"><link rel="prefetch" href="/assets/js/page-再谈单例模式.6c7c919c.js"><link rel="prefetch" href="/assets/js/page-动态加载Fragment.7dc62164.js"><link rel="prefetch" href="/assets/js/page-动词变化形式.c10ced88.js"><link rel="prefetch" href="/assets/js/page-动词特征和分类.f2f3dcec.js"><link rel="prefetch" href="/assets/js/page-单例模式.972adac6.js"><link rel="prefetch" href="/assets/js/page-博客主页.5e3335e6.js"><link rel="prefetch" href="/assets/js/page-卷卷.c7e23d81.js"><link rel="prefetch" href="/assets/js/page-命令模式.f407e0f5.js"><link rel="prefetch" href="/assets/js/page-地库API.fe1ffcd1.js"><link rel="prefetch" href="/assets/js/page-基本排序算法.7990d1e8.js"><link rel="prefetch" href="/assets/js/page-大创项目.ab68f329.js"><link rel="prefetch" href="/assets/js/page-大创项目——地下停车场导航.4764903c.js"><link rel="prefetch" href="/assets/js/page-好用的工具.fa370b89.js"><link rel="prefetch" href="/assets/js/page-学习笔记.5d0c1195.js"><link rel="prefetch" href="/assets/js/page-实现阶段.2bffecdb.js"><link rel="prefetch" href="/assets/js/page-室内定位部分.62a4f3ce.js"><link rel="prefetch" href="/assets/js/page-局域网内网服务器简易开启方法.59dd1610.js"><link rel="prefetch" href="/assets/js/page-工作总结报告.899db611.js"><link rel="prefetch" href="/assets/js/page-工厂模式.f15096b7.js"><link rel="prefetch" href="/assets/js/page-左斜红黑树.baeb2640.js"><link rel="prefetch" href="/assets/js/page-并查集算法分析.b212b06e.js"><link rel="prefetch" href="/assets/js/page-归并排序.1fdc2b20.js"><link rel="prefetch" href="/assets/js/page-快速排序.e30ef3fc.js"><link rel="prefetch" href="/assets/js/page-快速选择算法解TopK问题.c1b384b2.js"><link rel="prefetch" href="/assets/js/page-我心中的全面小康社会.44d1e798.js"><link rel="prefetch" href="/assets/js/page-打字训练网站.ec9f953b.js"><link rel="prefetch" href="/assets/js/page-技术开发.eff6f021.js"><link rel="prefetch" href="/assets/js/page-授受关系.b35ee2e1.js"><link rel="prefetch" href="/assets/js/page-排序算法的应用.0ca183c9.js"><link rel="prefetch" href="/assets/js/page-插线板重构计划.2b80f5be.js"><link rel="prefetch" href="/assets/js/page-搜索算法的应用.a79f3f34.js"><link rel="prefetch" href="/assets/js/page-操作系统复习.08262b17.js"><link rel="prefetch" href="/assets/js/page-散列表(HashTable).1660ea9c.js"><link rel="prefetch" href="/assets/js/page-旧文仓库.9250379e.js"><link rel="prefetch" href="/assets/js/page-时间数词.62bb0e3a.js"><link rel="prefetch" href="/assets/js/page-本部宿舍各物品尺寸.451e326e.js"><link rel="prefetch" href="/assets/js/page-杂谈.f6f79af8.js"><link rel="prefetch" href="/assets/js/page-概率的历史.d4f8b7ba.js"><link rel="prefetch" href="/assets/js/page-毛泽东思想概论.37bdb2ff.js"><link rel="prefetch" href="/assets/js/page-特殊发音.3c44f7a8.js"><link rel="prefetch" href="/assets/js/page-生成器模式(BuilderPattern).1b27d308.js"><link rel="prefetch" href="/assets/js/page-符号表.ba88cca1.js"><link rel="prefetch" href="/assets/js/page-策略模式(StrategyPattern).25499cc0.js"><link rel="prefetch" href="/assets/js/page-算法分析.c75bb0c1.js"><link rel="prefetch" href="/assets/js/page-线性代数.818ae1df.js"><link rel="prefetch" href="/assets/js/page-网络模块使用方法.4785ebef.js"><link rel="prefetch" href="/assets/js/page-翻译文章——在AndroidStudio33中迁移Gradle到KotlinDSL.aa05ce0d.js"><link rel="prefetch" href="/assets/js/page-背包，队列和栈.97e7ebc9.js"><link rel="prefetch" href="/assets/js/page-自动机考试.65a5d863.js"><link rel="prefetch" href="/assets/js/page-自动词和他动词.4687871f.js"><link rel="prefetch" href="/assets/js/page-补助动词.51d29a60.js"><link rel="prefetch" href="/assets/js/page-装饰者模式(DecoratorPattern).d7901567.js"><link rel="prefetch" href="/assets/js/page-观察者模式(ObserverPattern).64ef65df.js"><link rel="prefetch" href="/assets/js/page-解决TravisCI总是更新旧博客的问题.70bb5bd7.js"><link rel="prefetch" href="/assets/js/page-解决脚注中数学公式不能渲染的问题.233d35a0.js"><link rel="prefetch" href="/assets/js/page-计算机网络考试速记.6bf4d18b.js"><link rel="prefetch" href="/assets/js/page-计组复习.8d9ba6ad.js"><link rel="prefetch" href="/assets/js/page-设计阶段.f11fce8c.js"><link rel="prefetch" href="/assets/js/page-语言之路.3a4cf4f1.js"><link rel="prefetch" href="/assets/js/page-近月少女的礼仪21感想.e9c3ed14.js"><link rel="prefetch" href="/assets/js/page-递归树分析归并排序算法复杂度.5f4dc9e9.js"><link rel="prefetch" href="/assets/js/page-音视频开发基础概念.d94ecd2c.js"><link rel="prefetch" href="/assets/js/page-高等数学下.12a2ff62.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.ecb78ec3.js"><link rel="prefetch" href="/assets/js/vendors~layout-Layout.a9463a29.js"><link rel="prefetch" href="/assets/js/vendors~mermaid.2f4446d3.js"><link rel="prefetch" href="/assets/js/vendors~photo-swipe.8cd6c000.js"><link rel="prefetch" href="/assets/js/vendors~reveal.cd87502e.js"><link rel="prefetch" href="/assets/js/vendors~waline.f09e713b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.10e726cf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container has-navbar has-anchor"><header class="navbar"> <button title="Sidebar Button" class="sidebar-button"><span class="icon"></span></button> <a href="/" class="home-link router-link-active"><img src="/images/waifu.png" alt="Wafer Li's Notes" class="logo"> <!----> <span class="site-name can-hide">Wafer Li's Notes</span></a>  <div class="links"><button aria-hidden="true" class="color-button"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="skin-icon"><path d="M224 800c0 9.6 3.2 44.8 6.4 54.4 6.4 48-48 76.8-48 76.8s80 41.6 147.2 0 134.4-134.4
+        38.4-195.2c-22.4-12.8-41.6-19.2-57.6-19.2C259.2 716.8 227.2 761.6 224 800zM560 675.2l-32
+        51.2c-51.2 51.2-83.2 32-83.2 32 25.6 67.2 0 112-12.8 128 25.6 6.4 51.2 9.6 80 9.6 54.4 0
+        102.4-9.6 150.4-32l0 0c3.2 0 3.2-3.2 3.2-3.2 22.4-16 12.8-35.2
+        6.4-44.8-9.6-12.8-12.8-25.6-12.8-41.6 0-54.4 60.8-99.2 137.6-99.2 6.4 0 12.8 0 22.4
+        0 12.8 0 38.4 9.6 48-25.6 0-3.2 0-3.2 3.2-6.4 0-3.2 3.2-6.4 3.2-6.4 6.4-16 6.4-16 6.4-19.2
+        9.6-35.2 16-73.6 16-115.2 0-105.6-41.6-198.4-108.8-268.8C704 396.8 560 675.2 560 675.2zM224
+        419.2c0-28.8 22.4-51.2 51.2-51.2 28.8 0 51.2 22.4 51.2 51.2 0 28.8-22.4 51.2-51.2 51.2C246.4
+        470.4 224 448 224 419.2zM320 284.8c0-22.4 19.2-41.6 41.6-41.6 22.4 0 41.6 19.2 41.6 41.6 0
+        22.4-19.2 41.6-41.6 41.6C339.2 326.4 320 307.2 320 284.8zM457.6 208c0-12.8 12.8-25.6 25.6-25.6
+        12.8 0 25.6 12.8 25.6 25.6 0 12.8-12.8 25.6-25.6 25.6C470.4 233.6 457.6 220.8 457.6 208zM128
+        505.6C128 592 153.6 672 201.6 736c28.8-60.8 112-60.8 124.8-60.8-16-51.2 16-99.2
+        16-99.2l316.8-422.4c-48-19.2-99.2-32-150.4-32C297.6 118.4 128 291.2 128 505.6zM764.8
+        86.4c-22.4 19.2-390.4 518.4-390.4 518.4-22.4 28.8-12.8 76.8 22.4 99.2l9.6 6.4c35.2 22.4
+        80 12.8 99.2-25.6 0 0 6.4-12.8 9.6-19.2 54.4-105.6 275.2-524.8 288-553.6
+        6.4-19.2-3.2-32-19.2-32C777.6 76.8 771.2 80 764.8 86.4z"></path></svg> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><ul class="themecolor-select"><label for="themecolor-select">主题色:</label> <li><span class="default-theme"></span></li> </ul> <div class="darkmode-toggle"><label for="darkmode-toggle" class="desc">主题模式:</label> <div class="darkmode-switch"><div class="item day"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon light-icon"><path d="M512 256a42.667 42.667 0 0 0 42.667-42.667V128a42.667 42.667 0 0 0-85.334 0v85.333A42.667 42.667 0 0 0 512 256zm384 213.333h-85.333a42.667 42.667 0 0 0 0 85.334H896a42.667 42.667 0 0 0 0-85.334zM256 512a42.667 42.667 0 0 0-42.667-42.667H128a42.667 42.667 0 0 0 0 85.334h85.333A42.667 42.667 0 0 0 256 512zm9.387-298.667a42.667 42.667 0 0 0-59.307 62.72l61.44 59.307a42.667 42.667 0 0 0 31.147 11.947 42.667 42.667 0 0 0 30.72-13.227 42.667 42.667 0 0 0 0-60.16zm459.946 133.974a42.667 42.667 0 0 0 29.44-11.947l61.44-59.307a42.667 42.667 0 0 0-57.6-62.72l-61.44 60.587a42.667 42.667 0 0 0 0 60.16 42.667 42.667 0 0 0 28.16 13.227zM512 768a42.667 42.667 0 0 0-42.667 42.667V896a42.667 42.667 0 0 0 85.334 0v-85.333A42.667 42.667 0 0 0 512 768zm244.48-79.36a42.667 42.667 0 0 0-59.307 61.44l61.44 60.587a42.667 42.667 0 0 0 29.44 11.946 42.667 42.667 0 0 0 30.72-12.8 42.667 42.667 0 0 0 0-60.586zm-488.96 0-61.44 59.307a42.667 42.667 0 0 0 0 60.586 42.667 42.667 0 0 0 30.72 12.8 42.667 42.667 0 0 0 28.587-10.666l61.44-59.307a42.667 42.667 0 0 0-59.307-61.44zM512 341.333A170.667 170.667 0 1 0 682.667 512 170.667 170.667 0 0 0 512 341.333z" fill="currentColor"></path></svg></div> <div class="item auto active"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon auto-icon"><path d="M460.864 539.072H564.8L510.592 376l-49.728 163.072zM872 362.368V149.504H659.648L510.528 0l-149.12 149.504H149.12v212.928L0 511.872l149.12 149.504v212.928h212.352l149.12 149.504 149.12-149.504h212.352V661.376l149.12-149.504L872 362.368zM614.464 693.12l-31.616-90.624H438.272l-31.616 90.624h-85.888l144.576-407.68h90.368l144.576 407.68h-85.824zm0 0" fill="currentColor"></path></svg></div> <div class="item night"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon dark-icon"><path d="M935.539 630.402c-11.43-11.432-28.674-14.739-43.531-8.354-46.734 20.103-96.363 30.297-147.508 30.297-99.59 0-193.221-38.784-263.64-109.203-108.637-108.637-139.61-270.022-78.908-411.148a39.497 39.497 0 0 0-51.886-51.887c-52.637 22.64-100.017 54.81-140.826 95.616-85.346 85.346-132.346 198.821-132.346 319.52 0 120.7 47.001 234.172 132.347 319.519S408.063 947.11 528.76 947.11c120.7 0 234.172-47.003 319.52-132.351 40.809-40.81 72.978-88.19 95.616-140.826a39.497 39.497 0 0 0-8.356-43.532z" fill="currentColor"></path></svg></div></div> <!----></div></div></div></button> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link router-link-active"><i class="iconfont icon-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="专栏" class="dropdown-title"><span class="title"><i class="iconfont icon-book"></i>
+        专栏
+      </span> <span class="arrow"></span></button> <ul class="nav-dropdown"><li class="dropdown-item"><a href="/blog-corners/tech/" class="nav-link"><i class="iconfont icon-generic"></i>
+  技术开发
+</a></li><li class="dropdown-item"><a href="/blog-corners/learning-notes/" class="nav-link"><i class="iconfont icon-read"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><a href="/blog-corners/langroad/" class="nav-link"><i class="iconfont icon-blog"></i>
+  语言之路
+</a></li><li class="dropdown-item"><a href="/blog-corners/rollroll/" class="nav-link"><i class="iconfont icon-note"></i>
+  卷卷
+</a></li><li class="dropdown-item"><a href="/blog-corners/talk/" class="nav-link"><i class="iconfont icon-article"></i>
+  杂谈
+</a></li><li class="dropdown-item"><a href="/blog-corners/old-inventory/" class="nav-link"><i class="iconfont icon-storage"></i>
+  旧文仓库
+</a></li></ul></div></div></nav> <!----> <a rel="noopener noreferrer" href="https://github.com/wafer-li/wafer-li.github.io" target="_blank" class="repo-link can-hide">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> </div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><div vocab="https://schema.org/" typeof="Person" class="blogger-info mobile"><div data-balloon-pos="down" role="navigation" class="blogger hasIntro"><img property="image" alt="Blogger Avatar" src="/images/waifu.png" class="avatar round"> <div property="name" class="name">Wafer Li</div> <meta property="url" content="/about/"></div> <div class="num-wrapper"><div><div class="num">206</div> <div>文章</div></div> <div><div class="num">35</div> <div>分类</div></div> <div><div class="num">80</div> <div>标签</div></div> <div><div class="num">206</div> <div>时间轴</div></div></div> <div class="media-links-wrapper"><a href="mailto:omyshokami@gmail.com" rel="noopener noreferrer" target="_blank" aria-label="Email" data-balloon-pos="up" class="media-link"><span class="sr-only">Email</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-email"><path d="M0 512a512 512 0 101024 0A512 512 0 100 512z" fill="#1384FF"></path> <path d="M299.372 313.572H722.93c28.945 0 52.61 21.845 52.975 48.787L511.333 500.35 246.76 362.481c.182-27.003 23.666-48.97 52.611-48.97zm-52.671 101.702l-.243 244.121c0 27.186 23.848 49.395 52.914 49.395H722.93c29.127 0 52.975-22.21 52.975-49.395V415.152L517.522 546.71a13.957 13.957 0 01-12.682 0L246.7 415.274z" fill="#FFF"></path></svg></a><a href="https://github.com/wafer-li" rel="noopener noreferrer" target="_blank" aria-label="Github" data-balloon-pos="up" class="media-link"><span class="sr-only">Github</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-github"><circle cx="512" cy="512" r="512" fill="#171515"></circle> <path d="M509.423 146.442c-200.317 0-362.756 162.42-362.756 362.8 0 160.266 103.936 296.24 248.109 344.217 18.139 3.327 24.76-7.872 24.76-17.486 0-8.613-.313-31.427-.49-61.702-100.912 21.923-122.205-48.63-122.205-48.63-16.495-41.91-40.28-53.067-40.28-53.067-32.937-22.51 2.492-22.053 2.492-22.053 36.407 2.566 55.568 37.386 55.568 37.386 32.362 55.438 84.907 39.43 105.58 30.143 3.296-23.444 12.667-39.43 23.032-48.498-80.557-9.156-165.246-40.28-165.246-179.297 0-39.604 14.135-71.988 37.342-97.348-3.731-9.178-16.18-46.063 3.556-96.009 0 0 30.46-9.754 99.76 37.19 28.937-8.048 59.97-12.071 90.823-12.211 30.807.14 61.843 4.165 90.822 12.21 69.26-46.944 99.663-37.189 99.663-37.189 19.792 49.946 7.34 86.831 3.61 96.01 23.25 25.359 37.29 57.742 37.29 97.347 0 139.366-84.82 170.033-165.637 179.013 13.026 11.2 24.628 33.342 24.628 67.182 0 48.498-.445 87.627-.445 99.521 0 9.702 6.535 20.988 24.945 17.444 144.03-48.067 247.881-183.95 247.881-344.175 0-200.378-162.442-362.798-362.802-362.798z" fill="#FFF"></path></svg></a></div></div> <hr>  <nav class="sidebar-nav-links"><div class="nav-item"><a href="/" class="nav-link router-link-active"><i class="iconfont icon-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="mobile-dropdown-wrapper"><button type="button" aria-label="专栏" class="dropdown-title"><span class="title"><i class="iconfont icon-book"></i>
+      专栏
+    </span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-corners/tech/" class="nav-link"><i class="iconfont icon-generic"></i>
+  技术开发
+</a></li><li class="dropdown-item"><!----> <a href="/blog-corners/learning-notes/" class="nav-link"><i class="iconfont icon-read"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/blog-corners/langroad/" class="nav-link"><i class="iconfont icon-blog"></i>
+  语言之路
+</a></li><li class="dropdown-item"><!----> <a href="/blog-corners/rollroll/" class="nav-link"><i class="iconfont icon-note"></i>
+  卷卷
+</a></li><li class="dropdown-item"><!----> <a href="/blog-corners/talk/" class="nav-link"><i class="iconfont icon-article"></i>
+  杂谈
+</a></li><li class="dropdown-item"><!----> <a href="/blog-corners/old-inventory/" class="nav-link"><i class="iconfont icon-storage"></i>
+  旧文仓库
+</a></li></ul></div></div> <a rel="noopener noreferrer" href="https://github.com/wafer-li/wafer-li.github.io" target="_blank" class="repo-link">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> <aside class="blog-info-wrapper"><div vocab="https://schema.org/" typeof="Person" class="blogger-info"><div data-balloon-pos="down" role="navigation" class="blogger hasIntro"><img property="image" alt="Blogger Avatar" src="/images/waifu.png" class="avatar round"> <div property="name" class="name">Wafer Li</div> <meta property="url" content="/about/"></div> <div class="num-wrapper"><div><div class="num">206</div> <div>文章</div></div> <div><div class="num">35</div> <div>分类</div></div> <div><div class="num">80</div> <div>标签</div></div> <div><div class="num">206</div> <div>时间轴</div></div></div> <div class="media-links-wrapper"><a href="mailto:omyshokami@gmail.com" rel="noopener noreferrer" target="_blank" aria-label="Email" data-balloon-pos="up" class="media-link"><span class="sr-only">Email</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-email"><path d="M0 512a512 512 0 101024 0A512 512 0 100 512z" fill="#1384FF"></path> <path d="M299.372 313.572H722.93c28.945 0 52.61 21.845 52.975 48.787L511.333 500.35 246.76 362.481c.182-27.003 23.666-48.97 52.611-48.97zm-52.671 101.702l-.243 244.121c0 27.186 23.848 49.395 52.914 49.395H722.93c29.127 0 52.975-22.21 52.975-49.395V415.152L517.522 546.71a13.957 13.957 0 01-12.682 0L246.7 415.274z" fill="#FFF"></path></svg></a><a href="https://github.com/wafer-li" rel="noopener noreferrer" target="_blank" aria-label="Github" data-balloon-pos="up" class="media-link"><span class="sr-only">Github</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-github"><circle cx="512" cy="512" r="512" fill="#171515"></circle> <path d="M509.423 146.442c-200.317 0-362.756 162.42-362.756 362.8 0 160.266 103.936 296.24 248.109 344.217 18.139 3.327 24.76-7.872 24.76-17.486 0-8.613-.313-31.427-.49-61.702-100.912 21.923-122.205-48.63-122.205-48.63-16.495-41.91-40.28-53.067-40.28-53.067-32.937-22.51 2.492-22.053 2.492-22.053 36.407 2.566 55.568 37.386 55.568 37.386 32.362 55.438 84.907 39.43 105.58 30.143 3.296-23.444 12.667-39.43 23.032-48.498-80.557-9.156-165.246-40.28-165.246-179.297 0-39.604 14.135-71.988 37.342-97.348-3.731-9.178-16.18-46.063 3.556-96.009 0 0 30.46-9.754 99.76 37.19 28.937-8.048 59.97-12.071 90.823-12.211 30.807.14 61.843 4.165 90.822 12.21 69.26-46.944 99.663-37.189 99.663-37.189 19.792 49.946 7.34 86.831 3.61 96.01 23.25 25.359 37.29 57.742 37.29 97.347 0 139.366-84.82 170.033-165.637 179.013 13.026 11.2 24.628 33.342 24.628 67.182 0 48.498-.445 87.627-.445 99.521 0 9.702 6.535 20.988 24.945 17.444 144.03-48.067 247.881-183.95 247.881-344.175 0-200.378-162.442-362.798-362.802-362.798z" fill="#FFF"></path></svg></a></div></div> <div class="blog-info-list"><div class="switch-wrapper"><button class="switch-button"><div aria-label="文章" data-balloon-pos="up" class="icon-wapper"><svg viewBox="0 0 1024 1024" class="icon article-icon"><path d="M853.333 938.667H170.667A42.667 42.667 0 0 1 128 896V128a42.667 42.667 0 0 1 42.667-42.667h682.666A42.667 42.667 0 0 1 896 128v768a42.667 42.667 0 0 1-42.667 42.667zm-42.666-85.334V170.667H213.333v682.666h597.334zM298.667 256h170.666v170.667H298.667V256zm0 256h426.666v85.333H298.667V512zm0 170.667h426.666V768H298.667v-85.333zm256-384h170.666V384H554.667v-85.333z" fill="currentColor"></path></svg></div></button> <button class="switch-button"><div aria-label="分类" data-balloon-pos="up" class="icon-wapper active"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon category-icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zm-.854 446.486H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zm446.371-446.486h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zm136.293 813.51H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z" fill="currentColor"></path></svg></div></button> <button class="switch-button"><div aria-label="标签" data-balloon-pos="up" class="icon-wapper"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon tag-icon"><path d="M939.902 458.563 910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 0 0 0 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z" fill="currentColor"></path></svg></div></button> <button class="switch-button"><div aria-label="时间轴" data-balloon-pos="up" class="icon-wapper"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon time-icon"><path d="M511.997 70.568c-243.797 0-441.429 197.633-441.429 441.435 0 243.797 197.632 441.429 441.43 441.429S953.431 755.8 953.431 512.002c0-243.796-197.637-441.434-441.435-441.434zm150.158 609.093-15.605 15.61c-8.621 8.615-22.596 8.615-31.215 0L472.197 552.126c-4.95-4.944-4.34-14.888-4.34-24.677V247.14c0-12.19 9.882-22.07 22.07-22.07h22.07c12.19 0 22.07 9.882 22.07 22.07v273.218l128.088 128.088c8.62 8.62 8.62 22.595 0 31.215zm0 0" fill="currentColor"></path></svg></div></button></div> <!----> <div class="category-wrapper"><div class="title"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon category-icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zm-.854 446.486H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zm446.371-446.486h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zm136.293 813.51H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z" fill="currentColor"></path></svg> <span class="num">35</span>
+        分类
+      </div> <hr> <ul class="category-list-wrapper"><li class="category category0">
+    CSharp
+    <span class="category-num">11</span></li><li class="category category1">
+    Japanese
+    <span class="category-num">7</span></li><li class="category category2">
+    Java
+    <span class="category-num">12</span></li><li class="category category3">
+    Kotlin
+    <span class="category-num">33</span></li><li class="category category4">
+    Python
+    <span class="category-num">9</span></li><li class="category category5">
+    Scala
+    <span class="category-num">9</span></li><li class="category category6">
+    《Algorithm 第四版》笔记
+    <span class="category-num">20</span></li><li class="category category7">
+    《Head First 设计模式》笔记
+    <span class="category-num">9</span></li><li class="category category8">
+    Android
+    <span class="category-num">33</span></li><li class="category category0">
+    CleanCode
+    <span class="category-num">2</span></li><li class="category category1">
+    Coursera
+    <span class="category-num">2</span></li><li class="category category2">
+    Decoration
+    <span class="category-num">1</span></li><li class="category category3">
+    DHT
+    <span class="category-num">1</span></li><li class="category category4">
+    GitHub
+    <span class="category-num">1</span></li><li class="category category5">
+    HTML
+    <span class="category-num">1</span></li><li class="category category6">
+    Homework
+    <span class="category-num">1</span></li><li class="category category7">
+    IntelliJ
+    <span class="category-num">1</span></li><li class="category category8">
+    Kancolle
+    <span class="category-num">1</span></li><li class="category category0">
+    Linux
+    <span class="category-num">2</span></li><li class="category category1">
+    Mono
+    <span class="category-num">1</span></li><li class="category category2">
+    PHP
+    <span class="category-num">1</span></li><li class="category category3">
+    Plan
+    <span class="category-num">1</span></li><li class="category category4">
+    工程
+    <span class="category-num">8</span></li><li class="category category5">
+    复习
+    <span class="category-num">14</span></li><li class="category category6">
+    Rxjava
+    <span class="category-num">1</span></li><li class="category category7">
+    Solidity
+    <span class="category-num">1</span></li><li class="category category8">
+    MaterialDesign
+    <span class="category-num">4</span></li><li class="category category0">
+    LeetCode
+    <span class="category-num">1</span></li><li class="category category1">
+    面试经验
+    <span class="category-num">2</span></li><li class="category category2">
+    杂谈
+    <span class="category-num">4</span></li><li class="category category3">
+    音视频开发
+    <span class="category-num">1</span></li><li class="category category4">
+    GPG
+    <span class="category-num">1</span></li><li class="category category5">
+    Hexo
+    <span class="category-num">4</span></li><li class="category category6">
+    Live
+    <span class="category-num">1</span></li><li class="category category7">
+    Tools
+    <span class="category-num">1</span></li></ul></div> <!----> <!----></div></aside> <!----></aside>  <main class="page blog"><div class="blog-page-wrapper"><main class="blog-page"><div class="timeline-wrapper"><ul class="timeline-content"><li class="desc">昨日不在</li> <div class="anchor-place-holder"><aside id="anchor"><div class="anchor-wrapper"><ul class="anchor-list"><li class="anchor"><a href="/timeline/#2020" class="anchor-link heading2"><div>2020</div></a></li><li class="anchor"><a href="/timeline/#2019" class="anchor-link heading2"><div>2019</div></a></li><li class="anchor"><a href="/timeline/#2018" class="anchor-link heading2"><div>2018</div></a></li><li class="anchor"><a href="/timeline/#2017" class="anchor-link heading2"><div>2017</div></a></li><li class="anchor"><a href="/timeline/#2016" class="anchor-link heading2"><div>2016</div></a></li></ul></div></aside></div> <li><h3 id="2020" class="year"><span>2020</span></h3> <ul class="year-wrapper"><li><span class="date">6/4</span> <span class="title">
+              LeetCode 笔记之——837. 新 21 点
+            </span></li><li><span class="date">5/15</span> <span class="title">
+              Comparison method violates its general contract! 崩溃分析
+            </span></li><li><span class="date">5/12</span> <span class="title">
+              ItemDecoration 实战之 GirdSpacingItemDecoration（二）
+            </span></li><li><span class="date">5/1</span> <span class="title">
+              ItemDecoration 实战之 GirdSpacingItemDecoration（一）
+            </span></li></ul></li><li><h3 id="2019" class="year"><span>2019</span></h3> <ul class="year-wrapper"><li><span class="date">10/1</span> <span class="title">
+              macOS 如何 B 站直播
+            </span></li><li><span class="date">8/8</span> <span class="title">
+              音视频开发基础概念
+            </span></li><li><span class="date">7/31</span> <span class="title">
+              翻译文章——在 Android Studio 3.3 中迁移 Gradle 到 Kotlin DSL
+            </span></li><li><span class="date">7/30</span> <span class="title">
+              Android 高德地图轨迹回放
+            </span></li><li><span class="date">7/11</span> <span class="title">
+              HashMap 的 loadFactor 为什么是 0.75
+            </span></li><li><span class="date">7/11</span> <span class="title">
+              Android 面经总结 2019 春招
+            </span></li><li><span class="date">6/10</span> <span class="title">
+              AndroidX 测试坑点详解（二）—— VectorDrawable 和 tint 问题解析
+            </span></li><li><span class="date">5/31</span> <span class="title">
+              AndroidX 测试坑点详解（一）
+            </span></li><li><span class="date">5/26</span> <span class="title">
+              ConnectedDevice: No Test Found 调试过程
+            </span></li><li><span class="date">5/26</span> <span class="title">
+              使用 buildSrcVersions 轻松管理 gradle 依赖
+            </span></li></ul></li><li><h3 id="2018" class="year"><span>2018</span></h3> <ul class="year-wrapper"><li><span class="date">2/19</span> <span class="title">
+              递归树分析归并排序算法复杂度
+            </span></li><li><span class="date">1/22</span> <span class="title">
+              GPG + Yubikey 4 折腾手记
+            </span></li><li><span class="date">1/16</span> <span class="title">
+              解决脚注中数学公式不能渲染的问题
+            </span></li><li><span class="date">1/12</span> <span class="title">
+              解决 Travis CI 总是更新旧博客的问题
+            </span></li><li><span class="date">1/11</span> <span class="title">
+              Hexo 集成 Travis CI 自动部署博文
+            </span></li><li><span class="date">1/9</span> <span class="title">
+              Solidity 基础知识和概述
+            </span></li></ul></li><li><h3 id="2017" class="year"><span>2017</span></h3> <ul class="year-wrapper"><li><span class="date">6/4</span> <span class="title">
+              近月少女的礼仪 2.1 感想
+            </span></li><li><span class="date">5/25</span> <span class="title">
+              再谈单例模式
+            </span></li><li><span class="date">5/2</span> <span class="title">
+              Retrofit2 + Rxjava2
+            </span></li><li><span class="date">5/2</span> <span class="title">
+              Rxjava2 坑点详解
+            </span></li><li><span class="date">4/22</span> <span class="title">
+              Kotlin Scoping 函数
+            </span></li><li><span class="date">4/22</span> <span class="title">
+              Scala for-comprehension
+            </span></li><li><span class="date">4/21</span> <span class="title">
+              Scala List 高阶函数
+            </span></li><li><span class="date">4/18</span> <span class="title">
+              ofo 使用体验
+            </span></li><li><span class="date">4/17</span> <span class="title">
+              Coursera 作业之函数集合
+            </span></li><li><span class="date">4/16</span> <span class="title">
+              Scala 模式匹配
+            </span></li><li><span class="date">4/15</span> <span class="title">
+              打字训练网站
+            </span></li><li><span class="date">4/11</span> <span class="title">
+              Realforce 87u
+            </span></li><li><span class="date">4/9</span> <span class="title">
+              Hexo Experience
+            </span></li><li><span class="date">4/8</span> <span class="title">
+              Scala 泛型和变形
+            </span></li><li><span class="date">4/3</span> <span class="title">
+              Java 集合框架 Collection
+            </span></li><li><span class="date">4/3</span> <span class="title">
+              Java 集合框架
+            </span></li><li><span class="date">4/3</span> <span class="title">
+              Scala Hello World
+            </span></li><li><span class="date">4/3</span> <span class="title">
+              Scala 简介
+            </span></li><li><span class="date">4/3</span> <span class="title">
+              Scala 类和对象基础
+            </span></li><li><span class="date">4/1</span> <span class="title">
+              Scala 函数式特征
+            </span></li><li><span class="date">3/27</span> <span class="title">
+              实现阶段
+            </span></li><li><span class="date">3/27</span> <span class="title">
+              设计阶段
+            </span></li><li><span class="date">3/25</span> <span class="title">
+              命令模式
+            </span></li><li><span class="date">3/22</span> <span class="title">
+              Scala 函数解析
+            </span></li><li><span class="date">3/20</span> <span class="title">
+              Kotlin 使用 Gradle
+            </span></li><li><span class="date">3/20</span> <span class="title">
+              装饰者模式(Decorator Pattern)
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Java to Kotlin
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin Android Extension
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 基本类型
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 基础
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 对象
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 接口
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 控制流程
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 空安全
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 类基础
+            </span></li><li><span class="date">3/17</span> <span class="title">
+              Kotlin 类属性和域
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 基础
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 多线程同步
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 多线程基础
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 多线程工具
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 异常
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 接口和内部类
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 泛型通配符和类型限定
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 泛型基础
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 类基础
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Java 类继承
+            </span></li><li><span class="date">3/16</span> <span class="title">
+              Android 语言和本地化
+            </span></li><li><span class="date">3/12</span> <span class="title">
+              生成器模式(Builder Pattern)
+            </span></li><li><span class="date">3/12</span> <span class="title">
+              工厂模式
+            </span></li><li><span class="date">3/12</span> <span class="title">
+              单例模式
+            </span></li><li><span class="date">3/11</span> <span class="title">
+              搜索算法的应用
+            </span></li><li><span class="date">3/9</span> <span class="title">
+              散列表(Hash Table)
+            </span></li><li><span class="date">2/21</span> <span class="title">
+              2-3 树
+            </span></li><li><span class="date">2/21</span> <span class="title">
+              左斜红黑树
+            </span></li><li><span class="date">2/14</span> <span class="title">
+              二叉查找树
+            </span></li><li><span class="date">2/12</span> <span class="title">
+              优先队列和堆排序
+            </span></li><li><span class="date">2/12</span> <span class="title">
+              排序算法的应用
+            </span></li><li><span class="date">2/12</span> <span class="title">
+              符号表
+            </span></li><li><span class="date">2/6</span> <span class="title">
+              快速排序
+            </span></li><li><span class="date">2/6</span> <span class="title">
+              快速选择算法解 Top K 问题
+            </span></li><li><span class="date">2/5</span> <span class="title">
+              Graham Scan 解决凸包问题
+            </span></li><li><span class="date">2/5</span> <span class="title">
+              基本排序算法
+            </span></li><li><span class="date">2/5</span> <span class="title">
+              归并排序
+            </span></li><li><span class="date">2/4</span> <span class="title">
+              并查集算法分析
+            </span></li><li><span class="date">2/4</span> <span class="title">
+              算法分析
+            </span></li><li><span class="date">2/4</span> <span class="title">
+              背包，队列和栈
+            </span></li><li><span class="date">2/4</span> <span class="title">
+              Head 标签内容
+            </span></li><li><span class="date">1/8</span> <span class="title">
+              计算机网络考试速记
+            </span></li></ul></li><li><h3 id="2016" class="year"><span>2016</span></h3> <ul class="year-wrapper"><li><span class="date">12/17</span> <span class="title">
+              C# Class Basic
+            </span></li><li><span class="date">12/17</span> <span class="title">
+              C# Const and Readonly Field
+            </span></li><li><span class="date">12/17</span> <span class="title">
+              C# Object Initialization
+            </span></li><li><span class="date">12/17</span> <span class="title">
+              C# Properties and Fields
+            </span></li><li><span class="date">12/17</span> <span class="title">
+              C# Visibility Modifiers
+            </span></li><li><span class="date">12/17</span> <span class="title">
+              C# 分部类
+            </span></li><li><span class="date">12/17</span> <span class="title">
+              OSX Mono Halal Installation
+            </span></li><li><span class="date">12/13</span> <span class="title">
+              《编写可读代码的艺术》笔记
+            </span></li><li><span class="date">12/13</span> <span class="title">
+              Intellij Tips and Tricks
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Advanced Skill
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Basic
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Class
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Collection
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Control Flow
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Exception
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Function
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 IO
+            </span></li><li><span class="date">12/12</span> <span class="title">
+              Python 3 Module
+            </span></li><li><span class="date">12/10</span> <span class="title">
+              特殊发音
+            </span></li><li><span class="date">12/4</span> <span class="title">
+              动词变化形式
+            </span></li><li><span class="date">12/4</span> <span class="title">
+              自动词和他动词
+            </span></li><li><span class="date">12/4</span> <span class="title">
+              补助动词
+            </span></li><li><span class="date">12/3</span> <span class="title">
+              动词特征和分类
+            </span></li><li><span class="date">12/3</span> <span class="title">
+              时间数词
+            </span></li><li><span class="date">12/2</span> <span class="title">
+              授受关系
+            </span></li><li><span class="date">11/30</span> <span class="title">
+              C# Basic
+            </span></li><li><span class="date">11/30</span> <span class="title">
+              C# Control Flow
+            </span></li><li><span class="date">11/30</span> <span class="title">
+              C# Method
+            </span></li><li><span class="date">11/30</span> <span class="title">
+              C# 复杂类型
+            </span></li><li><span class="date">11/30</span> <span class="title">
+              .NET 平台基础知识
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin this 表达式
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 内联函数
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 内部类
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 函数
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 可见性修饰符
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 委托属性
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 委托模式
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 异常
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 扩展类型
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 枚举类
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 数据类
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 泛型
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 相等性
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 类型检查和造型
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 范围
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 调用 Java 代码
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 集合
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Kotlin 高阶函数和 Lambda
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Retrofit2 使用简明手册
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              PHP
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Network API
+            </span></li><li><span class="date">11/26</span> <span class="title">
+              Storage API
+            </span></li><li><span class="date">11/25</span> <span class="title">
+              策略模式(Strategy Pattern)
+            </span></li><li><span class="date">11/25</span> <span class="title">
+              观察者模式(Observer Pattern)
+            </span></li><li><span class="date">11/18</span> <span class="title">
+              Clean Code
+            </span></li><li><span class="date">11/18</span> <span class="title">
+              Java Coding Standards
+            </span></li><li><span class="date">11/18</span> <span class="title">
+              VisualNav 编码规范
+            </span></li><li><span class="date">11/18</span> <span class="title">
+              我心中的全面小康社会
+            </span></li><li><span class="date">11/18</span> <span class="title">
+              大创项目
+            </span></li><li><span class="date">11/14</span> <span class="title">
+              好用的工具
+            </span></li><li><span class="date">11/8</span> <span class="title">
+              Android 官方 Navigation Drawer
+            </span></li><li><span class="date">11/8</span> <span class="title">
+              Android 获取屏幕尺寸
+            </span></li><li><span class="date">11/8</span> <span class="title">
+              Material Drawer Tint Icon
+            </span></li><li><span class="date">11/8</span> <span class="title">
+              Material Drawer Tutorial
+            </span></li><li><span class="date">11/7</span> <span class="title">
+              Retrofit2 高级配置
+            </span></li><li><span class="date">11/7</span> <span class="title">
+              ToolBar
+            </span></li><li><span class="date">11/7</span> <span class="title">
+              Consistent Hash
+            </span></li><li><span class="date">10/29</span> <span class="title">
+              Kotlin lateinit vs lazy
+            </span></li><li><span class="date">10/27</span> <span class="title">
+              Material Design 高度和阴影
+            </span></li><li><span class="date">10/26</span> <span class="title">
+              Retrofit 离线缓存
+            </span></li><li><span class="date">10/20</span> <span class="title">
+              工作总结报告
+            </span></li><li><span class="date">10/18</span> <span class="title">
+              Create Asserts Folder
+            </span></li><li><span class="date">10/17</span> <span class="title">
+              Android 多个 icon 问题
+            </span></li><li><span class="date">10/15</span> <span class="title">
+              Material Design 实体属性
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Kotlin Android Getting Started
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Kotlin 操作符重载
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              14. 无向图
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              8 Puzzle
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              二叉树
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Android Gradle 介绍
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Android Studio FAQ
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Android Studio 卡 buliding gradle info
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              AsyncTask with Callback
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Butter Knife
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Genymotion Problems and Solutions
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              RecyclerView
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Splash Screen
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Style 和 Theme 的简明对比
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              TextInputLayout 使用
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Android Volley 库的基本使用
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Android Volley 构建自定义请求
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              动态加载 Fragment
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Randomized Queue Implemetation Idea
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              本部宿舍各物品尺寸
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              SSH clone GitHub Gist
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              OS X Using ShimakazeGo + Poi to play kancolle
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              My Linux Experiences
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Ubuntu 14.04 LTS Installation Checklist
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              插线板重构计划
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              地库 API
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              大创项目——地下停车场导航
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              室内定位部分
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              网络模块使用方法
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              高等数学 下
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Automata Theory and Formal Language
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              自动机考试
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Computer Organization and Architecture
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              计组复习
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              线性代数
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              毛泽东思想概论
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              操作系统复习
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              1. 基本概念
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              2. 随机变量及其分布
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              概率的历史
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Material Design 主体环境
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              Material Design 概述
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              windows 自动更新走代理
+            </span></li><li><span class="date">10/14</span> <span class="title">
+              局域网内网服务器简易开启方法
+            </span></li></ul></li></ul></div> <!----></main> <aside class="blog-info-wrapper"><div vocab="https://schema.org/" typeof="Person" class="blogger-info"><div data-balloon-pos="down" role="navigation" class="blogger hasIntro"><img property="image" alt="Blogger Avatar" src="/images/waifu.png" class="avatar round"> <div property="name" class="name">Wafer Li</div> <meta property="url" content="/about/"></div> <div class="num-wrapper"><div><div class="num">206</div> <div>文章</div></div> <div><div class="num">35</div> <div>分类</div></div> <div><div class="num">80</div> <div>标签</div></div> <div><div class="num">206</div> <div>时间轴</div></div></div> <div class="media-links-wrapper"><a href="mailto:omyshokami@gmail.com" rel="noopener noreferrer" target="_blank" aria-label="Email" data-balloon-pos="up" class="media-link"><span class="sr-only">Email</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-email"><path d="M0 512a512 512 0 101024 0A512 512 0 100 512z" fill="#1384FF"></path> <path d="M299.372 313.572H722.93c28.945 0 52.61 21.845 52.975 48.787L511.333 500.35 246.76 362.481c.182-27.003 23.666-48.97 52.611-48.97zm-52.671 101.702l-.243 244.121c0 27.186 23.848 49.395 52.914 49.395H722.93c29.127 0 52.975-22.21 52.975-49.395V415.152L517.522 546.71a13.957 13.957 0 01-12.682 0L246.7 415.274z" fill="#FFF"></path></svg></a><a href="https://github.com/wafer-li" rel="noopener noreferrer" target="_blank" aria-label="Github" data-balloon-pos="up" class="media-link"><span class="sr-only">Github</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-github"><circle cx="512" cy="512" r="512" fill="#171515"></circle> <path d="M509.423 146.442c-200.317 0-362.756 162.42-362.756 362.8 0 160.266 103.936 296.24 248.109 344.217 18.139 3.327 24.76-7.872 24.76-17.486 0-8.613-.313-31.427-.49-61.702-100.912 21.923-122.205-48.63-122.205-48.63-16.495-41.91-40.28-53.067-40.28-53.067-32.937-22.51 2.492-22.053 2.492-22.053 36.407 2.566 55.568 37.386 55.568 37.386 32.362 55.438 84.907 39.43 105.58 30.143 3.296-23.444 12.667-39.43 23.032-48.498-80.557-9.156-165.246-40.28-165.246-179.297 0-39.604 14.135-71.988 37.342-97.348-3.731-9.178-16.18-46.063 3.556-96.009 0 0 30.46-9.754 99.76 37.19 28.937-8.048 59.97-12.071 90.823-12.211 30.807.14 61.843 4.165 90.822 12.21 69.26-46.944 99.663-37.189 99.663-37.189 19.792 49.946 7.34 86.831 3.61 96.01 23.25 25.359 37.29 57.742 37.29 97.347 0 139.366-84.82 170.033-165.637 179.013 13.026 11.2 24.628 33.342 24.628 67.182 0 48.498-.445 87.627-.445 99.521 0 9.702 6.535 20.988 24.945 17.444 144.03-48.067 247.881-183.95 247.881-344.175 0-200.378-162.442-362.798-362.802-362.798z" fill="#FFF"></path></svg></a></div></div> <div class="blog-info-list"><div class="switch-wrapper"><button class="switch-button"><div aria-label="文章" data-balloon-pos="up" class="icon-wapper"><svg viewBox="0 0 1024 1024" class="icon article-icon"><path d="M853.333 938.667H170.667A42.667 42.667 0 0 1 128 896V128a42.667 42.667 0 0 1 42.667-42.667h682.666A42.667 42.667 0 0 1 896 128v768a42.667 42.667 0 0 1-42.667 42.667zm-42.666-85.334V170.667H213.333v682.666h597.334zM298.667 256h170.666v170.667H298.667V256zm0 256h426.666v85.333H298.667V512zm0 170.667h426.666V768H298.667v-85.333zm256-384h170.666V384H554.667v-85.333z" fill="currentColor"></path></svg></div></button> <button class="switch-button"><div aria-label="分类" data-balloon-pos="up" class="icon-wapper active"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon category-icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zm-.854 446.486H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zm446.371-446.486h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zm136.293 813.51H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z" fill="currentColor"></path></svg></div></button> <button class="switch-button"><div aria-label="标签" data-balloon-pos="up" class="icon-wapper"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon tag-icon"><path d="M939.902 458.563 910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 0 0 0 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z" fill="currentColor"></path></svg></div></button> <button class="switch-button"><div aria-label="时间轴" data-balloon-pos="up" class="icon-wapper"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon time-icon"><path d="M511.997 70.568c-243.797 0-441.429 197.633-441.429 441.435 0 243.797 197.632 441.429 441.43 441.429S953.431 755.8 953.431 512.002c0-243.796-197.637-441.434-441.435-441.434zm150.158 609.093-15.605 15.61c-8.621 8.615-22.596 8.615-31.215 0L472.197 552.126c-4.95-4.944-4.34-14.888-4.34-24.677V247.14c0-12.19 9.882-22.07 22.07-22.07h22.07c12.19 0 22.07 9.882 22.07 22.07v273.218l128.088 128.088c8.62 8.62 8.62 22.595 0 31.215zm0 0" fill="currentColor"></path></svg></div></button></div> <!----> <div class="category-wrapper"><div class="title"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon category-icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zm-.854 446.486H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zm446.371-446.486h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zm136.293 813.51H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z" fill="currentColor"></path></svg> <span class="num">35</span>
+        分类
+      </div> <hr> <ul class="category-list-wrapper"><li class="category category0">
+    CSharp
+    <span class="category-num">11</span></li><li class="category category1">
+    Japanese
+    <span class="category-num">7</span></li><li class="category category2">
+    Java
+    <span class="category-num">12</span></li><li class="category category3">
+    Kotlin
+    <span class="category-num">33</span></li><li class="category category4">
+    Python
+    <span class="category-num">9</span></li><li class="category category5">
+    Scala
+    <span class="category-num">9</span></li><li class="category category6">
+    《Algorithm 第四版》笔记
+    <span class="category-num">20</span></li><li class="category category7">
+    《Head First 设计模式》笔记
+    <span class="category-num">9</span></li><li class="category category8">
+    Android
+    <span class="category-num">33</span></li><li class="category category0">
+    CleanCode
+    <span class="category-num">2</span></li><li class="category category1">
+    Coursera
+    <span class="category-num">2</span></li><li class="category category2">
+    Decoration
+    <span class="category-num">1</span></li><li class="category category3">
+    DHT
+    <span class="category-num">1</span></li><li class="category category4">
+    GitHub
+    <span class="category-num">1</span></li><li class="category category5">
+    HTML
+    <span class="category-num">1</span></li><li class="category category6">
+    Homework
+    <span class="category-num">1</span></li><li class="category category7">
+    IntelliJ
+    <span class="category-num">1</span></li><li class="category category8">
+    Kancolle
+    <span class="category-num">1</span></li><li class="category category0">
+    Linux
+    <span class="category-num">2</span></li><li class="category category1">
+    Mono
+    <span class="category-num">1</span></li><li class="category category2">
+    PHP
+    <span class="category-num">1</span></li><li class="category category3">
+    Plan
+    <span class="category-num">1</span></li><li class="category category4">
+    工程
+    <span class="category-num">8</span></li><li class="category category5">
+    复习
+    <span class="category-num">14</span></li><li class="category category6">
+    Rxjava
+    <span class="category-num">1</span></li><li class="category category7">
+    Solidity
+    <span class="category-num">1</span></li><li class="category category8">
+    MaterialDesign
+    <span class="category-num">4</span></li><li class="category category0">
+    LeetCode
+    <span class="category-num">1</span></li><li class="category category1">
+    面试经验
+    <span class="category-num">2</span></li><li class="category category2">
+    杂谈
+    <span class="category-num">4</span></li><li class="category category3">
+    音视频开发
+    <span class="category-num">1</span></li><li class="category category4">
+    GPG
+    <span class="category-num">1</span></li><li class="category category5">
+    Hexo
+    <span class="category-num">4</span></li><li class="category category6">
+    Live
+    <span class="category-num">1</span></li><li class="category category7">
+    Tools
+    <span class="category-num">1</span></li></ul></div> <!----> <!----></div></aside></div></main> <footer class="footer-wrapper"><div class="media-links-wrapper"><a href="mailto:omyshokami@gmail.com" rel="noopener noreferrer" target="_blank" aria-label="Email" data-balloon-pos="up" class="media-link"><span class="sr-only">Email</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-email"><path d="M0 512a512 512 0 101024 0A512 512 0 100 512z" fill="#1384FF"></path> <path d="M299.372 313.572H722.93c28.945 0 52.61 21.845 52.975 48.787L511.333 500.35 246.76 362.481c.182-27.003 23.666-48.97 52.611-48.97zm-52.671 101.702l-.243 244.121c0 27.186 23.848 49.395 52.914 49.395H722.93c29.127 0 52.975-22.21 52.975-49.395V415.152L517.522 546.71a13.957 13.957 0 01-12.682 0L246.7 415.274z" fill="#FFF"></path></svg></a><a href="https://github.com/wafer-li" rel="noopener noreferrer" target="_blank" aria-label="Github" data-balloon-pos="up" class="media-link"><span class="sr-only">Github</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-github"><circle cx="512" cy="512" r="512" fill="#171515"></circle> <path d="M509.423 146.442c-200.317 0-362.756 162.42-362.756 362.8 0 160.266 103.936 296.24 248.109 344.217 18.139 3.327 24.76-7.872 24.76-17.486 0-8.613-.313-31.427-.49-61.702-100.912 21.923-122.205-48.63-122.205-48.63-16.495-41.91-40.28-53.067-40.28-53.067-32.937-22.51 2.492-22.053 2.492-22.053 36.407 2.566 55.568 37.386 55.568 37.386 32.362 55.438 84.907 39.43 105.58 30.143 3.296-23.444 12.667-39.43 23.032-48.498-80.557-9.156-165.246-40.28-165.246-179.297 0-39.604 14.135-71.988 37.342-97.348-3.731-9.178-16.18-46.063 3.556-96.009 0 0 30.46-9.754 99.76 37.19 28.937-8.048 59.97-12.071 90.823-12.211 30.807.14 61.843 4.165 90.822 12.21 69.26-46.944 99.663-37.189 99.663-37.189 19.792 49.946 7.34 86.831 3.61 96.01 23.25 25.359 37.29 57.742 37.29 97.347 0 139.366-84.82 170.033-165.637 179.013 13.026 11.2 24.628 33.342 24.628 67.182 0 48.498-.445 87.627-.445 99.521 0 9.702 6.535 20.988 24.945 17.444 144.03-48.067 247.881-183.95 247.881-344.175 0-200.378-162.442-362.798-362.802-362.798z" fill="#FFF"></path></svg></a></div> <div class="footer">用心再出发</div> <div class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Wafer Li 2016-2021</div></footer></div><div class="global-ui"><!----><!----><div id="pwa-install"><!----> <div id="install-modal-wrapper" style="display:none;"><div class="background"></div> <div class="install-modal"><div class="header"><button aria-label="关闭" class="close-button"><svg width="23" height="22" xmlns="http://www.w3.org/2000/svg" class="icon close-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.12.358a1.224 1.224 0 011.729 0l8.92 8.914L20.686.358a1.224 1.224 0 011.73 1.728L13.497 11l8.92 8.913a1.222 1.222 0 11-1.73 1.729l-8.919-8.913-8.92 8.913a1.224 1.224 0 01-1.729-1.729L10.04 11l-8.92-8.914a1.222 1.222 0 010-1.728z" fill="currentColor"></path></svg></button> <div class="logo"><!----> <div class="title"><h1></h1> <p class="desc">该应用可以安装在您的 PC 或移动设备上。这将使该 Web 应用程序外观和行为与其他应用程序相同。它将在出现在应用程序列表中，并可以固定到主屏幕，开始菜单或任务栏。此 Web 应用程序还将能够与其他应用程序和您的操作系统安全地进行交互。</p></div></div></div> <div class="content"><div class="highlight"><!----> <!----></div> <div class="description"><h3>详情</h3> <p></p></div></div> <div class="button-wrapper"><button class="install-button">
+        安装 <span></span></button> <button class="cancel-button">
+        取消
+      </button></div></div></div></div><div tabindex="-1" role="dialog" aria-hidden="true" class="pswp"><div class="pswp__bg"></div> <div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div> <div class="pswp__item"></div> <div class="pswp__item"></div></div> <div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div> <button class="pswp__button pswp__button--close"></button> <button class="pswp__button pswp__button--share"></button> <button class="pswp__button pswp__button--fs"></button> <button class="pswp__button pswp__button--zoom"></button> <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div> <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div> <button class="pswp__button pswp__button--arrow--left"></button> <button class="pswp__button pswp__button--arrow--right"></button> <div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div></div></div>
+    <script src="/assets/js/app.ae346255.js" defer></script><script src="/assets/js/layout-Blog.484b8fc6.js" defer></script><script src="/assets/js/vendors~layout-Blog~layout-Layout~layout-NotFound.83c5ac64.js" defer></script><script src="/assets/js/vendors~layout-Blog~layout-Layout~layout-NotFound~layout-Slide.fddde2a9.js" defer></script>
+  </body>
+</html>
