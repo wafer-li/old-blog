@@ -10,7 +10,7 @@ tags:
 category: Android
 ---
 
-[上文](../itemdecoration-实战之-girdspacingitemdecoration（一）)说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 **公式法** 来对所有四个方向的 offset 进行计算，由此可以大大简化 `itemOffset` 的计算，同时也天然的支持 RTL。
+[上文](/blog-corners/tech/android/itemdecoration-实战之-girdspacingitemdecoration（一）)说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 **公式法** 来对所有四个方向的 offset 进行计算，由此可以大大简化 `itemOffset` 的计算，同时也天然的支持 RTL。
 
 但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；
 
