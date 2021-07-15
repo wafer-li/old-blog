@@ -92,6 +92,18 @@ module.exports = config({
       },
     },
 
-    pwa: false
+    pwa: {
+      favicon: "/favicon.ico",
+      themeColor: "#5c92d1",
+      cacheHTML: false,
+      apple: {
+        icon: "/assets/icon/apple-touch-icon.png",
+        statusBarColor: "black",
+      },
+      msTile: {
+        image: "/assets/icon/mstile-150x150.png",
+        color: "#ffffff",
+      },
+    },
   },
 });
