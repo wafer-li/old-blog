@@ -6,8 +6,8 @@
     <link>https://wafer.li/</link>
     <description>Wafer Li 的知识库，请随便浏览</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 13 Jul 2021 15:57:10 GMT</pubDate>
-    <lastBuildDate>Tue, 13 Jul 2021 15:57:10 GMT</lastBuildDate>
+    <pubDate>Thu, 15 Jul 2021 04:00:36 GMT</pubDate>
+    <lastBuildDate>Thu, 15 Jul 2021 04:00:36 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;&lt;img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /&gt;&lt;/a&gt; Wafer Li 2016-2021</copyright>
@@ -26,10 +26,10 @@
     <category>Decoration</category>
     <category>GitHub</category>
     <category>HTML</category>
-    <category>IntelliJ</category>
     <category>Homework</category>
-    <category>Linux</category>
+    <category>IntelliJ</category>
     <category>Kancolle</category>
+    <category>Linux</category>
     <category>Mono</category>
     <category>PHP</category>
     <category>Plan</category>
@@ -42,10 +42,39 @@
     <category>面试经验</category>
     <category>杂谈</category>
     <category>音视频开发</category>
-    <category>Hexo</category>
     <category>GPG</category>
+    <category>Hexo</category>
     <category>Live</category>
     <category>Tools</category>
+    <item>
+      <title>关于我</title>
+      <link>https://wafer.li/about/</link>
+      <guid>https://wafer.li/about/</guid>
+      <source url="https://wafer.li/rss.xml">关于我</source>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="关于我"> 关于我</h1>
+<h2 id="图哪来的"> 图哪来的</h2>
+<p><a href="https://waifulabs.com/" target="_blank" rel="noopener noreferrer">WaifuLabs</a></p>
+<h2 id="代码"> 代码</h2>
+<p>Java、Kotlin 和 Scala；</p>
+<blockquote>
+<p><s>希望有一天能实现 JVM 平台语言制霸；</s></p>
+</blockquote>
+<p>能把 Android 学好学透就不错啦！</p>
+<blockquote>
+<p><s>最近在烦恼要不要转前端……</s></p>
+</blockquote>
+<p>前端还是慢慢来吧，有空就折腾一下</p>
+<h2 id="项目"> 项目</h2>
+<p>2021 年可能会写点小东西，拭目以待！（也可能咕咕~</p>
+<h2 id="艦これ"> 艦これ</h2>
+<p><strong>曾经的</strong>塔威提督，目前等级 119；</p>
+<p><s>舰娘就是生活</s> 生活还是折腾，生命不息，折腾不止</p>
+<p><a href="https://myfleet.moe/user/11092700/top" target="_blank" rel="noopener noreferrer">MyFleetGrils</a></p>
+<p><img src="/images/kanmusu.png" alt="Kanmusu" /></p>
+]]></content:encoded>
+      <enclosure url="https://wafer.li/images/kanmusu.png" type="image/png"/>
+    </item>
     <item>
       <title>C# Basic</title>
       <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Basic/</link>
@@ -388,35 +417,6 @@ s1 <span>+</span> s2<span>;</span>			<span>// 转换为 int</span>
 <div><pre><code><span><span>var</span></span> subset <span>=</span> <span>from</span> i <span>in</span> numbers <span>where</span> <span>i</span> <span>&lt;</span> <span>10</span> <span>select</span> i<span>;</span>
 </code></pre>
 <div><span>1</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>关于我</title>
-      <link>https://wafer.li/about/</link>
-      <guid>https://wafer.li/about/</guid>
-      <source url="https://wafer.li/rss.xml">关于我</source>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="关于我"> 关于我</h1>
-<h2 id="图哪来的"> 图哪来的</h2>
-<p><a href="https://waifulabs.com/" target="_blank" rel="noopener noreferrer">WaifuLabs</a></p>
-<h2 id="代码"> 代码</h2>
-<p>Java、Kotlin 和 Scala；</p>
-<blockquote>
-<p><s>希望有一天能实现 JVM 平台语言制霸；</s></p>
-</blockquote>
-<p>能把 Android 学好学透就不错啦！</p>
-<blockquote>
-<p><s>最近在烦恼要不要转前端……</s></p>
-</blockquote>
-<p>前端还是慢慢来吧，有空就折腾一下</p>
-<h2 id="项目"> 项目</h2>
-<p>2021 年可能会写点小东西，拭目以待！（也可能咕咕~</p>
-<h2 id="艦これ"> 艦これ</h2>
-<p><strong>曾经的</strong>塔威提督，目前等级 119；</p>
-<p><s>舰娘就是生活</s> 生活还是折腾，生命不息，折腾不止</p>
-<p><a href="https://myfleet.moe/user/11092700/top" target="_blank" rel="noopener noreferrer">MyFleetGrils</a></p>
-<p><img src="/images/kanmusu.png" alt="Kanmusu" /></p>
-]]></content:encoded>
-      <enclosure url="https://wafer.li/images/kanmusu.png" type="image/png"/>
     </item>
     <item>
       <title>C# Class Basic</title>
@@ -5651,7 +5651,7 @@ Fragment 不像 Activity 拥有自带的 <code>findViewById()</code> 方法，�
 &amp;lt;p&amp;gt;这就可以保证对 &amp;lt;code&amp;gt;connection&amp;lt;/code&amp;gt; 的操作，不会影响到接下来的作用域。&amp;lt;/p&amp;gt;
 </description>
       <category>Kotlin</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>在 Kotlin 的 <a href="https://github.com/JetBrains/kotlin/blob/master/libraries/stdlib/src/kotlin/util/Standard.kt" target="_blank" rel="noopener noreferrer">Standard.kt</a> 中提供了一些特殊的高阶函数；</p>
 <p>它们被称作 <strong>Scoping 函数</strong>，此类函数通过使用一个函数 <code>block</code>，将你需要对某对象进行的一系列操作限制在 lambda 作用域内；</p>
 <p>这样，对于该对象操作的代码就不会泄露到外层作用域，使得代码更为干净整洁。</p>
@@ -8129,40 +8129,6 @@ operator fun &lt;K, V&gt; Map.Entry&lt;K, V&gt;.component2() = getValue()</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Kotlin 相等性</title>
-      <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%9B%B8%E7%AD%89%E6%80%A7/</link>
-      <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%9B%B8%E7%AD%89%E6%80%A7/</guid>
-      <source url="https://wafer.li/rss.xml">Kotlin 相等性</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;Kotlin 中拥有两种相等性类型&amp;lt;/p&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;引用相等性：两个引用是否指向同一个对象&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;结构相等性：类似 Java 中的 &amp;lt;code&amp;gt;equals()&amp;lt;/code&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-</description>
-      <category>Kotlin</category>
-      <pubDate>Sat, 26 Nov 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>Kotlin 中拥有两种相等性类型</p>
-<ul>
-<li>引用相等性：两个引用是否指向同一个对象</li>
-<li>结构相等性：类似 Java 中的 <code>equals()</code></li>
-</ul>
-
-<h2 id="_2-引用相等性"> 2. 引用相等性</h2>
-<p>引用相等性使用 <code>===</code>（其否定判断为 <code>!==</code>）， 来进行判别，它只判断两个引用是否指向了同一个对象。</p>
-<p><code>a === b</code> 为真当且仅当 <code>a</code> 和 <code>b</code> 指向了同一个对象。</p>
-<h2 id="_3-结构相等性"> 3. 结构相等性</h2>
-<p>结构相等性的判断类似 Java 中的 <code>equals()</code>，
-在 Kotlin 中，使用 <code>==</code> 操作符来进行判断（其否定为 <code>!=</code>）。</p>
-<p>一个 <code>==</code> 操作符会被转换成以下的相应代码</p>
-<div><pre><code>a<span>?</span><span>.</span><span>equals</span><span>(</span>b<span>)</span> <span>?:</span> <span>(</span>b <span>===</span> <span>null</span><span>)</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>也就是说，当 <code>a</code> 非空时，它会调用 <code>equal(Any?)</code>，当 <code>a</code> 为空时，它会检查 <code>b</code> 是否也为空。</p>
-<p>注意，在空检查时，没有必要转换你的代码，编译器会自动将 <code>a == null</code> 优化为 <code>a === null</code></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Kotlin 泛型</title>
       <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%B3%9B%E5%9E%8B/</link>
       <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%B3%9B%E5%9E%8B/</guid>
@@ -8392,6 +8358,40 @@ fruits<span>.</span><span>add</span><span>(</span><span>new</span> <span>Strawbe
 <span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>注意 <code>Comparable</code> 和 <code>Cloneable</code> 都是接口。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Kotlin 相等性</title>
+      <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%9B%B8%E7%AD%89%E6%80%A7/</link>
+      <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%9B%B8%E7%AD%89%E6%80%A7/</guid>
+      <source url="https://wafer.li/rss.xml">Kotlin 相等性</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Kotlin 中拥有两种相等性类型&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;引用相等性：两个引用是否指向同一个对象&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;结构相等性：类似 Java 中的 &amp;lt;code&amp;gt;equals()&amp;lt;/code&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+</description>
+      <category>Kotlin</category>
+      <pubDate>Sat, 26 Nov 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>Kotlin 中拥有两种相等性类型</p>
+<ul>
+<li>引用相等性：两个引用是否指向同一个对象</li>
+<li>结构相等性：类似 Java 中的 <code>equals()</code></li>
+</ul>
+
+<h2 id="_2-引用相等性"> 2. 引用相等性</h2>
+<p>引用相等性使用 <code>===</code>（其否定判断为 <code>!==</code>）， 来进行判别，它只判断两个引用是否指向了同一个对象。</p>
+<p><code>a === b</code> 为真当且仅当 <code>a</code> 和 <code>b</code> 指向了同一个对象。</p>
+<h2 id="_3-结构相等性"> 3. 结构相等性</h2>
+<p>结构相等性的判断类似 Java 中的 <code>equals()</code>，
+在 Kotlin 中，使用 <code>==</code> 操作符来进行判断（其否定为 <code>!=</code>）。</p>
+<p>一个 <code>==</code> 操作符会被转换成以下的相应代码</p>
+<div><pre><code>a<span>?</span><span>.</span><span>equals</span><span>(</span>b<span>)</span> <span>?:</span> <span>(</span>b <span>===</span> <span>null</span><span>)</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>也就是说，当 <code>a</code> 非空时，它会调用 <code>equal(Any?)</code>，当 <code>a</code> 为空时，它会检查 <code>b</code> 是否也为空。</p>
+<p>注意，在空检查时，没有必要转换你的代码，编译器会自动将 <code>a == null</code> 优化为 <code>a === null</code></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -11042,7 +11042,7 @@ Python 在导入包时，首先会搜寻<strong>当前目录</strong>，如果�
 &amp;lt;p&amp;gt;所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>Scala 作为函数式语言，提供了很多用于高阶函数来解决一类范式问题；</p>
 <p>但是，使用过多的高阶函数就会让代码的可读性变差；</p>
 <p>所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。</p>
@@ -11393,7 +11393,7 @@ first<span>(</span><span>2</span> <span>*</span> <span>2</span><span>,</span> <s
 &amp;lt;p&amp;gt;拥有更高的安全性&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>模式匹配，是 Scala 相比 Java 在类型上的一个很好地改进；</p>
 <p>通过引入模式匹配，消除了 Java 中常见的类型检测和强制转换(cast)；</p>
 <p>拥有更高的安全性</p>
@@ -11910,7 +11910,7 @@ p<span>.</span>name <span>=</span> <span>"nihao"</span>
 &amp;lt;p&amp;gt;那么今天就以 &amp;lt;code&amp;gt;List&amp;lt;/code&amp;gt; 来说一说常用的高阶函数具体的作用。&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>高阶函数是函数式编程的一个很大的特性；</p>
 <p>同时，其中集合类的高阶函数在日常的开发和使用中，占了一个很重要的位置；</p>
 <p>但是，这些函数有可能会在刚接触的时候搞不懂它们的具体作用；</p>
@@ -15943,158 +15943,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 ]]></content:encoded>
     </item>
     <item>
-      <title>背包，队列和栈</title>
-      <link>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E8%83%8C%E5%8C%85%EF%BC%8C%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/</link>
-      <guid>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E8%83%8C%E5%8C%85%EF%BC%8C%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/</guid>
-      <source url="https://wafer.li/rss.xml">背包，队列和栈</source>
-      <description>&amp;lt;p&amp;gt;它们都是一些数据对象的集合&amp;lt;/p&amp;gt;
-&amp;lt;h2 id=&amp;quot;_1-特点&amp;quot;&amp;gt; 1. 特点&amp;lt;/h2&amp;gt;
-&amp;lt;h3 id=&amp;quot;_1-1-背包&amp;quot;&amp;gt; 1.1 背包&amp;lt;/h3&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;不支持&amp;lt;/strong&amp;gt; 删除元素&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;使用其来收集元素，遍历和递归它们&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;元素的顺序是不确定的&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-</description>
-      <category>《Algorithm 第四版》笔记</category>
-      <pubDate>Sat, 04 Feb 2017 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>它们都是一些数据对象的集合</p>
-<h2 id="_1-特点"> 1. 特点</h2>
-<h3 id="_1-1-背包"> 1.1 背包</h3>
-<ul>
-<li><strong>不支持</strong> 删除元素</li>
-<li>使用其来收集元素，遍历和递归它们</li>
-<li>元素的顺序是不确定的</li>
-</ul>
-
-<h3 id="_1-2-队列-先进先出"> 1.2 队列(先进先出)</h3>
-<p>这里所说的队列指的是先进先出的队列。</p>
-<ul>
-<li>数据元素相对此集合的顺序是<strong>先进先出</strong></li>
-<li>队列能收集数据，同时保持它们的相对顺序</li>
-</ul>
-<h3 id="_1-3-栈"> 1.3 栈</h3>
-<ul>
-<li>正好与队列相反，数据元素在栈中是后进先出的。</li>
-<li>栈也会保持数据元素的相对顺序</li>
-</ul>
-<h3 id="_1-4-例子-算数表达式的表示法"> 1.4 例子：算数表达式的表示法</h3>
-<p>使用两个栈来表达算数表达式</p>
-<p>当接收到一个算数表达式的时候：</p>
-<ol>
-<li>将数值压入<strong>数值栈</strong></li>
-<li>将操作符压入<strong>操作符栈</strong></li>
-<li>忽略<strong>左括号</strong></li>
-<li>当遇到<strong>右括号</strong>的时候，弹出<strong>一个操作符</strong>，和<strong>所需要的数值</strong>，并且将计算结果压入数值栈</li>
-</ol>
-<h2 id="_2-实现"> 2. 实现</h2>
-<h3 id="_2-1-使用数组实现栈"> 2.1 使用数组实现栈</h3>
-<ul>
-<li><code>push()</code> 方法需要检查当前栈是否是满的，如果满，则进行扩容</li>
-<li><code>resize()</code> 方法会将当前数组的空间加倍（或减半）</li>
-<li><code>pop()</code> 方法需要检查当前栈的大小是否<strong>小于数组的 1/4</strong>，如果成立，则将数组的空间减少为它的一半。</li>
-<li>需要防止<strong>对象游离</strong>，当数据对象被弹出后，将其声明为 <code>null</code></li>
-<li>缺点
-<ul>
-<li>时间复杂度与<strong>数组的大小</strong>相关</li>
-<li>所需要的空间是不可预知的</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>如果当前栈的大小小于数组的 1/4，那么即使 <code>pop()</code> 方法使其减少了，它仍然比当前栈的大小还要<strong>大一倍</strong>，所以我们依旧有空间储存数据，为了防止空间的浪费，将数组的空间减少。</p>
-<p>当一个数据对象被弹出栈后，它就<strong>再也不会被栈使用了</strong>，但是数据的引用依旧存在，所以 Java 不会将这块内存回收。这种情况就被叫做<strong>对象游离</strong></p>
-</blockquote>
-<h3 id="_2-2-链表"> 2.2 链表</h3>
-<p>链表是一个递归的数据结果，它可以是空，或者是一个指向一个节点的引用；
-这个节点储存一个数据元素和一个指向<strong>下一个节点或列表</strong>的引用；
-<code>Node</code>（节点）类经常被用于内部类。</p>
-<h4 id="_2-2-1-创建"> 2.2.1 创建</h4>
-<div><pre><code><span>private</span> <span>class</span> <span>Node</span>
-<span>{</span>
-    <span>Item</span> item<span>;</span>
-    <span>Node</span> next<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><blockquote>
-<ul>
-<li>只要声明一个 <code>Node</code> 变量，我们就能表示一个链表
-因为 <code>Node</code> 被用作内部类，所以我们能直接地声明其成员。</li>
-</ul>
-</blockquote>
-<div><pre><code><span>Node</span> first <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>;</span>
-<span>Node</span> second <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>;</span>
-<span>Node</span> thrid <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>;</span>
-
-<span>//Items</span>
-first<span>.</span>item <span>=</span> <span>"to"</span><span>;</span>
-second<span>.</span>item <span>=</span> <span>"be"</span><span>;</span>
-thrid<span>.</span>item <span>=</span> <span>"or"</span><span>;</span>
-
-<span>//Nexts</span>
-first<span>.</span>next <span>=</span> second<span>;</span>
-second<span>.</span>next <span>=</span> thrid<span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div><p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list.png" alt="Build linked List" /></p>
-<h4 id="_2-2-2-在头部插入"> 2.2.2 在头部插入</h4>
-<p>使用另一个引用（例如 <code>oldfirst</code>） 来储存头结点，然后建立新节点来储存数据，然后将 <code>next</code> 指向头结点</p>
-<p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list-insert-front.png" alt="Insert at beginning" /></p>
-<h4 id="_2-2-3-从头部删除"> 2.2.3 从头部删除</h4>
-<p>将头指针<code>first</code>直接指向 <code>first.next</code> 即可
-Java 的 garbage collector 会将内存回收。</p>
-<p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list-remove-first.png" alt="Remove from the beginning" /></p>
-<h4 id="_2-2-4-在尾部插入"> 2.2.4 在尾部插入</h4>
-<p>就像在头部插入一样，用一个另外的引用 <code>oldlast</code> 来保存尾部节点，然后建立一个新的节点来储存数据，然后将 <code>oldlast.next</code> 声明为 <code>last</code></p>
-<blockquote>
-<p>注意，对于单链表，尾部节点的引用可能要通过从头结点的层层遍历才能取到，这也是为什么一般仅使用头节点来作为主要的操作节点。</p>
-</blockquote>
-<p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list-insert-end.png" alt="Insert at the end" /></p>
-<h4 id="_2-2-5-在其他地方插入和删除"> 2.2.5 在其他地方插入和删除</h4>
-<p>进行这个操作，我们必须要拿到所需要插入位置的前一个节点的信息来辅助我们的插入删除操作，因此我们需要<strong>遍历</strong> 链表来取得指定插入位置的前一个位置。</p>
-<h4 id="_2-2-6-遍历"> 2.2.6 遍历</h4>
-<p>一般来说，我们使用 <code>foreach</code> 语句来进行遍历操作。</p>
-<p>使用这个语句的类必须要实现 <code>Iterable</code> 和 <code>Iterator</code> 接口来返回一个迭代器和定义迭代方法。</p>
-<p>但是对于链表这种简单结构来说，我们只需要使用一般的 <code>for</code> 语句即可。</p>
-<div><pre><code><span>for</span><span>(</span><span>Node</span> x <span>=</span> first<span>;</span> x <span>!=</span> <span>null</span><span>;</span> x <span>=</span> x<span>.</span>next<span>)</span> <span>{</span>
-    <span>//handle x.item</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_3-链表的使用"> 3. 链表的使用</h2>
-<p>使用链表可以：</p>
-<ul>
-<li>处理任何数据</li>
-<li>需求的空间仅仅和集合的大小成正比</li>
-<li>时间复杂度和集合的大小<strong>无关</strong></li>
-</ul>
-<blockquote>
-<p>链表的插入和删除操作仅仅是变量的<strong>赋值</strong>，以及<strong>对象的构建</strong>，它们的时间复杂度都是<strong>常数级别</strong> 的</p>
-</blockquote>
-<h3 id="_3-1-实现栈"> 3.1 实现栈</h3>
-<p>将链表的头部设定为栈顶</p>
-<ul>
-<li>当压入数据的时候，我们<strong>在头部</strong>插入数据元素</li>
-<li>当弹出数据的时候，我们<strong>在头部</strong>删除数据元素</li>
-</ul>
-<blockquote>
-<p>选择链表头部而不是尾部进行操作的原因：链表的插入和删除操作都是在一端进行的；</p>
-<p>链表的尾部元素一般不好获取，特别是对于单链表而言，如果采用尾部作为栈顶，那么当删除栈顶元素之后，我们无法很快的获取新的栈顶元素的引用（<strong>因为要从头部进行遍历，或者维护两个指针，这都是不必要的</strong>）；</p>
-<p>而采用头部作为栈的顶部，仅仅需要一句声明语句 <code>newTop = top.next;</code> 即可获取到新的栈顶元素。</p>
-</blockquote>
-<h3 id="_3-2-实现队列"> 3.2 实现队列</h3>
-<ul>
-<li>设定链表的头部为队列的头部，链表的尾部为队列的尾部。</li>
-<li>当插入元素时，在尾部插入数据。</li>
-<li>当删除元素时，在头部删除数据。</li>
-</ul>
-<blockquote>
-<p>由于队列插入和删除的位置不同，在尾部删除元素很麻烦，但是相应的插入操作却变得十分简单，仅需要改变其 <code>next</code> 域即可，而不是类似删除操作还要返回前一个数据的引用。</p>
-</blockquote>
-<h3 id="_3-3-背包的实现"> 3.3 背包的实现</h3>
-<p>将栈或队列的 <code>pop()</code> 操作去掉，就是一个背包结构。</p>
-]]></content:encoded>
-      <enclosure url="https://algs4.cs.princeton.edu/13stacks/images/linked-list.png" type="image/png"/>
-    </item>
-    <item>
       <title>算法分析</title>
       <link>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</link>
       <guid>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</guid>
@@ -16347,6 +16195,158 @@ Java 的 garbage collector 会将内存回收。</p>
       <enclosure url="https://algs4.cs.princeton.edu/14analysis/images/classifications.png" type="image/png"/>
     </item>
     <item>
+      <title>背包，队列和栈</title>
+      <link>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E8%83%8C%E5%8C%85%EF%BC%8C%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/</link>
+      <guid>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E8%83%8C%E5%8C%85%EF%BC%8C%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88/</guid>
+      <source url="https://wafer.li/rss.xml">背包，队列和栈</source>
+      <description>&amp;lt;p&amp;gt;它们都是一些数据对象的集合&amp;lt;/p&amp;gt;
+&amp;lt;h2 id=&amp;quot;_1-特点&amp;quot;&amp;gt; 1. 特点&amp;lt;/h2&amp;gt;
+&amp;lt;h3 id=&amp;quot;_1-1-背包&amp;quot;&amp;gt; 1.1 背包&amp;lt;/h3&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;不支持&amp;lt;/strong&amp;gt; 删除元素&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;使用其来收集元素，遍历和递归它们&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;元素的顺序是不确定的&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+</description>
+      <category>《Algorithm 第四版》笔记</category>
+      <pubDate>Sat, 04 Feb 2017 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>它们都是一些数据对象的集合</p>
+<h2 id="_1-特点"> 1. 特点</h2>
+<h3 id="_1-1-背包"> 1.1 背包</h3>
+<ul>
+<li><strong>不支持</strong> 删除元素</li>
+<li>使用其来收集元素，遍历和递归它们</li>
+<li>元素的顺序是不确定的</li>
+</ul>
+
+<h3 id="_1-2-队列-先进先出"> 1.2 队列(先进先出)</h3>
+<p>这里所说的队列指的是先进先出的队列。</p>
+<ul>
+<li>数据元素相对此集合的顺序是<strong>先进先出</strong></li>
+<li>队列能收集数据，同时保持它们的相对顺序</li>
+</ul>
+<h3 id="_1-3-栈"> 1.3 栈</h3>
+<ul>
+<li>正好与队列相反，数据元素在栈中是后进先出的。</li>
+<li>栈也会保持数据元素的相对顺序</li>
+</ul>
+<h3 id="_1-4-例子-算数表达式的表示法"> 1.4 例子：算数表达式的表示法</h3>
+<p>使用两个栈来表达算数表达式</p>
+<p>当接收到一个算数表达式的时候：</p>
+<ol>
+<li>将数值压入<strong>数值栈</strong></li>
+<li>将操作符压入<strong>操作符栈</strong></li>
+<li>忽略<strong>左括号</strong></li>
+<li>当遇到<strong>右括号</strong>的时候，弹出<strong>一个操作符</strong>，和<strong>所需要的数值</strong>，并且将计算结果压入数值栈</li>
+</ol>
+<h2 id="_2-实现"> 2. 实现</h2>
+<h3 id="_2-1-使用数组实现栈"> 2.1 使用数组实现栈</h3>
+<ul>
+<li><code>push()</code> 方法需要检查当前栈是否是满的，如果满，则进行扩容</li>
+<li><code>resize()</code> 方法会将当前数组的空间加倍（或减半）</li>
+<li><code>pop()</code> 方法需要检查当前栈的大小是否<strong>小于数组的 1/4</strong>，如果成立，则将数组的空间减少为它的一半。</li>
+<li>需要防止<strong>对象游离</strong>，当数据对象被弹出后，将其声明为 <code>null</code></li>
+<li>缺点
+<ul>
+<li>时间复杂度与<strong>数组的大小</strong>相关</li>
+<li>所需要的空间是不可预知的</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>如果当前栈的大小小于数组的 1/4，那么即使 <code>pop()</code> 方法使其减少了，它仍然比当前栈的大小还要<strong>大一倍</strong>，所以我们依旧有空间储存数据，为了防止空间的浪费，将数组的空间减少。</p>
+<p>当一个数据对象被弹出栈后，它就<strong>再也不会被栈使用了</strong>，但是数据的引用依旧存在，所以 Java 不会将这块内存回收。这种情况就被叫做<strong>对象游离</strong></p>
+</blockquote>
+<h3 id="_2-2-链表"> 2.2 链表</h3>
+<p>链表是一个递归的数据结果，它可以是空，或者是一个指向一个节点的引用；
+这个节点储存一个数据元素和一个指向<strong>下一个节点或列表</strong>的引用；
+<code>Node</code>（节点）类经常被用于内部类。</p>
+<h4 id="_2-2-1-创建"> 2.2.1 创建</h4>
+<div><pre><code><span>private</span> <span>class</span> <span>Node</span>
+<span>{</span>
+    <span>Item</span> item<span>;</span>
+    <span>Node</span> next<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><blockquote>
+<ul>
+<li>只要声明一个 <code>Node</code> 变量，我们就能表示一个链表
+因为 <code>Node</code> 被用作内部类，所以我们能直接地声明其成员。</li>
+</ul>
+</blockquote>
+<div><pre><code><span>Node</span> first <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>;</span>
+<span>Node</span> second <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>;</span>
+<span>Node</span> thrid <span>=</span> <span>new</span> <span>Node</span><span>(</span><span>)</span><span>;</span>
+
+<span>//Items</span>
+first<span>.</span>item <span>=</span> <span>"to"</span><span>;</span>
+second<span>.</span>item <span>=</span> <span>"be"</span><span>;</span>
+thrid<span>.</span>item <span>=</span> <span>"or"</span><span>;</span>
+
+<span>//Nexts</span>
+first<span>.</span>next <span>=</span> second<span>;</span>
+second<span>.</span>next <span>=</span> thrid<span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div><p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list.png" alt="Build linked List" /></p>
+<h4 id="_2-2-2-在头部插入"> 2.2.2 在头部插入</h4>
+<p>使用另一个引用（例如 <code>oldfirst</code>） 来储存头结点，然后建立新节点来储存数据，然后将 <code>next</code> 指向头结点</p>
+<p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list-insert-front.png" alt="Insert at beginning" /></p>
+<h4 id="_2-2-3-从头部删除"> 2.2.3 从头部删除</h4>
+<p>将头指针<code>first</code>直接指向 <code>first.next</code> 即可
+Java 的 garbage collector 会将内存回收。</p>
+<p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list-remove-first.png" alt="Remove from the beginning" /></p>
+<h4 id="_2-2-4-在尾部插入"> 2.2.4 在尾部插入</h4>
+<p>就像在头部插入一样，用一个另外的引用 <code>oldlast</code> 来保存尾部节点，然后建立一个新的节点来储存数据，然后将 <code>oldlast.next</code> 声明为 <code>last</code></p>
+<blockquote>
+<p>注意，对于单链表，尾部节点的引用可能要通过从头结点的层层遍历才能取到，这也是为什么一般仅使用头节点来作为主要的操作节点。</p>
+</blockquote>
+<p><img src="https://algs4.cs.princeton.edu/13stacks/images/linked-list-insert-end.png" alt="Insert at the end" /></p>
+<h4 id="_2-2-5-在其他地方插入和删除"> 2.2.5 在其他地方插入和删除</h4>
+<p>进行这个操作，我们必须要拿到所需要插入位置的前一个节点的信息来辅助我们的插入删除操作，因此我们需要<strong>遍历</strong> 链表来取得指定插入位置的前一个位置。</p>
+<h4 id="_2-2-6-遍历"> 2.2.6 遍历</h4>
+<p>一般来说，我们使用 <code>foreach</code> 语句来进行遍历操作。</p>
+<p>使用这个语句的类必须要实现 <code>Iterable</code> 和 <code>Iterator</code> 接口来返回一个迭代器和定义迭代方法。</p>
+<p>但是对于链表这种简单结构来说，我们只需要使用一般的 <code>for</code> 语句即可。</p>
+<div><pre><code><span>for</span><span>(</span><span>Node</span> x <span>=</span> first<span>;</span> x <span>!=</span> <span>null</span><span>;</span> x <span>=</span> x<span>.</span>next<span>)</span> <span>{</span>
+    <span>//handle x.item</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_3-链表的使用"> 3. 链表的使用</h2>
+<p>使用链表可以：</p>
+<ul>
+<li>处理任何数据</li>
+<li>需求的空间仅仅和集合的大小成正比</li>
+<li>时间复杂度和集合的大小<strong>无关</strong></li>
+</ul>
+<blockquote>
+<p>链表的插入和删除操作仅仅是变量的<strong>赋值</strong>，以及<strong>对象的构建</strong>，它们的时间复杂度都是<strong>常数级别</strong> 的</p>
+</blockquote>
+<h3 id="_3-1-实现栈"> 3.1 实现栈</h3>
+<p>将链表的头部设定为栈顶</p>
+<ul>
+<li>当压入数据的时候，我们<strong>在头部</strong>插入数据元素</li>
+<li>当弹出数据的时候，我们<strong>在头部</strong>删除数据元素</li>
+</ul>
+<blockquote>
+<p>选择链表头部而不是尾部进行操作的原因：链表的插入和删除操作都是在一端进行的；</p>
+<p>链表的尾部元素一般不好获取，特别是对于单链表而言，如果采用尾部作为栈顶，那么当删除栈顶元素之后，我们无法很快的获取新的栈顶元素的引用（<strong>因为要从头部进行遍历，或者维护两个指针，这都是不必要的</strong>）；</p>
+<p>而采用头部作为栈的顶部，仅仅需要一句声明语句 <code>newTop = top.next;</code> 即可获取到新的栈顶元素。</p>
+</blockquote>
+<h3 id="_3-2-实现队列"> 3.2 实现队列</h3>
+<ul>
+<li>设定链表的头部为队列的头部，链表的尾部为队列的尾部。</li>
+<li>当插入元素时，在尾部插入数据。</li>
+<li>当删除元素时，在头部删除数据。</li>
+</ul>
+<blockquote>
+<p>由于队列插入和删除的位置不同，在尾部删除元素很麻烦，但是相应的插入操作却变得十分简单，仅需要改变其 <code>next</code> 域即可，而不是类似删除操作还要返回前一个数据的引用。</p>
+</blockquote>
+<h3 id="_3-3-背包的实现"> 3.3 背包的实现</h3>
+<p>将栈或队列的 <code>pop()</code> 操作去掉，就是一个背包结构。</p>
+]]></content:encoded>
+      <enclosure url="https://algs4.cs.princeton.edu/13stacks/images/linked-list.png" type="image/png"/>
+    </item>
+    <item>
       <title>递归树分析归并排序算法复杂度</title>
       <link>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E9%80%92%E5%BD%92%E6%A0%91%E5%88%86%E6%9E%90%E5%BD%92%E5%B9%B6%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</link>
       <guid>https://wafer.li/blog-corners/learning-notes/algorithm-4th-edition/%E9%80%92%E5%BD%92%E6%A0%91%E5%88%86%E6%9E%90%E5%BD%92%E5%B9%B6%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6/</guid>
@@ -16356,7 +16356,7 @@ Java 的 garbage collector 会将内存回收。</p>
 斯坦福的教授提供了一种使用 &amp;lt;strong&amp;gt;递归树&amp;lt;/strong&amp;gt; 的方法。&amp;lt;/p&amp;gt;
 </description>
       <category>《Algorithm 第四版》笔记</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前学算法分析的时候只知道通过数语句来计算算法的复杂度，而对于递归算法没有很好的方法；</p>
 <p>由于递归算法通常采用分治思路，每递归一次，子问题在增多，但是子问题的规模在减少，所以如何去计算这种递归类算法的复杂度呢？
 斯坦福的教授提供了一种使用 <strong>递归树</strong> 的方法。</p>
@@ -16448,7 +16448,7 @@ Java 的 garbage collector 会将内存回收。</p>
 &amp;lt;p&amp;gt;那么，都『攻击』了，为啥偏偏没事去改你的单例呢？直接获取更有意思的信息不是更好吗？&amp;lt;/p&amp;gt;
 </description>
       <category>《Head First 设计模式》笔记</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前提到枚举实现是单例的最佳实现，这毋庸置疑；</p>
 <p>不过，对比枚举和静态内部类，好像它们的区别就在于防止了反射攻击；</p>
 <p>那么，都『攻击』了，为啥偏偏没事去改你的单例呢？直接获取更有意思的信息不是更好吗？</p>
@@ -16528,6 +16528,66 @@ Java 的 garbage collector 会将内存回收。</p>
 </section>
 ]]></content:encoded>
       <enclosure url="https://ws3.sinaimg.cn/large/006tNbRwgy1ffzakmwghkj30rc0uotax.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>策略模式(Strategy Pattern)</title>
+      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</link>
+      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</guid>
+      <source url="https://wafer.li/rss.xml">策略模式(Strategy Pattern)</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;策略模式：定义算法族，分别封装起来，使它们可以相互替换。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;此模式让算法的变化独立于使用算法的用户。&amp;lt;/p&amp;gt;
+</description>
+      <category>《Head First 设计模式》笔记</category>
+      <pubDate>Fri, 25 Nov 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>策略模式：定义算法族，分别封装起来，使它们可以相互替换。</p>
+<p>此模式让算法的变化独立于使用算法的用户。</p>
+
+<h2 id="_2-oo-基础"> 2. OO 基础</h2>
+<ul>
+<li>抽象</li>
+<li>封装</li>
+<li>多态</li>
+<li>继承</li>
+</ul>
+<h2 id="_3-设计原则"> 3. 设计原则</h2>
+<ul>
+<li>
+<p>封装变化</p>
+<blockquote>
+<p>将应用（类）中有可能变化的部分封装出来，和稳定的部分相互隔离</p>
+</blockquote>
+</li>
+<li>
+<p>针对接口编程，而非针对 实现编程</p>
+<blockquote>
+<p>为了运行时能动态改变类的行为，我们应该<strong>针对接口编程</strong>，而非针对实现编程。</p>
+<p>也就是说，使用接口来实现各个行为，而不是将行为固定在类的具体实现中。</p>
+</blockquote>
+</li>
+<li>
+<p>多用组合，少用继承</p>
+<blockquote>
+<p><code>has-a</code> 比 <code>is-a</code> 更好，能够得到更多的应用弹性。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="_4-具体实现"> 4.  具体实现</h2>
+<p><strong>关键：使用委托，并使用 setter 实现行为的动态变化。</strong></p>
+<h3 id="_4-1-使用接口封装行为"> 4.1 使用接口封装行为</h3>
+<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" alt="" /></p>
+<h3 id="_4-2-对象包含接口"> 4.2 对象包含接口</h3>
+<p><img src="https://ww4.sinaimg.cn/large/65e4f1e6gw1f9pszct1akj20tz0efab4.jpg" alt="" /></p>
+<h3 id="_4-3-使用-setter-实现运行时更改行为"> 4.3 使用 Setter 实现运行时更改行为</h3>
+<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6jw1f9ptf31737j20tu0fcq43.jpg" alt="" /></p>
+<div><pre><code><span>ModelDuck</span> modelDuck <span>=</span> <span>new</span> <span>ModelDuck</span><span>(</span><span>)</span><span>;</span>
+modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlyNoWay</span>
+modelDuck<span>.</span><span>setFlyBehavior</span><span>(</span><span>new</span> <span>FlywithWings</span><span>(</span><span>)</span><span>)</span><span>;</span>
+modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlywithWings</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
+      <enclosure url="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" type="image/jpeg"/>
     </item>
     <item>
       <title>单例模式</title>
@@ -16747,66 +16807,6 @@ cons<span>.</span> <span>setAccessible</span><span>(</span><span>true</span><spa
 </ol>
 <p>而且是最为简单的一种单例实现方法。</p>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>策略模式(Strategy Pattern)</title>
-      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</link>
-      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</guid>
-      <source url="https://wafer.li/rss.xml">策略模式(Strategy Pattern)</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;策略模式：定义算法族，分别封装起来，使它们可以相互替换。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;此模式让算法的变化独立于使用算法的用户。&amp;lt;/p&amp;gt;
-</description>
-      <category>《Head First 设计模式》笔记</category>
-      <pubDate>Fri, 25 Nov 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>策略模式：定义算法族，分别封装起来，使它们可以相互替换。</p>
-<p>此模式让算法的变化独立于使用算法的用户。</p>
-
-<h2 id="_2-oo-基础"> 2. OO 基础</h2>
-<ul>
-<li>抽象</li>
-<li>封装</li>
-<li>多态</li>
-<li>继承</li>
-</ul>
-<h2 id="_3-设计原则"> 3. 设计原则</h2>
-<ul>
-<li>
-<p>封装变化</p>
-<blockquote>
-<p>将应用（类）中有可能变化的部分封装出来，和稳定的部分相互隔离</p>
-</blockquote>
-</li>
-<li>
-<p>针对接口编程，而非针对 实现编程</p>
-<blockquote>
-<p>为了运行时能动态改变类的行为，我们应该<strong>针对接口编程</strong>，而非针对实现编程。</p>
-<p>也就是说，使用接口来实现各个行为，而不是将行为固定在类的具体实现中。</p>
-</blockquote>
-</li>
-<li>
-<p>多用组合，少用继承</p>
-<blockquote>
-<p><code>has-a</code> 比 <code>is-a</code> 更好，能够得到更多的应用弹性。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="_4-具体实现"> 4.  具体实现</h2>
-<p><strong>关键：使用委托，并使用 setter 实现行为的动态变化。</strong></p>
-<h3 id="_4-1-使用接口封装行为"> 4.1 使用接口封装行为</h3>
-<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" alt="" /></p>
-<h3 id="_4-2-对象包含接口"> 4.2 对象包含接口</h3>
-<p><img src="https://ww4.sinaimg.cn/large/65e4f1e6gw1f9pszct1akj20tz0efab4.jpg" alt="" /></p>
-<h3 id="_4-3-使用-setter-实现运行时更改行为"> 4.3 使用 Setter 实现运行时更改行为</h3>
-<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6jw1f9ptf31737j20tu0fcq43.jpg" alt="" /></p>
-<div><pre><code><span>ModelDuck</span> modelDuck <span>=</span> <span>new</span> <span>ModelDuck</span><span>(</span><span>)</span><span>;</span>
-modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlyNoWay</span>
-modelDuck<span>.</span><span>setFlyBehavior</span><span>(</span><span>new</span> <span>FlywithWings</span><span>(</span><span>)</span><span>)</span><span>;</span>
-modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlywithWings</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
-      <enclosure url="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" type="image/jpeg"/>
     </item>
     <item>
       <title>装饰者模式(Decorator Pattern)</title>
@@ -17119,227 +17119,6 @@ document<span>.</span><span>writeln</span><span>(</span><span>"load time was: "<
 ]]></content:encoded>
     </item>
     <item>
-      <title>生成器模式(Builder Pattern)</title>
-      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</link>
-      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</guid>
-      <source url="https://wafer.li/rss.xml">生成器模式(Builder Pattern)</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;工厂模式的目标是利用多态，减少类之间的耦合度；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;而工厂模式不需要指导者。&amp;lt;/p&amp;gt;
-</description>
-      <category>《Head First 设计模式》笔记</category>
-      <pubDate>Sun, 12 Mar 2017 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。</p>
-<p>工厂模式的目标是利用多态，减少类之间的耦合度；</p>
-<p>而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。</p>
-<p>同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；</p>
-<p>而工厂模式不需要指导者。</p>
-
-<h2 id="_2-结构类图"> 2. 结构类图</h2>
-<p><img src="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" alt="" /></p>
-<h2 id="_3-构造复杂产品"> 3. 构造复杂产品</h2>
-<p>所谓的复杂产品就是一个产品中有很多子类，而且每个子类都有相应的构造流程。</p>
-<p>例如，一个蛤蜊比萨，拥有面饼，酱料，芝士，蛤蜊等其他食材。</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
-    <span>Dough</span> dough<span>;</span>
-    <span>Sauce</span> sauce<span>;</span>
-    <span>Cheese</span> cheese<span>;</span>
-    <span>Clam</span> clam<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>对于这样一个复杂产品，我们就将其构造的过程委派给一个建造者(Builder)来完成。</p>
-<div><pre><code><span>public</span> <span>interface</span> <span>ClamPizzaBuilder</span> <span>{</span>
-    <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>)</span><span>;</span>
-    <span>ClamPizzaBuilder</span> <span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
-    <span>ClamPizzaBuilder</span> <span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
-    <span>ClamPizzaBuilder</span> <span>prepareClam</span><span>(</span><span>)</span><span>;</span>
-
-    <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span><span>;</span>
-<span>}</span>
-
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>然后，我们对接口进行实现。</p>
-<p>注意，这里有两种具体类的实现方法：</p>
-<ol>
-<li>
-<p>在构建实际建造者时，就 <strong>立即</strong> 创建一个 <strong>默认的产品对象</strong>；</p>
-</li>
-<li>
-<p>由实际建造者储存创建产品的参数，当调用 <code>build()</code> 方法时，才返回产品对象</p>
-</li>
-</ol>
-<p>在这里，需要指明的就是方法二更好；</p>
-<p>因为方法二符合语义，只有调用 <code>build()</code> 才真正的构建了对象；</p>
-<p>而且也适合于不可变对象（构造之后对象的属性不能发生改变）。</p>
-<p>方法一：</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
-<span>{</span>
-    <span>ClamPizza</span> clamPizza <span>=</span> <span>null</span><span>;</span>
-
-    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
-        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
-        <span>// 准备面团，可以直接放入，也可以进行处理后放入</span>
-        <span>return</span> <span>this</span><span>;</span>
-    <span>}</span>
-
-    <span>//  剩下的 prepare 方法</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
-        <span>return</span> clamPizza<span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><p>方法二：</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
-    <span>// fields</span>
-
-    <span>public</span> <span>ClamPizza</span><span>(</span><span>ClamPizzaBuilder</span> builder<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
-        <span>// etc.</span>
-    <span>}</span>
-<span>}</span>
-
-<span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
-<span>{</span>
-    <span>// fields</span>
-
-    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
-        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
-        <span>return</span> <span>this</span><span>;</span>
-    <span>}</span>
-
-    <span>//  剩下的 prepare 方法</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
-        <span>return</span> <span>ClamPizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br></div></div><p>生成器模式和工厂模式最大的不同就是拥有一个指挥者来指挥产品的构建过程；</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ClamPizzaDirector</span> <span>{</span>
-    <span>private</span> <span>ClamPizzaBuilder</span> builder<span>;</span>
-
-    <span>// 指挥者用于指定产品建造的步骤</span>
-    <span>public</span> <span>ClamPizza</span> <span>construct</span><span>(</span><span>)</span> <span>{</span>
-        builder<span>.</span><span>prepareDough</span><span>(</span><span>)</span><span>;</span>
-        builder<span>.</span><span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
-        builder<span>.</span><span>prepareClam</span><span>(</span><span>)</span><span>;</span>
-        builder<span>.</span><span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>当然，有些比萨并不需要芝士，这个时候，我们就可以去除掉 <code>prepareCheese()</code> 的这一个步骤。</p>
-<h2 id="_4-内部生成器减少构造器"> 4. 内部生成器减少构造器</h2>
-<p>生成器模式除了能构造复杂产品以外，一个很重要的作用就是能解决由于构造参数的组合过多所导致的构造器爆炸。</p>
-<h3 id="_4-1-构造器爆炸"> 4.1 构造器爆炸</h3>
-<p>假如一个类拥有 4 个属性，那么它 <strong>理想状态</strong> 下的构造函数就有 0 个参数，一个参数，两个参数，三个参数和四个参数。</p>
-<p>也就是说，它的构造器数量</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">W</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>3</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></span></p>
-<p>当类的属性为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 时，有</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:3.024108em;vertical-align:-1.262054em;"></span><span><span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">W</span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>⋯</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>n</span><span>−</span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span>2</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>所以，类的属性和理想状态下的构造器数量为 <strong>指数关系</strong></p>
-<h3 id="_4-2-实现"> 4.2 实现</h3>
-<div><pre><code><span>public</span> <span>class</span> <span>Pizza</span> <span>{</span>
-    <span>Dough</span> dough<span>;</span>
-    <span>Cheese</span> cheese<span>;</span>
-    <span>Sauce</span> sauce<span>;</span>
-
-    <span>private</span> <span>Pizza</span><span>(</span><span>Pizza<span>.</span>Builder</span> builder<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
-        <span>this</span><span>.</span>cheese <span>=</span> builder<span>.</span>cheese<span>;</span>
-        <span>this</span><span>.</span>sauce <span>=</span> builder<span>.</span>sauce<span>;</span>
-    <span>}</span>
-
-    <span>public</span> <span>static</span> <span>class</span> <span>Builder</span> <span>{</span>
-        <span>private</span> <span>Dough</span> dough <span>=</span> defaultDough<span>;</span>
-        <span>private</span> <span>Cheese</span> cheese <span>=</span> <span>null</span><span>;</span>
-        <span>private</span> <span>Sauce</span> sauce <span>=</span> <span>null</span><span>;</span>
-
-        <span>public</span> <span>Builder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
-            <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
-            <span>return</span> <span>this</span><span>;</span>
-        <span>}</span>
-
-        <span>public</span> <span>Builder</span> <span>prepareCheese</span><span>(</span><span>Cheese</span> cheese<span>)</span> <span>{</span>
-            <span>this</span><span>.</span>cheese <span>=</span> cheese<span>;</span>
-            <span>return</span> <span>this</span><span>;</span>
-        <span>}</span>
-
-        <span>public</span> <span>Builder</span> <span>prepareSauce</span><span>(</span><span>Sauce</span> sauce<span>)</span> <span>{</span>
-            <span>this</span><span>.</span>sauce <span>=</span> sauce<span>;</span>
-            <span>return</span> <span>this</span><span>;</span>
-        <span>}</span>
-
-        <span>public</span> <span>Pizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
-            <span>return</span> <span>new</span> <span>Pizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
-        <span>}</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br></div></div><p>这样，即使 <code>Pizza</code> 有三个属性，但是我们通过使用一个内置的 <code>Builder</code>，成功地将构造器限制在了一个；</p>
-<p>同时，由于每个 <code>prepare</code> 方法都会返回 <code>Builder</code>；</p>
-<p>也就是说，我们可以在任何一个准备阶段进行 <code>build()</code>；</p>
-<p>这样，也就满足了不同的参数组合的需求；</p>
-<p>同时，由于 <code>Pizza</code> 的构造函数是 <code>private</code> 的，所以这就限定了只能通过生成器来建造对象。</p>
-<p>使用：</p>
-<div><pre><code><span>public</span> <span>static</span> <span>void</span> <span>main</span><span>(</span><span>String</span><span>[</span><span>]</span> args<span>)</span> <span>{</span>
-    <span>Pizza</span> <span>Pizza</span> <span>=</span> <span>new</span> <span>Pizza<span>.</span>Builder</span><span>(</span><span>)</span>
-                    <span>.</span><span>prepareDough</span><span>(</span>dough<span>)</span>
-                    <span>.</span><span>prepareSauce</span><span>(</span>sauce<span>)</span>
-                    <span>.</span><span>prepareCheese</span><span>(</span>cheese<span>)</span>
-                    <span>.</span><span>build</span><span>(</span><span>)</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="_5-模式扩展"> 5. 模式扩展</h2>
-<p>当只有一个具体建造者时，可以直接省略生成器接口；</p>
-<p>例如上面的静态内部生成器。</p>
-<p>有时候可以直接省略指挥者对象，而由 <strong>客户</strong> 直接充当指导者；</p>
-<p>例如，客户自己冲泡咖啡。</p>
-<h2 id="_6-与抽象工厂的不同"> 6. 与抽象工厂的不同</h2>
-<p>抽象工厂模式生产的是一个产品族，而生成器模式所生产的 <strong>一个</strong> 复杂产品；</p>
-<p>形象的说明就是，抽象工厂生产的是 <strong>汽车的零部件</strong>；</p>
-<p>而生成器是将零部件 <strong>组装</strong> 成为一辆汽车。</p>
-<h2 id="_7-优缺点"> 7. 优缺点</h2>
-<h3 id="_7-1-优点"> 7.1 优点</h3>
-<ol>
-<li>
-<p>良好的封装性，客户端不必知道产品的内部细节</p>
-</li>
-<li>
-<p>建造者是独立的，容易扩展</p>
-</li>
-<li>
-<p>可以使用其他的对象进行构造辅助，而普通的产品构造方式不容易获取到</p>
-</li>
-</ol>
-<h3 id="_7-2-缺点"> 7.2 缺点</h3>
-<ol>
-<li>
-<p>产生多余的 <code>Builder</code>  对象</p>
-</li>
-<li>
-<p>建造的过程暴露在外</p>
-</li>
-</ol>
-]]></content:encoded>
-      <enclosure url="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" type="image/jpeg"/>
-    </item>
-    <item>
       <title>Android Gradle 介绍</title>
       <link>https://wafer.li/blog-corners/old-inventory/Android/Android%20Gradle%20%E4%BB%8B%E7%BB%8D/</link>
       <guid>https://wafer.li/blog-corners/old-inventory/Android/Android%20Gradle%20%E4%BB%8B%E7%BB%8D/</guid>
@@ -17402,6 +17181,21 @@ allprojects <span>{</span>
 <div><pre><code>apply plugin<span>:</span> <span>'com.android.application'</span>
 </code></pre>
 <div><span>1</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Android 多个 icon 问题</title>
+      <link>https://wafer.li/blog-corners/old-inventory/Android/Android%20%E5%A4%9A%E4%B8%AA%20icon%20%E9%97%AE%E9%A2%98/</link>
+      <guid>https://wafer.li/blog-corners/old-inventory/Android/Android%20%E5%A4%9A%E4%B8%AA%20icon%20%E9%97%AE%E9%A2%98/</guid>
+      <source url="https://wafer.li/rss.xml">Android 多个 icon 问题</source>
+      <category>Android</category>
+      <pubDate>Mon, 17 Oct 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>最近在开发中遇到的 Android App 安装后，同一个 app 居然在应用列表里出现了<strong>两个或者以上的图标</strong>，这是怎么回事呢？</p>
+<p>原来，Android 只要指定了 <code>action.MAIN</code> 的 <code>Activity</code> 就会显示一个图标，
+而且图标的名字和 <code>Activity</code> 的 <code>android:label</code> 相同。</p>
+<p>所以，解决办法就是只保留一个 <code>action.MAIN</code>。</p>
+<p>同时，如果引入了其他 <code>module</code>，<strong>也要检查那个 <code>module</code> 的 manifest</strong>；</p>
+<p>保证整个工程就只有一个 <code>action.MAIN</code></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Android 官方 Navigation Drawer</title>
@@ -17597,21 +17391,6 @@ drawerLayout<span>.</span><span>setScrimColor</span><span>(</span><span>ContextC
 但是要选择使用清真的写法，那么 Nav Drawer 则会更好。</p>
 ]]></content:encoded>
       <enclosure url="https://img.readitlater.com/i/matthewwear.xyz/content/images/2016/05/Screenshot-2016-05-31-09-57-54/RS/w1408.png" type="image/png"/>
-    </item>
-    <item>
-      <title>Android 多个 icon 问题</title>
-      <link>https://wafer.li/blog-corners/old-inventory/Android/Android%20%E5%A4%9A%E4%B8%AA%20icon%20%E9%97%AE%E9%A2%98/</link>
-      <guid>https://wafer.li/blog-corners/old-inventory/Android/Android%20%E5%A4%9A%E4%B8%AA%20icon%20%E9%97%AE%E9%A2%98/</guid>
-      <source url="https://wafer.li/rss.xml">Android 多个 icon 问题</source>
-      <category>Android</category>
-      <pubDate>Mon, 17 Oct 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>最近在开发中遇到的 Android App 安装后，同一个 app 居然在应用列表里出现了<strong>两个或者以上的图标</strong>，这是怎么回事呢？</p>
-<p>原来，Android 只要指定了 <code>action.MAIN</code> 的 <code>Activity</code> 就会显示一个图标，
-而且图标的名字和 <code>Activity</code> 的 <code>android:label</code> 相同。</p>
-<p>所以，解决办法就是只保留一个 <code>action.MAIN</code>。</p>
-<p>同时，如果引入了其他 <code>module</code>，<strong>也要检查那个 <code>module</code> 的 manifest</strong>；</p>
-<p>保证整个工程就只有一个 <code>action.MAIN</code></p>
-]]></content:encoded>
     </item>
     <item>
       <title>Android 获取屏幕尺寸</title>
@@ -18521,7 +18300,7 @@ cacheBuilder<span>.</span><span>maxStale</span><span>(</span><span>365</span><sp
 &amp;lt;p&amp;gt;这里就来讲讲关于这两个库具体组合的用法。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>Retrofit 和 Rxjava 结合应该算得上是 Rxjava 在 Android  应用得最广泛的一个方面了。</p>
 <p>这里就来讲讲关于这两个库具体组合的用法。</p>
 
@@ -21151,7 +20930,7 @@ https://github.com/wafer-li/scala-coursera/tree/master/funsets&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;我们有没有一种办法去表示这个集合呢？&amp;lt;/p&amp;gt;
 </description>
       <category>Coursera</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>本文源码：
 https://github.com/wafer-li/scala-coursera/tree/master/funsets</p>
@@ -21463,6 +21242,25 @@ https://github.com/wafer-li/scala-coursera/tree/master/funsets</p>
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>我心中的全面小康社会</title>
+      <link>https://wafer.li/blog-corners/old-inventory/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</link>
+      <guid>https://wafer.li/blog-corners/old-inventory/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</guid>
+      <source url="https://wafer.li/rss.xml">我心中的全面小康社会</source>
+      <description>&amp;lt;p&amp;gt;“小康”，一个由儒家经典著作中引申而出的词语，经过中国改革开放的总设计师——邓小平的重新演绎——“我们的目标，第一步是到2000年建立一个小康社会，这是指在温饱的基础上，生活质量进一步提高，达到丰衣足食。”，成为了中国人在新世纪的奋斗目标。而习近平总书记提出的“确保到2020年实现全面建成小康社会的奋斗”更加充实了中国人民实现全面小康社会的信念和信心。2020 年，中国即将实现全面的小康社会，下面就来谈谈我自己对“全面小康社会”的理解。&amp;lt;/p&amp;gt;
+</description>
+      <category>Homework</category>
+      <pubDate>Fri, 18 Nov 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>“小康”，一个由儒家经典著作中引申而出的词语，经过中国改革开放的总设计师——邓小平的重新演绎——“我们的目标，第一步是到2000年建立一个小康社会，这是指在温饱的基础上，生活质量进一步提高，达到丰衣足食。”，成为了中国人在新世纪的奋斗目标。而习近平总书记提出的“确保到2020年实现全面建成小康社会的奋斗”更加充实了中国人民实现全面小康社会的信念和信心。2020 年，中国即将实现全面的小康社会，下面就来谈谈我自己对“全面小康社会”的理解。</p>
+
+<p>首先，在经济方面，居民收入进一步提高，我国的人均 GDP 达到 10000 - 12000 美元 左右，正式进入中等收入国家。经济转型成功，新经济和第三产业发展迅猛，对中国经济的贡献比例飞速增长，达到或超过三分之二。城乡居民收入翻番，居民消费能力显著增长，国内经济由投资拉动为主变为国内消费和国内需求拉动为主。沿海的劳动密集型产业逐步升级或向中西部和东南亚迁移，经济重心逐步转为依托当地或周边大学发展高新科技产业，以高新科技指导的新型制造业基本成型。</p>
+<p>其次，在文化方面，文化产品（小说，游戏，电影，电视剧等）的分级制度初现雏形，文化题材限制有所放宽，由此带来文化产业方面发展的大爆发，一时众多文化艺术形式、产品和相关产业纷纷涌现，中国的文化企业和相关事业单位迎来了前所未有的发展机遇。知识产权保护体系初步完善，公民的知识产权保护意识提升，从而进一步促进了文化产业的发展。</p>
+<p>在法制方面，中国特色社会主义法律体系进一步完善，各行各业全面实现有法可依。法律相关工作者的从业门槛提升，考核标准提高，公民的法律意识水平提高，全面实现有法必依，执法必严，违法必究。</p>
+<p>交通和城建方面，在 2020 年基本实现了中国中东部省份县级城市和城镇通高铁或动车组列车，原有铁路线路进行新一轮提速，基本消除了 100 KM/H 以下速度的客运列车。十八大后实施的大规模棚户区改造完成，城镇居民都住进了居民小区。</p>
+<p>农业方面，由于城镇化程度提高，农村耕地流转出现集中化趋势，乡村企业规模迅速扩大，初步实现了农业机械化和集中化、规模化生产，中国的农业出现新一轮大发展趋势，粮食产量增速加快，农业科技得到进一步积累和发展。</p>
+<p>在医疗领域，由于互联网的飞速发展以及其与医学的紧密结合，名医指导手术和远端会诊得到普及，同时，中国社区医院体系和医生自由流转体系全面建立</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Intellij Tips and Tricks</title>
       <link>https://wafer.li/blog-corners/old-inventory/IntelliJ/Intellij%20Tips%20and%20Tricks/</link>
       <guid>https://wafer.li/blog-corners/old-inventory/IntelliJ/Intellij%20Tips%20and%20Tricks/</guid>
@@ -21757,22 +21555,66 @@ https://github.com/wafer-li/scala-coursera/tree/master/funsets</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>我心中的全面小康社会</title>
-      <link>https://wafer.li/blog-corners/old-inventory/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</link>
-      <guid>https://wafer.li/blog-corners/old-inventory/Homework/%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E5%85%A8%E9%9D%A2%E5%B0%8F%E5%BA%B7%E7%A4%BE%E4%BC%9A/</guid>
-      <source url="https://wafer.li/rss.xml">我心中的全面小康社会</source>
-      <description>&amp;lt;p&amp;gt;“小康”，一个由儒家经典著作中引申而出的词语，经过中国改革开放的总设计师——邓小平的重新演绎——“我们的目标，第一步是到2000年建立一个小康社会，这是指在温饱的基础上，生活质量进一步提高，达到丰衣足食。”，成为了中国人在新世纪的奋斗目标。而习近平总书记提出的“确保到2020年实现全面建成小康社会的奋斗”更加充实了中国人民实现全面小康社会的信念和信心。2020 年，中国即将实现全面的小康社会，下面就来谈谈我自己对“全面小康社会”的理解。&amp;lt;/p&amp;gt;
+      <title>OS X Using ShimakazeGo + Poi to play kancolle</title>
+      <link>https://wafer.li/blog-corners/old-inventory/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</link>
+      <guid>https://wafer.li/blog-corners/old-inventory/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</guid>
+      <source url="https://wafer.li/rss.xml">OS X Using ShimakazeGo + Poi to play kancolle</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-intro&amp;quot;&amp;gt; 1. Intro&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;This is the instruction of how to bulid a kancolle playing enviroment in Mac OS X.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;My current OS X version is 10.11&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Necessary tools: Automator&amp;lt;/p&amp;gt;
 </description>
-      <category>Homework</category>
-      <pubDate>Fri, 18 Nov 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>“小康”，一个由儒家经典著作中引申而出的词语，经过中国改革开放的总设计师——邓小平的重新演绎——“我们的目标，第一步是到2000年建立一个小康社会，这是指在温饱的基础上，生活质量进一步提高，达到丰衣足食。”，成为了中国人在新世纪的奋斗目标。而习近平总书记提出的“确保到2020年实现全面建成小康社会的奋斗”更加充实了中国人民实现全面小康社会的信念和信心。2020 年，中国即将实现全面的小康社会，下面就来谈谈我自己对“全面小康社会”的理解。</p>
+      <category>Kancolle</category>
+      <pubDate>Fri, 14 Oct 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-intro"> 1. Intro</h2>
+<p>This is the instruction of how to bulid a kancolle playing enviroment in Mac OS X.</p>
+<p>My current OS X version is 10.11</p>
+<p>Necessary tools: Automator</p>
 
-<p>首先，在经济方面，居民收入进一步提高，我国的人均 GDP 达到 10000 - 12000 美元 左右，正式进入中等收入国家。经济转型成功，新经济和第三产业发展迅猛，对中国经济的贡献比例飞速增长，达到或超过三分之二。城乡居民收入翻番，居民消费能力显著增长，国内经济由投资拉动为主变为国内消费和国内需求拉动为主。沿海的劳动密集型产业逐步升级或向中西部和东南亚迁移，经济重心逐步转为依托当地或周边大学发展高新科技产业，以高新科技指导的新型制造业基本成型。</p>
-<p>其次，在文化方面，文化产品（小说，游戏，电影，电视剧等）的分级制度初现雏形，文化题材限制有所放宽，由此带来文化产业方面发展的大爆发，一时众多文化艺术形式、产品和相关产业纷纷涌现，中国的文化企业和相关事业单位迎来了前所未有的发展机遇。知识产权保护体系初步完善，公民的知识产权保护意识提升，从而进一步促进了文化产业的发展。</p>
-<p>在法制方面，中国特色社会主义法律体系进一步完善，各行各业全面实现有法可依。法律相关工作者的从业门槛提升，考核标准提高，公民的法律意识水平提高，全面实现有法必依，执法必严，违法必究。</p>
-<p>交通和城建方面，在 2020 年基本实现了中国中东部省份县级城市和城镇通高铁或动车组列车，原有铁路线路进行新一轮提速，基本消除了 100 KM/H 以下速度的客运列车。十八大后实施的大规模棚户区改造完成，城镇居民都住进了居民小区。</p>
-<p>农业方面，由于城镇化程度提高，农村耕地流转出现集中化趋势，乡村企业规模迅速扩大，初步实现了农业机械化和集中化、规模化生产，中国的农业出现新一轮大发展趋势，粮食产量增速加快，农业科技得到进一步积累和发展。</p>
-<p>在医疗领域，由于互联网的飞速发展以及其与医学的紧密结合，名医指导手术和远端会诊得到普及，同时，中国社区医院体系和医生自由流转体系全面建立</p>
+<h2 id="_2-install-shimakazego"> 2. Install ShimakazeGo</h2>
+<p>ShimakazeGo is a proxy for playing Kancolle. Because DMM has banned the IP addresses of foreigners, you need to use a proxy to connect to the game site.</p>
+<p>Here is the <a href="http://unlockacgweb.galstars.net/" target="_blank" rel="noopener noreferrer">ShimakazeGo official site</a>. There is a instruction how to install it on Mac OS X</p>
+<h2 id="_3-pack-shimakazego-as-a-os-x-app"> 3. Pack ShimakazeGo as a OS X APP</h2>
+<p><strong>This section is pretty important</strong>.</p>
+<p>The ShimakazeGo developer offer a shell scipt to start the program.</p>
+<p>Therefore, it's very easy to convert it to a application by using <strong>Automator</strong>, a convient and easy-to-use app buliding tool on Mac OS X.</p>
+<p>Open Automator, choose the <strong>Application</strong> and serch for <strong>Run Apple Script</strong> at the search bar.</p>
+<p>And then paste this script inside the input frame.</p>
+<div><pre><code>on run
+	do shell script &quot;/path/to/the/ShimakazeGo/run_mac &gt; /dev/null 2&gt;&amp;1 &amp;&quot;
+	quit
+end run
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>Save the App, copy to your <code>/Application</code> and close the Automator, using a text editor, such as vim to open the <strong>run_mac</strong> script and <strong>delete the last two line</strong></p>
+<p>The script will appear like this</p>
+<div><pre><code>#!/bin/bash
+
+export LANG=&quot;zh-CN.UTF-8&quot;
+export LC_ALL=&quot;zh-CN.UTF-8&quot;
+
+defaults write mono NSAppSleepDisabled -bool YES
+
+MONO_LIB=/Library/Frameworks/Mono.framework/Versions/Current/bin/mono
+
+dir=$(dirname ${BASH_SOURCE:-$0})
+$MONO_LIB $dir/ShimakazeGo.exe &gt; /dev/null &amp;
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>And done. Start the app and you will see the ShimakazeGo window.</p>
+<h2 id="_4-supplement-change-app-icon"> 4. Supplement: Change App Icon</h2>
+<p>The app that we generate will come with a default Automator icon like a robot.
+Some people may dislike it and want to changge to another icon.
+It is very easy, <strong>just follow these instructions</strong>:</p>
+<ol>
+<li>Open the App info window(<code>cmd + i</code>)</li>
+<li>Open the icon img you want to replace with.</li>
+<li>Select the whole img(<code>cmd + a</code>) and copy(<code>cmd + c</code>)</li>
+<li>Click the icon inside the App info window, and paste(<code>cmd + v</code>)</li>
+<li>Done!</li>
+</ol>
+<h2 id="_5-install-poi"> 5. Install Poi</h2>
+<p>Poi is a Scalable KanColle browser and tool.
+Due to using the web techology, it is <strong>totally cross-platform</strong></p>
+<p>Here is the <a href="https://github.com/poooi/poi" target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -22222,69 +22064,6 @@ Categories= # The categories
 </tr>
 </table>
 <p>Special: Jetbrains' IDEs using <strong>Robono Mono for powerline</strong></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>OS X Using ShimakazeGo + Poi to play kancolle</title>
-      <link>https://wafer.li/blog-corners/old-inventory/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</link>
-      <guid>https://wafer.li/blog-corners/old-inventory/Kancolle/OS%20X%20Using%20ShimakazeGo%20+%20Poi%20to%20play%20kancolle/</guid>
-      <source url="https://wafer.li/rss.xml">OS X Using ShimakazeGo + Poi to play kancolle</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-intro&amp;quot;&amp;gt; 1. Intro&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;This is the instruction of how to bulid a kancolle playing enviroment in Mac OS X.&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;My current OS X version is 10.11&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;Necessary tools: Automator&amp;lt;/p&amp;gt;
-</description>
-      <category>Kancolle</category>
-      <pubDate>Fri, 14 Oct 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-intro"> 1. Intro</h2>
-<p>This is the instruction of how to bulid a kancolle playing enviroment in Mac OS X.</p>
-<p>My current OS X version is 10.11</p>
-<p>Necessary tools: Automator</p>
-
-<h2 id="_2-install-shimakazego"> 2. Install ShimakazeGo</h2>
-<p>ShimakazeGo is a proxy for playing Kancolle. Because DMM has banned the IP addresses of foreigners, you need to use a proxy to connect to the game site.</p>
-<p>Here is the <a href="http://unlockacgweb.galstars.net/" target="_blank" rel="noopener noreferrer">ShimakazeGo official site</a>. There is a instruction how to install it on Mac OS X</p>
-<h2 id="_3-pack-shimakazego-as-a-os-x-app"> 3. Pack ShimakazeGo as a OS X APP</h2>
-<p><strong>This section is pretty important</strong>.</p>
-<p>The ShimakazeGo developer offer a shell scipt to start the program.</p>
-<p>Therefore, it's very easy to convert it to a application by using <strong>Automator</strong>, a convient and easy-to-use app buliding tool on Mac OS X.</p>
-<p>Open Automator, choose the <strong>Application</strong> and serch for <strong>Run Apple Script</strong> at the search bar.</p>
-<p>And then paste this script inside the input frame.</p>
-<div><pre><code>on run
-	do shell script &quot;/path/to/the/ShimakazeGo/run_mac &gt; /dev/null 2&gt;&amp;1 &amp;&quot;
-	quit
-end run
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>Save the App, copy to your <code>/Application</code> and close the Automator, using a text editor, such as vim to open the <strong>run_mac</strong> script and <strong>delete the last two line</strong></p>
-<p>The script will appear like this</p>
-<div><pre><code>#!/bin/bash
-
-export LANG=&quot;zh-CN.UTF-8&quot;
-export LC_ALL=&quot;zh-CN.UTF-8&quot;
-
-defaults write mono NSAppSleepDisabled -bool YES
-
-MONO_LIB=/Library/Frameworks/Mono.framework/Versions/Current/bin/mono
-
-dir=$(dirname ${BASH_SOURCE:-$0})
-$MONO_LIB $dir/ShimakazeGo.exe &gt; /dev/null &amp;
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>And done. Start the app and you will see the ShimakazeGo window.</p>
-<h2 id="_4-supplement-change-app-icon"> 4. Supplement: Change App Icon</h2>
-<p>The app that we generate will come with a default Automator icon like a robot.
-Some people may dislike it and want to changge to another icon.
-It is very easy, <strong>just follow these instructions</strong>:</p>
-<ol>
-<li>Open the App info window(<code>cmd + i</code>)</li>
-<li>Open the icon img you want to replace with.</li>
-<li>Select the whole img(<code>cmd + a</code>) and copy(<code>cmd + c</code>)</li>
-<li>Click the icon inside the App info window, and paste(<code>cmd + v</code>)</li>
-<li>Done!</li>
-</ol>
-<h2 id="_5-install-poi"> 5. Install Poi</h2>
-<p>Poi is a Scalable KanColle browser and tool.
-Due to using the web techology, it is <strong>totally cross-platform</strong></p>
-<p>Here is the <a href="https://github.com/poooi/poi" target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -26318,7 +26097,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>Rxjava</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>Rxjava，是一个响应式的(Reactive)，基于观察者模式的异步框架。</p>
 <p>除此之外，还有其他的 RxScala 和 RxSwift 等。</p>
 <blockquote>
@@ -26478,7 +26257,7 @@ onsubscribe end
       <description>&amp;lt;p&amp;gt;Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。&amp;lt;/p&amp;gt;
 </description>
       <category>Solidity</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。</p>
 
 <h2 id="_1-区块链基础知识"> 1. 区块链基础知识</h2>
@@ -26789,15 +26568,6 @@ z 轴垂直对齐于屏幕，正轴指向屏幕外侧。</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>旧文仓库</title>
-      <link>https://wafer.li/blog-corners/old-inventory/</link>
-      <guid>https://wafer.li/blog-corners/old-inventory/</guid>
-      <source url="https://wafer.li/rss.xml">旧文仓库</source>
-      <pubDate>Fri, 09 Jul 2021 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>原先(2020年)以前写的一些文章，质量不太高，因此就直接放这里堆着。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Material Design 高度和阴影</title>
       <link>https://wafer.li/blog-corners/old-inventory/material-design/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</link>
       <guid>https://wafer.li/blog-corners/old-inventory/material-design/Material%20Design%20%E9%AB%98%E5%BA%A6%E5%92%8C%E9%98%B4%E5%BD%B1/</guid>
@@ -26997,6 +26767,15 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
       <enclosure url="https://ooo.0o0.ooo/2016/10/25/580f985cb48ba.png" type="image/png"/>
     </item>
     <item>
+      <title>旧文仓库</title>
+      <link>https://wafer.li/blog-corners/old-inventory/</link>
+      <guid>https://wafer.li/blog-corners/old-inventory/</guid>
+      <source url="https://wafer.li/rss.xml">旧文仓库</source>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>原先(2020年)以前写的一些文章，质量不太高，因此就直接放这里堆着。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>LeetCode 笔记之——837. 新 21 点</title>
       <link>https://wafer.li/blog-corners/rollroll/algo/leetcode/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/</link>
       <guid>https://wafer.li/blog-corners/rollroll/algo/leetcode/leetcode-%E7%AC%94%E8%AE%B0%E4%B9%8B%E2%80%94%E2%80%94837-%E6%96%B0-21-%E7%82%B9/</guid>
@@ -27007,7 +26786,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
 &amp;lt;p&amp;gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&amp;lt;/p&amp;gt;
 </description>
       <category>LeetCode</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="https://leetcode-cn.com/problems/new-21-game" target="_blank" rel="noopener noreferrer">题目</a></p>
 <p>爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：</p>
 <p>爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 <code>[1, W]</code> 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。</p>
@@ -27134,7 +26913,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
       <description>&amp;lt;p&amp;gt;折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯&amp;lt;/p&amp;gt;
 </description>
       <category>面试经验</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯</p>
 
 <h2 id="_1-ihandy"> 1. iHandy</h2>
@@ -27266,7 +27045,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;本文基于&amp;lt;a href=&amp;quot;https://stackoverflow.com/a/31401836&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;这个 StackOverflow 回答&amp;lt;/a&amp;gt;进一步推导，并给出详细解答步骤&amp;lt;/p&amp;gt;
 </description>
       <category>面试经验</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前看各大面经的时候搜索到了这个问题，切实感觉到如果刨根问底的问，自己还真不能抵挡住这种攻势，现在闲暇时间又心血来潮地想起来这个问题，就打算好好弄懂弄透，也希望能在将来面试的时候做好准备。</p>
 <p>本文基于<a href="https://stackoverflow.com/a/31401836" target="_blank" rel="noopener noreferrer">这个 StackOverflow 回答</a>进一步推导，并给出详细解答步骤</p>
 
@@ -27336,48 +27115,6 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 ]]></content:encoded>
     </item>
     <item>
-      <title>ofo 使用体验</title>
-      <link>https://wafer.li/blog-corners/talk/ofo%20%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</link>
-      <guid>https://wafer.li/blog-corners/talk/ofo%20%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</guid>
-      <source url="https://wafer.li/rss.xml">ofo 使用体验</source>
-      <description>&amp;lt;p&amp;gt;最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。&amp;lt;/p&amp;gt;
-</description>
-      <category>杂谈</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
-      <content:encoded><![CDATA[<p>最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；</p>
-<p>ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；</p>
-<p>但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。</p>
-
-<h2 id="_1-校园认证"> 1. 校园认证</h2>
-<p>就比如说 ofo 的校园认证，的确对我等大学生有很大的优惠；</p>
-<p>但是，当你校园认证不通过，而你急着用车，去进行了普通认证，那么：</p>
-<p><strong>你就再也不能进行校园认证了!</strong></p>
-<p>明明就是一个很容易考虑到的 Corner Case，可是 ofo 却没有处理好；</p>
-<p>看来 ofo 还需要多招几个测试大牛。</p>
-<h2 id="_2-客服电话"> 2. 客服电话</h2>
-<p>APP 上解决不了的问题，一般的用户就会想着去联系客服解决；</p>
-<p>在这里我不得不说一声 MMP，ofo 的客服电话三天两头打不通；</p>
-<p>在半个小时之内，我连续向其拨打了 12 通电话；但是，只有 3 通是能接通的。</p>
-<p>第一通电话接通之后，首先是让我退押金，然后再打电话；</p>
-<blockquote>
-<p>这也无可厚非，毕竟银行信用卡激活就是这么要求的</p>
-</blockquote>
-<p>第二通电话，就有点莫名其妙了，首先接话员连普通话也说不标准；</p>
-<p>然后说没有权限恢复我的认证状态，在经过多次撕逼之后，让我去找一个微信号去解决；</p>
-<p>结果这个微信号居然是个  <strong>异常号！</strong></p>
-<p>第三通电话之后，告诉我，你还有余额没有退，所以不能给你恢复认证状态。</p>
-<p>结果呢？帮我申请了余额退款，说要到账之后才能进行下一步的操作。</p>
-<p>所以就导致我现在，没有押金，余额还在银行流转，所以小黄车就不关我什么事了。</p>
-<h2 id="_3-总结"> 3. 总结</h2>
-<p>可以看出，就是因为一个没有考虑到的 Corner Case ，现在我只能去骑 mobike;</p>
-<p>想到当年即使是写小学期项目，也要跟队员讨论个大半天的 Corner Case 才开始着手编码；</p>
-<p>可能这就是互联网 APP 泡沫生态的现状吧：</p>
-<p>大家都去抢功能，让功能尽早上线，剩下的维护啊支持啊，都可以往后边放一放。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Realforce 87u</title>
       <link>https://wafer.li/blog-corners/talk/Realforce%2087u/</link>
       <guid>https://wafer.li/blog-corners/talk/Realforce%2087u/</guid>
@@ -27387,7 +27124,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;2018/1/8 更新部分内容&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近终于下定决心来买这个键盘了。</p>
 <p>主要说说使用感受吧</p>
 <p>2018/1/8 更新部分内容</p>
@@ -27453,6 +27190,48 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <enclosure url="https://ww1.sinaimg.cn/large/006tNbRwly1feindhtm6kj318g0zoagn.jpg" type="image/jpeg"/>
     </item>
     <item>
+      <title>ofo 使用体验</title>
+      <link>https://wafer.li/blog-corners/talk/ofo%20%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</link>
+      <guid>https://wafer.li/blog-corners/talk/ofo%20%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</guid>
+      <source url="https://wafer.li/rss.xml">ofo 使用体验</source>
+      <description>&amp;lt;p&amp;gt;最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。&amp;lt;/p&amp;gt;
+</description>
+      <category>杂谈</category>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
+      <content:encoded><![CDATA[<p>最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；</p>
+<p>ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；</p>
+<p>但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。</p>
+
+<h2 id="_1-校园认证"> 1. 校园认证</h2>
+<p>就比如说 ofo 的校园认证，的确对我等大学生有很大的优惠；</p>
+<p>但是，当你校园认证不通过，而你急着用车，去进行了普通认证，那么：</p>
+<p><strong>你就再也不能进行校园认证了!</strong></p>
+<p>明明就是一个很容易考虑到的 Corner Case，可是 ofo 却没有处理好；</p>
+<p>看来 ofo 还需要多招几个测试大牛。</p>
+<h2 id="_2-客服电话"> 2. 客服电话</h2>
+<p>APP 上解决不了的问题，一般的用户就会想着去联系客服解决；</p>
+<p>在这里我不得不说一声 MMP，ofo 的客服电话三天两头打不通；</p>
+<p>在半个小时之内，我连续向其拨打了 12 通电话；但是，只有 3 通是能接通的。</p>
+<p>第一通电话接通之后，首先是让我退押金，然后再打电话；</p>
+<blockquote>
+<p>这也无可厚非，毕竟银行信用卡激活就是这么要求的</p>
+</blockquote>
+<p>第二通电话，就有点莫名其妙了，首先接话员连普通话也说不标准；</p>
+<p>然后说没有权限恢复我的认证状态，在经过多次撕逼之后，让我去找一个微信号去解决；</p>
+<p>结果这个微信号居然是个  <strong>异常号！</strong></p>
+<p>第三通电话之后，告诉我，你还有余额没有退，所以不能给你恢复认证状态。</p>
+<p>结果呢？帮我申请了余额退款，说要到账之后才能进行下一步的操作。</p>
+<p>所以就导致我现在，没有押金，余额还在银行流转，所以小黄车就不关我什么事了。</p>
+<h2 id="_3-总结"> 3. 总结</h2>
+<p>可以看出，就是因为一个没有考虑到的 Corner Case ，现在我只能去骑 mobike;</p>
+<p>想到当年即使是写小学期项目，也要跟队员讨论个大半天的 Corner Case 才开始着手编码；</p>
+<p>可能这就是互联网 APP 泡沫生态的现状吧：</p>
+<p>大家都去抢功能，让功能尽早上线，剩下的维护啊支持啊，都可以往后边放一放。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>杂谈</title>
       <link>https://wafer.li/blog-corners/talk/</link>
       <guid>https://wafer.li/blog-corners/talk/</guid>
@@ -27468,7 +27247,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <guid>https://wafer.li/blog-corners/talk/%E6%89%93%E5%AD%97%E8%AE%AD%E7%BB%83%E7%BD%91%E7%AB%99/</guid>
       <source url="https://wafer.li/rss.xml">打字训练网站</source>
       <category>杂谈</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>买了新键盘之后就想试一试它的威力，所以就找了一个打字训练网站来打字；</p>
 <p>在知乎上找了一圈，结果就找到了 <a href="http://www.keybr.com/practice" target="_blank" rel="noopener noreferrer">这个</a>；</p>
 <p>练了一圈的感受就是： <strong>左手好累啊！！！</strong></p>
@@ -27489,7 +27268,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;内有剧透，慎点&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近这部 FD 发售之后就忍不住玩了一下；</p>
 <p>会结合本篇《近月少女的礼仪 2》(月に寄りそう乙女の作法２)　来谈一谈感想；</p>
 <p>内有剧透，慎点</p>
@@ -27577,7 +27356,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;因此，这里就来介绍一种我在之前的公司所使用的用于解决单个界面功能过于复杂的 MVVM 架构。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>Android App 的技术架构经过多年演进之后，形成了目前 Google 在 Jetpack 中推崇的 MVVM 架构。</p>
 <p>但是 Google 官方推崇的 MVVM 是多界面的 MVVM，即多个界面在同一个功能模块中，UI、数据如何进行组合的问题；</p>
 <p>而现在的 Android App 基本上是大而全的，特别是直播系的 App，有时候单单一个直播 Activity 就有十几二十个功能点，假如采用 Google 的 MVVM 解决方案，就会造成单个 Activity 过于臃肿的问题，这和 Google 多年来想解决的 Activity 膨胀问题是相互矛盾的。</p>
@@ -27724,6 +27503,45 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 <Mermaid id="mermaid-64a55a5a" data-code="graph%20TB%0A%20%20subgraph%20%E7%95%8C%E9%9D%A2%E5%B1%82%20Activity%0A%20%20%20%20UseCase1%20--%3E%20ViewModel1%0A%20%20%20%20UseCase1%20--%3E%20ViewModel2%0A%20%20%20%20UseCase2%20--%3E%20ViewModel1%0A%20%20%20%20UseCase2%20--%3E%20ViewModel2%0A%20%20end%0A%20%20subgraph%20%E6%95%B0%E6%8D%AE%E5%B1%82%20Module%20Manager%0A%20%20%20%20FunctionManager1%0A%20%20%20%20FunctionManager2%0A%20%20end%0A%20%20ViewModel1%20--%3E%20FunctionManager1%0A%20%20ViewModel2%20--%3E%20FunctionManager2%0A"></Mermaid>]]></content:encoded>
     </item>
     <item>
+      <title>Android 单界面多功能点 MVVM 架构（二）</title>
+      <link>https://wafer.li/blog-corners/tech/android/arch/android-%E5%8D%95%E7%95%8C%E9%9D%A2%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%82%B9-mvvm-%E6%9E%B6%E6%9E%84%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
+      <guid>https://wafer.li/blog-corners/tech/android/arch/android-%E5%8D%95%E7%95%8C%E9%9D%A2%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%82%B9-mvvm-%E6%9E%B6%E6%9E%84%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
+      <source url="https://wafer.li/rss.xml">Android 单界面多功能点 MVVM 架构（二）</source>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;/blog-corners/tech/android/arch/android-%E5%8D%95%E7%95%8C%E9%9D%A2%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%82%B9-mvvm-%E6%9E%B6%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89&amp;quot;&amp;gt;上文&amp;lt;/a&amp;gt;  提出了一种单界面多功能点的 MVVM 架构，但是尚存在一点问题，就是当某个特定的事件需要多个 UseCase 进行响应的问题。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;例如直播的送礼物事件，需要礼物动画和送礼物的列表同时进行变化，在这里针对这个问题提出解决办法。&amp;lt;/p&amp;gt;
+</description>
+      <category>Android</category>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
+      <content:encoded><![CDATA[<p><a href="/blog-corners/tech/android/arch/android-%E5%8D%95%E7%95%8C%E9%9D%A2%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%82%B9-mvvm-%E6%9E%B6%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89">上文</a>  提出了一种单界面多功能点的 MVVM 架构，但是尚存在一点问题，就是当某个特定的事件需要多个 UseCase 进行响应的问题。</p>
+<p>例如直播的送礼物事件，需要礼物动画和送礼物的列表同时进行变化，在这里针对这个问题提出解决办法。</p>
+
+<h2 id="_1-从需求分析"> 1. 从需求分析</h2>
+<p>我们可以从这个需求分析一下我们需要一些什么样的功能来实现我们这个需求。</p>
+<p>首先，针对于 UseCase 之间的活动，我们可以通过他们的 ViewModel 对它们予以操控；因此，我们所提出的概念应该具备调用多个 ViewModel 的能力。</p>
+<p>其次，这种跨 UseCase 的事件的发源地我们是无法确定的，它实际上和产品需求有关；因此，我们所提出的概念应该能够在多个 UseCase 获取到。</p>
+<p>最后，它应该能处理 View 的生命周期问题，当 View 的生命周期结束时，它应当消除和它相关的一些变量等。</p>
+<p>从这几点分析上来看，我们可以得出，我们需要的这个东西应当是一种<strong>ViewModel</strong>；</p>
+<p>而这种 ViewModel 具备操作多个其他 ViewModel 的能力。</p>
+<h2 id="_2-viewmodelmanager"> 2. ViewModelManager</h2>
+<p>于是乎，我们为这个概念取名为 <code>ViewModelManager</code>；</p>
+<p>首先，它继承于 <code>ViewModel</code>；</p>
+<p>然后，通过给它传入 <code>ViewModelProvider</code>，我们就可以通过这个 Provider 去获取各类 ViewModel 的实例。</p>
+<p>由于 <code>ViewModelManager</code> 是 ViewModel，那么它自然而然的能处理生命周期；</p>
+<p>最后，为了能让多个 UseCase 能够获取到 <code>ViewModelManager</code>，我们需要给 UseCase 提供一个特殊的 <strong>ViewModelProvider</strong>，在这里称为 <code>viewModelManagerProvider</code>。</p>
+<p><code>ViewModelProvider</code> 是通过传入所需的 <code>ViewModel</code> 的 <code>Class</code> 来获取对应的 ViewModel 的实例的类；</p>
+<p>具体来说，它在接收到 <code>ViewModel</code> 的 <code>Class</code> 之后，会从它的 <code>ViewModelStore</code> 中获取对应的 <code>ViewModel</code>；</p>
+<p>如果没获取到，那么会使用 <code>ViewModelProvider.Factory</code> 来对 ViewModel 进行构建。</p>
+<p>所以，我们需要为 <code>ViewModelManager</code> 提供一个能够构造它的 <code>Provider.Factory</code>；</p>
+<p>针对这一步，我们直接照抄 <code>ViewModelProvider.Factory</code> 的源码，再注入 <code>ViewModelProvider</code> 即可。</p>
+<p>那么通过构造 <code>viewModelManagerProvider</code>，我们就实现了在各个 UseCase 都能获取到某个 <code>ViewModelManager</code> 的功能。</p>
+<div><p>提示</p>
+<p>这里有个小坑点，由于默认的 <code>ViewModelProvider.Factory</code> 是通过 <strong>反射</strong> 构建新的 ViewModel 的；</p>
+<p>因此，我们需要对 <code>ViewModelManagerProviderFactory</code> 配置混淆，让其构造函数不要被混淆处理，否则反射调用将会失败造成崩溃。</p>
+</div>
+<h2 id="_3-架构图"> 3. 架构图</h2>
+<Mermaid id="mermaid-382ee204" data-code="classDiagram%0A%20%20%20%20class%20ViewModel%20%7B%0A%0A%20%20%20%20%7D%0A%0A%20%20%20%20class%20ViewModelManager%20%7B%0A%20%20%20%20%20%20%2F%2F%20%E7%94%A8%E4%BA%8E%E8%8E%B7%E5%8F%96%E5%85%B6%E4%BB%96%20ViewModel%0A%20%20%20%20%20%20%23viewModelProvider%3A%20ViewModelProvider%0A%20%20%20%20%7D%0A%0A%20%20%20%20ViewModel%20%3C%7C--%20ViewModelManager%0A%0A%20%20%20%20class%20UseCase%20%7B%0A%20%20%20%20%20%20%2B%20viewModelManagerProvider%3A%20ViewModelProvider%0A%20%20%20%20%7D%0A%0A%20%20%20%20UseCase%20--%3E%20ViewModelManager%20%3A%20%E4%BD%BF%E7%94%A8%20viewModelManagerProvider%20%E8%8E%B7%E5%8F%96%0A"></Mermaid>]]></content:encoded>
+    </item>
+    <item>
       <title>ItemDecoration 实战之 GirdSpacingItemDecoration（一）</title>
       <link>https://wafer.li/blog-corners/tech/android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89/</link>
       <guid>https://wafer.li/blog-corners/tech/android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
@@ -27734,7 +27552,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;</p>
 <p>很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。</p>
 <p>当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的<a href="https://www.jianshu.com/p/f41db270d5fe" target="_blank" rel="noopener noreferrer">参考文章</a>，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。</p>
@@ -27801,7 +27619,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="/blog-corners/tech/android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89">上文</a>说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 <strong>公式法</strong> 来对所有四个方向的 offset 进行计算，由此可以大大简化 <code>itemOffset</code> 的计算，同时也天然的支持 RTL。</p>
 <p>但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；</p>
 <p>上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。</p>
@@ -27856,7 +27674,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <description>&amp;lt;p&amp;gt;最近准备入门音视频开发，就学习内容做一下笔记吧&amp;lt;/p&amp;gt;
 </description>
       <category>音视频开发</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近准备入门音视频开发，就学习内容做一下笔记吧</p>
 
 <h2 id="_1-声音的物理相关概念"> 1. 声音的物理相关概念</h2>
@@ -28209,7 +28027,7 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 &amp;lt;p&amp;gt;鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近在迁移到 AndroidX 之后一直折腾 TDD 的事情，也遇到了大的小的不少坑点；</p>
 <p>鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。</p>
 
@@ -28402,7 +28220,7 @@ tintColorRes <span>=</span> typedValue<span>.</span>resourceId
 &amp;lt;p&amp;gt;本篇文章就来着重说说其中的原理。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="./../android-测试坑点详解（一）/">上篇文章</a>我们说到如果你的 VectorDrawable 如果采用一个带 <code>&lt;selector&gt;</code> 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。</p>
 <p>本篇文章就来着重说说其中的原理。</p>
 
@@ -28724,7 +28542,7 @@ API 24 之后可以匹配到和语言最为接近的本地化内容；
 &amp;lt;p&amp;gt;结果显然是我太拿衣服了&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？</p>
 <p>结果显然是我太拿衣服了</p>
 
@@ -28779,7 +28597,7 @@ API 24 之后可以匹配到和语言最为接近的本地化内容；
       <description>&amp;lt;p&amp;gt;最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  &amp;lt;code&amp;gt;IllegalStateException&amp;lt;/code&amp;gt;，其中的 &amp;lt;code&amp;gt;message&amp;lt;/code&amp;gt; 就是我们的标题。&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;这个问题还得从 JDK 1.7 开始说起。&amp;lt;/p&amp;gt;
 </description>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  <code>IllegalStateException</code>，其中的 <code>message</code> 就是我们的标题。</p>
 <p>这个问题还得从 JDK 1.7 开始说起。</p>
 
@@ -28856,7 +28674,7 @@ compare(-1, Int.MAX_VAL) = -1 - Int.MAX_VAL = -2147483648 &lt; 0
 &amp;lt;p&amp;gt;于是，就开始了艰难的调试过程&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。</p>
 <p>当一切都配置好，点下 build App 的时候，却出现了 <code>There were failing tests.</code>。</p>
 <p>我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？</p>
@@ -28942,7 +28760,7 @@ We recommend <strong>turning off Instant Run</strong> in the settings for earlie
 &amp;lt;p&amp;gt;但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>如果你开发过稍微有点体量的 Android App，都会因为越来越多的 Gradle 依赖而头疼。</p>
 <p>一个 App 的编译依赖少则十几项，多则几十项，如果再加上多 module，那么依赖的统一管理就很重要了。</p>
 <p>但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。</p>
@@ -29091,7 +28909,7 @@ plugins <span>{</span>
 &amp;lt;p&amp;gt;原文：&amp;lt;a href=&amp;quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。</p>
 <p>原文：<a href="https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f" target="_blank" rel="noopener noreferrer">Migrating Gradle to Kotlin DSL in Android Studio 3.3</a></p>
 
@@ -29241,67 +29059,6 @@ repositories <span>{</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Hexo Experience</title>
-      <link>https://wafer.li/blog-corners/tech/tinkering/hexo/Hexo%20Experience/</link>
-      <guid>https://wafer.li/blog-corners/tech/tinkering/hexo/Hexo%20Experience/</guid>
-      <source url="https://wafer.li/rss.xml">Hexo Experience</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-简介&amp;quot;&amp;gt; 1. 简介&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;这是我折腾 Hexo 博客框架的经验；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;希望能给后来者以启迪。&amp;lt;/p&amp;gt;
-</description>
-      <category>Hexo</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-简介"> 1. 简介</h2>
-<p>这是我折腾 Hexo 博客框架的经验；</p>
-<p>希望能给后来者以启迪。</p>
-
-<h2 id="_2-我所需要的功能"> 2. 我所需要的功能</h2>
-<p>虽然，现今，网上已经很多教你如何一步一步地搭建 Hexo 博客，也有很多人踩过很多坑；</p>
-<p>不过，对于我的一些要求，仍然有很多的方面未能解决。</p>
-<p>我主要需要的功能一共有四个：</p>
-<ol>
-<li>数学公式渲染</li>
-<li>PlantUML 图</li>
-<li>TODO List</li>
-<li>Footnotes</li>
-</ol>
-<h2 id="_3-数学公式渲染"> 3. 数学公式渲染</h2>
-<p>这个倒是有很多人发了很多博客，然后也解决了一些问题。</p>
-<p>主要就是 <a href="https://www.npmjs.com/package/hexo-renderer-marked" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-marked</code></a> 中，把 MathJax 中的 <code>_</code> 解析渲染成了斜体；</p>
-<p>这样，就造成了解析错误；</p>
-<p>同时，对于多行的数学公式，也存在很多问题。</p>
-<p>经过一番倒腾，我的最终决定是使用 <a href="https://www.npmjs.com/package/hexo-renderer-kramed" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-karmed</code></a> 代替原先官方自带的 <a href="https://www.npmjs.com/package/hexo-renderer-marked" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-marked</code></a></p>
-<p>对于另外的渲染器，它们主要的缺点有：</p>
-<ul>
-<li><a href="https://www.npmjs.com/package/hexo-renderer-pandoc" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-pandoc</code></a> 过于沉重</li>
-<li><a href="https://www.npmjs.com/package/hexo-renderer-markdown-it" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-markdown-it</code></a> 不支持 NexT 主题的 『Read More』</li>
-</ul>
-<p>所以，最后选择使用 <a href="https://www.npmjs.com/package/hexo-renderer-markdown-it" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-karmed</code></a>；</p>
-<p>不过这个插件在某些时候也存在问题；</p>
-<p>在<a href="http://xudongyang.coding.me/math-in-hexo/" target="_blank" rel="noopener noreferrer">这里</a>有一个 workaround</p>
-<h2 id="_4-plantuml"> 4. PlantUML</h2>
-<p>平时我主要使用的 UML 绘图工具就是这个；</p>
-<p>主要是因为我用 Atom 上面的 <code>markdown-preview-enhanced</code> 能够实时展现 PlantUML 图。</p>
-<p>Hexo 插件列表中，也存在一个 PlantUML 的插件，<code>hexo-tag-plantuml</code>；</p>
-<p>不过这个是 <code>tag</code> 插件，如果使用这个的话，我就需要使用标签来定义 UML；</p>
-<p>而不能使用 markdown 原生的 code fence；</p>
-<p>此时，我的 <code>markdown-preview-enhanced</code> 也会不起作用；</p>
-<p>所以就只能自造轮子：自己实现了一个 <code>filter</code> 插件，用来将 code fence 转换成 PlantUML 图。</p>
-<p>插件源码在<a href="https://github.com/wafer-li/hexo-filter-plantuml" target="_blank" rel="noopener noreferrer">这里</a></p>
-<h2 id="_5-todo-list"> 5. TODO List</h2>
-<p>这个是比较神奇的：</p>
-<p>之前选择的 <code>kramed</code> 没有这个功能，而 <code>marked</code> 有这个功能；</p>
-<p>不过幸好代码量不多，可以直接将 <a href="https://github.com/hexojs/hexo-renderer-marked/pull/32" target="_blank" rel="noopener noreferrer">PR</a> 中的改动合并到 <code>kramed</code> 中。</p>
-<h2 id="_6-footnotes"> 6. Footnotes</h2>
-<p>这个实际上是一个 Reference 的功能；</p>
-<p>这个是目前最容易而且也没有坑的；</p>
-<p>直接安装 <a href="https://www.npmjs.com/package/hexo-reference" target="_blank" rel="noopener noreferrer"><code>hexo-reference</code></a> 插件即可。</p>
-<h2 id="参考链接"> 参考链接</h2>
-<p><a href="http://ijiaober.github.io/categories/hexo/" target="_blank" rel="noopener noreferrer">Goon X 的 Hexo 合集</a></p>
-<p><a href="http://2wildkids.com/2016/10/06/%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86Hexo%E5%92%8CMathJax%E7%9A%84%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" target="_blank" rel="noopener noreferrer">如何处理Hexo和MathJax的兼容问题</a></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>GPG + Yubikey 4 折腾手记</title>
       <link>https://wafer.li/blog-corners/tech/tinkering/gpg/GPG%20+%20Yubikey%204%20%E6%8A%98%E8%85%BE%E6%89%8B%E8%AE%B0/</link>
       <guid>https://wafer.li/blog-corners/tech/tinkering/gpg/GPG%20+%20Yubikey%204%20%E6%8A%98%E8%85%BE%E6%89%8B%E8%AE%B0/</guid>
@@ -29312,7 +29069,7 @@ repositories <span>{</span>
 &amp;lt;p&amp;gt;这里就写写我折腾过程中遇到的坑，前车之鉴，后事之师。&amp;lt;/p&amp;gt;
 </description>
       <category>GPG</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>GPG 相信很多人都折腾过，Yubikey 也有很多人买过；</p>
 <p>但是好像只有老外折腾过 Yubikey + GPG 的；</p>
 <p>最近刚折腾完毕，因为自己不慎还把一个老钥匙搞丢了，现在只能随它去了；</p>
@@ -29517,6 +29274,67 @@ RSA 密钥可能的操作：签名 加密 认证
       <enclosure url="https://ws1.sinaimg.cn/large/006tNc79ly1fnppmejbx9j307b06ft8m.jpg" type="image/jpeg"/>
     </item>
     <item>
+      <title>Hexo Experience</title>
+      <link>https://wafer.li/blog-corners/tech/tinkering/hexo/Hexo%20Experience/</link>
+      <guid>https://wafer.li/blog-corners/tech/tinkering/hexo/Hexo%20Experience/</guid>
+      <source url="https://wafer.li/rss.xml">Hexo Experience</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-简介&amp;quot;&amp;gt; 1. 简介&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;这是我折腾 Hexo 博客框架的经验；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;希望能给后来者以启迪。&amp;lt;/p&amp;gt;
+</description>
+      <category>Hexo</category>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-简介"> 1. 简介</h2>
+<p>这是我折腾 Hexo 博客框架的经验；</p>
+<p>希望能给后来者以启迪。</p>
+
+<h2 id="_2-我所需要的功能"> 2. 我所需要的功能</h2>
+<p>虽然，现今，网上已经很多教你如何一步一步地搭建 Hexo 博客，也有很多人踩过很多坑；</p>
+<p>不过，对于我的一些要求，仍然有很多的方面未能解决。</p>
+<p>我主要需要的功能一共有四个：</p>
+<ol>
+<li>数学公式渲染</li>
+<li>PlantUML 图</li>
+<li>TODO List</li>
+<li>Footnotes</li>
+</ol>
+<h2 id="_3-数学公式渲染"> 3. 数学公式渲染</h2>
+<p>这个倒是有很多人发了很多博客，然后也解决了一些问题。</p>
+<p>主要就是 <a href="https://www.npmjs.com/package/hexo-renderer-marked" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-marked</code></a> 中，把 MathJax 中的 <code>_</code> 解析渲染成了斜体；</p>
+<p>这样，就造成了解析错误；</p>
+<p>同时，对于多行的数学公式，也存在很多问题。</p>
+<p>经过一番倒腾，我的最终决定是使用 <a href="https://www.npmjs.com/package/hexo-renderer-kramed" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-karmed</code></a> 代替原先官方自带的 <a href="https://www.npmjs.com/package/hexo-renderer-marked" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-marked</code></a></p>
+<p>对于另外的渲染器，它们主要的缺点有：</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/hexo-renderer-pandoc" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-pandoc</code></a> 过于沉重</li>
+<li><a href="https://www.npmjs.com/package/hexo-renderer-markdown-it" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-markdown-it</code></a> 不支持 NexT 主题的 『Read More』</li>
+</ul>
+<p>所以，最后选择使用 <a href="https://www.npmjs.com/package/hexo-renderer-markdown-it" target="_blank" rel="noopener noreferrer"><code>hexo-renderer-karmed</code></a>；</p>
+<p>不过这个插件在某些时候也存在问题；</p>
+<p>在<a href="http://xudongyang.coding.me/math-in-hexo/" target="_blank" rel="noopener noreferrer">这里</a>有一个 workaround</p>
+<h2 id="_4-plantuml"> 4. PlantUML</h2>
+<p>平时我主要使用的 UML 绘图工具就是这个；</p>
+<p>主要是因为我用 Atom 上面的 <code>markdown-preview-enhanced</code> 能够实时展现 PlantUML 图。</p>
+<p>Hexo 插件列表中，也存在一个 PlantUML 的插件，<code>hexo-tag-plantuml</code>；</p>
+<p>不过这个是 <code>tag</code> 插件，如果使用这个的话，我就需要使用标签来定义 UML；</p>
+<p>而不能使用 markdown 原生的 code fence；</p>
+<p>此时，我的 <code>markdown-preview-enhanced</code> 也会不起作用；</p>
+<p>所以就只能自造轮子：自己实现了一个 <code>filter</code> 插件，用来将 code fence 转换成 PlantUML 图。</p>
+<p>插件源码在<a href="https://github.com/wafer-li/hexo-filter-plantuml" target="_blank" rel="noopener noreferrer">这里</a></p>
+<h2 id="_5-todo-list"> 5. TODO List</h2>
+<p>这个是比较神奇的：</p>
+<p>之前选择的 <code>kramed</code> 没有这个功能，而 <code>marked</code> 有这个功能；</p>
+<p>不过幸好代码量不多，可以直接将 <a href="https://github.com/hexojs/hexo-renderer-marked/pull/32" target="_blank" rel="noopener noreferrer">PR</a> 中的改动合并到 <code>kramed</code> 中。</p>
+<h2 id="_6-footnotes"> 6. Footnotes</h2>
+<p>这个实际上是一个 Reference 的功能；</p>
+<p>这个是目前最容易而且也没有坑的；</p>
+<p>直接安装 <a href="https://www.npmjs.com/package/hexo-reference" target="_blank" rel="noopener noreferrer"><code>hexo-reference</code></a> 插件即可。</p>
+<h2 id="参考链接"> 参考链接</h2>
+<p><a href="http://ijiaober.github.io/categories/hexo/" target="_blank" rel="noopener noreferrer">Goon X 的 Hexo 合集</a></p>
+<p><a href="http://2wildkids.com/2016/10/06/%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86Hexo%E5%92%8CMathJax%E7%9A%84%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" target="_blank" rel="noopener noreferrer">如何处理Hexo和MathJax的兼容问题</a></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Hexo 集成 Travis CI 自动部署博文</title>
       <link>https://wafer.li/blog-corners/tech/tinkering/hexo/Hexo%20%E9%9B%86%E6%88%90%20Travis%20CI%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E6%96%87/</link>
       <guid>https://wafer.li/blog-corners/tech/tinkering/hexo/Hexo%20%E9%9B%86%E6%88%90%20Travis%20CI%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E6%96%87/</guid>
@@ -29524,7 +29342,7 @@ RSA 密钥可能的操作：签名 加密 认证
       <description>&amp;lt;p&amp;gt;这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。</p>
 
 <h2 id="_1-为什么要用-ci-来部署博客"> 1. 为什么要用 CI 来部署博客</h2>
@@ -29751,7 +29569,7 @@ RSA 密钥可能的操作：签名 加密 认证
 &amp;lt;p&amp;gt;之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>本文着重介绍一下如何解决 Travis CI 在进行自动集成的时候，总是会更新旧博客的问题。</p>
 <p>之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。</p>
 
@@ -29934,7 +29752,7 @@ timestamp_file_list <span>=</span> <span>[</span><span>tuple</span><span>(</span
       <description>&amp;lt;p&amp;gt;最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。</p>
 
 <p>如图：
@@ -29958,7 +29776,7 @@ timestamp_file_list <span>=</span> <span>[</span><span>tuple</span><span>(</span
 &amp;lt;p&amp;gt;不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。&amp;lt;/p&amp;gt;
 </description>
       <category>Live</category>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；</p>
 <p>不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。</p>
 
@@ -30101,7 +29919,228 @@ python -m http.server
       <link>https://wafer.li/</link>
       <guid>https://wafer.li/</guid>
       <source url="https://wafer.li/rss.xml">博客主页</source>
-      <pubDate>Tue, 13 Jul 2021 15:56:28 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 04:00:04 GMT</pubDate>
+    </item>
+    <item>
+      <title>生成器模式(Builder Pattern)</title>
+      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</link>
+      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</guid>
+      <source url="https://wafer.li/rss.xml">生成器模式(Builder Pattern)</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;工厂模式的目标是利用多态，减少类之间的耦合度；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;而工厂模式不需要指导者。&amp;lt;/p&amp;gt;
+</description>
+      <category>《Head First 设计模式》笔记</category>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。</p>
+<p>工厂模式的目标是利用多态，减少类之间的耦合度；</p>
+<p>而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。</p>
+<p>同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；</p>
+<p>而工厂模式不需要指导者。</p>
+
+<h2 id="_2-结构类图"> 2. 结构类图</h2>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" alt="" /></p>
+<h2 id="_3-构造复杂产品"> 3. 构造复杂产品</h2>
+<p>所谓的复杂产品就是一个产品中有很多子类，而且每个子类都有相应的构造流程。</p>
+<p>例如，一个蛤蜊比萨，拥有面饼，酱料，芝士，蛤蜊等其他食材。</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
+    <span>Dough</span> dough<span>;</span>
+    <span>Sauce</span> sauce<span>;</span>
+    <span>Cheese</span> cheese<span>;</span>
+    <span>Clam</span> clam<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>对于这样一个复杂产品，我们就将其构造的过程委派给一个建造者(Builder)来完成。</p>
+<div><pre><code><span>public</span> <span>interface</span> <span>ClamPizzaBuilder</span> <span>{</span>
+    <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>)</span><span>;</span>
+    <span>ClamPizzaBuilder</span> <span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
+    <span>ClamPizzaBuilder</span> <span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
+    <span>ClamPizzaBuilder</span> <span>prepareClam</span><span>(</span><span>)</span><span>;</span>
+
+    <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span><span>;</span>
+<span>}</span>
+
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>然后，我们对接口进行实现。</p>
+<p>注意，这里有两种具体类的实现方法：</p>
+<ol>
+<li>
+<p>在构建实际建造者时，就 <strong>立即</strong> 创建一个 <strong>默认的产品对象</strong>；</p>
+</li>
+<li>
+<p>由实际建造者储存创建产品的参数，当调用 <code>build()</code> 方法时，才返回产品对象</p>
+</li>
+</ol>
+<p>在这里，需要指明的就是方法二更好；</p>
+<p>因为方法二符合语义，只有调用 <code>build()</code> 才真正的构建了对象；</p>
+<p>而且也适合于不可变对象（构造之后对象的属性不能发生改变）。</p>
+<p>方法一：</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
+<span>{</span>
+    <span>ClamPizza</span> clamPizza <span>=</span> <span>null</span><span>;</span>
+
+    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
+        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
+        <span>// 准备面团，可以直接放入，也可以进行处理后放入</span>
+        <span>return</span> <span>this</span><span>;</span>
+    <span>}</span>
+
+    <span>//  剩下的 prepare 方法</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
+        <span>return</span> clamPizza<span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><p>方法二：</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
+    <span>// fields</span>
+
+    <span>public</span> <span>ClamPizza</span><span>(</span><span>ClamPizzaBuilder</span> builder<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
+        <span>// etc.</span>
+    <span>}</span>
+<span>}</span>
+
+<span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
+<span>{</span>
+    <span>// fields</span>
+
+    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
+        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
+        <span>return</span> <span>this</span><span>;</span>
+    <span>}</span>
+
+    <span>//  剩下的 prepare 方法</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
+        <span>return</span> <span>ClamPizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br></div></div><p>生成器模式和工厂模式最大的不同就是拥有一个指挥者来指挥产品的构建过程；</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ClamPizzaDirector</span> <span>{</span>
+    <span>private</span> <span>ClamPizzaBuilder</span> builder<span>;</span>
+
+    <span>// 指挥者用于指定产品建造的步骤</span>
+    <span>public</span> <span>ClamPizza</span> <span>construct</span><span>(</span><span>)</span> <span>{</span>
+        builder<span>.</span><span>prepareDough</span><span>(</span><span>)</span><span>;</span>
+        builder<span>.</span><span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
+        builder<span>.</span><span>prepareClam</span><span>(</span><span>)</span><span>;</span>
+        builder<span>.</span><span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>当然，有些比萨并不需要芝士，这个时候，我们就可以去除掉 <code>prepareCheese()</code> 的这一个步骤。</p>
+<h2 id="_4-内部生成器减少构造器"> 4. 内部生成器减少构造器</h2>
+<p>生成器模式除了能构造复杂产品以外，一个很重要的作用就是能解决由于构造参数的组合过多所导致的构造器爆炸。</p>
+<h3 id="_4-1-构造器爆炸"> 4.1 构造器爆炸</h3>
+<p>假如一个类拥有 4 个属性，那么它 <strong>理想状态</strong> 下的构造函数就有 0 个参数，一个参数，两个参数，三个参数和四个参数。</p>
+<p>也就是说，它的构造器数量</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">W</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>3</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>当类的属性为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 时，有</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:3.024108em;vertical-align:-1.262054em;"></span><span><span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">W</span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>⋯</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>n</span><span>−</span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span>2</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>所以，类的属性和理想状态下的构造器数量为 <strong>指数关系</strong></p>
+<h3 id="_4-2-实现"> 4.2 实现</h3>
+<div><pre><code><span>public</span> <span>class</span> <span>Pizza</span> <span>{</span>
+    <span>Dough</span> dough<span>;</span>
+    <span>Cheese</span> cheese<span>;</span>
+    <span>Sauce</span> sauce<span>;</span>
+
+    <span>private</span> <span>Pizza</span><span>(</span><span>Pizza<span>.</span>Builder</span> builder<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
+        <span>this</span><span>.</span>cheese <span>=</span> builder<span>.</span>cheese<span>;</span>
+        <span>this</span><span>.</span>sauce <span>=</span> builder<span>.</span>sauce<span>;</span>
+    <span>}</span>
+
+    <span>public</span> <span>static</span> <span>class</span> <span>Builder</span> <span>{</span>
+        <span>private</span> <span>Dough</span> dough <span>=</span> defaultDough<span>;</span>
+        <span>private</span> <span>Cheese</span> cheese <span>=</span> <span>null</span><span>;</span>
+        <span>private</span> <span>Sauce</span> sauce <span>=</span> <span>null</span><span>;</span>
+
+        <span>public</span> <span>Builder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
+            <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
+            <span>return</span> <span>this</span><span>;</span>
+        <span>}</span>
+
+        <span>public</span> <span>Builder</span> <span>prepareCheese</span><span>(</span><span>Cheese</span> cheese<span>)</span> <span>{</span>
+            <span>this</span><span>.</span>cheese <span>=</span> cheese<span>;</span>
+            <span>return</span> <span>this</span><span>;</span>
+        <span>}</span>
+
+        <span>public</span> <span>Builder</span> <span>prepareSauce</span><span>(</span><span>Sauce</span> sauce<span>)</span> <span>{</span>
+            <span>this</span><span>.</span>sauce <span>=</span> sauce<span>;</span>
+            <span>return</span> <span>this</span><span>;</span>
+        <span>}</span>
+
+        <span>public</span> <span>Pizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
+            <span>return</span> <span>new</span> <span>Pizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br></div></div><p>这样，即使 <code>Pizza</code> 有三个属性，但是我们通过使用一个内置的 <code>Builder</code>，成功地将构造器限制在了一个；</p>
+<p>同时，由于每个 <code>prepare</code> 方法都会返回 <code>Builder</code>；</p>
+<p>也就是说，我们可以在任何一个准备阶段进行 <code>build()</code>；</p>
+<p>这样，也就满足了不同的参数组合的需求；</p>
+<p>同时，由于 <code>Pizza</code> 的构造函数是 <code>private</code> 的，所以这就限定了只能通过生成器来建造对象。</p>
+<p>使用：</p>
+<div><pre><code><span>public</span> <span>static</span> <span>void</span> <span>main</span><span>(</span><span>String</span><span>[</span><span>]</span> args<span>)</span> <span>{</span>
+    <span>Pizza</span> <span>Pizza</span> <span>=</span> <span>new</span> <span>Pizza<span>.</span>Builder</span><span>(</span><span>)</span>
+                    <span>.</span><span>prepareDough</span><span>(</span>dough<span>)</span>
+                    <span>.</span><span>prepareSauce</span><span>(</span>sauce<span>)</span>
+                    <span>.</span><span>prepareCheese</span><span>(</span>cheese<span>)</span>
+                    <span>.</span><span>build</span><span>(</span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="_5-模式扩展"> 5. 模式扩展</h2>
+<p>当只有一个具体建造者时，可以直接省略生成器接口；</p>
+<p>例如上面的静态内部生成器。</p>
+<p>有时候可以直接省略指挥者对象，而由 <strong>客户</strong> 直接充当指导者；</p>
+<p>例如，客户自己冲泡咖啡。</p>
+<h2 id="_6-与抽象工厂的不同"> 6. 与抽象工厂的不同</h2>
+<p>抽象工厂模式生产的是一个产品族，而生成器模式所生产的 <strong>一个</strong> 复杂产品；</p>
+<p>形象的说明就是，抽象工厂生产的是 <strong>汽车的零部件</strong>；</p>
+<p>而生成器是将零部件 <strong>组装</strong> 成为一辆汽车。</p>
+<h2 id="_7-优缺点"> 7. 优缺点</h2>
+<h3 id="_7-1-优点"> 7.1 优点</h3>
+<ol>
+<li>
+<p>良好的封装性，客户端不必知道产品的内部细节</p>
+</li>
+<li>
+<p>建造者是独立的，容易扩展</p>
+</li>
+<li>
+<p>可以使用其他的对象进行构造辅助，而普通的产品构造方式不容易获取到</p>
+</li>
+</ol>
+<h3 id="_7-2-缺点"> 7.2 缺点</h3>
+<ol>
+<li>
+<p>产生多余的 <code>Builder</code>  对象</p>
+</li>
+<li>
+<p>建造的过程暴露在外</p>
+</li>
+</ol>
+]]></content:encoded>
+      <enclosure url="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" type="image/jpeg"/>
     </item>
     <item>
       <title>工厂模式</title>
