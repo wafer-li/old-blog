@@ -6,8 +6,8 @@
     <link>https://wafer.li/</link>
     <description>Wafer Li 的知识库，请随便浏览</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 15 Jul 2021 11:52:30 GMT</pubDate>
-    <lastBuildDate>Thu, 15 Jul 2021 11:52:30 GMT</lastBuildDate>
+    <pubDate>Thu, 15 Jul 2021 12:01:53 GMT</pubDate>
+    <lastBuildDate>Thu, 15 Jul 2021 12:01:53 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;&lt;img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /&gt;&lt;/a&gt; Wafer Li 2016-2021</copyright>
@@ -51,7 +51,7 @@
       <link>https://wafer.li/about/</link>
       <guid>https://wafer.li/about/</guid>
       <source url="https://wafer.li/rss.xml">关于我</source>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="关于我"> 关于我</h1>
 <h2 id="图哪来的"> 图哪来的</h2>
 <p><a href="https://waifulabs.com/" target="_blank" rel="noopener noreferrer">WaifuLabs</a></p>
@@ -5651,7 +5651,7 @@ Fragment 不像 Activity 拥有自带的 <code>findViewById()</code> 方法，�
 &amp;lt;p&amp;gt;这就可以保证对 &amp;lt;code&amp;gt;connection&amp;lt;/code&amp;gt; 的操作，不会影响到接下来的作用域。&amp;lt;/p&amp;gt;
 </description>
       <category>Kotlin</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>在 Kotlin 的 <a href="https://github.com/JetBrains/kotlin/blob/master/libraries/stdlib/src/kotlin/util/Standard.kt" target="_blank" rel="noopener noreferrer">Standard.kt</a> 中提供了一些特殊的高阶函数；</p>
 <p>它们被称作 <strong>Scoping 函数</strong>，此类函数通过使用一个函数 <code>block</code>，将你需要对某对象进行的一系列操作限制在 lambda 作用域内；</p>
 <p>这样，对于该对象操作的代码就不会泄露到外层作用域，使得代码更为干净整洁。</p>
@@ -8599,165 +8599,6 @@ b <span>=</span> <span>null</span> <span>// ok</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Kotlin 类属性和域</title>
-      <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</link>
-      <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</guid>
-      <source url="https://wafer.li/rss.xml">Kotlin 类属性和域</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-声明和调用&amp;quot;&amp;gt; 1. 声明和调用&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;声明类中的属性和值很简单，类似 Java，使用 &amp;lt;code&amp;gt;var&amp;lt;/code&amp;gt; 声明变量，使用 &amp;lt;code&amp;gt;val&amp;lt;/code&amp;gt; 声明常量。&amp;lt;/p&amp;gt;
-&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;class&amp;lt;/span&amp;gt; Address &amp;lt;span&amp;gt;{&amp;lt;/span&amp;gt;
-  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; name&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
-  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; street&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
-  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; city&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
-  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; state&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
-  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; zip&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
-&amp;lt;span&amp;gt;}&amp;lt;/span&amp;gt;
-&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;1&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;2&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;3&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;4&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;5&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;6&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;7&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;</description>
-      <category>Kotlin</category>
-      <pubDate>Fri, 17 Mar 2017 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-声明和调用"> 1. 声明和调用</h2>
-<p>声明类中的属性和值很简单，类似 Java，使用 <code>var</code> 声明变量，使用 <code>val</code> 声明常量。</p>
-<div><pre><code><span>public</span> <span>class</span> Address <span>{</span>
-  <span>public</span> <span>var</span> name<span>:</span> String <span>=</span> <span>..</span><span>.</span>
-  <span>public</span> <span>var</span> street<span>:</span> String <span>=</span> <span>..</span><span>.</span>
-  <span>public</span> <span>var</span> city<span>:</span> String <span>=</span> <span>..</span><span>.</span>
-  <span>public</span> <span>var</span> state<span>:</span> String<span>?</span> <span>=</span> <span>..</span><span>.</span>
-  <span>public</span> <span>var</span> zip<span>:</span> String <span>=</span> <span>..</span><span>.</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div>
-<blockquote>
-<p>注意，变量默认为 <code>public</code> 属性。</p>
-</blockquote>
-<p>由于变量默认为 <code>public</code>，所以直接使用类成员运算符(<code>.</code>)，即可调用其属性和方法。</p>
-<div><pre><code><span>fun</span> <span>copyAddress</span><span>(</span>address<span>:</span> Address<span>)</span><span>:</span> Address <span>{</span>
-  <span>val</span> result <span>=</span> <span>Address</span><span>(</span><span>)</span> <span>// there's no 'new' keyword in Kotlin</span>
-  result<span>.</span>name <span>=</span> address<span>.</span>name <span>// accessors are called</span>
-  result<span>.</span>street <span>=</span> address<span>.</span>street
-  <span>// ...</span>
-  <span>return</span> result
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>需要说明的是，在编译时，系统会<strong>自动生成默认的 Getter 和 Setter</strong>。</p>
-<p>下面的写法</p>
-<div><pre><code><span>class</span> Foo <span>{</span>
-    <span>var</span> bar<span>:</span> Int <span>=</span> <span>1</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>和以下 Java 代码是<strong>等同的。</strong></p>
-<div><pre><code><span>class</span> Foo <span>{</span>
-    <span>private</span> int bar <span>=</span> <span>1</span><span>;</span>
-
-    <span>public</span> int <span>getBar</span><span>(</span><span>)</span> <span>{</span>
-        <span>return</span> bar<span>;</span>
-    <span>}</span>
-
-    <span>public</span> void <span>setBar</span><span>(</span>int value<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>bar <span>=</span> value<span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>同时，在访问和修改时，系统会调用变量的 getter 和 setter 来进行，<strong>而不是直接取值和改值。</strong></p>
-<p>除此之外，Kotlin 的变量在使用前必须被初始化，否则编译器将报错。</p>
-<h2 id="_2-getter-和-setter"> 2. Getter 和 Setter</h2>
-<p>定义一个类属性的完整语法如下：</p>
-<div><pre><code><span>var</span> <span>&lt;</span>propertyName<span>></span><span>:</span> <span>&lt;</span>PropertyType<span>></span> <span>[</span><span>=</span> <span>&lt;</span>property_initializer<span>></span><span>]</span>
-  <span>[</span><span>&lt;</span>getter<span>></span><span>]</span>
-  <span>[</span><span>&lt;</span>setter<span>></span><span>]</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>可以看到，初始化，Getter 和 Setter 都是可选项。</p>
-<p>需要注意的是，虽然在这里，初始化是可选项，但是这并不意味着变量不需要被初始化。</p>
-<p>实际上，Kotlin 中的变量在被使用前<strong>必须被初始化！</strong>
-特别的，一个类中的属性无论何时都要被初始化。</p>
-<blockquote>
-<p>这实际上是 Kotlin 的主旨之一，即，尽量使得过程显式化。</p>
-</blockquote>
-<div><pre><code><span>var</span> allByDefault<span>:</span> Int<span>?</span> <span>// error: explicit initializer required, default getter and setter implied</span>
-<span>var</span> initialized <span>=</span> <span>1</span> <span>// has type Int, default getter and setter</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h3 id="_2-1-改变-getter-和-setter-的可见性"> 2.1 改变 Getter 和 Setter 的可见性</h3>
-<p>如果只需要改变可见性而不需要改变默认的 getter 和 setter，只需要在 <code>get</code> 或者 <code>set</code> 之前加上可见性修饰符即可，
-而不需要定义其主体。</p>
-<div><pre><code><span>var</span> setterVisibility<span>:</span> String <span>=</span> <span>"abc"</span>
-  <span>private</span> <span>set</span> <span>// the setter is private and has the default implementation</span>
-
-<span>var</span> setterWithAnnotation<span>:</span> Any<span>?</span> <span>=</span> <span>null</span>
-  <span>@Inject</span> <span>set</span> <span>// annotate the setter with Inject</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h3 id="_2-2-自定义-getter-和-setter"> 2.2 自定义 Getter 和 Setter</h3>
-<p>自定义 getter 和 setter 很简单，只需要在变量下方使用 <code>get</code> 和 <code>set</code> 即可。</p>
-<div><pre><code><span>var</span> stringRepresentation<span>:</span> String
-  <span>get</span><span>(</span><span>)</span> <span>=</span> <span>this</span><span>.</span><span>toString</span><span>(</span><span>)</span>
-  <span>set</span><span>(</span>value<span>)</span> <span>{</span>
-    <span>setDataFromString</span><span>(</span>value<span>)</span> <span>// parses the string and assigns values to other properties</span>
-  <span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>事实上， Kotlin 没有<strong>域</strong>这一属性，即<strong>不允许直接取值和赋值。</strong></p>
-<p>但为了自定义 getter 和 setter，又必须提供一个直接的取值和赋值的途径，
-对此，Kotlin 采用了一个名为 <strong>backing field</strong> 的特性，
-即，只允许在 getter 和 setter 中使用 <code>field</code> 这一变量作为直接取值和赋值的途径。</p>
-<p>backing field 会在如下条件下生成：</p>
-<ul>
-<li>变量进行了初始化</li>
-<li>使用了 <code>field</code> 变量</li>
-</ul>
-<div><pre><code><span>var</span> counter <span>=</span> <span>0</span> <span>// the initializer value is written directly to the backing field</span>
-  <span>set</span><span>(</span>value<span>)</span> <span>{</span>
-    <span>if</span> <span>(</span>value <span>>=</span> <span>0</span><span>)</span>
-      field <span>=</span> value
-  <span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>如果 backing field 不能满足需求，Kotlin 还提供了 <strong>backing property</strong> 特性。</p>
-<div><pre><code><span>private</span> <span>var</span> _table<span>:</span> Map<span>&lt;</span>String<span>,</span> Int<span>></span><span>?</span> <span>=</span> <span>null</span>
-<span>public</span> <span>val</span> table<span>:</span> Map<span>&lt;</span>String<span>,</span> Int<span>></span>
-  <span>get</span><span>(</span><span>)</span> <span>{</span>
-    <span>if</span> <span>(</span>_table <span>==</span> <span>null</span><span>)</span>
-      _table <span>=</span> <span>HashMap</span><span>(</span><span>)</span> <span>// Type parameters are inferred</span>
-    <span>return</span> _table <span>?:</span> <span>throw</span> <span>AssertionError</span><span>(</span><span>"Set to null by another thread"</span><span>)</span>
-  <span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>实际上就是使用另一个 <code>private</code> 变量来帮助实现自定义的 getter 和 setter。</p>
-<h2 id="_3-编译时常量"> 3. 编译时常量</h2>
-<blockquote>
-<p>编译时常量指的是，<strong>在编译时就能确定的常量</strong>，也就是<strong>不需要依赖其他类的常量</strong></p>
-</blockquote>
-<blockquote>
-<p>以Java为例， <code>static final int a = 1</code> 将是一个编译时常量，编译后的符号表中将找不到 <code>a</code> ，所有对 <code>a</code>的引用都被替换成了 <code>1</code>。
-而 <code>static final int b = &quot;test&quot;.length()</code> 将是一个运行时常量。</p>
-</blockquote>
-<p>Kotlin 中使用 <code>const</code> 标识符来指定编译时常量，JVM 将对这些变量进行优化，提高它们的运行速度。</p>
-<p>编译时常量必须满足如下条件：</p>
-<ul>
-<li>声明在 Top-level，或者是一个 object 的成员</li>
-<li>使用原始类型或者 <code>String</code> 进行初始化</li>
-<li>没有自定义的 getter</li>
-</ul>
-<p>编译时常量可以使用在注解中。</p>
-<div><pre><code><span>const</span> <span>val</span> SUBSYSTEM_DEPRECATED<span>:</span> String <span>=</span> <span>"This subsystem is deprecated"</span>
-
-<span>@Deprecated</span><span>(</span>SUBSYSTEM_DEPRECATED<span>)</span> <span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span> <span>..</span><span>.</span> <span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_4-延迟初始化"> 4. 延迟初始化</h2>
-<p>一般来说，类中的属性必须被初始化，但是也有时需要通过注入或者 <code>@SetUp</code> 在 JUnit 中进行初始化。</p>
-<p>对此 Kotlin 提供一种特性称作<strong>延迟初始化</strong>，使用 <code>lateinit</code> 标识符可以指明一个变量需要延迟初始化。</p>
-<div><pre><code><span>public</span> <span>class</span> MyTest <span>{</span>
-    <span>lateinit</span> <span>var</span> subject<span>:</span> TestSubject
-
-    <span>@SetUp</span> <span>fun</span> <span>setup</span><span>(</span><span>)</span> <span>{</span>
-        subject <span>=</span> <span>TestSubject</span><span>(</span><span>)</span>
-    <span>}</span>
-
-    <span>@Test</span> <span>fun</span> <span>test</span><span>(</span><span>)</span> <span>{</span>
-        subject<span>.</span><span>method</span><span>(</span><span>)</span>  <span>// dereference directly</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>延迟初始化只能应用在 <code>var</code> 中（而不能在 primary constructor 中）。
-延迟初始化的变量不能拥有自定义的 getter 和 setter，同时，它的类型也不能是原始类型。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Kotlin 类基础</title>
       <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%B1%BB%E5%9F%BA%E7%A1%80/</link>
       <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%B1%BB%E5%9F%BA%E7%A1%80/</guid>
@@ -8977,6 +8818,165 @@ b <span>=</span> <span>null</span> <span>// ok</span>
 <span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Kotlin 类属性和域</title>
+      <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</link>
+      <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E7%B1%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%9F%9F/</guid>
+      <source url="https://wafer.li/rss.xml">Kotlin 类属性和域</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-声明和调用&amp;quot;&amp;gt; 1. 声明和调用&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;声明类中的属性和值很简单，类似 Java，使用 &amp;lt;code&amp;gt;var&amp;lt;/code&amp;gt; 声明变量，使用 &amp;lt;code&amp;gt;val&amp;lt;/code&amp;gt; 声明常量。&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;class&amp;lt;/span&amp;gt; Address &amp;lt;span&amp;gt;{&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; name&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; street&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; city&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; state&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;public&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; zip&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; String &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;..&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;.&amp;lt;/span&amp;gt;
+&amp;lt;span&amp;gt;}&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;1&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;2&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;3&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;4&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;5&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;6&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;7&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;</description>
+      <category>Kotlin</category>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-声明和调用"> 1. 声明和调用</h2>
+<p>声明类中的属性和值很简单，类似 Java，使用 <code>var</code> 声明变量，使用 <code>val</code> 声明常量。</p>
+<div><pre><code><span>public</span> <span>class</span> Address <span>{</span>
+  <span>public</span> <span>var</span> name<span>:</span> String <span>=</span> <span>..</span><span>.</span>
+  <span>public</span> <span>var</span> street<span>:</span> String <span>=</span> <span>..</span><span>.</span>
+  <span>public</span> <span>var</span> city<span>:</span> String <span>=</span> <span>..</span><span>.</span>
+  <span>public</span> <span>var</span> state<span>:</span> String<span>?</span> <span>=</span> <span>..</span><span>.</span>
+  <span>public</span> <span>var</span> zip<span>:</span> String <span>=</span> <span>..</span><span>.</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div>
+<blockquote>
+<p>注意，变量默认为 <code>public</code> 属性。</p>
+</blockquote>
+<p>由于变量默认为 <code>public</code>，所以直接使用类成员运算符(<code>.</code>)，即可调用其属性和方法。</p>
+<div><pre><code><span>fun</span> <span>copyAddress</span><span>(</span>address<span>:</span> Address<span>)</span><span>:</span> Address <span>{</span>
+  <span>val</span> result <span>=</span> <span>Address</span><span>(</span><span>)</span> <span>// there's no 'new' keyword in Kotlin</span>
+  result<span>.</span>name <span>=</span> address<span>.</span>name <span>// accessors are called</span>
+  result<span>.</span>street <span>=</span> address<span>.</span>street
+  <span>// ...</span>
+  <span>return</span> result
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>需要说明的是，在编译时，系统会<strong>自动生成默认的 Getter 和 Setter</strong>。</p>
+<p>下面的写法</p>
+<div><pre><code><span>class</span> Foo <span>{</span>
+    <span>var</span> bar<span>:</span> Int <span>=</span> <span>1</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>和以下 Java 代码是<strong>等同的。</strong></p>
+<div><pre><code><span>class</span> Foo <span>{</span>
+    <span>private</span> int bar <span>=</span> <span>1</span><span>;</span>
+
+    <span>public</span> int <span>getBar</span><span>(</span><span>)</span> <span>{</span>
+        <span>return</span> bar<span>;</span>
+    <span>}</span>
+
+    <span>public</span> void <span>setBar</span><span>(</span>int value<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>bar <span>=</span> value<span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>同时，在访问和修改时，系统会调用变量的 getter 和 setter 来进行，<strong>而不是直接取值和改值。</strong></p>
+<p>除此之外，Kotlin 的变量在使用前必须被初始化，否则编译器将报错。</p>
+<h2 id="_2-getter-和-setter"> 2. Getter 和 Setter</h2>
+<p>定义一个类属性的完整语法如下：</p>
+<div><pre><code><span>var</span> <span>&lt;</span>propertyName<span>></span><span>:</span> <span>&lt;</span>PropertyType<span>></span> <span>[</span><span>=</span> <span>&lt;</span>property_initializer<span>></span><span>]</span>
+  <span>[</span><span>&lt;</span>getter<span>></span><span>]</span>
+  <span>[</span><span>&lt;</span>setter<span>></span><span>]</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>可以看到，初始化，Getter 和 Setter 都是可选项。</p>
+<p>需要注意的是，虽然在这里，初始化是可选项，但是这并不意味着变量不需要被初始化。</p>
+<p>实际上，Kotlin 中的变量在被使用前<strong>必须被初始化！</strong>
+特别的，一个类中的属性无论何时都要被初始化。</p>
+<blockquote>
+<p>这实际上是 Kotlin 的主旨之一，即，尽量使得过程显式化。</p>
+</blockquote>
+<div><pre><code><span>var</span> allByDefault<span>:</span> Int<span>?</span> <span>// error: explicit initializer required, default getter and setter implied</span>
+<span>var</span> initialized <span>=</span> <span>1</span> <span>// has type Int, default getter and setter</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h3 id="_2-1-改变-getter-和-setter-的可见性"> 2.1 改变 Getter 和 Setter 的可见性</h3>
+<p>如果只需要改变可见性而不需要改变默认的 getter 和 setter，只需要在 <code>get</code> 或者 <code>set</code> 之前加上可见性修饰符即可，
+而不需要定义其主体。</p>
+<div><pre><code><span>var</span> setterVisibility<span>:</span> String <span>=</span> <span>"abc"</span>
+  <span>private</span> <span>set</span> <span>// the setter is private and has the default implementation</span>
+
+<span>var</span> setterWithAnnotation<span>:</span> Any<span>?</span> <span>=</span> <span>null</span>
+  <span>@Inject</span> <span>set</span> <span>// annotate the setter with Inject</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h3 id="_2-2-自定义-getter-和-setter"> 2.2 自定义 Getter 和 Setter</h3>
+<p>自定义 getter 和 setter 很简单，只需要在变量下方使用 <code>get</code> 和 <code>set</code> 即可。</p>
+<div><pre><code><span>var</span> stringRepresentation<span>:</span> String
+  <span>get</span><span>(</span><span>)</span> <span>=</span> <span>this</span><span>.</span><span>toString</span><span>(</span><span>)</span>
+  <span>set</span><span>(</span>value<span>)</span> <span>{</span>
+    <span>setDataFromString</span><span>(</span>value<span>)</span> <span>// parses the string and assigns values to other properties</span>
+  <span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>事实上， Kotlin 没有<strong>域</strong>这一属性，即<strong>不允许直接取值和赋值。</strong></p>
+<p>但为了自定义 getter 和 setter，又必须提供一个直接的取值和赋值的途径，
+对此，Kotlin 采用了一个名为 <strong>backing field</strong> 的特性，
+即，只允许在 getter 和 setter 中使用 <code>field</code> 这一变量作为直接取值和赋值的途径。</p>
+<p>backing field 会在如下条件下生成：</p>
+<ul>
+<li>变量进行了初始化</li>
+<li>使用了 <code>field</code> 变量</li>
+</ul>
+<div><pre><code><span>var</span> counter <span>=</span> <span>0</span> <span>// the initializer value is written directly to the backing field</span>
+  <span>set</span><span>(</span>value<span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>value <span>>=</span> <span>0</span><span>)</span>
+      field <span>=</span> value
+  <span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>如果 backing field 不能满足需求，Kotlin 还提供了 <strong>backing property</strong> 特性。</p>
+<div><pre><code><span>private</span> <span>var</span> _table<span>:</span> Map<span>&lt;</span>String<span>,</span> Int<span>></span><span>?</span> <span>=</span> <span>null</span>
+<span>public</span> <span>val</span> table<span>:</span> Map<span>&lt;</span>String<span>,</span> Int<span>></span>
+  <span>get</span><span>(</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>_table <span>==</span> <span>null</span><span>)</span>
+      _table <span>=</span> <span>HashMap</span><span>(</span><span>)</span> <span>// Type parameters are inferred</span>
+    <span>return</span> _table <span>?:</span> <span>throw</span> <span>AssertionError</span><span>(</span><span>"Set to null by another thread"</span><span>)</span>
+  <span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>实际上就是使用另一个 <code>private</code> 变量来帮助实现自定义的 getter 和 setter。</p>
+<h2 id="_3-编译时常量"> 3. 编译时常量</h2>
+<blockquote>
+<p>编译时常量指的是，<strong>在编译时就能确定的常量</strong>，也就是<strong>不需要依赖其他类的常量</strong></p>
+</blockquote>
+<blockquote>
+<p>以Java为例， <code>static final int a = 1</code> 将是一个编译时常量，编译后的符号表中将找不到 <code>a</code> ，所有对 <code>a</code>的引用都被替换成了 <code>1</code>。
+而 <code>static final int b = &quot;test&quot;.length()</code> 将是一个运行时常量。</p>
+</blockquote>
+<p>Kotlin 中使用 <code>const</code> 标识符来指定编译时常量，JVM 将对这些变量进行优化，提高它们的运行速度。</p>
+<p>编译时常量必须满足如下条件：</p>
+<ul>
+<li>声明在 Top-level，或者是一个 object 的成员</li>
+<li>使用原始类型或者 <code>String</code> 进行初始化</li>
+<li>没有自定义的 getter</li>
+</ul>
+<p>编译时常量可以使用在注解中。</p>
+<div><pre><code><span>const</span> <span>val</span> SUBSYSTEM_DEPRECATED<span>:</span> String <span>=</span> <span>"This subsystem is deprecated"</span>
+
+<span>@Deprecated</span><span>(</span>SUBSYSTEM_DEPRECATED<span>)</span> <span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span> <span>..</span><span>.</span> <span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_4-延迟初始化"> 4. 延迟初始化</h2>
+<p>一般来说，类中的属性必须被初始化，但是也有时需要通过注入或者 <code>@SetUp</code> 在 JUnit 中进行初始化。</p>
+<p>对此 Kotlin 提供一种特性称作<strong>延迟初始化</strong>，使用 <code>lateinit</code> 标识符可以指明一个变量需要延迟初始化。</p>
+<div><pre><code><span>public</span> <span>class</span> MyTest <span>{</span>
+    <span>lateinit</span> <span>var</span> subject<span>:</span> TestSubject
+
+    <span>@SetUp</span> <span>fun</span> <span>setup</span><span>(</span><span>)</span> <span>{</span>
+        subject <span>=</span> <span>TestSubject</span><span>(</span><span>)</span>
+    <span>}</span>
+
+    <span>@Test</span> <span>fun</span> <span>test</span><span>(</span><span>)</span> <span>{</span>
+        subject<span>.</span><span>method</span><span>(</span><span>)</span>  <span>// dereference directly</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>延迟初始化只能应用在 <code>var</code> 中（而不能在 primary constructor 中）。
+延迟初始化的变量不能拥有自定义的 getter 和 setter，同时，它的类型也不能是原始类型。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Kotlin 范围</title>
@@ -11042,7 +11042,7 @@ Python 在导入包时，首先会搜寻<strong>当前目录</strong>，如果�
 &amp;lt;p&amp;gt;所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>Scala 作为函数式语言，提供了很多用于高阶函数来解决一类范式问题；</p>
 <p>但是，使用过多的高阶函数就会让代码的可读性变差；</p>
 <p>所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。</p>
@@ -11393,7 +11393,7 @@ first<span>(</span><span>2</span> <span>*</span> <span>2</span><span>,</span> <s
 &amp;lt;p&amp;gt;拥有更高的安全性&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>模式匹配，是 Scala 相比 Java 在类型上的一个很好地改进；</p>
 <p>通过引入模式匹配，消除了 Java 中常见的类型检测和强制转换(cast)；</p>
 <p>拥有更高的安全性</p>
@@ -11910,7 +11910,7 @@ p<span>.</span>name <span>=</span> <span>"nihao"</span>
 &amp;lt;p&amp;gt;那么今天就以 &amp;lt;code&amp;gt;List&amp;lt;/code&amp;gt; 来说一说常用的高阶函数具体的作用。&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>高阶函数是函数式编程的一个很大的特性；</p>
 <p>同时，其中集合类的高阶函数在日常的开发和使用中，占了一个很重要的位置；</p>
 <p>但是，这些函数有可能会在刚接触的时候搞不懂它们的具体作用；</p>
@@ -16356,7 +16356,7 @@ Java 的 garbage collector 会将内存回收。</p>
 斯坦福的教授提供了一种使用 &amp;lt;strong&amp;gt;递归树&amp;lt;/strong&amp;gt; 的方法。&amp;lt;/p&amp;gt;
 </description>
       <category>《Algorithm 第四版》笔记</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前学算法分析的时候只知道通过数语句来计算算法的复杂度，而对于递归算法没有很好的方法；</p>
 <p>由于递归算法通常采用分治思路，每递归一次，子问题在增多，但是子问题的规模在减少，所以如何去计算这种递归类算法的复杂度呢？
 斯坦福的教授提供了一种使用 <strong>递归树</strong> 的方法。</p>
@@ -16448,7 +16448,7 @@ Java 的 garbage collector 会将内存回收。</p>
 &amp;lt;p&amp;gt;那么，都『攻击』了，为啥偏偏没事去改你的单例呢？直接获取更有意思的信息不是更好吗？&amp;lt;/p&amp;gt;
 </description>
       <category>《Head First 设计模式》笔记</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前提到枚举实现是单例的最佳实现，这毋庸置疑；</p>
 <p>不过，对比枚举和静态内部类，好像它们的区别就在于防止了反射攻击；</p>
 <p>那么，都『攻击』了，为啥偏偏没事去改你的单例呢？直接获取更有意思的信息不是更好吗？</p>
@@ -18300,7 +18300,7 @@ cacheBuilder<span>.</span><span>maxStale</span><span>(</span><span>365</span><sp
 &amp;lt;p&amp;gt;这里就来讲讲关于这两个库具体组合的用法。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>Retrofit 和 Rxjava 结合应该算得上是 Rxjava 在 Android  应用得最广泛的一个方面了。</p>
 <p>这里就来讲讲关于这两个库具体组合的用法。</p>
 
@@ -20930,7 +20930,7 @@ https://github.com/wafer-li/scala-coursera/tree/master/funsets&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;我们有没有一种办法去表示这个集合呢？&amp;lt;/p&amp;gt;
 </description>
       <category>Coursera</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>本文源码：
 https://github.com/wafer-li/scala-coursera/tree/master/funsets</p>
@@ -26097,7 +26097,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>Rxjava</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>Rxjava，是一个响应式的(Reactive)，基于观察者模式的异步框架。</p>
 <p>除此之外，还有其他的 RxScala 和 RxSwift 等。</p>
 <blockquote>
@@ -26257,7 +26257,7 @@ onsubscribe end
       <description>&amp;lt;p&amp;gt;Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。&amp;lt;/p&amp;gt;
 </description>
       <category>Solidity</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。</p>
 
 <h2 id="_1-区块链基础知识"> 1. 区块链基础知识</h2>
@@ -26786,7 +26786,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
 &amp;lt;p&amp;gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&amp;lt;/p&amp;gt;
 </description>
       <category>LeetCode</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="https://leetcode-cn.com/problems/new-21-game" target="_blank" rel="noopener noreferrer">题目</a></p>
 <p>爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：</p>
 <p>爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 <code>[1, W]</code> 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。</p>
@@ -26913,7 +26913,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
       <description>&amp;lt;p&amp;gt;折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯&amp;lt;/p&amp;gt;
 </description>
       <category>面试经验</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯</p>
 
 <h2 id="_1-ihandy"> 1. iHandy</h2>
@@ -27045,7 +27045,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;本文基于&amp;lt;a href=&amp;quot;https://stackoverflow.com/a/31401836&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;这个 StackOverflow 回答&amp;lt;/a&amp;gt;进一步推导，并给出详细解答步骤&amp;lt;/p&amp;gt;
 </description>
       <category>面试经验</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前看各大面经的时候搜索到了这个问题，切实感觉到如果刨根问底的问，自己还真不能抵挡住这种攻势，现在闲暇时间又心血来潮地想起来这个问题，就打算好好弄懂弄透，也希望能在将来面试的时候做好准备。</p>
 <p>本文基于<a href="https://stackoverflow.com/a/31401836" target="_blank" rel="noopener noreferrer">这个 StackOverflow 回答</a>进一步推导，并给出详细解答步骤</p>
 
@@ -27124,7 +27124,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;2018/1/8 更新部分内容&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近终于下定决心来买这个键盘了。</p>
 <p>主要说说使用感受吧</p>
 <p>2018/1/8 更新部分内容</p>
@@ -27199,7 +27199,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；</p>
 <p>ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；</p>
 <p>但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。</p>
@@ -27247,7 +27247,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <guid>https://wafer.li/blog-corners/talk/%E6%89%93%E5%AD%97%E8%AE%AD%E7%BB%83%E7%BD%91%E7%AB%99/</guid>
       <source url="https://wafer.li/rss.xml">打字训练网站</source>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>买了新键盘之后就想试一试它的威力，所以就找了一个打字训练网站来打字；</p>
 <p>在知乎上找了一圈，结果就找到了 <a href="http://www.keybr.com/practice" target="_blank" rel="noopener noreferrer">这个</a>；</p>
 <p>练了一圈的感受就是： <strong>左手好累啊！！！</strong></p>
@@ -27268,7 +27268,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;内有剧透，慎点&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近这部 FD 发售之后就忍不住玩了一下；</p>
 <p>会结合本篇《近月少女的礼仪 2》(月に寄りそう乙女の作法２)　来谈一谈感想；</p>
 <p>内有剧透，慎点</p>
@@ -27356,7 +27356,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;因此，这里就来介绍一种我在之前的公司所使用的用于解决单个界面功能过于复杂的 MVVM 架构。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>Android App 的技术架构经过多年演进之后，形成了目前 Google 在 Jetpack 中推崇的 MVVM 架构。</p>
 <p>但是 Google 官方推崇的 MVVM 是多界面的 MVVM，即多个界面在同一个功能模块中，UI、数据如何进行组合的问题；</p>
 <p>而现在的 Android App 基本上是大而全的，特别是直播系的 App，有时候单单一个直播 Activity 就有十几二十个功能点，假如采用 Google 的 MVVM 解决方案，就会造成单个 Activity 过于臃肿的问题，这和 Google 多年来想解决的 Activity 膨胀问题是相互矛盾的。</p>
@@ -27511,7 +27511,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;例如直播的送礼物事件，需要礼物动画和送礼物的列表同时进行变化，在这里针对这个问题提出解决办法。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="/blog-corners/tech/android/arch/android-%E5%8D%95%E7%95%8C%E9%9D%A2%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%82%B9-mvvm-%E6%9E%B6%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89">上文</a>  提出了一种单界面多功能点的 MVVM 架构，但是尚存在一点问题，就是当某个特定的事件需要多个 UseCase 进行响应的问题。</p>
 <p>例如直播的送礼物事件，需要礼物动画和送礼物的列表同时进行变化，在这里针对这个问题提出解决办法。</p>
 
@@ -27552,7 +27552,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;</p>
 <p>很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。</p>
 <p>当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的<a href="https://www.jianshu.com/p/f41db270d5fe" target="_blank" rel="noopener noreferrer">参考文章</a>，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。</p>
@@ -27619,7 +27619,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="/blog-corners/tech/android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89">上文</a>说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 <strong>公式法</strong> 来对所有四个方向的 offset 进行计算，由此可以大大简化 <code>itemOffset</code> 的计算，同时也天然的支持 RTL。</p>
 <p>但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；</p>
 <p>上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。</p>
@@ -27674,7 +27674,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <description>&amp;lt;p&amp;gt;最近准备入门音视频开发，就学习内容做一下笔记吧&amp;lt;/p&amp;gt;
 </description>
       <category>音视频开发</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近准备入门音视频开发，就学习内容做一下笔记吧</p>
 
 <h2 id="_1-声音的物理相关概念"> 1. 声音的物理相关概念</h2>
@@ -28027,7 +28027,7 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 &amp;lt;p&amp;gt;鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近在迁移到 AndroidX 之后一直折腾 TDD 的事情，也遇到了大的小的不少坑点；</p>
 <p>鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。</p>
 
@@ -28220,7 +28220,7 @@ tintColorRes <span>=</span> typedValue<span>.</span>resourceId
 &amp;lt;p&amp;gt;本篇文章就来着重说说其中的原理。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="./../android-测试坑点详解（一）/">上篇文章</a>我们说到如果你的 VectorDrawable 如果采用一个带 <code>&lt;selector&gt;</code> 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。</p>
 <p>本篇文章就来着重说说其中的原理。</p>
 
@@ -28542,7 +28542,7 @@ API 24 之后可以匹配到和语言最为接近的本地化内容；
 &amp;lt;p&amp;gt;结果显然是我太拿衣服了&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？</p>
 <p>结果显然是我太拿衣服了</p>
 
@@ -28597,7 +28597,7 @@ API 24 之后可以匹配到和语言最为接近的本地化内容；
       <description>&amp;lt;p&amp;gt;最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  &amp;lt;code&amp;gt;IllegalStateException&amp;lt;/code&amp;gt;，其中的 &amp;lt;code&amp;gt;message&amp;lt;/code&amp;gt; 就是我们的标题。&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;这个问题还得从 JDK 1.7 开始说起。&amp;lt;/p&amp;gt;
 </description>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  <code>IllegalStateException</code>，其中的 <code>message</code> 就是我们的标题。</p>
 <p>这个问题还得从 JDK 1.7 开始说起。</p>
 
@@ -28674,7 +28674,7 @@ compare(-1, Int.MAX_VAL) = -1 - Int.MAX_VAL = -2147483648 &lt; 0
 &amp;lt;p&amp;gt;于是，就开始了艰难的调试过程&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。</p>
 <p>当一切都配置好，点下 build App 的时候，却出现了 <code>There were failing tests.</code>。</p>
 <p>我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？</p>
@@ -28760,7 +28760,7 @@ We recommend <strong>turning off Instant Run</strong> in the settings for earlie
 &amp;lt;p&amp;gt;这里就来谈一下我在最近开发遇到的一个 SurfaceCombination 的限制问题。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>CameraX 是 Google 新推出的相机操作库，用起来倒是很好用的，用各种 UseCase 对相机的使用目的进行区分，同时也加入了生命周期的处理。</p>
 <p>但是，CameraX 似乎对现今设备的性能估计太过保守了，所以就有一些不是很必要的限制。</p>
 <p>这里就来谈一下我在最近开发遇到的一个 SurfaceCombination 的限制问题。</p>
@@ -28962,7 +28962,7 @@ May be attempting to bind too many use cases.
 &amp;lt;p&amp;gt;但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>如果你开发过稍微有点体量的 Android App，都会因为越来越多的 Gradle 依赖而头疼。</p>
 <p>一个 App 的编译依赖少则十几项，多则几十项，如果再加上多 module，那么依赖的统一管理就很重要了。</p>
 <p>但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。</p>
@@ -29111,7 +29111,7 @@ plugins <span>{</span>
 &amp;lt;p&amp;gt;原文：&amp;lt;a href=&amp;quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。</p>
 <p>原文：<a href="https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f" target="_blank" rel="noopener noreferrer">Migrating Gradle to Kotlin DSL in Android Studio 3.3</a></p>
 
@@ -29271,7 +29271,7 @@ repositories <span>{</span>
 &amp;lt;p&amp;gt;这里就写写我折腾过程中遇到的坑，前车之鉴，后事之师。&amp;lt;/p&amp;gt;
 </description>
       <category>GPG</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>GPG 相信很多人都折腾过，Yubikey 也有很多人买过；</p>
 <p>但是好像只有老外折腾过 Yubikey + GPG 的；</p>
 <p>最近刚折腾完毕，因为自己不慎还把一个老钥匙搞丢了，现在只能随它去了；</p>
@@ -29485,7 +29485,7 @@ RSA 密钥可能的操作：签名 加密 认证
 &amp;lt;p&amp;gt;希望能给后来者以启迪。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="_1-简介"> 1. 简介</h2>
 <p>这是我折腾 Hexo 博客框架的经验；</p>
 <p>希望能给后来者以启迪。</p>
@@ -29544,7 +29544,7 @@ RSA 密钥可能的操作：签名 加密 认证
       <description>&amp;lt;p&amp;gt;这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。</p>
 
 <h2 id="_1-为什么要用-ci-来部署博客"> 1. 为什么要用 CI 来部署博客</h2>
@@ -29771,7 +29771,7 @@ RSA 密钥可能的操作：签名 加密 认证
 &amp;lt;p&amp;gt;之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>本文着重介绍一下如何解决 Travis CI 在进行自动集成的时候，总是会更新旧博客的问题。</p>
 <p>之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。</p>
 
@@ -29954,7 +29954,7 @@ timestamp_file_list <span>=</span> <span>[</span><span>tuple</span><span>(</span
       <description>&amp;lt;p&amp;gt;最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。</p>
 
 <p>如图：
@@ -29978,7 +29978,7 @@ timestamp_file_list <span>=</span> <span>[</span><span>tuple</span><span>(</span
 &amp;lt;p&amp;gt;不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。&amp;lt;/p&amp;gt;
 </description>
       <category>Live</category>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；</p>
 <p>不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。</p>
 
@@ -30121,228 +30121,7 @@ python -m http.server
       <link>https://wafer.li/</link>
       <guid>https://wafer.li/</guid>
       <source url="https://wafer.li/rss.xml">博客主页</source>
-      <pubDate>Thu, 15 Jul 2021 11:52:03 GMT</pubDate>
-    </item>
-    <item>
-      <title>生成器模式(Builder Pattern)</title>
-      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</link>
-      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</guid>
-      <source url="https://wafer.li/rss.xml">生成器模式(Builder Pattern)</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;工厂模式的目标是利用多态，减少类之间的耦合度；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;而工厂模式不需要指导者。&amp;lt;/p&amp;gt;
-</description>
-      <category>《Head First 设计模式》笔记</category>
-      <pubDate>Sun, 12 Mar 2017 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。</p>
-<p>工厂模式的目标是利用多态，减少类之间的耦合度；</p>
-<p>而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。</p>
-<p>同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；</p>
-<p>而工厂模式不需要指导者。</p>
-
-<h2 id="_2-结构类图"> 2. 结构类图</h2>
-<p><img src="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" alt="" /></p>
-<h2 id="_3-构造复杂产品"> 3. 构造复杂产品</h2>
-<p>所谓的复杂产品就是一个产品中有很多子类，而且每个子类都有相应的构造流程。</p>
-<p>例如，一个蛤蜊比萨，拥有面饼，酱料，芝士，蛤蜊等其他食材。</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
-    <span>Dough</span> dough<span>;</span>
-    <span>Sauce</span> sauce<span>;</span>
-    <span>Cheese</span> cheese<span>;</span>
-    <span>Clam</span> clam<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>对于这样一个复杂产品，我们就将其构造的过程委派给一个建造者(Builder)来完成。</p>
-<div><pre><code><span>public</span> <span>interface</span> <span>ClamPizzaBuilder</span> <span>{</span>
-    <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>)</span><span>;</span>
-    <span>ClamPizzaBuilder</span> <span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
-    <span>ClamPizzaBuilder</span> <span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
-    <span>ClamPizzaBuilder</span> <span>prepareClam</span><span>(</span><span>)</span><span>;</span>
-
-    <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span><span>;</span>
-<span>}</span>
-
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>然后，我们对接口进行实现。</p>
-<p>注意，这里有两种具体类的实现方法：</p>
-<ol>
-<li>
-<p>在构建实际建造者时，就 <strong>立即</strong> 创建一个 <strong>默认的产品对象</strong>；</p>
-</li>
-<li>
-<p>由实际建造者储存创建产品的参数，当调用 <code>build()</code> 方法时，才返回产品对象</p>
-</li>
-</ol>
-<p>在这里，需要指明的就是方法二更好；</p>
-<p>因为方法二符合语义，只有调用 <code>build()</code> 才真正的构建了对象；</p>
-<p>而且也适合于不可变对象（构造之后对象的属性不能发生改变）。</p>
-<p>方法一：</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
-<span>{</span>
-    <span>ClamPizza</span> clamPizza <span>=</span> <span>null</span><span>;</span>
-
-    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
-        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
-        <span>// 准备面团，可以直接放入，也可以进行处理后放入</span>
-        <span>return</span> <span>this</span><span>;</span>
-    <span>}</span>
-
-    <span>//  剩下的 prepare 方法</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
-        <span>return</span> clamPizza<span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><p>方法二：</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
-    <span>// fields</span>
-
-    <span>public</span> <span>ClamPizza</span><span>(</span><span>ClamPizzaBuilder</span> builder<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
-        <span>// etc.</span>
-    <span>}</span>
-<span>}</span>
-
-<span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
-<span>{</span>
-    <span>// fields</span>
-
-    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
-        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
-        <span>return</span> <span>this</span><span>;</span>
-    <span>}</span>
-
-    <span>//  剩下的 prepare 方法</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
-        <span>return</span> <span>ClamPizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br></div></div><p>生成器模式和工厂模式最大的不同就是拥有一个指挥者来指挥产品的构建过程；</p>
-<div><pre><code><span>public</span> <span>class</span> <span>ClamPizzaDirector</span> <span>{</span>
-    <span>private</span> <span>ClamPizzaBuilder</span> builder<span>;</span>
-
-    <span>// 指挥者用于指定产品建造的步骤</span>
-    <span>public</span> <span>ClamPizza</span> <span>construct</span><span>(</span><span>)</span> <span>{</span>
-        builder<span>.</span><span>prepareDough</span><span>(</span><span>)</span><span>;</span>
-        builder<span>.</span><span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
-        builder<span>.</span><span>prepareClam</span><span>(</span><span>)</span><span>;</span>
-        builder<span>.</span><span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>当然，有些比萨并不需要芝士，这个时候，我们就可以去除掉 <code>prepareCheese()</code> 的这一个步骤。</p>
-<h2 id="_4-内部生成器减少构造器"> 4. 内部生成器减少构造器</h2>
-<p>生成器模式除了能构造复杂产品以外，一个很重要的作用就是能解决由于构造参数的组合过多所导致的构造器爆炸。</p>
-<h3 id="_4-1-构造器爆炸"> 4.1 构造器爆炸</h3>
-<p>假如一个类拥有 4 个属性，那么它 <strong>理想状态</strong> 下的构造函数就有 0 个参数，一个参数，两个参数，三个参数和四个参数。</p>
-<p>也就是说，它的构造器数量</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">W</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>3</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></span></p>
-<p>当类的属性为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 时，有</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:3.024108em;vertical-align:-1.262054em;"></span><span><span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">W</span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>⋯</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>n</span><span>−</span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span>2</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>所以，类的属性和理想状态下的构造器数量为 <strong>指数关系</strong></p>
-<h3 id="_4-2-实现"> 4.2 实现</h3>
-<div><pre><code><span>public</span> <span>class</span> <span>Pizza</span> <span>{</span>
-    <span>Dough</span> dough<span>;</span>
-    <span>Cheese</span> cheese<span>;</span>
-    <span>Sauce</span> sauce<span>;</span>
-
-    <span>private</span> <span>Pizza</span><span>(</span><span>Pizza<span>.</span>Builder</span> builder<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
-        <span>this</span><span>.</span>cheese <span>=</span> builder<span>.</span>cheese<span>;</span>
-        <span>this</span><span>.</span>sauce <span>=</span> builder<span>.</span>sauce<span>;</span>
-    <span>}</span>
-
-    <span>public</span> <span>static</span> <span>class</span> <span>Builder</span> <span>{</span>
-        <span>private</span> <span>Dough</span> dough <span>=</span> defaultDough<span>;</span>
-        <span>private</span> <span>Cheese</span> cheese <span>=</span> <span>null</span><span>;</span>
-        <span>private</span> <span>Sauce</span> sauce <span>=</span> <span>null</span><span>;</span>
-
-        <span>public</span> <span>Builder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
-            <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
-            <span>return</span> <span>this</span><span>;</span>
-        <span>}</span>
-
-        <span>public</span> <span>Builder</span> <span>prepareCheese</span><span>(</span><span>Cheese</span> cheese<span>)</span> <span>{</span>
-            <span>this</span><span>.</span>cheese <span>=</span> cheese<span>;</span>
-            <span>return</span> <span>this</span><span>;</span>
-        <span>}</span>
-
-        <span>public</span> <span>Builder</span> <span>prepareSauce</span><span>(</span><span>Sauce</span> sauce<span>)</span> <span>{</span>
-            <span>this</span><span>.</span>sauce <span>=</span> sauce<span>;</span>
-            <span>return</span> <span>this</span><span>;</span>
-        <span>}</span>
-
-        <span>public</span> <span>Pizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
-            <span>return</span> <span>new</span> <span>Pizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
-        <span>}</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br></div></div><p>这样，即使 <code>Pizza</code> 有三个属性，但是我们通过使用一个内置的 <code>Builder</code>，成功地将构造器限制在了一个；</p>
-<p>同时，由于每个 <code>prepare</code> 方法都会返回 <code>Builder</code>；</p>
-<p>也就是说，我们可以在任何一个准备阶段进行 <code>build()</code>；</p>
-<p>这样，也就满足了不同的参数组合的需求；</p>
-<p>同时，由于 <code>Pizza</code> 的构造函数是 <code>private</code> 的，所以这就限定了只能通过生成器来建造对象。</p>
-<p>使用：</p>
-<div><pre><code><span>public</span> <span>static</span> <span>void</span> <span>main</span><span>(</span><span>String</span><span>[</span><span>]</span> args<span>)</span> <span>{</span>
-    <span>Pizza</span> <span>Pizza</span> <span>=</span> <span>new</span> <span>Pizza<span>.</span>Builder</span><span>(</span><span>)</span>
-                    <span>.</span><span>prepareDough</span><span>(</span>dough<span>)</span>
-                    <span>.</span><span>prepareSauce</span><span>(</span>sauce<span>)</span>
-                    <span>.</span><span>prepareCheese</span><span>(</span>cheese<span>)</span>
-                    <span>.</span><span>build</span><span>(</span><span>)</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="_5-模式扩展"> 5. 模式扩展</h2>
-<p>当只有一个具体建造者时，可以直接省略生成器接口；</p>
-<p>例如上面的静态内部生成器。</p>
-<p>有时候可以直接省略指挥者对象，而由 <strong>客户</strong> 直接充当指导者；</p>
-<p>例如，客户自己冲泡咖啡。</p>
-<h2 id="_6-与抽象工厂的不同"> 6. 与抽象工厂的不同</h2>
-<p>抽象工厂模式生产的是一个产品族，而生成器模式所生产的 <strong>一个</strong> 复杂产品；</p>
-<p>形象的说明就是，抽象工厂生产的是 <strong>汽车的零部件</strong>；</p>
-<p>而生成器是将零部件 <strong>组装</strong> 成为一辆汽车。</p>
-<h2 id="_7-优缺点"> 7. 优缺点</h2>
-<h3 id="_7-1-优点"> 7.1 优点</h3>
-<ol>
-<li>
-<p>良好的封装性，客户端不必知道产品的内部细节</p>
-</li>
-<li>
-<p>建造者是独立的，容易扩展</p>
-</li>
-<li>
-<p>可以使用其他的对象进行构造辅助，而普通的产品构造方式不容易获取到</p>
-</li>
-</ol>
-<h3 id="_7-2-缺点"> 7.2 缺点</h3>
-<ol>
-<li>
-<p>产生多余的 <code>Builder</code>  对象</p>
-</li>
-<li>
-<p>建造的过程暴露在外</p>
-</li>
-</ol>
-]]></content:encoded>
-      <enclosure url="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" type="image/jpeg"/>
+      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
     </item>
     <item>
       <title>工厂模式</title>
@@ -30760,6 +30539,227 @@ python -m http.server
 <p>但是缺点是它需要创建不同的命令对象来进行不同的命令接收者的包装；</p>
 <p>这就会让我们的代码中出现很多的小型类。</p>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>生成器模式(Builder Pattern)</title>
+      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</link>
+      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F(Builder%20Pattern)/</guid>
+      <source url="https://wafer.li/rss.xml">生成器模式(Builder Pattern)</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;工厂模式的目标是利用多态，减少类之间的耦合度；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;而工厂模式不需要指导者。&amp;lt;/p&amp;gt;
+</description>
+      <category>《Head First 设计模式》笔记</category>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>生成器模式(Builder Pattern) 听起来很像 工厂模式(Factory Pattern)，不过两者有着很大的不同。</p>
+<p>工厂模式的目标是利用多态，减少类之间的耦合度；</p>
+<p>而生成器模式的目标在于， 一步一步地构建一个复杂产品，同时解决由于复杂参数造成的构造器数量爆炸。</p>
+<p>同时，生成器需要一个指导者来一步一步地指定产品构建的参数或者产品构建的步骤；</p>
+<p>而工厂模式不需要指导者。</p>
+
+<h2 id="_2-结构类图"> 2. 结构类图</h2>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" alt="" /></p>
+<h2 id="_3-构造复杂产品"> 3. 构造复杂产品</h2>
+<p>所谓的复杂产品就是一个产品中有很多子类，而且每个子类都有相应的构造流程。</p>
+<p>例如，一个蛤蜊比萨，拥有面饼，酱料，芝士，蛤蜊等其他食材。</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
+    <span>Dough</span> dough<span>;</span>
+    <span>Sauce</span> sauce<span>;</span>
+    <span>Cheese</span> cheese<span>;</span>
+    <span>Clam</span> clam<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>对于这样一个复杂产品，我们就将其构造的过程委派给一个建造者(Builder)来完成。</p>
+<div><pre><code><span>public</span> <span>interface</span> <span>ClamPizzaBuilder</span> <span>{</span>
+    <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>)</span><span>;</span>
+    <span>ClamPizzaBuilder</span> <span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
+    <span>ClamPizzaBuilder</span> <span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
+    <span>ClamPizzaBuilder</span> <span>prepareClam</span><span>(</span><span>)</span><span>;</span>
+
+    <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span><span>;</span>
+<span>}</span>
+
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>然后，我们对接口进行实现。</p>
+<p>注意，这里有两种具体类的实现方法：</p>
+<ol>
+<li>
+<p>在构建实际建造者时，就 <strong>立即</strong> 创建一个 <strong>默认的产品对象</strong>；</p>
+</li>
+<li>
+<p>由实际建造者储存创建产品的参数，当调用 <code>build()</code> 方法时，才返回产品对象</p>
+</li>
+</ol>
+<p>在这里，需要指明的就是方法二更好；</p>
+<p>因为方法二符合语义，只有调用 <code>build()</code> 才真正的构建了对象；</p>
+<p>而且也适合于不可变对象（构造之后对象的属性不能发生改变）。</p>
+<p>方法一：</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
+<span>{</span>
+    <span>ClamPizza</span> clamPizza <span>=</span> <span>null</span><span>;</span>
+
+    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
+        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
+        <span>// 准备面团，可以直接放入，也可以进行处理后放入</span>
+        <span>return</span> <span>this</span><span>;</span>
+    <span>}</span>
+
+    <span>//  剩下的 prepare 方法</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
+        <span>return</span> clamPizza<span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><p>方法二：</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ClamPizza</span> <span>{</span>
+    <span>// fields</span>
+
+    <span>public</span> <span>ClamPizza</span><span>(</span><span>ClamPizzaBuilder</span> builder<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
+        <span>// etc.</span>
+    <span>}</span>
+<span>}</span>
+
+<span>public</span> <span>class</span> <span>ConcreteClamPizzaBuilder</span> <span>implements</span> <span>ClamPizzaBuilder</span>
+<span>{</span>
+    <span>// fields</span>
+
+    <span>public</span> <span>ConcreteClamPizzaBuilder</span><span>(</span><span>)</span> <span>{</span>
+        clamPizza <span>=</span> <span>new</span> <span>ClamPizza</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizzaBuilder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
+        <span>return</span> <span>this</span><span>;</span>
+    <span>}</span>
+
+    <span>//  剩下的 prepare 方法</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>ClamPizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
+        <span>return</span> <span>ClamPizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br></div></div><p>生成器模式和工厂模式最大的不同就是拥有一个指挥者来指挥产品的构建过程；</p>
+<div><pre><code><span>public</span> <span>class</span> <span>ClamPizzaDirector</span> <span>{</span>
+    <span>private</span> <span>ClamPizzaBuilder</span> builder<span>;</span>
+
+    <span>// 指挥者用于指定产品建造的步骤</span>
+    <span>public</span> <span>ClamPizza</span> <span>construct</span><span>(</span><span>)</span> <span>{</span>
+        builder<span>.</span><span>prepareDough</span><span>(</span><span>)</span><span>;</span>
+        builder<span>.</span><span>prepareCheese</span><span>(</span><span>)</span><span>;</span>
+        builder<span>.</span><span>prepareClam</span><span>(</span><span>)</span><span>;</span>
+        builder<span>.</span><span>prepareSauce</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>当然，有些比萨并不需要芝士，这个时候，我们就可以去除掉 <code>prepareCheese()</code> 的这一个步骤。</p>
+<h2 id="_4-内部生成器减少构造器"> 4. 内部生成器减少构造器</h2>
+<p>生成器模式除了能构造复杂产品以外，一个很重要的作用就是能解决由于构造参数的组合过多所导致的构造器爆炸。</p>
+<h3 id="_4-1-构造器爆炸"> 4.1 构造器爆炸</h3>
+<p>假如一个类拥有 4 个属性，那么它 <strong>理想状态</strong> 下的构造函数就有 0 个参数，一个参数，两个参数，三个参数和四个参数。</p>
+<p>也就是说，它的构造器数量</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">W</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>3</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.1111079999999998em;vertical-align:-0.247em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>4</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>当类的属性为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 时，有</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:3.024108em;vertical-align:-1.262054em;"></span><span><span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">W</span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span><span><span><span><span style="height:1.762054em;"><span style="top:-3.897946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>0</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>⋯</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.8641079999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>n</span><span>−</span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span style="margin-right:0.07153em;">C</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.247em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.397946em;"><span style="height:3em;"></span><span><span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span><span><span>2</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:1.262054em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>所以，类的属性和理想状态下的构造器数量为 <strong>指数关系</strong></p>
+<h3 id="_4-2-实现"> 4.2 实现</h3>
+<div><pre><code><span>public</span> <span>class</span> <span>Pizza</span> <span>{</span>
+    <span>Dough</span> dough<span>;</span>
+    <span>Cheese</span> cheese<span>;</span>
+    <span>Sauce</span> sauce<span>;</span>
+
+    <span>private</span> <span>Pizza</span><span>(</span><span>Pizza<span>.</span>Builder</span> builder<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>dough <span>=</span> builder<span>.</span>dough<span>;</span>
+        <span>this</span><span>.</span>cheese <span>=</span> builder<span>.</span>cheese<span>;</span>
+        <span>this</span><span>.</span>sauce <span>=</span> builder<span>.</span>sauce<span>;</span>
+    <span>}</span>
+
+    <span>public</span> <span>static</span> <span>class</span> <span>Builder</span> <span>{</span>
+        <span>private</span> <span>Dough</span> dough <span>=</span> defaultDough<span>;</span>
+        <span>private</span> <span>Cheese</span> cheese <span>=</span> <span>null</span><span>;</span>
+        <span>private</span> <span>Sauce</span> sauce <span>=</span> <span>null</span><span>;</span>
+
+        <span>public</span> <span>Builder</span> <span>prepareDough</span><span>(</span><span>Dough</span> dough<span>)</span> <span>{</span>
+            <span>this</span><span>.</span>dough <span>=</span> dough<span>;</span>
+            <span>return</span> <span>this</span><span>;</span>
+        <span>}</span>
+
+        <span>public</span> <span>Builder</span> <span>prepareCheese</span><span>(</span><span>Cheese</span> cheese<span>)</span> <span>{</span>
+            <span>this</span><span>.</span>cheese <span>=</span> cheese<span>;</span>
+            <span>return</span> <span>this</span><span>;</span>
+        <span>}</span>
+
+        <span>public</span> <span>Builder</span> <span>prepareSauce</span><span>(</span><span>Sauce</span> sauce<span>)</span> <span>{</span>
+            <span>this</span><span>.</span>sauce <span>=</span> sauce<span>;</span>
+            <span>return</span> <span>this</span><span>;</span>
+        <span>}</span>
+
+        <span>public</span> <span>Pizza</span> <span>build</span><span>(</span><span>)</span> <span>{</span>
+            <span>return</span> <span>new</span> <span>Pizza</span><span>(</span><span>this</span><span>)</span><span>;</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br></div></div><p>这样，即使 <code>Pizza</code> 有三个属性，但是我们通过使用一个内置的 <code>Builder</code>，成功地将构造器限制在了一个；</p>
+<p>同时，由于每个 <code>prepare</code> 方法都会返回 <code>Builder</code>；</p>
+<p>也就是说，我们可以在任何一个准备阶段进行 <code>build()</code>；</p>
+<p>这样，也就满足了不同的参数组合的需求；</p>
+<p>同时，由于 <code>Pizza</code> 的构造函数是 <code>private</code> 的，所以这就限定了只能通过生成器来建造对象。</p>
+<p>使用：</p>
+<div><pre><code><span>public</span> <span>static</span> <span>void</span> <span>main</span><span>(</span><span>String</span><span>[</span><span>]</span> args<span>)</span> <span>{</span>
+    <span>Pizza</span> <span>Pizza</span> <span>=</span> <span>new</span> <span>Pizza<span>.</span>Builder</span><span>(</span><span>)</span>
+                    <span>.</span><span>prepareDough</span><span>(</span>dough<span>)</span>
+                    <span>.</span><span>prepareSauce</span><span>(</span>sauce<span>)</span>
+                    <span>.</span><span>prepareCheese</span><span>(</span>cheese<span>)</span>
+                    <span>.</span><span>build</span><span>(</span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="_5-模式扩展"> 5. 模式扩展</h2>
+<p>当只有一个具体建造者时，可以直接省略生成器接口；</p>
+<p>例如上面的静态内部生成器。</p>
+<p>有时候可以直接省略指挥者对象，而由 <strong>客户</strong> 直接充当指导者；</p>
+<p>例如，客户自己冲泡咖啡。</p>
+<h2 id="_6-与抽象工厂的不同"> 6. 与抽象工厂的不同</h2>
+<p>抽象工厂模式生产的是一个产品族，而生成器模式所生产的 <strong>一个</strong> 复杂产品；</p>
+<p>形象的说明就是，抽象工厂生产的是 <strong>汽车的零部件</strong>；</p>
+<p>而生成器是将零部件 <strong>组装</strong> 成为一辆汽车。</p>
+<h2 id="_7-优缺点"> 7. 优缺点</h2>
+<h3 id="_7-1-优点"> 7.1 优点</h3>
+<ol>
+<li>
+<p>良好的封装性，客户端不必知道产品的内部细节</p>
+</li>
+<li>
+<p>建造者是独立的，容易扩展</p>
+</li>
+<li>
+<p>可以使用其他的对象进行构造辅助，而普通的产品构造方式不容易获取到</p>
+</li>
+</ol>
+<h3 id="_7-2-缺点"> 7.2 缺点</h3>
+<ol>
+<li>
+<p>产生多余的 <code>Builder</code>  对象</p>
+</li>
+<li>
+<p>建造的过程暴露在外</p>
+</li>
+</ol>
+]]></content:encoded>
+      <enclosure url="https://ww4.sinaimg.cn/large/006tNc79ly1fdk1a55zpqj309j0a2wep.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
