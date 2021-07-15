@@ -6,8 +6,8 @@
     <link>https://wafer.li/</link>
     <description>Wafer Li 的知识库，请随便浏览</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 15 Jul 2021 12:01:53 GMT</pubDate>
-    <lastBuildDate>Thu, 15 Jul 2021 12:01:53 GMT</lastBuildDate>
+    <pubDate>Thu, 15 Jul 2021 12:10:46 GMT</pubDate>
+    <lastBuildDate>Thu, 15 Jul 2021 12:10:46 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;&lt;img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /&gt;&lt;/a&gt; Wafer Li 2016-2021</copyright>
@@ -46,35 +46,6 @@
     <category>Hexo</category>
     <category>Live</category>
     <category>Tools</category>
-    <item>
-      <title>关于我</title>
-      <link>https://wafer.li/about/</link>
-      <guid>https://wafer.li/about/</guid>
-      <source url="https://wafer.li/rss.xml">关于我</source>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="关于我"> 关于我</h1>
-<h2 id="图哪来的"> 图哪来的</h2>
-<p><a href="https://waifulabs.com/" target="_blank" rel="noopener noreferrer">WaifuLabs</a></p>
-<h2 id="代码"> 代码</h2>
-<p>Java、Kotlin 和 Scala；</p>
-<blockquote>
-<p><s>希望有一天能实现 JVM 平台语言制霸；</s></p>
-</blockquote>
-<p>能把 Android 学好学透就不错啦！</p>
-<blockquote>
-<p><s>最近在烦恼要不要转前端……</s></p>
-</blockquote>
-<p>前端还是慢慢来吧，有空就折腾一下</p>
-<h2 id="项目"> 项目</h2>
-<p>2021 年可能会写点小东西，拭目以待！（也可能咕咕~</p>
-<h2 id="艦これ"> 艦これ</h2>
-<p><strong>曾经的</strong>塔威提督，目前等级 119；</p>
-<p><s>舰娘就是生活</s> 生活还是折腾，生命不息，折腾不止</p>
-<p><a href="https://myfleet.moe/user/11092700/top" target="_blank" rel="noopener noreferrer">MyFleetGrils</a></p>
-<p><img src="/images/kanmusu.png" alt="Kanmusu" /></p>
-]]></content:encoded>
-      <enclosure url="https://wafer.li/images/kanmusu.png" type="image/png"/>
-    </item>
     <item>
       <title>C# Basic</title>
       <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Basic/</link>
@@ -419,6 +390,35 @@ s1 <span>+</span> s2<span>;</span>			<span>// 转换为 int</span>
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>关于我</title>
+      <link>https://wafer.li/about/</link>
+      <guid>https://wafer.li/about/</guid>
+      <source url="https://wafer.li/rss.xml">关于我</source>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="关于我"> 关于我</h1>
+<h2 id="图哪来的"> 图哪来的</h2>
+<p><a href="https://waifulabs.com/" target="_blank" rel="noopener noreferrer">WaifuLabs</a></p>
+<h2 id="代码"> 代码</h2>
+<p>Java、Kotlin 和 Scala；</p>
+<blockquote>
+<p><s>希望有一天能实现 JVM 平台语言制霸；</s></p>
+</blockquote>
+<p>能把 Android 学好学透就不错啦！</p>
+<blockquote>
+<p><s>最近在烦恼要不要转前端……</s></p>
+</blockquote>
+<p>前端还是慢慢来吧，有空就折腾一下</p>
+<h2 id="项目"> 项目</h2>
+<p>2021 年可能会写点小东西，拭目以待！（也可能咕咕~</p>
+<h2 id="艦これ"> 艦これ</h2>
+<p><strong>曾经的</strong>塔威提督，目前等级 119；</p>
+<p><s>舰娘就是生活</s> 生活还是折腾，生命不息，折腾不止</p>
+<p><a href="https://myfleet.moe/user/11092700/top" target="_blank" rel="noopener noreferrer">MyFleetGrils</a></p>
+<p><img src="/images/kanmusu.png" alt="Kanmusu" /></p>
+]]></content:encoded>
+      <enclosure url="https://wafer.li/images/kanmusu.png" type="image/png"/>
+    </item>
+    <item>
       <title>C# Class Basic</title>
       <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Class%20Basic/</link>
       <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Class%20Basic/</guid>
@@ -521,56 +521,6 @@ s1 <span>+</span> s2<span>;</span>			<span>// 转换为 int</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>C# Control Flow</title>
-      <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Control%20Flow/</link>
-      <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Control%20Flow/</guid>
-      <source url="https://wafer.li/rss.xml">C# Control Flow</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-if-else&amp;quot;&amp;gt; 1. if/else&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;只接受布尔值&amp;lt;/p&amp;gt;
-</description>
-      <category>CSharp</category>
-      <pubDate>Wed, 30 Nov 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-if-else"> 1. if/else</h2>
-<p>只接受布尔值</p>
-
-<h2 id="_2-逻辑运算符"> 2. 逻辑运算符</h2>
-<p><code>&amp;&amp;</code> <code>||</code> <code>!</code></p>
-<p>需要注意的是，<code>&amp;&amp;</code> 和 <code>||</code> 在有必要的时候都会“短路”，也就是说如果只检查一个表达式就能确定 if 的布尔值，那么就不会检查另一个了。</p>
-<h2 id="_3-switch"> 3. switch</h2>
-<p>switch 相比 Java 来说，可以支持 <strong>字符串</strong> 和 <strong>枚举</strong> 值。</p>
-<blockquote>
-<p>不过并不支持类型检测，相比 Kotlin 来说差了一截。</p>
-</blockquote>
-<h2 id="_4-for"> 4. for</h2>
-<div><pre><code><span>for</span><span>(</span><span><span>int</span></span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>4</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
-    <span>// for body</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_5-foreach"> 5. foreach</h2>
-<p>遗憾的是，C# 将 foreach 语法用了一个单独的关键字 <code>foreach</code></p>
-<div><pre><code><span>foreach</span><span>(</span><span><span>string</span></span> c <span>in</span> carTypes<span>)</span> <span>{</span>
-    Console<span>.</span><span>WriteLine</span><span>(</span>c<span>)</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>当然也可以使用隐含类型 <code>var</code></p>
-<div><pre><code><span>foreach</span><span>(</span><span><span>var</span></span> i <span>in</span> linqSubset<span>)</span> <span>{</span>
-    Console<span>.</span><span>Write</span><span>(</span><span>"{0}"</span><span>,</span> i<span>)</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_6-while-do-while"> 6. while/do-while</h2>
-<p>和 Java 没什么不同；
-需要注意一下 do while 最后要有个分号。</p>
-<div><pre><code><span>while</span><span>(</span>condition<span>)</span> <span>{</span>
-    <span>// hehe</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>do</span> <span>{</span>
-    <span>// hehe</span>
-<span>}</span><span>while</span><span>(</span>condition<span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>C# Method</title>
       <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Method/</link>
       <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Method/</guid>
@@ -667,6 +617,56 @@ s1 <span>+</span> s2<span>;</span>			<span>// 转换为 int</span>
 <p>注意方法签名只由两部分决定：方法名字和方法参数（类型和数量）。
 和 Java 的方法重载没什么区别。</p>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>C# Control Flow</title>
+      <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Control%20Flow/</link>
+      <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Control%20Flow/</guid>
+      <source url="https://wafer.li/rss.xml">C# Control Flow</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-if-else&amp;quot;&amp;gt; 1. if/else&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;只接受布尔值&amp;lt;/p&amp;gt;
+</description>
+      <category>CSharp</category>
+      <pubDate>Wed, 30 Nov 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-if-else"> 1. if/else</h2>
+<p>只接受布尔值</p>
+
+<h2 id="_2-逻辑运算符"> 2. 逻辑运算符</h2>
+<p><code>&amp;&amp;</code> <code>||</code> <code>!</code></p>
+<p>需要注意的是，<code>&amp;&amp;</code> 和 <code>||</code> 在有必要的时候都会“短路”，也就是说如果只检查一个表达式就能确定 if 的布尔值，那么就不会检查另一个了。</p>
+<h2 id="_3-switch"> 3. switch</h2>
+<p>switch 相比 Java 来说，可以支持 <strong>字符串</strong> 和 <strong>枚举</strong> 值。</p>
+<blockquote>
+<p>不过并不支持类型检测，相比 Kotlin 来说差了一截。</p>
+</blockquote>
+<h2 id="_4-for"> 4. for</h2>
+<div><pre><code><span>for</span><span>(</span><span><span>int</span></span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>4</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>// for body</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_5-foreach"> 5. foreach</h2>
+<p>遗憾的是，C# 将 foreach 语法用了一个单独的关键字 <code>foreach</code></p>
+<div><pre><code><span>foreach</span><span>(</span><span><span>string</span></span> c <span>in</span> carTypes<span>)</span> <span>{</span>
+    Console<span>.</span><span>WriteLine</span><span>(</span>c<span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>当然也可以使用隐含类型 <code>var</code></p>
+<div><pre><code><span>foreach</span><span>(</span><span><span>var</span></span> i <span>in</span> linqSubset<span>)</span> <span>{</span>
+    Console<span>.</span><span>Write</span><span>(</span><span>"{0}"</span><span>,</span> i<span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="_6-while-do-while"> 6. while/do-while</h2>
+<p>和 Java 没什么不同；
+需要注意一下 do while 最后要有个分号。</p>
+<div><pre><code><span>while</span><span>(</span>condition<span>)</span> <span>{</span>
+    <span>// hehe</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>do</span> <span>{</span>
+    <span>// hehe</span>
+<span>}</span><span>while</span><span>(</span>condition<span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>C# Object Initialization</title>
@@ -808,34 +808,6 @@ rect<span>.</span>BottomRight <span>=</span> p2<span>;</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>C# Visibility Modifiers</title>
-      <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Visibility%20Modifiers/</link>
-      <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Visibility%20Modifiers/</guid>
-      <source url="https://wafer.li/rss.xml">C# Visibility Modifiers</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;C# 的访问修饰符比 Java 多了两个 &amp;lt;code&amp;gt;internal&amp;lt;/code&amp;gt; 和 &amp;lt;code&amp;gt;protected internal&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;默认行为也不同&amp;lt;/p&amp;gt;
-</description>
-      <category>CSharp</category>
-      <pubDate>Sat, 17 Dec 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>C# 的访问修饰符比 Java 多了两个 <code>internal</code> 和 <code>protected internal</code></p>
-<p>默认行为也不同</p>
-
-<h2 id="_2-internal"> 2. Internal</h2>
-<p>C# 新增的 <code>internal</code> 访问修饰符，指的是，该类型的可见范围为 <strong>当前程序集</strong>(即 <code>.dll</code> 和 <code>.exe</code> 中)</p>
-<blockquote>
-<p>注意和 Java 的 package 级别的可见性区分，<code>internal</code> 指示的是整个程序集的可见性。</p>
-</blockquote>
-<h2 id="_3-protected-internal"> 3. Protected Internal</h2>
-<p><code>protected internal</code> 实际上是 <code>protected</code> 和 <code>internal</code> 的一个 <code>union</code>。</p>
-<p>它指示的是，该类型在当前程序集可见 <strong>或者</strong> 在其他程序集中的派生类可见</p>
-<h2 id="_4-修饰限制"> 4. 修饰限制</h2>
-<p>Top-level 的类型只能使用 <code>public</code> 和 <code>internal</code> 来修饰，如普通的类。</p>
-<p>嵌套类、嵌套的数据结构可以使用其他的修饰符。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>C# 分部类</title>
       <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20%E5%88%86%E9%83%A8%E7%B1%BB/</link>
       <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20%E5%88%86%E9%83%A8%E7%B1%BB/</guid>
@@ -881,6 +853,34 @@ rect<span>.</span>BottomRight <span>=</span> p2<span>;</span>
 <span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>需要注意的是，文件的名字是可以随便取的，并没有特别的限制。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>C# Visibility Modifiers</title>
+      <link>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Visibility%20Modifiers/</link>
+      <guid>https://wafer.li/blog-corners/langroad/CSharp/CSharp%20Visibility%20Modifiers/</guid>
+      <source url="https://wafer.li/rss.xml">C# Visibility Modifiers</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;C# 的访问修饰符比 Java 多了两个 &amp;lt;code&amp;gt;internal&amp;lt;/code&amp;gt; 和 &amp;lt;code&amp;gt;protected internal&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;默认行为也不同&amp;lt;/p&amp;gt;
+</description>
+      <category>CSharp</category>
+      <pubDate>Sat, 17 Dec 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>C# 的访问修饰符比 Java 多了两个 <code>internal</code> 和 <code>protected internal</code></p>
+<p>默认行为也不同</p>
+
+<h2 id="_2-internal"> 2. Internal</h2>
+<p>C# 新增的 <code>internal</code> 访问修饰符，指的是，该类型的可见范围为 <strong>当前程序集</strong>(即 <code>.dll</code> 和 <code>.exe</code> 中)</p>
+<blockquote>
+<p>注意和 Java 的 package 级别的可见性区分，<code>internal</code> 指示的是整个程序集的可见性。</p>
+</blockquote>
+<h2 id="_3-protected-internal"> 3. Protected Internal</h2>
+<p><code>protected internal</code> 实际上是 <code>protected</code> 和 <code>internal</code> 的一个 <code>union</code>。</p>
+<p>它指示的是，该类型在当前程序集可见 <strong>或者</strong> 在其他程序集中的派生类可见</p>
+<h2 id="_4-修饰限制"> 4. 修饰限制</h2>
+<p>Top-level 的类型只能使用 <code>public</code> 和 <code>internal</code> 来修饰，如普通的类。</p>
+<p>嵌套类、嵌套的数据结构可以使用其他的修饰符。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -5651,7 +5651,7 @@ Fragment 不像 Activity 拥有自带的 <code>findViewById()</code> 方法，�
 &amp;lt;p&amp;gt;这就可以保证对 &amp;lt;code&amp;gt;connection&amp;lt;/code&amp;gt; 的操作，不会影响到接下来的作用域。&amp;lt;/p&amp;gt;
 </description>
       <category>Kotlin</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>在 Kotlin 的 <a href="https://github.com/JetBrains/kotlin/blob/master/libraries/stdlib/src/kotlin/util/Standard.kt" target="_blank" rel="noopener noreferrer">Standard.kt</a> 中提供了一些特殊的高阶函数；</p>
 <p>它们被称作 <strong>Scoping 函数</strong>，此类函数通过使用一个函数 <code>block</code>，将你需要对某对象进行的一系列操作限制在 lambda 作用域内；</p>
 <p>这样，对于该对象操作的代码就不会泄露到外层作用域，使得代码更为干净整洁。</p>
@@ -7454,171 +7454,6 @@ list<span>.</span><span>swap</span><span>(</span>list<span>.</span><span>binaryS
 ]]></content:encoded>
     </item>
     <item>
-      <title>Kotlin 控制流程</title>
-      <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B/</link>
-      <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B/</guid>
-      <source url="https://wafer.li/rss.xml">Kotlin 控制流程</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-if&amp;quot;&amp;gt; 1. If&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;Kotlin 中 &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt; 语句是一个表达式，&amp;lt;strong&amp;gt;有返回值&amp;lt;/strong&amp;gt;，功能和 C++ 和 Java 中的&amp;lt;strong&amp;gt;条件表达式&amp;lt;/strong&amp;gt;相同。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;所以，Kotlin 中不支持条件表达式，因为 &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt; 语句已经具备了这个功能。&amp;lt;/p&amp;gt;
-&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span&amp;gt;// Traditional usage&amp;lt;/span&amp;gt;
-&amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; a &amp;lt;span&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;(&amp;lt;/span&amp;gt;a &amp;lt;span&amp;gt;&amp;lt;&amp;lt;/span&amp;gt; b&amp;lt;span&amp;gt;)&amp;lt;/span&amp;gt;
-max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; b
-&amp;lt;span&amp;gt;// With else&amp;lt;/span&amp;gt;
-&amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; max&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; Int &amp;lt;span&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;(&amp;lt;/span&amp;gt;a &amp;lt;span&amp;gt;&amp;gt;&amp;lt;/span&amp;gt; b&amp;lt;span&amp;gt;)&amp;lt;/span&amp;gt;
-max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; a
-&amp;lt;span&amp;gt;else&amp;lt;/span&amp;gt;
-max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; b
-&amp;lt;span&amp;gt;// As expression&amp;lt;/span&amp;gt;
-&amp;lt;span&amp;gt;val&amp;lt;/span&amp;gt; max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;(&amp;lt;/span&amp;gt;a &amp;lt;span&amp;gt;&amp;gt;&amp;lt;/span&amp;gt; b&amp;lt;span&amp;gt;)&amp;lt;/span&amp;gt; a &amp;lt;span&amp;gt;else&amp;lt;/span&amp;gt; b
-&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;1&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;2&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;3&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;4&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;5&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;6&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;7&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;8&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;9&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;10&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;</description>
-      <category>Kotlin</category>
-      <pubDate>Fri, 17 Mar 2017 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-if"> 1. If</h2>
-<p>Kotlin 中 <code>if</code> 语句是一个表达式，<strong>有返回值</strong>，功能和 C++ 和 Java 中的<strong>条件表达式</strong>相同。</p>
-<p>所以，Kotlin 中不支持条件表达式，因为 <code>if</code> 语句已经具备了这个功能。</p>
-<div><pre><code><span>// Traditional usage</span>
-<span>var</span> max <span>=</span> a <span>if</span> <span>(</span>a <span>&lt;</span> b<span>)</span>
-max <span>=</span> b
-<span>// With else</span>
-<span>var</span> max<span>:</span> Int <span>if</span> <span>(</span>a <span>></span> b<span>)</span>
-max <span>=</span> a
-<span>else</span>
-max <span>=</span> b
-<span>// As expression</span>
-<span>val</span> max <span>=</span> <span>if</span> <span>(</span>a <span>></span> b<span>)</span> a <span>else</span> b
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div>
-<p>同时，<code>if</code> 表达式也支持<strong>语句块</strong>，语句块中的<strong>最后一个</strong>变量或常量的值就是语句块的返回值。</p>
-<div><pre><code><span>val</span> max <span>=</span> <span>if</span> <span>(</span>a <span>></span> b<span>)</span> <span>{</span> <span>print</span><span>(</span><span>"Choose a"</span><span>)</span> a
-<span>}</span>
-<span>else</span> <span>{</span>
-    <span>print</span><span>(</span><span>"Choose b"</span><span>)</span>
-b <span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>需要注意的是，<strong>如果 <code>if</code> 作为一个表达式（需要其返回值），那么 <code>else</code> 语句就必须存在</strong>。</p>
-<h2 id="_2-when"> 2. When</h2>
-<p>Kotlin 用 <code>when</code> 表达式替代了 Java 和 C++ 中的 <code>switch</code> 语句的功能。</p>
-<p>一个简单的 <code>when</code> 语句如下：</p>
-<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
-<span>1</span> <span>-></span> <span>print</span><span>(</span><span>"x == 1"</span><span>)</span>
-<span>2</span> <span>-></span> <span>print</span><span>(</span><span>"x == 2"</span><span>)</span>
-<span>else</span> <span>-></span> <span>{</span> <span>// Note the block</span>
-    <span>print</span><span>(</span><span>"x is neither 1 nor 2"</span><span>)</span>
-  <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>与 <code>if</code> 语句一样，<code>when</code> 语句也可以作为表达式；当 <code>when</code> 作为表达式时，它的返回值是与其 case 相符的值。</p>
-<p>同样，<code>when</code> 作为表达式时，也可以使用<strong>块语句。</strong></p>
-<p>与 Java 不同的是，<code>when</code> 语句可以对于一些不同的 case 进行一些相同的相应，而使用较少的代码量。</p>
-<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
-    <span>0</span><span>,</span> <span>1</span> <span>-></span> <span>print</span><span>(</span><span>"x == 0 or x == 1"</span><span>)</span>
-    <span>else</span> <span>-></span> <span>print</span><span>(</span><span>"otherwise"</span><span>)</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>同时， <code>when</code> 语句的 case 可以使用<strong>随意的表达式</strong>，而不是 Java 中的仅能使用常量。</p>
-<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
-    <span>parseInt</span><span>(</span>s<span>)</span> <span>-></span> <span>print</span><span>(</span><span>"s encodes x"</span><span>)</span>
-    <span>else</span> <span>-></span> <span>print</span><span>(</span><span>"s does not encode x"</span><span>)</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>此外，也可以使用 <code>in</code>、<code>!in</code>、<code>is</code>、<code>!is</code> 进行<strong>范围</strong>和<strong>类型</strong>检测。</p>
-<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
-    <span>in</span> <span>1</span><span>..</span><span>10</span> <span>-></span> <span>print</span><span>(</span><span>"x is in the range"</span><span>)</span>
-    <span>in</span> validNumbers <span>-></span> <span>print</span><span>(</span><span>"x is valid"</span><span>)</span>
-    <span>!</span><span>in</span> <span>10</span><span>..</span><span>20</span> <span>-></span> <span>print</span><span>(</span><span>"x is outside the range"</span><span>)</span>
-    <span>else</span> <span>-></span>     <span>print</span><span>(</span><span>"none of the above"</span><span>)</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><pre><code><span>val</span> hasPrefix <span>=</span> <span>when</span><span>(</span>x<span>)</span> <span>{</span>
-    <span>is</span> String <span>-></span> x<span>.</span><span>startsWith</span><span>(</span><span>"prefix"</span><span>)</span>
-    <span>else</span> <span>-></span> <span>false</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>Kotlin 在这里拥有一个非常好的特性叫 <strong>smart casts</strong>，
-当一个 <code>is</code> 表达式满足时，变量 <code>x</code> 将被**自动 cast 到相应的类型，**调用相应类型的方法。</p>
-<p>最后，<code>when</code> 也可以不接受参数使用，此时，<code>when</code> 的各个分支条件就变成了简单的<strong>布尔表达式</strong>，可以用于替代 <code>if-else-if</code> 结构。</p>
-<div><pre><code><span>when</span> <span>{</span>
-    x<span>.</span><span>isOdd</span><span>(</span><span>)</span> <span>-></span> <span>print</span><span>(</span><span>"x is odd"</span><span>)</span>
-    x<span>.</span><span>isEven</span><span>(</span><span>)</span> <span>-></span> <span>print</span><span>(</span><span>"x is even"</span><span>)</span>
-    <span>else</span> <span>-></span> <span>print</span><span>(</span><span>"x is funny"</span><span>)</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="_3-for"> 3. For</h2>
-<p>Kotlin 中的 <code>for</code> 类似 Python 和 Java 中的 <code>for-each</code> 结构，使用 <code>in</code> 标识符来分隔 <code>item</code> 和 <code>collection</code>。</p>
-<div><pre><code><span>for</span> <span>(</span>item <span>in</span> collection<span>)</span> <span>[</span><span>}</span>
-    <span>print</span><span>(</span>item<span>)</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>如果需要使用一个索引值，则可以使用 <code>indices</code>，它内置在 Kotlin 中的所有 <code>collection</code> 中。</p>
-<div><pre><code><span>for</span> <span>(</span>i <span>in</span> array<span>.</span>indices<span>)</span>
-    <span>print</span><span>(</span>array<span>[</span>i<span>]</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>同时也可以使用 <code>withIndex()</code> 方法。</p>
-<div><pre><code><span>for</span> <span>(</span><span>(</span>index<span>,</span> value<span>)</span> <span>in</span> array<span>.</span><span>withIndex</span><span>(</span><span>)</span><span>)</span>
-    <span>print</span><span>(</span><span>"<span>$index</span>, <span>$value</span>"</span><span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="_4-while-和-do-while"> 4. While 和 do-while</h2>
-<p>这两者和 Java 没有区别。</p>
-<h2 id="_5-跳转"> 5. 跳转</h2>
-<p>Kotlin 支持三种形式的跳转：</p>
-<ul>
-<li><code>return</code>：在最近的函数（包括匿名函数）返回</li>
-<li><code>break</code>：跳出当前最近的循环</li>
-<li><code>continue</code>：结束当前最近循环内工作，并从下一次最近循环开始</li>
-</ul>
-<p>与 Java 一样，Kotlin 也支持<strong>带标签的跳转</strong>，标签使用 <code>@</code> 符号来指定。</p>
-<div><pre><code><span>loop@</span> <span>for</span> <span>(</span>i <span>in</span> <span>1</span><span>..</span><span>100</span><span>)</span> <span>{</span>
-    <span>for</span> <span>(</span>j <span>in</span> <span>1</span><span>..</span><span>100</span><span>)</span> <span>{</span>
-        <span>if</span> <span>(</span><span>..</span><span>.</span><span>)</span> <span>break</span><span>@loop</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>带标签的 <code>break</code> 用于跳出指定的循环结构，而带标签的 <code>continue</code> 则用于开始下一次指定的循环。</p>
-<h2 id="_6-带标签的-return"> 6. 带标签的 return</h2>
-<p>不仅如此，Kotlin 还支持带标签的 <code>return</code>，这主要是因为 Kotlin 允许<strong>函数的嵌套。</strong></p>
-<p>一个比较普遍的使用场景是在 Lamda 表达式上。</p>
-<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
-    ints<span>.</span><span>forEach</span> <span>{</span>
-        <span>if</span> <span>(</span>it <span>==</span> <span>0</span><span>)</span> <span>return</span>
-        <span>print</span><span>(</span>it<span>)</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>类似如上的语句，<code>return</code> 的作用对象是其最近的<strong>函数</strong>，在这里是 <code>foo()</code>。</p>
-<p>但是如果我们要只从 Lambda 函数中返回(<code>forEach</code>)，则需要指定一个标签。</p>
-<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
-    ints<span>.</span>forEach <span>lit@</span> <span>{</span>
-        <span>if</span> <span>(</span>it <span>==</span> <span>0</span><span>)</span> re <span>turn@</span>lit
-        <span>print</span><span>(</span>it<span>)</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>一个更为常用的形式是<strong>直接使用 Lambda 表达式的名字</strong>。</p>
-<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
-    ints<span>.</span><span>forEach</span> <span>{</span>
-        <span>if</span> <span>(</span>it <span>==</span> <span>0</span><span>)</span> <span>return</span><span>@forEach</span>
-        <span>print</span><span>(</span>it<span>)</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>另外的，我们也可以使用传统的匿名函数，来实现这个功能。</p>
-<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
-    ints<span>.</span><span>forEach</span><span>(</span><span>fun</span><span>(</span>value<span>:</span> Int<span>)</span> <span>{</span>
-        <span>if</span> <span>(</span>value <span>==</span> <span>0</span><span>)</span> <span>return</span>
-        <span>print</span><span>(</span>value<span>)</span>
-    <span>}</span><span>)</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>当需要返回某个值时，标签的解析具有更高优先权。</p>
-<p>例如：</p>
-<div><pre><code><span>return</span><span>@a</span> <span>1</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>表示在 <code>a</code> 标签中返回 <code>1</code>，而不是返回 <code>@a 1</code></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Kotlin 操作符重载</title>
       <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD/</link>
       <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD/</guid>
@@ -7983,6 +7818,171 @@ if ((a = b) != c) {
 <h2 id="_3-中缀函数"> 3. 中缀函数</h2>
 <p>除此之外，我们还可以通过定义中缀函数来定义新的**“运算符”**</p>
 <p>比如数字类型的位运算就是通过中缀函数实现的。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Kotlin 控制流程</title>
+      <link>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B/</link>
+      <guid>https://wafer.li/blog-corners/langroad/Kotlin/Kotlin%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B/</guid>
+      <source url="https://wafer.li/rss.xml">Kotlin 控制流程</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-if&amp;quot;&amp;gt; 1. If&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Kotlin 中 &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt; 语句是一个表达式，&amp;lt;strong&amp;gt;有返回值&amp;lt;/strong&amp;gt;，功能和 C++ 和 Java 中的&amp;lt;strong&amp;gt;条件表达式&amp;lt;/strong&amp;gt;相同。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;所以，Kotlin 中不支持条件表达式，因为 &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt; 语句已经具备了这个功能。&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span&amp;gt;// Traditional usage&amp;lt;/span&amp;gt;
+&amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; a &amp;lt;span&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;(&amp;lt;/span&amp;gt;a &amp;lt;span&amp;gt;&amp;lt;&amp;lt;/span&amp;gt; b&amp;lt;span&amp;gt;)&amp;lt;/span&amp;gt;
+max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; b
+&amp;lt;span&amp;gt;// With else&amp;lt;/span&amp;gt;
+&amp;lt;span&amp;gt;var&amp;lt;/span&amp;gt; max&amp;lt;span&amp;gt;:&amp;lt;/span&amp;gt; Int &amp;lt;span&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;(&amp;lt;/span&amp;gt;a &amp;lt;span&amp;gt;&amp;gt;&amp;lt;/span&amp;gt; b&amp;lt;span&amp;gt;)&amp;lt;/span&amp;gt;
+max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; a
+&amp;lt;span&amp;gt;else&amp;lt;/span&amp;gt;
+max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; b
+&amp;lt;span&amp;gt;// As expression&amp;lt;/span&amp;gt;
+&amp;lt;span&amp;gt;val&amp;lt;/span&amp;gt; max &amp;lt;span&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;(&amp;lt;/span&amp;gt;a &amp;lt;span&amp;gt;&amp;gt;&amp;lt;/span&amp;gt; b&amp;lt;span&amp;gt;)&amp;lt;/span&amp;gt; a &amp;lt;span&amp;gt;else&amp;lt;/span&amp;gt; b
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;1&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;2&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;3&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;4&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;5&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;6&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;7&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;8&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;9&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span&amp;gt;10&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;</description>
+      <category>Kotlin</category>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-if"> 1. If</h2>
+<p>Kotlin 中 <code>if</code> 语句是一个表达式，<strong>有返回值</strong>，功能和 C++ 和 Java 中的<strong>条件表达式</strong>相同。</p>
+<p>所以，Kotlin 中不支持条件表达式，因为 <code>if</code> 语句已经具备了这个功能。</p>
+<div><pre><code><span>// Traditional usage</span>
+<span>var</span> max <span>=</span> a <span>if</span> <span>(</span>a <span>&lt;</span> b<span>)</span>
+max <span>=</span> b
+<span>// With else</span>
+<span>var</span> max<span>:</span> Int <span>if</span> <span>(</span>a <span>></span> b<span>)</span>
+max <span>=</span> a
+<span>else</span>
+max <span>=</span> b
+<span>// As expression</span>
+<span>val</span> max <span>=</span> <span>if</span> <span>(</span>a <span>></span> b<span>)</span> a <span>else</span> b
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div>
+<p>同时，<code>if</code> 表达式也支持<strong>语句块</strong>，语句块中的<strong>最后一个</strong>变量或常量的值就是语句块的返回值。</p>
+<div><pre><code><span>val</span> max <span>=</span> <span>if</span> <span>(</span>a <span>></span> b<span>)</span> <span>{</span> <span>print</span><span>(</span><span>"Choose a"</span><span>)</span> a
+<span>}</span>
+<span>else</span> <span>{</span>
+    <span>print</span><span>(</span><span>"Choose b"</span><span>)</span>
+b <span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>需要注意的是，<strong>如果 <code>if</code> 作为一个表达式（需要其返回值），那么 <code>else</code> 语句就必须存在</strong>。</p>
+<h2 id="_2-when"> 2. When</h2>
+<p>Kotlin 用 <code>when</code> 表达式替代了 Java 和 C++ 中的 <code>switch</code> 语句的功能。</p>
+<p>一个简单的 <code>when</code> 语句如下：</p>
+<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
+<span>1</span> <span>-></span> <span>print</span><span>(</span><span>"x == 1"</span><span>)</span>
+<span>2</span> <span>-></span> <span>print</span><span>(</span><span>"x == 2"</span><span>)</span>
+<span>else</span> <span>-></span> <span>{</span> <span>// Note the block</span>
+    <span>print</span><span>(</span><span>"x is neither 1 nor 2"</span><span>)</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>与 <code>if</code> 语句一样，<code>when</code> 语句也可以作为表达式；当 <code>when</code> 作为表达式时，它的返回值是与其 case 相符的值。</p>
+<p>同样，<code>when</code> 作为表达式时，也可以使用<strong>块语句。</strong></p>
+<p>与 Java 不同的是，<code>when</code> 语句可以对于一些不同的 case 进行一些相同的相应，而使用较少的代码量。</p>
+<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
+    <span>0</span><span>,</span> <span>1</span> <span>-></span> <span>print</span><span>(</span><span>"x == 0 or x == 1"</span><span>)</span>
+    <span>else</span> <span>-></span> <span>print</span><span>(</span><span>"otherwise"</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>同时， <code>when</code> 语句的 case 可以使用<strong>随意的表达式</strong>，而不是 Java 中的仅能使用常量。</p>
+<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
+    <span>parseInt</span><span>(</span>s<span>)</span> <span>-></span> <span>print</span><span>(</span><span>"s encodes x"</span><span>)</span>
+    <span>else</span> <span>-></span> <span>print</span><span>(</span><span>"s does not encode x"</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>此外，也可以使用 <code>in</code>、<code>!in</code>、<code>is</code>、<code>!is</code> 进行<strong>范围</strong>和<strong>类型</strong>检测。</p>
+<div><pre><code><span>when</span> <span>(</span>x<span>)</span> <span>{</span>
+    <span>in</span> <span>1</span><span>..</span><span>10</span> <span>-></span> <span>print</span><span>(</span><span>"x is in the range"</span><span>)</span>
+    <span>in</span> validNumbers <span>-></span> <span>print</span><span>(</span><span>"x is valid"</span><span>)</span>
+    <span>!</span><span>in</span> <span>10</span><span>..</span><span>20</span> <span>-></span> <span>print</span><span>(</span><span>"x is outside the range"</span><span>)</span>
+    <span>else</span> <span>-></span>     <span>print</span><span>(</span><span>"none of the above"</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><pre><code><span>val</span> hasPrefix <span>=</span> <span>when</span><span>(</span>x<span>)</span> <span>{</span>
+    <span>is</span> String <span>-></span> x<span>.</span><span>startsWith</span><span>(</span><span>"prefix"</span><span>)</span>
+    <span>else</span> <span>-></span> <span>false</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>Kotlin 在这里拥有一个非常好的特性叫 <strong>smart casts</strong>，
+当一个 <code>is</code> 表达式满足时，变量 <code>x</code> 将被**自动 cast 到相应的类型，**调用相应类型的方法。</p>
+<p>最后，<code>when</code> 也可以不接受参数使用，此时，<code>when</code> 的各个分支条件就变成了简单的<strong>布尔表达式</strong>，可以用于替代 <code>if-else-if</code> 结构。</p>
+<div><pre><code><span>when</span> <span>{</span>
+    x<span>.</span><span>isOdd</span><span>(</span><span>)</span> <span>-></span> <span>print</span><span>(</span><span>"x is odd"</span><span>)</span>
+    x<span>.</span><span>isEven</span><span>(</span><span>)</span> <span>-></span> <span>print</span><span>(</span><span>"x is even"</span><span>)</span>
+    <span>else</span> <span>-></span> <span>print</span><span>(</span><span>"x is funny"</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="_3-for"> 3. For</h2>
+<p>Kotlin 中的 <code>for</code> 类似 Python 和 Java 中的 <code>for-each</code> 结构，使用 <code>in</code> 标识符来分隔 <code>item</code> 和 <code>collection</code>。</p>
+<div><pre><code><span>for</span> <span>(</span>item <span>in</span> collection<span>)</span> <span>[</span><span>}</span>
+    <span>print</span><span>(</span>item<span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>如果需要使用一个索引值，则可以使用 <code>indices</code>，它内置在 Kotlin 中的所有 <code>collection</code> 中。</p>
+<div><pre><code><span>for</span> <span>(</span>i <span>in</span> array<span>.</span>indices<span>)</span>
+    <span>print</span><span>(</span>array<span>[</span>i<span>]</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>同时也可以使用 <code>withIndex()</code> 方法。</p>
+<div><pre><code><span>for</span> <span>(</span><span>(</span>index<span>,</span> value<span>)</span> <span>in</span> array<span>.</span><span>withIndex</span><span>(</span><span>)</span><span>)</span>
+    <span>print</span><span>(</span><span>"<span>$index</span>, <span>$value</span>"</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="_4-while-和-do-while"> 4. While 和 do-while</h2>
+<p>这两者和 Java 没有区别。</p>
+<h2 id="_5-跳转"> 5. 跳转</h2>
+<p>Kotlin 支持三种形式的跳转：</p>
+<ul>
+<li><code>return</code>：在最近的函数（包括匿名函数）返回</li>
+<li><code>break</code>：跳出当前最近的循环</li>
+<li><code>continue</code>：结束当前最近循环内工作，并从下一次最近循环开始</li>
+</ul>
+<p>与 Java 一样，Kotlin 也支持<strong>带标签的跳转</strong>，标签使用 <code>@</code> 符号来指定。</p>
+<div><pre><code><span>loop@</span> <span>for</span> <span>(</span>i <span>in</span> <span>1</span><span>..</span><span>100</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span>j <span>in</span> <span>1</span><span>..</span><span>100</span><span>)</span> <span>{</span>
+        <span>if</span> <span>(</span><span>..</span><span>.</span><span>)</span> <span>break</span><span>@loop</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>带标签的 <code>break</code> 用于跳出指定的循环结构，而带标签的 <code>continue</code> 则用于开始下一次指定的循环。</p>
+<h2 id="_6-带标签的-return"> 6. 带标签的 return</h2>
+<p>不仅如此，Kotlin 还支持带标签的 <code>return</code>，这主要是因为 Kotlin 允许<strong>函数的嵌套。</strong></p>
+<p>一个比较普遍的使用场景是在 Lamda 表达式上。</p>
+<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
+    ints<span>.</span><span>forEach</span> <span>{</span>
+        <span>if</span> <span>(</span>it <span>==</span> <span>0</span><span>)</span> <span>return</span>
+        <span>print</span><span>(</span>it<span>)</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>类似如上的语句，<code>return</code> 的作用对象是其最近的<strong>函数</strong>，在这里是 <code>foo()</code>。</p>
+<p>但是如果我们要只从 Lambda 函数中返回(<code>forEach</code>)，则需要指定一个标签。</p>
+<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
+    ints<span>.</span>forEach <span>lit@</span> <span>{</span>
+        <span>if</span> <span>(</span>it <span>==</span> <span>0</span><span>)</span> re <span>turn@</span>lit
+        <span>print</span><span>(</span>it<span>)</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>一个更为常用的形式是<strong>直接使用 Lambda 表达式的名字</strong>。</p>
+<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
+    ints<span>.</span><span>forEach</span> <span>{</span>
+        <span>if</span> <span>(</span>it <span>==</span> <span>0</span><span>)</span> <span>return</span><span>@forEach</span>
+        <span>print</span><span>(</span>it<span>)</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>另外的，我们也可以使用传统的匿名函数，来实现这个功能。</p>
+<div><pre><code><span>fun</span> <span>foo</span><span>(</span><span>)</span> <span>{</span>
+    ints<span>.</span><span>forEach</span><span>(</span><span>fun</span><span>(</span>value<span>:</span> Int<span>)</span> <span>{</span>
+        <span>if</span> <span>(</span>value <span>==</span> <span>0</span><span>)</span> <span>return</span>
+        <span>print</span><span>(</span>value<span>)</span>
+    <span>}</span><span>)</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>当需要返回某个值时，标签的解析具有更高优先权。</p>
+<p>例如：</p>
+<div><pre><code><span>return</span><span>@a</span> <span>1</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>表示在 <code>a</code> 标签中返回 <code>1</code>，而不是返回 <code>@a 1</code></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -11042,7 +11042,7 @@ Python 在导入包时，首先会搜寻<strong>当前目录</strong>，如果�
 &amp;lt;p&amp;gt;所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>Scala 作为函数式语言，提供了很多用于高阶函数来解决一类范式问题；</p>
 <p>但是，使用过多的高阶函数就会让代码的可读性变差；</p>
 <p>所以，对此 Scala 提供了一种类 Python 的简便的语法糖，用来解决代码的可读性问题。</p>
@@ -11393,7 +11393,7 @@ first<span>(</span><span>2</span> <span>*</span> <span>2</span><span>,</span> <s
 &amp;lt;p&amp;gt;拥有更高的安全性&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>模式匹配，是 Scala 相比 Java 在类型上的一个很好地改进；</p>
 <p>通过引入模式匹配，消除了 Java 中常见的类型检测和强制转换(cast)；</p>
 <p>拥有更高的安全性</p>
@@ -11910,7 +11910,7 @@ p<span>.</span>name <span>=</span> <span>"nihao"</span>
 &amp;lt;p&amp;gt;那么今天就以 &amp;lt;code&amp;gt;List&amp;lt;/code&amp;gt; 来说一说常用的高阶函数具体的作用。&amp;lt;/p&amp;gt;
 </description>
       <category>Scala</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>高阶函数是函数式编程的一个很大的特性；</p>
 <p>同时，其中集合类的高阶函数在日常的开发和使用中，占了一个很重要的位置；</p>
 <p>但是，这些函数有可能会在刚接触的时候搞不懂它们的具体作用；</p>
@@ -16356,7 +16356,7 @@ Java 的 garbage collector 会将内存回收。</p>
 斯坦福的教授提供了一种使用 &amp;lt;strong&amp;gt;递归树&amp;lt;/strong&amp;gt; 的方法。&amp;lt;/p&amp;gt;
 </description>
       <category>《Algorithm 第四版》笔记</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前学算法分析的时候只知道通过数语句来计算算法的复杂度，而对于递归算法没有很好的方法；</p>
 <p>由于递归算法通常采用分治思路，每递归一次，子问题在增多，但是子问题的规模在减少，所以如何去计算这种递归类算法的复杂度呢？
 斯坦福的教授提供了一种使用 <strong>递归树</strong> 的方法。</p>
@@ -16448,7 +16448,7 @@ Java 的 garbage collector 会将内存回收。</p>
 &amp;lt;p&amp;gt;那么，都『攻击』了，为啥偏偏没事去改你的单例呢？直接获取更有意思的信息不是更好吗？&amp;lt;/p&amp;gt;
 </description>
       <category>《Head First 设计模式》笔记</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前提到枚举实现是单例的最佳实现，这毋庸置疑；</p>
 <p>不过，对比枚举和静态内部类，好像它们的区别就在于防止了反射攻击；</p>
 <p>那么，都『攻击』了，为啥偏偏没事去改你的单例呢？直接获取更有意思的信息不是更好吗？</p>
@@ -16749,66 +16749,6 @@ cons<span>.</span> <span>setAccessible</span><span>(</span><span>true</span><spa
 ]]></content:encoded>
     </item>
     <item>
-      <title>策略模式(Strategy Pattern)</title>
-      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</link>
-      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</guid>
-      <source url="https://wafer.li/rss.xml">策略模式(Strategy Pattern)</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;策略模式：定义算法族，分别封装起来，使它们可以相互替换。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;此模式让算法的变化独立于使用算法的用户。&amp;lt;/p&amp;gt;
-</description>
-      <category>《Head First 设计模式》笔记</category>
-      <pubDate>Fri, 25 Nov 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>策略模式：定义算法族，分别封装起来，使它们可以相互替换。</p>
-<p>此模式让算法的变化独立于使用算法的用户。</p>
-
-<h2 id="_2-oo-基础"> 2. OO 基础</h2>
-<ul>
-<li>抽象</li>
-<li>封装</li>
-<li>多态</li>
-<li>继承</li>
-</ul>
-<h2 id="_3-设计原则"> 3. 设计原则</h2>
-<ul>
-<li>
-<p>封装变化</p>
-<blockquote>
-<p>将应用（类）中有可能变化的部分封装出来，和稳定的部分相互隔离</p>
-</blockquote>
-</li>
-<li>
-<p>针对接口编程，而非针对 实现编程</p>
-<blockquote>
-<p>为了运行时能动态改变类的行为，我们应该<strong>针对接口编程</strong>，而非针对实现编程。</p>
-<p>也就是说，使用接口来实现各个行为，而不是将行为固定在类的具体实现中。</p>
-</blockquote>
-</li>
-<li>
-<p>多用组合，少用继承</p>
-<blockquote>
-<p><code>has-a</code> 比 <code>is-a</code> 更好，能够得到更多的应用弹性。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="_4-具体实现"> 4.  具体实现</h2>
-<p><strong>关键：使用委托，并使用 setter 实现行为的动态变化。</strong></p>
-<h3 id="_4-1-使用接口封装行为"> 4.1 使用接口封装行为</h3>
-<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" alt="" /></p>
-<h3 id="_4-2-对象包含接口"> 4.2 对象包含接口</h3>
-<p><img src="https://ww4.sinaimg.cn/large/65e4f1e6gw1f9pszct1akj20tz0efab4.jpg" alt="" /></p>
-<h3 id="_4-3-使用-setter-实现运行时更改行为"> 4.3 使用 Setter 实现运行时更改行为</h3>
-<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6jw1f9ptf31737j20tu0fcq43.jpg" alt="" /></p>
-<div><pre><code><span>ModelDuck</span> modelDuck <span>=</span> <span>new</span> <span>ModelDuck</span><span>(</span><span>)</span><span>;</span>
-modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlyNoWay</span>
-modelDuck<span>.</span><span>setFlyBehavior</span><span>(</span><span>new</span> <span>FlywithWings</span><span>(</span><span>)</span><span>)</span><span>;</span>
-modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlywithWings</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
-      <enclosure url="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" type="image/jpeg"/>
-    </item>
-    <item>
       <title>装饰者模式(Decorator Pattern)</title>
       <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/</link>
       <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F(Decorator%20Pattern)/</guid>
@@ -16875,6 +16815,66 @@ modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>
 <p>此时，当装饰者数量较多时，更改难度大。</p>
 ]]></content:encoded>
       <enclosure url="https://i48.tinypic.com/2jabxva.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>策略模式(Strategy Pattern)</title>
+      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</link>
+      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F(Strategy%20Pattern)/</guid>
+      <source url="https://wafer.li/rss.xml">策略模式(Strategy Pattern)</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;策略模式：定义算法族，分别封装起来，使它们可以相互替换。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;此模式让算法的变化独立于使用算法的用户。&amp;lt;/p&amp;gt;
+</description>
+      <category>《Head First 设计模式》笔记</category>
+      <pubDate>Fri, 25 Nov 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>策略模式：定义算法族，分别封装起来，使它们可以相互替换。</p>
+<p>此模式让算法的变化独立于使用算法的用户。</p>
+
+<h2 id="_2-oo-基础"> 2. OO 基础</h2>
+<ul>
+<li>抽象</li>
+<li>封装</li>
+<li>多态</li>
+<li>继承</li>
+</ul>
+<h2 id="_3-设计原则"> 3. 设计原则</h2>
+<ul>
+<li>
+<p>封装变化</p>
+<blockquote>
+<p>将应用（类）中有可能变化的部分封装出来，和稳定的部分相互隔离</p>
+</blockquote>
+</li>
+<li>
+<p>针对接口编程，而非针对 实现编程</p>
+<blockquote>
+<p>为了运行时能动态改变类的行为，我们应该<strong>针对接口编程</strong>，而非针对实现编程。</p>
+<p>也就是说，使用接口来实现各个行为，而不是将行为固定在类的具体实现中。</p>
+</blockquote>
+</li>
+<li>
+<p>多用组合，少用继承</p>
+<blockquote>
+<p><code>has-a</code> 比 <code>is-a</code> 更好，能够得到更多的应用弹性。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="_4-具体实现"> 4.  具体实现</h2>
+<p><strong>关键：使用委托，并使用 setter 实现行为的动态变化。</strong></p>
+<h3 id="_4-1-使用接口封装行为"> 4.1 使用接口封装行为</h3>
+<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" alt="" /></p>
+<h3 id="_4-2-对象包含接口"> 4.2 对象包含接口</h3>
+<p><img src="https://ww4.sinaimg.cn/large/65e4f1e6gw1f9pszct1akj20tz0efab4.jpg" alt="" /></p>
+<h3 id="_4-3-使用-setter-实现运行时更改行为"> 4.3 使用 Setter 实现运行时更改行为</h3>
+<p><img src="https://ww3.sinaimg.cn/large/65e4f1e6jw1f9ptf31737j20tu0fcq43.jpg" alt="" /></p>
+<div><pre><code><span>ModelDuck</span> modelDuck <span>=</span> <span>new</span> <span>ModelDuck</span><span>(</span><span>)</span><span>;</span>
+modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlyNoWay</span>
+modelDuck<span>.</span><span>setFlyBehavior</span><span>(</span><span>new</span> <span>FlywithWings</span><span>(</span><span>)</span><span>)</span><span>;</span>
+modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>;</span>		<span>// FlywithWings</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
+      <enclosure url="https://ww3.sinaimg.cn/large/65e4f1e6gw1f9psjbgdc1j20le0a6mxh.jpg" type="image/jpeg"/>
     </item>
     <item>
       <title>观察者模式(Observer Pattern)</title>
@@ -17020,6 +17020,139 @@ modelDuck<span>.</span><span>performFly</span><span>(</span><span>)</span><span>
 <p><strong>自己重新造轮子！</strong></p>
 ]]></content:encoded>
       <enclosure url="https://www.plantuml.com/plantuml/png/oymhIIrAIqnELGWkJSfAJIvHgEPIK2XAJSyi1ahu9nMd5fMb5cbeWWLpyyjIKOJoyaioqofXGiL0iLgkJBY9C76maQK5AOabgM0LoJc9nSKAplbvoKMf9Qd8zYh4nsErNQ5QJq-l5eiRu18OBe7BwEa1YVJKak0IYFqA2iK83hfZi3ePrIXzVOMdhTkUx9xsRDhEPvkd0es0-S165-vbBdJV0UNGxK3egz7JGmyEBhXBK6HXeW00" type="image/"/>
+    </item>
+    <item>
+      <title>命令模式</title>
+      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</link>
+      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</guid>
+      <source url="https://wafer.li/rss.xml">命令模式</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;命令模式将『请求』封装成对象，以便使用不同的请求，队列或者日志系统。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;命令模式也可以支持可撤销和回滚操作。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;命令模式通过将请求进行封装，成功地将客户和具体的低层组件进行解耦；&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;客户只需要知道要加载命令，而不需要知道如何进行命令的具体执行操作。&amp;lt;/p&amp;gt;
+</description>
+      <category>《Head First 设计模式》笔记</category>
+      <pubDate>Sat, 25 Mar 2017 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
+<p>命令模式将『请求』封装成对象，以便使用不同的请求，队列或者日志系统。</p>
+<p>命令模式也可以支持可撤销和回滚操作。</p>
+<p>命令模式通过将请求进行封装，成功地将客户和具体的低层组件进行解耦；</p>
+<p>客户只需要知道要加载命令，而不需要知道如何进行命令的具体执行操作。</p>
+
+<h2 id="_2-类图结构"> 2. 类图结构</h2>
+<Mermaid id="mermaid-382ee14e" data-code="classDiagram%0A%20%20%20%20class%20Client%0A%0A%20%20%20%20class%20Invoker%20%7B%0A%20%20%20%20%20%20%20%20%2B%20setCommand()%0A%20%20%20%20%7D%0A%0A%20%20%20%20class%20Receiver%20%7B%0A%20%20%20%20%20%20%20%20%2B%20action()%0A%20%20%20%20%7D%0A%0A%20%20%20%20class%20Command%20%7B%0A%20%20%20%20%20%20%20%20%2B%20%20execute()*%0A%20%20%20%20%20%20%20%20%2B%20%20undo()*%0A%20%20%20%20%7D%0A%0A%20%20%20%20%3C%3Cinterface%3E%3E%20Command%0A%0A%20%20%20%20class%20ConcreteCommand%20%7B%0A%20%20%20%20%20%20%20%20%2B%20execute()%0A%20%20%20%20%20%20%20%20%2B%20undo()%0A%20%20%20%20%7D%0A%0A%20%20%20%20Client%20--%3E%20Receiver%0A%20%20%20%20Client%20--%3E%20ConcreteCommand%0A%0A%20%20%20%20Invoker%20--%3E%20Command%0A%20%20%20%20ConcreteCommand%20--%7C%3E%20Command%0A"></Mermaid><p>可以看到，<code>Client</code>  处于最高层，它不需要知道 <code>Command</code> 的执行过程；</p>
+<p>这就达到了客户和低层组件的解耦目的。</p>
+<h2 id="_3-封装请求调用者"> 3. 封装请求调用者</h2>
+<p>一个很重要的地方就是我们的请求接收者 <code>Receiver</code> 和我们的命令对象 <code>Command</code> 是组合关系</p>
+<p>也就是说，<code>Command</code> 具有一个接收者的内部对象；</p>
+<p>否则，它无法真正地成为一个可以执行的命令。</p>
+<div><pre><code><span>public</span> <span>interface</span> <span>Command</span> <span>{</span>
+    <span>void</span> <span>execute</span><span>(</span><span>)</span><span>;</span>
+    <span>void</span> <span>undo</span><span>(</span><span>)</span><span>;</span>
+<span>}</span>
+
+<span>public</span> <span>class</span> <span>ConcreteCommand</span> <span>implements</span> <span>Command</span> <span>{</span>
+
+    <span>private</span> <span>Receiver</span> receiver<span>;</span>
+
+    <span>public</span> <span>ConcreteCommand</span><span>(</span><span>Receiver</span> receiver<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>receiver <span>=</span> receiver<span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>execute</span><span>(</span><span>)</span> <span>{</span>
+        receiver<span>.</span><span>action</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div><h2 id="_4-支持撤销和回滚"> 4. 支持撤销和回滚</h2>
+<p>通常的命令都会具有可撤销的属性要求；</p>
+<p>那么我们如何实现这个可撤销的需求呢？</p>
+<p>撤销实际上就是返回到命令执行前的一个状态中；</p>
+<p>所以在实际的命令对象类中，我们通过记住 <strong>上一个</strong> 命令时的状态，就能实现撤销功能。</p>
+<div><pre><code><span>public</span> <span>class</span> <span>CeilingFanHighCommand</span> <span>implements</span> <span>Command</span> <span>{</span>
+    <span>CeilingFan</span> ceilingFan<span>;</span>
+    <span>int</span> prevSpeed<span>;</span>  <span>// 前一个命令后风扇的转速</span>
+
+    <span>public</span> <span>CeilingFanHighCommand</span><span>(</span><span>CeilingFan</span> ceilingFan<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>ceilingFan <span>=</span> ceilingFan<span>;</span>
+    <span>}</span>
+
+    <span>public</span> <span>void</span> <span>execute</span><span>(</span><span>)</span> <span>{</span>
+        prevSpeed <span>=</span> ceilingFan<span>.</span><span>getSpeed</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+
+    <span>public</span> <span>void</span> <span>undo</span><span>(</span><span>)</span> <span>{</span>
+        <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>HIGH<span>)</span> <span>{</span>
+            ceilingFan<span>.</span><span>high</span><span>(</span><span>)</span><span>;</span>
+        <span>}</span>
+        <span>else</span> <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>MEDIUM<span>)</span> <span>{</span>
+            ceilingFan<span>.</span><span>medium</span><span>(</span><span>)</span><span>;</span>
+        <span>}</span>
+        <span>else</span> <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>LOW<span>)</span> <span>{</span>
+            ceilingFan<span>.</span><span>low</span><span>(</span><span>)</span><span>;</span>
+        <span>}</span>
+        <span>else</span> <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>OFF<span>)</span> <span>{</span>
+            ceilingFan<span>.</span><span>off</span><span>(</span><span>)</span><span>;</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h2 id="_5-使用空对象替代-null"> 5. 使用空对象替代 <code>null</code></h2>
+<p>对于命令模式来说，它的客户类还是有一些细微的要求；</p>
+<p>我们可以使用一个队列或者数组来代表需要执行的命令插槽；</p>
+<p>当插槽没有加载命令时候，我们普通的做法是使用一个 <code>null</code> 来进行替代；</p>
+<p>但是，此时我们就需要对命令对象进行空检测：</p>
+<div><pre><code><span>public</span> <span>void</span> <span>onButtonWasPushed</span><span>(</span><span>int</span> slot<span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>onCommand<span>[</span>slot<span>]</span> <span>!=</span> <span>null</span><span>)</span> <span>{</span>
+        onCommand<span>[</span>slot<span>]</span><span>.</span><span>execute</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>对此，我们可以使用一个 <code>NoCommand</code> 对象，它是一个命令对象，只不过什么都不做；</p>
+<p>这样，即使插槽没有加载命令，我们也可以直接使用 <code>NoCommand</code> 来替代，这样就不需要进行空检测了：</p>
+<div><pre><code><span>Command</span> noCommand <span>=</span> <span>new</span> <span>NoCommand</span><span>(</span><span>)</span><span>;</span>
+
+<span>for</span> <span>(</span><span>int</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>7</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    onCommands<span>[</span>i<span>]</span> <span>=</span> noCommand<span>;</span>
+    offCommands<span>[</span>i<span>]</span> <span>=</span> noCommand<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="_6-宏命令"> 6. 宏命令</h2>
+<p>命令模式的一个最大的优点就是能使用宏命令；</p>
+<p>也就是一次调用，执行多个命令；</p>
+<p>实际上，我们只需要将命令对象中包装的接收者变成命令对象数组即可：</p>
+<div><pre><code><span>public</span> clas <span>MacroCommand</span> <span>implements</span> <span>Command</span> <span>{</span>
+    <span>Command</span><span>[</span><span>]</span> commands<span>;</span>
+
+    <span>public</span> <span>MacroCommand</span><span>(</span><span>Command</span><span>[</span><span>]</span> commands<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>commands <span>=</span> commands<span>;</span>
+    <span>}</span>
+
+    <span>public</span> <span>void</span> <span>execute</span><span>(</span><span>)</span> <span>{</span>
+        <span>for</span> <span>(</span><span>int</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> commands<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+            commands<span>[</span>i<span>]</span><span>.</span><span>execute</span><span>(</span><span>)</span><span>;</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="_7-队列请求"> 7. 队列请求</h2>
+<p>除此之外，命令模式还可以使用于工作队列；</p>
+<p>也就是说我们可以构建一个接受命令对象的队列，它只是按照顺序进行命令的执行操作；</p>
+<p>当线程可用时，它就会将命令分配给线程，然后执行 <code>execute()</code>；</p>
+<p>队列并不需要关心命令究竟是什么，是如何完成的，只需要对命令进行调度即可。</p>
+<h2 id="_8-日志和恢复"> 8. 日志和恢复</h2>
+<p>除了队列以外，我们另一个应用范围就是日志系统和崩溃恢复；</p>
+<p>为了完成这个功能，我们可以在命令接口中添加 <code>store()</code> 和 <code>load()</code> 方法；</p>
+<p>当调用者调用命令时候，同时调用 <code>store()</code> 将命令对象序列化到服务器中进行存储；</p>
+<p>当崩溃发生，需要恢复时，我们就可以将存储服务器中的命令对象进行反序列化，然后调用 <code>load()</code> 方法；</p>
+<h2 id="_9-优缺点"> 9. 优缺点</h2>
+<p>命令模式的优点非常明显，就是可以完全实现客户类和低层组件的解耦；</p>
+<p>高层的调用者不需要知道命令执行的具体细节，只需要调用接口的方法就可以执行命令的调用。</p>
+<p>但是缺点是它需要创建不同的命令对象来进行不同的命令接收者的包装；</p>
+<p>这就会让我们的代码中出现很多的小型类。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>学习笔记</title>
@@ -17517,29 +17650,6 @@ drawerLayout<span>.</span><span>setScrimColor</span><span>(</span><span>ContextC
       <enclosure url="https://ww2.sinaimg.cn/large/8c1fca6bjw1eyyb1dvnnmj20zk0qotb3.jpg" type="image/jpeg"/>
     </item>
     <item>
-      <title>Android Studio 卡 buliding gradle info</title>
-      <link>https://wafer.li/blog-corners/old-inventory/Android/AndroidStudio/Android%20Studio%20%E5%8D%A1%20buliding%20gradle%20info/</link>
-      <guid>https://wafer.li/blog-corners/old-inventory/Android/AndroidStudio/Android%20Studio%20%E5%8D%A1%20buliding%20gradle%20info/</guid>
-      <source url="https://wafer.li/rss.xml">Android Studio 卡 buliding gradle info</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-问题&amp;quot;&amp;gt; 1. 问题&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;有时候第一次使用 Android Studio 打开某个项目时，会出现项目一直卡在 &amp;lt;code&amp;gt;buliding gradle info&amp;lt;/code&amp;gt; 的问题，如图所示：&amp;lt;/p&amp;gt;
-&amp;lt;center&amp;gt;![Building project  info](https://i4.buimg.com/563021/c4ee7577d3d0bcde.jpg)&amp;lt;/center&amp;gt;
-&amp;lt;p&amp;gt;此问题的原因在于：&amp;lt;strong&amp;gt;用于下载 gradle 本体的网站被墙了，导致下载速度缓慢。&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-</description>
-      <category>Android</category>
-      <pubDate>Fri, 14 Oct 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-问题"> 1. 问题</h2>
-<p>有时候第一次使用 Android Studio 打开某个项目时，会出现项目一直卡在 <code>buliding gradle info</code> 的问题，如图所示：</p>
-<center>![Building project  info](https://i4.buimg.com/563021/c4ee7577d3d0bcde.jpg)</center>
-<p>此问题的原因在于：<strong>用于下载 gradle 本体的网站被墙了，导致下载速度缓慢。</strong></p>
-
-<h2 id="_2-解决办法"> 2. 解决办法</h2>
-<p>打开 gradle 的 <code>gradle.properties</code>，然后直接从里面的链接下载 gradle，放入 gradle 的文件夹中即可。</p>
-<p>当然，最靠谱的方法还是去翻墙啦。</p>
-]]></content:encoded>
-      <enclosure url="https://i4.buimg.com/563021/c4ee7577d3d0bcde.jpg" type="image/jpeg"/>
-    </item>
-    <item>
       <title>AsyncTask with Callback</title>
       <link>https://wafer.li/blog-corners/old-inventory/Android/AsyncTask%20with%20Callback/</link>
       <guid>https://wafer.li/blog-corners/old-inventory/Android/AsyncTask%20with%20Callback/</guid>
@@ -17589,6 +17699,29 @@ drawerLayout<span>.</span><span>setScrimColor</span><span>(</span><span>ContextC
 <span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Android Studio 卡 buliding gradle info</title>
+      <link>https://wafer.li/blog-corners/old-inventory/Android/AndroidStudio/Android%20Studio%20%E5%8D%A1%20buliding%20gradle%20info/</link>
+      <guid>https://wafer.li/blog-corners/old-inventory/Android/AndroidStudio/Android%20Studio%20%E5%8D%A1%20buliding%20gradle%20info/</guid>
+      <source url="https://wafer.li/rss.xml">Android Studio 卡 buliding gradle info</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-问题&amp;quot;&amp;gt; 1. 问题&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;有时候第一次使用 Android Studio 打开某个项目时，会出现项目一直卡在 &amp;lt;code&amp;gt;buliding gradle info&amp;lt;/code&amp;gt; 的问题，如图所示：&amp;lt;/p&amp;gt;
+&amp;lt;center&amp;gt;![Building project  info](https://i4.buimg.com/563021/c4ee7577d3d0bcde.jpg)&amp;lt;/center&amp;gt;
+&amp;lt;p&amp;gt;此问题的原因在于：&amp;lt;strong&amp;gt;用于下载 gradle 本体的网站被墙了，导致下载速度缓慢。&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+</description>
+      <category>Android</category>
+      <pubDate>Fri, 14 Oct 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-问题"> 1. 问题</h2>
+<p>有时候第一次使用 Android Studio 打开某个项目时，会出现项目一直卡在 <code>buliding gradle info</code> 的问题，如图所示：</p>
+<center>![Building project  info](https://i4.buimg.com/563021/c4ee7577d3d0bcde.jpg)</center>
+<p>此问题的原因在于：<strong>用于下载 gradle 本体的网站被墙了，导致下载速度缓慢。</strong></p>
+
+<h2 id="_2-解决办法"> 2. 解决办法</h2>
+<p>打开 gradle 的 <code>gradle.properties</code>，然后直接从里面的链接下载 gradle，放入 gradle 的文件夹中即可。</p>
+<p>当然，最靠谱的方法还是去翻墙啦。</p>
+]]></content:encoded>
+      <enclosure url="https://i4.buimg.com/563021/c4ee7577d3d0bcde.jpg" type="image/jpeg"/>
     </item>
     <item>
       <title>Butter Knife</title>
@@ -18300,7 +18433,7 @@ cacheBuilder<span>.</span><span>maxStale</span><span>(</span><span>365</span><sp
 &amp;lt;p&amp;gt;这里就来讲讲关于这两个库具体组合的用法。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>Retrofit 和 Rxjava 结合应该算得上是 Rxjava 在 Android  应用得最广泛的一个方面了。</p>
 <p>这里就来讲讲关于这两个库具体组合的用法。</p>
 
@@ -20930,7 +21063,7 @@ https://github.com/wafer-li/scala-coursera/tree/master/funsets&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;我们有没有一种办法去表示这个集合呢？&amp;lt;/p&amp;gt;
 </description>
       <category>Coursera</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>本文源码：
 https://github.com/wafer-li/scala-coursera/tree/master/funsets</p>
@@ -24756,106 +24889,6 @@ USB 使用该技术</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>操作系统复习</title>
-      <link>https://wafer.li/blog-corners/old-inventory/Reviews/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</link>
-      <guid>https://wafer.li/blog-corners/old-inventory/Reviews/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</guid>
-      <source url="https://wafer.li/rss.xml">操作系统复习</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-operating-system&amp;quot;&amp;gt; 1. Operating System&amp;lt;/h2&amp;gt;
-&amp;lt;ol&amp;gt;
-&amp;lt;li&amp;gt;
-&amp;lt;p&amp;gt;What does a Mordern OS do?&amp;lt;/p&amp;gt;
-&amp;lt;blockquote&amp;gt;
-&amp;lt;p&amp;gt;Provide abstractions
-Provide Standard Interface
-Mediates Resource Usage
-Consumes Resources&amp;lt;/p&amp;gt;
-&amp;lt;/blockquote&amp;gt;
-&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-</description>
-      <category>复习</category>
-      <pubDate>Fri, 14 Oct 2016 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-operating-system"> 1. Operating System</h2>
-<ol>
-<li>
-<p>What does a Mordern OS do?</p>
-<blockquote>
-<p>Provide abstractions
-Provide Standard Interface
-Mediates Resource Usage
-Consumes Resources</p>
-</blockquote>
-</li>
-</ol>
-
-<h2 id="_2-processes-and-threads"> 2. Processes and Threads</h2>
-<h3 id="_2-1-what-is-process-and-threads"> 2.1 What is process and threads</h3>
-<p>Process is an execution stream in the context of a particular process state.
-Thread is an execution stream in the context of a thread state.</p>
-<p>The key difference: Multiple threads <strong>share</strong> parts of their state.</p>
-<p>Allowing read write the same memory, but each thread still have own registers.</p>
-<p>Reason:</p>
-<ol>
-<li>The threads must corrdinate their activities very closely.</li>
-<li>It is much easier to coordinate activities.</li>
-</ol>
-<h3 id="_2-2-process-state-information"> 2.2 Process state information</h3>
-<ol>
-<li>Register</li>
-<li>Stack</li>
-<li>Memory</li>
-<li>Open file tables</li>
-<li>Singal management information</li>
-</ol>
-<h3 id="_2-3-multiprogramming"> 2.3 Multiprogramming</h3>
-<p>Multiple processes at <strong>a time</strong>.
-Allow system to separate out activites cleanly.</p>
-<h3 id="_2-4-context-switch"> 2.4 Context switch</h3>
-<p>Because multiprogamming, there needs to <strong>share</strong> the resource, such as CPU.</p>
-<p>Therefore, OS needs the ability to switch from one process to another.
-That is <strong>Context Switch</strong></p>
-<h3 id="_2-5-pcb"> 2.5 PCB</h3>
-<p>The way to implement the <em>Context Switch</em> is to <strong>save</strong>  and <strong>restore</strong> the hardware state in PCB (Process Control Block).</p>
-<h4 id="_2-5-1-pcb-depends-on-hardward"> 2.5.1 PCB depends on hardward</h4>
-<ol>
-<li>
-<p>Register</p>
-</li>
-<li>
-<p>Porcessor Status Word</p>
-</li>
-<li>
-<p>Memory</p>
-<blockquote>
-<p>Some machine needs the Memory Management Unit(<strong>MMU</strong>)</p>
-</blockquote>
-<blockquote>
-<p>But the older PC switch all the process's memory <strong>out to disk</strong></p>
-</blockquote>
-</li>
-</ol>
-<h3 id="_2-6-event-driven"> 2.6 Event-driven</h3>
-<p>OS is fundamentally event-driven.</p>
-<p>That is to wait for an event to happen, response appropriately to the event, then wait for the next event</p>
-<h3 id="_2-7-thread-control-block"> 2.7 Thread Control Block</h3>
-<p>It is tipically <strong>register</strong>.</p>
-<p>Don't need to do anything to the MMU when switch threads.</p>
-<h3 id="_2-8-each-user-process-is-backed-by-kernel-thread"> 2.8 Each user process is backed by kernel thread</h3>
-<p>That is the OS will have a <strong>separate</strong> thread for <strong>each</strong> process.
-And perform the OS activities on behalf of the process.</p>
-<p>Advantages:</p>
-<ol>
-<li>
-<p>Allow the programmer to program the actions associate with that activity as a <strong>single</strong> serial stream of actions and events</p>
-</li>
-<li>
-<p>Programmer does not have to deal with the complexity of interleaving multiple activities on the same thread</p>
-</li>
-</ol>
-<h3 id="_2-9-asyncorony"> 2.9 Asyncorony</h3>
-]]></content:encoded>
-    </item>
-    <item>
       <title>1. 基本概念</title>
       <link>https://wafer.li/blog-corners/old-inventory/Reviews/Probability/1.%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</link>
       <guid>https://wafer.li/blog-corners/old-inventory/Reviews/Probability/1.%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</guid>
@@ -25536,6 +25569,106 @@ A_i: 第 i 封信对的</p>
 ]]></content:encoded>
     </item>
     <item>
+      <title>操作系统复习</title>
+      <link>https://wafer.li/blog-corners/old-inventory/Reviews/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</link>
+      <guid>https://wafer.li/blog-corners/old-inventory/Reviews/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</guid>
+      <source url="https://wafer.li/rss.xml">操作系统复习</source>
+      <description>&amp;lt;h2 id=&amp;quot;_1-operating-system&amp;quot;&amp;gt; 1. Operating System&amp;lt;/h2&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;What does a Mordern OS do?&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Provide abstractions
+Provide Standard Interface
+Mediates Resource Usage
+Consumes Resources&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+</description>
+      <category>复习</category>
+      <pubDate>Fri, 14 Oct 2016 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-operating-system"> 1. Operating System</h2>
+<ol>
+<li>
+<p>What does a Mordern OS do?</p>
+<blockquote>
+<p>Provide abstractions
+Provide Standard Interface
+Mediates Resource Usage
+Consumes Resources</p>
+</blockquote>
+</li>
+</ol>
+
+<h2 id="_2-processes-and-threads"> 2. Processes and Threads</h2>
+<h3 id="_2-1-what-is-process-and-threads"> 2.1 What is process and threads</h3>
+<p>Process is an execution stream in the context of a particular process state.
+Thread is an execution stream in the context of a thread state.</p>
+<p>The key difference: Multiple threads <strong>share</strong> parts of their state.</p>
+<p>Allowing read write the same memory, but each thread still have own registers.</p>
+<p>Reason:</p>
+<ol>
+<li>The threads must corrdinate their activities very closely.</li>
+<li>It is much easier to coordinate activities.</li>
+</ol>
+<h3 id="_2-2-process-state-information"> 2.2 Process state information</h3>
+<ol>
+<li>Register</li>
+<li>Stack</li>
+<li>Memory</li>
+<li>Open file tables</li>
+<li>Singal management information</li>
+</ol>
+<h3 id="_2-3-multiprogramming"> 2.3 Multiprogramming</h3>
+<p>Multiple processes at <strong>a time</strong>.
+Allow system to separate out activites cleanly.</p>
+<h3 id="_2-4-context-switch"> 2.4 Context switch</h3>
+<p>Because multiprogamming, there needs to <strong>share</strong> the resource, such as CPU.</p>
+<p>Therefore, OS needs the ability to switch from one process to another.
+That is <strong>Context Switch</strong></p>
+<h3 id="_2-5-pcb"> 2.5 PCB</h3>
+<p>The way to implement the <em>Context Switch</em> is to <strong>save</strong>  and <strong>restore</strong> the hardware state in PCB (Process Control Block).</p>
+<h4 id="_2-5-1-pcb-depends-on-hardward"> 2.5.1 PCB depends on hardward</h4>
+<ol>
+<li>
+<p>Register</p>
+</li>
+<li>
+<p>Porcessor Status Word</p>
+</li>
+<li>
+<p>Memory</p>
+<blockquote>
+<p>Some machine needs the Memory Management Unit(<strong>MMU</strong>)</p>
+</blockquote>
+<blockquote>
+<p>But the older PC switch all the process's memory <strong>out to disk</strong></p>
+</blockquote>
+</li>
+</ol>
+<h3 id="_2-6-event-driven"> 2.6 Event-driven</h3>
+<p>OS is fundamentally event-driven.</p>
+<p>That is to wait for an event to happen, response appropriately to the event, then wait for the next event</p>
+<h3 id="_2-7-thread-control-block"> 2.7 Thread Control Block</h3>
+<p>It is tipically <strong>register</strong>.</p>
+<p>Don't need to do anything to the MMU when switch threads.</p>
+<h3 id="_2-8-each-user-process-is-backed-by-kernel-thread"> 2.8 Each user process is backed by kernel thread</h3>
+<p>That is the OS will have a <strong>separate</strong> thread for <strong>each</strong> process.
+And perform the OS activities on behalf of the process.</p>
+<p>Advantages:</p>
+<ol>
+<li>
+<p>Allow the programmer to program the actions associate with that activity as a <strong>single</strong> serial stream of actions and events</p>
+</li>
+<li>
+<p>Programmer does not have to deal with the complexity of interleaving multiple activities on the same thread</p>
+</li>
+</ol>
+<h3 id="_2-9-asyncorony"> 2.9 Asyncorony</h3>
+]]></content:encoded>
+    </item>
+    <item>
       <title>2. 随机变量及其分布</title>
       <link>https://wafer.li/blog-corners/old-inventory/Reviews/Probability/2.%20%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</link>
       <guid>https://wafer.li/blog-corners/old-inventory/Reviews/Probability/2.%20%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</guid>
@@ -26097,7 +26230,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>Rxjava</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>Rxjava，是一个响应式的(Reactive)，基于观察者模式的异步框架。</p>
 <p>除此之外，还有其他的 RxScala 和 RxSwift 等。</p>
 <blockquote>
@@ -26257,7 +26390,7 @@ onsubscribe end
       <description>&amp;lt;p&amp;gt;Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。&amp;lt;/p&amp;gt;
 </description>
       <category>Solidity</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>Solidity 是运行于以太坊(Ethereum) 区块链上的智能合约语言，它是图灵完备的，意味着可以用它写一些任意复杂度的程序并运行于区块链中。</p>
 
 <h2 id="_1-区块链基础知识"> 1. 区块链基础知识</h2>
@@ -26786,7 +26919,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
 &amp;lt;p&amp;gt;当爱丽丝获得不少于 K 分时，她就停止抽取数字。 爱丽丝的分数不超过 N 的概率是多少？&amp;lt;/p&amp;gt;
 </description>
       <category>LeetCode</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="https://leetcode-cn.com/problems/new-21-game" target="_blank" rel="noopener noreferrer">题目</a></p>
 <p>爱丽丝参与一个大致基于纸牌游戏 “21点” 规则的游戏，描述如下：</p>
 <p>爱丽丝以 0 分开始，并在她的得分少于 K 分时抽取数字。 抽取时，她从 <code>[1, W]</code> 的范围中随机获得一个整数作为分数进行累计，其中 W 是整数。 每次抽取都是独立的，其结果具有相同的概率。</p>
@@ -26913,7 +27046,7 @@ Material Design 的实体与之类似，也需要投射阴影。</p>
       <description>&amp;lt;p&amp;gt;折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯&amp;lt;/p&amp;gt;
 </description>
       <category>面试经验</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>折腾了好一段时间，也算是找到了工作了，做个面经总结来告慰一下我的学生生涯</p>
 
 <h2 id="_1-ihandy"> 1. iHandy</h2>
@@ -27037,6 +27170,16 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <enclosure url="https://wafer.li/images/android-面经总结/荷兰国旗算法示意图.png" type="image/png"/>
     </item>
     <item>
+      <title>卷卷</title>
+      <link>https://wafer.li/blog-corners/rollroll/</link>
+      <guid>https://wafer.li/blog-corners/rollroll/</guid>
+      <source url="https://wafer.li/rss.xml">卷卷</source>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>卷卷，人一出生其实就在漩涡之中，只能奋力的，奋力的逃出漩涡之地。</p>
+<p>记录各种算法的做题记录和面经。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>HashMap 的 loadFactor 为什么是 0.75</title>
       <link>https://wafer.li/blog-corners/rollroll/interview/hashmap-%E7%9A%84-loadfactor-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF-0-75/</link>
       <guid>https://wafer.li/blog-corners/rollroll/interview/hashmap-%E7%9A%84-loadfactor-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF-0-75/</guid>
@@ -27045,7 +27188,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;本文基于&amp;lt;a href=&amp;quot;https://stackoverflow.com/a/31401836&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;这个 StackOverflow 回答&amp;lt;/a&amp;gt;进一步推导，并给出详细解答步骤&amp;lt;/p&amp;gt;
 </description>
       <category>面试经验</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前看各大面经的时候搜索到了这个问题，切实感觉到如果刨根问底的问，自己还真不能抵挡住这种攻势，现在闲暇时间又心血来潮地想起来这个问题，就打算好好弄懂弄透，也希望能在将来面试的时候做好准备。</p>
 <p>本文基于<a href="https://stackoverflow.com/a/31401836" target="_blank" rel="noopener noreferrer">这个 StackOverflow 回答</a>进一步推导，并给出详细解答步骤</p>
 
@@ -27105,16 +27248,6 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 ]]></content:encoded>
     </item>
     <item>
-      <title>卷卷</title>
-      <link>https://wafer.li/blog-corners/rollroll/</link>
-      <guid>https://wafer.li/blog-corners/rollroll/</guid>
-      <source url="https://wafer.li/rss.xml">卷卷</source>
-      <pubDate>Fri, 09 Jul 2021 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>卷卷，人一出生其实就在漩涡之中，只能奋力的，奋力的逃出漩涡之地。</p>
-<p>记录各种算法的做题记录和面经。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Realforce 87u</title>
       <link>https://wafer.li/blog-corners/talk/Realforce%2087u/</link>
       <guid>https://wafer.li/blog-corners/talk/Realforce%2087u/</guid>
@@ -27124,7 +27257,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;2018/1/8 更新部分内容&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近终于下定决心来买这个键盘了。</p>
 <p>主要说说使用感受吧</p>
 <p>2018/1/8 更新部分内容</p>
@@ -27199,7 +27332,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近因为和舍友出去看电影，终于第一次体验了一下著名的小黄车 ofo；</p>
 <p>ofo 的确是很方便，同时也解决了所谓「最后一公里」的这个需求痛点；</p>
 <p>但是，我不得不说，ofo 的运营团队还很年轻，一些很基本的流程问题都没搞清楚就胡乱上线功能。</p>
@@ -27247,7 +27380,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <guid>https://wafer.li/blog-corners/talk/%E6%89%93%E5%AD%97%E8%AE%AD%E7%BB%83%E7%BD%91%E7%AB%99/</guid>
       <source url="https://wafer.li/rss.xml">打字训练网站</source>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>买了新键盘之后就想试一试它的威力，所以就找了一个打字训练网站来打字；</p>
 <p>在知乎上找了一圈，结果就找到了 <a href="http://www.keybr.com/practice" target="_blank" rel="noopener noreferrer">这个</a>；</p>
 <p>练了一圈的感受就是： <strong>左手好累啊！！！</strong></p>
@@ -27268,7 +27401,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;内有剧透，慎点&amp;lt;/p&amp;gt;
 </description>
       <category>杂谈</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近这部 FD 发售之后就忍不住玩了一下；</p>
 <p>会结合本篇《近月少女的礼仪 2》(月に寄りそう乙女の作法２)　来谈一谈感想；</p>
 <p>内有剧透，慎点</p>
@@ -27356,7 +27489,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;因此，这里就来介绍一种我在之前的公司所使用的用于解决单个界面功能过于复杂的 MVVM 架构。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>Android App 的技术架构经过多年演进之后，形成了目前 Google 在 Jetpack 中推崇的 MVVM 架构。</p>
 <p>但是 Google 官方推崇的 MVVM 是多界面的 MVVM，即多个界面在同一个功能模块中，UI、数据如何进行组合的问题；</p>
 <p>而现在的 Android App 基本上是大而全的，特别是直播系的 App，有时候单单一个直播 Activity 就有十几二十个功能点，假如采用 Google 的 MVVM 解决方案，就会造成单个 Activity 过于臃肿的问题，这和 Google 多年来想解决的 Activity 膨胀问题是相互矛盾的。</p>
@@ -27511,7 +27644,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;例如直播的送礼物事件，需要礼物动画和送礼物的列表同时进行变化，在这里针对这个问题提出解决办法。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="/blog-corners/tech/android/arch/android-%E5%8D%95%E7%95%8C%E9%9D%A2%E5%A4%9A%E5%8A%9F%E8%83%BD%E7%82%B9-mvvm-%E6%9E%B6%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89">上文</a>  提出了一种单界面多功能点的 MVVM 架构，但是尚存在一点问题，就是当某个特定的事件需要多个 UseCase 进行响应的问题。</p>
 <p>例如直播的送礼物事件，需要礼物动画和送礼物的列表同时进行变化，在这里针对这个问题提出解决办法。</p>
 
@@ -27552,7 +27685,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;在这里也感谢此文的作者，他写的这篇文章很好的解释了 ItemDecoration 的原理，也使我增加了知识从而成文。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>在 Android 开发中，给网格状布局的元素之间添加空隙，并让他们居中对齐算是 UI 层面的一个常见需求;</p>
 <p>很多时候我们都是通过在 itemView 中添加适当的 margin 来实现的，但是这个实现方式在遇到头尾部空隙和中间不一致时，就需要进行特殊处理，而且从权责上来看，实际上也不应该由 itemView 负责这个间隙的调整工作。</p>
 <p>当然，Google 提供了一个 ItemDecoration 类专门来做这个事情，但是网上对于这个类的解析文章水平参差不齐，例如本文的<a href="https://www.jianshu.com/p/f41db270d5fe" target="_blank" rel="noopener noreferrer">参考文章</a>，解析写的很好，但是提供出来的例子性能很糟糕，这里采用这篇文章进行参考，同时给出一个性能较好的例子供大家使用。</p>
@@ -27619,7 +27752,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
 &amp;lt;p&amp;gt;上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="/blog-corners/tech/android/itemdecoration-%E5%AE%9E%E6%88%98%E4%B9%8B-girdspacingitemdecoration%EF%BC%88%E4%B8%80%EF%BC%89">上文</a>说到，相等间距的 GridLayoutManager 的 ItemDecoration 可以使用 <strong>公式法</strong> 来对所有四个方向的 offset 进行计算，由此可以大大简化 <code>itemOffset</code> 的计算，同时也天然的支持 RTL。</p>
 <p>但是，很多时候我们的 item 由于布局的原因，会出现一个 item 占据多个 span 的情况；</p>
 <p>上文最后给出的代码并没能处理这种情况，本文在这里就这个问题再进行进一步的讨论。</p>
@@ -27674,7 +27807,7 @@ Intent Service 不依赖于 Activity 存在，当 Activity 关闭之后，它依
       <description>&amp;lt;p&amp;gt;最近准备入门音视频开发，就学习内容做一下笔记吧&amp;lt;/p&amp;gt;
 </description>
       <category>音视频开发</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近准备入门音视频开发，就学习内容做一下笔记吧</p>
 
 <h2 id="_1-声音的物理相关概念"> 1. 声音的物理相关概念</h2>
@@ -28027,7 +28160,7 @@ PTS 全称为 Presentation Time Stamp，指的是某个帧显示的时间戳。<
 &amp;lt;p&amp;gt;鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近在迁移到 AndroidX 之后一直折腾 TDD 的事情，也遇到了大的小的不少坑点；</p>
 <p>鉴于 AndroidX 在测试方面还没有太多的文档，就写一篇博文来总结一下折腾的经验，也给后来人做一些参考。</p>
 
@@ -28220,7 +28353,7 @@ tintColorRes <span>=</span> typedValue<span>.</span>resourceId
 &amp;lt;p&amp;gt;本篇文章就来着重说说其中的原理。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="./../android-测试坑点详解（一）/">上篇文章</a>我们说到如果你的 VectorDrawable 如果采用一个带 <code>&lt;selector&gt;</code> 的颜色进行着色，那么就需要在测试代码中对 Drawable 进行重新着色，而不是直接比较。</p>
 <p>本篇文章就来着重说说其中的原理。</p>
 
@@ -28542,7 +28675,7 @@ API 24 之后可以匹配到和语言最为接近的本地化内容；
 &amp;lt;p&amp;gt;结果显然是我太拿衣服了&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近公司要求实现一个轨迹回放功能，想着 JS 都有 demo 的功能，Android 实现起来不还是小菜一碟？</p>
 <p>结果显然是我太拿衣服了</p>
 
@@ -28597,7 +28730,7 @@ API 24 之后可以匹配到和语言最为接近的本地化内容；
       <description>&amp;lt;p&amp;gt;最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  &amp;lt;code&amp;gt;IllegalStateException&amp;lt;/code&amp;gt;，其中的 &amp;lt;code&amp;gt;message&amp;lt;/code&amp;gt; 就是我们的标题。&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;这个问题还得从 JDK 1.7 开始说起。&amp;lt;/p&amp;gt;
 </description>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近，公司产品中经常发现有用户报告各种列表突然不见的问题，后来发现是子线程报  <code>IllegalStateException</code>，其中的 <code>message</code> 就是我们的标题。</p>
 <p>这个问题还得从 JDK 1.7 开始说起。</p>
 
@@ -28674,7 +28807,7 @@ compare(-1, Int.MAX_VAL) = -1 - Int.MAX_VAL = -2147483648 &lt; 0
 &amp;lt;p&amp;gt;于是，就开始了艰难的调试过程&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前又稍微折腾着想尝试一下 TDD，并在每次构建的时候加入测试环节，当测试不通过就不允许 build。</p>
 <p>当一切都配置好，点下 build App 的时候，却出现了 <code>There were failing tests.</code>。</p>
 <p>我心想，不会啊，现在我就根本没写几个测试用例，为什么会通不过？</p>
@@ -28760,7 +28893,7 @@ We recommend <strong>turning off Instant Run</strong> in the settings for earlie
 &amp;lt;p&amp;gt;这里就来谈一下我在最近开发遇到的一个 SurfaceCombination 的限制问题。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>CameraX 是 Google 新推出的相机操作库，用起来倒是很好用的，用各种 UseCase 对相机的使用目的进行区分，同时也加入了生命周期的处理。</p>
 <p>但是，CameraX 似乎对现今设备的性能估计太过保守了，所以就有一些不是很必要的限制。</p>
 <p>这里就来谈一下我在最近开发遇到的一个 SurfaceCombination 的限制问题。</p>
@@ -28962,7 +29095,7 @@ May be attempting to bind too many use cases.
 &amp;lt;p&amp;gt;但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>如果你开发过稍微有点体量的 Android App，都会因为越来越多的 Gradle 依赖而头疼。</p>
 <p>一个 App 的编译依赖少则十几项，多则几十项，如果再加上多 module，那么依赖的统一管理就很重要了。</p>
 <p>但是，如何高效统一管理，则是一个难题。今天就来说说如何使用 buildSrcVersions 轻松管理 gradle 依赖。</p>
@@ -29111,7 +29244,7 @@ plugins <span>{</span>
 &amp;lt;p&amp;gt;原文：&amp;lt;a href=&amp;quot;https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;Migrating Gradle to Kotlin DSL in Android Studio 3.3&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
 </description>
       <category>Android</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>这是一篇翻译文章，目前可以作为迁移 Gradle 到 Kotlin DSL 的备忘录，译者在 Android Studio 3.5 RC-1 上也迁移成功。</p>
 <p>原文：<a href="https://medium.com/@stoltmanjan/migrating-gradle-to-kotlin-dsl-in-android-studio-3-3-18651f37227f" target="_blank" rel="noopener noreferrer">Migrating Gradle to Kotlin DSL in Android Studio 3.3</a></p>
 
@@ -29271,7 +29404,7 @@ repositories <span>{</span>
 &amp;lt;p&amp;gt;这里就写写我折腾过程中遇到的坑，前车之鉴，后事之师。&amp;lt;/p&amp;gt;
 </description>
       <category>GPG</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>GPG 相信很多人都折腾过，Yubikey 也有很多人买过；</p>
 <p>但是好像只有老外折腾过 Yubikey + GPG 的；</p>
 <p>最近刚折腾完毕，因为自己不慎还把一个老钥匙搞丢了，现在只能随它去了；</p>
@@ -29485,7 +29618,7 @@ RSA 密钥可能的操作：签名 加密 认证
 &amp;lt;p&amp;gt;希望能给后来者以启迪。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="_1-简介"> 1. 简介</h2>
 <p>这是我折腾 Hexo 博客框架的经验；</p>
 <p>希望能给后来者以启迪。</p>
@@ -29544,7 +29677,7 @@ RSA 密钥可能的操作：签名 加密 认证
       <description>&amp;lt;p&amp;gt;这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>这个想法是我在折腾 Hexo Next 6.0 的时候发现的，有位仁兄在 Next 的新 repo 问如何处理 CI 问题，受到他的启发，我就开始折腾使用 Travis CI 进行博客的自动部署了。</p>
 
 <h2 id="_1-为什么要用-ci-来部署博客"> 1. 为什么要用 CI 来部署博客</h2>
@@ -29771,7 +29904,7 @@ RSA 密钥可能的操作：签名 加密 认证
 &amp;lt;p&amp;gt;之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>本文着重介绍一下如何解决 Travis CI 在进行自动集成的时候，总是会更新旧博客的问题。</p>
 <p>之前有想过要把这篇文章合并到上一篇里面，不过这个问题比较隐蔽，而且较难解决，最后还是新开一篇文章来详细讲一下该怎么做，防止以后有人再被这个问题困扰。</p>
 
@@ -29954,7 +30087,7 @@ timestamp_file_list <span>=</span> <span>[</span><span>tuple</span><span>(</span
       <description>&amp;lt;p&amp;gt;最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。&amp;lt;/p&amp;gt;
 </description>
       <category>Hexo</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>最近，鉴于性能考量，我从 MathJax 迁移到了 Katex，但是随之而来出现了一个问题，就是脚注里面的数学公式没办法渲染出来。</p>
 
 <p>如图：
@@ -29978,7 +30111,7 @@ timestamp_file_list <span>=</span> <span>[</span><span>tuple</span><span>(</span
 &amp;lt;p&amp;gt;不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。&amp;lt;/p&amp;gt;
 </description>
       <category>Live</category>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>之前由于给 B 站交了身份证，因此就想稍微利用一下，直播写一下代码；</p>
 <p>不过 macOS 没有 B 站的一键开播客户端，这里来介绍一下我的折腾成果。</p>
 
@@ -30121,7 +30254,7 @@ python -m http.server
       <link>https://wafer.li/</link>
       <guid>https://wafer.li/</guid>
       <source url="https://wafer.li/rss.xml">博客主页</source>
-      <pubDate>Thu, 15 Jul 2021 12:01:21 GMT</pubDate>
+      <pubDate>Thu, 15 Jul 2021 12:10:17 GMT</pubDate>
     </item>
     <item>
       <title>工厂模式</title>
@@ -30406,139 +30539,6 @@ python -m http.server
 <p>有趣的是，工厂接口和具体工厂之间，也是使用了工厂方法模式。</p>
 ]]></content:encoded>
       <enclosure url="https://ww1.sinaimg.cn/large/006tNc79ly1fdjc0v569wj308905h0sq.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>命令模式</title>
-      <link>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</link>
-      <guid>https://wafer.li/blog-corners/learning-notes/head-first-design-pattern/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</guid>
-      <source url="https://wafer.li/rss.xml">命令模式</source>
-      <description>&amp;lt;h2 id=&amp;quot;_1-概述&amp;quot;&amp;gt; 1. 概述&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;命令模式将『请求』封装成对象，以便使用不同的请求，队列或者日志系统。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;命令模式也可以支持可撤销和回滚操作。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;命令模式通过将请求进行封装，成功地将客户和具体的低层组件进行解耦；&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;客户只需要知道要加载命令，而不需要知道如何进行命令的具体执行操作。&amp;lt;/p&amp;gt;
-</description>
-      <category>《Head First 设计模式》笔记</category>
-      <pubDate>Sat, 25 Mar 2017 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="_1-概述"> 1. 概述</h2>
-<p>命令模式将『请求』封装成对象，以便使用不同的请求，队列或者日志系统。</p>
-<p>命令模式也可以支持可撤销和回滚操作。</p>
-<p>命令模式通过将请求进行封装，成功地将客户和具体的低层组件进行解耦；</p>
-<p>客户只需要知道要加载命令，而不需要知道如何进行命令的具体执行操作。</p>
-
-<h2 id="_2-类图结构"> 2. 类图结构</h2>
-<Mermaid id="mermaid-382ee14e" data-code="classDiagram%0A%20%20%20%20class%20Client%0A%0A%20%20%20%20class%20Invoker%20%7B%0A%20%20%20%20%20%20%20%20%2B%20setCommand()%0A%20%20%20%20%7D%0A%0A%20%20%20%20class%20Receiver%20%7B%0A%20%20%20%20%20%20%20%20%2B%20action()%0A%20%20%20%20%7D%0A%0A%20%20%20%20class%20Command%20%7B%0A%20%20%20%20%20%20%20%20%2B%20%20execute()*%0A%20%20%20%20%20%20%20%20%2B%20%20undo()*%0A%20%20%20%20%7D%0A%0A%20%20%20%20%3C%3Cinterface%3E%3E%20Command%0A%0A%20%20%20%20class%20ConcreteCommand%20%7B%0A%20%20%20%20%20%20%20%20%2B%20execute()%0A%20%20%20%20%20%20%20%20%2B%20undo()%0A%20%20%20%20%7D%0A%0A%20%20%20%20Client%20--%3E%20Receiver%0A%20%20%20%20Client%20--%3E%20ConcreteCommand%0A%0A%20%20%20%20Invoker%20--%3E%20Command%0A%20%20%20%20ConcreteCommand%20--%7C%3E%20Command%0A"></Mermaid><p>可以看到，<code>Client</code>  处于最高层，它不需要知道 <code>Command</code> 的执行过程；</p>
-<p>这就达到了客户和低层组件的解耦目的。</p>
-<h2 id="_3-封装请求调用者"> 3. 封装请求调用者</h2>
-<p>一个很重要的地方就是我们的请求接收者 <code>Receiver</code> 和我们的命令对象 <code>Command</code> 是组合关系</p>
-<p>也就是说，<code>Command</code> 具有一个接收者的内部对象；</p>
-<p>否则，它无法真正地成为一个可以执行的命令。</p>
-<div><pre><code><span>public</span> <span>interface</span> <span>Command</span> <span>{</span>
-    <span>void</span> <span>execute</span><span>(</span><span>)</span><span>;</span>
-    <span>void</span> <span>undo</span><span>(</span><span>)</span><span>;</span>
-<span>}</span>
-
-<span>public</span> <span>class</span> <span>ConcreteCommand</span> <span>implements</span> <span>Command</span> <span>{</span>
-
-    <span>private</span> <span>Receiver</span> receiver<span>;</span>
-
-    <span>public</span> <span>ConcreteCommand</span><span>(</span><span>Receiver</span> receiver<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>receiver <span>=</span> receiver<span>;</span>
-    <span>}</span>
-
-    <span>@Override</span>
-    <span>public</span> <span>void</span> <span>execute</span><span>(</span><span>)</span> <span>{</span>
-        receiver<span>.</span><span>action</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div><h2 id="_4-支持撤销和回滚"> 4. 支持撤销和回滚</h2>
-<p>通常的命令都会具有可撤销的属性要求；</p>
-<p>那么我们如何实现这个可撤销的需求呢？</p>
-<p>撤销实际上就是返回到命令执行前的一个状态中；</p>
-<p>所以在实际的命令对象类中，我们通过记住 <strong>上一个</strong> 命令时的状态，就能实现撤销功能。</p>
-<div><pre><code><span>public</span> <span>class</span> <span>CeilingFanHighCommand</span> <span>implements</span> <span>Command</span> <span>{</span>
-    <span>CeilingFan</span> ceilingFan<span>;</span>
-    <span>int</span> prevSpeed<span>;</span>  <span>// 前一个命令后风扇的转速</span>
-
-    <span>public</span> <span>CeilingFanHighCommand</span><span>(</span><span>CeilingFan</span> ceilingFan<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>ceilingFan <span>=</span> ceilingFan<span>;</span>
-    <span>}</span>
-
-    <span>public</span> <span>void</span> <span>execute</span><span>(</span><span>)</span> <span>{</span>
-        prevSpeed <span>=</span> ceilingFan<span>.</span><span>getSpeed</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-
-    <span>public</span> <span>void</span> <span>undo</span><span>(</span><span>)</span> <span>{</span>
-        <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>HIGH<span>)</span> <span>{</span>
-            ceilingFan<span>.</span><span>high</span><span>(</span><span>)</span><span>;</span>
-        <span>}</span>
-        <span>else</span> <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>MEDIUM<span>)</span> <span>{</span>
-            ceilingFan<span>.</span><span>medium</span><span>(</span><span>)</span><span>;</span>
-        <span>}</span>
-        <span>else</span> <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>LOW<span>)</span> <span>{</span>
-            ceilingFan<span>.</span><span>low</span><span>(</span><span>)</span><span>;</span>
-        <span>}</span>
-        <span>else</span> <span>if</span> <span>(</span>prevSpeed <span>==</span> <span>CeilingFan</span><span>.</span>OFF<span>)</span> <span>{</span>
-            ceilingFan<span>.</span><span>off</span><span>(</span><span>)</span><span>;</span>
-        <span>}</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h2 id="_5-使用空对象替代-null"> 5. 使用空对象替代 <code>null</code></h2>
-<p>对于命令模式来说，它的客户类还是有一些细微的要求；</p>
-<p>我们可以使用一个队列或者数组来代表需要执行的命令插槽；</p>
-<p>当插槽没有加载命令时候，我们普通的做法是使用一个 <code>null</code> 来进行替代；</p>
-<p>但是，此时我们就需要对命令对象进行空检测：</p>
-<div><pre><code><span>public</span> <span>void</span> <span>onButtonWasPushed</span><span>(</span><span>int</span> slot<span>)</span> <span>{</span>
-    <span>if</span> <span>(</span>onCommand<span>[</span>slot<span>]</span> <span>!=</span> <span>null</span><span>)</span> <span>{</span>
-        onCommand<span>[</span>slot<span>]</span><span>.</span><span>execute</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>对此，我们可以使用一个 <code>NoCommand</code> 对象，它是一个命令对象，只不过什么都不做；</p>
-<p>这样，即使插槽没有加载命令，我们也可以直接使用 <code>NoCommand</code> 来替代，这样就不需要进行空检测了：</p>
-<div><pre><code><span>Command</span> noCommand <span>=</span> <span>new</span> <span>NoCommand</span><span>(</span><span>)</span><span>;</span>
-
-<span>for</span> <span>(</span><span>int</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>7</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
-    onCommands<span>[</span>i<span>]</span> <span>=</span> noCommand<span>;</span>
-    offCommands<span>[</span>i<span>]</span> <span>=</span> noCommand<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="_6-宏命令"> 6. 宏命令</h2>
-<p>命令模式的一个最大的优点就是能使用宏命令；</p>
-<p>也就是一次调用，执行多个命令；</p>
-<p>实际上，我们只需要将命令对象中包装的接收者变成命令对象数组即可：</p>
-<div><pre><code><span>public</span> clas <span>MacroCommand</span> <span>implements</span> <span>Command</span> <span>{</span>
-    <span>Command</span><span>[</span><span>]</span> commands<span>;</span>
-
-    <span>public</span> <span>MacroCommand</span><span>(</span><span>Command</span><span>[</span><span>]</span> commands<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>commands <span>=</span> commands<span>;</span>
-    <span>}</span>
-
-    <span>public</span> <span>void</span> <span>execute</span><span>(</span><span>)</span> <span>{</span>
-        <span>for</span> <span>(</span><span>int</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> commands<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
-            commands<span>[</span>i<span>]</span><span>.</span><span>execute</span><span>(</span><span>)</span><span>;</span>
-        <span>}</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="_7-队列请求"> 7. 队列请求</h2>
-<p>除此之外，命令模式还可以使用于工作队列；</p>
-<p>也就是说我们可以构建一个接受命令对象的队列，它只是按照顺序进行命令的执行操作；</p>
-<p>当线程可用时，它就会将命令分配给线程，然后执行 <code>execute()</code>；</p>
-<p>队列并不需要关心命令究竟是什么，是如何完成的，只需要对命令进行调度即可。</p>
-<h2 id="_8-日志和恢复"> 8. 日志和恢复</h2>
-<p>除了队列以外，我们另一个应用范围就是日志系统和崩溃恢复；</p>
-<p>为了完成这个功能，我们可以在命令接口中添加 <code>store()</code> 和 <code>load()</code> 方法；</p>
-<p>当调用者调用命令时候，同时调用 <code>store()</code> 将命令对象序列化到服务器中进行存储；</p>
-<p>当崩溃发生，需要恢复时，我们就可以将存储服务器中的命令对象进行反序列化，然后调用 <code>load()</code> 方法；</p>
-<h2 id="_9-优缺点"> 9. 优缺点</h2>
-<p>命令模式的优点非常明显，就是可以完全实现客户类和低层组件的解耦；</p>
-<p>高层的调用者不需要知道命令执行的具体细节，只需要调用接口的方法就可以执行命令的调用。</p>
-<p>但是缺点是它需要创建不同的命令对象来进行不同的命令接收者的包装；</p>
-<p>这就会让我们的代码中出现很多的小型类。</p>
-]]></content:encoded>
     </item>
     <item>
       <title>生成器模式(Builder Pattern)</title>
