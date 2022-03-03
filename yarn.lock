@@ -8234,9 +8234,9 @@ retry@^0.12.0:
   integrity sha1-G0KmJmoh8HQh0bC1S33BZ7AcATs=
 
 reveal.js@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.nlark.com/reveal.js/download/reveal.js-4.1.3.tgz#f0a805a3cbc7c4e5553d66f91404b036f0f331cf"
-  integrity sha1-8KgFo8vHxOVVPWb5FASwNvDzMc8=
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/reveal.js/-/reveal.js-4.3.0.tgz#6fe91cc84de2e286f039545cb596dbc4d0d52294"
+  integrity sha512-KzZxJjj1gmxVNyplY6g9MiGwtDvZJiYkMvG1Qmaita7vWT/8eoTEK+RuIPLvxDeyxOtTz56u2wrOETVO79qL4A==
 
 rgb-regex@^1.0.1:
   version "1.0.1"
